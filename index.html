@@ -124,6 +124,20 @@ h1{font-weight:700;letter-spacing:-0.01em;font-size:clamp(30px,7.5vw,48px)}
 h2{font-weight:600}
 .banner{border:2px solid var(--stroke);box-shadow:3px 3px 0 var(--stroke)}
 .daybar{border:2px solid var(--stroke)}
+.specials{margin:0 0 16px}
+.specials h2{margin:0 0 8px}
+.strip{display:flex;gap:10px;overflow-x:auto;padding:2px 6px 10px 2px;scroll-snap-type:x mandatory}
+.scard{flex:0 0 min(80%,270px);scroll-snap-align:start;text-align:left;font:inherit;color:inherit;cursor:pointer;background:color-mix(in srgb,var(--sun) 22%,var(--panel));border:2px solid var(--stroke);border-radius:18px;box-shadow:3px 3px 0 var(--stroke);padding:10px 12px}
+.scard .name{font-size:17px}
+.badge{display:inline-block;font-family:"Fredoka",system-ui,sans-serif;font-weight:600;font-size:12px;background:var(--berry);color:#fff;border-radius:999px;padding:1px 8px;margin-left:6px;vertical-align:2px}
+.upcoming{margin-top:24px}
+.upday{font-family:"Fredoka",system-ui,sans-serif;font-weight:600;font-size:16px;margin:14px 0 6px}
+.uprow{background:var(--panel);border:2px solid var(--stroke);border-radius:14px;padding:8px 12px;margin-bottom:8px}
+.uprow summary{cursor:pointer;list-style:none}
+.uprow summary::-webkit-details-marker{display:none}
+.uprow p{margin:6px 0 4px;font-size:15px}
+.uprow a,.scard a{color:var(--indoor);font-weight:700}
+.legend i.star{border:0;width:auto;height:auto;font-style:normal;color:var(--ink);background:none;font-size:15px;line-height:1}
 </style>
 </head>
 <body>
@@ -173,16 +187,20 @@ h2{font-weight:600}
           <span><i style="background:var(--okay)"></i>Okay</span>
           <span><i style="background:var(--skip)"></i>Skip</span>
           <span><i class="sq" style="background:var(--indoor)"></i>Indoors</span>
-          <span><i class="sq" style="background:var(--ink-2);transform:rotate(45deg) scale(.85)"></i>Event</span>
+          <span><i class="star" aria-hidden="true">★</i>One-off event</span>
+          <span><i class="sq" style="background:var(--ink-2);transform:rotate(45deg) scale(.6)"></i>Regular program</span>
         </div>
       </div>
     </div>
 
     <div>
+      <div id="specials" class="specials"></div>
       <div id="banner"></div>
       <h2 id="count"></h2>
       <div id="hint" style="margin:-4px 0 10px"></div>
       <div class="list" id="list"></div>
+      <div id="upcoming" class="upcoming"></div>
+      <p class="foot" id="icsfoot"></p>
       <p class="foot" id="evfoot"></p>
       <p class="foot">Forecasts come live from the National Weather Service for downtown San Francisco. Address lookup uses OpenStreetMap Nominatim (© OpenStreetMap contributors). Drive times are rough estimates from straight-line distance with light traffic, and each spot's warmth and wind exposure are estimates from its usual microclimate. Confirm event details and hours with the host before you go.</p>
     </div>
@@ -273,9 +291,9 @@ function drawRings(){let h="";
 let SOON=0,RECN=0;
 function evKey(e){return String(e.name||"").toLowerCase().replace(/\s+/g," ").trim()+"|"+String(e.area||"").toLowerCase();}
 function recurringKeys(){const m={};EVENTS.forEach(e=>{if(e.kind==="impact"||e.rangeStart||!e.start)return;const k=evKey(e);(m[k]=m[k]||new Set()).add(String(e.start).slice(0,10));});const r=new Set();for(const k in m)if(m[k].size>1)r.add(k);return r;}
-function isRecurring(e,REC){return e.recurring===true||REC.has(evKey(e))||/^storytime (for|in)\b/i.test(e.name||"");}
+function isRecurring(e,REC){return e.recurring===true||REC.has(evKey(e))||/^(storytime (for|in)\b|(toddler|baby|babies|family|preschool) storytime\b)/i.test(e.name||"");}
 function items(){
- SOON=0;RECN=0;const REC=S.hideRec?recurringKeys():null;const c=cond();const [ws,we]=winRange();
+ SOON=0;RECN=0;const RALL=recurringKeys();const REC=S.hideRec?RALL:null;const c=cond();const [ws,we]=winRange();
  const impacts={};
  EVENTS.filter(e=>e.kind==="impact"&&eventActive(e)).forEach(e=>(e.impacts||[]).forEach(id=>{(impacts[id]=impacts[id]||[]).push(e.title+(e.rangeStart?"":" ("+fmtT(new Date(e.start))+"–"+fmtT(evInterval(e)[1])+")"));}));
  const out=PLACES.map(p0=>{const p=withMin(p0);const e=evalPlace(p,c);return{p,e,flags:(impacts[p.id]||[]).map(t=>"Heads up: "+t+" nearby"),v:visible(p)};});
@@ -283,12 +301,47 @@ function items(){
   const vis0=visible(withMin(Object.assign({},ev,{isEvent:true})));
   if(REC&&isRecurring(ev,REC)){if(vis0)RECN++;return;}
   if(S.hideSoon&&!ev.rangeStart&&evInterval(ev)[1].getTime()-Date.now()<30*60e3){if(vis0)SOON++;return;}
-  const p=withMin(Object.assign({},ev,{isEvent:true}));const e=evalPlace(p,c);const flags=[];
+  const p=withMin(Object.assign({},ev,{isEvent:true}));p.oneOff=!ev.rangeStart&&!isRecurring(ev,RALL);const e=evalPlace(p,c);const flags=[];
   let when;if(ev.rangeStart){when="Open daily through "+ev.rangeLabel;}else{const [s,en]=evInterval(ev);when=fmtT(s)+(ev.end?"–"+fmtT(en):" start");if(conflicts(s,en))flags.push("Overlaps something on your calendar");}
   (impacts[ev.id]||[]).forEach(t=>flags.push("Heads up: "+t));
-  out.push({p,e:Object.assign(e,{score:e.score+.06-(flags.length?.3:0)}),flags,when,v:visible(p)});
+  out.push({p,e:Object.assign(e,{score:e.score+(p.oneOff?.15:-.03)-(flags.length?.3:0)}),flags,when,v:visible(p),ts:p.start?new Date(p.start).getTime():0});
  });
- return out;
+ // collapse repeats of the same regular program at the same place into one card
+ const grp={},final=[];
+ out.forEach(r=>{if(r.p.isEvent&&!r.p.oneOff&&!r.p.rangeStart){const k=evKey(r.p);const g=grp[k];
+   if(g){g.slots.push([r.ts,r.when]);g.v=g.v||r.v;if(r.e.score>g.e.score)g.e=r.e;r.flags.forEach(f=>{if(!g.flags.includes(f))g.flags.push(f);});return;}
+   grp[k]=r;r.slots=[[r.ts,r.when]];}
+  final.push(r);});
+ final.forEach(r=>{if(r.slots&&r.slots.length>1){r.slots.sort((a,b)=>a[0]-b[0]);r.when=r.slots.map(x=>x[1]).join(", ");r.p.multi=true;}});
+ return final;
+}
+function star(x,y,r){let d="";for(let i=0;i<10;i++){const a=-Math.PI/2+i*Math.PI/5,q=i%2?r*.45:r;d+=(i?"L":"M")+(x+q*Math.cos(a)).toFixed(1)+" "+(y+q*Math.sin(a)).toFixed(1);}return d+"Z";}
+function gcal(p){const [s0,e0]=evInterval(p);const f=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
+ return "https://calendar.google.com/calendar/render?"+new URLSearchParams({action:"TEMPLATE",text:p.name||"Family outing",dates:f(s0)+"/"+f(e0),details:(p.note||"")+(p.url?"\n"+p.url:""),location:p.area||""});}
+function oneOffs(fromMs,toMs){const RALL=recurringKeys();
+ return EVENTS.filter(e=>e.kind!=="impact"&&!e.rangeStart&&e.start&&!isRecurring(e,RALL)).map(e=>withMin(Object.assign({},e,{isEvent:true,oneOff:true})))
+  .filter(p=>{const [s0,e0]=evInterval(p);return s0.getTime()<toMs&&e0.getTime()>fromMs&&e0.getTime()>Date.now()+15*60e3&&s0.getHours()<20&&p.min<=S.drive&&!(S.free&&!p.free);})
+  .sort((a,b)=>new Date(a.start)-new Date(b.start));}
+function renderSpecials(){
+ const el=document.getElementById("specials");if(!el)return;
+ const d=curDate(),a=dt(d,0).getTime(),list=oneOffs(a,a+864e5);
+ if(!list.length){el.innerHTML="";return;}
+ const isToday=d===todayStr();const dayName=isToday?"today":"on "+dt(d,12).toLocaleDateString("en-US",{weekday:"long"});
+ const c=cond();
+ el.innerHTML=`<h2>One day only ${dayName}</h2><div class="strip">`+list.map(p=>{const e=evalPlace(p,c);const [s0,e0]=evInterval(p);
+  return `<button class="scard" data-id="${esc(p.id)}"><div class="evtime">${esc(fmtT(s0)+(p.end?"–"+fmtT(e0):" start"))}</div><div class="name">${esc(p.name)}</div><div class="meta">${esc(p.area)}, about ${p.min} min${p.free?", free":""}</div><div style="margin-top:6px"><span class="tag t-${e.tier}">${e.label}</span></div></button>`;}).join("")+`</div>`;
+ el.querySelectorAll(".scard").forEach(b=>b.addEventListener("click",()=>{S.tod="all";if(S.kind!=="both")S.kind="both";S.evonly=false;S.sel=b.dataset.id;save();render();
+  const c2=document.getElementById("c-"+b.dataset.id);if(c2)c2.scrollIntoView({block:"center",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});}));
+}
+function renderUpcoming(){
+ const el=document.getElementById("upcoming");if(!el)return;
+ const t0=dt(todayStr(),0).getTime()+864e5,list=oneOffs(t0,t0+7*864e5);
+ if(!list.length){el.innerHTML="";return;}
+ let html=`<h2>Coming up this week</h2><p class="calmsg" style="margin:0 0 4px">One-off events in the next seven days, within your drive time.</p>`,last="";
+ list.forEach(p=>{const [s0,e0]=evInterval(p);const day=s0.toLocaleDateString("en-US",{weekday:"long",month:"short",day:"numeric"});
+  if(day!==last){html+=`<div class="upday">${esc(day)}</div>`;last=day;}
+  html+=`<details class="uprow"><summary><span class="evtime">${esc(fmtT(s0))}</span> <b>${esc(p.name)}</b><div class="meta">${esc(p.area)}, about ${p.min} min${p.free?", free":""}</div></summary><p>${esc(p.note||"")}</p><a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}</details>`;});
+ el.innerHTML=html;
 }
 function renderCal(){
  const el=document.getElementById("calbody");if(!el)return;
@@ -317,8 +370,8 @@ function render(){
  renderCal();drawRings();
  const rows=items();
  let pins="";
- rows.forEach(({p,e,v})=>{const {x,y}=pos(p);const col=VAR[e.tier];const r=S.sel===p.id?9:7;const st=`style="fill:${v?col:"none"};stroke:${v?"var(--stroke)":col}" stroke-width="${v?2:1.5}" opacity="${v?1:.35}"`;
-  let shape;if(p.isEvent)shape=`<rect x="${x-r*.85}" y="${y-r*.85}" width="${r*1.7}" height="${r*1.7}" transform="rotate(45 ${x} ${y})" ${st}/><circle cx="${x}" cy="${y}" r="2" style="fill:var(--panel)" opacity="${v?1:0}"/>`;
+ rows.forEach(({p,e,v})=>{const {x,y}=pos(p);const col=VAR[e.tier];const r=S.sel===p.id?9:(p.isEvent&&!p.oneOff?5:7);const st=`style="fill:${v?col:"none"};stroke:${v?"var(--stroke)":col}" stroke-width="${v?2:1.5}" opacity="${v?1:.35}"`;
+  let shape;if(p.isEvent&&p.oneOff)shape=`<path d="${star(x,y,r*1.5)}" ${st} stroke-linejoin="round"/>`;else if(p.isEvent)shape=`<rect x="${x-r*.85}" y="${y-r*.85}" width="${r*1.7}" height="${r*1.7}" transform="rotate(45 ${x} ${y})" ${st}/><circle cx="${x}" cy="${y}" r="2" style="fill:var(--panel)" opacity="${v?1:0}"/>`;
   else if(p.indoor)shape=`<rect x="${x-r}" y="${y-r}" width="${2*r}" height="${2*r}" rx="3" ${st}/>`;else shape=`<circle cx="${x}" cy="${y}" r="${r}" ${st}/>`;
   pins+=`<g class="pin" tabindex="${v?0:-1}" role="button" aria-label="${esc(p.name)}, ${p.min} minutes, ${e.label}" data-id="${esc(p.id)}">${shape}</g>`;});
  document.getElementById("pins").innerHTML=pins;
@@ -341,15 +394,17 @@ function render(){
  if(hiddenEv){hintEl.innerHTML=`<span class="calmsg">${hiddenEv} ${S.kind==="outdoor"?"indoor":"outdoor"} ${hiddenEv===1?"event is":"events are"} hidden by the ${S.kind==="outdoor"?"Outdoor":"Indoor"} filter.</span> <button class="toggle" id="showall" style="min-height:32px;padding:4px 10px">Show both</button>`;document.getElementById("showall").onclick=()=>{S.kind="both";save();render();};}else hintEl.innerHTML="";
  if(RECN)hintEl.insertAdjacentHTML("beforeend",`<div class="calmsg">${RECN} recurring ${RECN===1?"program is":"programs are"} hidden, like daily museum shows and weekly storytimes.</div>`);
  if(SOON)hintEl.insertAdjacentHTML("beforeend",`<div class="calmsg">${SOON} ${SOON===1?"event that has ended or ends":"events that have ended or end"} within 30 minutes ${SOON===1?"is":"are"} hidden.</div>`);
+ renderSpecials();renderUpcoming();
  const list=document.getElementById("list");
  if(!vis.length){list.innerHTML=`<p class="empty">${S.evonly?"No events in this window. Try the other time of day or another day.":"Nothing fits these filters. Try a longer drive or turn off Free only."}</p>`;}
  else list.innerHTML=vis.map(({p,e,flags,when})=>{
   const url=`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(HOME.q||(HOME.lat+","+HOME.lng))}&destination=${p.lat},${p.lng}`;
   return `<div class="card${e.tier==="skip"?" dim":""}" id="c-${esc(p.id)}" role="button" tabindex="0" aria-expanded="${S.sel===p.id}" data-id="${esc(p.id)}">
-   <div class="top"><div>${when?`<div class="evtime">${esc(when)}</div>`:""}<div class="name">${esc(p.name)}</div><div class="meta">${esc(p.area)}, about ${p.min} min${p.free?", free":""}</div>${flags.map(f=>`<div class="flag">${esc(f)}</div>`).join("")}</div><span class="tag t-${e.tier}">${e.label}</span></div>
-   <div class="more"><p style="margin:0 0 6px">${esc(e.why)} ${esc(p.note)}</p><a href="${url}" target="_blank" rel="noopener">Get directions</a>${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}</div></div>`;}).join("");
+   <div class="top"><div>${when?`<div class="evtime">${esc(when)}</div>`:""}<div class="name">${esc(p.name)}${p.oneOff?`<span class="badge">One day only</span>`:""}</div><div class="meta">${esc(p.area)}, about ${p.min} min${p.free?", free":""}</div>${flags.map(f=>`<div class="flag">${esc(f)}</div>`).join("")}</div><span class="tag t-${e.tier}">${e.label}</span></div>
+   <div class="more"><p style="margin:0 0 6px">${esc(e.why)} ${esc(p.note)}</p><a href="${url}" target="_blank" rel="noopener">Get directions</a>${p.isEvent&&p.start&&!p.rangeStart&&!p.multi?` · <a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>`:""}${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}</div></div>`;}).join("");
  list.querySelectorAll(".card").forEach(cd=>{const go=()=>{S.sel=S.sel===cd.dataset.id?null:cd.dataset.id;render();};
   cd.addEventListener("click",ev=>{if(ev.target.closest("a"))return;go();});cd.addEventListener("keydown",ev=>{if(ev.target.closest("a"))return;if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});});
+ const icsEl=document.getElementById("icsfoot");if(icsEl&&!icsEl.dataset.done){const u=new URL("specials.ics",location.href).href;icsEl.innerHTML=`Get one-off events in your calendar: in Google Calendar, choose Other calendars, then From URL, and paste <a href="${esc(u)}">${esc(u)}</a>. On an iPhone, open the link and tap Subscribe.`;icsEl.dataset.done="1";}
  const f=document.getElementById("evfoot");
  if(dbState==="none")f.textContent="Couldn't load events.json.";
  else if(dbState==="loading")f.textContent="Loading events…";

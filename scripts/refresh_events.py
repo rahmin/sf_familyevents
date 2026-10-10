@@ -472,6 +472,66 @@ def curate(events: list[dict]) -> list[dict]:
     return kept
 
 
+# ---------------------------------------------------------------- one-off calendar feed
+SPECIALS = ROOT / "specials.ics"
+
+
+def event_key(e):
+    return (" ".join((e.get("name") or "").lower().split()), (e.get("area") or "").lower())
+
+
+def one_offs(events):
+    """Events that happen once: not flagged recurring, not on more than one day, not a regular storytime."""
+    days = {}
+    for e in events:
+        if e.get("kind") == "impact" or not e.get("start"):
+            continue
+        days.setdefault(event_key(e), set()).add(e["start"][:10])
+    out = []
+    for e in events:
+        if e.get("kind") == "impact" or not e.get("start") or e.get("rangeStart") or e.get("recurring"):
+            continue
+        if len(days.get(event_key(e), ())) > 1 or re.match(r"(storytime (for|in)\b|(toddler|baby|babies|family|preschool) storytime\b)", (e.get("name") or "").lower()):
+            continue
+        out.append(e)
+    return out
+
+
+def ics_escape(t: str) -> str:
+    return (t or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
+
+
+def ics_fold(line: str) -> str:
+    out, b = [], line.encode()
+    while len(b) > 74:
+        cut = 74
+        while (b[cut] & 0xC0) == 0x80:  # don't split a UTF-8 character
+            cut -= 1
+        out.append(b[:cut].decode())
+        b = b" " + b[cut:]
+    out.append(b.decode())
+    return "\r\n".join(out)
+
+
+def write_specials_ics(events):
+    utc = ZoneInfo("UTC")
+    stamp = datetime.now(utc).strftime("%Y%m%dT%H%M%SZ")
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//sf_familyevents//one-off family events//EN",
+             "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Family events: one day only",
+             "X-WR-TIMEZONE:America/Los_Angeles", "REFRESH-INTERVAL;VALUE=DURATION:PT12H"]
+    for e in one_offs(events):
+        s = datetime.fromisoformat(e["start"])
+        en = datetime.fromisoformat(e["end"]) if e.get("end") else s + timedelta(hours=2)
+        desc = (e.get("note") or "") + (("\n" + e["url"]) if e.get("url") else "")
+        lines += ["BEGIN:VEVENT", f"UID:{e['id']}@sf_familyevents", f"DTSTAMP:{stamp}",
+                  f"DTSTART:{s.astimezone(utc):%Y%m%dT%H%M%SZ}", f"DTEND:{en.astimezone(utc):%Y%m%dT%H%M%SZ}",
+                  "SUMMARY:" + ics_escape(e.get("name")), "LOCATION:" + ics_escape(e.get("area")),
+                  "DESCRIPTION:" + ics_escape(desc)] + ([f"URL:{e['url']}"] if e.get("url") else []) + ["END:VEVENT"]
+    lines.append("END:VCALENDAR")
+    SPECIALS.write_text("\r\n".join(ics_fold(l) for l in lines) + "\r\n")
+    log(f"Wrote {sum(1 for l in lines if l == 'BEGIN:VEVENT')} one-off events to {SPECIALS.name}")
+
+
 # ---------------------------------------------------------------- main
 def main():
     global _geocache
@@ -513,6 +573,7 @@ def main():
         "events": events,
     }
     OUT.write_text(json.dumps(payload, indent=1, ensure_ascii=False) + "\n")
+    write_specials_ics(events)
     GEOCACHE.write_text(json.dumps(_geocache, indent=1, ensure_ascii=False) + "\n")
     log(f"Wrote {len(events)} events to {OUT.name}")
 

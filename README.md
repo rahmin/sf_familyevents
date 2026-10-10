@@ -9,6 +9,7 @@ A one-page guide to family outings within a 30-minute drive of any Bay Area star
 | `index.html` | The whole site: one self-contained page. |
 | `events.json` | This week's events. Rebuilt automatically twice a week. |
 | `data/manual.json` | Events you add by hand. Kept until they end. |
+| `specials.ics` | A calendar feed of one-off events, rebuilt with each refresh. |
 | `data/geocache.json` | Saved address lookups, so the refresh doesn't repeat them. |
 | `scripts/refresh_events.py` | The script that rebuilds `events.json`. |
 | `.github/workflows/refresh-and-deploy.yml` | Runs the refresh on a schedule and publishes the site. |
@@ -30,7 +31,8 @@ Every Thursday and Saturday at 7 am Pacific, the workflow:
 - reads **SF Children & Nature**'s events feed for its "for tots" events;
 - with an API key, reads **Funcheap**'s kids and families listings and has Claude filter them;
 - adds anything in `data/manual.json` that hasn't ended yet;
-- commits the new `events.json` and republishes the site.
+- writes `specials.ics`, a calendar feed of one-off events you can subscribe to;
+- commits the new files and republishes the site.
 
 You can also run it any time from the Actions tab, or locally with `pip install requests` then `python scripts/refresh_events.py`.
 
