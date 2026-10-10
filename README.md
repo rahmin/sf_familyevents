@@ -29,6 +29,8 @@ Every Thursday and Saturday at 7 am Pacific, the workflow:
 - reads **SF Public Library** program pages and keeps those for babies, toddlers, preschoolers and families, skipping days the library has announced it's closed;
 - reads **Cal Academy**'s daily calendar for penguin feedings, reef dives, the puppet show, storytime and the stingray program, skipping members-only Sunday mornings;
 - reads **SF Children & Nature**'s events feed for its "for tots" events;
+- adds the **Mission Science Workshop**'s free drop-in days from the schedule on its Programs page: first Saturday in Bayview, second Saturday in the Mission, third Saturday and Tuesday afternoons in the Excelsior, during the school year;
+- reads **Mission Local**'s neighborhood events calendar, keeping family events;
 - with an API key, reads **Funcheap**'s kids and families listings and has Claude filter them;
 - adds anything in `data/manual.json` that hasn't ended yet;
 - writes `specials.ics`, a calendar feed of one-off events you can subscribe to;

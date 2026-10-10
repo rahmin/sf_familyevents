@@ -466,8 +466,8 @@
    "source": "manual",
    "kind": "event",
    "name": "Mission Science Workshop free open house",
-   "area": "Mission Science Workshop, Church St near 18th",
-   "lat": 37.7612,
+   "area": "Mission Science Workshop, 3750 18th St (Church St between 17th and 18th)",
+   "lat": 37.7616,
    "lng": -122.4283,
    "indoor": true,
    "exp": 0,
@@ -475,7 +475,8 @@
    "free": true,
    "start": "2026-10-10T10:00:00-07:00",
    "end": "2026-10-10T15:00:00-07:00",
-   "note": "Halloween basket making and geode breaking today, plus the usual hands-on science and live animals. Shared by a neighbor, so confirm hours with the workshop."
+   "note": "The workshop's free monthly Saturday open house, with Halloween basket making and geode breaking today plus the usual hands-on science and live animals. Today's details came from a neighbor, so check the workshop's page or call (415) 621-1240 to confirm.",
+   "url": "https://www.missionscienceworkshop.org/visit"
   }
  ]
 }

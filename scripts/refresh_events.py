@@ -285,6 +285,49 @@ def scrape_calacademy(start: date, end: date) -> list[dict]:
     return out
 
 
+# ---------------------------------------------------------------- Mission Science Workshop
+# Its site has no event calendar, but its Programs page lists a fixed school-year schedule
+# (checked Oct 10, 2026): https://www.missionscienceworkshop.org/programs
+MSW_URL = "https://www.missionscienceworkshop.org/programs"
+MSW_SITES = {
+    "mission": ("Mission Science Workshop, 3750 18th St (Church St between 17th and 18th)", 37.7616, -122.4283),
+    "excelsior": ("Mission Science Workshop Excelsior, 4458 Mission St", 37.7253, -122.4344),
+    "bayview": ("Mission Science Workshop Bayview, 50 Pomona St (inside Charles Drew Elementary)", 37.7336, -122.3921),
+}
+MSW_NOTE = ("Free drop-in hands-on science: build and tinker, explore bones, fossils and rocks, and meet the "
+            "workshop's animals. Runs during the school year, so check the workshop's site around holidays.")
+
+
+def in_school_year(d: date) -> bool:
+    # Roughly mid-August to early June; the workshop doesn't publish exact break dates.
+    return not (date(d.year, 6, 6) <= d <= date(d.year, 8, 14))
+
+
+def msw_events(start: date, end: date) -> list[dict]:
+    log("Mission Science Workshop (published schedule)")
+    out = []
+    d = start
+    while d <= end:
+        if in_school_year(d):
+            nth = (d.day - 1) // 7 + 1
+            slot = None
+            if d.weekday() == 5 and nth in (1, 2, 3):
+                site = {1: "bayview", 2: "mission", 3: "excelsior"}[nth]
+                slot = (site, "10:00", "15:00", f"Mission Science Workshop free Saturday open house", False)
+            elif d.weekday() == 1:
+                slot = ("excelsior", "15:00", "17:30", "Mission Science Workshop after-school drop-in", True)
+            if slot:
+                site, a, b, name, recurring = slot
+                area, lat, lng = MSW_SITES[site]
+                out.append(dict(id=f"msw-{site}-{d.isoformat()}", kind="event", source="Mission Science Workshop",
+                                name=name, area=area, lat=lat, lng=lng, indoor=True, exp=0, off=0, free=True,
+                                start=local_iso(d, a), end=local_iso(d, b), note=MSW_NOTE, url=MSW_URL,
+                                recurring=recurring))
+        d += timedelta(days=1)
+    log(f"  {len(out)} events")
+    return out
+
+
 # ---------------------------------------------------------------- "The Events Calendar" sites
 # Many WordPress sites (SF Children & Nature, Mission Local) use the same calendar plugin,
 # which exposes a JSON feed at /wp-json/tribe/events/v1/events.
@@ -540,7 +583,7 @@ def main():
     today = datetime.now(TZ).date()
     end = today + timedelta(days=DAYS_AHEAD)
 
-    trusted = scrape_sfpl(today, end) + scrape_calacademy(today, end)
+    trusted = scrape_sfpl(today, end) + scrape_calacademy(today, end) + msw_events(today, end)
     loose = scrape_children_nature(today, end)
     ml = scrape_mission_local(today, end)
     fc = scrape_funcheap(today, end)
@@ -569,7 +612,7 @@ def main():
     payload = {
         "generated": datetime.now(TZ).isoformat(timespec="minutes"),
         "coverage": f"{today:%b %-d}–{end:%b %-d}",
-        "sources": ["SF Public Library", "California Academy of Sciences", "SF Children & Nature", "Mission Local", "Funcheap", "manual"],
+        "sources": ["SF Public Library", "California Academy of Sciences", "Mission Science Workshop", "SF Children & Nature", "Mission Local", "Funcheap", "manual"],
         "events": events,
     }
     OUT.write_text(json.dumps(payload, indent=1, ensure_ascii=False) + "\n")

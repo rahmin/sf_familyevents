@@ -8,7 +8,7 @@ X-WR-TIMEZONE:America/Los_Angeles
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 BEGIN:VEVENT
 UID:fleet-fest-wharf@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T160000Z
 DTEND:20261011T000000Z
 SUMMARY:Fleet Fest at Fisherman's Wharf
@@ -21,7 +21,7 @@ URL:https://sf.funcheap.com/fleet-fest-2026-navy-bands-food-trucks-fisherm
 END:VEVENT
 BEGIN:VEVENT
 UID:scn-6441-2026-10-10@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T170000Z
 DTEND:20261010T190000Z
 SUMMARY:Celebrate the New OMI Nature Exploration Area!
@@ -36,7 +36,7 @@ URL:https://sfchildrennature.org/event/celebrate-the-new-omi-nature-explor
 END:VEVENT
 BEGIN:VEVENT
 UID:berkeley-ipd-powwow@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T170000Z
 DTEND:20261010T200000Z
 SUMMARY:Indigenous Peoples Day Powwow and Indian Market
@@ -48,7 +48,7 @@ URL:https://www.510families.com/calendar/indigenous-peoples-day/
 END:VEVENT
 BEGIN:VEVENT
 UID:k9-heroes-duboce@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T170000Z
 DTEND:20261010T180000Z
 SUMMARY:K9 Heroes demonstration (Fleet Week)
@@ -61,18 +61,22 @@ URL:https://sf.funcheap.com/sfs-fleet-fest-2026-navy-band-sw-brass-band-fl
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-open-house-oct10@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T170000Z
 DTEND:20261010T220000Z
 SUMMARY:Mission Science Workshop free open house
-LOCATION:Mission Science Workshop\, Church St near 18th
-DESCRIPTION:Halloween basket making and geode breaking today\, plus the us
- ual hands-on science and live animals. Shared by a neighbor\, so confirm 
- hours with the workshop.
+LOCATION:Mission Science Workshop\, 3750 18th St (Church St between 17th a
+ nd 18th)
+DESCRIPTION:The workshop's free monthly Saturday open house\, with Hallowe
+ en basket making and geode breaking today plus the usual hands-on science
+  and live animals. Today's details came from a neighbor\, so check the wo
+ rkshop's page or call (415) 621-1240 to confirm.\nhttps://www.missionscie
+ nceworkshop.org/visit
+URL:https://www.missionscienceworkshop.org/visit
 END:VEVENT
 BEGIN:VEVENT
 UID:opl-banned-books-storytime@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T173000Z
 DTEND:20261010T183000Z
 SUMMARY:Banned Books Week Family Storytime
@@ -85,7 +89,7 @@ URL:https://oaklandlibrary.bibliocommons.com/events/6a9aec1281e9d60947cd9f
 END:VEVENT
 BEGIN:VEVENT
 UID:chabot-spiders@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T173000Z
 DTEND:20261010T193000Z
 SUMMARY:Family Nature Adventures: Spidey Spectacular
@@ -97,7 +101,7 @@ URL:https://chabotspace.org/calendar/family-nature-adventures-spiders/
 END:VEVENT
 BEGIN:VEVENT
 UID:fleet-fest-india-basin@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T180000Z
 DTEND:20261010T220000Z
 SUMMARY:Fleet Week Family Day at India Basin
@@ -111,7 +115,7 @@ URL:https://sf.funcheap.com/2026-fleet-week-family-day-waterfront-concert-
 END:VEVENT
 BEGIN:VEVENT
 UID:treasure-island-otg@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T180000Z
 DTEND:20261010T230000Z
 SUMMARY:Off the Grid on Treasure Island
@@ -124,7 +128,7 @@ URL:https://www.510families.com/calendar/off-the-grid-on-treasure-island-2
 END:VEVENT
 BEGIN:VEVENT
 UID:union-square-garba@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T180000Z
 DTEND:20261010T210000Z
 SUMMARY:Second Saturdays: Bollywood Garba
@@ -137,7 +141,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-10-film-sesame-street-and-great-elephant-adventure@sf_fam
  ilyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T180000Z
 DTEND:20261010T191500Z
 SUMMARY:Sesame Street and the Great Elephant Adventure
@@ -150,7 +154,7 @@ URL:https://sfpl.org/events/2026/10/10/film-sesame-street-and-great-elepha
 END:VEVENT
 BEGIN:VEVENT
 UID:alameda-big-truck@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T200000Z
 DTEND:20261010T220000Z
 SUMMARY:Big Truck Bonanza
@@ -163,7 +167,7 @@ URL:https://alamedafree.events.mylibrary.digital/event?id=396660
 END:VEVENT
 BEGIN:VEVENT
 UID:ybg-follow-the-music@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T200000Z
 DTEND:20261010T230000Z
 SUMMARY:Oakland Rising: Follow the Music (live)
@@ -176,7 +180,7 @@ URL:https://sf.funcheap.com/weekend-sessions-w-follow-the-music-yerba-buen
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-10-performance-aguacate-music-kids@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261010T220000Z
 DTEND:20261010T224500Z
 SUMMARY:Aguacate Music Kids
@@ -187,7 +191,7 @@ URL:https://sfpl.org/events/2026/10/10/performance-aguacate-music-kids
 END:VEVENT
 BEGIN:VEVENT
 UID:shotwell-lantern-parade@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261011T020000Z
 DTEND:20261011T040000Z
 SUMMARY:Shotwell Community Lantern Parade
@@ -201,7 +205,7 @@ URL:https://missionlocal.org/event/storefrontlab-shotwell-community-lanter
 END:VEVENT
 BEGIN:VEVENT
 UID:childrens-business-fair@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261011T160000Z
 DTEND:20261011T190000Z
 SUMMARY:Children's Business Fair
@@ -214,7 +218,7 @@ URL:https://sf.funcheap.com/sfs-1st-childrens-business-fair-40-kid-entrepr
 END:VEVENT
 BEGIN:VEVENT
 UID:dads-strollers@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261011T170000Z
 DTEND:20261011T190000Z
 SUMMARY:Dads with Strollers meetup
@@ -226,7 +230,7 @@ URL:https://sf.funcheap.com/dads-strollers-meetup-sfs-francisco-park/
 END:VEVENT
 BEGIN:VEVENT
 UID:model-boats@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261011T170000Z
 DTEND:20261011T210000Z
 SUMMARY:Model Boats on Parade
@@ -239,7 +243,7 @@ URL:https://sf.funcheap.com/free-model-boats-parade-sailboat-race-golden-g
 END:VEVENT
 BEGIN:VEVENT
 UID:ybg-dance-day@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261011T170000Z
 DTEND:20261011T230000Z
 SUMMARY:YBG Dance Day
@@ -252,7 +256,7 @@ URL:https://sf.funcheap.com/ybg-dance-day-yerba-buena-gardens-festival-202
 END:VEVENT
 BEGIN:VEVENT
 UID:jls-farmers-market@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261011T180000Z
 DTEND:20261011T230000Z
 SUMMARY:Jack London Square Farmers Market
@@ -264,7 +268,7 @@ URL:https://www.510families.com/calendar/jack-london-square-farmers-market
 END:VEVENT
 BEGIN:VEVENT
 UID:italian-heritage-parade@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261011T193000Z
 DTEND:20261011T213000Z
 SUMMARY:Italian Heritage Festival and Parade
@@ -277,7 +281,7 @@ URL:https://sf.funcheap.com/san-francisco-italian-heritage-parade-festival
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-11-social-therapy-dog-library@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261011T203000Z
 DTEND:20261011T213000Z
 SUMMARY:Therapy Dog in the Library
@@ -289,7 +293,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-11-workshop-rangoli-art-shanta-nimbark-sacharoff@sf_famil
  yevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261011T210000Z
 DTEND:20261011T223000Z
 SUMMARY:Rangoli Art with Shanta Nimbark Sacharoff
@@ -302,7 +306,7 @@ URL:https://sfpl.org/events/2026/10/11/workshop-rangoli-art-shanta-nimbark
 END:VEVENT
 BEGIN:VEVENT
 UID:scn-10005156-2026-10-13@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261013T163000Z
 DTEND:20261013T190000Z
 SUMMARY:Swing into Stories @ Koret Playground (Golden Gate Park)
@@ -317,7 +321,7 @@ URL:https://sfchildrennature.org/event/swing-into-stories-koret-playground
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-13-storytime-swing-stories@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261013T173000Z
 DTEND:20261013T180000Z
 SUMMARY:Storytime: Swing Into Stories
@@ -328,7 +332,7 @@ URL:https://sfpl.org/events/2026/10/13/storytime-swing-stories
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-13-activity-dog-reading-circle@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261013T230000Z
 DTEND:20261014T000000Z
 SUMMARY:Dog Reading Circle
@@ -340,7 +344,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-13-social-family-board-game-and-lego-night@sf_familyevent
  s
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261014T010000Z
 DTEND:20261014T023000Z
 SUMMARY:Family Board Game and LEGO Night
@@ -353,7 +357,7 @@ URL:https://sfpl.org/events/2026/10/13/social-family-board-game-and-lego-n
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-14-activity-halloween-costume-swap@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261015T010000Z
 DTEND:20261015T030000Z
 SUMMARY:Halloween Costume Swap
@@ -364,7 +368,7 @@ URL:https://sfpl.org/events/2026/10/14/activity-halloween-costume-swap
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-14-storytime-pajama-storytime@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261015T020000Z
 DTEND:20261015T023000Z
 SUMMARY:Storytime: Pajama Storytime
@@ -375,7 +379,7 @@ URL:https://sfpl.org/events/2026/10/14/storytime-pajama-storytime
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-15-performance-aguacate-music-kids@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261015T180000Z
 DTEND:20261015T184500Z
 SUMMARY:Aguacate Music Kids
@@ -387,7 +391,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-15-performance-guitar-sing-along-grandpa-alan@sf_familyev
  ents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261015T223000Z
 DTEND:20261015T230000Z
 SUMMARY:Guitar Sing-Along with Grandpa Alan
@@ -400,7 +404,7 @@ URL:https://sfpl.org/events/2026/10/15/performance-guitar-sing-along-grand
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-15-activity-halloween-costume-swap@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261015T230000Z
 DTEND:20261016T003000Z
 SUMMARY:Halloween Costume Swap
@@ -410,8 +414,21 @@ DESCRIPTION:Free library program for young children and their grown-ups.\n
 URL:https://sfpl.org/events/2026/10/15/activity-halloween-costume-swap
 END:VEVENT
 BEGIN:VEVENT
+UID:msw-excelsior-2026-10-17@sf_familyevents
+DTSTAMP:20261010T205707Z
+DTSTART:20261017T170000Z
+DTEND:20261017T220000Z
+SUMMARY:Mission Science Workshop free Saturday open house
+LOCATION:Mission Science Workshop Excelsior\, 4458 Mission St
+DESCRIPTION:Free drop-in hands-on science: build and tinker\, explore bone
+ s\, fossils and rocks\, and meet the workshop's animals. Runs during the 
+ school year\, so check the workshop's site around holidays.\nhttps://www.
+ missionscienceworkshop.org/programs
+URL:https://www.missionscienceworkshop.org/programs
+END:VEVENT
+BEGIN:VEVENT
 UID:scn-6472-2026-10-17@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261017T180000Z
 DTEND:20261017T230000Z
 SUMMARY:Bay Area Science Festival
@@ -425,7 +442,7 @@ URL:https://sfchildrennature.org/event/bay-area-science-festival/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-celebration-open-house@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261017T180000Z
 DTEND:20261017T230000Z
 SUMMARY:Open House
@@ -436,7 +453,7 @@ URL:https://sfpl.org/events/2026/10/17/celebration-open-house
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-activity-turkish-story-hour@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261017T210000Z
 DTEND:20261017T223000Z
 SUMMARY:Turkish Story Hour
@@ -448,7 +465,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-early-learning-big-san-francisco-play-date@sf_familyev
  ents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261017T220000Z
 DTEND:20261018T000000Z
 SUMMARY:Big San Francisco Play Date
@@ -461,7 +478,7 @@ URL:https://sfpl.org/events/2026/10/17/early-learning-big-san-francisco-pl
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-social-halloween-costume-swap@sf_familyevents
-DTSTAMP:20261010T202346Z
+DTSTAMP:20261010T205707Z
 DTSTART:20261017T220000Z
 DTEND:20261017T230000Z
 SUMMARY:Halloween Costume Swap

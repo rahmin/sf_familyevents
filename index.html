@@ -124,7 +124,8 @@ h1{font-weight:700;letter-spacing:-0.01em;font-size:clamp(30px,7.5vw,48px)}
 h2{font-weight:600}
 .banner{border:2px solid var(--stroke);box-shadow:3px 3px 0 var(--stroke)}
 .daybar{border:2px solid var(--stroke)}
-.specials{margin:0 0 16px}
+.grid>div{min-width:0}
+.specials{margin:0 0 16px;min-width:0}
 .specials h2{margin:0 0 8px}
 .strip{display:flex;gap:10px;overflow-x:auto;padding:2px 6px 10px 2px;scroll-snap-type:x mandatory}
 .scard{flex:0 0 min(80%,270px);scroll-snap-align:start;text-align:left;font:inherit;color:inherit;cursor:pointer;background:color-mix(in srgb,var(--sun) 22%,var(--panel));border:2px solid var(--stroke);border-radius:18px;box-shadow:3px 3px 0 var(--stroke);padding:10px 12px}
@@ -138,6 +139,19 @@ h2{font-weight:600}
 .uprow p{margin:6px 0 4px;font-size:15px}
 .uprow a,.scard a{color:var(--indoor);font-weight:700}
 .legend i.star{border:0;width:auto;height:auto;font-style:normal;color:var(--ink);background:none;font-size:15px;line-height:1}
+.dd{position:relative}
+.ddbtn{font-family:"Fredoka",system-ui,sans-serif;font-weight:600;font-size:16px;display:inline-flex;align-items:center;gap:8px;border:2px solid var(--stroke);border-radius:999px;background:var(--sun);color:var(--sun-ink);padding:7px 16px;min-height:42px;cursor:pointer;box-shadow:2px 2px 0 var(--stroke)}
+.ddbtn[aria-expanded="true"] svg{transform:rotate(180deg)}
+.ddmenu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:260px;background:var(--panel);border:2px solid var(--stroke);border-radius:20px;box-shadow:4px 4px 0 var(--stroke);padding:6px}
+.ddmenu[hidden]{display:none}
+.ddmenu button{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;font:inherit;font-size:17px;background:transparent;color:var(--ink);border:0;border-radius:14px;padding:11px 14px;cursor:pointer;text-align:left}
+.ddmenu button:hover,.ddmenu button:focus-visible{background:color-mix(in srgb,var(--sun) 28%,transparent);outline:none}
+.ddmenu button[aria-selected="true"]{font-weight:700}
+.ddmenu button[aria-selected="true"] .sub::after{content:" ✓";color:var(--ink);font-weight:700}
+.ddmenu .sub{color:var(--ink-2);font-size:13px;white-space:nowrap}
+#pickDate{font:inherit;font-size:15px;padding:7px 12px;border:2px solid var(--stroke);border-radius:999px;background:var(--panel);color:var(--ink);min-height:42px}
+#pickDate[hidden],#todRow[hidden]{display:none}
+.custom .slider[hidden]{display:none}
 </style>
 </head>
 <body>
@@ -154,17 +168,25 @@ h2{font-weight:600}
           <button class="toggle" id="oset">Set</button>
           <button class="toggle" id="ogeo">Use my location</button></div>
         <p class="calmsg" id="ostat" aria-live="polite" style="margin:0 0 12px"></p>
-        <div class="row"><span class="lbl">Day</span>
-          <div class="seg" id="day" role="group" aria-label="Day"><button data-v="d0">Today</button><button data-v="d1">Tomorrow</button><button data-v="d2" id="d2btn">Day 3</button><button data-v="custom">Custom</button></div></div>
-        <div class="row"><span class="lbl">Time</span>
+        <div class="row"><span class="lbl">When</span>
+          <div class="dd" id="whenDD"><button class="ddbtn" id="whenBtn" aria-haspopup="listbox" aria-expanded="false" aria-controls="whenMenu"><span id="whenLbl">Today</span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="ddmenu" id="whenMenu" role="listbox" aria-label="When" hidden>
+              <button role="option" data-v="now"><span>Right now</span><span class="sub"></span></button>
+              <button role="option" data-v="today"><span>Today</span><span class="sub"></span></button>
+              <button role="option" data-v="tomorrow"><span>Tomorrow</span><span class="sub"></span></button>
+              <button role="option" data-v="few"><span>Next few days</span><span class="sub"></span></button>
+              <button role="option" data-v="weekend"><span>This weekend</span><span class="sub"></span></button>
+              <button role="option" data-v="pick"><span>Pick a date…</span><span class="sub"></span></button>
+            </div></div>
+          <input type="date" id="pickDate" aria-label="Date" hidden></div>
+        <div class="row" id="todRow"><span class="lbl">Time</span>
           <div class="seg" id="tod" role="group" aria-label="Time of day"><button data-v="am">Morning</button><button data-v="pm">Afternoon</button><button data-v="eve">Evening</button><button data-v="all">All day</button></div></div>
         <p class="wx" id="wx" aria-live="polite"></p>
         <p class="wxnote" id="wxnote"></p>
         <div class="custom" id="custom">
-          <label>Date <input type="date" id="cd"><span></span></label>
-          <label>High in SF <input type="range" id="ct" min="45" max="95" step="1" value="62"><output id="cto"></output></label>
-          <label>Wind gusts <input type="range" id="cg" min="0" max="50" step="1" value="15"><output id="cgo"></output></label>
-          <label>Rain chance <input type="range" id="cr" min="0" max="100" step="5" value="0"><output id="cro"></output></label>
+                    <label class="slider">High in SF <input type="range" id="ct" min="45" max="95" step="1" value="62"><output id="cto"></output></label>
+          <label class="slider">Wind gusts <input type="range" id="cg" min="0" max="50" step="1" value="15"><output id="cgo"></output></label>
+          <label class="slider">Rain chance <input type="range" id="cr" min="0" max="100" step="5" value="0"><output id="cro"></output></label>
         </div>
         <div class="row"><span class="lbl">Show</span>
           <div class="seg" id="kind" role="group" aria-label="Indoor or outdoor"><button data-v="outdoor">Outdoor</button><button data-v="indoor">Indoor</button><button data-v="both">Both</button></div>
@@ -239,22 +261,45 @@ const PLACES=[
  {id:"bad",name:"Bay Area Discovery Museum",area:"Sausalito",lat:37.835,lng:-122.479,min:25,indoor:false,exp:.6,off:-1,free:false,note:"Mostly outdoor play spaces for under-5s, just across the Golden Gate Bridge."}
 ];
 let DAYS=null,WXERR="";
+function wxFor(ds){return DAYS?DAYS[ds]:null;}
+function wxSource(){return "Live National Weather Service forecast for downtown San Francisco";}
+function wxMissing(){return DAYS?"The live forecast doesn't reach this far yet, so typical October conditions are shown.":(WXERR||"Loading the live forecast…");}
 const FALLBACK={t:62,g:15,r:0};
 function dateOffset(n){const d=new Date();d.setDate(d.getDate()+n);return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
 const WIN={am:[8,12],pm:[12,17],eve:[17,20],all:[8,20]};
 const TODLABEL={am:"morning",pm:"afternoon",eve:"evening",all:"day"};
 function todayStr(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
-let S={day:"d0",tod:"am",kind:"outdoor",drive:30,free:false,evonly:false,hideSoon:true,hideRec:false,sel:null,custom:{t:62,g:15,r:0,date:todayStr()}};
+let S={when:"today",pick:"",tod:"am",kind:"outdoor",drive:30,free:false,evonly:false,hideSoon:true,hideRec:false,sel:null,custom:{t:62,g:15,r:0,date:todayStr()}};
 let EVENTS=[],META=null,dbState="loading";
 let CAL={on:false,status:"off",byDate:{},msg:""};
-try{const s=JSON.parse(localStorage.getItem("fdo")||"null");if(s){S.kind=s.kind||S.kind;S.drive=s.drive||S.drive;S.free=!!s.free;S.evonly=!!s.evonly;if(s.hideSoon===false)S.hideSoon=false;S.hideRec=!!s.hideRec;if(s.custom)S.custom=Object.assign(S.custom,s.custom);CAL.on=!!s.calOn;}}catch(e){}
-function save(){try{localStorage.setItem("fdo",JSON.stringify({kind:S.kind,drive:S.drive,free:S.free,evonly:S.evonly,hideSoon:S.hideSoon,hideRec:S.hideRec,custom:S.custom,calOn:CAL.on}))}catch(e){}}
+try{const s=JSON.parse(localStorage.getItem("fdo")||"null");if(s){S.kind=s.kind||S.kind;S.drive=s.drive||S.drive;S.free=!!s.free;S.evonly=!!s.evonly;if(s.when)S.when=s.when;if(s.pick)S.pick=s.pick;if(s.hideSoon===false)S.hideSoon=false;S.hideRec=!!s.hideRec;if(s.custom)S.custom=Object.assign(S.custom,s.custom);CAL.on=!!s.calOn;}}catch(e){}
+function save(){try{localStorage.setItem("fdo",JSON.stringify({kind:S.kind,drive:S.drive,free:S.free,evonly:S.evonly,when:S.when,pick:S.pick,hideSoon:S.hideSoon,hideRec:S.hideRec,custom:S.custom,calOn:CAL.on}))}catch(e){}}
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-function cond(){if(S.day==="custom")return S.custom;const D=DAYS&&DAYS[S.day];return (D&&(D[S.tod]||D.all))||FALLBACK;}
-function curDate(){if(S.day==="custom")return S.custom.date||todayStr();return dateOffset({d0:0,d1:1,d2:2}[S.day]||0);}
+const WHEN_LABEL={now:"Right now",today:"Today",tomorrow:"Tomorrow",few:"Next few days",weekend:"This weekend",pick:"Pick a date…"};
+function ymd(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
+function addDays(ds,n){const d=dt(ds,12);d.setDate(d.getDate()+n);return ymd(d);}
+function wkday(ds,long){return dt(ds,12).toLocaleDateString("en-US",{weekday:long?"long":"short"});}
+function mday(ds){return dt(ds,12).toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"});}
+function datesFor(w){const t=todayStr();
+ if(w==="tomorrow")return[addDays(t,1)];
+ if(w==="few")return[0,1,2,3].map(n=>addDays(t,n));
+ if(w==="weekend"){const wd=dt(t,12).getDay();if(wd===6)return[t,addDays(t,1)];if(wd===0)return[t];const sat=addDays(t,6-wd);return[sat,addDays(sat,1)];}
+ if(w==="pick")return[(S.pick&&S.pick>=t)?S.pick:t];
+ return[t];}
+function whenDates(){return datesFor(S.when);}
+function multiDay(){return whenDates().length>1;}
+function nowBucket(){const h=new Date().getHours();return h>=17?"eve":h>=12?"pm":"am";}
+function winFor(ds){if(S.when==="now"){const n=new Date();return[n,new Date(n.getTime()+3*3600e3)];}const w=WIN[S.tod];return[dt(ds,w[0]),dt(ds,w[1])];}
+function hasWx(ds){return !!wxFor(ds);}
+function condFor(ds){const D=wxFor(ds);const k=S.when==="now"?nowBucket():S.tod;if(D)return D[k]||D.all||FALLBACK;if(S.when==="pick")return S.custom;return FALLBACK;}
+function cond(){return condFor(curDate());}
+function curDate(){return whenDates()[0];}
+function bestEval(p){const ds=whenDates();if(ds.length===1)return evalPlace(p,condFor(ds[0]));let best=null,bd=null;
+ ds.forEach(d=>{const e=evalPlace(p,condFor(d));if(!best||e.score>best.score){best=e;bd=d;}});
+ if(!p.indoor)best.why="Best on "+wkday(bd,true)+". "+best.why;return best;}
 function dt(dateStr,h){const [y,m,d]=dateStr.split("-").map(Number);return new Date(y,m-1,d,Math.floor(h),Math.round((h%1)*60));}
-function winRange(){const w=WIN[S.tod];return[dt(curDate(),w[0]),dt(curDate(),w[1])];}
+function winRange(){return winFor(curDate());}
 function fmtT(d){let h=d.getHours(),m=d.getMinutes();const ap=h>=12?"pm":"am";h=h%12||12;return h+(m?":"+String(m).padStart(2,"0"):"")+" "+ap;}
 function evalPlace(p,c){
  if(p.indoor)return{score:.72,tier:"indoor",label:"Indoors",why:"Indoors, so the weather won't matter."};
@@ -270,11 +315,12 @@ function evalPlace(p,c){
 }
 function evInterval(e){const s=new Date(e.start);const en=e.end?new Date(e.end):new Date(s.getTime()+2*3600e3);return[s,en];}
 function eventActive(e){
- if(e.rangeStart){const d=curDate();if(d<e.rangeStart||d>e.rangeEnd)return false;return true;}
- const [s,en]=evInterval(e);const [ws,we]=winRange();return s<we&&en>ws;
+ const ds=whenDates();
+ if(e.rangeStart)return ds.some(d=>d>=e.rangeStart&&d<=e.rangeEnd);
+ const [s,en]=evInterval(e);return ds.some(d=>{const [a,b]=winFor(d);return s<b&&en>a;});
 }
 function busyBlocks(){const b=CAL.byDate[curDate()];return b&&b.blocks?b.blocks:null;}
-function conflicts(s,en){const b=busyBlocks();if(!b)return false;return b.some(x=>x.s<en&&x.e>s);}
+function conflicts(s,en){const r0=CAL.byDate[ymd(s)];const b=r0&&r0.blocks;if(!b)return false;return b.some(x=>x.s<en&&x.e>s);}
 function freeWindows(){const b=busyBlocks();if(!b)return null;const d=curDate();let cur=dt(d,8);const end=dt(d,19);const out=[];
  b.slice().sort((a,c)=>a.s-c.s).forEach(x=>{if(x.s>cur){const s=cur,e=x.s<end?x.s:end;if(e-s>=90*60e3)out.push([s,e]);}if(x.e>cur)cur=x.e;});
  if(end-cur>=90*60e3)out.push([cur,end]);return out;}
@@ -296,13 +342,13 @@ function items(){
  SOON=0;RECN=0;const RALL=recurringKeys();const REC=S.hideRec?RALL:null;const c=cond();const [ws,we]=winRange();
  const impacts={};
  EVENTS.filter(e=>e.kind==="impact"&&eventActive(e)).forEach(e=>(e.impacts||[]).forEach(id=>{(impacts[id]=impacts[id]||[]).push(e.title+(e.rangeStart?"":" ("+fmtT(new Date(e.start))+"–"+fmtT(evInterval(e)[1])+")"));}));
- const out=PLACES.map(p0=>{const p=withMin(p0);const e=evalPlace(p,c);return{p,e,flags:(impacts[p.id]||[]).map(t=>"Heads up: "+t+" nearby"),v:visible(p)};});
+ const out=PLACES.map(p0=>{const p=withMin(p0);const e=bestEval(p);return{p,e,flags:(impacts[p.id]||[]).map(t=>"Heads up: "+t+" nearby"),v:visible(p)};});
  EVENTS.filter(e=>e.kind!=="impact"&&eventActive(e)).forEach(ev=>{
   const vis0=visible(withMin(Object.assign({},ev,{isEvent:true})));
   if(REC&&isRecurring(ev,REC)){if(vis0)RECN++;return;}
   if(S.hideSoon&&!ev.rangeStart&&evInterval(ev)[1].getTime()-Date.now()<30*60e3){if(vis0)SOON++;return;}
-  const p=withMin(Object.assign({},ev,{isEvent:true}));p.oneOff=!ev.rangeStart&&!isRecurring(ev,RALL);const e=evalPlace(p,c);const flags=[];
-  let when;if(ev.rangeStart){when="Open daily through "+ev.rangeLabel;}else{const [s,en]=evInterval(ev);when=fmtT(s)+(ev.end?"–"+fmtT(en):" start");if(conflicts(s,en))flags.push("Overlaps something on your calendar");}
+  const p=withMin(Object.assign({},ev,{isEvent:true}));p.oneOff=!ev.rangeStart&&!isRecurring(ev,RALL);const e=evalPlace(p,p.start&&!ev.rangeStart?condFor(ymd(new Date(p.start))):c);const flags=[];
+  let when;if(ev.rangeStart){when="Open daily through "+ev.rangeLabel;}else{const [s,en]=evInterval(ev);when=(multiDay()?wkday(ymd(s))+" ":"")+fmtT(s)+(ev.end?"–"+fmtT(en):" start");if(conflicts(s,en))flags.push("Overlaps something on your calendar");}
   (impacts[ev.id]||[]).forEach(t=>flags.push("Heads up: "+t));
   out.push({p,e:Object.assign(e,{score:e.score+(p.oneOff?.15:-.03)-(flags.length?.3:0)}),flags,when,v:visible(p),ts:p.start?new Date(p.start).getTime():0});
  });
@@ -324,12 +370,11 @@ function oneOffs(fromMs,toMs){const RALL=recurringKeys();
   .sort((a,b)=>new Date(a.start)-new Date(b.start));}
 function renderSpecials(){
  const el=document.getElementById("specials");if(!el)return;
- const d=curDate(),a=dt(d,0).getTime(),list=oneOffs(a,a+864e5);
+ const dl=whenDates(),d=dl[0],a=S.when==="now"?Date.now():dt(d,0).getTime(),list=oneOffs(a,S.when==="now"?a+3*3600e3:dt(dl[dl.length-1],0).getTime()+864e5);
  if(!list.length){el.innerHTML="";return;}
- const isToday=d===todayStr();const dayName=isToday?"today":"on "+dt(d,12).toLocaleDateString("en-US",{weekday:"long"});
- const c=cond();
- el.innerHTML=`<h2>One day only ${dayName}</h2><div class="strip">`+list.map(p=>{const e=evalPlace(p,c);const [s0,e0]=evInterval(p);
-  return `<button class="scard" data-id="${esc(p.id)}"><div class="evtime">${esc(fmtT(s0)+(p.end?"–"+fmtT(e0):" start"))}</div><div class="name">${esc(p.name)}</div><div class="meta">${esc(p.area)}, about ${p.min} min${p.free?", free":""}</div><div style="margin-top:6px"><span class="tag t-${e.tier}">${e.label}</span></div></button>`;}).join("")+`</div>`;
+ const dayName=S.when==="now"?"in the next few hours":S.when==="few"?"in the next few days":S.when==="weekend"?"this weekend":d===todayStr()?"today":"on "+wkday(d,true);
+ el.innerHTML=`<h2>One day only ${dayName}</h2><div class="strip">`+list.map(p=>{const [s0,e0]=evInterval(p);const e=evalPlace(p,condFor(ymd(s0)));
+  return `<button class="scard" data-id="${esc(p.id)}"><div class="evtime">${esc((dl.length>1?wkday(ymd(s0))+" ":"")+fmtT(s0)+(p.end?"–"+fmtT(e0):" start"))}</div><div class="name">${esc(p.name)}</div><div class="meta">${esc(p.area)}, about ${p.min} min${p.free?", free":""}</div><div style="margin-top:6px"><span class="tag t-${e.tier}">${e.label}</span></div></button>`;}).join("")+`</div>`;
  el.querySelectorAll(".scard").forEach(b=>b.addEventListener("click",()=>{S.tod="all";if(S.kind!=="both")S.kind="both";S.evonly=false;S.sel=b.dataset.id;save();render();
   const c2=document.getElementById("c-"+b.dataset.id);if(c2)c2.scrollIntoView({block:"center",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});}));
 }
@@ -359,14 +404,23 @@ function renderCal(){
 }
 function render(){
  const c=cond();
- const label=S.day==="custom"?"Custom conditions":(DAYS&&DAYS[S.day]?DAYS[S.day].label:"Forecast");
- document.getElementById("wx").textContent=`${label}: ${c.t}°F, gusts to ${c.g} mph${c.r?`, ${c.r}% rain`:""}`;
- document.getElementById("wxnote").textContent=S.day==="custom"?"Set the date and conditions for the day you're planning.":(!DAYS?(WXERR||"Loading the live forecast…"):"Live National Weather Service forecast for downtown San Francisco: the high, strongest gusts and highest rain chance "+(S.tod==="all"?"between 8 am and 8 pm":"during the "+TODLABEL[S.tod])+(DAYS[S.day]&&DAYS[S.day].partial?" (the rest of the day)":"")+". Each spot is adjusted for its own microclimate.");
- document.getElementById("custom").classList.toggle("on",S.day==="custom");
+ const dl=whenDates(),d0=dl[0];
+ if(dl.length>1){document.getElementById("wx").textContent=WHEN_LABEL[S.when]+": "+dl.map(d=>{const q=condFor(d);return `${wkday(d)} ${q.t}°F, gusts ${q.g}${q.r>=10?`, ${q.r}% rain`:""}`;}).join("; ");}
+ else{const q=cond();const lab=S.when==="now"?"Right now":(d0===todayStr()?"Today, ":d0===addDays(todayStr(),1)?"Tomorrow, ":"")+mday(d0);
+  document.getElementById("wx").textContent=`${lab}: ${q.t}°F, gusts to ${q.g} mph${q.r>=10?`, ${q.r}% rain`:""}`;}
+ const anyWx=dl.some(hasWx);
+ document.getElementById("wxnote").textContent=(S.when==="pick"&&!hasWx(d0))?"No forecast for this date yet, so set the conditions with the sliders below.":(!anyWx?wxMissing():wxSource()+": the high, strongest gusts and highest rain chance "+(S.when==="now"?"over the next three hours":S.tod==="all"?"between 8 am and 8 pm":"during the "+TODLABEL[S.tod])+(dl.length>1?" each day":"")+". Each spot is adjusted for its own microclimate."+(dl.length>1?" Places are rated for their best day.":""));
+ document.getElementById("whenLbl").textContent=S.when==="pick"?mday(d0):WHEN_LABEL[S.when];
+ document.querySelectorAll("#whenMenu button").forEach(bt=>{const v=bt.dataset.v;bt.setAttribute("aria-selected",v===S.when);const ds=datesFor(v);
+  bt.querySelector(".sub").textContent=v==="now"?"next 3 hours":v==="pick"?(S.when==="pick"?mday(d0):""):ds.length>1?wkday(ds[0])+"–"+wkday(ds[ds.length-1]):mday(ds[0]);});
+ const pd=document.getElementById("pickDate");pd.hidden=S.when!=="pick";pd.min=todayStr();if(S.when==="pick"&&pd.value!==d0)pd.value=d0;
+ document.getElementById("todRow").hidden=S.when==="now";
+ const showSl=S.when==="pick"&&!hasWx(d0);document.querySelectorAll(".custom .slider").forEach(x=>x.hidden=!showSl);
+ document.getElementById("custom").classList.toggle("on",showSl);
  document.getElementById("cto").textContent=S.custom.t+"°F";document.getElementById("cgo").textContent=S.custom.g+" mph";document.getElementById("cro").textContent=S.custom.r+"%";
- setSeg("day",S.day);setSeg("tod",S.tod);setSeg("kind",S.kind);setSeg("drive",String(S.drive));
+ setSeg("tod",S.tod);setSeg("kind",S.kind);setSeg("drive",String(S.drive));
  document.getElementById("free").setAttribute("aria-pressed",S.free);document.getElementById("evonly").setAttribute("aria-pressed",S.evonly);document.getElementById("hidesoon").setAttribute("aria-pressed",S.hideSoon);document.getElementById("hiderec").setAttribute("aria-pressed",S.hideRec);
- if(CAL.on&&MCP&&!CAL.byDate[curDate()])fetchCal(curDate());
+ if(CAL.on&&MCP)whenDates().forEach(d=>{if(!CAL.byDate[d])fetchCal(d);});
  renderCal();drawRings();
  const rows=items();
  let pins="";
@@ -383,7 +437,7 @@ function render(){
  document.querySelectorAll(".pin").forEach(g=>{const go=()=>{const id=g.dataset.id;const r=rows.find(q=>q.p.id===id);if(!r||!r.v)return;S.sel=S.sel===id?null:id;render();const el=document.getElementById("c-"+id);if(el&&S.sel)el.scrollIntoView({block:"nearest",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});};
   g.addEventListener("click",go);g.addEventListener("keydown",ev=>{if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});});
  const fw=freeWindows();const [ws,we]=winRange();
- const winFree=fw?fw.some(([a,b])=>a<we&&b>ws&&(Math.min(b,we)-Math.max(a,ws))>=90*60e3):true;
+ const winFree=(!fw||multiDay()||S.when==="now")?true:fw.some(([a,b])=>a<we&&b>ws&&(Math.min(b,we)-Math.max(a,ws))>=90*60e3);
  document.getElementById("banner").innerHTML=winFree?"":`<div class="banner">Your ${TODLABEL[S.tod]} is mostly booked. ${fw&&fw.length?"Try "+fw.map(([a,b])=>fmtT(a)+"–"+fmtT(b)).join(" or ")+".":""}</div>`;
  const vis=rows.filter(r=>r.v).sort((a,b)=>b.e.score-a.e.score||a.p.min-b.p.min);
  const good=vis.filter(r=>(r.e.tier==="great"||r.e.tier==="indoor")&&!r.flags.length).length;
@@ -401,7 +455,7 @@ function render(){
   const url=`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(HOME.q||(HOME.lat+","+HOME.lng))}&destination=${p.lat},${p.lng}`;
   return `<div class="card${e.tier==="skip"?" dim":""}" id="c-${esc(p.id)}" role="button" tabindex="0" aria-expanded="${S.sel===p.id}" data-id="${esc(p.id)}">
    <div class="top"><div>${when?`<div class="evtime">${esc(when)}</div>`:""}<div class="name">${esc(p.name)}${p.oneOff?`<span class="badge">One day only</span>`:""}</div><div class="meta">${esc(p.area)}, about ${p.min} min${p.free?", free":""}</div>${flags.map(f=>`<div class="flag">${esc(f)}</div>`).join("")}</div><span class="tag t-${e.tier}">${e.label}</span></div>
-   <div class="more"><p style="margin:0 0 6px">${esc(e.why)} ${esc(p.note)}</p><a href="${url}" target="_blank" rel="noopener">Get directions</a>${p.isEvent&&p.start&&!p.rangeStart&&!p.multi?` · <a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>`:""}${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}</div></div>`;}).join("");
+   <div class="more"><p style="margin:0 0 6px">${esc(e.why)} ${esc(p.note)}</p><a href="${url}" target="_blank" rel="noopener">Get directions</a>${p.isEvent&&p.start&&!p.rangeStart&&!p.multi?` · <a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>`:""}${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:(p.isEvent?` · <a href="https://www.google.com/search?q=${encodeURIComponent(p.name+" "+(p.area||"")+" San Francisco")}" target="_blank" rel="noopener">Search for details</a>`:"")}</div></div>`;}).join("");
  list.querySelectorAll(".card").forEach(cd=>{const go=()=>{S.sel=S.sel===cd.dataset.id?null:cd.dataset.id;render();};
   cd.addEventListener("click",ev=>{if(ev.target.closest("a"))return;go();});cd.addEventListener("keydown",ev=>{if(ev.target.closest("a"))return;if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});});
  const icsEl=document.getElementById("icsfoot");if(icsEl&&!icsEl.dataset.done){const u=new URL("specials.ics",location.href).href;icsEl.innerHTML=`Get one-off events in your calendar: in Google Calendar, choose Other calendars, then From URL, and paste <a href="${esc(u)}">${esc(u)}</a>. On an iPhone, open the link and tap Subscribe.`;icsEl.dataset.done="1";}
@@ -412,13 +466,20 @@ function render(){
 }
 function setSeg(id,v){document.querySelectorAll(`#${id} button`).forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===v));}
 function bindSeg(id,fn){document.querySelectorAll(`#${id} button`).forEach(b=>b.addEventListener("click",()=>{fn(b.dataset.v);save();render();}));}
-bindSeg("day",v=>{S.day=v;S.sel=null;});bindSeg("tod",v=>S.tod=v);bindSeg("kind",v=>{S.kind=v;S.sel=null;});bindSeg("drive",v=>{S.drive=Number(v);S.sel=null;});
+bindSeg("tod",v=>S.tod=v);bindSeg("kind",v=>{S.kind=v;S.sel=null;});bindSeg("drive",v=>{S.drive=Number(v);S.sel=null;});
 document.getElementById("free").addEventListener("click",()=>{S.free=!S.free;S.sel=null;save();render();});
 document.getElementById("evonly").addEventListener("click",()=>{S.evonly=!S.evonly;S.sel=null;save();render();});
 document.getElementById("hidesoon").addEventListener("click",()=>{S.hideSoon=!S.hideSoon;S.sel=null;save();render();});
 document.getElementById("hiderec").addEventListener("click",()=>{S.hideRec=!S.hideRec;S.sel=null;save();render();});
 [["ct","t"],["cg","g"],["cr","r"]].forEach(([id,k])=>{const el=document.getElementById(id);el.value=S.custom[k];el.addEventListener("input",()=>{S.custom[k]=Number(el.value);save();render();});});
-const cdEl=document.getElementById("cd");cdEl.value=S.custom.date;cdEl.addEventListener("change",()=>{if(cdEl.value){S.custom.date=cdEl.value;save();render();}});
+const whenBtn=document.getElementById("whenBtn"),whenMenu=document.getElementById("whenMenu");
+function closeWhen(f){whenMenu.hidden=true;whenBtn.setAttribute("aria-expanded","false");if(f)whenBtn.focus();}
+whenBtn.addEventListener("click",()=>{const open=whenMenu.hidden;whenMenu.hidden=!open;whenBtn.setAttribute("aria-expanded",String(open));if(open)(whenMenu.querySelector('[aria-selected="true"]')||whenMenu.querySelector("button")).focus();});
+whenMenu.querySelectorAll("button").forEach(bt=>bt.addEventListener("click",()=>{S.when=bt.dataset.v;if(S.when==="pick"&&(!S.pick||S.pick<todayStr()))S.pick=todayStr();S.sel=null;closeWhen(true);save();render();if(S.when==="pick")document.getElementById("pickDate").focus();}));
+whenMenu.addEventListener("keydown",e=>{const bs=[...whenMenu.querySelectorAll("button")],i=bs.indexOf(document.activeElement);
+ if(e.key==="ArrowDown"){e.preventDefault();bs[(i+1)%bs.length].focus();}else if(e.key==="ArrowUp"){e.preventDefault();bs[(i-1+bs.length)%bs.length].focus();}else if(e.key==="Escape"){closeWhen(true);}});
+document.addEventListener("click",e=>{if(!e.target.closest("#whenDD"))closeWhen(false);});
+document.getElementById("pickDate").addEventListener("change",e=>{const v=e.target.value;if(v){S.pick=v<todayStr()?todayStr():v;S.sel=null;save();render();}});
 
 let MCP=null;
 const CAL_ERR={
@@ -500,7 +561,7 @@ async function loadWeather(){
   const T=ser("temperature"),G=ser("windGust"),W=ser("windSpeed"),R=ser("probabilityOfPrecipitation");
   const mx=(arr,a,b)=>{let m=null;arr.forEach(x=>{if(x.s<b&&x.e>a&&x.v!=null)m=m==null?x.v:Math.max(m,x.v);});return m;};
   const now=Date.now();DAYS={};
-  ["d0","d1","d2"].forEach((k,n)=>{const ds=dateOffset(n);const day={date:ds};
+  [0,1,2,3,4,5,6].forEach(n=>{const ds=dateOffset(n);const k=ds;const day={date:ds};
    const dd=dt(ds,12);day.label=(n===0?"Today, ":n===1?"Tomorrow, ":"")+dd.toLocaleDateString("en-US",{weekday:n>1?"long":"short",month:"short",day:"numeric"});
    ["am","pm","eve","all"].forEach(w=>{let a=dt(ds,WIN[w][0]).getTime(),b=dt(ds,WIN[w][1]).getTime();if(n===0&&a<now&&b>now){a=now;day.partial=true;}
     const t=mx(T,a,b),gu=mx(G,a,b)??mx(W,a,b),r=mx(R,a,b);
