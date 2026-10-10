@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add events.json data/geocache.json
+          git add events.json specials.ics data/geocache.json
           git diff --cached --quiet || git commit -m "Refresh events $(date -u +%F)"
           git push
 
