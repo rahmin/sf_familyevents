@@ -1,10 +1,11 @@
 {
- "generated": "2026-10-10T12:08-07:00",
+ "generated": "2026-10-10T13:08-07:00",
  "coverage": "Oct 10–Oct 17",
  "sources": [
   "SF Public Library",
   "California Academy of Sciences",
   "SF Children & Nature",
+  "Mission Local",
   "Funcheap",
   "manual"
  ],
@@ -29,7 +30,7 @@
   {
    "id": "scn-6441-2026-10-10",
    "kind": "event",
-   "source": "childrennature",
+   "source": "SF Children & Nature",
    "name": "Celebrate the New OMI Nature Exploration Area!",
    "area": "OMI Nature Exploration Area",
    "lat": 37.7133164,
@@ -128,7 +129,8 @@
    "start": "2026-10-10T10:15:00-07:00",
    "end": "2026-10-10T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
   },
   {
    "area": "Oakland Main Library",
@@ -179,7 +181,8 @@
    "start": "2026-10-10T10:30:00-07:00",
    "end": "2026-10-10T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-10-early-learning-saturday-morning-playtimes",
@@ -213,7 +216,8 @@
    "start": "2026-10-10T11:00:00-07:00",
    "end": "2026-10-10T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
   },
   {
    "area": "India Basin Waterfront Park, Bayview",
@@ -298,7 +302,8 @@
    "start": "2026-10-10T11:30:00-07:00",
    "end": "2026-10-10T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "end": "2026-10-10T16:00:00-07:00",
@@ -368,6 +373,23 @@
    "source": "manual"
   },
   {
+   "id": "ml-874406-2026-10-10",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "CMC + Follow the Music at Yerba Buena Gardens Festival",
+   "area": "Mission Street",
+   "lat": 37.7904031,
+   "lng": -122.3967264,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-10T13:00:00-07:00",
+   "end": "2026-10-10T16:00:00-07:00",
+   "note": "Join CMC and our partners at Follow the Music for a celebration of talented emerging young artists from the Bay at Yerba Buena Gardens Festival this October. Mamboleo—featuring CMC students/alumni will bring the Latin ja",
+   "url": "https://missionlocal.org/event/mission-street-cmc-follow-the-music-at-yerba-buena-gardens-festival/"
+  },
+  {
    "area": "Yerba Buena Gardens",
    "end": "2026-10-10T16:00:00-07:00",
    "exp": 0.35,
@@ -399,7 +421,8 @@
    "start": "2026-10-10T13:30:00-07:00",
    "end": "2026-10-10T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "area": "Exploratorium, Pier 15",
@@ -467,7 +490,8 @@
    "start": "2026-10-10T15:00:00-07:00",
    "end": "2026-10-10T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "cas-lagoon-senses-2026-10-10-1530",
@@ -484,7 +508,8 @@
    "start": "2026-10-10T15:30:00-07:00",
    "end": "2026-10-10T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
   },
   {
    "id": "shotwell-lantern-parade",
@@ -501,6 +526,23 @@
    "start": "2026-10-10T19:00:00-07:00",
    "end": "2026-10-10T21:00:00-07:00",
    "note": "Bring a lantern, drums or noisemakers. Gather at 7, the parade heads down Shotwell at 7:30, returns at 24th around 8:10, and finishes at Shotwell and 20th around 8:30.",
+   "url": "https://missionlocal.org/event/storefrontlab-shotwell-community-lantern-parade/"
+  },
+  {
+   "id": "ml-872055-2026-10-10",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Shotwell Community Lantern Parade",
+   "area": "StoreFrontLab",
+   "lat": 37.7629107,
+   "lng": -122.4159952,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-10T19:00:00-07:00",
+   "end": "2026-10-10T21:00:00-07:00",
+   "note": "After months of work, our Shotwell Community Lantern Parade is almost ready to roll! Set for October 10, this neighborhood event will feature a menagerie of handcrafted lanterns made by our krewe. In the run-up to our pa",
    "url": "https://missionlocal.org/event/storefrontlab-shotwell-community-lantern-parade/"
   },
   {
@@ -586,7 +628,8 @@
    "start": "2026-10-11T11:00:00-07:00",
    "end": "2026-10-11T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
   },
   {
    "area": "Jack London Square, Oakland",
@@ -620,7 +663,8 @@
    "start": "2026-10-11T11:30:00-07:00",
    "end": "2026-10-11T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "end": "2026-10-11T16:00:00-07:00",
@@ -721,7 +765,8 @@
    "start": "2026-10-11T13:30:00-07:00",
    "end": "2026-10-11T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-11-storytime-families",
@@ -806,7 +851,8 @@
    "start": "2026-10-11T15:00:00-07:00",
    "end": "2026-10-11T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "cas-lagoon-senses-2026-10-11-1530",
@@ -823,7 +869,8 @@
    "start": "2026-10-11T15:30:00-07:00",
    "end": "2026-10-11T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
   },
   {
    "id": "cas-sensory-storytime-2026-10-12-1015",
@@ -840,7 +887,8 @@
    "start": "2026-10-12T10:15:00-07:00",
    "end": "2026-10-12T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-12-1030",
@@ -857,7 +905,8 @@
    "start": "2026-10-12T10:30:00-07:00",
    "end": "2026-10-12T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "area": "Oakland Main Library",
@@ -891,7 +940,8 @@
    "start": "2026-10-12T11:00:00-07:00",
    "end": "2026-10-12T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
   },
   {
    "id": "cas-coral-reef-dive-2026-10-12-1130",
@@ -908,7 +958,8 @@
    "start": "2026-10-12T11:30:00-07:00",
    "end": "2026-10-12T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "id": "cas-coral-reef-dive-2026-10-12-1330",
@@ -925,7 +976,8 @@
    "start": "2026-10-12T13:30:00-07:00",
    "end": "2026-10-12T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-12-1500",
@@ -942,7 +994,8 @@
    "start": "2026-10-12T15:00:00-07:00",
    "end": "2026-10-12T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "cas-lagoon-senses-2026-10-12-1530",
@@ -959,12 +1012,13 @@
    "start": "2026-10-12T15:30:00-07:00",
    "end": "2026-10-12T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
   },
   {
    "id": "scn-10005156-2026-10-13",
    "kind": "event",
-   "source": "childrennature",
+   "source": "SF Children & Nature",
    "name": "Swing into Stories @ Koret Playground (Golden Gate Park)",
    "area": "Koret Playground @ Golden Gate Park",
    "lat": 37.7681285327,
@@ -993,7 +1047,8 @@
    "start": "2026-10-13T10:15:00-07:00",
    "end": "2026-10-13T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-13-storytime-babies",
@@ -1078,7 +1133,8 @@
    "start": "2026-10-13T10:30:00-07:00",
    "end": "2026-10-13T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-13-storytime-families",
@@ -1299,7 +1355,8 @@
    "start": "2026-10-13T11:00:00-07:00",
    "end": "2026-10-13T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-13-storytime-preschoolers",
@@ -1435,7 +1492,8 @@
    "start": "2026-10-13T11:30:00-07:00",
    "end": "2026-10-13T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-13-storytime-toddlers",
@@ -1520,7 +1578,8 @@
    "start": "2026-10-13T13:30:00-07:00",
    "end": "2026-10-13T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-13-1500",
@@ -1537,7 +1596,8 @@
    "start": "2026-10-13T15:00:00-07:00",
    "end": "2026-10-13T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "cas-lagoon-senses-2026-10-13-1530",
@@ -1554,7 +1614,8 @@
    "start": "2026-10-13T15:30:00-07:00",
    "end": "2026-10-13T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-13-activity-dog-reading-circle",
@@ -1605,7 +1666,8 @@
    "start": "2026-10-14T10:15:00-07:00",
    "end": "2026-10-14T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-14-1030",
@@ -1622,7 +1684,8 @@
    "start": "2026-10-14T10:30:00-07:00",
    "end": "2026-10-14T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-14-storytime-babies",
@@ -1690,7 +1753,8 @@
    "start": "2026-10-14T11:00:00-07:00",
    "end": "2026-10-14T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-14-storytime-babies-2",
@@ -1775,7 +1839,8 @@
    "start": "2026-10-14T11:30:00-07:00",
    "end": "2026-10-14T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-14-storytime-babies-0",
@@ -1826,7 +1891,8 @@
    "start": "2026-10-14T13:30:00-07:00",
    "end": "2026-10-14T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-14-storytime-families-0",
@@ -1860,7 +1926,8 @@
    "start": "2026-10-14T15:00:00-07:00",
    "end": "2026-10-14T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "cas-lagoon-senses-2026-10-14-1530",
@@ -1877,7 +1944,8 @@
    "start": "2026-10-14T15:30:00-07:00",
    "end": "2026-10-14T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-14-activity-halloween-costume-swap",
@@ -1962,7 +2030,8 @@
    "start": "2026-10-15T10:15:00-07:00",
    "end": "2026-10-15T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-15-storytime-babies-0",
@@ -2030,7 +2099,8 @@
    "start": "2026-10-15T10:30:00-07:00",
    "end": "2026-10-15T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-15-storytime-babies-2",
@@ -2166,7 +2236,8 @@
    "start": "2026-10-15T11:00:00-07:00",
    "end": "2026-10-15T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-15-storytime-babies",
@@ -2251,7 +2322,8 @@
    "start": "2026-10-15T11:30:00-07:00",
    "end": "2026-10-15T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-15-storytime-babies-1",
@@ -2285,7 +2357,8 @@
    "start": "2026-10-15T13:30:00-07:00",
    "end": "2026-10-15T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-15-1500",
@@ -2302,7 +2375,8 @@
    "start": "2026-10-15T15:00:00-07:00",
    "end": "2026-10-15T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-15-performance-guitar-sing-along-grandpa-alan",
@@ -2336,7 +2410,8 @@
    "start": "2026-10-15T15:30:00-07:00",
    "end": "2026-10-15T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-15-activity-halloween-costume-swap",
@@ -2370,7 +2445,8 @@
    "start": "2026-10-16T10:15:00-07:00",
    "end": "2026-10-16T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-16-1030",
@@ -2387,7 +2463,8 @@
    "start": "2026-10-16T10:30:00-07:00",
    "end": "2026-10-16T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "id": "cas-childrens-puppet-theater-2026-10-16-1100",
@@ -2404,7 +2481,8 @@
    "start": "2026-10-16T11:00:00-07:00",
    "end": "2026-10-16T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
   },
   {
    "id": "cas-coral-reef-dive-2026-10-16-1130",
@@ -2421,7 +2499,8 @@
    "start": "2026-10-16T11:30:00-07:00",
    "end": "2026-10-16T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-16-storytime-families",
@@ -2455,7 +2534,8 @@
    "start": "2026-10-16T13:30:00-07:00",
    "end": "2026-10-16T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-16-1500",
@@ -2472,7 +2552,8 @@
    "start": "2026-10-16T15:00:00-07:00",
    "end": "2026-10-16T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-16-storytime-preschoolers",
@@ -2506,7 +2587,25 @@
    "start": "2026-10-16T15:30:00-07:00",
    "end": "2026-10-16T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
+  },
+  {
+   "id": "ml-872245-2026-10-17",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "51st Annual Potrero Hill Rhythm & Blues Festival",
+   "area": "20th Street",
+   "lat": 37.7604997,
+   "lng": -122.3885771,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-17T10:00:00-07:00",
+   "end": "2026-10-17T16:00:00-07:00",
+   "note": "The Potrero Hill R&B Festival will take place Saturday, October 17, 2026 on 20th Street between Wisconsin and Missouri Streets from 10 am – 4 pm. This annual family-friendly festival celebrates the best of our community,",
+   "url": "https://missionlocal.org/event/20th-street-51st-annual-potrero-hill-rhythm-blues-festival/"
   },
   {
    "id": "sfpl-2026-10-17-storytime-families",
@@ -2540,7 +2639,8 @@
    "start": "2026-10-17T10:15:00-07:00",
    "end": "2026-10-17T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-17-1030",
@@ -2557,7 +2657,8 @@
    "start": "2026-10-17T10:30:00-07:00",
    "end": "2026-10-17T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-17-early-learning-saturday-morning-playtimes",
@@ -2664,7 +2765,7 @@
   {
    "id": "scn-6472-2026-10-17",
    "kind": "event",
-   "source": "childrennature",
+   "source": "SF Children & Nature",
    "name": "Bay Area Science Festival",
    "area": "UCSF Mission Bay Campus",
    "lat": 37.7649117,
@@ -2693,7 +2794,8 @@
    "start": "2026-10-17T11:00:00-07:00",
    "end": "2026-10-17T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-17-celebration-open-house",
@@ -2744,7 +2846,8 @@
    "start": "2026-10-17T11:30:00-07:00",
    "end": "2026-10-17T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-17-storytime-families-2",
@@ -2764,6 +2867,23 @@
    "url": "https://sfpl.org/events/2026/10/17/storytime-families-2"
   },
   {
+   "id": "ml-875790-2026-10-17",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Brava! Block Party",
+   "area": "24th Street",
+   "lat": 37.7522559,
+   "lng": -122.418449,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-17T12:00:00-07:00",
+   "end": "2026-10-17T17:00:00-07:00",
+   "note": "40 Years of Brava!, 30 Years of Community Ownership and 100 Years of the Historic Theater 24th Street • Between Bryant and Hampshire A free, family-friendly celebration of art, community, and 40 years of Brava! Live perf",
+   "url": "https://missionlocal.org/event/24th-street-brava-block-party/"
+  },
+  {
    "id": "cas-coral-reef-dive-2026-10-17-1330",
    "kind": "event",
    "source": "calacademy",
@@ -2778,7 +2898,8 @@
    "start": "2026-10-17T13:30:00-07:00",
    "end": "2026-10-17T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-17-storytime-families-1",
@@ -2863,7 +2984,8 @@
    "start": "2026-10-17T15:00:00-07:00",
    "end": "2026-10-17T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "cas-lagoon-senses-2026-10-17-1530",
@@ -2880,7 +3002,8 @@
    "start": "2026-10-17T15:30:00-07:00",
    "end": "2026-10-17T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
   }
  ]
 }

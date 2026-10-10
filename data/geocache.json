@@ -290,5 +290,41 @@
  "Bayview Branch Library, 5075 Third St., San Francisco, CA": [
   null,
   null
+ ],
+ "111 Minna Gallery, 111 Minna St, San Francisco": [
+  37.7874657,
+  -122.3993218
+ ],
+ "Mission Street, Mission St., San Francisco": [
+  37.7904031,
+  -122.3967264
+ ],
+ "Drawing Room ANNEX, 599 Valencia St, San Francisco": [
+  null,
+  null
+ ],
+ "18 Reasons, 3674 18th St, San Francisco": [
+  37.7615756,
+  -122.4253905
+ ],
+ "Brick &#038; Mortar Music Hall, 1710 Mission Street, San Francisco": [
+  null,
+  null
+ ],
+ "Manny&#8217;s, 3092 16th St, San Francisco": [
+  null,
+  null
+ ],
+ "Ruth&#8217;s Table, 3160 21 st, San Francisco": [
+  null,
+  null
+ ],
+ "20th Street, 20th Street, San Francisco": [
+  37.7604997,
+  -122.3885771
+ ],
+ "24th Street, 24th Street, San Francisco": [
+  37.7522559,
+  -122.418449
  ]
 }
