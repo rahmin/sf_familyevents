@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Where should we go today?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E8F5FF; --panel:#FFFFFF; --ink:#1F2A44; --ink-2:#4D5B78; --line:#C9DDEE; --stroke:#1F2A44;
+  --sun:#FFC93C; --sun-ink:#1F2A44; --sky:#7CC4F5; --grass:#7BD389; --berry:#F25C78;
+  --great:#17955A; --great-bg:#D6F6E3; --okay:#C97A00; --okay-bg:#FFEDC2;
+  --skip:#D93A55; --skip-bg:#FFE0E6; --indoor:#3A63D8; --indoor-bg:#DEE7FF;
+  --focus:#3A63D8; --glow:color-mix(in srgb,#FFC93C 30%,transparent);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16213B; --panel:#1F2D4D; --ink:#F2F6FF; --ink-2:#B3C2DE; --line:#33456B; --stroke:#0A1020;
+    --sun:#FFC93C; --sun-ink:#1F2A44; --sky:#4F8FC4; --grass:#4FA868; --berry:#F27A90;
+    --great:#6EE0A2; --great-bg:#173B2C; --okay:#FFC65C; --okay-bg:#3E3216;
+    --skip:#FF8FA2; --skip-bg:#4A2030; --indoor:#9DB6FF; --indoor-bg:#24345E; --focus:#9DB6FF; --glow:transparent;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16213B; --panel:#1F2D4D; --ink:#F2F6FF; --ink-2:#B3C2DE; --line:#33456B; --stroke:#0A1020;
+  --sun:#FFC93C; --sun-ink:#1F2A44; --sky:#4F8FC4; --grass:#4FA868; --berry:#F27A90;
+  --great:#6EE0A2; --great-bg:#173B2C; --okay:#FFC65C; --okay-bg:#3E3216;
+  --skip:#FF8FA2; --skip-bg:#4A2030; --indoor:#9DB6FF; --indoor-bg:#24345E; --focus:#9DB6FF; --glow:transparent;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.5}
+.wrap{max-width:1040px;margin:0 auto;padding:20px 16px 40px}
+h1{font-family:"Fredoka","Avenir Next",system-ui,sans-serif;font-weight:700;font-size:clamp(28px,7vw,44px);line-height:1.05;letter-spacing:-0.02em;margin:0 0 6px}
+.from{color:var(--ink-2);margin:0 0 18px;font-size:15px}
+.grid{display:grid;gap:18px}
+@media (min-width:860px){.grid{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:start}.sticky{position:sticky;top:calc(16px + env(safe-area-inset-top,0px))}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:16px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.row:last-child{margin-bottom:0}
+.lbl{font-size:14px;color:var(--ink-2);min-width:64px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:12px;overflow:hidden;flex-wrap:wrap}
+.seg button{font:inherit;font-size:14px;border:0;background:transparent;color:var(--ink);padding:8px 12px;cursor:pointer;min-height:40px}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--panel);font-weight:700}
+button:focus-visible,a:focus-visible,input:focus-visible,.pin:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.toggle{font:inherit;font-size:14px;border:1px solid var(--line);border-radius:12px;background:transparent;color:var(--ink);padding:8px 12px;min-height:40px;cursor:pointer}
+.toggle[aria-pressed="true"]{background:var(--ink);color:var(--panel);font-weight:700}
+.wx{font-family:"Fredoka",system-ui,sans-serif;font-size:20px;font-weight:500;margin:4px 0 2px}
+.wxnote{font-size:13px;color:var(--ink-2);margin:0 0 12px}
+.custom{display:none;gap:10px;margin:0 0 12px}
+.custom.on{display:grid}
+.custom label{display:grid;grid-template-columns:96px minmax(0,1fr) 64px;gap:8px;align-items:center;font-size:14px;color:var(--ink-2)}
+.custom output{color:var(--ink);font-weight:700;text-align:right}
+input[type=range]{width:100%;accent-color:var(--ink)}
+svg{display:block;width:100%;height:auto}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--ink-2);margin-top:10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:0}
+.legend i.sq{border-radius:3px}
+.pin{cursor:pointer}
+.list{display:grid;gap:10px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px;cursor:pointer;text-align:left;font:inherit;color:inherit;width:100%;display:block}
+.card[aria-expanded="true"]{border-color:var(--ink);border-width:2px;padding:11px 13px}
+.card.dim{opacity:.55}
+.top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.name{font-weight:700;font-size:17px;line-height:1.25}
+.meta{font-size:14px;color:var(--ink-2)}
+.tag{font-size:13px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.t-great{background:var(--great-bg);color:var(--great)}
+.t-okay{background:var(--okay-bg);color:var(--okay)}
+.t-skip{background:var(--skip-bg);color:var(--skip)}
+.t-indoor{background:var(--indoor-bg);color:var(--indoor)}
+.more{margin-top:8px;font-size:15px;display:none}
+.card[aria-expanded="true"] .more{display:block}
+.more a{color:var(--indoor);font-weight:700}
+.empty{color:var(--ink-2);padding:12px 2px}
+.foot{font-size:13px;color:var(--ink-2);margin-top:22px;max-width:70ch}
+h2{font-family:"Fredoka",system-ui,sans-serif;font-size:20px;font-weight:700;margin:0 0 10px}
+@media (prefers-reduced-motion:no-preference){.pin circle,.pin rect{transition:r .2s, opacity .2s}}
+
+.diamond{}
+.daybar{position:relative;height:28px;border-radius:8px;background:var(--great-bg);overflow:hidden;margin:6px 0 4px}
+.busy{position:absolute;top:0;bottom:0;background:var(--ink-2);opacity:.55}
+.win{position:absolute;top:-2px;bottom:-2px;border:2px solid var(--ink);border-radius:6px}
+.ticks{display:flex;justify-content:space-between;font-size:12px;color:var(--ink-2)}
+.calmsg{font-size:14px;color:var(--ink-2);margin:6px 0 0}
+.warn{font-size:14px;color:var(--skip);margin:6px 0 0}
+.evtime{font-size:14px;font-weight:700;color:var(--indoor)}
+.flag{font-size:13px;color:var(--skip);margin-top:2px}
+.banner{background:var(--okay-bg);color:var(--okay);border-radius:12px;padding:10px 12px;font-size:14px;margin-bottom:10px}
+input[type=date]{font:inherit;font-size:14px;padding:6px 8px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink)}
+
+
+/* playful layer */
+body{background:var(--bg);background-image:radial-gradient(circle at 12% -10%,var(--glow) 0,transparent 38%)}
+h1{font-weight:700;letter-spacing:-0.01em;font-size:clamp(30px,7.5vw,48px)}
+.hero{position:relative;padding-right:72px;margin-bottom:6px}
+.hero .sun{position:absolute;right:0;top:-6px;width:68px;height:68px}
+@media (prefers-reduced-motion:no-preference){.hero .sun .rays{transform-origin:34px 34px;animation:spin 40s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}}
+.hills{display:block;width:100%;height:34px;margin:0 0 14px}
+.panel{border:2px solid var(--stroke);border-radius:22px;box-shadow:4px 4px 0 var(--stroke)}
+.seg{border:2px solid var(--stroke);border-radius:999px;background:var(--panel)}
+.seg button{font-family:"Fredoka",system-ui,sans-serif;font-weight:500;font-size:15px;padding:7px 14px}
+.seg button+button{border-left:2px solid var(--stroke)}
+.seg button[aria-pressed="true"]{background:var(--sun);color:var(--sun-ink);font-weight:600}
+.toggle{font-family:"Fredoka",system-ui,sans-serif;font-weight:500;font-size:15px;border:2px solid var(--stroke);border-radius:999px;background:var(--panel)}
+.toggle[aria-pressed="true"]{background:var(--grass);color:#10301B;font-weight:600}
+.toggle:active,.seg button:active{transform:translateY(1px)}
+#oin{border:2px solid var(--stroke)!important;border-radius:999px!important;padding:8px 14px!important}
+.lbl{font-family:"Fredoka",system-ui,sans-serif;font-weight:600;color:var(--ink)}
+.wx{font-weight:600}
+.card{border:2px solid var(--stroke);border-radius:18px;box-shadow:3px 3px 0 var(--stroke)}
+.card[aria-expanded="true"]{border-width:2px;padding:12px 14px;background:color-mix(in srgb,var(--sun) 14%,var(--panel));box-shadow:5px 5px 0 var(--stroke)}
+.card.dim{opacity:.6;box-shadow:none}
+.name{font-family:"Fredoka",system-ui,sans-serif;font-weight:600;font-size:18px}
+.tag{font-family:"Fredoka",system-ui,sans-serif;font-weight:600;border:2px solid currentColor;padding:2px 10px}
+.evtime{color:var(--berry);font-family:"Fredoka",system-ui,sans-serif;font-weight:600}
+.legend i{border:2px solid var(--stroke);width:12px;height:12px}
+h2{font-weight:600}
+.banner{border:2px solid var(--stroke);box-shadow:3px 3px 0 var(--stroke)}
+.daybar{border:2px solid var(--stroke)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero"><h1>Where should we go today?</h1>
+  <svg class="sun" viewBox="0 0 68 68" aria-hidden="true"><g class="rays" style="stroke:var(--ink)" stroke-width="3" stroke-linecap="round"><path d="M34 3v9M34 56v9M3 34h9M56 34h9M12 12l6 6M50 50l6 6M56 12l-6 6M12 56l6-6"/></g><circle cx="34" cy="34" r="15" style="fill:var(--sun);stroke:var(--ink)" stroke-width="3"/><path d="M28 36q6 6 12 0" fill="none" style="stroke:var(--stroke)" stroke-width="2.5" stroke-linecap="round"/><circle cx="29" cy="31" r="1.8" style="fill:var(--stroke)"/><circle cx="39" cy="31" r="1.8" style="fill:var(--stroke)"/></svg></div>
+  <p class="from">Family outings and events within a 30 minute drive of your starting point, ranked by how the weather will feel at each spot.</p>
+  <svg class="hills" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true"><path d="M0 34 C40 8 80 8 120 22 C160 36 200 4 250 16 C300 28 340 6 400 18 V34 Z" style="fill:var(--grass);stroke:var(--stroke)" stroke-width="2"/><path d="M0 34 C60 20 110 26 160 30 C230 34 300 18 400 28 V34 Z" style="fill:color-mix(in srgb,var(--grass) 70%,var(--stroke))"/></svg>
+  <div class="grid">
+    <div class="sticky">
+      <div class="panel">
+        <div class="row" style="margin-bottom:6px"><span class="lbl">Start</span>
+          <input id="oin" type="text" inputmode="text" autocomplete="street-address" placeholder="Address or ZIP code" aria-label="Starting address or ZIP code" style="flex:1;min-width:150px;font:inherit;font-size:15px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink)">
+          <button class="toggle" id="oset">Set</button>
+          <button class="toggle" id="ogeo">Use my location</button></div>
+        <p class="calmsg" id="ostat" aria-live="polite" style="margin:0 0 12px"></p>
+        <div class="row"><span class="lbl">Day</span>
+          <div class="seg" id="day" role="group" aria-label="Day"><button data-v="d0">Today</button><button data-v="d1">Tomorrow</button><button data-v="d2" id="d2btn">Day 3</button><button data-v="custom">Custom</button></div></div>
+        <div class="row"><span class="lbl">Time</span>
+          <div class="seg" id="tod" role="group" aria-label="Time of day"><button data-v="am">Morning</button><button data-v="pm">Afternoon</button><button data-v="eve">Evening</button><button data-v="all">All day</button></div></div>
+        <p class="wx" id="wx" aria-live="polite"></p>
+        <p class="wxnote" id="wxnote"></p>
+        <div class="custom" id="custom">
+          <label>Date <input type="date" id="cd"><span></span></label>
+          <label>High in SF <input type="range" id="ct" min="45" max="95" step="1" value="62"><output id="cto"></output></label>
+          <label>Wind gusts <input type="range" id="cg" min="0" max="50" step="1" value="15"><output id="cgo"></output></label>
+          <label>Rain chance <input type="range" id="cr" min="0" max="100" step="5" value="0"><output id="cro"></output></label>
+        </div>
+        <div class="row"><span class="lbl">Show</span>
+          <div class="seg" id="kind" role="group" aria-label="Indoor or outdoor"><button data-v="outdoor">Outdoor</button><button data-v="indoor">Indoor</button><button data-v="both">Both</button></div>
+          <button class="toggle" id="evonly" aria-pressed="false">Events only</button>
+          <button class="toggle" id="hidesoon" aria-pressed="true">Hide ending soon</button>
+          <button class="toggle" id="hiderec" aria-pressed="false">Hide recurring</button></div>
+        <div class="row"><span class="lbl">Drive</span>
+          <div class="seg" id="drive" role="group" aria-label="Maximum drive"><button data-v="15">15 min</button><button data-v="20">20 min</button><button data-v="30">30 min</button></div>
+          <button class="toggle" id="free" aria-pressed="false">Free only</button></div>
+      </div>
+
+
+      <div class="panel" style="margin-top:14px">
+        <svg id="map" viewBox="0 0 360 360" role="img" aria-labelledby="mapt">
+          <title id="mapt">Drive-time map. Home is at the center; rings mark 10, 20 and 30 minutes. Pins are placed by direction and drive time.</title>
+          <g id="rings"></g><g id="pins"></g><g id="sel"></g>
+        </svg>
+        <div class="legend">
+          <span><i style="background:var(--great)"></i>Great</span>
+          <span><i style="background:var(--okay)"></i>Okay</span>
+          <span><i style="background:var(--skip)"></i>Skip</span>
+          <span><i class="sq" style="background:var(--indoor)"></i>Indoors</span>
+          <span><i class="sq" style="background:var(--ink-2);transform:rotate(45deg) scale(.85)"></i>Event</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div id="banner"></div>
+      <h2 id="count"></h2>
+      <div id="hint" style="margin:-4px 0 10px"></div>
+      <div class="list" id="list"></div>
+      <p class="foot" id="evfoot"></p>
+      <p class="foot">Forecasts come live from the National Weather Service for downtown San Francisco. Address lookup uses OpenStreetMap Nominatim (© OpenStreetMap contributors). Drive times are rough estimates from straight-line distance with light traffic, and each spot's warmth and wind exposure are estimates from its usual microclimate. Confirm event details and hours with the host before you go.</p>
+    </div>
+  </div>
+</div>
+<script>
+const DEFAULT_ORIGIN={label:"Downtown San Francisco",lat:37.7793,lng:-122.4193,q:"Civic Center, San Francisco, CA",approx:true,isDefault:true};
+let HOME=DEFAULT_ORIGIN;
+try{const o=JSON.parse(localStorage.getItem("fdo-origin")||"null");if(o&&isFinite(o.lat)&&isFinite(o.lng))HOME=o;}catch(e){}
+const ZIPS={"94102":[37.7795,-122.4193],"94103":[37.7725,-122.411],"94104":[37.7915,-122.4019],"94105":[37.7894,-122.3942],"94107":[37.7618,-122.397],"94108":[37.7929,-122.4079],"94109":[37.7917,-122.4186],"94110":[37.7486,-122.4158],"94111":[37.7984,-122.4],"94112":[37.7203,-122.4429],"94114":[37.7587,-122.433],"94115":[37.7856,-122.4371],"94116":[37.7441,-122.4863],"94117":[37.77,-122.4469],"94118":[37.7812,-122.4614],"94121":[37.7786,-122.4892],"94122":[37.7593,-122.4836],"94123":[37.8,-122.4364],"94124":[37.729,-122.3855],"94127":[37.7357,-122.46],"94129":[37.7979,-122.466],"94130":[37.8236,-122.37],"94131":[37.7454,-122.4387],"94132":[37.721,-122.479],"94133":[37.8002,-122.4097],"94134":[37.719,-122.4101],"94158":[37.7706,-122.388],
+"94601":[37.7764,-122.218],"94602":[37.801,-122.2105],"94603":[37.74,-122.171],"94605":[37.761,-122.149],"94606":[37.792,-122.244],"94607":[37.807,-122.285],"94608":[37.836,-122.283],"94609":[37.834,-122.264],"94610":[37.812,-122.242],"94611":[37.83,-122.216],"94612":[37.808,-122.27],"94618":[37.843,-122.24],"94619":[37.788,-122.188],"94621":[37.739,-122.199],
+"94702":[37.866,-122.285],"94703":[37.863,-122.275],"94704":[37.867,-122.256],"94705":[37.858,-122.239],"94706":[37.889,-122.296],"94707":[37.893,-122.278],"94708":[37.9,-122.262],"94709":[37.879,-122.266],"94710":[37.869,-122.299],"94530":[37.916,-122.298],"94501":[37.77,-122.262],"94502":[37.735,-122.243],"94577":[37.72,-122.158],
+"94014":[37.696,-122.452],"94015":[37.681,-122.48],"94005":[37.688,-122.403],"94080":[37.655,-122.423],"94044":[37.613,-122.487],"94066":[37.625,-122.43],"94030":[37.599,-122.402],"94010":[37.57,-122.363],"94401":[37.573,-122.32],"94402":[37.555,-122.333],"94403":[37.539,-122.3],
+"94965":[37.859,-122.485],"94941":[37.896,-122.517],"94920":[37.889,-122.467],"94925":[37.923,-122.513],"94901":[37.97,-122.513]};
+function miles(a,b){const R=3958.8,r=Math.PI/180;const dl=(b.lat-a.lat)*r,dg=(b.lng-a.lng)*r;const x=Math.sin(dl/2)**2+Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin(dg/2)**2;return 2*R*Math.asin(Math.sqrt(x));}
+function driveMin(p){const d=miles(HOME,p);return Math.max(3,Math.round(2+5*Math.min(d,3)+Math.max(d-3,0)));}
+function withMin(p){return Object.assign({},p,{min:driveMin(p)});}
+const PLACES=[
+ {id:"cas",name:"California Academy of Sciences",area:"Golden Gate Park",lat:37.7699,lng:-122.4661,min:16,indoor:true,exp:0,off:-3,free:false,note:"Aquarium, rainforest dome and penguins. Book weekend tickets ahead."},
+ {id:"ran",name:"Randall Museum",area:"Corona Heights",lat:37.7644,lng:-122.4385,min:10,indoor:true,exp:0,off:0,free:true,note:"Live animals and a model railroad. Small enough for a short trip between naps."},
+ {id:"exp",name:"Exploratorium",area:"Pier 15",lat:37.8017,lng:-122.3973,min:15,indoor:true,exp:0,off:0,free:false,note:"Hands-on science exhibits. Waterfront events can slow traffic, so go early."},
+ {id:"hab",name:"Habitot Children's Museum",area:"Berkeley",lat:37.869,lng:-122.2685,min:25,indoor:true,exp:0,off:0,free:false,note:"Play museum built for kids under 7."},
+ {id:"lhs",name:"Lawrence Hall of Science",area:"Berkeley hills",lat:37.879,lng:-122.246,min:30,indoor:true,exp:0,off:0,free:false,note:"Hands-on science center with big views of the bay."},
+ {id:"fai",name:"Children's Fairyland",area:"Lake Merritt, Oakland",lat:37.809,lng:-122.2603,min:20,indoor:false,exp:.3,off:6,free:false,note:"Storybook play sets sized for preschoolers, right beside the lake."},
+ {id:"red",name:"Redwood Regional Park",area:"Oakland hills",lat:37.8128,lng:-122.1625,min:25,indoor:false,exp:.1,off:3,free:false,note:"Tall redwoods block the wind. The lower Stream Trail is wide and mostly flat for strollers."},
+ {id:"til",name:"Tilden Little Farm",area:"Berkeley hills",lat:37.9095,lng:-122.2648,min:30,indoor:false,exp:.5,off:4,free:true,note:"Farm animals, with the carousel and small steam train nearby. Bring lettuce or celery for the animals."},
+ {id:"ozo",name:"Oakland Zoo",area:"East Oakland",lat:37.7509,lng:-122.147,min:25,indoor:false,exp:.4,off:8,free:false,note:"Inland hillside zoo with paved paths and a gondola."},
+ {id:"cpm",name:"Central Park",area:"San Mateo",lat:37.564,lng:-122.322,min:25,indoor:false,exp:.3,off:6,free:true,note:"Playground and a miniature train, usually warmer than the city."},
+ {id:"gle",name:"Glen Canyon Park",area:"Glen Park",lat:37.74,lng:-122.441,min:10,indoor:false,exp:.3,off:0,free:true,note:"Canyon walls cut the wind. Playground plus a short creek trail."},
+ {id:"kor",name:"Koret Children's Quarter",area:"Golden Gate Park",lat:37.768,lng:-122.4575,min:14,indoor:false,exp:.45,off:-3,free:true,note:"Playground and carousel near the Academy, buffered by trees."},
+ {id:"pre",name:"Precita Park",area:"Bernal Heights",lat:37.747,lng:-122.412,min:5,indoor:false,exp:.35,off:1,free:true,note:"Small neighborhood park on the sunny south slope of Bernal Heights."},
+ {id:"dol",name:"Dolores Park playground",area:"Mission Dolores",lat:37.7596,lng:-122.4269,min:6,indoor:false,exp:.45,off:1,free:true,note:"Big playground with city views. Gets breezy higher up the hill."},
+ {id:"cri",name:"Crissy Field",area:"Presidio",lat:37.804,lng:-122.464,min:20,indoor:false,exp:.95,off:-4,free:true,note:"Bay beach and wide flat paths, fully open to the wind."},
+ {id:"oce",name:"Ocean Beach",area:"Outer Sunset",lat:37.7594,lng:-122.5107,min:20,indoor:false,exp:1,off:-8,free:true,note:"Wide sandy beach. Usually cold, foggy or windy."},
+ {id:"sfz",name:"San Francisco Zoo",area:"Sloat Blvd",lat:37.733,lng:-122.503,min:20,indoor:false,exp:.85,off:-7,free:false,note:"Large zoo by the ocean. Coastal fog and wind make it chilly."},
+ {id:"bad",name:"Bay Area Discovery Museum",area:"Sausalito",lat:37.835,lng:-122.479,min:25,indoor:false,exp:.6,off:-1,free:false,note:"Mostly outdoor play spaces for under-5s, just across the Golden Gate Bridge."}
+];
+let DAYS=null,WXERR="";
+const FALLBACK={t:62,g:15,r:0};
+function dateOffset(n){const d=new Date();d.setDate(d.getDate()+n);return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
+const WIN={am:[8,12],pm:[12,17],eve:[17,20],all:[8,20]};
+const TODLABEL={am:"morning",pm:"afternoon",eve:"evening",all:"day"};
+function todayStr(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
+let S={day:"d0",tod:"am",kind:"outdoor",drive:30,free:false,evonly:false,hideSoon:true,hideRec:false,sel:null,custom:{t:62,g:15,r:0,date:todayStr()}};
+let EVENTS=[],META=null,dbState="loading";
+let CAL={on:false,status:"off",byDate:{},msg:""};
+try{const s=JSON.parse(localStorage.getItem("fdo")||"null");if(s){S.kind=s.kind||S.kind;S.drive=s.drive||S.drive;S.free=!!s.free;S.evonly=!!s.evonly;if(s.hideSoon===false)S.hideSoon=false;S.hideRec=!!s.hideRec;if(s.custom)S.custom=Object.assign(S.custom,s.custom);CAL.on=!!s.calOn;}}catch(e){}
+function save(){try{localStorage.setItem("fdo",JSON.stringify({kind:S.kind,drive:S.drive,free:S.free,evonly:S.evonly,hideSoon:S.hideSoon,hideRec:S.hideRec,custom:S.custom,calOn:CAL.on}))}catch(e){}}
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function cond(){if(S.day==="custom")return S.custom;const D=DAYS&&DAYS[S.day];return (D&&(D[S.tod]||D.all))||FALLBACK;}
+function curDate(){if(S.day==="custom")return S.custom.date||todayStr();return dateOffset({d0:0,d1:1,d2:2}[S.day]||0);}
+function dt(dateStr,h){const [y,m,d]=dateStr.split("-").map(Number);return new Date(y,m-1,d,Math.floor(h),Math.round((h%1)*60));}
+function winRange(){const w=WIN[S.tod];return[dt(curDate(),w[0]),dt(curDate(),w[1])];}
+function fmtT(d){let h=d.getHours(),m=d.getMinutes();const ap=h>=12?"pm":"am";h=h%12||12;return h+(m?":"+String(m).padStart(2,"0"):"")+" "+ap;}
+function evalPlace(p,c){
+ if(p.indoor)return{score:.72,tier:"indoor",label:"Indoors",why:"Indoors, so the weather won't matter."};
+ const gust=c.g*p.exp,felt=Math.round(c.t+p.off-gust*.25);
+ const wind=1-clamp(gust/30,0,1);let temp=clamp((felt-48)/16,0,1);if(felt>86)temp=clamp(1-(felt-86)/12,0,1);
+ const score=(.5*wind+.5*temp)*(1-(c.r/100)*.8);
+ const tier=score>=.7?"great":score>=.45?"okay":"skip";
+ const label={great:"Great",okay:"Okay",skip:"Skip"}[tier];
+ const w=gust<8?"little wind":gust<20?"some wind":"strong gusts";
+ let why=felt>86?`Feels about ${felt}°F, so look for shade.`:`Feels about ${felt}°F with ${w}.`;
+ if(c.r>=15)why+=` ${c.r}% chance of rain.`;
+ return{score,tier,label,why};
+}
+function evInterval(e){const s=new Date(e.start);const en=e.end?new Date(e.end):new Date(s.getTime()+2*3600e3);return[s,en];}
+function eventActive(e){
+ if(e.rangeStart){const d=curDate();if(d<e.rangeStart||d>e.rangeEnd)return false;return true;}
+ const [s,en]=evInterval(e);const [ws,we]=winRange();return s<we&&en>ws;
+}
+function busyBlocks(){const b=CAL.byDate[curDate()];return b&&b.blocks?b.blocks:null;}
+function conflicts(s,en){const b=busyBlocks();if(!b)return false;return b.some(x=>x.s<en&&x.e>s);}
+function freeWindows(){const b=busyBlocks();if(!b)return null;const d=curDate();let cur=dt(d,8);const end=dt(d,19);const out=[];
+ b.slice().sort((a,c)=>a.s-c.s).forEach(x=>{if(x.s>cur){const s=cur,e=x.s<end?x.s:end;if(e-s>=90*60e3)out.push([s,e]);}if(x.e>cur)cur=x.e;});
+ if(end-cur>=90*60e3)out.push([cur,end]);return out;}
+function bearing(p){const k=Math.cos(HOME.lat*Math.PI/180);return Math.atan2(p.lat-HOME.lat,(p.lng-HOME.lng)*k);}
+function pos(p){const a=bearing(p);const r=Math.min(p.min/30*148,166);return{x:180+r*Math.cos(a),y:180-r*Math.sin(a)};}
+function visible(p){if(p.min>S.drive)return false;if(S.free&&!p.free)return false;if(S.kind==="outdoor"&&p.indoor)return false;if(S.kind==="indoor"&&!p.indoor)return false;if(S.evonly&&!p.isEvent)return false;return true;}
+const VAR={great:"var(--great)",okay:"var(--okay)",skip:"var(--skip)",indoor:"var(--indoor)"};
+function drawRings(){let h="";
+ [10,20,30].forEach(m=>{const r=m/30*148;const on=m<=S.drive;h+=`<circle cx="180" cy="180" r="${r}" fill="none" style="stroke:var(--sky)" stroke-width="${m===S.drive?2.5:1.8}" ${on?"":'stroke-dasharray="3 5"'}/><text x="${180+r*.71+4}" y="${180-r*.71-4}" font-size="11" style="fill:var(--ink-2)" font-family="Atkinson Hyperlegible, sans-serif">${m} min</text>`;});
+ if(S.drive===15)h+=`<circle cx="180" cy="180" r="74" fill="none" style="stroke:var(--ink)" stroke-width="1.5" stroke-dasharray="2 3"/>`;
+ [["East Bay",37.83,-122.25],["Coast",37.76,-122.51],["Marin",37.9,-122.52],["Peninsula",37.58,-122.36],["San Francisco",37.765,-122.44]].forEach(([t,la,lo])=>{const c={lat:la,lng:lo};if(miles(HOME,c)<3.5)return;const a=bearing(c);const x=180+158*Math.cos(a),y=180-158*Math.sin(a)+4;const anc=Math.cos(a)>.35?"end":Math.cos(a)<-.35?"start":"middle";h+=`<text x="${clamp(x,6,354)}" y="${clamp(y,14,354)}" text-anchor="${anc}" font-size="12" style="fill:var(--ink-2)" font-family="Fredoka, sans-serif">${t}</text>`;});
+ h+=`<path d="M169 183 L180 172 L191 183 V192 H169 Z" style="fill:var(--sun);stroke:var(--stroke)" stroke-width="2.5" stroke-linejoin="round"/><rect x="177" y="185" width="6" height="7" style="fill:var(--stroke)"/>`;
+ document.getElementById("rings").innerHTML=h;}
+let SOON=0,RECN=0;
+function evKey(e){return String(e.name||"").toLowerCase().replace(/\s+/g," ").trim()+"|"+String(e.area||"").toLowerCase();}
+function recurringKeys(){const m={};EVENTS.forEach(e=>{if(e.kind==="impact"||e.rangeStart||!e.start)return;const k=evKey(e);(m[k]=m[k]||new Set()).add(String(e.start).slice(0,10));});const r=new Set();for(const k in m)if(m[k].size>1)r.add(k);return r;}
+function isRecurring(e,REC){return e.recurring===true||REC.has(evKey(e))||/^storytime (for|in)\b/i.test(e.name||"");}
+function items(){
+ SOON=0;RECN=0;const REC=S.hideRec?recurringKeys():null;const c=cond();const [ws,we]=winRange();
+ const impacts={};
+ EVENTS.filter(e=>e.kind==="impact"&&eventActive(e)).forEach(e=>(e.impacts||[]).forEach(id=>{(impacts[id]=impacts[id]||[]).push(e.title+(e.rangeStart?"":" ("+fmtT(new Date(e.start))+"–"+fmtT(evInterval(e)[1])+")"));}));
+ const out=PLACES.map(p0=>{const p=withMin(p0);const e=evalPlace(p,c);return{p,e,flags:(impacts[p.id]||[]).map(t=>"Heads up: "+t+" nearby"),v:visible(p)};});
+ EVENTS.filter(e=>e.kind!=="impact"&&eventActive(e)).forEach(ev=>{
+  const vis0=visible(withMin(Object.assign({},ev,{isEvent:true})));
+  if(REC&&isRecurring(ev,REC)){if(vis0)RECN++;return;}
+  if(S.hideSoon&&!ev.rangeStart&&evInterval(ev)[1].getTime()-Date.now()<30*60e3){if(vis0)SOON++;return;}
+  const p=withMin(Object.assign({},ev,{isEvent:true}));const e=evalPlace(p,c);const flags=[];
+  let when;if(ev.rangeStart){when="Open daily through "+ev.rangeLabel;}else{const [s,en]=evInterval(ev);when=fmtT(s)+(ev.end?"–"+fmtT(en):" start");if(conflicts(s,en))flags.push("Overlaps something on your calendar");}
+  (impacts[ev.id]||[]).forEach(t=>flags.push("Heads up: "+t));
+  out.push({p,e:Object.assign(e,{score:e.score+.06-(flags.length?.3:0)}),flags,when,v:visible(p)});
+ });
+ return out;
+}
+function renderCal(){
+ const el=document.getElementById("calbody");if(!el)return;
+ if(!CAL.on){el.innerHTML=`<p class="calmsg">See when you're free, so suggestions fit around your plans.</p>${CAL.msg?`<p class="warn">${esc(CAL.msg)}</p>`:""}<button class="toggle" id="calbtn" style="margin-top:8px">Check my Google Calendar</button>`;document.getElementById("calbtn").onclick=enableCal;return;}
+ const rec=CAL.byDate[curDate()];
+ if(!rec||rec.loading){el.innerHTML=`<p class="calmsg">Checking your calendar…</p>`;return;}
+ if(rec.error){el.innerHTML=`<p class="warn">${esc(rec.error)}</p>${rec.retry?`<button class="toggle" id="calretry" style="margin-top:8px">${esc(rec.retry)}</button>`:""}`;const b=document.getElementById("calretry");if(b)b.onclick=()=>{delete CAL.byDate[curDate()];fetchCal(curDate(),true);};return;}
+ const d=curDate(),s0=dt(d,8).getTime(),span=dt(d,19).getTime()-s0;
+ const [ws,we]=winRange();
+ let bars=rec.blocks.map(x=>{const a=clamp((x.s-s0)/span,0,1),b=clamp((x.e-s0)/span,0,1);return b>a?`<div class="busy" style="left:${a*100}%;width:${(b-a)*100}%"></div>`:"";}).join("");
+ const wa=clamp((ws-s0)/span,0,1),wb=clamp((we-s0)/span,0,1);bars+=`<div class="win" style="left:${wa*100}%;width:${(wb-wa)*100}%"></div>`;
+ const fw=freeWindows();
+ const txt=fw.length?"Free "+fw.map(([a,b])=>fmtT(a)+"–"+fmtT(b)).join(", "):"No open stretch of 90 minutes or more between 8 am and 8 pm.";
+ el.innerHTML=`<div class="daybar" role="img" aria-label="Busy times between 8 am and 7 pm">${bars}</div><div class="ticks"><span>8 am</span><span>11</span><span>2 pm</span><span>5</span><span>7</span></div><p class="calmsg">${esc(txt)}</p>`;
+}
+function render(){
+ const c=cond();
+ const label=S.day==="custom"?"Custom conditions":(DAYS&&DAYS[S.day]?DAYS[S.day].label:"Forecast");
+ document.getElementById("wx").textContent=`${label}: ${c.t}°F, gusts to ${c.g} mph${c.r?`, ${c.r}% rain`:""}`;
+ document.getElementById("wxnote").textContent=S.day==="custom"?"Set the date and conditions for the day you're planning.":(!DAYS?(WXERR||"Loading the live forecast…"):"Live National Weather Service forecast for downtown San Francisco: the high, strongest gusts and highest rain chance "+(S.tod==="all"?"between 8 am and 8 pm":"during the "+TODLABEL[S.tod])+(DAYS[S.day]&&DAYS[S.day].partial?" (the rest of the day)":"")+". Each spot is adjusted for its own microclimate.");
+ document.getElementById("custom").classList.toggle("on",S.day==="custom");
+ document.getElementById("cto").textContent=S.custom.t+"°F";document.getElementById("cgo").textContent=S.custom.g+" mph";document.getElementById("cro").textContent=S.custom.r+"%";
+ setSeg("day",S.day);setSeg("tod",S.tod);setSeg("kind",S.kind);setSeg("drive",String(S.drive));
+ document.getElementById("free").setAttribute("aria-pressed",S.free);document.getElementById("evonly").setAttribute("aria-pressed",S.evonly);document.getElementById("hidesoon").setAttribute("aria-pressed",S.hideSoon);document.getElementById("hiderec").setAttribute("aria-pressed",S.hideRec);
+ if(CAL.on&&MCP&&!CAL.byDate[curDate()])fetchCal(curDate());
+ renderCal();drawRings();
+ const rows=items();
+ let pins="";
+ rows.forEach(({p,e,v})=>{const {x,y}=pos(p);const col=VAR[e.tier];const r=S.sel===p.id?9:7;const st=`style="fill:${v?col:"none"};stroke:${v?"var(--stroke)":col}" stroke-width="${v?2:1.5}" opacity="${v?1:.35}"`;
+  let shape;if(p.isEvent)shape=`<rect x="${x-r*.85}" y="${y-r*.85}" width="${r*1.7}" height="${r*1.7}" transform="rotate(45 ${x} ${y})" ${st}/><circle cx="${x}" cy="${y}" r="2" style="fill:var(--panel)" opacity="${v?1:0}"/>`;
+  else if(p.indoor)shape=`<rect x="${x-r}" y="${y-r}" width="${2*r}" height="${2*r}" rx="3" ${st}/>`;else shape=`<circle cx="${x}" cy="${y}" r="${r}" ${st}/>`;
+  pins+=`<g class="pin" tabindex="${v?0:-1}" role="button" aria-label="${esc(p.name)}, ${p.min} minutes, ${e.label}" data-id="${esc(p.id)}">${shape}</g>`;});
+ document.getElementById("pins").innerHTML=pins;
+ const selG=document.getElementById("sel");selG.innerHTML="";
+ const selRow=rows.find(r=>r.p.id===S.sel);
+ if(selRow){const {x,y}=pos(selRow.p);const left=x>180;const t=document.createElementNS("http://www.w3.org/2000/svg","text");
+  t.setAttribute("x",left?x-14:x+14);t.setAttribute("y",y+4);t.setAttribute("text-anchor",left?"end":"start");t.setAttribute("font-size","13");t.setAttribute("font-weight","700");
+  t.style.fill="var(--ink)";t.setAttribute("paint-order","stroke");t.style.stroke="var(--panel)";t.setAttribute("stroke-width","4");t.setAttribute("font-family","Atkinson Hyperlegible, sans-serif");t.textContent=selRow.p.name;selG.appendChild(t);}
+ document.querySelectorAll(".pin").forEach(g=>{const go=()=>{const id=g.dataset.id;const r=rows.find(q=>q.p.id===id);if(!r||!r.v)return;S.sel=S.sel===id?null:id;render();const el=document.getElementById("c-"+id);if(el&&S.sel)el.scrollIntoView({block:"nearest",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});};
+  g.addEventListener("click",go);g.addEventListener("keydown",ev=>{if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});});
+ const fw=freeWindows();const [ws,we]=winRange();
+ const winFree=fw?fw.some(([a,b])=>a<we&&b>ws&&(Math.min(b,we)-Math.max(a,ws))>=90*60e3):true;
+ document.getElementById("banner").innerHTML=winFree?"":`<div class="banner">Your ${TODLABEL[S.tod]} is mostly booked. ${fw&&fw.length?"Try "+fw.map(([a,b])=>fmtT(a)+"–"+fmtT(b)).join(" or ")+".":""}</div>`;
+ const vis=rows.filter(r=>r.v).sort((a,b)=>b.e.score-a.e.score||a.p.min-b.p.min);
+ const good=vis.filter(r=>(r.e.tier==="great"||r.e.tier==="indoor")&&!r.flags.length).length;
+ const evn=vis.filter(r=>r.p.isEvent).length;
+ document.getElementById("count").textContent=vis.length?`${good} good ${good===1?"bet":"bets"} out of ${vis.length}${evn?`, including ${evn} ${evn===1?"event":"events"}`:""}`:"No matches";
+ const hiddenEv=rows.filter(r=>r.p.isEvent&&!r.v&&r.p.min<=S.drive&&!(S.free&&!r.p.free)&&((S.kind==="outdoor"&&r.p.indoor)||(S.kind==="indoor"&&!r.p.indoor))).length;
+ const hintEl=document.getElementById("hint");
+ if(hiddenEv){hintEl.innerHTML=`<span class="calmsg">${hiddenEv} ${S.kind==="outdoor"?"indoor":"outdoor"} ${hiddenEv===1?"event is":"events are"} hidden by the ${S.kind==="outdoor"?"Outdoor":"Indoor"} filter.</span> <button class="toggle" id="showall" style="min-height:32px;padding:4px 10px">Show both</button>`;document.getElementById("showall").onclick=()=>{S.kind="both";save();render();};}else hintEl.innerHTML="";
+ if(RECN)hintEl.insertAdjacentHTML("beforeend",`<div class="calmsg">${RECN} recurring ${RECN===1?"program is":"programs are"} hidden, like daily museum shows and weekly storytimes.</div>`);
+ if(SOON)hintEl.insertAdjacentHTML("beforeend",`<div class="calmsg">${SOON} ${SOON===1?"event that has ended or ends":"events that have ended or end"} within 30 minutes ${SOON===1?"is":"are"} hidden.</div>`);
+ const list=document.getElementById("list");
+ if(!vis.length){list.innerHTML=`<p class="empty">${S.evonly?"No events in this window. Try the other time of day or another day.":"Nothing fits these filters. Try a longer drive or turn off Free only."}</p>`;}
+ else list.innerHTML=vis.map(({p,e,flags,when})=>{
+  const url=`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(HOME.q||(HOME.lat+","+HOME.lng))}&destination=${p.lat},${p.lng}`;
+  return `<div class="card${e.tier==="skip"?" dim":""}" id="c-${esc(p.id)}" role="button" tabindex="0" aria-expanded="${S.sel===p.id}" data-id="${esc(p.id)}">
+   <div class="top"><div>${when?`<div class="evtime">${esc(when)}</div>`:""}<div class="name">${esc(p.name)}</div><div class="meta">${esc(p.area)}, about ${p.min} min${p.free?", free":""}</div>${flags.map(f=>`<div class="flag">${esc(f)}</div>`).join("")}</div><span class="tag t-${e.tier}">${e.label}</span></div>
+   <div class="more"><p style="margin:0 0 6px">${esc(e.why)} ${esc(p.note)}</p><a href="${url}" target="_blank" rel="noopener">Get directions</a>${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}</div></div>`;}).join("");
+ list.querySelectorAll(".card").forEach(cd=>{const go=()=>{S.sel=S.sel===cd.dataset.id?null:cd.dataset.id;render();};
+  cd.addEventListener("click",ev=>{if(ev.target.closest("a"))return;go();});cd.addEventListener("keydown",ev=>{if(ev.target.closest("a"))return;if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});});
+ const f=document.getElementById("evfoot");
+ if(dbState==="none")f.textContent="Couldn't load events.json.";
+ else if(dbState==="loading")f.textContent="Loading events…";
+ else f.textContent=META&&META.refreshedLabel?`Events last refreshed ${META.refreshedLabel}${META.coverage?" for "+META.coverage:""}. Events refresh automatically twice a week.`:"No events loaded yet.";
+}
+function setSeg(id,v){document.querySelectorAll(`#${id} button`).forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===v));}
+function bindSeg(id,fn){document.querySelectorAll(`#${id} button`).forEach(b=>b.addEventListener("click",()=>{fn(b.dataset.v);save();render();}));}
+bindSeg("day",v=>{S.day=v;S.sel=null;});bindSeg("tod",v=>S.tod=v);bindSeg("kind",v=>{S.kind=v;S.sel=null;});bindSeg("drive",v=>{S.drive=Number(v);S.sel=null;});
+document.getElementById("free").addEventListener("click",()=>{S.free=!S.free;S.sel=null;save();render();});
+document.getElementById("evonly").addEventListener("click",()=>{S.evonly=!S.evonly;S.sel=null;save();render();});
+document.getElementById("hidesoon").addEventListener("click",()=>{S.hideSoon=!S.hideSoon;S.sel=null;save();render();});
+document.getElementById("hiderec").addEventListener("click",()=>{S.hideRec=!S.hideRec;S.sel=null;save();render();});
+[["ct","t"],["cg","g"],["cr","r"]].forEach(([id,k])=>{const el=document.getElementById(id);el.value=S.custom[k];el.addEventListener("input",()=>{S.custom[k]=Number(el.value);save();render();});});
+const cdEl=document.getElementById("cd");cdEl.value=S.custom.date;cdEl.addEventListener("change",()=>{if(cdEl.value){S.custom.date=cdEl.value;save();render();}});
+
+let MCP=null;
+const CAL_ERR={
+ needs_reauth:"Reconnect Google Calendar in claude.ai Settings → Connectors, then try again.",
+ server_not_connected:"Add Google Calendar in claude.ai Settings → Connectors, then try again.",
+ selection_required:"Choose which Google Calendar connector to use when claude.ai asks, then try again.",
+ not_in_manifest:"Calendar access is turned off for this page. You can turn it back on from the page's permissions.",
+ blocked_by_policy:"Your organization doesn't allow calendar access here.",
+ approval_required:"Calendar access needs your approval."
+};
+function parseBlocks(payload){
+ const evs=(payload&&payload.events)||[];const out=[];
+ evs.forEach(ev=>{if(!ev||ev.status==="cancelled"||ev.transparency==="transparent")return;
+  if(!ev.start||!ev.start.dateTime||!ev.end||!ev.end.dateTime)return;
+  const me=(ev.attendees||[]).find(a=>a.self);if(me&&me.responseStatus==="declined")return;
+  const s=new Date(ev.start.dateTime),e=new Date(ev.end.dateTime);if(!isNaN(s)&&!isNaN(e))out.push({s,e});});
+ return out;}
+async function fetchCal(date,userAction){
+ if(!MCP){CAL.byDate[date]={error:"Calendar isn't available in this view."};render();return;}
+ if(CAL.byDate[date]&&CAL.byDate[date].loading)return;
+ CAL.byDate[date]={loading:true};renderCal();
+ const input={startTime:date+"T00:00:00",endTime:date+"T23:59:00",orderBy:"startTime",pageSize:100};
+ const attempt=async()=>{const r=await MCP.callTool("Google Calendar","list_events",input,{cache:{staleTime:120000}});return r.payload;};
+ try{let p;try{p=await attempt();}catch(err){if(err&&err.retryable){await new Promise(r=>setTimeout(r,Math.min(err.retryAfterMs||1500+Math.random()*1500,8000)));p=await attempt();}else throw err;}
+  CAL.byDate[date]={blocks:parseBlocks(p)};
+ }catch(err){const code=err&&err.code;
+  if(code==="needs_reauth"||code==="server_not_connected"||code==="not_in_manifest"||code==="blocked_by_policy"){CAL.byDate[date]={error:CAL_ERR[code],retry:"Try again"};}
+  else if(code==="approval_required"){CAL.byDate[date]={error:CAL_ERR[code],retry:"Allow calendar access"};}
+  else if(code==="selection_required"){CAL.byDate[date]={error:CAL_ERR[code],retry:"Try again"};}
+  else if(code==="tool_error"){CAL.byDate[date]={error:"Google Calendar couldn't return events: "+(err.message||"unknown error"),retry:"Try again"};}
+  else if(code==="not_granted"||code==="capability_disabled"||code==="capability_removed"){CAL.byDate[date]={error:"Calendar isn't available in this view."};}
+  else{CAL.byDate[date]={error:"Couldn't reach Google Calendar right now.",retry:"Try again"};}
+ }
+ if(date===curDate())render();
+}
+function enableCal(){CAL.on=true;CAL.msg="";save();delete CAL.byDate[curDate()];
+ if(!MCP){CAL.on=false;CAL.msg="Calendar isn't available in this view.";save();render();return;}
+ fetchCal(curDate(),true);}
+
+function ostat(msg){document.getElementById("ostat").textContent=msg||(HOME.isDefault?"Starting from downtown San Francisco until you set your own starting point. It's saved only in this browser.":`Starting from ${HOME.label}${HOME.approx?" (approximate)":""}. Saved only in this browser.`);}
+function setOrigin(o){HOME=o;try{localStorage.setItem("fdo-origin",JSON.stringify(o))}catch(e){}S.sel=null;ostat();render();}
+async function lookup(){
+ const raw=document.getElementById("oin").value.trim();
+ if(!raw){ostat("Enter an address or a 5-digit ZIP code.");return;}
+ const z=raw.match(/^\d{5}$/)||raw.match(/\b(9\d{4})\b\s*$/);
+ const zip=z?(z[1]||z[0]):null;
+ if(zip&&/^\d{5}$/.test(raw)){if(ZIPS[zip]){setOrigin({label:"ZIP "+zip,lat:ZIPS[zip][0],lng:ZIPS[zip][1],q:zip,approx:true});}else ostat("That ZIP code isn't in this guide's Bay Area list. Try a nearby ZIP or a street address.");return;}
+ ostat("Looking up that address…");
+ try{
+  const u="https://nominatim.openstreetmap.org/search?"+new URLSearchParams({q:raw,format:"jsonv2",limit:"1",addressdetails:"1",countrycodes:"us",viewbox:"-122.8,38.2,-121.8,37.3",bounded:"1"});
+  const js=await (await fetch(u,{headers:{"Accept-Language":"en"}})).json();
+  if(js&&js[0]){const A=js[0].address||{};const near=[A.neighbourhood||A.suburb||A.quarter,A.city||A.town||A.village].filter(Boolean).join(", ");
+   setOrigin({label:near?"near "+near:raw,lat:+js[0].lat,lng:+js[0].lon,q:raw,approx:true});return;}
+ }catch(e){}
+ if(zip&&ZIPS[zip]){setOrigin({label:"ZIP "+zip,lat:ZIPS[zip][0],lng:ZIPS[zip][1],q:raw,approx:true});return;}
+ ostat("Couldn't find that address in the Bay Area. Try adding the city, or enter a ZIP code.");
+}
+document.getElementById("oset").addEventListener("click",lookup);
+document.getElementById("oin").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();lookup();}});
+document.getElementById("ogeo").addEventListener("click",()=>{
+ if(!navigator.geolocation){ostat("Location isn't available here. Enter an address or ZIP code instead.");return;}
+ ostat("Finding your location…");
+ navigator.geolocation.getCurrentPosition(pp=>{const la=pp.coords.latitude,lo=pp.coords.longitude;
+  if(la<37.3||la>38.2||lo<-122.8||lo>-121.8){ostat("Your location looks outside the Bay Area this guide covers.");return;}
+  setOrigin({label:"your current location",lat:la,lng:lo,q:la.toFixed(5)+","+lo.toFixed(5),approx:false});},
+  ()=>ostat("Couldn't get your location. Enter an address or ZIP code instead."),{timeout:10000,maximumAge:600000});
+});
+const h=new Date().getHours();S.tod=h>=17?"eve":h>=12?"pm":"am";
+ostat();
+render();
+setInterval(()=>{if(!document.hidden)render();},60000);
+function isoHours(d){const m=/P(?:(\d+)D)?(?:T(?:(\d+)H)?)?/.exec(d)||[];return (+(m[1]||0))*24+(+(m[2]||0));}
+async function loadWeather(){
+ try{
+  const pt=await (await fetch("https://api.weather.gov/points/37.7749,-122.4194",{headers:{Accept:"application/geo+json"}})).json();
+  const g=await (await fetch(pt.properties.forecastGridData,{headers:{Accept:"application/geo+json"}})).json();
+  const P=g.properties;
+  const ser=k=>(P[k]&&P[k].values||[]).map(v=>{const [st,du]=v.validTime.split("/");const s0=new Date(st).getTime();return{s:s0,e:s0+isoHours(du)*3600e3,v:v.value};});
+  const T=ser("temperature"),G=ser("windGust"),W=ser("windSpeed"),R=ser("probabilityOfPrecipitation");
+  const mx=(arr,a,b)=>{let m=null;arr.forEach(x=>{if(x.s<b&&x.e>a&&x.v!=null)m=m==null?x.v:Math.max(m,x.v);});return m;};
+  const now=Date.now();DAYS={};
+  ["d0","d1","d2"].forEach((k,n)=>{const ds=dateOffset(n);const day={date:ds};
+   const dd=dt(ds,12);day.label=(n===0?"Today, ":n===1?"Tomorrow, ":"")+dd.toLocaleDateString("en-US",{weekday:n>1?"long":"short",month:"short",day:"numeric"});
+   ["am","pm","eve","all"].forEach(w=>{let a=dt(ds,WIN[w][0]).getTime(),b=dt(ds,WIN[w][1]).getTime();if(n===0&&a<now&&b>now){a=now;day.partial=true;}
+    const t=mx(T,a,b),gu=mx(G,a,b)??mx(W,a,b),r=mx(R,a,b);
+    if(t!=null)day[w]={t:Math.round(t*9/5+32),g:Math.round((gu||0)/1.609),r:Math.round(r||0)};});
+   DAYS[k]=day;});
+  const b3=document.getElementById("d2btn");if(b3)b3.textContent=dt(dateOffset(2),12).toLocaleDateString("en-US",{weekday:"long"});
+ }catch(e){WXERR="Couldn't load the live forecast right now. Pick Custom to set the conditions yourself.";}
+ render();
+}
+loadWeather();
+setInterval(()=>{if(!document.hidden)loadWeather();},3*3600e3);
+(async()=>{
+ try{const r=await fetch("events.json",{cache:"no-cache"});if(!r.ok)throw 0;const d=await r.json();
+  EVENTS=(d.events||[]).filter(e=>e&&e.id);
+  META={refreshedLabel:d.generated?new Date(d.generated).toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"}):"",coverage:d.coverage||""};
+  dbState="ready";}catch(e){dbState="none";}
+ render();
+})();
+</script>
+</body>
+</html>
