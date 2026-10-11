@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Where should we go today?</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,24 +14,11 @@
   --sun:#FFC93C; --sun-ink:#1F2A44; --sky:#7CC4F5; --grass:#7BD389; --berry:#F25C78;
   --great:#17955A; --great-bg:#D6F6E3; --okay:#C97A00; --okay-bg:#FFEDC2;
   --skip:#D93A55; --skip-bg:#FFE0E6; --indoor:#3A63D8; --indoor-bg:#DEE7FF;
+  color-scheme: light;
   --focus:#3A63D8; --glow:color-mix(in srgb,#FFC93C 30%,transparent);
   box-sizing:border-box;
   padding-top:env(safe-area-inset-top,0px);
   padding-bottom:env(safe-area-inset-bottom,0px);
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#16213B; --panel:#1F2D4D; --ink:#F2F6FF; --ink-2:#B3C2DE; --line:#33456B; --stroke:#0A1020;
-    --sun:#FFC93C; --sun-ink:#1F2A44; --sky:#4F8FC4; --grass:#4FA868; --berry:#F27A90;
-    --great:#6EE0A2; --great-bg:#173B2C; --okay:#FFC65C; --okay-bg:#3E3216;
-    --skip:#FF8FA2; --skip-bg:#4A2030; --indoor:#9DB6FF; --indoor-bg:#24345E; --focus:#9DB6FF; --glow:transparent;
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#16213B; --panel:#1F2D4D; --ink:#F2F6FF; --ink-2:#B3C2DE; --line:#33456B; --stroke:#0A1020;
-  --sun:#FFC93C; --sun-ink:#1F2A44; --sky:#4F8FC4; --grass:#4FA868; --berry:#F27A90;
-  --great:#6EE0A2; --great-bg:#173B2C; --okay:#FFC65C; --okay-bg:#3E3216;
-  --skip:#FF8FA2; --skip-bg:#4A2030; --indoor:#9DB6FF; --indoor-bg:#24345E; --focus:#9DB6FF; --glow:transparent;
 }
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *,*::before,*::after{box-sizing:inherit}
@@ -125,8 +113,13 @@ h2{font-weight:600}
 .banner{border:2px solid var(--stroke);box-shadow:3px 3px 0 var(--stroke)}
 .daybar{border:2px solid var(--stroke)}
 .grid>div{min-width:0}
-.specials{margin:0 0 16px;min-width:0}
+.specials{margin:0 0 12px;min-width:0}
 .specials h2{margin:0 0 8px}
+.chiphead{font-family:"Fredoka",system-ui,sans-serif;font-weight:600;font-size:15px;margin:0 0 6px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 4px 8px 2px}
+.chip{flex:0 0 auto;max-width:270px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:inherit;font-size:14px;font-weight:700;color:var(--ink);background:color-mix(in srgb,var(--sun) 22%,var(--panel));border:2px solid var(--stroke);border-radius:999px;box-shadow:2px 2px 0 var(--stroke);padding:6px 12px;cursor:pointer}
+.chip .evtime{font-size:13px;margin-right:6px}
+.chip:active{transform:translateY(1px)}
 .strip{display:flex;gap:10px;overflow-x:auto;padding:2px 6px 10px 2px;scroll-snap-type:x mandatory}
 .scard{flex:0 0 min(80%,270px);scroll-snap-align:start;text-align:left;font:inherit;color:inherit;cursor:pointer;background:color-mix(in srgb,var(--sun) 22%,var(--panel));border:2px solid var(--stroke);border-radius:18px;box-shadow:3px 3px 0 var(--stroke);padding:10px 12px}
 .scard .name{font-size:17px}
@@ -202,7 +195,7 @@ h2{font-weight:600}
       <div class="panel" style="margin-top:14px">
         <svg id="map" viewBox="0 0 360 360" role="img" aria-labelledby="mapt">
           <title id="mapt">Drive-time map. Home is at the center; rings mark 10, 20 and 30 minutes. Pins are placed by direction and drive time.</title>
-          <g id="rings"></g><g id="pins"></g><g id="sel"></g>
+          <g id="rings"></g><g id="pins"></g><g id="sel"></g><g id="hov" style="pointer-events:none"></g>
         </svg>
         <div class="legend">
           <span><i style="background:var(--great)"></i>Great</span>
@@ -216,7 +209,6 @@ h2{font-weight:600}
     </div>
 
     <div>
-      <div id="specials" class="specials"></div>
       <div id="banner"></div>
       <h2 id="count"></h2>
       <div id="hint" style="margin:-4px 0 10px"></div>
@@ -361,6 +353,11 @@ function items(){
  final.forEach(r=>{if(r.slots&&r.slots.length>1){r.slots.sort((a,b)=>a[0]-b[0]);r.when=r.slots.map(x=>x[1]).join(", ");r.p.multi=true;}});
  return final;
 }
+function hoverLabel(r){const hg=document.getElementById("hov");if(!hg)return;hg.innerHTML="";if(!r||r.p.id===S.sel)return;
+ const {x,y}=pos(r.p);const left=x>180;const t=document.createElementNS("http://www.w3.org/2000/svg","text");
+ t.setAttribute("x",left?x-12:x+12);t.setAttribute("y",y+4);t.setAttribute("text-anchor",left?"end":"start");t.setAttribute("font-size","13");t.setAttribute("font-weight","700");
+ t.style.fill="var(--ink)";t.setAttribute("paint-order","stroke");t.style.stroke="var(--panel)";t.setAttribute("stroke-width","4");t.setAttribute("font-family","Atkinson Hyperlegible, sans-serif");
+ t.textContent=r.p.name+(r.when?" ("+r.when+")":"");hg.appendChild(t);}
 function star(x,y,r){let d="";for(let i=0;i<10;i++){const a=-Math.PI/2+i*Math.PI/5,q=i%2?r*.45:r;d+=(i?"L":"M")+(x+q*Math.cos(a)).toFixed(1)+" "+(y+q*Math.sin(a)).toFixed(1);}return d+"Z";}
 function gcal(p){const [s0,e0]=evInterval(p);const f=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
  return "https://calendar.google.com/calendar/render?"+new URLSearchParams({action:"TEMPLATE",text:p.name||"Family outing",dates:f(s0)+"/"+f(e0),details:(p.note||"")+(p.url?"\n"+p.url:""),location:p.area||""});}
@@ -368,21 +365,11 @@ function oneOffs(fromMs,toMs){const RALL=recurringKeys();
  return EVENTS.filter(e=>e.kind!=="impact"&&!e.rangeStart&&e.start&&!isRecurring(e,RALL)).map(e=>withMin(Object.assign({},e,{isEvent:true,oneOff:true})))
   .filter(p=>{const [s0,e0]=evInterval(p);return s0.getTime()<toMs&&e0.getTime()>fromMs&&e0.getTime()>Date.now()+15*60e3&&s0.getHours()<20&&p.min<=S.drive&&!(S.free&&!p.free);})
   .sort((a,b)=>new Date(a.start)-new Date(b.start));}
-function renderSpecials(){
- const el=document.getElementById("specials");if(!el)return;
- const dl=whenDates(),d=dl[0],a=S.when==="now"?Date.now():dt(d,0).getTime(),list=oneOffs(a,S.when==="now"?a+3*3600e3:dt(dl[dl.length-1],0).getTime()+864e5);
- if(!list.length){el.innerHTML="";return;}
- const dayName=S.when==="now"?"in the next few hours":S.when==="few"?"in the next few days":S.when==="weekend"?"this weekend":d===todayStr()?"today":"on "+wkday(d,true);
- el.innerHTML=`<h2>One day only ${dayName}</h2><div class="strip">`+list.map(p=>{const [s0,e0]=evInterval(p);const e=evalPlace(p,condFor(ymd(s0)));
-  return `<button class="scard" data-id="${esc(p.id)}"><div class="evtime">${esc((dl.length>1?wkday(ymd(s0))+" ":"")+fmtT(s0)+(p.end?"–"+fmtT(e0):" start"))}</div><div class="name">${esc(p.name)}</div><div class="meta">${esc(p.area)}, about ${p.min} min${p.free?", free":""}</div><div style="margin-top:6px"><span class="tag t-${e.tier}">${e.label}</span></div></button>`;}).join("")+`</div>`;
- el.querySelectorAll(".scard").forEach(b=>b.addEventListener("click",()=>{S.tod="all";if(S.kind!=="both")S.kind="both";S.evonly=false;S.sel=b.dataset.id;save();render();
-  const c2=document.getElementById("c-"+b.dataset.id);if(c2)c2.scrollIntoView({block:"center",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});}));
-}
 function renderUpcoming(){
  const el=document.getElementById("upcoming");if(!el)return;
- const t0=dt(todayStr(),0).getTime()+864e5,list=oneOffs(t0,t0+7*864e5);
+ const dl=whenDates(),lastSel=dl[dl.length-1],from=addDays(lastSel>todayStr()?lastSel:todayStr(),1),t0=dt(from,0).getTime(),list=oneOffs(t0,t0+7*864e5);
  if(!list.length){el.innerHTML="";return;}
- let html=`<h2>Coming up this week</h2><p class="calmsg" style="margin:0 0 4px">One-off events in the next seven days, within your drive time.</p>`,last="";
+ let html=`<h2>Coming up</h2><p class="calmsg" style="margin:0 0 4px">One-off events in the week after the dates you’re viewing, within your drive time.</p>`,last="";
  list.forEach(p=>{const [s0,e0]=evInterval(p);const day=s0.toLocaleDateString("en-US",{weekday:"long",month:"short",day:"numeric"});
   if(day!==last){html+=`<div class="upday">${esc(day)}</div>`;last=day;}
   html+=`<details class="uprow"><summary><span class="evtime">${esc(fmtT(s0))}</span> <b>${esc(p.name)}</b><div class="meta">${esc(p.area)}, about ${p.min} min${p.free?", free":""}</div></summary><p>${esc(p.note||"")}</p><a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}</details>`;});
@@ -435,7 +422,7 @@ function render(){
   t.setAttribute("x",left?x-14:x+14);t.setAttribute("y",y+4);t.setAttribute("text-anchor",left?"end":"start");t.setAttribute("font-size","13");t.setAttribute("font-weight","700");
   t.style.fill="var(--ink)";t.setAttribute("paint-order","stroke");t.style.stroke="var(--panel)";t.setAttribute("stroke-width","4");t.setAttribute("font-family","Atkinson Hyperlegible, sans-serif");t.textContent=selRow.p.name;selG.appendChild(t);}
  document.querySelectorAll(".pin").forEach(g=>{const go=()=>{const id=g.dataset.id;const r=rows.find(q=>q.p.id===id);if(!r||!r.v)return;S.sel=S.sel===id?null:id;render();const el=document.getElementById("c-"+id);if(el&&S.sel)el.scrollIntoView({block:"nearest",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});};
-  g.addEventListener("click",go);g.addEventListener("keydown",ev=>{if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});});
+  g.addEventListener("click",go);const hr=rows.find(q=>q.p.id===g.dataset.id);g.addEventListener("mouseenter",()=>hoverLabel(hr));g.addEventListener("mouseleave",()=>hoverLabel(null));g.addEventListener("focus",()=>hoverLabel(hr));g.addEventListener("blur",()=>hoverLabel(null));g.addEventListener("keydown",ev=>{if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});});
  const fw=freeWindows();const [ws,we]=winRange();
  const winFree=(!fw||multiDay()||S.when==="now")?true:fw.some(([a,b])=>a<we&&b>ws&&(Math.min(b,we)-Math.max(a,ws))>=90*60e3);
  document.getElementById("banner").innerHTML=winFree?"":`<div class="banner">Your ${TODLABEL[S.tod]} is mostly booked. ${fw&&fw.length?"Try "+fw.map(([a,b])=>fmtT(a)+"–"+fmtT(b)).join(" or ")+".":""}</div>`;
@@ -448,13 +435,13 @@ function render(){
  if(hiddenEv){hintEl.innerHTML=`<span class="calmsg">${hiddenEv} ${S.kind==="outdoor"?"indoor":"outdoor"} ${hiddenEv===1?"event is":"events are"} hidden by the ${S.kind==="outdoor"?"Outdoor":"Indoor"} filter.</span> <button class="toggle" id="showall" style="min-height:32px;padding:4px 10px">Show both</button>`;document.getElementById("showall").onclick=()=>{S.kind="both";save();render();};}else hintEl.innerHTML="";
  if(RECN)hintEl.insertAdjacentHTML("beforeend",`<div class="calmsg">${RECN} recurring ${RECN===1?"program is":"programs are"} hidden, like daily museum shows and weekly storytimes.</div>`);
  if(SOON)hintEl.insertAdjacentHTML("beforeend",`<div class="calmsg">${SOON} ${SOON===1?"event that has ended or ends":"events that have ended or end"} within 30 minutes ${SOON===1?"is":"are"} hidden.</div>`);
- renderSpecials();renderUpcoming();
+ renderUpcoming();
  const list=document.getElementById("list");
  if(!vis.length){list.innerHTML=`<p class="empty">${S.evonly?"No events in this window. Try the other time of day or another day.":"Nothing fits these filters. Try a longer drive or turn off Free only."}</p>`;}
  else list.innerHTML=vis.map(({p,e,flags,when})=>{
   const url=`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(HOME.q||(HOME.lat+","+HOME.lng))}&destination=${p.lat},${p.lng}`;
   return `<div class="card${e.tier==="skip"?" dim":""}" id="c-${esc(p.id)}" role="button" tabindex="0" aria-expanded="${S.sel===p.id}" data-id="${esc(p.id)}">
-   <div class="top"><div>${when?`<div class="evtime">${esc(when)}</div>`:""}<div class="name">${esc(p.name)}${p.oneOff?`<span class="badge">One day only</span>`:""}</div><div class="meta">${esc(p.area)}, about ${p.min} min${p.free?", free":""}</div>${flags.map(f=>`<div class="flag">${esc(f)}</div>`).join("")}</div><span class="tag t-${e.tier}">${e.label}</span></div>
+   <div class="top"><div>${when?`<div class="evtime">${esc(when)}</div>`:""}<div class="name">${esc(p.name)}</div><div class="meta">${esc(p.area)}, about ${p.min} min${p.free?", free":""}</div>${flags.map(f=>`<div class="flag">${esc(f)}</div>`).join("")}</div><span class="tag t-${e.tier}">${e.label}</span></div>
    <div class="more"><p style="margin:0 0 6px">${esc(e.why)} ${esc(p.note)}</p><a href="${url}" target="_blank" rel="noopener">Get directions</a>${p.isEvent&&p.start&&!p.rangeStart&&!p.multi?` · <a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>`:""}${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:(p.isEvent?` · <a href="https://www.google.com/search?q=${encodeURIComponent(p.name+" "+(p.area||"")+" San Francisco")}" target="_blank" rel="noopener">Search for details</a>`:"")}</div></div>`;}).join("");
  list.querySelectorAll(".card").forEach(cd=>{const go=()=>{S.sel=S.sel===cd.dataset.id?null:cd.dataset.id;render();};
   cd.addEventListener("click",ev=>{if(ev.target.closest("a"))return;go();});cd.addEventListener("keydown",ev=>{if(ev.target.closest("a"))return;if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});});

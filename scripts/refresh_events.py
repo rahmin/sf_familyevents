@@ -356,6 +356,7 @@ def scrape_tribe(base: str, source: str, prefix: str, start: date, end: date, **
         s = datetime.fromisoformat(e["start_date"]).replace(tzinfo=TZ)
         en = datetime.fromisoformat(e["end_date"]).replace(tzinfo=TZ)
         desc = re.sub(r"<[^>]+>", " ", html.unescape(e.get("excerpt") or e.get("description") or ""))
+        full = re.sub(r"<[^>]+>", " ", html.unescape(e.get("description") or ""))
         out.append(
             dict(
                 id=f"{prefix}-{e['id']}-{s.date().isoformat()}", kind="event", source=source,
@@ -366,6 +367,7 @@ def scrape_tribe(base: str, source: str, prefix: str, start: date, end: date, **
                 free=not (e.get("cost") or "").strip(),
                 start=s.isoformat(), end=en.isoformat(),
                 note=" ".join(desc.split())[:220], url=e["url"],
+                _family=bool(FAMILY_DESC.search(full)),
             )
         )
     log(f"  {len(out)} events")
@@ -380,6 +382,11 @@ def scrape_children_nature(start, end):
 # most of them for adults, so it is only used with Claude curation, or with a keyword filter.
 FAMILY_WORDS = re.compile(r"\b(kid|kids|child|children|family|families|famil|toddler|baby|babies|lantern|parade|"
                           r"storytime|story time|puppet|open house|festival|block party|halloween|d[ií]a de)\b", re.I)
+
+
+# Phrases in a listing's full description that mark it as aimed at families.
+FAMILY_DESC = re.compile(r"family[- ]friendly|kids'? activit|children'?s activit|activities for (kids|children|families)|"
+                         r"for (the whole )?family|for kids|for children|bring the kids|all-ages block party", re.I)
 
 
 def scrape_mission_local(start, end):
@@ -590,7 +597,7 @@ def main():
     if os.environ.get("ANTHROPIC_API_KEY"):
         loose = curate(loose + ml + fc)
     else:
-        ml = [e for e in ml if FAMILY_WORDS.search(e["name"]) and e["start"][11:16] < "20:00"]
+        ml = [e for e in ml if (FAMILY_WORDS.search(e["name"]) or e.get("_family")) and e["start"][11:16] < "20:00"]
         log(f"No ANTHROPIC_API_KEY: skipping Funcheap; kept {len(ml)} Mission Local events by keyword")
         loose = loose + ml
 
@@ -601,6 +608,8 @@ def main():
             if last and last >= today.isoformat():
                 manual.append(e)
 
+    for e in trusted + loose:
+        e.pop("_family", None)
     seen, events = set(), []
     for e in manual + trusted + loose:  # manual entries win on duplicate ids
         if e["id"] in seen:
