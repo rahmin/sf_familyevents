@@ -1532,7 +1532,7 @@ def load_suggestions(edition: str, today: date) -> list[dict]:
             if any(w in h for w in words):
                 return i
         return None
-    C = dict(ok=col("approved"), name=col("event name", "name of the event"), page=col("which page"), date=col("date"),
+    C = dict(ok=col("approved"), name=col("event name", "name of the event"), page=col("which page", "category"), date=col("date"),
              start=col("start time"), end=col("end time"), place=col("venue", "where"), addr=col("address"), url=col("link"),
              free=col("free"), indoor=col("indoors", "indoor"), note=col("description", "what is it"))
     def cell(row, k):
@@ -1557,6 +1557,9 @@ def load_suggestions(edition: str, today: date) -> list[dict]:
         if not re.match(r"(?i)\s*(y|yes|approved|ok|✓|x)\s*$", cell(row, "ok")):
             continue
         page = cell(row, "page").lower()
+        if not page:
+            log(f"  suggestion skipped, no page chosen: {cell(row, 'name')}")
+            continue
         if not ("both" in page or ("family" in page) == (edition == "family")):
             continue
         name, day, t0 = cell(row, "name"), parse_day(cell(row, "date")), parse_time(cell(row, "start"))
