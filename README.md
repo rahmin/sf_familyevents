@@ -65,6 +65,34 @@ Multi-day exhibits can use `rangeStart`, `rangeEnd` and `rangeLabel` instead of 
 
 To warn about something that affects nearby places, such as an air show snarling traffic, add an entry with `"kind": "impact"`, a `title`, `start`, `end`, and an `impacts` list of place or event ids.
 
+## Visitor suggestions
+
+Both pages show a "➕ Suggest an event" link once `SUGGEST_URL` is set near the top of each page's main script. It opens a Google Form. Answers land in a Google Sheet, and you approve them there.
+
+**One-time setup**
+1. Create a Google Form with these questions. The refresh script matches them by these words, so keep them in the titles:
+   - **Event name** (short answer, required)
+   - **Which page** (multiple choice: Family outings / Talks & concerts / Both)
+   - **Date** (date, required)
+   - **Start time** (time, required) and **End time** (time)
+   - **Venue or place name** (short answer) and **Address** (short answer)
+   - **Link** (short answer)
+   - **Is it free?** (Yes / No / Not sure)
+   - **Indoors or outdoors?** (Indoors / Outdoors)
+   - **Short description** (paragraph)
+   Don't add an email question, and leave "Collect email addresses" off. The Sheet is published, so anything in it is public.
+2. In the Form's Responses tab, link it to a new Sheet. In the Sheet, add a column at the right titled **Approved**.
+3. In the Sheet: File → Share → Publish to web → pick the responses tab and **Comma-separated values (.csv)** → Publish. Copy the link.
+4. In GitHub: Settings → Secrets and variables → Actions → Variables → add `SUGGESTIONS_CSV` with that link.
+5. Put the Form's share link in `SUGGEST_URL` in both `index.html` and `talks-concerts.html`.
+
+**Approving**
+- Type `yes` in the Approved column of a row. Leave it blank (or anything else) to skip it.
+- Approved events appear at the next refresh (Thursday and Saturday mornings). To publish right away, open the Actions tab → Refresh events and deploy → Run workflow.
+- Fix typos straight in the Sheet; the next refresh picks up the change. Clearing `yes` removes the event.
+- The address is looked up on OpenStreetMap. If it can't be found, the run's log says "suggestion skipped" and you can fix the address.
+- Approved events show up as source `suggested`; family-page suggestions count as kid-friendly. Past events drop off on their own.
+
 ## Things to know
 
 - **Paused schedules:** GitHub pauses scheduled workflows in public repositories after 60 days without activity. If events stop updating, open the Actions tab and re-enable the workflow.

@@ -17,7 +17,9 @@ Run locally:  python scripts/refresh_events.py
 """
 from __future__ import annotations
 
+import csv
 import html
+import io
 import json
 import math
 import os
@@ -1098,11 +1100,11 @@ def main():
             if last and last >= today.isoformat():
                 manual.append(e)
 
-    events = merge(manual + trusted + loose)
+    events = merge(manual + load_suggestions("family", today) + trusted + loose)
     payload = {
         "generated": datetime.now(TZ).isoformat(timespec="minutes"),
         "coverage": f"{today:%b %-d}–{end:%b %-d}, with one-off events through {far:%b %-d}",
-        "sources": ["SF Public Library", "California Academy of Sciences", "SFMOMA", "Oakland Museum of California", "Mission Science Workshop", "Yerba Buena Gardens Festival", "SF Children & Nature", "Mission Local", "Galería de la Raza", "Local Kiddo SF", "Funcheap", "manual"],
+        "sources": ["SF Public Library", "California Academy of Sciences", "SFMOMA", "Oakland Museum of California", "Mission Science Workshop", "Yerba Buena Gardens Festival", "SF Children & Nature", "Mission Local", "Galería de la Raza", "Local Kiddo SF", "Funcheap", "manual", "visitor suggestions"],
         "events": events,
     }
     OUT.write_text(json.dumps(payload, indent=1, ensure_ascii=False) + "\n")
@@ -1494,7 +1496,7 @@ def build_talks_concerts(today: date, far: date):
     if MANUAL_CT.exists():
         manual = [e for e in json.loads(MANUAL_CT.read_text()).get("events", [])
                   if (e.get("end") or e.get("start") or "")[:10] >= today.isoformat()]
-    events = merge(manual + feeds + watch + ybg + loose)
+    events = merge(manual + load_suggestions("talks-concerts", today) + feeds + watch + ybg + loose)
     for e in events:
         e["indoor"] = bool(e.get("indoor", True))
     OUT_CT.write_text(json.dumps({
@@ -1505,6 +1507,77 @@ def build_talks_concerts(today: date, far: date):
         "events": events}, indent=1, ensure_ascii=False) + "\n")
     write_specials_ics(events, ICS_CT, "Talks & concerts: one-offs")
     log(f"Wrote {len(events)} events to {OUT_CT.name}")
+
+
+# ---------------------------------------------------------------- visitor suggestions (Google Form → Sheet)
+def load_suggestions(edition: str, today: date) -> list[dict]:
+    """Approved rows from the suggestions Sheet, published as CSV (repo variable SUGGESTIONS_CSV).
+    A row counts when its Approved column says yes; "Which page" picks family, talks-concerts or both."""
+    url = os.environ.get("SUGGESTIONS_CSV", "").strip()
+    if not url:
+        return []
+    r = get(url)
+    if not r:
+        return []
+    rows = list(csv.reader(io.StringIO(r.content.decode("utf-8-sig"))))
+    if not rows:
+        return []
+    head = [h.strip().lower() for h in rows[0]]
+    def col(*words):
+        for i, h in enumerate(head):
+            if any(w in h for w in words):
+                return i
+        return None
+    C = dict(ok=col("approved"), name=col("event name", "name of the event"), page=col("which page"), date=col("date"),
+             start=col("start time"), end=col("end time"), place=col("venue", "where"), addr=col("address"), url=col("link"),
+             free=col("free"), indoor=col("indoors", "indoor"), note=col("description", "what is it"))
+    def cell(row, k):
+        i = C[k]
+        return row[i].strip() if i is not None and i < len(row) else ""
+    def parse_day(t):
+        for fmt in ("%m/%d/%Y", "%Y-%m-%d", "%m/%d/%y"):
+            try:
+                return datetime.strptime(t, fmt).date()
+            except ValueError:
+                pass
+        return None
+    def parse_time(t):
+        for fmt in ("%I:%M:%S %p", "%I:%M %p", "%H:%M:%S", "%H:%M", "%I %p"):
+            try:
+                return datetime.strptime(t.upper(), fmt).time()
+            except ValueError:
+                pass
+        return None
+    out = []
+    for row in rows[1:]:
+        if not re.match(r"(?i)\s*(y|yes|approved|ok|✓|x)\s*$", cell(row, "ok")):
+            continue
+        page = cell(row, "page").lower()
+        if not ("both" in page or ("family" in page) == (edition == "family")):
+            continue
+        name, day, t0 = cell(row, "name"), parse_day(cell(row, "date")), parse_time(cell(row, "start"))
+        if not (name and day and t0) or day < today:
+            continue
+        t1 = parse_time(cell(row, "end"))
+        start = datetime.combine(day, t0, TZ)
+        end = datetime.combine(day, t1, TZ) if t1 and t1 > t0 else None
+        place, addr = cell(row, "place"), cell(row, "addr")
+        lat, lng = geocode(addr or place)
+        if lat is None and place and addr:
+            lat, lng = geocode(place)
+        if lat is None:
+            log(f"  suggestion skipped, couldn't find the place: {name} @ {addr or place}")
+            continue
+        indoor = not re.search(r"(?i)outdoor", cell(row, "indoor"))
+        e = dict(id=f"sug-{re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')[:40]}-{day.isoformat()}", kind="event", source="suggested",
+                 name=name, area=", ".join(x for x in (place, addr) if x) or addr, lat=lat, lng=lng,
+                 start=start.isoformat(), indoor=indoor, exp=0 if indoor else 0.6, off=0,
+                 free=bool(re.match(r"(?i)\s*yes", cell(row, "free"))), note=cell(row, "note"), url=cell(row, "url"))
+        if end:
+            e["end"] = end.isoformat()
+        out.append(e)
+    log(f"Suggestions ({edition}): {len(out)} approved")
+    return out
 
 
 def _name_words(name: str) -> set[str]:

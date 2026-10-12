@@ -34,6 +34,7 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 | `data/venues.json` | hand | Venue overrides matched by event link (e.g. Natural Resources) |
 | `data/playgrounds.json` | Phase 0 audit | Source copy of the playground list embedded in `index.html` |
 | `data/geocache.json` | refresh script | Saved Nominatim lookups |
+| Google Sheet (CSV in var `SUGGESTIONS_CSV`) | visitors via Google Form | Suggestions; `load_suggestions()` keeps rows with Approved = yes. Setup and approving: README "Visitor suggestions". Pages link to the Form via `SUGGEST_URL` (empty hides the link). |
 
 Event fields: `id, kind ("event"|"impact"), source, name, area, lat, lng, start, end, rangeStart/rangeEnd/rangeLabel, indoor, exp (0–1), off (°F), free, note, url, tags, recurring, bookAhead, also`.
 
@@ -46,7 +47,7 @@ Run locally: `pip install requests` then `python scripts/refresh_events.py` (≈
 Family sources: SF Public Library (`scrape_sfpl`, with real program descriptions via `sfpl_note`), Cal Academy, SFMOMA, OMCA, Mission Science Workshop & MAPP (rules), YBG, SF Children & Nature, Mission Local, Galería de la Raza, Local Kiddo SF newsletter (`scrape_localkiddo` + `enrich_events`), Funcheap (key), watchlist (key), manual.
 Talks & concerts sources: calendar feeds (The Fold, SPUR), JCCSF, Commonwealth Club, The Independent (TicketWeb ajax), Red Poppy Art House, Community Music Center, MAPP, venue pages (Fillmore, The Chapel, GAMH), YBG, Mission Local/Galería (adult filter), watchlist (key), manual.
 
-Env (repo Settings → Secrets and variables → Actions): secret `ANTHROPIC_API_KEY` (enables Funcheap, Claude screening, watchlist), variable `CONTACT_EMAIL` (Nominatim user-agent), optional `CLAUDE_MODEL`.
+Env (repo Settings → Secrets and variables → Actions): secret `ANTHROPIC_API_KEY` (enables Funcheap, Claude screening, watchlist), variable `CONTACT_EMAIL` (Nominatim user-agent), optional `CLAUDE_MODEL`, `SUGGESTIONS_CSV`.
 
 Workflow: `.github/workflows/refresh-and-deploy.yml` — Thu + Sat 7 am Pacific, plus manual runs and redeploy on push.
 

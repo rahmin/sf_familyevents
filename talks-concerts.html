@@ -116,6 +116,7 @@ h2{font-weight:600}
 .specials{margin:0 0 12px;min-width:0}
 .specials h2{margin:0 0 8px}
 .also{display:inline-block;margin:4px 0 2px;font-size:14px;font-weight:700;color:var(--indoor);text-decoration:none}.also:hover{text-decoration:underline}
+.suggest{margin:18px 0 6px;font-weight:600}.suggest a{color:var(--indoor);font-weight:700}
 .chiphead{font-family:"Fredoka",system-ui,sans-serif;font-weight:600;font-size:15px;margin:0 0 6px}
 .chips{display:flex;gap:8px;overflow-x:auto;padding:2px 4px 8px 2px}
 .chip{flex:0 0 auto;max-width:270px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:inherit;font-size:14px;font-weight:700;color:var(--ink);background:color-mix(in srgb,var(--sun) 22%,var(--panel));border:2px solid var(--stroke);border-radius:999px;box-shadow:2px 2px 0 var(--stroke);padding:6px 12px;cursor:pointer}
@@ -294,6 +295,7 @@ h2{font-weight:600}
       <div class="list" id="list"></div>
       <div id="upcoming" class="upcoming"></div>
       <div id="horizon" class="upcoming"></div>
+      <p class="suggest" id="suggest" hidden>Know about a talk or concert we're missing? <a id="suggestlink" href="#" target="_blank" rel="noopener">➕ Suggest an event</a></p>
       <p class="foot" id="icsfoot"></p>
       <p class="foot" id="evfoot"></p>
       <p class="foot">Forecasts come live from the National Weather Service for downtown San Francisco. Address lookup uses OpenStreetMap Nominatim (© OpenStreetMap contributors). Drive times are rough estimates from straight-line distance with light traffic, and each spot's warmth and wind exposure are estimates from its usual microclimate. Confirm event details and hours with the host before you go.</p>
@@ -322,6 +324,8 @@ function dateOffset(n){const d=new Date();d.setDate(d.getDate()+n);return d.getF
 const WIN={am:[8,12],pm:[12,17],eve:[17,24],all:[8,24]};
 const TODLABEL={am:"morning",pm:"afternoon",eve:"evening",all:"day"};
 function todayStr(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
+const SUGGEST_URL=""; // Google Form for visitor suggestions (see README); empty hides the link
+if(SUGGEST_URL){const a=document.getElementById("suggestlink");a.href=SUGGEST_URL;document.getElementById("suggest").hidden=false;}
 let S={when:"month",pick:"",tod:"all",kind:"both",drive:30,free:false,evonly:false,hideSoon:true,hideRec:false,interests:[],onlyInt:false,sel:null,custom:{t:62,g:15,r:0,date:todayStr()}};
 let EVENTS=[],META=null,dbState="loading";
 let CAL={on:false,status:"off",byDate:{},msg:""};
