@@ -8,7 +8,7 @@ Static HTML pages + JSON data, rebuilt twice a week by a Python script in GitHub
 | File | What it is |
 |---|---|
 | `index.html` | **Family outings** page ("Where should we go today?"). Two tabs: *Outings & events* (≈20 hand-curated places + kid/family events) and *🛝 Playgrounds* (135 SF Rec & Park playgrounds, embedded as `const PLAYGROUNDS=[…]`). |
-| `talks-concerts.html` | **Talks & concerts · adults** page ("What's on tonight?"). Same engine, no places, its own tags. Opens on This month · Anytime. |
+| `talks-concerts.html` | **Talks & concerts** page ("Go hear something good."; ticket icon, SF skyline). Same engine, no places, its own tags. Opens on This month · Anytime. |
 
 Both GitHub pages share almost all of their JavaScript. **A change to shared behavior (cards, filters, map, likes, venues, compact controls) usually needs to be made in both `index.html` and `talks-concerts.html`**. Page-specific differences: `PLACES`/`PLAYGROUNDS` (family only), `TAGS` list, default `S.tod`/`S.kind`, `WIN` time windows, kid-focus scoring (family only), localStorage keys (`fdo*` vs `fdo-ct*`), data file names.
 
