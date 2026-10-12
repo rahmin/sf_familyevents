@@ -1533,7 +1533,7 @@ def load_suggestions(edition: str, today: date) -> list[dict]:
                 return i
         return None
     C = dict(ok=col("approved"), name=col("event name", "name of the event"), page=col("which page", "category"), date=col("date"),
-             start=col("start time"), end=col("end time"), place=col("venue", "where"), addr=col("address"), url=col("link"),
+             start=col("start time"), end=col("end time"), place=col("venue", "where"), addr=col("address"), url=col("link", "url"),
              free=col("free"), indoor=col("indoors", "indoor"), note=col("description", "what is it"))
     def cell(row, k):
         i = C[k]
