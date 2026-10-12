@@ -363,9 +363,12 @@ def page_details(url: str) -> dict:
                 loc = loc[0] if isinstance(loc, list) and loc else loc
                 if isinstance(loc, dict):
                     addr = loc.get("address")
-                    if isinstance(addr, dict):
-                        addr = addr.get("streetAddress")
-                    info.update(venue=html.unescape(loc.get("name") or ""), address=addr or "")
+                    for _ in range(3):  # JSON-LD allows a list, an object or plain text, nested
+                        if isinstance(addr, list):
+                            addr = addr[0] if addr else ""
+                        elif isinstance(addr, dict):
+                            addr = addr.get("streetAddress") or addr.get("name") or ""
+                    info.update(venue=html.unescape(loc.get("name") or ""), address=addr if isinstance(addr, str) else "")
                 info["desc"] = it.get("description") or ""
                 break
     if not info.get("desc"):
