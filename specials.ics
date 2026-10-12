@@ -7,569 +7,19 @@ X-WR-CALNAME:Family events: one day only
 X-WR-TIMEZONE:America/Los_Angeles
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 BEGIN:VEVENT
-UID:fleet-fest-wharf@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T160000Z
-DTEND:20261011T000000Z
-SUMMARY:Fleet Fest at Fisherman's Wharf
-LOCATION:SkyStar Wheel and Pier 27
-DESCRIPTION:Navy bands and food trucks on the waterfront. Expect big crowd
- s during the air show.\nhttps://sf.funcheap.com/fleet-fest-2026-navy-band
- s-food-trucks-fishermans-wharf/
-URL:https://sf.funcheap.com/fleet-fest-2026-navy-bands-food-trucks-fisherm
- ans-wharf/
-END:VEVENT
-BEGIN:VEVENT
-UID:scn-6441-2026-10-10@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T170000Z
-DTEND:20261010T190000Z
-SUMMARY:Celebrate the New OMI Nature Exploration Area!
-LOCATION:OMI Nature Exploration Area
-DESCRIPTION:Join We Are OMI\, Friends of OMI Mini Parks\, and project part
- ners for a casual community celebration of the new Nature Exploration Are
- a at Brotherhood Way Open Space! Meet at Brotherhood Way Open Space betwe
- en Sisterhood \nhttps://sfchildrennature.org/event/celebrate-the-new-omi-
- nature-exploration-area/
-URL:https://sfchildrennature.org/event/celebrate-the-new-omi-nature-explor
- ation-area/
-END:VEVENT
-BEGIN:VEVENT
-UID:berkeley-ipd-powwow@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T170000Z
-DTEND:20261010T200000Z
-SUMMARY:Indigenous Peoples Day Powwow and Indian Market
-LOCATION:MLK Civic Center Park\, Berkeley
-DESCRIPTION:Berkeley's 33rd annual celebration with dancing\, Native foods
- \, and arts and crafts. Free and wheelchair accessible.\nhttps://www.510f
- amilies.com/calendar/indigenous-peoples-day/
-URL:https://www.510families.com/calendar/indigenous-peoples-day/
-END:VEVENT
-BEGIN:VEVENT
-UID:k9-heroes-duboce@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T170000Z
-DTEND:20261010T180000Z
-SUMMARY:K9 Heroes demonstration (Fleet Week)
-LOCATION:Duboce Park
-DESCRIPTION:Working dogs show their skills\, followed by a Navy brass band
-  at 11.\nhttps://sf.funcheap.com/sfs-fleet-fest-2026-navy-band-sw-brass-b
- and-fleet-fest/
-URL:https://sf.funcheap.com/sfs-fleet-fest-2026-navy-band-sw-brass-band-fl
- eet-fest/
-END:VEVENT
-BEGIN:VEVENT
-UID:msw-open-house-oct10@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T170000Z
-DTEND:20261010T220000Z
-SUMMARY:Mission Science Workshop free open house
-LOCATION:Mission Science Workshop\, 3750 18th St (Church St between 17th a
- nd 18th)
-DESCRIPTION:The workshop's free monthly Saturday open house\, with Hallowe
- en basket making and geode breaking today plus the usual hands-on science
-  and live animals. Today's details came from a neighbor\, so check the wo
- rkshop's page or call (415) 621-1240 to confirm.\nhttps://www.missionscie
- nceworkshop.org/visit
-URL:https://www.missionscienceworkshop.org/visit
-END:VEVENT
-BEGIN:VEVENT
-UID:opl-banned-books-storytime@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T173000Z
-DTEND:20261010T183000Z
-SUMMARY:Banned Books Week Family Storytime
-LOCATION:Oakland Main Library
-DESCRIPTION:A special storytime with playtime afterward. All ages welcome.
- \nhttps://oaklandlibrary.bibliocommons.com/events/6a9aec1281e9d60947cd9f8
- 3
-URL:https://oaklandlibrary.bibliocommons.com/events/6a9aec1281e9d60947cd9f
- 83
-END:VEVENT
-BEGIN:VEVENT
-UID:chabot-spiders@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T173000Z
-DTEND:20261010T193000Z
-SUMMARY:Family Nature Adventures: Spidey Spectacular
-LOCATION:Chabot Space and Science Center\, Oakland hills
-DESCRIPTION:A family program all about spiders. Check the listing for ages
-  and tickets.\nhttps://chabotspace.org/calendar/family-nature-adventures-
- spiders/
-URL:https://chabotspace.org/calendar/family-nature-adventures-spiders/
-END:VEVENT
-BEGIN:VEVENT
-UID:sfpl-2026-10-10-early-learning-saturday-morning-playtimes@sf_familyeve
- nts
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T173000Z
-DTEND:20261010T193000Z
-SUMMARY:Saturday Morning Playtimes
-LOCATION:Glen Park Branch Library
-DESCRIPTION:Free library program for young children and their grown-ups.\n
- https://sfpl.org/events/2026/10/10/early-learning-saturday-morning-playti
- mes
-URL:https://sfpl.org/events/2026/10/10/early-learning-saturday-morning-pla
- ytimes
-END:VEVENT
-BEGIN:VEVENT
-UID:fleet-fest-india-basin@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T180000Z
-DTEND:20261010T220000Z
-SUMMARY:Fleet Week Family Day at India Basin
-LOCATION:India Basin Waterfront Park\, Bayview
-DESCRIPTION:Free bayfront festival with a brass band concert\, boat rides\
- , games and kids' giveaways. It's right on the water\, so dress for wind.
- \nhttps://sf.funcheap.com/2026-fleet-week-family-day-waterfront-concert-f
- ree-boat-rides-india-basin/
-URL:https://sf.funcheap.com/2026-fleet-week-family-day-waterfront-concert-
- free-boat-rides-india-basin/
-END:VEVENT
-BEGIN:VEVENT
-UID:treasure-island-otg@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T180000Z
-DTEND:20261010T230000Z
-SUMMARY:Off the Grid on Treasure Island
-LOCATION:Treasure Island
-DESCRIPTION:Food trucks with big skyline views. The island is very exposed
-  on windy days.\nhttps://www.510families.com/calendar/off-the-grid-on-tre
- asure-island-2026-09-12-2026-09-19-2026-09-26-2026-10-03-2026-10-10/
-URL:https://www.510families.com/calendar/off-the-grid-on-treasure-island-2
- 026-09-12-2026-09-19-2026-09-26-2026-10-03-2026-10-10/
-END:VEVENT
-BEGIN:VEVENT
-UID:paseo-artistico-10th-block-party@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T180000Z
-DTEND:20261011T010000Z
-SUMMARY:Paseo Artístico 10th Anniversary Block Party
-LOCATION:Harrison St between 23rd and 24th
-DESCRIPTION:Free outdoor block party for the Mission's bilingual art walk:
-  a live music stage\, kids' activities\, community murals and arts and cr
- afts vendors. Mission District Young Musicians play around noon\, and Fog
- o Na Roupa closes the stage at 5:30.\nhttps://missionlocal.org/event/danc
- e-mission-theater-paseo-artistico-fogo-na-roupa/
-URL:https://missionlocal.org/event/dance-mission-theater-paseo-artistico-f
- ogo-na-roupa/
-END:VEVENT
-BEGIN:VEVENT
-UID:union-square-garba@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T180000Z
-DTEND:20261010T210000Z
-SUMMARY:Second Saturdays: Bollywood Garba
-LOCATION:Union Square
-DESCRIPTION:Free outdoor dance celebration. No RSVP needed.\nhttps://sf.fu
- ncheap.com/saturdays-round-world-union-square-bollywood-garba-sf/
-URL:https://sf.funcheap.com/saturdays-round-world-union-square-bollywood-g
- arba-sf/
-END:VEVENT
-BEGIN:VEVENT
-UID:sfpl-2026-10-10-film-sesame-street-and-great-elephant-adventure@sf_fam
- ilyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T180000Z
-DTEND:20261010T191500Z
-SUMMARY:Sesame Street and the Great Elephant Adventure
-LOCATION:Main Library
-DESCRIPTION:Free library program for young children and their grown-ups.\n
- https://sfpl.org/events/2026/10/10/film-sesame-street-and-great-elephant-
- adventure
-URL:https://sfpl.org/events/2026/10/10/film-sesame-street-and-great-elepha
- nt-adventure
-END:VEVENT
-BEGIN:VEVENT
-UID:air-show-sat@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T190000Z
-DTEND:20261010T230000Z
-SUMMARY:Fleet Week air show
-LOCATION:Marina Green
-DESCRIPTION:Free viewing on the Marina Green. Jets are very loud\, so brin
- g ear protection for little ones. Strong wind may cut today's show short.
- \nhttps://sf.funcheap.com/san-francisco-fleet-week-2024-blue-angels-air-s
- how-2/
-URL:https://sf.funcheap.com/san-francisco-fleet-week-2024-blue-angels-air-
- show-2/
-END:VEVENT
-BEGIN:VEVENT
-UID:exp-story-sat-12@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T190000Z
-DTEND:20261010T200000Z
-SUMMARY:Storytime Science: Halloween
-LOCATION:Exploratorium\, Pier 15
-DESCRIPTION:A Halloween storybook read-aloud with a related hands-on activ
- ity\, aimed at ages 4 to 8 and their grown-ups. Included with admission.\
- nhttps://www.exploratorium.edu/visit/calendar
-URL:https://www.exploratorium.edu/visit/calendar
-END:VEVENT
-BEGIN:VEVENT
-UID:alameda-big-truck@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T200000Z
-DTEND:20261010T220000Z
-SUMMARY:Big Truck Bonanza
-LOCATION:Alameda City Hall parking lot
-DESCRIPTION:The Alameda library's touch-a-truck event\, held every other y
- ear. Meet police\, fire and utility trucks in the City Hall lot across fr
- om the Main Library.\nhttps://alamedafree.events.mylibrary.digital/event?
- id=396660
-URL:https://alamedafree.events.mylibrary.digital/event?id=396660
-END:VEVENT
-BEGIN:VEVENT
-UID:ybg-follow-the-music@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T200000Z
-DTEND:20261010T230000Z
-SUMMARY:Oakland Rising: Follow the Music (live)
-LOCATION:Yerba Buena Gardens
-DESCRIPTION:Free live music on the Great Lawn from a youth arts education 
- group. RSVP suggested.\nhttps://ybgfestival.org/event/follow-the-music/
-URL:https://ybgfestival.org/event/follow-the-music/
-END:VEVENT
-BEGIN:VEVENT
-UID:exp-story-sat-14@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T210000Z
-DTEND:20261010T220000Z
-SUMMARY:Storytime Science: Halloween
-LOCATION:Exploratorium\, Pier 15
-DESCRIPTION:A Halloween storybook read-aloud with a related hands-on activ
- ity\, aimed at ages 4 to 8 and their grown-ups. Included with admission.\
- nhttps://www.exploratorium.edu/visit/calendar
-URL:https://www.exploratorium.edu/visit/calendar
-END:VEVENT
-BEGIN:VEVENT
-UID:sfpl-2026-10-10-performance-aguacate-music-kids@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261010T220000Z
-DTEND:20261010T224500Z
-SUMMARY:Aguacate Music Kids
-LOCATION:Bernal Heights Branch Library
-DESCRIPTION:Free library program for young children and their grown-ups.\n
- https://sfpl.org/events/2026/10/10/performance-aguacate-music-kids
-URL:https://sfpl.org/events/2026/10/10/performance-aguacate-music-kids
-END:VEVENT
-BEGIN:VEVENT
-UID:shotwell-lantern-parade@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T020000Z
-DTEND:20261011T040000Z
-SUMMARY:Shotwell Community Lantern Parade
-LOCATION:StorefrontLab\, 337 Shotwell St
-DESCRIPTION:Bring a lantern\, drums or noisemakers. Gather at 7\, the para
- de heads down Shotwell at 7:30\, returns at 24th around 8:10\, and finish
- es at Shotwell and 20th around 8:30.\nhttps://missionlocal.org/event/stor
- efrontlab-shotwell-community-lantern-parade/
-URL:https://missionlocal.org/event/storefrontlab-shotwell-community-lanter
- n-parade/
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-bird-curious-beginner-birding-in-the-garden-2026-10-11@sf_familyeve
- nts
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T153000Z
-DTEND:20261011T173000Z
-SUMMARY:Bird Curious: Beginner Birding in the Garden
-LOCATION:SF Botanical Garden\, Golden Gate Park
-DESCRIPTION:A relaxed beginner bird walk through the Botanical Garden's be
- st birding spots. (Picked by Local Kiddo SF.)\nhttps://gggp.org/event/bir
- d-curious-birding-in-the-garden-4/
-URL:https://gggp.org/event/bird-curious-birding-in-the-garden-4/
-END:VEVENT
-BEGIN:VEVENT
-UID:childrens-business-fair@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T160000Z
-DTEND:20261011T190000Z
-SUMMARY:Children's Business Fair
-LOCATION:San Francisco County Fair Building\, Golden Gate Park
-DESCRIPTION:About 40 kid entrepreneurs selling crafts and creations at the
- ir own booths.\nhttps://sf.funcheap.com/sfs-1st-childrens-business-fair-4
- 0-kid-entrepreneurs-golden-gate-park/
-URL:https://sf.funcheap.com/sfs-1st-childrens-business-fair-40-kid-entrepr
- eneurs-golden-gate-park/
-END:VEVENT
-BEGIN:VEVENT
-UID:dads-strollers@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T170000Z
-DTEND:20261011T190000Z
-SUMMARY:Dads with Strollers meetup
-LOCATION:Francisco Park\, Russian Hill
-DESCRIPTION:A walk-and-talk for dads\, with coffee and donuts. Meets at th
- e lower children's playground.\nhttps://sf.funcheap.com/dads-strollers-me
- etup-sfs-francisco-park/
-URL:https://sf.funcheap.com/dads-strollers-meetup-sfs-francisco-park/
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-inner-sunset-flea-market-2026-10-11@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T170000Z
-DTEND:20261011T230000Z
-SUMMARY:Inner Sunset Flea Market
-LOCATION:Irving St\, Inner Sunset
-DESCRIPTION:Outdoor neighborhood flea market along Irving Street. (Picked 
- by Local Kiddo SF.)\nhttps://sunsetmercantilesf.com/innersunsetflea/
-URL:https://sunsetmercantilesf.com/innersunsetflea/
-END:VEVENT
-BEGIN:VEVENT
-UID:model-boats@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T170000Z
-DTEND:20261011T210000Z
-SUMMARY:Model Boats on Parade
-LOCATION:Spreckels Lake\, Golden Gate Park
-DESCRIPTION:Dozens of model boats on display and sailing the lake\, with a
-  sailboat race at 1 pm.\nhttps://sf.funcheap.com/free-model-boats-parade-
- sailboat-race-golden-gate-park/
-URL:https://sf.funcheap.com/free-model-boats-parade-sailboat-race-golden-g
- ate-park/
-END:VEVENT
-BEGIN:VEVENT
-UID:ybg-dance-day@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T170000Z
-DTEND:20261011T230000Z
-SUMMARY:YBG Dance Day
-LOCATION:Yerba Buena Gardens
-DESCRIPTION:Free drop-in dance classes until 1:30 pm\, then performances o
- n the Great Lawn.\nhttps://ybgfestival.org/event/ybg-dance-day-2026/
-URL:https://ybgfestival.org/event/ybg-dance-day-2026/
-END:VEVENT
-BEGIN:VEVENT
-UID:play-dragons-love-tacos-2026-10-11-10@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T173000Z
-DTEND:20261011T183000Z
-SUMMARY:Dragons Love Tacos\, the Musical (PLAY Theatre)
-LOCATION:Creativity Theater\, Children's Creativity Museum\, 221 4th St
-DESCRIPTION:A musical of the picture book\, with toe-tapping songs and a s
- cene-stealing dog. Recommended for ages 3 and up\; about an hour with a 1
- 0-minute intermission. $5 to $39\; kids under 2 free. The run ends Oct 18
- .\nhttps://www.playtheatreco.org/dragons-love-tacos-the-musical
-URL:https://www.playtheatreco.org/dragons-love-tacos-the-musical
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-mahjong-at-the-museum-2026-10-11@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T173000Z
-DTEND:20261011T230000Z
-SUMMARY:Mahjong at the Museum
-LOCATION:Asian Art Museum\, 200 Larkin St
-DESCRIPTION:Drop-in mahjong as part of the museum's Sunday programs. Check
-  the museum's page for admission. (Picked by Local Kiddo SF.)\nhttps://ca
- lendar.asianart.org/event/sundays-at-the-asian-art-museum-october-11/
-URL:https://calendar.asianart.org/event/sundays-at-the-asian-art-museum-oc
- tober-11/
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-ha-chong-hyun-retrospective-tour-2026-10-11@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T180000Z
-DTEND:20261011T200000Z
-SUMMARY:Ha Chong-Hyun: Retrospective Tour
-LOCATION:Asian Art Museum\, 200 Larkin St
-DESCRIPTION:A guided tour of the Ha Chong-Hyun retrospective\, part of the
-  museum's Sunday programs. (Picked by Local Kiddo SF.)\nhttps://calendar.
- asianart.org/event/sundays-at-the-asian-art-museum-october-11/
-URL:https://calendar.asianart.org/event/sundays-at-the-asian-art-museum-oc
- tober-11/
-END:VEVENT
-BEGIN:VEVENT
-UID:jls-farmers-market@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T180000Z
-DTEND:20261011T230000Z
-SUMMARY:Jack London Square Farmers Market
-LOCATION:Jack London Square\, Oakland
-DESCRIPTION:Waterfront farmers market with room for strollers.\nhttps://ww
- w.510families.com/calendar/jack-london-square-farmers-market/
-URL:https://www.510families.com/calendar/jack-london-square-farmers-market
- /
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-2nd-sunday-serenades-2026-10-11@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T190000Z
-DTEND:20261011T210000Z
-SUMMARY:2nd Sunday Serenades
-LOCATION:Sunset Dunes at Judah St (Great Highway)
-DESCRIPTION:Free live music on the car-free Great Highway at Judah\, every
-  second Sunday. (Picked by Local Kiddo SF.)\nhttps://sunsetdunes.org/even
- ts/2nd-sunday-serenades-fake-melody-pdt6y-e2nkb-tjt9h-d9w8w-ezg8d-bawzx-e
- rmec-rhakz-db7m2-swley-49hxb-tjcz9-bdyxy-x4n83-rp5bk-ttkfb-hyke5-7f7e9-37
- ftx-amkrj
-URL:https://sunsetdunes.org/events/2nd-sunday-serenades-fake-melody-pdt6y-
- e2nkb-tjt9h-d9w8w-ezg8d-bawzx-ermec-rhakz-db7m2-swley-49hxb-tjcz9-bdyxy-x
- 4n83-rp5bk-ttkfb-hyke5-7f7e9-37ftx-amkrj
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-7th-annual-butchertown-jazz-festival-2026-10-11@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T190000Z
-DTEND:20261012T010000Z
-SUMMARY:7th Annual Butchertown Jazz Festival
-LOCATION:Gratta Wines\, Bayview
-DESCRIPTION:An afternoon jazz festival hosted by Gratta Wines in the Bayvi
- ew\; tickets on Eventbrite. (Picked by Local Kiddo SF.)\nhttps://www.even
- tbrite.com/e/7th-annual-butchertown-jazz-festival-tickets-1999122691786
-URL:https://www.eventbrite.com/e/7th-annual-butchertown-jazz-festival-tick
- ets-1999122691786
-END:VEVENT
-BEGIN:VEVENT
-UID:air-show-sun@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T190000Z
-DTEND:20261011T230000Z
-SUMMARY:Fleet Week air show
-LOCATION:Marina Green
-DESCRIPTION:Free viewing on the Marina Green. Jets are very loud\, so brin
- g ear protection for little ones.\nhttps://sf.funcheap.com/san-francisco-
- fleet-week-2024-blue-angels-air-show-3/
-URL:https://sf.funcheap.com/san-francisco-fleet-week-2024-blue-angels-air-
- show-3/
-END:VEVENT
-BEGIN:VEVENT
-UID:exp-story-sun-12@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T190000Z
-DTEND:20261011T200000Z
-SUMMARY:Storytime Science: Halloween
-LOCATION:Exploratorium\, Pier 15
-DESCRIPTION:A Halloween storybook read-aloud with a related hands-on activ
- ity for young children and their grown-ups. The museum opens to the publi
- c at noon on Sundays. Included with admission.\nhttps://www.exploratorium
- .edu/visit/calendar
-URL:https://www.exploratorium.edu/visit/calendar
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-the-whale-s-tail-closing-weekend-2026-10-11@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T190000Z
-DTEND:20261012T010000Z
-SUMMARY:The Whale’s Tail Closing Weekend
-LOCATION:The Whale's Tail\, JFK Promenade at 14th Ave\, Golden Gate Park
-DESCRIPTION:Closing weekend of the park's outdoor hangout: live music\, fo
- od trucks and lawn games\, with kids and dogs welcome. Free. (Picked by L
- ocal Kiddo SF.)\nhttps://illuminate.org/event/the-whales-tail-closing-wee
- kend-october-11-2/
-URL:https://illuminate.org/event/the-whales-tail-closing-weekend-october-1
- 1-2/
-END:VEVENT
-BEGIN:VEVENT
-UID:italian-heritage-parade@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T193000Z
-DTEND:20261011T213000Z
-SUMMARY:Italian Heritage Festival and Parade
-LOCATION:North Beach
-DESCRIPTION:San Francisco's long-running parade celebrating the Italian-Am
- erican community. Expect crowds and street closures.\nhttps://sf.funcheap
- .com/san-francisco-italian-heritage-parade-festival/
-URL:https://sf.funcheap.com/san-francisco-italian-heritage-parade-festival
- /
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-tour-of-the-japanese-tea-garden-2026-10-11@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T200000Z
-DTEND:20261011T220000Z
-SUMMARY:Tour of the Japanese Tea Garden
-LOCATION:Japanese Tea Garden\, Golden Gate Park
-DESCRIPTION:A free SF City Guides walking tour of the Japanese Tea Garden\
- ; garden admission may apply. (Picked by Local Kiddo SF.)\nhttps://sfcity
- guides.org/tour/japanese-tea-garden/
-URL:https://sfcityguides.org/tour/japanese-tea-garden/
-END:VEVENT
-BEGIN:VEVENT
-UID:sfpl-2026-10-11-social-therapy-dog-library@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T203000Z
-DTEND:20261011T213000Z
-SUMMARY:Therapy Dog in the Library
-LOCATION:Ortega Branch Library
-DESCRIPTION:Meet Kora\, a PAWS for People -certified therapy dog and her h
- andler\, Jake. The duo visits the children's area on the second Sunday of
-  each month\, offering kids the opportunity to either read to Kora or sim
- ply enjoy her presence. Youth under the age of 8 must be accompanied by a
- n adult.\nhttps://sfpl.org/events/2026/10/11/social-therapy-dog-library
-URL:https://sfpl.org/events/2026/10/11/social-therapy-dog-library
-END:VEVENT
-BEGIN:VEVENT
-UID:play-dragons-love-tacos-2026-10-11-14@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T210000Z
-DTEND:20261011T220000Z
-SUMMARY:Dragons Love Tacos\, the Musical (PLAY Theatre)
-LOCATION:Creativity Theater\, Children's Creativity Museum\, 221 4th St
-DESCRIPTION:A musical of the picture book\, with toe-tapping songs and a s
- cene-stealing dog. Recommended for ages 3 and up\; about an hour with a 1
- 0-minute intermission. $5 to $39\; kids under 2 free. The run ends Oct 18
- .\nhttps://www.playtheatreco.org/dragons-love-tacos-the-musical
-URL:https://www.playtheatreco.org/dragons-love-tacos-the-musical
-END:VEVENT
-BEGIN:VEVENT
-UID:sfpl-2026-10-11-workshop-rangoli-art-shanta-nimbark-sacharoff@sf_famil
- yevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T210000Z
-DTEND:20261011T223000Z
-SUMMARY:Rangoli Art with Shanta Nimbark Sacharoff
-LOCATION:Ortega Branch Library
-DESCRIPTION:Learn the traditional Indian folk art of rangoli with Shanta N
- imbark Sacharoff. Work in groups to make a design. For children and their
-  caregivers. Reservations required: (415) 355-5700. Intergenerational\nht
- tps://sfpl.org/events/2026/10/11/workshop-rangoli-art-shanta-nimbark-sach
- aroff
-URL:https://sfpl.org/events/2026/10/11/workshop-rangoli-art-shanta-nimbark
- -sacharoff
-END:VEVENT
-BEGIN:VEVENT
-UID:exp-story-sun-14@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T210000Z
-DTEND:20261011T220000Z
-SUMMARY:Storytime Science: Halloween
-LOCATION:Exploratorium\, Pier 15
-DESCRIPTION:A Halloween storybook read-aloud with a related hands-on activ
- ity for young children and their grown-ups. The museum opens to the publi
- c at noon on Sundays. Included with admission.\nhttps://www.exploratorium
- .edu/visit/calendar
-URL:https://www.exploratorium.edu/visit/calendar
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-snow-white-and-the-seven-dwarfs-1937-2026-10-11@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261011T220000Z
-DTEND:20261012T000000Z
-SUMMARY:Snow White and the Seven Dwarfs (1937)
-LOCATION:Walt Disney Family Museum\, 104 Montgomery St\, Presidio
-DESCRIPTION:A screening of Disney's original 1937 Snow White in the museum
- 's theater. (Picked by Local Kiddo SF.)\nhttps://www.waltdisney.org/educa
- tion/films/snow-white-and-seven-dwarfs-1937
-URL:https://www.waltdisney.org/education/films/snow-white-and-seven-dwarfs
- -1937
-END:VEVENT
-BEGIN:VEVENT
 UID:lk-fleet-week-high-school-band-challenge-2026-10-12@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261012T160000Z
 DTEND:20261012T190000Z
 SUMMARY:Fleet Week High School Band Challenge
-LOCATION:Golden Gate Park Bandshell (Music Concourse)
-DESCRIPTION:Bay Area high school bands compete on the bandshell stage for 
- music-program prize money. Free. (Picked by Local Kiddo SF.)\nhttps://fle
- etweeksf.org/high-school-band-challenge/
+LOCATION:Golden Gate Park Bandshell
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://fleetwe
+ eksf.org/high-school-band-challenge/
 URL:https://fleetweeksf.org/high-school-band-challenge/
 END:VEVENT
 BEGIN:VEVENT
 UID:exploratorium-holiday-monday@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261012T170000Z
 DTEND:20261013T000000Z
 SUMMARY:Exploratorium open on Indigenous Peoples' Day
@@ -580,8 +30,19 @@ DESCRIPTION:A rare Monday opening for the holiday. Check the museum's cale
 URL:https://www.exploratorium.edu/visit/calendar
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-imagination-mondays-2026-10-12@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261012T170000Z
+DTEND:20261012T190000Z
+SUMMARY:Imagination Mondays
+LOCATION:Union Square
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://visitun
+ ionsquaresf.com/park-programs
+URL:https://visitunionsquaresf.com/park-programs
+END:VEVENT
+BEGIN:VEVENT
 UID:lawrence-indigenous-peoples-day@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261012T170000Z
 DTEND:20261013T000000Z
 SUMMARY:Indigenous Peoples' Day at The Lawrence
@@ -593,8 +54,33 @@ DESCRIPTION:The science center opens on the holiday (it's usually closed M
 URL:https://www.510families.com/31-things-east-bay-kids-october/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-october-pop-n-play-2026-10-12@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261012T180000Z
+DTEND:20261012T193000Z
+SUMMARY:October Pop N Play
+LOCATION:Portola
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.eve
+ ntbrite.com/e/october-pop-n-play-portola-tickets-2002228455208
+URL:https://www.eventbrite.com/e/october-pop-n-play-portola-tickets-200222
+ 8455208
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-free-day-of-play-2026-10-12@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261012T183000Z
+DTEND:20261012T200000Z
+SUMMARY:FREE Day of Play!
+LOCATION:Natural Resources\, 1051 Valencia St
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.nat
+ uralresources-sf.com/products/free-natural-resources-playgroup?start=2026
+ -09-01T00:00&select=2026-09-14T11:30
+URL:https://www.naturalresources-sf.com/products/free-natural-resources-pl
+ aygroup?start=2026-09-01T00:00&select=2026-09-14T11:30
+END:VEVENT
+BEGIN:VEVENT
 UID:ybg-indigenous-peoples-day@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261012T190000Z
 DTEND:20261012T230000Z
 SUMMARY:Indigenous Peoples Day at Yerba Buena Gardens
@@ -606,19 +92,43 @@ URL:https://ybgfestival.org/event/sf-indigenous-peoples-day-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-free-day-san-francisco-botanical-garden-2026-10-13@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261013T143000Z
 DTEND:20261014T010000Z
 SUMMARY:Free Day: San Francisco Botanical Garden
-LOCATION:SF Botanical Garden\, Golden Gate Park
-DESCRIPTION:Free admission day at the 55-acre Botanical Garden. (Picked by
-  Local Kiddo SF.)\nhttps://gggp.org/event/free-day-san-francisco-botanica
- l-garden-16/
+LOCATION:Golden Gate Park
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://gggp.or
+ g/event/free-day-san-francisco-botanical-garden-16/
 URL:https://gggp.org/event/free-day-san-francisco-botanical-garden-16/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-october-first-steps-2026-10-13@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261013T160000Z
+DTEND:20261013T173000Z
+SUMMARY:October First Steps
+LOCATION:Excelsior
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.eve
+ ntbrite.com/e/september-first-steps-portola-tickets-1998813435793?aff=odd
+ tdtcreator
+URL:https://www.eventbrite.com/e/september-first-steps-portola-tickets-199
+ 8813435793?aff=oddtdtcreator
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-october-tummy-time-2026-10-13@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261013T163000Z
+DTEND:20261013T183000Z
+SUMMARY:October Tummy Time
+LOCATION:Visitacion Valley
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.eve
+ ntbrite.com/e/october-tummy-time-visitacion-valley-tickets-2002227746087
+URL:https://www.eventbrite.com/e/october-tummy-time-visitacion-valley-tick
+ ets-2002227746087
+END:VEVENT
+BEGIN:VEVENT
 UID:scn-10005156-2026-10-13@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261013T163000Z
 DTEND:20261013T190000Z
 SUMMARY:Swing into Stories @ Koret Playground (Golden Gate Park)
@@ -633,19 +143,52 @@ URL:https://sfchildrennature.org/event/swing-into-stories-koret-playground
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-free-day-conservatory-of-flowers-2026-10-13@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261013T170000Z
 DTEND:20261013T233000Z
 SUMMARY:Free Day: Conservatory of Flowers
-LOCATION:Conservatory of Flowers\, Golden Gate Park
-DESCRIPTION:Free admission day at the Victorian glass greenhouse. (Picked 
- by Local Kiddo SF.)\nhttps://gggp.org/event/free-day-conservatory-of-flow
- ers-12/
+LOCATION:Golden Gate Park
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://gggp.or
+ g/event/free-day-conservatory-of-flowers-12/
 URL:https://gggp.org/event/free-day-conservatory-of-flowers-12/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-toddler-tuesdays-2026-10-13@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261013T170000Z
+DTEND:20261013T190000Z
+SUMMARY:Toddler Tuesdays
+LOCATION:Union Square
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://visitun
+ ionsquaresf.com/park-programs
+URL:https://visitunionsquaresf.com/park-programs
+END:VEVENT
+BEGIN:VEVENT
+UID:sug-test-2026-10-13@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261013T170000Z
+DTEND:20261013T190000Z
+SUMMARY:test
+LOCATION:Precita Park\, Precita Ave & Folsom St\, San Francisco
+DESCRIPTION:\nhttp://none.org
+URL:http://none.org
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-children-s-music-with-emilia-2026-10-13@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261013T171500Z
+DTEND:20261013T180000Z
+SUMMARY:Children's Music with Emilia
+LOCATION:Inner Sunset
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.his
+ awyer.com/outer-village/schedules/activity-set/1954747?day=2026-09-15&vie
+ w=cal&source=all-activities
+URL:https://www.hisawyer.com/outer-village/schedules/activity-set/1954747?
+ day=2026-09-15&view=cal&source=all-activities
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-10-13-storytime-swing-stories@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261013T173000Z
 DTEND:20261013T180000Z
 SUMMARY:Storytime: Swing Into Stories
@@ -655,8 +198,32 @@ DESCRIPTION:Free library program for young children and their grown-ups.\n
 URL:https://sfpl.org/events/2026/10/13/storytime-swing-stories
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-civic-center-soundtrack-2026-10-13@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261013T190000Z
+DTEND:20261013T220000Z
+SUMMARY:Civic Center Soundtrack
+LOCATION:Civic Center
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://illumin
+ ate.org/event/civic-center-soundtrack-october-6/
+URL:https://illuminate.org/event/civic-center-soundtrack-october-6/
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-dance-creative-movement-4-kids-2026-10-13@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261013T230000Z
+DTEND:20261013T233000Z
+SUMMARY:Dance & Creative Movement 4 Kids
+LOCATION:SoMA
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.the
+ eastcut.org/event/dance-creative-movement-4-kids-7-2-3-2-2-2-2-2-13-2-9-2
+ -2-2-2-2-11/
+URL:https://www.theeastcut.org/event/dance-creative-movement-4-kids-7-2-3-
+ 2-2-2-2-2-13-2-9-2-2-2-2-2-11/
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-10-13-activity-dog-reading-circle@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261013T230000Z
 DTEND:20261014T000000Z
 SUMMARY:Dog Reading Circle
@@ -669,9 +236,23 @@ DESCRIPTION:Practice reading with peers or relax with a certified dog from
 URL:https://sfpl.org/events/2026/10/13/activity-dog-reading-circle
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-music-magic-tuesday-all-ages-w-jamaroo-kids-2026-10-13@sf_familyeve
+ nts
+DTSTAMP:20261012T223126Z
+DTSTART:20261013T230000Z
+DTEND:20261013T234500Z
+SUMMARY:Music Magic Tuesday (All Ages) w/ JAMaROO Kids
+LOCATION:Natural Resources\, 1051 Valencia St
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.nat
+ uralresources-sf.com/products/music-magic-tuesday-all-ages-in-person?star
+ t=2026-10-01T00:00&select=2026-10-13T16:00
+URL:https://www.naturalresources-sf.com/products/music-magic-tuesday-all-a
+ ges-in-person?start=2026-10-01T00:00&select=2026-10-13T16:00
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-10-13-social-family-board-game-and-lego-night@sf_familyevent
  s
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261014T010000Z
 DTEND:20261014T023000Z
 SUMMARY:Family Board Game and LEGO Night
@@ -684,98 +265,139 @@ URL:https://sfpl.org/events/2026/10/13/social-family-board-game-and-lego-n
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-circus-by-the-bay-2026-10-13@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261014T020000Z
 DTEND:20261014T033000Z
 SUMMARY:Circus by The Bay
-LOCATION:Cowell Theater\, Fort Mason
-DESCRIPTION:An evening of circus performances and a panel conversation. (P
- icked by Local Kiddo SF.)\nhttps://www.eventbrite.com/e/circus-by-the-bay
- -tickets-1999623076450?aff=ebdssbdestsearch
+LOCATION:Fort Mason
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.eve
+ ntbrite.com/e/circus-by-the-bay-tickets-1999623076450?aff=ebdssbdestsearc
+ h
 URL:https://www.eventbrite.com/e/circus-by-the-bay-tickets-1999623076450?a
  ff=ebdssbdestsearch
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-october-first-steps-2026-10-14@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261014T160000Z
+DTEND:20261014T173000Z
+SUMMARY:October First Steps
+LOCATION:Portola
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.eve
+ ntbrite.com/e/october-first-steps-portola-tickets-2002228313785
+URL:https://www.eventbrite.com/e/october-first-steps-portola-tickets-20022
+ 28313785
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-early-connections-play-with-purpose-playgroup-2026-10-14@sf_familye
+ vents
+DTSTAMP:20261012T223126Z
+DTSTART:20261014T170000Z
+DTEND:20261014T181500Z
+SUMMARY:- Early Connections: Play with Purpose Playgroup
+LOCATION:Inner Sunset
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.his
+ awyer.com/outer-village/schedules/activity-set/2040438?day=2026-10-14&vie
+ w=cal&source=all-activities
+URL:https://www.hisawyer.com/outer-village/schedules/activity-set/2040438?
+ day=2026-10-14&view=cal&source=all-activities
+END:VEVENT
+BEGIN:VEVENT
 UID:lk-sf-resident-free-day-2026-10-14@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261014T170000Z
 DTEND:20261014T230000Z
 SUMMARY:SF Resident Free Day
 LOCATION:San Francisco Zoo
-DESCRIPTION:Free zoo admission for San Francisco residents\; check the zoo
- 's site for what proof to bring. (Picked by Local Kiddo SF.)\nhttps://www
- .sfzoo.org/calendar/sf-resident-free-day-5/
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.sfz
+ oo.org/calendar/sf-resident-free-day-5/
 URL:https://www.sfzoo.org/calendar/sf-resident-free-day-5/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-whimsy-wednesday-2026-10-14@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261014T170000Z
+DTEND:20261014T183000Z
+SUMMARY:Whimsy Wednesday
+LOCATION:SoMA
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.the
+ eastcut.org/event/whimsy-wednesday-6/
+URL:https://www.theeastcut.org/event/whimsy-wednesday-6/
+END:VEVENT
+BEGIN:VEVENT
 UID:lk-free-day-at-ybca-2026-10-14@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261014T180000Z
 DTEND:20261015T030000Z
 SUMMARY:Free Day at YBCA
-LOCATION:Yerba Buena Center for the Arts\, 701 Mission St
-DESCRIPTION:Free admission to YBCA's galleries. (Picked by Local Kiddo SF.
- )\nhttps://ybca.org/visit/
+LOCATION:Yerba Buena
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://ybca.or
+ g/visit/
 URL:https://ybca.org/visit/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-october-pop-n-play-2026-10-14@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261014T180000Z
+DTEND:20261014T193000Z
+SUMMARY:October Pop N Play
+LOCATION:Portola
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.eve
+ ntbrite.com/e/october-pop-n-play-portola-tickets-2002228455208
+URL:https://www.eventbrite.com/e/october-pop-n-play-portola-tickets-200222
+ 8455208
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-10-14-activity-ballet-book-club@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261014T230000Z
 DTEND:20261015T000000Z
 SUMMARY:Ballet Book Club
 LOCATION:North Beach Branch Library
-DESCRIPTION:Explore ballet and dances from around the world through pictur
- e books\, a beginner-friendly ballet class\, creative movement\, and musi
- c led by experienced instructors from Tutu School San Francisco. For Ages
-  2–6. In-person registration and a signed waiver are required. Space is
-  limited.\nhttps://sfpl.org/events/2026/10/14/activity-ballet-book-club
+DESCRIPTION:Ballet-themed stories and movement for ages 2 to 6.\nhttps://s
+ fpl.org/events/2026/10/14/activity-ballet-book-club
 URL:https://sfpl.org/events/2026/10/14/activity-ballet-book-club
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-14-workshop-cajon-drum-circle-cunamacue@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261014T230000Z
 DTEND:20261014T234500Z
 SUMMARY:Cajón Drum Circle with Cunamacué
 LOCATION:Potrero Branch Library
-DESCRIPTION:Learn a brief history of the Afro-Peruvian Cajón (wooden box 
- drum) and learn to play Afro-Peruvian and Latin rhythms on the instrument
- . For ages 5 and older. Connect: Cunamacué – Website ¡VIVA!: Latinx I
- nterest Connect to engaging discussions and performances related to the L
- atinx community. ¡VIVA!\nhttps://sfpl.org/events/2026/10/14/workshop-caj
- on-drum-circle-cunamacue
+DESCRIPTION:Bang out rhythms on the cajón\, the Peruvian box drum\, in a 
+ family drum circle.\nhttps://sfpl.org/events/2026/10/14/workshop-cajon-dr
+ um-circle-cunamacue
 URL:https://sfpl.org/events/2026/10/14/workshop-cajon-drum-circle-cunamacu
  e
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-market-to-bandshell-2026-10-14@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261014T230000Z
 DTEND:20261015T020000Z
 SUMMARY:Market to Bandshell
-LOCATION:Golden Gate Park Bandshell (Music Concourse)
-DESCRIPTION:A free midweek concert with three local acts starting at 4 pm.
-  Bring snacks. (Picked by Local Kiddo SF.)\nhttps://illuminate.org/event/
- midweek-melodies-october-14/
+LOCATION:Golden Gate Park
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://illumin
+ ate.org/event/midweek-melodies-october-14/
 URL:https://illuminate.org/event/midweek-melodies-october-14/
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-free-community-craft-night-2026-10-14@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261015T003000Z
 DTEND:20261015T020000Z
 SUMMARY:Free Community Craft Night
 LOCATION:Natural Resources\, 1051 Valencia St
-DESCRIPTION:Bring your own craft project and make things together. Free. (
- Picked by Local Kiddo SF.)\nhttps://www.naturalresources-sf.com/products/
- community-craft-night?start=2026-10-01T00:00&select=2026-10-14T17:30
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.nat
+ uralresources-sf.com/products/community-craft-night?start=2026-10-01T00:0
+ 0&select=2026-10-14T17:30
 URL:https://www.naturalresources-sf.com/products/community-craft-night?sta
  rt=2026-10-01T00:00&select=2026-10-14T17:30
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-14-activity-halloween-costume-swap@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261015T010000Z
 DTEND:20261015T030000Z
 SUMMARY:Halloween Costume Swap
@@ -788,19 +410,18 @@ URL:https://sfpl.org/events/2026/10/14/activity-halloween-costume-swap
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-ni-a-memita-s-kitchen-table-2026-10-14@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261015T010000Z
 DTEND:20261015T030000Z
 SUMMARY:Niña Memita's Kitchen Table
 LOCATION:Excelsior
-DESCRIPTION:A community gathering in the Excelsior\; details are on the or
- ganizer's Instagram post. (Picked by Local Kiddo SF.)\nhttps://www.instag
- ram.com/p/Ddt7OqOGmmZ/?img_index=1
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.ins
+ tagram.com/p/Ddt7OqOGmmZ/?img_index=1
 URL:https://www.instagram.com/p/Ddt7OqOGmmZ/?img_index=1
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-14-storytime-pajama-storytime@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261015T020000Z
 DTEND:20261015T023000Z
 SUMMARY:Storytime: Pajama Storytime
@@ -814,22 +435,61 @@ URL:https://sfpl.org/events/2026/10/14/storytime-pajama-storytime
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-georgian-national-ballet-2026-10-14@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261015T030000Z
 DTEND:20261015T050000Z
 SUMMARY:Georgian National Ballet
-LOCATION:Palace of Fine Arts Theatre\, 3301 Lyon St
-DESCRIPTION:The touring Georgian national dance company. Evening show\; ti
- ckets required. (Picked by Local Kiddo SF.)\nhttps://gotickets.com/ticket
- s/1424913/georgian-national-ballet-tickets/palace-of-fine-arts-theatre-sa
- n-francisco-ca-10-14-2026?quantity=2&orderBy=Price%3A+Low+to+High
+LOCATION:Palace of Fine Arts
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://goticke
+ ts.com/tickets/1424913/georgian-national-ballet-tickets/palace-of-fine-ar
+ ts-theatre-san-francisco-ca-10-14-2026?quantity=2&orderBy=Price%3A+Low+to
+ +High
 URL:https://gotickets.com/tickets/1424913/georgian-national-ballet-tickets
  /palace-of-fine-arts-theatre-san-francisco-ca-10-14-2026?quantity=2&order
  By=Price%3A+Low+to+High
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-october-first-steps-2026-10-15@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261015T160000Z
+DTEND:20261015T173000Z
+SUMMARY:October First Steps
+LOCATION:Excelsior
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.eve
+ ntbrite.com/e/october-first-steps-excelsior-tickets-2002227542478?aff=ere
+ lpanelorg
+URL:https://www.eventbrite.com/e/october-first-steps-excelsior-tickets-200
+ 2227542478?aff=erelpanelorg
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-developmental-playgroup-for-toddlers-13-24-months-2026-10-15@sf_fam
+ ilyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261015T163000Z
+DTEND:20261015T171500Z
+SUMMARY:Developmental Playgroup for Toddlers (13-24 months)
+LOCATION:Inner Sunset
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.his
+ awyer.com/outer-village/schedules/activity-set/1953097?day=2026-09-17&vie
+ w=cal&source=all-activities
+URL:https://www.hisawyer.com/outer-village/schedules/activity-set/1953097?
+ day=2026-09-17&view=cal&source=all-activities
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-toddler-thursday-2026-10-15@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261015T170000Z
+DTEND:20261015T174500Z
+SUMMARY:Toddler Thursday
+LOCATION:Salesforce
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.the
+ eastcut.org/event/toddler-thursday-3-2-2-2-2-2-2-2-2-2-9-2-24/
+URL:https://www.theeastcut.org/event/toddler-thursday-3-2-2-2-2-2-2-2-2-2-
+ 9-2-24/
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-10-15-performance-aguacate-music-kids@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261015T180000Z
 DTEND:20261015T184500Z
 SUMMARY:Aguacate Music Kids
@@ -841,9 +501,48 @@ DESCRIPTION:Natalia of Aguacate Music Kids presents an interactive\, fun a
 URL:https://sfpl.org/events/2026/10/15/performance-aguacate-music-kids
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-civic-center-soundtrack-2026-10-15@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261015T190000Z
+DTEND:20261015T220000Z
+SUMMARY:Civic Center Soundtrack
+LOCATION:Civic Center
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://illumin
+ ate.org/event/civic-center-soundtrack-october-15/
+URL:https://illuminate.org/event/civic-center-soundtrack-october-15/
+END:VEVENT
+BEGIN:VEVENT
+UID:ybg-25786-2026-10-15@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261015T193000Z
+DTEND:20261015T203000Z
+SUMMARY:Richard Howell’s John Coltrane Tribute
+LOCATION:Great Lawn\, Yerba Buena Gardens
+DESCRIPTION:The 100 th anniversary of John Coltrane’s birthday has inspi
+ red dozens of performances across the Bay Area this year\, but no artist 
+ is better equipped to evoke the legacy of the saxophone titan and spiritu
+ al seeker than \nhttps://ybgfestival.org/event/richard-howells-john-coltr
+ ane-tribute-2026/
+URL:https://ybgfestival.org/event/richard-howells-john-coltrane-tribute-20
+ 26/
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-new-parent-circle-newborn-6-months-2026-10-15@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261015T200000Z
+DTEND:20261015T210000Z
+SUMMARY:New Parent Circle: Newborn - 6 months
+LOCATION:Natural Resources\, 1051 Valencia St
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.nat
+ uralresources-sf.com/products/new-parent-support-group-circle?start=2026-
+ 10-01T00:00&select=2026-10-15T13:00
+URL:https://www.naturalresources-sf.com/products/new-parent-support-group-
+ circle?start=2026-10-01T00:00&select=2026-10-15T13:00
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-10-15-performance-guitar-sing-along-grandpa-alan@sf_familyev
  ents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261015T223000Z
 DTEND:20261015T230000Z
 SUMMARY:Guitar Sing-Along with Grandpa Alan
@@ -857,8 +556,22 @@ URL:https://sfpl.org/events/2026/10/15/performance-guitar-sing-along-grand
  pa-alan
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-new-parent-circle-growing-babies-6-months-2-years-2026-10-15@sf_fam
+ ilyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261015T223000Z
+DTEND:20261015T233000Z
+SUMMARY:New Parent Circle: Growing Babies 6 months - 2 years
+LOCATION:Natural Resources\, 1051 Valencia St
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.nat
+ uralresources-sf.com/products/new-parent-circle-growing-babies?start=2026
+ -10-01T00:00&select=2026-10-15T15:30
+URL:https://www.naturalresources-sf.com/products/new-parent-circle-growing
+ -babies?start=2026-10-01T00:00&select=2026-10-15T15:30
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-10-15-activity-halloween-costume-swap@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261015T230000Z
 DTEND:20261016T003000Z
 SUMMARY:Halloween Costume Swap
@@ -871,92 +584,102 @@ URL:https://sfpl.org/events/2026/10/15/activity-halloween-costume-swap
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-the-crossing-5th-anniversary-celebration-2026-10-15@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261015T230000Z
 DTEND:20261016T020000Z
 SUMMARY:The Crossing 5th Anniversary Celebration
-LOCATION:The Crossing at East Cut
-DESCRIPTION:A free party for The Crossing's fifth birthday and The East Cu
- t's tenth. (Picked by Local Kiddo SF.)\nhttps://www.theeastcut.org/event/
- the-crossing-5th-anniversary-celebration/
+LOCATION:SoMA
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.the
+ eastcut.org/event/the-crossing-5th-anniversary-celebration/
 URL:https://www.theeastcut.org/event/the-crossing-5th-anniversary-celebrat
  ion/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-crafternoons-2026-10-15@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261015T233000Z
+DTEND:20261016T013000Z
+SUMMARY:Crafternoons
+LOCATION:Union Square
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://visitun
+ ionsquaresf.com/park-programs
+URL:https://visitunionsquaresf.com/park-programs
+END:VEVENT
+BEGIN:VEVENT
 UID:lk-trick-or-treat-to-the-beat-2026-10-15@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261016T000000Z
 DTEND:20261016T040000Z
 SUMMARY:Trick or Treat to the Beat
 LOCATION:Mission
-DESCRIPTION:A Halloween dance and trick-or-treat event in the Mission\; de
- tails are on the organizer's Instagram post. (Picked by Local Kiddo SF.)\
- nhttps://www.instagram.com/p/Dd-Lkx3BehC/
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.ins
+ tagram.com/p/Dd-Lkx3BehC/
 URL:https://www.instagram.com/p/Dd-Lkx3BehC/
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-party-with-claire-bobrow-to-celebrate-her-new-chil-2026-10-15@sf_fa
  milyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261016T020000Z
 DTEND:20261016T030000Z
-SUMMARY:Party Pony book launch with Claire Bobrow
-LOCATION:Bookshop West Portal\, 80 West Portal Ave
-DESCRIPTION:A launch party for local author Claire Bobrow's new picture bo
- ok\, Party Pony. (Picked by Local Kiddo SF.)\nhttps://www.eventbrite.com/
- e/party-with-claire-bobrow-to-celebrate-her-new-childrens-book-party-pony
- -tickets-1993971005955?aff=ebdssbdestsearch
+SUMMARY:Party with Claire Bobrow to celebrate her new children's book "Par
+ ty Pony"!
+LOCATION:West Portal
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.eve
+ ntbrite.com/e/party-with-claire-bobrow-to-celebrate-her-new-childrens-boo
+ k-party-pony-tickets-1993971005955?aff=ebdssbdestsearch
 URL:https://www.eventbrite.com/e/party-with-claire-bobrow-to-celebrate-her
  -new-childrens-book-party-pony-tickets-1993971005955?aff=ebdssbdestsearch
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-georgian-national-ballet-2026-10-15@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261016T030000Z
 DTEND:20261016T050000Z
 SUMMARY:Georgian National Ballet
-LOCATION:Palace of Fine Arts Theatre\, 3301 Lyon St
-DESCRIPTION:The touring Georgian national dance company. Evening show\; ti
- ckets required. (Picked by Local Kiddo SF.)\nhttps://gotickets.com/ticket
- s/1836257/georgian-national-ballet-sukhishvili-tickets/palace-of-fine-art
- s-theatre-san-francisco-ca-10-15-2026?quantity=2&orderBy=Price%3A+Low+to+
- High
+LOCATION:Palace of Fine Arts
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://goticke
+ ts.com/tickets/1836257/georgian-national-ballet-sukhishvili-tickets/palac
+ e-of-fine-arts-theatre-san-francisco-ca-10-15-2026?quantity=2&orderBy=Pri
+ ce%3A+Low+to+High
 URL:https://gotickets.com/tickets/1836257/georgian-national-ballet-sukhish
  vili-tickets/palace-of-fine-arts-theatre-san-francisco-ca-10-15-2026?quan
  tity=2&orderBy=Price%3A+Low+to+High
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12459-2026-10-16@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261017T000000Z
 DTEND:20261017T040000Z
 SUMMARY:Friday Nights at OMCA with MacArthur Maze | 60th Anniversary of t
  he Black Panther Party
 LOCATION:OMCA campus
-DESCRIPTION:Free Friday evening at the Oakland Museum: live music\, food t
- rucks\, and the gardens. This Friday Night at OMCA\, Colombian-American s
- inger-songwriter CHIKA DI brings her vibrant sound to the Garden Stage wi
- \nhttps://museumca.org/event/friday-nights-at-omca-with-macarthur-maze-60
- th-anniversary-of-the-black-panther-party/
+DESCRIPTION:This Friday Night at OMCA\, Colombian-American singer-songwrit
+ er CHIKA DI brings her vibrant sound to the Garden Stage with a high-ener
+ gy bilingual performance. Blending Afro-Latin rhythms\, Cumbia pop\, elec
+ tronic influenc\nhttps://museumca.org/event/friday-nights-at-omca-with-ma
+ carthur-maze-60th-anniversary-of-the-black-panther-party/
 URL:https://museumca.org/event/friday-nights-at-omca-with-macarthur-maze-6
  0th-anniversary-of-the-black-panther-party/
 END:VEVENT
 BEGIN:VEVENT
-UID:msw-excelsior-2026-10-17@sf_familyevents
-DTSTAMP:20261012T150459Z
+UID:ml-872245-2026-10-17@sf_familyevents
+DTSTAMP:20261012T223126Z
 DTSTART:20261017T170000Z
-DTEND:20261017T220000Z
-SUMMARY:Mission Science Workshop free Saturday open house
-LOCATION:Mission Science Workshop Excelsior\, 4458 Mission St
-DESCRIPTION:Free drop-in hands-on science: build and tinker\, explore bone
- s\, fossils and rocks\, and meet the workshop's animals. Runs during the 
- school year\, so check the workshop's site around holidays.\nhttps://www.
- missionscienceworkshop.org/programs
-URL:https://www.missionscienceworkshop.org/programs
+DTEND:20261017T230000Z
+SUMMARY:51st Annual Potrero Hill Rhythm & Blues Festival
+LOCATION:20th Street
+DESCRIPTION:The Potrero Hill R&B Festival will take place Saturday\, Octob
+ er 17\, 2026 on 20th Street between Wisconsin and Missouri Streets from 1
+ 0 am – 4 pm. This annual family-friendly festival celebrates the best o
+ f our community\,\nhttps://missionlocal.org/event/20th-street-51st-annual
+ -potrero-hill-rhythm-blues-festival/
+URL:https://missionlocal.org/event/20th-street-51st-annual-potrero-hill-rh
+ ythm-blues-festival/
 END:VEVENT
 BEGIN:VEVENT
 UID:play-dragons-love-tacos-2026-10-17-10@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261017T173000Z
 DTEND:20261017T183000Z
 SUMMARY:Dragons Love Tacos\, the Musical (PLAY Theatre)
@@ -970,7 +693,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-early-learning-saturday-morning-playtimes@sf_familyeve
  nts
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261017T173000Z
 DTEND:20261017T193000Z
 SUMMARY:Saturday Morning Playtimes
@@ -983,7 +706,7 @@ URL:https://sfpl.org/events/2026/10/17/early-learning-saturday-morning-pla
 END:VEVENT
 BEGIN:VEVENT
 UID:scn-6472-2026-10-17@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261017T180000Z
 DTEND:20261017T230000Z
 SUMMARY:Bay Area Science Festival
@@ -997,7 +720,7 @@ URL:https://sfchildrennature.org/event/bay-area-science-festival/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-celebration-open-house@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261017T180000Z
 DTEND:20261017T230000Z
 SUMMARY:Open House
@@ -1012,7 +735,7 @@ URL:https://sfpl.org/events/2026/10/17/celebration-open-house
 END:VEVENT
 BEGIN:VEVENT
 UID:brava-block-party-2026-10-17@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261017T190000Z
 DTEND:20261017T210000Z
 SUMMARY:Brava! Block Party
@@ -1023,21 +746,8 @@ DESCRIPTION:A free street party for Brava's 40th anniversary\, with live p
 URL:https://www.brava.org/
 END:VEVENT
 BEGIN:VEVENT
-UID:play-dragons-love-tacos-2026-10-17-14@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261017T210000Z
-DTEND:20261017T220000Z
-SUMMARY:Dragons Love Tacos\, the Musical (PLAY Theatre)
-LOCATION:Creativity Theater\, Children's Creativity Museum\, 221 4th St
-DESCRIPTION:A musical of the picture book\, with toe-tapping songs and a s
- cene-stealing dog. Recommended for ages 3 and up\; about an hour with a 1
- 0-minute intermission. $5 to $39\; kids under 2 free. The run ends Oct 18
- .\nhttps://www.playtheatreco.org/dragons-love-tacos-the-musical
-URL:https://www.playtheatreco.org/dragons-love-tacos-the-musical
-END:VEVENT
-BEGIN:VEVENT
 UID:ybg-joe-bataan-2026-10-17@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261017T210000Z
 DTEND:20261017T233000Z
 SUMMARY:Joe Bataan at Yerba Buena Gardens
@@ -1049,7 +759,7 @@ URL:https://ybgfestival.org/event/joe-bataan-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-activity-turkish-story-hour@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261017T210000Z
 DTEND:20261017T223000Z
 SUMMARY:Turkish Story Hour
@@ -1064,7 +774,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-early-learning-big-san-francisco-play-date@sf_familyev
  ents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261017T220000Z
 DTEND:20261018T000000Z
 SUMMARY:Big San Francisco Play Date
@@ -1077,7 +787,7 @@ URL:https://sfpl.org/events/2026/10/17/early-learning-big-san-francisco-pl
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-social-halloween-costume-swap@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261017T220000Z
 DTEND:20261017T230000Z
 SUMMARY:Halloween Costume Swap
@@ -1091,34 +801,31 @@ URL:https://sfpl.org/events/2026/10/17/social-halloween-costume-swap
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-workshop-cajon-drum-circle-cunamacue@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261017T230000Z
 DTEND:20261018T000000Z
 SUMMARY:Cajón Drum Circle with Cunamacué
 LOCATION:Main Library
-DESCRIPTION:Learn a brief history about the Afro-Peruvian Cajon (wooden bo
- x drum) and learn to play Afro-Peruvian and Latin rhythms on the Cajon. C
- onnect: Cunamacué – Website Dance & Music Enjoy performances\, talks a
- nd workshops that celebrate movement and the musical arts.\nhttps://sfpl.
- org/events/2026/10/17/workshop-cajon-drum-circle-cunamacue
+DESCRIPTION:Bang out rhythms on the cajón\, the Peruvian box drum\, in a 
+ family drum circle.\nhttps://sfpl.org/events/2026/10/17/workshop-cajon-dr
+ um-circle-cunamacue
 URL:https://sfpl.org/events/2026/10/17/workshop-cajon-drum-circle-cunamacu
  e
 END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-family-studio-spiders-2026-10-18@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261018T170000Z
 DTEND:20261018T200000Z
 SUMMARY:Family Studio: Spiders
 LOCATION:SFMOMA\, 151 Third St
-DESCRIPTION:Free drop-in art making led by SCRAP educators\, plus a book r
- affle and space to play with blocks. No museum admission needed.\nhttps:/
- /www.sfmoma.org/event/family-studio-spiders/
+DESCRIPTION:Workshop Series at SFMOMA. Check the event page for admission 
+ and RSVP details.\nhttps://www.sfmoma.org/event/family-studio-spiders/
 URL:https://www.sfmoma.org/event/family-studio-spiders/
 END:VEVENT
 BEGIN:VEVENT
 UID:play-dragons-love-tacos-2026-10-18-10@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261018T173000Z
 DTEND:20261018T183000Z
 SUMMARY:Dragons Love Tacos\, the Musical (PLAY Theatre)
@@ -1130,61 +837,116 @@ DESCRIPTION:A musical of the picture book\, with toe-tapping songs and a s
 URL:https://www.playtheatreco.org/dragons-love-tacos-the-musical
 END:VEVENT
 BEGIN:VEVENT
+UID:sfpl-2026-10-18-celebration-open-house@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261018T180000Z
+DTEND:20261018T230000Z
+SUMMARY:Open House
+LOCATION:Excelsior Branch Library
+DESCRIPTION:The staff at Excelsior Library is excited to have you at our O
+ pen House during Sunday Streets. Enjoy the day's events: 11 a.m.– 4 p.m
+ . outside the library Library Card challenge. Show us your library card\,
+  renew it\, or get a new one!\nhttps://sfpl.org/events/2026/10/18/celebra
+ tion-open-house
+URL:https://sfpl.org/events/2026/10/18/celebration-open-house
+END:VEVENT
+BEGIN:VEVENT
 UID:sfmoma-spooky-art-spiders-and-more-2026-10-18@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261018T190000Z
 DTEND:20261018T210000Z
 SUMMARY:Spooky Art: Spiders and More!
 LOCATION:SFMOMA\, 151 Third St
-DESCRIPTION:A family tour of SFMOMA's spookiest art\, including Louise Bou
- rgeois's spiders.\nhttps://www.sfmoma.org/event/spooky-art-spiders-and-mo
- re/
+DESCRIPTION:Family Tour at SFMOMA. Check the event page for admission and 
+ RSVP details.\nhttps://www.sfmoma.org/event/spooky-art-spiders-and-more/
 URL:https://www.sfmoma.org/event/spooky-art-spiders-and-more/
 END:VEVENT
 BEGIN:VEVENT
-UID:play-dragons-love-tacos-2026-10-18-14@sf_familyevents
-DTSTAMP:20261012T150459Z
+UID:sfpl-2026-10-18-social-family-game-time@sf_familyevents
+DTSTAMP:20261012T223126Z
 DTSTART:20261018T210000Z
-DTEND:20261018T220000Z
-SUMMARY:Dragons Love Tacos\, the Musical (PLAY Theatre)
-LOCATION:Creativity Theater\, Children's Creativity Museum\, 221 4th St
-DESCRIPTION:A musical of the picture book\, with toe-tapping songs and a s
- cene-stealing dog. Recommended for ages 3 and up\; about an hour with a 1
- 0-minute intermission. $5 to $39\; kids under 2 free. The run ends Oct 18
- .\nhttps://www.playtheatreco.org/dragons-love-tacos-the-musical
-URL:https://www.playtheatreco.org/dragons-love-tacos-the-musical
+DTEND:20261018T223000Z
+SUMMARY:Family Game Time
+LOCATION:West Portal Branch Library
+DESCRIPTION:Relax and play with family\, friends and neighbors using a var
+ iety of games to choose from\, including old favorites and new discoverie
+ s. For children and their caregivers.\nhttps://sfpl.org/events/2026/10/18
+ /social-family-game-time
+URL:https://sfpl.org/events/2026/10/18/social-family-game-time
+END:VEVENT
+BEGIN:VEVENT
+UID:sfpl-2026-10-18-social-halloween-costume-swap@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261018T210000Z
+DTEND:20261018T223000Z
+SUMMARY:Halloween Costume Swap
+LOCATION:Glen Park Branch Library
+DESCRIPTION:Save the environment\, save money and share with the community
+  at our Halloween Costume Swap. Bring clean\, gently used or new costumes
+  sized for children. We will accept donations starting Sunday\, October 1
+ 1 through Sunday October 18th.\nhttps://sfpl.org/events/2026/10/18/social
+ -halloween-costume-swap
+URL:https://sfpl.org/events/2026/10/18/social-halloween-costume-swap
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-19-social-monday-fun-day-family-dance-party@sf_familyeven
  ts
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261019T170000Z
 DTEND:20261019T180000Z
 SUMMARY:Monday Fun Day Family Dance Party
 LOCATION:Glen Park Branch Library
-DESCRIPTION:Shake your sillies out to a family-friendly pop playlist with
-  your family and friends. For children ages 5 and younger.\nhttps://sfpl
- .org/events/2026/10/19/social-monday-fun-day-family-dance-party
+DESCRIPTION:A dance party for babies\, toddlers\, preschoolers\, and their
+  grown-ups.\nhttps://sfpl.org/events/2026/10/19/social-monday-fun-day-fam
+ ily-dance-party
 URL:https://sfpl.org/events/2026/10/19/social-monday-fun-day-family-dance-
  party
 END:VEVENT
 BEGIN:VEVENT
+UID:sfpl-2026-10-19-activity-monday-morning-play@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261019T170000Z
+DTEND:20261019T190000Z
+SUMMARY:Monday Morning Play
+LOCATION:North Beach Branch Library
+DESCRIPTION:Make new friends and play with toys\, listen to music and meet
+  your neighbors. For children ages 0–6 and their caregivers. Toys will 
+ be provided on the dates marked. On all other Monday Morning Play days\, 
+ feel free to bring your favorite toys to play with and enjoy.\nhttps://sf
+ pl.org/events/2026/10/19/activity-monday-morning-play
+URL:https://sfpl.org/events/2026/10/19/activity-monday-morning-play
+END:VEVENT
+BEGIN:VEVENT
+UID:sfpl-2026-10-19-full-early-learning-play-purpose-playgroup@sf_familyev
+ ents
+DTSTAMP:20261012T223126Z
+DTSTART:20261019T183000Z
+DTEND:20261019T193000Z
+SUMMARY:FULL - Early Learning: Play with Purpose Playgroup
+LOCATION:Glen Park Branch Library
+DESCRIPTION:THIS WORKSHOP IS FULL - Play with Purpose is a 9-week\, facili
+ tated playgroup for families with young children ages 0–3 with mild to 
+ moderate concerns about child development centered around research-based\
+ , playful ways to support children’s emerging literacy\, language skill
+ s and learning.\nhttps://sfpl.org/events/2026/10/19/full-early-learning-p
+ lay-purpose-playgroup
+URL:https://sfpl.org/events/2026/10/19/full-early-learning-play-purpose-pl
+ aygroup
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-10-20-performance-marielas-music-time@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261020T220000Z
 DTEND:20261020T230000Z
 SUMMARY:Mariela's Music Time
 LOCATION:Presidio Branch Library
-DESCRIPTION:See an exciting\, energetic\, and interactive bilingual perfor
- mance in Spanish and English filled with rhythms and multicultural sound
- s\, along with with the rich traditions of the Bay Area. For children 5 
- and younger and their families.\nhttps://sfpl.org/events/2026/10/20/perfo
- rmance-marielas-music-time
+DESCRIPTION:A music time for young kids and their grown-ups.\nhttps://sfpl
+ .org/events/2026/10/20/performance-marielas-music-time
 URL:https://sfpl.org/events/2026/10/20/performance-marielas-music-time
 END:VEVENT
 BEGIN:VEVENT
 UID:hcf-wine-tasting-2026-10-20@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261021T003000Z
 DTEND:20261021T013000Z
 SUMMARY:Wine tasting with Christopher Renfro at Hawk Creek Farm
@@ -1197,7 +959,7 @@ URL:https://www.hawkcreekfarm.org/farm-experiences.html
 END:VEVENT
 BEGIN:VEVENT
 UID:hcf-beekeeping-2026-10-22@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261022T231500Z
 DTEND:20261023T004500Z
 SUMMARY:All-ages backyard beekeeping workshop at Hawk Creek Farm
@@ -1210,47 +972,32 @@ URL:https://www.hawkcreekfarm.org/farm-experiences.html
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12469-2026-10-23@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261024T000000Z
 DTEND:20261024T040000Z
 SUMMARY:Friday Nights at OMCA with DATANAGAN
 LOCATION:OMCA campus
-DESCRIPTION:Free Friday evening at the Oakland Museum: live music\, food t
- rucks\, and the gardens. Friday Nights at OMCA brings a fresh\, genre-flu
- id sound to the Garden Stage as Bay Area singer-songwriter Victoria Datan
- \nhttps://museumca.org/event/friday-nights-at-omca-with-datanagan/
+DESCRIPTION:Friday Nights at OMCA brings a fresh\, genre-fluid sound to th
+ e Garden Stage as Bay Area singer-songwriter Victoria Datanagan leads DAT
+ ANAGAN in an electric live performance of all-original music. Blending ra
+ w\, melodic st\nhttps://museumca.org/event/friday-nights-at-omca-with-dat
+ anagan/
 URL:https://museumca.org/event/friday-nights-at-omca-with-datanagan/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-24-activity-line-dancing@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261024T173000Z
 DTEND:20261024T183000Z
 SUMMARY:Line Dancing (all ages)
 LOCATION:Potrero Branch Library
-DESCRIPTION:Kickstart your autumn Saturday mornings with bi-weekly line da
- ncing lessons. For Ages 9-99. Space limited. Seats available first come\,
-  first served. The one-hour lessons are October 24\, November 7 and 21 an
- d December 5 and 19.\nhttps://sfpl.org/events/2026/10/24/activity-line-da
- ncing
+DESCRIPTION:Learn some line dances together\; open to all ages.\nhttps://s
+ fpl.org/events/2026/10/24/activity-line-dancing
 URL:https://sfpl.org/events/2026/10/24/activity-line-dancing
 END:VEVENT
 BEGIN:VEVENT
-UID:sfpl-2026-10-24-performance-rene-y-familia-0@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261024T180000Z
-DTEND:20261024T184500Z
-SUMMARY:René y Familia
-LOCATION:Presidio Branch Library
-DESCRIPTION:René y Familia is a three-generation strong family band that 
- performs original bilingual children's music in Spanish and English as we
- ll as traditional and contemporary Latin music.\nhttps://sfpl.org/events/
- 2026/10/24/performance-rene-y-familia-0
-URL:https://sfpl.org/events/2026/10/24/performance-rene-y-familia-0
-END:VEVENT
-BEGIN:VEVENT
 UID:sfjazz-family-matinee-2026-10-24@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261024T180000Z
 DTEND:20261024T200000Z
 SUMMARY:SFJAZZ Family Matinee: Marcus Shelby & Friends\, Bebop Legends
@@ -1263,7 +1010,7 @@ URL:https://www.sfjazz.org/tickets/productions/26-27/education/family-mati
 END:VEVENT
 BEGIN:VEVENT
 UID:ybg-afro-filipino-jazz-2026-10-24@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261024T210000Z
 DTEND:20261024T223000Z
 SUMMARY:Afro-Filipino Jazz Project at Yerba Buena Gardens
@@ -1274,7 +1021,7 @@ URL:https://ybgfestival.org/event/afro-filipino-jazz-project/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfs-music-for-families-2026-10-24@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261024T210000Z
 DTEND:20261024T230000Z
 SUMMARY:SF Symphony: Music for Families
@@ -1287,59 +1034,56 @@ URL:https://www.sfsymphony.org/Subscribe/Series/Music-for-Families
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-24-performance-rene-y-familia@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261024T220000Z
 DTEND:20261024T224500Z
 SUMMARY:René y Familia
 LOCATION:Main Library
-DESCRIPTION:René y Familia is a three-generation strong family band that 
- performs original bilingual children's music in Spanish and English as we
- ll as traditional and contemporary Latin music.\nhttps://sfpl.org/events/
- 2026/10/24/performance-rene-y-familia
+DESCRIPTION:A family music performance.\nhttps://sfpl.org/events/2026/10/2
+ 4/performance-rene-y-familia
 URL:https://sfpl.org/events/2026/10/24/performance-rene-y-familia
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-24-social-family-dance-party@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261024T230000Z
 DTEND:20261025T000000Z
 SUMMARY:Family Dance Party
 LOCATION:Bernal Heights Branch Library
-DESCRIPTION:Dance to funky family-friendly jams and be silly with your lit
- tle one. For children and their caregivers. Dance & Music Enjoy performan
- ces\, talks and workshops that celebrate movement and the musical arts. T
- his program is sponsored by Friends of the San Francisco Public Library.\
- nhttps://sfpl.org/events/2026/10/24/social-family-dance-party
+DESCRIPTION:A dance party for the whole family at the Bernal Heights branc
+ h.\nhttps://sfpl.org/events/2026/10/24/social-family-dance-party
 URL:https://sfpl.org/events/2026/10/24/social-family-dance-party
 END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-free-family-day-k-pop-art-and-beyond-2026-10-25@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261025T170000Z
 DTEND:20261025T230000Z
 SUMMARY:Free Family Day: K-Pop\, Art\, and Beyond
 LOCATION:SFMOMA\, 151 Third St
-DESCRIPTION:Free museum admission for families with art making\, storytime
-  with SFPL\, a scavenger hunt\, and a K-pop dance party. Free with RSVP.\
- nhttps://www.sfmoma.org/event/free-family-day-k-pop-art-and-beyond/
+DESCRIPTION:Special Event at SFMOMA. Check the event page for admission an
+ d RSVP details.\nhttps://www.sfmoma.org/event/free-family-day-k-pop-art-a
+ nd-beyond/
 URL:https://www.sfmoma.org/event/free-family-day-k-pop-art-and-beyond/
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12514-2026-10-25@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261025T180000Z
 DTEND:20261025T230000Z
 SUMMARY:32nd Annual Día de los Muertos Community Celebration
 LOCATION:OMCA Campus
-DESCRIPTION:OMCA's 32nd annual Día de los Muertos celebration with ofrend
- as\, live performances\, and family art making. $10. \nhttps://museumca.o
- rg/event/32nd-annual-dia-de-los-muertos-community-celebration/
+DESCRIPTION:This fall\, OMCA welcomes the community back for its 32nd annu
+ al Día de los Muertos Community Celebration\, a vibrant day honoring the
+  people\, traditions\, and stories that connect us across generations. Jo
+ in the Día de los\nhttps://museumca.org/event/32nd-annual-dia-de-los-mue
+ rtos-community-celebration/
 URL:https://museumca.org/event/32nd-annual-dia-de-los-muertos-community-ce
  lebration/
 END:VEVENT
 BEGIN:VEVENT
 UID:hjk-rock-roll-playhouse-2026-10-25@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261025T190000Z
 DTEND:20261025T200000Z
 SUMMARY:Rock and Roll Playhouse: Music of The Beatles
@@ -1352,22 +1096,35 @@ URL:https://www.510families.com/ticket-alert-four-incredible-family-events
  -come-to-oakland/
 END:VEVENT
 BEGIN:VEVENT
+UID:omca-12505-2026-10-25@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20261025T200000Z
+DTEND:20261025T204500Z
+SUMMARY:Special Guest Gallery Chat with Traditional Medicine Practitioner 
+ Batul True Heart
+LOCATION:Gallery of California Natural Sciences
+DESCRIPTION:Come sit with Batul True Heart (they/them) in OMCA’s Gallery
+  of Natural Science as they share their personal experience of practicing
+  traditional medicine in times of mourning. In this 30-minute talk\, Batu
+ l will speak ab\nhttps://museumca.org/event/special-guest-gallery-chat-wi
+ th-traditional-medicine-practitioner-batul-true-heart/
+URL:https://museumca.org/event/special-guest-gallery-chat-with-traditional
+ -medicine-practitioner-batul-true-heart/
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-10-28-social-halloween-family-dance-party@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261028T220000Z
 DTEND:20261028T230000Z
 SUMMARY:Halloween Family Dance Party
 LOCATION:Excelsior Branch Library
-DESCRIPTION:Shake your sillies out and dance to a high energy contemporary
-  pop playlist. Drop in anytime during the session for as much dancing as 
- you like. Dance & Music Enjoy performances\, talks and workshops that cel
- ebrate movement and the musical arts.\nhttps://sfpl.org/events/2026/10/28
- /social-halloween-family-dance-party
+DESCRIPTION:Costumes welcome at this Halloween dance party for families.\n
+ https://sfpl.org/events/2026/10/28/social-halloween-family-dance-party
 URL:https://sfpl.org/events/2026/10/28/social-halloween-family-dance-party
 END:VEVENT
 BEGIN:VEVENT
 UID:cmc-halloween-parade-2026-10-28@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261028T231500Z
 DTEND:20261029T001500Z
 SUMMARY:Halloween Party & Costume Parade
@@ -1379,34 +1136,33 @@ URL:https://sfcmc.org/event/cmc-halloween-party-costume-parade-3/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-29-social-halloween-family-dance-party@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261029T230000Z
 DTEND:20261030T000000Z
 SUMMARY:Halloween Family Dance Party
 LOCATION:Potrero Branch Library
-DESCRIPTION:Witches will wiggle and monsters will mash at this special Hal
- loween-themed dance party bash. Make the most of it by arriving in cost
- ume. For children ages 0–5 and their caregivers. Space limited. Tickets
-  available on a first come basis at the front desk starting at 3:30 p.m
- .\nhttps://sfpl.org/events/2026/10/29/social-halloween-family-dance-party
+DESCRIPTION:A Halloween dance party for ages 0 to 5 and their caregivers\;
+  costumes welcome.\nhttps://sfpl.org/events/2026/10/29/social-halloween-f
+ amily-dance-party
 URL:https://sfpl.org/events/2026/10/29/social-halloween-family-dance-party
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12477-2026-10-30@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261031T000000Z
 DTEND:20261031T040000Z
 SUMMARY:Friday Nights at OMCA with LA GENTE SF
 LOCATION:OMCA campus
-DESCRIPTION:Free Friday evening at the Oakland Museum: live music\, food t
- rucks\, and the gardens. Friday Night at OMCA brings an infectious global
-  sound to the Garden Stage as San Francisco’s LA GENTE SF delivers a hi
- g\nhttps://museumca.org/event/friday-nights-at-omca-with-la-gente-sf/
+DESCRIPTION:Friday Night at OMCA brings an infectious global sound to the 
+ Garden Stage as San Francisco’s LA GENTE SF delivers a high-energy live
+  performance blending Cumbia\, Salsa\, and Reggaeton. Led by singer-songw
+ riter Rafa Sarri\nhttps://museumca.org/event/friday-nights-at-omca-with-l
+ a-gente-sf/
 URL:https://museumca.org/event/friday-nights-at-omca-with-la-gente-sf/
 END:VEVENT
 BEGIN:VEVENT
 UID:obc-luna-mexicana-2026-10-30@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261031T023000Z
 DTEND:20261031T043000Z
 SUMMARY:Luna Mexicana (Oakland Ballet)
@@ -1419,19 +1175,18 @@ URL:https://oaklandballet.org/performances-events/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-sfmomaween-2026-10-31@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261031T180000Z
 DTEND:20261031T230000Z
 SUMMARY:SFMOMAween
 LOCATION:SFMOMA\, 151 Third St
-DESCRIPTION:A Halloween day for all ages\; costumes encouraged\, from todd
- lers in Warhol wigs up. Free with museum admission.\nhttps://www.sfmoma.o
- rg/event/sfmomaween/
+DESCRIPTION:Special Event at SFMOMA. Check the event page for admission an
+ d RSVP details.\nhttps://www.sfmoma.org/event/sfmomaween/
 URL:https://www.sfmoma.org/event/sfmomaween/
 END:VEVENT
 BEGIN:VEVENT
 UID:ybg-halloween-hoopla-2026-10-31@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261031T190000Z
 DTEND:20261031T220000Z
 SUMMARY:Halloween Hoopla (Children's Garden Series)
@@ -1443,7 +1198,7 @@ URL:https://ybgfestival.org/event/halloween-hoopla-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:brava-loco-bloco-dia-2026-11-01@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261101T190000Z
 DTEND:20261102T040000Z
 SUMMARY:Loco Bloco presents Día de los Muertos: Esto No Se Vende
@@ -1457,7 +1212,7 @@ URL:https://www.brava.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:odc-family-matters-2026-11-01@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261101T210000Z
 DTEND:20261101T220000Z
 SUMMARY:Family Matters: ODC/Dance
@@ -1469,7 +1224,7 @@ URL:https://odc.dance/familymatters
 END:VEVENT
 BEGIN:VEVENT
 UID:obc-luna-mexicana-2026-11-01@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261101T223000Z
 DTEND:20261102T003000Z
 SUMMARY:Luna Mexicana (Oakland Ballet)
@@ -1482,7 +1237,7 @@ URL:https://oaklandballet.org/performances-events/
 END:VEVENT
 BEGIN:VEVENT
 UID:cmc-dia-de-muertos-2026-11-01@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261102T000000Z
 DTEND:20261102T020000Z
 SUMMARY:Día de Muertos en la Misión (Community Music Center)
@@ -1494,7 +1249,7 @@ URL:https://sfcmc.org/event/dia-de-muertos-en-la-mision/
 END:VEVENT
 BEGIN:VEVENT
 UID:marigold-festival-altars-2026-11-02@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261102T180000Z
 DTEND:20261103T030000Z
 SUMMARY:Festival of Altars (Marigold Project)
@@ -1505,7 +1260,7 @@ DESCRIPTION:Community altars in the park through the day\, with workshops
 END:VEVENT
 BEGIN:VEVENT
 UID:mission-dia-procession-2026-11-02@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261103T030000Z
 DTEND:20261103T050000Z
 SUMMARY:Día de los Muertos Procession in the Mission
@@ -1516,7 +1271,7 @@ DESCRIPTION:The Mission's big annual procession\, led by Aztec dancers\, w
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-bayview-2026-11-07@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261107T180000Z
 DTEND:20261107T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1530,32 +1285,30 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-07-activity-line-dancing@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261107T183000Z
 DTEND:20261107T193000Z
 SUMMARY:Line Dancing (all ages)
 LOCATION:Potrero Branch Library
-DESCRIPTION:Kickstart your autumn Saturday mornings with bi-weekly line da
- ncing lessons. For Ages 9-99. Space limited. Seats available first come\,
-  first served. The one-hour lessons are November 7 and 21 and December 5 
- and 19.\nhttps://sfpl.org/events/2026/11/07/activity-line-dancing
+DESCRIPTION:Learn some line dances together\; open to all ages.\nhttps://s
+ fpl.org/events/2026/11/07/activity-line-dancing
 URL:https://sfpl.org/events/2026/11/07/activity-line-dancing
 END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-make-a-kite-with-jacob-hashimoto-2026-11-07@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261107T190000Z
 DTEND:20261107T210000Z
 SUMMARY:Make a Kite with Jacob Hashimoto
 LOCATION:SFMOMA\, 151 Third St
-DESCRIPTION:Make your own kite with the artist inside his installation of 
- nearly 70\,000 kites. Free and open to the public.\nhttps://www.sfmoma.or
- g/event/make-a-kite-with-jacob-hashimoto/
+DESCRIPTION:Workshop at SFMOMA. Check the event page for admission and RSV
+ P details.\nhttps://www.sfmoma.org/event/make-a-kite-with-jacob-hashimoto
+ /
 URL:https://www.sfmoma.org/event/make-a-kite-with-jacob-hashimoto/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfb-tiny-dances-11-07-11@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261107T190000Z
 DTEND:20261107T202000Z
 SUMMARY:Tiny Dances: Swan Lake (SF Ballet)
@@ -1569,59 +1322,43 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-07-performance-nutcracker-sweets-ballet-mark-foehringer-d
  ance-project@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261107T213000Z
 DTEND:20261107T221500Z
 SUMMARY:Nutcracker Sweets Ballet (Mark Foehringer Dance Project)
 LOCATION:Main Library
-DESCRIPTION:Enjoy costumed dancers perform selections of Mark Foehringer D
- ance Project's Nutcracker Sweets\, based on E.T.A. Hoffman's “The Nutcr
- acker and the Mouse King.” Connect: Mark Foehringer Dance Project–Web
- site\nhttps://sfpl.org/events/2026/11/07/performance-nutcracker-sweets-ba
- llet-mark-foehringer-dance-project
+DESCRIPTION:A short\, kid-sized Nutcracker in the Children's Creative Cent
+ er.\nhttps://sfpl.org/events/2026/11/07/performance-nutcracker-sweets-bal
+ let-mark-foehringer-dance-project
 URL:https://sfpl.org/events/2026/11/07/performance-nutcracker-sweets-balle
  t-mark-foehringer-dance-project
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-07-performance-sampaguitas@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261107T220000Z
 DTEND:20261107T230000Z
 SUMMARY:The Sampaguitas
 LOCATION:Mission Bay Branch Library
-DESCRIPTION:Based in the San Francisco Bay Area\, Bay Beats artists\, The 
- Sampaguitas\, sing Filipino folk songs and inspired originals in three-pa
- rt harmony.\nhttps://sfpl.org/events/2026/11/07/performance-sampaguitas
+DESCRIPTION:A family concert at the Mission Bay branch.\nhttps://sfpl.org/
+ events/2026/11/07/performance-sampaguitas
 URL:https://sfpl.org/events/2026/11/07/performance-sampaguitas
 END:VEVENT
 BEGIN:VEVENT
-UID:sfb-tiny-dances-11-07-15@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261107T230000Z
-DTEND:20261108T002000Z
-SUMMARY:Tiny Dances: Swan Lake (SF Ballet)
-LOCATION:Palace of Fine Arts Theatre
-DESCRIPTION:San Francisco Ballet's new family series for ages 2 to 8: an h
- our of Swan Lake in two halves with an intermission\, plus pre-show lobby
-  activities and a chance for kids to dance. This show is sensory friendly
- .\nhttps://www.sfballet.org/productions/tiny-dances/
-URL:https://www.sfballet.org/productions/tiny-dances/
-END:VEVENT
-BEGIN:VEVENT
 UID:sfmoma-family-studio-lines-that-move-2026-11-08@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261108T180000Z
 DTEND:20261108T210000Z
 SUMMARY:Family Studio: Lines That Move
 LOCATION:SFMOMA\, 151 Third St
-DESCRIPTION:Free drop-in art making for the whole family\, inspired by Wil
- liam Kentridge. No museum admission needed.\nhttps://www.sfmoma.org/event
- /family-studio-lines-that-move-11-8/
+DESCRIPTION:Family Sundays at SFMOMA. Check the event page for admission a
+ nd RSVP details.\nhttps://www.sfmoma.org/event/family-studio-lines-that-m
+ ove-11-8/
 URL:https://www.sfmoma.org/event/family-studio-lines-that-move-11-8/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfb-tiny-dances-11-08-11@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261108T190000Z
 DTEND:20261108T202000Z
 SUMMARY:Tiny Dances: Swan Lake (SF Ballet)
@@ -1633,35 +1370,22 @@ DESCRIPTION:San Francisco Ballet's new family series for ages 2 to 8: an h
 URL:https://www.sfballet.org/productions/tiny-dances/
 END:VEVENT
 BEGIN:VEVENT
-UID:sfb-tiny-dances-11-08-15@sf_familyevents
-DTSTAMP:20261012T150459Z
-DTSTART:20261108T230000Z
-DTEND:20261109T002000Z
-SUMMARY:Tiny Dances: Swan Lake (SF Ballet)
-LOCATION:Palace of Fine Arts Theatre
-DESCRIPTION:San Francisco Ballet's new family series for ages 2 to 8: an h
- our of Swan Lake in two halves with an intermission\, plus pre-show lobby
-  activities and a chance for kids to dance.\nhttps://www.sfballet.org/pro
- ductions/tiny-dances/
-URL:https://www.sfballet.org/productions/tiny-dances/
-END:VEVENT
-BEGIN:VEVENT
 UID:sfpl-2026-11-09-social-monday-fun-day-family-dance-party@sf_familyeven
  ts
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261109T180000Z
 DTEND:20261109T190000Z
 SUMMARY:Monday Fun Day Family Dance Party
 LOCATION:Glen Park Branch Library
-DESCRIPTION:Shake your sillies out to a family-friendly pop playlist with
-  your family and friends. For children ages 5 and younger.\nhttps://sfpl
- .org/events/2026/11/09/social-monday-fun-day-family-dance-party
+DESCRIPTION:A dance party for babies\, toddlers\, preschoolers\, and their
+  grown-ups.\nhttps://sfpl.org/events/2026/11/09/social-monday-fun-day-fam
+ ily-dance-party
 URL:https://sfpl.org/events/2026/11/09/social-monday-fun-day-family-dance-
  party
 END:VEVENT
 BEGIN:VEVENT
 UID:ybg-bhangra-beats-2026-11-13@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261114T000000Z
 DTEND:20261114T050000Z
 SUMMARY:Bhangra & Beats Night Market
@@ -1672,7 +1396,7 @@ URL:https://ybgfestival.org/event/bhangra-and-beats-111326/
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-mission-2026-11-14@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261114T180000Z
 DTEND:20261114T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1686,7 +1410,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:galeria-belonging-workshop-2026-11-14@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261114T220000Z
 DTEND:20261115T000000Z
 SUMMARY:A Sense of Belonging: art workshop with Mabel Valdiviezo
@@ -1699,104 +1423,86 @@ URL:https://galeriadelaraza.org/calendar/a-sense-of-belonging-workshop-wit
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-14-early-learning-malinky-music@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261115T003000Z
 DTEND:20261115T010000Z
 SUMMARY:Malinky Music
 LOCATION:Sunset Branch Library
-DESCRIPTION:Shake your hips and sing with Malinky Music \, a bilingual Spa
- nish-English music and movement class designed to immerse young children 
- in both languages through music\, play and engaging activities. For child
- ren and their caregivers.\nhttps://sfpl.org/events/2026/11/14/early-learn
- ing-malinky-music
+DESCRIPTION:Music time for babies\, toddlers\, and preschoolers.\nhttps://
+ sfpl.org/events/2026/11/14/early-learning-malinky-music
 URL:https://sfpl.org/events/2026/11/14/early-learning-malinky-music
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-16-performance-nutcracker-sweets-ballet-mark-foehringer-d
  ance-project@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261116T183000Z
 DTEND:20261116T190000Z
 SUMMARY:Nutcracker Sweets Ballet (Mark Foehringer Dance Project)
 LOCATION:Visitacion Valley Branch Library
-DESCRIPTION:Watch as costumed dancers perform selections of Mark Foehring
- er Dance Project's Nutcracker Sweets \, based on E.T.A. Hoffman's “The 
- Nutcracker and the Mouse King.” Connect: Mark Foehringer - Website Dan
- ce & Music Enjoy performances\, talks and workshops that celebrate moveme
- nt and the musical arts.\nhttps://sfpl.org/events/2026/11/16/performance-
- nutcracker-sweets-ballet-mark-foehringer-dance-project
+DESCRIPTION:A short\, kid-sized Nutcracker for families.\nhttps://sfpl.org
+ /events/2026/11/16/performance-nutcracker-sweets-ballet-mark-foehringer-d
+ ance-project
 URL:https://sfpl.org/events/2026/11/16/performance-nutcracker-sweets-balle
  t-mark-foehringer-dance-project
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-18-performance-nutcracker-sweets-ballet-mark-foehringer-d
  ance-project@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261118T190000Z
 DTEND:20261118T191500Z
 SUMMARY:Nutcracker Sweets Ballet (Mark Foehringer Dance Project)
 LOCATION:Richmond Branch Library
-DESCRIPTION:Bring in the holidays with Nutcracker Sweets\, a unique produc
- tion of the classic holiday ballet. This special production is a danced s
- torytelling of the performance that is magical\, zany and fun. A 15-minu
- te dance performance will be followed by a photo opportunity with the da
- ncers.\nhttps://sfpl.org/events/2026/11/18/performance-nutcracker-sweets-
- ballet-mark-foehringer-dance-project
+DESCRIPTION:A short\, kid-sized Nutcracker ballet.\nhttps://sfpl.org/event
+ s/2026/11/18/performance-nutcracker-sweets-ballet-mark-foehringer-dance-p
+ roject
 URL:https://sfpl.org/events/2026/11/18/performance-nutcracker-sweets-balle
  t-mark-foehringer-dance-project
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-18-performance-mark-foehringers-nutcracker-sweets@sf_fami
  lyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261118T213000Z
 DTEND:20261118T223000Z
 SUMMARY:Mark Foehringer's Nutcracker Sweets
 LOCATION:Sunset Branch Library
-DESCRIPTION:Watch as costumed dancers perform selections of Mark Foehringe
- r's Nutcracker Sweets show\, based on E.T.A. Hoffman's “The Nutcracker
-  and the Mouse King.” For children and their caregivers. Connect: Mark 
- Foehringer Dance Project–Website\nhttps://sfpl.org/events/2026/11/18/pe
- rformance-mark-foehringers-nutcracker-sweets
+DESCRIPTION:A short\, kid-sized Nutcracker ballet.\nhttps://sfpl.org/event
+ s/2026/11/18/performance-mark-foehringers-nutcracker-sweets
 URL:https://sfpl.org/events/2026/11/18/performance-mark-foehringers-nutcra
  cker-sweets
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-19-performance-nutcracker-sweets-ballet-mark-foehringer-d
  ance-project@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261119T190000Z
 DTEND:20261119T193000Z
 SUMMARY:Nutcracker Sweets Ballet (Mark Foehringer Dance Project)
 LOCATION:Bayview Branch Library
-DESCRIPTION:Watch as costumed dancers perform selections of Mark Foehring
- er Dance Project's Nutcracker Sweets \, based on E.T.A. Hoffman's “The 
- Nutcracker and the Mouse King.” A 20-minute dance performance will be f
- ollowed by a photo opportunity with the dancers. For children and their 
- caregivers.\nhttps://sfpl.org/events/2026/11/19/performance-nutcracker-sw
- eets-ballet-mark-foehringer-dance-project
+DESCRIPTION:A short\, kid-sized Nutcracker ballet.\nhttps://sfpl.org/event
+ s/2026/11/19/performance-nutcracker-sweets-ballet-mark-foehringer-dance-p
+ roject
 URL:https://sfpl.org/events/2026/11/19/performance-nutcracker-sweets-balle
  t-mark-foehringer-dance-project
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-19-performance-guitar-sing-along-grandpa-alan@sf_familyev
  ents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261119T233000Z
 DTEND:20261120T000000Z
 SUMMARY:Guitar Sing-Along with Grandpa Alan
 LOCATION:Eureka Valley Branch Library
-DESCRIPTION:Enjoy childhood songs with Grandpa Alan as he plays the guitar
-  and sings. For children and their caregivers. Dance & Music Enjoy perfor
- mances\, talks and workshops that celebrate movement and the musical arts
- .\nhttps://sfpl.org/events/2026/11/19/performance-guitar-sing-along-grand
- pa-alan
+DESCRIPTION:Sing along to guitar with Grandpa Alan.\nhttps://sfpl.org/even
+ ts/2026/11/19/performance-guitar-sing-along-grandpa-alan
 URL:https://sfpl.org/events/2026/11/19/performance-guitar-sing-along-grand
  pa-alan
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-excelsior-2026-11-21@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261121T180000Z
 DTEND:20261121T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1809,7 +1515,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:sfjazz-family-matinee-2026-11-21@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261121T190000Z
 DTEND:20261121T210000Z
 SUMMARY:SFJAZZ Family Matinee: Mariachi Flor de Toloache
@@ -1821,7 +1527,7 @@ URL:https://www.sfjazz.org/education/family-matinee-overview
 END:VEVENT
 BEGIN:VEVENT
 UID:odc-velveteen-rabbit-2026-11-28@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261128T190000Z
 DTEND:20261128T210000Z
 SUMMARY:The Velveteen Rabbit (ODC/Dance)
@@ -1833,7 +1539,7 @@ URL:https://odc.dance/CALENDAR
 END:VEVENT
 BEGIN:VEVENT
 UID:odc-velveteen-rabbit-2026-11-29@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261129T220000Z
 DTEND:20261130T000000Z
 SUMMARY:The Velveteen Rabbit (ODC/Dance)
@@ -1845,7 +1551,7 @@ URL:https://odc.dance/CALENDAR
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-bayview-2026-12-05@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261205T180000Z
 DTEND:20261205T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1859,7 +1565,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:mapp-2026-12-05@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261206T020000Z
 DTEND:20261206T060000Z
 SUMMARY:MAPP: Mission Arts & Performance Project
@@ -1872,7 +1578,7 @@ URL:https://www.redpoppyarthouse.org/tag/mission-arts-performance-project/
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-mission-2026-12-12@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261212T180000Z
 DTEND:20261212T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1886,7 +1592,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:sfjazz-family-matinee-2026-12-12@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261212T190000Z
 DTEND:20261212T210000Z
 SUMMARY:SFJAZZ Family Matinee: A Charlie Brown Christmas
@@ -1899,7 +1605,7 @@ URL:https://www.sfjazz.org/education/family-matinee-overview
 END:VEVENT
 BEGIN:VEVENT
 UID:odc-family-matters-2026-12-13@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261213T210000Z
 DTEND:20261213T220000Z
 SUMMARY:Family Matters at ODC
@@ -1911,7 +1617,7 @@ URL:https://odc.dance/familymatters
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-excelsior-2026-12-19@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261219T180000Z
 DTEND:20261219T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1924,7 +1630,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:hjk-rockin-holiday-2026-12-20@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20261220T220000Z
 DTEND:20261221T010000Z
 SUMMARY:Rockin' Holiday with Alphabet Rockers
@@ -1937,12 +1643,26 @@ URL:https://www.510families.com/ticket-alert-four-incredible-family-events
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-bayview-2027-01-02@sf_familyevents
-DTSTAMP:20261012T150459Z
+DTSTAMP:20261012T223126Z
 DTSTART:20270102T180000Z
 DTEND:20270102T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
 LOCATION:Mission Science Workshop Bayview\, 50 Pomona St (inside Charles D
  rew Elementary)
+DESCRIPTION:Free drop-in hands-on science: build and tinker\, explore bone
+ s\, fossils and rocks\, and meet the workshop's animals. Runs during the 
+ school year\, so check the workshop's site around holidays.\nhttps://www.
+ missionscienceworkshop.org/programs
+URL:https://www.missionscienceworkshop.org/programs
+END:VEVENT
+BEGIN:VEVENT
+UID:msw-mission-2027-01-09@sf_familyevents
+DTSTAMP:20261012T223126Z
+DTSTART:20270109T180000Z
+DTEND:20270109T230000Z
+SUMMARY:Mission Science Workshop free Saturday open house
+LOCATION:Mission Science Workshop\, 3750 18th St (Church St between 17th a
+ nd 18th)
 DESCRIPTION:Free drop-in hands-on science: build and tinker\, explore bone
  s\, fossils and rocks\, and meet the workshop's animals. Runs during the 
  school year\, so check the workshop's site around holidays.\nhttps://www.

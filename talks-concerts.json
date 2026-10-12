@@ -1,10 +1,16 @@
 {
- "generated": "2026-10-11T23:07-07:00",
+ "generated": "2026-10-12T15:32-07:00",
  "coverage": "Oct 12–Jan 10",
  "sources": [
   "Calendar feeds (Luma, SPUR and others)",
   "Commonwealth Club",
   "The Independent",
+  "Red Poppy Art House",
+  "Community Music Center",
+  "The Fillmore",
+  "The Chapel",
+  "Great American Music Hall",
+  "MAPP",
   "JCCSF Arts & Ideas",
   "Yerba Buena Gardens Festival",
   "Mission Local",
@@ -174,6 +180,24 @@
    "url": "https://missionlocal.org/event/gray-area-grand-theater-patch-bay-yoon-chung-han-tori-sommerhof-artist-talks/"
   },
   {
+   "id": "cal-calev-zkjijpcvi796rok-events-lu-ma",
+   "kind": "event",
+   "source": "The Fold",
+   "name": "The Feels SF ed 21: an IRL singles experience",
+   "area": "https://www.eventbrite.com/e/1996990346885?aff=oddtdtcreator",
+   "lat": 37.7489607,
+   "lng": -122.4172885,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "bookAhead": false,
+   "start": "2026-10-14T18:30:00-07:00",
+   "end": "2026-10-14T21:30:00-07:00",
+   "note": "Find more information on",
+   "url": "https://luma.com/thefoldsf"
+  },
+  {
    "kind": "event",
    "source": "The Chapel",
    "area": "The Chapel, 777 Valencia St",
@@ -269,7 +293,11 @@
    "start": "2026-10-15T12:30:00-07:00",
    "end": "2026-10-15T13:30:00-07:00",
    "note": "The 100 th anniversary of John Coltrane’s birthday has inspired dozens of performances across the Bay Area this year, but no artist is better equipped to evoke the legacy of the saxophone titan and spiritual seeker than ",
-   "url": "https://ybgfestival.org/event/richard-howells-john-coltrane-tribute-2026/"
+   "url": "https://ybgfestival.org/event/richard-howells-john-coltrane-tribute-2026/",
+   "also": {
+    "page": "index.html",
+    "id": "ybg-25786-2026-10-15"
+   }
   },
   {
    "id": "cal-evt-0i9xbwvwkbp9kxo-events-lu-ma",
@@ -573,7 +601,7 @@
    "free": null,
    "start": "2026-10-17T19:00:00-07:00",
    "end": "2026-10-17T22:00:00-07:00",
-   "note": "A Prohibition-era swing dance party with Nick Rossi's Swing Six in CMC's concert hall. $25, or $20 for students and seniors.",
+   "note": "Longtime community partner Bootlegger's Ball returns to the CMC Concert Hall! $25 General, $20 Students/Seniors.",
    "url": "https://sfcmc.org/event/bootleggers-ball-with-nick-rossis-swing-six/",
    "tags": [
     "music"
@@ -725,7 +753,7 @@
    "free": null,
    "start": "2026-10-18T15:00:00-07:00",
    "end": null,
-   "note": "Ensemble for These Times opens its 19th season with new solo piano works chosen through a call for scores. $5–$30; no one turned away.",
+   "note": "Award-winning SF contemporary chamber group Ensemble for These Times is excited to kick off it's 19th season with “Call for Scores: Solo Piano, Vol. $5–$30.",
    "url": "https://sfcmc.org/event/e4tt-call-for-scores-solo-piano-vol-3/",
    "tags": [
     "music"
@@ -838,7 +866,7 @@
    "kind": "event",
    "source": "SPUR",
    "name": "SF Politics 101 with Joel Engardio [October Edition]",
-   "area": "SPUR Urban Center, 654 Mission St",
+   "area": "SPUR Urban Center, 654 Mission Street",
    "lat": 37.787196,
    "lng": -122.4012427,
    "indoor": true,
@@ -1149,6 +1177,28 @@
    ]
   },
   {
+   "kind": "event",
+   "source": "The Chapel",
+   "area": "The Chapel, 777 Valencia St",
+   "lat": 37.7604,
+   "lng": -122.4213,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-the-chapel-the-devil-makes-three-2026-10-21",
+   "name": "The Devil Makes Three",
+   "start": "2026-10-21T20:00:00-07:00",
+   "end": null,
+   "free": false,
+   "note": "Americana at The Chapel. With Two Runner. Doors at 7:00PM / Show at 8:00PM. All Ages.",
+   "url": "https://wl.seetickets.us/event/the-devil-makes-three/693375?afflky=TheChapel",
+   "tags": [
+    "music",
+    "songs"
+   ]
+  },
+  {
    "id": "cal-472a369e-45da-43db-8879-9ecc9b9d9e8b",
    "kind": "event",
    "source": "SPUR",
@@ -1237,6 +1287,28 @@
    "url": "https://missionlocal.org/event/111-minna-gallery-passion-projects-sf-the-artist-behind-the-effect-opening-night/"
   },
   {
+   "kind": "event",
+   "source": "Great American Music Hall",
+   "area": "Great American Music Hall, 859 O'Farrell St",
+   "lat": 37.7848,
+   "lng": -122.4189,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-great-american-music-a-split-second-crash-course-in-science-2026-10-22",
+   "name": "A Split Second, Crash Course in Science",
+   "start": "2026-10-22T18:30:00-07:00",
+   "end": null,
+   "free": false,
+   "note": "Post Punk at Great American Music Hall. With with Automelodi, Vioflesh, Pink Stiletto, God Tongue. Doors at 6:00PM / Show at 6:30PM. $22.00-$90.00.",
+   "url": "https://wl.seetickets.us/event/a-split-second-crash-course-in-science/698237?afflky=GreatAmericanMusicHall",
+   "tags": [
+    "music",
+    "songs"
+   ]
+  },
+  {
    "id": "indy-2622-2026-10-22",
    "kind": "event",
    "source": "The Independent",
@@ -1253,6 +1325,27 @@
    "bookAhead": true,
    "note": "Live at The Independent. Doors 7:30 PM, show 8:00 PM.",
    "url": "https://www.theindependentsf.com/tm-event/frankie-cosmos-celebrating-10-years-of-next-thing/",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "kind": "event",
+   "source": "Great American Music Hall",
+   "area": "Great American Music Hall, 859 O'Farrell St",
+   "lat": 37.7848,
+   "lng": -122.4189,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-great-american-music-tr-st-dj-set-buzz-kull-2026-10-23",
+   "name": "TR/ST (DJ set) , Buzz Kull",
+   "start": "2026-10-23T18:30:00-07:00",
+   "end": null,
+   "free": false,
+   "note": "Synthwave at Great American Music Hall. With with Zanias, Ghost Cop, Aux Animaux, DJ Omar Perez. Doors at 6:00PM / Show at 6:30PM. $22.00-$90.00.",
+   "url": "https://wl.seetickets.us/event/trst-dj-set-buzz-kull/698251?afflky=GreatAmericanMusicHall",
    "tags": [
     "music"
    ]
@@ -1326,7 +1419,7 @@
    "free": null,
    "start": "2026-10-23T20:00:00-07:00",
    "end": null,
-   "note": "An evening of brand-new music for winds from the Bay Area chapter of the National Association of Composers USA. $15–$25.",
+   "note": "The San Francisco Bay Area Chapter of NACUSA (National Association of Composers USA) will present an evening dedicated to music for winds. $15–$25.",
    "url": "https://sfcmc.org/event/new-music-for-wind-trio/",
    "tags": [
     "music"
@@ -1666,7 +1759,7 @@
    "kind": "event",
    "source": "SPUR",
    "name": "Investing in Housing: The Housing Trust Fund and the November Ballot",
-   "area": "SPUR Urban Center, 654 Mission St",
+   "area": "SPUR Urban Center, 654 Mission Street",
    "lat": 37.787196,
    "lng": -122.4012427,
    "indoor": true,
@@ -1819,7 +1912,7 @@
    "free": null,
    "start": "2026-11-01T16:00:00-08:00",
    "end": null,
-   "note": "A Day of the Dead concert by CMC choirs and musicians at Mission Dolores Basilica. $5–$15; no one turned away for lack of funds.",
+   "note": "Join us for a joyful celebration honoring the Mexican tradition of Day of the Dead at Mission Dolores Basílica! $5–$15 (notaflof).",
    "url": "https://sfcmc.org/event/dia-de-muertos-en-la-mision/",
    "tags": [
     "music"
@@ -1912,6 +2005,24 @@
    "tags": [
     "music"
    ]
+  },
+  {
+   "id": "cal-4cc2e3d5-8416-423c-9158-ae721eab2c4c",
+   "kind": "event",
+   "source": "SPUR",
+   "name": "Preparing for El Niño: What Cities, Community Groups, and Advocates Are Doing Now",
+   "area": "SPUR Urban Center, 654 Mission St",
+   "lat": 37.7863,
+   "lng": -122.4012,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "bookAhead": true,
+   "start": "2026-11-04T12:00:00-08:00",
+   "end": "2026-11-04T13:15:00-08:00",
+   "note": "El Niño conditions are expected to increase the likelihood of heavy rain and flooding this winter—join us to hear from Bay Area leaders working to protect communities before, during, and after the storms. We’ll explore how local jurisdictions, community organi",
+   "url": "https://www.spur.org/events/2026-11-04/preparing-el-nino-what-cities-community-groups-and-advocates-are-doing-now"
   },
   {
    "id": "indy-2727-2026-11-04",
@@ -2070,6 +2181,26 @@
    "bookAhead": true,
    "note": "Live at The Independent. Doors 8:30 PM, show 9:00 PM.",
    "url": "https://www.theindependentsf.com/tm-event/karina-rykman/",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "cmc-from-baroque-to-cinema-2026-11-08",
+   "kind": "event",
+   "source": "Community Music Center",
+   "name": "From Baroque to Cinema",
+   "area": "Community Music Center, 544 Capp St",
+   "lat": 37.7588,
+   "lng": -122.4177,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-08T15:00:00-08:00",
+   "end": "2026-11-08T17:00:00-08:00",
+   "note": "Journey through three centuries of music with CMC faculty celebrating the unique beauty of the piano trio — violin, cello, and piano. Free.",
+   "url": "https://sfcmc.org/event/from-baroque-to-cinema/",
    "tags": [
     "music"
    ]
@@ -2936,6 +3067,23 @@
    ]
   },
   {
+   "id": "jccsf-96034-2026-12-04",
+   "kind": "event",
+   "source": "JCCSF Arts & Ideas",
+   "name": "Hanukkah Candle Lighting",
+   "area": "JCCSF",
+   "lat": 37.787,
+   "lng": -122.4466,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-04T16:30:00-08:00",
+   "end": "2026-12-04T17:00:00-08:00",
+   "note": "Light the community hanukkiyah with us every weeknight of Hanukkah. Enjoy live music, crafts and fried treats.",
+   "url": "https://www.jccsf.org/event/hanukkah-candle-lighting-2/2026-12-04/"
+  },
+  {
    "id": "mapp-2026-12-05",
    "kind": "event",
    "source": "MAPP",
@@ -3037,6 +3185,40 @@
    ]
   },
   {
+   "id": "jccsf-110442-2026-12-07",
+   "kind": "event",
+   "source": "JCCSF Arts & Ideas",
+   "name": "Hanukkah Candle Lighting",
+   "area": "JCCSF",
+   "lat": 37.787,
+   "lng": -122.4466,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-07T16:30:00-08:00",
+   "end": "2026-12-07T17:00:00-08:00",
+   "note": "Light the community hanukkiyah with us every weeknight of Hanukkah. Enjoy live music, crafts and fried treats.",
+   "url": "https://www.jccsf.org/event/hanukkah-candle-lighting-2/2026-12-07/"
+  },
+  {
+   "id": "jccsf-110443-2026-12-08",
+   "kind": "event",
+   "source": "JCCSF Arts & Ideas",
+   "name": "Hanukkah Candle Lighting",
+   "area": "JCCSF",
+   "lat": 37.787,
+   "lng": -122.4466,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-08T16:30:00-08:00",
+   "end": "2026-12-08T17:00:00-08:00",
+   "note": "Light the community hanukkiyah with us every weeknight of Hanukkah. Enjoy live music, crafts and fried treats.",
+   "url": "https://www.jccsf.org/event/hanukkah-candle-lighting-2/2026-12-08/"
+  },
+  {
    "id": "indy-6208-2026-12-08",
    "kind": "event",
    "source": "The Independent",
@@ -3056,6 +3238,23 @@
    "tags": [
     "music"
    ]
+  },
+  {
+   "id": "jccsf-110444-2026-12-09",
+   "kind": "event",
+   "source": "JCCSF Arts & Ideas",
+   "name": "Hanukkah Candle Lighting",
+   "area": "JCCSF",
+   "lat": 37.787,
+   "lng": -122.4466,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-09T16:30:00-08:00",
+   "end": "2026-12-09T17:00:00-08:00",
+   "note": "Light the community hanukkiyah with us every weeknight of Hanukkah. Enjoy live music, crafts and fried treats.",
+   "url": "https://www.jccsf.org/event/hanukkah-candle-lighting-2/2026-12-09/"
   },
   {
    "kind": "event",
@@ -3100,6 +3299,23 @@
    ]
   },
   {
+   "id": "jccsf-110445-2026-12-10",
+   "kind": "event",
+   "source": "JCCSF Arts & Ideas",
+   "name": "Hanukkah Candle Lighting",
+   "area": "JCCSF",
+   "lat": 37.787,
+   "lng": -122.4466,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-10T16:30:00-08:00",
+   "end": "2026-12-10T17:00:00-08:00",
+   "note": "Light the community hanukkiyah with us every weeknight of Hanukkah. Enjoy live music, crafts and fried treats.",
+   "url": "https://www.jccsf.org/event/hanukkah-candle-lighting-2/2026-12-10/"
+  },
+  {
    "kind": "event",
    "source": "The Fillmore",
    "area": "The Fillmore, 1805 Geary Blvd",
@@ -3140,6 +3356,23 @@
    "tags": [
     "music"
    ]
+  },
+  {
+   "id": "jccsf-110446-2026-12-11",
+   "kind": "event",
+   "source": "JCCSF Arts & Ideas",
+   "name": "Hanukkah Candle Lighting",
+   "area": "JCCSF",
+   "lat": 37.787,
+   "lng": -122.4466,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-11T16:30:00-08:00",
+   "end": "2026-12-11T17:00:00-08:00",
+   "note": "Light the community hanukkiyah with us every weeknight of Hanukkah. Enjoy live music, crafts and fried treats.",
+   "url": "https://www.jccsf.org/event/hanukkah-candle-lighting-2/2026-12-11/"
   },
   {
    "kind": "event",
@@ -3221,6 +3454,27 @@
    "bookAhead": true,
    "note": "Live at The Independent. Doors 8:30 PM, show 9:00 PM.",
    "url": "https://www.theindependentsf.com/tm-event/the-olllam/",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "kind": "event",
+   "source": "The Fillmore",
+   "area": "The Fillmore, 1805 Geary Blvd",
+   "lat": 37.784,
+   "lng": -122.433,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-the-fillmore-jorma-kaukonen-2026-12-13",
+   "name": "Jorma Kaukonen",
+   "start": "2026-12-13T20:00:00-08:00",
+   "end": null,
+   "free": false,
+   "note": "Live at The Fillmore.",
+   "url": "https://www.ticketmaster.com/jorma-kaukonen-san-francisco-california-12-13-2026/event/1C006521850AB602",
    "tags": [
     "music"
    ]
