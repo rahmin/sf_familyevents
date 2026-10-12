@@ -35,7 +35,8 @@ MANUAL = ROOT / "data" / "manual.json"
 GEOCACHE = ROOT / "data" / "geocache.json"
 
 TZ = ZoneInfo("America/Los_Angeles")
-DAYS_AHEAD = int(os.environ.get("DAYS_AHEAD") or "7")
+DAYS_AHEAD = int(os.environ.get("DAYS_AHEAD") or "7")        # regular programs (library, museums)
+HORIZON_DAYS = int(os.environ.get("HORIZON_DAYS") or "90")   # one-off and ticketed events
 CONTACT = os.environ.get("CONTACT_EMAIL", "")
 UA = (
     "Mozilla/5.0 (compatible; family-day-out/1.0; "
@@ -143,7 +144,7 @@ def sfpl_time_range(s: str) -> tuple[str, str] | None:
 
 
 SFPL_SLUG_HINT = re.compile(
-    r"storytime|story|famil|kid|child|bab|toddler|preschool|performance|puppet|film|play|music|dance|"
+    r"storytime|story|famil|kid|child|bab|toddler|preschool|performance|puppet|film|play|music|danc|ballet|folklor|nutcracker|"
     r"craft|art|lego|bubble|dog|animal|halloween|pumpkin|science|stem|magic|sing|garden|celebration|open-house"
 )
 
@@ -163,6 +164,52 @@ def sfpl_closures(year: int) -> set[date]:
     if out:
         log(f"  library closures: {sorted(out)}")
     return out
+
+
+def sfpl_note(lines: list[str]) -> str:
+    """The program's own description (text after the branch contact details), plus a short list of highlights."""
+    head = lines[:30]
+    k = next((n for n, l in enumerate(head) if l.startswith("Contact Telephone")), -1)
+    if k < 0:
+        return ""
+    while k + 1 < len(lines) and ("@" in lines[k + 1] or re.fullmatch(r"[\d\-\s().]{7,}", lines[k + 1])):
+        k += 1
+    body = []
+    for l in lines[k + 1:k + 60]:
+        if re.match(r"(?i)(disability|requesting|to request|notice:|this program will be|accommodation|for more information)", l) or l in ("Celebrations", "Storytime", "Activity", "Performance", "Workshop", "Film", "Social", "Early Learning", "Make + Do", "Author", "Community & Neighborhood",
+                                                  "Arts & Culture", "Science & Technology", "Health & Wellness", "Literacy & Learning"):
+            break
+        if "@" in l or re.fullmatch(r"[\d\-\s().]{7,}", l):
+            continue
+        body.append(l)
+    lead, sched, cur = [], [], None
+    in_sched = False
+    for l in body:
+        if l.startswith("Schedule of Activities"):
+            in_sched = True
+            continue
+        if not in_sched:
+            lead.append(l)
+            continue
+        cur = (cur + " " + l) if cur else l
+        if cur.endswith(")") or len(cur) > 80:
+            sched.append(cur); cur = None
+    if cur:
+        sched.append(cur)
+    text = " ".join(lead)
+    sentences = re.split(r"(?<=[.!?])\s+", text.strip())
+    note = ""
+    for sen in sentences:
+        if len(note) + len(sen) > 300:
+            break
+        note = (note + " " + sen).strip()
+    if not note and text:
+        note = text[:300].rsplit(" ", 1)[0] + "…"
+    items = [re.sub(r"\s*\([^)]*\)", "", x).strip(" ,") for x in sched]
+    items = [x for x in items if 3 < len(x) < 70][:6]
+    if items:
+        note += " Highlights: " + "; ".join(items) + "."
+    return note.strip()
 
 
 def scrape_sfpl(start: date, end: date) -> list[dict]:
@@ -213,12 +260,13 @@ def scrape_sfpl(start: date, end: date) -> list[dict]:
             continue
         mm, dd, yy = map(int, re.search(r"(\d{1,2})/(\d{1,2})/(\d{4})", lines[i]).groups())
         d = date(yy, mm, dd)
+        # Pick the longest branch name that appears, so "Mission Bay" wins over "Mission".
+        matches = [(bname, lat, lng) for bname, lat, lng in SFPL_BRANCHES.values()
+                   if re.search(rf"\b{re.escape(bname)}\b", window)]
         branch = None
-        for slug, (bname, lat, lng) in SFPL_BRANCHES.items():
-            if re.search(rf"\b{re.escape(bname)}\b", window):
-                branch = (bname, lat, lng)
-                if bname != "Main":
-                    break
+        if matches:
+            non_main = [m for m in matches if m[0] != "Main"]
+            branch = max(non_main or matches, key=lambda m: len(m[0]))
         if not branch:
             continue
         bname, lat, lng = branch
@@ -231,7 +279,7 @@ def scrape_sfpl(start: date, end: date) -> list[dict]:
                 kind="event", source="sfpl", name=nice, area=area, lat=lat, lng=lng,
                 indoor=True, exp=0, off=0, free=True,
                 start=local_iso(d, tr[0]), end=local_iso(d, tr[1]),
-                note="Free library program for young children and their grown-ups.",
+                note=sfpl_note(lines[i:]) or "Free library program for young children and their grown-ups.",
                 url="https://sfpl.org" + path,
             )
         )
@@ -281,7 +329,86 @@ def scrape_calacademy(start: date, end: date) -> list[dict]:
                 )
         d += timedelta(days=1)
         time.sleep(0.5)
+    out = enrich_events(out)
     log(f"  {len(out)} events")
+    return out
+
+
+# Weekly or monthly series show up once in a week's newsletter but are regular programs.
+SERIES = re.compile(r"(?i)\b(mondays?|tuesdays?|wednesdays?|thursdays?|fridays?|saturdays?|sundays?)\b|playgroup|tummy time|"
+                    r"first steps|pop n play|crafternoons|activity zone|soundtrack|big feed|docent talks|music magic|"
+                    r"creative movement|children's music|^(january|february|march|april|may|june|july|august|september|"
+                    r"october|november|december) ")
+
+
+def page_details(url: str) -> dict:
+    """Venue and a short description from an event's own page (schema.org data first, then meta tags)."""
+    r = get(url)
+    if not r:
+        return {}
+    t = r.text
+    info = {}
+    for block in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', t, re.S):
+        try:
+            j = json.loads(block)
+        except json.JSONDecodeError:
+            continue
+        items = j if isinstance(j, list) else (j.get("@graph", [j]) if isinstance(j, dict) else [])
+        for it in items:
+            if isinstance(it, dict) and "Event" in str(it.get("@type")):
+                loc = it.get("location") or {}
+                loc = loc[0] if isinstance(loc, list) and loc else loc
+                if isinstance(loc, dict):
+                    addr = loc.get("address")
+                    if isinstance(addr, dict):
+                        addr = addr.get("streetAddress")
+                    info.update(venue=html.unescape(loc.get("name") or ""), address=addr or "")
+                info["desc"] = it.get("description") or ""
+                break
+    if not info.get("desc"):
+        m = (re.search(r'<meta[^>]+(?:property="og:description"|name="description")[^>]+content="([^"]*)"', t)
+             or re.search(r'<meta[^>]+content="([^"]*)"[^>]+(?:property="og:description"|name="description")', t))
+        info["desc"] = m.group(1) if m else ""
+    d = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", html.unescape(info["desc"]))).split())
+    d = re.sub(r"^\d{1,2}[A-Z][a-z]{2}\d{4}\s*From .*?(?:am|pm)\s*(?:to .*?(?:am|pm))?", "", d, flags=re.I).strip()
+    d = re.sub(r"^Eventbrite - .*?presents ", "", d)
+    at = re.search(r"\bAt ([A-Z][^.\d]{3,60}?)(\d{2,5} [A-Z][a-z]+ [A-Z][a-z]+)", d)
+    if at and not info.get("venue"):
+        info.update(venue=at.group(1).strip(), address=at.group(2))
+    d = re.split(r"\bAt [A-Z][^.\d]{3,60}?\d{2,5} ", d)[0].strip()
+    first = re.split(r"(?<=[.!?])\s+", d)
+    note = first[0] if first else ""
+    if len(note) < 60 and len(first) > 1:
+        note += " " + first[1]
+    info["note"] = note[:220].strip()
+    return info
+
+
+def enrich_events(events: list[dict]) -> list[dict]:
+    cache, descs = {}, {}
+    for e in events:
+        if e["url"] not in cache:
+            cache[e["url"]] = page_details(e["url"])
+            time.sleep(0.4)
+        descs.setdefault(cache[e["url"]].get("note", ""), set()).add(e["name"])
+    out = []
+    for e in events:
+        info = cache[e["url"]]
+        e["name"] = re.sub(r"^[-–•\s]+", "", e["name"])
+        if re.search(r"(?i)to qualify|must score|by referral", info.get("desc", "")):
+            continue  # eligibility-only programs
+        note = info.get("note", "")
+        if note and len(descs.get(note, ())) == 1 and not re.search(r"(?i)houses one of|comprehensive|read more", note):
+            e["note"] = note + " (Picked by Local Kiddo SF.)"
+        if info.get("venue") and not venue_for(e["url"]):
+            addr = (info.get("address") or "").split(",")[0]
+            e["area"] = info["venue"] + (", " + addr if addr and addr not in info["venue"] else "")
+            lat, lng = geocode(addr + ", San Francisco") if addr else (None, None)
+            if in_bbox(lat, lng):
+                e["lat"], e["lng"] = lat, lng
+        if SERIES.search(e["name"]):
+            e["recurring"] = True
+        out.append(e)
     return out
 
 
@@ -328,13 +455,38 @@ def msw_events(start: date, end: date) -> list[dict]:
     return out
 
 
+# ---------------------------------------------------------------- MAPP (Mission Arts & Performance Project)
+# Bimonthly: the first Saturday of every even month, evenings, at pop-up venues around the Mission.
+# Its venues post schedules on their own sites and social media, and the big calendars rarely list it.
+MAPP_URL = "https://www.redpoppyarthouse.org/tag/mission-arts-performance-project/"
+
+
+def mapp_events(start: date, end: date) -> list[dict]:
+    out = []
+    d = start
+    while d <= end:
+        if d.month % 2 == 0 and d.weekday() == 5 and d.day <= 7:
+            out.append(dict(id=f"mapp-{d.isoformat()}", kind="event", source="MAPP",
+                            name="MAPP: Mission Arts & Performance Project",
+                            area="Pop-up venues around the Mission near 24th St",
+                            lat=37.7544, lng=-122.4146, indoor=False, exp=0.25, off=1, free=True,
+                            start=local_iso(d, "18:00"), end=local_iso(d, "22:00"),
+                            note=("Free art, music, dance and poetry in garages, gardens, galleries and cafes around the Mission. "
+                                  "Early sets are the most kid-friendly; check Red Poppy Art House for the night's schedule."),
+                            url=MAPP_URL))
+        d += timedelta(days=1)
+    if out:
+        log(f"MAPP: {len(out)} night(s)")
+    return out
+
+
 # ---------------------------------------------------------------- "The Events Calendar" sites
 # Many WordPress sites (SF Children & Nature, Mission Local) use the same calendar plugin,
 # which exposes a JSON feed at /wp-json/tribe/events/v1/events.
-def scrape_tribe(base: str, source: str, prefix: str, start: date, end: date, **extra) -> list[dict]:
+def scrape_tribe(base: str, source: str, prefix: str, start: date, end: date, default_geo=None, **extra) -> list[dict]:
     log(source)
     events, page = [], 1
-    while page <= 5:
+    while page <= 15:
         r = get(f"{base}/wp-json/tribe/events/v1/events",
                 params=dict(start_date=start.isoformat(), end_date=end.isoformat(), per_page=50, page=page, **extra))
         if not r:
@@ -348,6 +500,8 @@ def scrape_tribe(base: str, source: str, prefix: str, start: date, end: date, **
     for e in events:
         v = e.get("venue") or {}
         lat, lng = v.get("geo_lat"), v.get("geo_lng")
+        if not in_bbox(lat, lng) and default_geo:
+            lat, lng = default_geo
         if not in_bbox(lat, lng):
             addr = ", ".join(x for x in [v.get("venue"), v.get("address"), v.get("city")] if x)
             lat, lng = geocode(addr) if addr else (None, None)
@@ -364,10 +518,11 @@ def scrape_tribe(base: str, source: str, prefix: str, start: date, end: date, **
                       else html.unescape(e["title"])),
                 area=html.unescape(v.get("venue") or "San Francisco"),
                 lat=float(lat), lng=float(lng), indoor=False, exp=0.5, off=0,
-                free=not (e.get("cost") or "").strip(),
+                free=bool(re.fullmatch(r"(?i)\s*(free)?\s*", e.get("cost") or "")),
                 start=s.isoformat(), end=en.isoformat(),
                 note=" ".join(desc.split())[:220], url=e["url"],
                 _family=bool(FAMILY_DESC.search(full)),
+                _cats=any(c.get("name", "").lower() == "family" for c in (e.get("categories") or [])),
             )
         )
     log(f"  {len(out)} events")
@@ -387,6 +542,256 @@ FAMILY_WORDS = re.compile(r"\b(kid|kids|child|children|family|families|famil|tod
 # Phrases in a listing's full description that mark it as aimed at families.
 FAMILY_DESC = re.compile(r"family[- ]friendly|kids'? activit|children'?s activit|activities for (kids|children|families)|"
                          r"for (the whole )?family|for kids|for children|bring the kids|all-ages block party", re.I)
+
+
+def scrape_ybg(start, end):
+    # Yerba Buena Gardens Festival: free outdoor performances, May through October, all ages.
+    ev = scrape_tribe("https://ybgfestival.org", "Yerba Buena Gardens Festival", "ybg", start, end)
+    for e in ev:
+        e.update(exp=0.35, free=True)
+        e.pop("_family", None)
+    return ev
+
+
+def scrape_omca(start, end):
+    # Oakland Museum of California: keep events it files under its "Family" category.
+    ev = scrape_tribe("https://museumca.org", "Oakland Museum of California", "omca", start, end, default_geo=(37.7987, -122.2640))
+    keep = []
+    for e in ev:
+        if e.pop("_cats", False):
+            e.pop("_family", None)
+            e.update(off=5, exp=0.3)
+            keep.append(e)
+    return keep
+
+
+SFMOMA = ("SFMOMA, 151 Third St", 37.7857, -122.4011)
+SFMOMA_FAMILY = re.compile(r"(?i)famil|kid|child|halloween|ween\b|storytime|kite")
+
+
+def scrape_sfmoma(start: date, end: date) -> list[dict]:
+    """SFMOMA's events page lists title, date, time and category; keep family programs."""
+    log("SFMOMA")
+    r = get("https://www.sfmoma.org/events/")
+    if not r:
+        return []
+    links = re.findall(r'href="(https://www\.sfmoma\.org/event/[^"#?]+)"', r.text)
+    text = re.sub(r"(\|\s*)+", "| ", " ".join(html.unescape(re.sub(r"<[^>]+>", " | ",
+              re.sub(r"<script.*?</script>|<style.*?</style>", "", r.text, flags=re.S))).split()))
+    pat = re.compile(r"\| ([^|]{3,120}?) \| (?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day, ([A-Z][a-z]+) (\d{1,2}), (\d{4}) \| ([^|]{2,40}) \| ([^|]{2,40}) (?=\|)")
+    out = []
+    for title, mon, day, year, when, cat in pat.findall(text):
+        if not (SFMOMA_FAMILY.search(title) or re.search(r"(?i)family", cat)):
+            continue
+        try:
+            d = date(int(year), {k[:3]: v for k, v in MONTHS.items()}[mon.lower()[:3]], int(day))
+        except (KeyError, ValueError):
+            continue
+        if not (start <= d <= end):
+            continue
+        times = re.findall(r"(\d{1,2})(?::(\d\d))?\s*([ap])\.m\.|(Noon)", when)
+        def to_hm(t):
+            if t[3]:
+                return "12:00"
+            h = int(t[0]) % 12 + (12 if t[2] == "p" else 0)
+            return f"{h:02d}:{int(t[1] or 0):02d}"
+        if not times:
+            continue
+        s_hm = to_hm(times[0]); e_hm = to_hm(times[1]) if len(times) > 1 else None
+        slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+        url = next((l for l in links if slug[:20] in l), "https://www.sfmoma.org/events/")
+        out.append(dict(id=f"sfmoma-{slug[:50]}-{d.isoformat()}", kind="event", source="SFMOMA", name=title.strip(),
+                        area=SFMOMA[0], lat=SFMOMA[1], lng=SFMOMA[2], indoor=True, exp=0, off=0, free=None,
+                        start=local_iso(d, s_hm), end=local_iso(d, e_hm) if e_hm else None,
+                        note=f"{cat.strip()} at SFMOMA. Check the event page for admission and RSVP details.", url=url))
+    log(f"  {len(out)} events")
+    return out
+
+
+def scrape_galeria(start, end):
+    # Galería de la Raza (24th St): readings, workshops and openings; family ones kept by the same filter as Mission Local.
+    return scrape_tribe("https://www.galeriadelaraza.org", "Galería de la Raza", "gdlr", start, end, default_geo=(37.7527, -122.4108))
+
+
+# ---------------------------------------------------------------- Local Kiddo SF (weekly newsletter)
+# Public issues at localkiddo.com (robots.txt allows crawling). Each pick has a linked name followed by
+# "Worth Knowing:" with date and time, place, and cost. We keep those facts, link to the event's own page,
+# and credit the issue.
+LK_DATE = re.compile(r"(?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day,\s+([A-Z][a-z]+)\.?\s+(\d{1,2})(?:,\s*(\d{4}))?,?\s+"
+                     r"(\d{1,2}(?::\d\d)?\s*[AP]M)(?:\s*[-–]\s*(\d{1,2}(?::\d\d)?\s*[AP]M))?", re.I)
+
+
+LK_SKIP = re.compile(r"(?i)yoga|lactation|prenatal|postpartum|pregnan|pelvic|job fair|homework|tutorial|"
+                     r"support (circle|group)|connection circle|baby ?wearing|bellies|parents? (meetup|night)|class with")
+
+
+def _hm(t: str) -> str:
+    m = re.match(r"(\d{1,2})(?::(\d\d))?\s*([AP])M", t.strip(), re.I)
+    h = int(m.group(1)) % 12 + (12 if m.group(3).upper() == "P" else 0)
+    if h < 7:  # "3:00AM" in a kids' listing is a typo for 3 pm
+        h += 12
+    return f"{h:02d}:{int(m.group(2) or 0):02d}"
+
+
+LANDMARKS = {  # fallbacks when the geocoder can't place a free-text location
+    "golden gate park": (37.7694, -122.4862), "fisherman": (37.8080, -122.4177), "yerba buena": (37.7850, -122.4025),
+    "dolores park": (37.7596, -122.4269), "crissy field": (37.8040, -122.4640), "presidio": (37.7989, -122.4662),
+    "ferry building": (37.7955, -122.3937), "harrison street": (37.7537, -122.4125), "24th st": (37.7527, -122.4108),
+    "mission district": (37.7599, -122.4148), "salesforce park": (37.7896, -122.3964), "union square": (37.7880, -122.4075), "treasure island": (37.8235, -122.3705), "chinatown": (37.7941, -122.4078),
+}
+
+
+def place_coords(place: str):
+    m = re.search(r"SFPL\s+([A-Za-z ]+?)(?:,|$)", place)
+    if m:
+        for bname, lat, lng in SFPL_BRANCHES.values():
+            if bname.lower() == m.group(1).strip().lower() or (bname == "Main" and "main" in m.group(1).lower()):
+                return lat, lng
+    q = place.split(",", 1)[1].strip() + ", San Francisco" if "," in place else place + ", San Francisco"
+    lat, lng = geocode(q)
+    if not in_bbox(lat, lng):
+        lat, lng = geocode(place)
+    if not in_bbox(lat, lng):
+        low = place.lower()
+        for k, v in LANDMARKS.items():
+            if k in low:
+                return v
+    return lat, lng
+
+
+VENUES_FILE = ROOT / "data" / "venues.json"
+
+
+def venue_for(url: str):
+    if VENUES_FILE.exists():
+        for v in json.loads(VENUES_FILE.read_text()).get("venues", []):
+            if v.get("match") and v["match"] in (url or ""):
+                return v
+    return None
+
+
+def scrape_localkiddo(start: date, end: date) -> list[dict]:
+    log("Local Kiddo SF")
+    r = get("https://localkiddo.com/sitemap.xml")
+    if not r:
+        return []
+    issues = re.findall(r"<loc>(https://www\.localkiddo\.com/p/local-kiddo-sf-[^<]+)</loc>\s*<lastmod>([^<]+)</lastmod>", r.text)
+    issues = [u for u, m in sorted(issues, key=lambda x: x[1], reverse=True)[:3]]
+    out, seen = [], set()
+    month_no = {k[:3]: v for k, v in MONTHS.items()}
+    for issue in issues:
+        r = get(issue)
+        if not r:
+            continue
+        paras = re.findall(r"<p[^>]*>(.*?)</p>", r.text, re.S)
+        i = 0
+        while i < len(paras):
+            txt = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", paras[i])).split())
+            if txt.startswith("Worth Knowing") and i > 0:
+                links = []
+                for back in (1, 2):  # the linked name is usually in the paragraph just above
+                    if i - back >= 0 and not links:
+                        links = re.findall(r'<a href="([^"]+)"[^>]*>(.*?)</a>', paras[i - back], re.S)
+                details = []
+                j = i + 1
+                while j < len(paras) and len(details) < 6:
+                    t2 = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", paras[j])).split())
+                    if t2.startswith("Worth Knowing") or len(t2) > 120 or (t2.endswith(".") and len(t2) > 60):
+                        break
+                    details.append(t2)
+                    j += 1
+                if links:
+                    url, name = html.unescape(links[-1][0]), " ".join(html.unescape(re.sub(r"<[^>]+>", "", links[-1][1])).split())
+                    v = venue_for(url)
+                    dates = [LK_DATE.search(d) for d in details]
+                    place = next((d for d in details if not LK_DATE.search(d) and not re.fullmatch(r"(?i)(free|\$.*|.*\$\d.*|tickets?.*|rsvp.*|.*required.*)", d)), "")
+                    cost = next((d for d in details if re.search(r"(?i)^free\b|\$", d)), "")
+                    if v:
+                        place = v["area"]
+                    for m in [x for x in dates if x]:
+                        mon, day, yr, t1, t2_ = m.groups()
+                        try:
+                            d = date(int(yr) if yr else start.year, month_no[mon.lower()[:3]], int(day))
+                        except (KeyError, ValueError):
+                            continue
+                        if d < start - timedelta(days=1) and not yr:
+                            d = date(d.year + 1, d.month, d.day)
+                        if not (start <= d <= end):
+                            continue
+                        key = (name.lower(), d)
+                        if key in seen:
+                            continue
+                        seen.add(key)
+                        lat, lng = (v["lat"], v["lng"]) if v else (place_coords(place) if place else (None, None))
+                        if not in_bbox(lat, lng):
+                            continue
+                        slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")[:50]
+                        out.append(dict(id=f"lk-{slug}-{d.isoformat()}", kind="event", source="Local Kiddo SF", name=name,
+                                        area=place, lat=lat, lng=lng, indoor=False, exp=0.4, off=0,
+                                        free=True if cost.lower().startswith("free") else (False if "$" in cost else None),
+                                        start=local_iso(d, _hm(t1)), end=local_iso(d, _hm(t2_)) if t2_ else None,
+                                        note=f"Picked by Local Kiddo SF's weekly newsletter. {cost}".strip(),
+                                        url=url))
+                i = j
+                continue
+            i += 1
+        # The day-by-day list: "Friday, 10/9:" headers, then "12:00-6:00 - <a>Name</a> - Place" lines (no am/pm).
+        day = None
+        for para in paras:
+            txt = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", para)).split())
+            mh = re.match(r"(?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day,?\s+(\d{1,2})/(\d{1,2}):?$", txt)
+            if mh:
+                mo, dd = int(mh.group(1)), int(mh.group(2))
+                yr = start.year + (1 if mo < start.month - 6 else 0)
+                try:
+                    day = date(yr, mo, dd)
+                except ValueError:
+                    day = None
+                continue
+            ml = re.match(r"(\d{1,2})(?::(\d\d))?\s*(?:-\s*(\d{1,2})(?::(\d\d))?)?\s+-\s+(.+?)\s+-\s+(.+)$", txt)
+            link = re.search(r'<a href="([^"]+)"[^>]*>(.*?)</a>', para, re.S)
+            if not (day and ml and link) or not (start <= day <= end):
+                continue
+            if ml.group(6).strip().upper().startswith("SFPL") or "academy of sciences" in ml.group(6).lower() or LK_SKIP.search(txt):
+                continue  # library programs come from SFPL directly; skip grown-up-only listings
+            def clock(h, m):
+                h = int(h); h = h + 12 if 1 <= h <= 6 else h
+                return h, int(m or 0)
+            h1, m1 = clock(ml.group(1), ml.group(2))
+            name = " ".join(html.unescape(re.sub(r"<[^>]+>", "", link.group(2))).split())
+            evening = 7 <= h1 <= 8 and re.search(r"(?i)night|party|circus|ballet|concert|show|celebrat|movie|film", name)
+            key = (name.lower(), day)
+            if key in seen:
+                continue
+            seen.add(key)
+            end_hm = None
+            if ml.group(3):
+                h2, m2 = clock(ml.group(3), ml.group(4))
+                if evening and h2 < 12:
+                    h2 += 12
+                if h2 < h1 + (12 if evening else 0) and h2 + 12 < 24:
+                    h2 += 12
+                if h2 < 24:
+                    end_hm = f"{h2:02d}:{m2:02d}"
+            place = ml.group(6).strip()
+            v = venue_for(html.unescape(link.group(1)))
+            if v:
+                place = v["area"]
+            lat, lng = (v["lat"], v["lng"]) if v else place_coords(place)
+            if not in_bbox(lat, lng):
+                continue
+            if evening:
+                h1 += 12
+            slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")[:50]
+            out.append(dict(id=f"lk-{slug}-{day.isoformat()}", kind="event", source="Local Kiddo SF", name=name, area=place,
+                            lat=lat, lng=lng, indoor=False, exp=0.4, off=0, free=None,
+                            start=local_iso(day, f"{h1:02d}:{m1:02d}"), end=local_iso(day, end_hm) if end_hm else None,
+                            note="Picked by Local Kiddo SF's weekly newsletter.", url=html.unescape(link.group(1))))
+            if v and v.get("indoor"):
+                out[-1].update(indoor=True, exp=0)
+        time.sleep(1)
+    log(f"  {len(out)} events")
+    return out
 
 
 def scrape_mission_local(start, end):
@@ -471,6 +876,82 @@ def geocode(q: str):
     return lat, lng
 
 
+# ---------------------------------------------------------------- venue watchlist (needs ANTHROPIC_API_KEY)
+WATCHLIST = ROOT / "data" / "watchlist.json"
+WATCH_PROMPT = """Below is the text of {venue}'s website. List every event or class on it that happens between {start} and {end}
+(inclusive) and that families with young children could attend: all-ages or family events, and kids' programs open to
+ages 5 and under. Skip adults-only events, camps that need multi-day enrollment, and anything already past.
+Reply with only a JSON array (empty if none) of objects:
+{{"name": string, "date": "YYYY-MM-DD", "start": "HH:MM" (24-hour), "end": "HH:MM" or null, "free": true/false/null,
+  "url": the event's own page if the text names one, else null,
+  "note": one plain sentence for parents (under 30 words, mention price or age limits if stated)}}
+Website text:
+"""
+
+
+def claude_json(prompt: str):
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    model = os.environ.get("CLAUDE_MODEL") or "claude-haiku-5-5"
+    r = requests.post("https://api.anthropic.com/v1/messages",
+                      headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+                      json={"model": model, "max_tokens": 3000, "messages": [{"role": "user", "content": prompt}]}, timeout=120)
+    r.raise_for_status()
+    text = "".join(b.get("text", "") for b in r.json().get("content", []))
+    return json.loads(re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M))
+
+
+WATCH_PROMPT_CT = """Below is the text of {venue}'s website. List every public concert, talk, lecture, conversation, reading,
+screening, performance or exhibition opening on it that happens between {start} and {end} (inclusive). Skip classes,
+private rentals, members-only events and anything already past.
+Reply with only a JSON array (empty if none) of objects:
+{{"name": string, "date": "YYYY-MM-DD", "start": "HH:MM" (24-hour), "end": "HH:MM" or null, "free": true/false/null,
+  "url": the event's own page if the text names one, else null,
+  "note": one plain sentence (under 30 words) on who is performing or speaking and what it's about}}
+Website text:
+"""
+
+
+def watch_venues(start: date, end: date, edition: str = "family") -> list[dict]:
+    if not WATCHLIST.exists():
+        return []
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        log("Watchlist: skipped (needs ANTHROPIC_API_KEY)")
+        return []
+    out = []
+    for v in json.loads(WATCHLIST.read_text()).get("venues", []):
+        if v.get("edition", "family") not in (edition, "both"):
+            continue
+        text = ""
+        for u in v.get("pages", []):
+            r = get(u)
+            if r:
+                text += "\n\n" + " ".join(html.unescape(" ".join(text_lines(r.text))).split())[:12000]
+        if not text:
+            continue
+        try:
+            prompt = WATCH_PROMPT if edition == "family" else WATCH_PROMPT_CT
+            items = claude_json(prompt.format(venue=v["name"], start=start.isoformat(), end=end.isoformat()) + text[:30000])
+        except Exception as e:
+            log(f"  {v['name']}: extraction failed: {e}")
+            continue
+        for it in items if isinstance(items, list) else []:
+            try:
+                d = date.fromisoformat(it["date"])
+                if not (start <= d <= end):
+                    continue
+                slug = re.sub(r"[^a-z0-9]+", "-", (v["name"] + " " + it["name"]).lower()).strip("-")[:60]
+                out.append(dict(id=f"w-{slug}-{d.isoformat()}", kind="event", source=v["name"], name=it["name"],
+                                area=v["area"], lat=v["lat"], lng=v["lng"], indoor=v.get("indoor", False),
+                                exp=v.get("exp", 0.4), off=v.get("off", 0), free=it.get("free"),
+                                start=local_iso(d, it["start"]), end=local_iso(d, it["end"]) if it.get("end") else None,
+                                note=it.get("note") or "", url=it.get("url") or v["pages"][0],
+                                bookAhead=bool(v.get("bookAhead"))))
+            except Exception as e:
+                log(f"  skipped an item from {v['name']}: {e}")
+    log(f"Watchlist: {len(out)} events")
+    return out
+
+
 # ---------------------------------------------------------------- Claude curation
 CURATE_PROMPT = """You help curate a weekend outings page for parents of children aged 0 to 5 in the San Francisco Bay Area.
 For each event below, decide whether a family with a baby, a toddler and a preschooler would reasonably enjoy it,
@@ -484,7 +965,7 @@ Events:
 """
 
 
-def curate(events: list[dict]) -> list[dict]:
+def curate(events: list[dict], prompt: str = None) -> list[dict]:
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key or not events:
         return events
@@ -500,7 +981,7 @@ def curate(events: list[dict]) -> list[dict]:
             r = requests.post(
                 "https://api.anthropic.com/v1/messages",
                 headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
-                json={"model": model, "max_tokens": 4000, "messages": [{"role": "user", "content": CURATE_PROMPT + listing}]},
+                json={"model": model, "max_tokens": 4000, "messages": [{"role": "user", "content": (prompt or CURATE_PROMPT) + listing}]},
                 timeout=120,
             )
             r.raise_for_status()
@@ -531,7 +1012,7 @@ def event_key(e):
 
 
 def one_offs(events):
-    """Events that happen once: not flagged recurring, not on more than one day, not a regular storytime."""
+    """Special events: not flagged recurring, not repeating 3+ times within two weeks, not a regular storytime."""
     days = {}
     for e in events:
         if e.get("kind") == "impact" or not e.get("start"):
@@ -541,7 +1022,11 @@ def one_offs(events):
     for e in events:
         if e.get("kind") == "impact" or not e.get("start") or e.get("rangeStart") or e.get("recurring"):
             continue
-        if len(days.get(event_key(e), ())) > 1 or re.match(r"(storytime (for|in)\b|(toddler|baby|babies|family|preschool) storytime\b)", (e.get("name") or "").lower()):
+        ds = sorted(date.fromisoformat(x) for x in days.get(event_key(e), ()))
+        frequent = any((ds[i + 2] - ds[i]).days <= 14 for i in range(len(ds) - 2))
+        if e.get("bookAhead"):  # a limited run of a ticketed show still counts as special
+            frequent = False
+        if frequent or re.match(r"(storytime (for|in)\b|(toddler|baby|babies|family|preschool) storytime\b)", (e.get("name") or "").lower()):
             continue
         out.append(e)
     return out
@@ -563,11 +1048,11 @@ def ics_fold(line: str) -> str:
     return "\r\n".join(out)
 
 
-def write_specials_ics(events):
+def write_specials_ics(events, path=None, calname="Family events: one day only"):
     utc = ZoneInfo("UTC")
     stamp = datetime.now(utc).strftime("%Y%m%dT%H%M%SZ")
     lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//sf_familyevents//one-off family events//EN",
-             "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Family events: one day only",
+             "CALSCALE:GREGORIAN", "METHOD:PUBLISH", f"X-WR-CALNAME:{calname}",
              "X-WR-TIMEZONE:America/Los_Angeles", "REFRESH-INTERVAL;VALUE=DURATION:PT12H"]
     for e in one_offs(events):
         s = datetime.fromisoformat(e["start"])
@@ -578,8 +1063,8 @@ def write_specials_ics(events):
                   "SUMMARY:" + ics_escape(e.get("name")), "LOCATION:" + ics_escape(e.get("area")),
                   "DESCRIPTION:" + ics_escape(desc)] + ([f"URL:{e['url']}"] if e.get("url") else []) + ["END:VEVENT"]
     lines.append("END:VCALENDAR")
-    SPECIALS.write_text("\r\n".join(ics_fold(l) for l in lines) + "\r\n")
-    log(f"Wrote {sum(1 for l in lines if l == 'BEGIN:VEVENT')} one-off events to {SPECIALS.name}")
+    (path or SPECIALS).write_text("\r\n".join(ics_fold(l) for l in lines) + "\r\n")
+    log(f"Wrote {sum(1 for l in lines if l == 'BEGIN:VEVENT')} one-off events to {(path or SPECIALS).name}")
 
 
 # ---------------------------------------------------------------- main
@@ -590,16 +1075,20 @@ def main():
     today = datetime.now(TZ).date()
     end = today + timedelta(days=DAYS_AHEAD)
 
-    trusted = scrape_sfpl(today, end) + scrape_calacademy(today, end) + msw_events(today, end)
+    far = today + timedelta(days=HORIZON_DAYS)
+    msw = [e for e in msw_events(today, far) if not e["recurring"] or e["start"][:10] <= end.isoformat()]
+    trusted = (scrape_sfpl(today, end) + scrape_calacademy(today, end) + msw + mapp_events(today, far)
+               + scrape_ybg(today, far) + scrape_omca(today, far) + scrape_sfmoma(today, far) + watch_venues(today, far))
     loose = scrape_children_nature(today, end)
-    ml = scrape_mission_local(today, end)
+    ml = scrape_mission_local(today, far) + scrape_galeria(today, far)
     fc = scrape_funcheap(today, end)
+    lk = scrape_localkiddo(today, far)
     if os.environ.get("ANTHROPIC_API_KEY"):
-        loose = curate(loose + ml + fc)
+        loose = curate(loose + ml + fc + lk)
     else:
         ml = [e for e in ml if (FAMILY_WORDS.search(e["name"]) or e.get("_family")) and e["start"][11:16] < "20:00"]
         log(f"No ANTHROPIC_API_KEY: skipping Funcheap; kept {len(ml)} Mission Local events by keyword")
-        loose = loose + ml
+        loose = loose + ml + lk
 
     manual = []
     if MANUAL.exists():
@@ -608,26 +1097,412 @@ def main():
             if last and last >= today.isoformat():
                 manual.append(e)
 
-    for e in trusted + loose:
-        e.pop("_family", None)
-    seen, events = set(), []
-    for e in manual + trusted + loose:  # manual entries win on duplicate ids
-        if e["id"] in seen:
-            continue
-        seen.add(e["id"])
-        events.append(e)
-    events.sort(key=lambda e: (e.get("start") or "", e.get("name") or ""))
-
+    events = merge(manual + trusted + loose)
     payload = {
         "generated": datetime.now(TZ).isoformat(timespec="minutes"),
-        "coverage": f"{today:%b %-d}–{end:%b %-d}",
-        "sources": ["SF Public Library", "California Academy of Sciences", "Mission Science Workshop", "SF Children & Nature", "Mission Local", "Funcheap", "manual"],
+        "coverage": f"{today:%b %-d}–{end:%b %-d}, with one-off events through {far:%b %-d}",
+        "sources": ["SF Public Library", "California Academy of Sciences", "SFMOMA", "Oakland Museum of California", "Mission Science Workshop", "Yerba Buena Gardens Festival", "SF Children & Nature", "Mission Local", "Galería de la Raza", "Local Kiddo SF", "Funcheap", "manual"],
         "events": events,
     }
     OUT.write_text(json.dumps(payload, indent=1, ensure_ascii=False) + "\n")
     write_specials_ics(events)
-    GEOCACHE.write_text(json.dumps(_geocache, indent=1, ensure_ascii=False) + "\n")
     log(f"Wrote {len(events)} events to {OUT.name}")
+    build_talks_concerts(today, far)
+    GEOCACHE.write_text(json.dumps(_geocache, indent=1, ensure_ascii=False) + "\n")
+
+
+def merge(items: list[dict]) -> list[dict]:
+    """Drop duplicates (same id, same start at the same spot, or near-identical names on the same day); first wins."""
+    for e in items:
+        e.pop("_family", None)
+        e.pop("_cats", None)
+    from difflib import SequenceMatcher
+    by_day: dict = {}
+
+    def near_duplicate(e):
+        n = re.sub(r"[^a-z0-9]+", " ", (e.get("name") or "").lower()).strip()
+        for other in by_day.get((e.get("start") or "")[:10], []):
+            if (n in other or other in n or SequenceMatcher(None, n, other).ratio() >= 0.75) and min(len(n), len(other)) >= 6:
+                return True
+        return False
+
+    seen, events = set(), []
+    for e in items:  # earlier lists (hand-added first) win on duplicates
+        same_slot = (e.get("start"), round(e.get("lat") or 0, 2), round(e.get("lng") or 0, 2))
+        same_name = (re.sub(r"[^a-z0-9]+", " ", (e.get("name") or "").lower()).strip(), (e.get("start") or "")[:10])
+        if e["id"] in seen or (e.get("start") and (same_slot in seen or same_name in seen or near_duplicate(e))):
+            continue
+        seen.add(e["id"])
+        if e.get("start"):
+            seen.add(same_slot)
+            seen.add(same_name)
+            by_day.setdefault(same_name[1], []).append(same_name[0])
+        events.append(e)
+    events.sort(key=lambda e: (e.get("start") or "", e.get("name") or ""))
+    return events
+
+
+# ================================================================ second edition: talks & concerts
+OUT_CT = ROOT / "talks-concerts.json"
+ICS_CT = ROOT / "talks-concerts.ics"
+CALENDARS = ROOT / "data" / "calendars.json"
+MANUAL_CT = ROOT / "data" / "manual-talks-concerts.json"
+CT_WORDS = re.compile(r"(?i)concert|live music|\bband\b|jazz|\bdj\b|symphon|orchestra|quartet|chamber|opera|recital|singer|songwriter|"
+                      r"\btalk\b|conversation|lecture|panel|forum|town hall|discussion|in conversation|\bauthor|book launch|reading|poetry|"
+                      r"screening|\bfilm\b|exhibit|opening|gallery|comedy|open mic|perform|dance|theater|theatre|cabaret|salon")
+CT_SKIP = re.compile(r"(?i)\bclass\b|workshop|lesson|beginner|training|where to begin|mahjong|\bmeetup\b|networking")
+CT_PROMPT = """You help curate a page of concerts, talks, readings and arts events for adults in San Francisco and Oakland.
+For each event below, decide whether it is a public concert, talk, lecture, conversation, reading, screening, performance,
+or exhibition opening that a curious adult might attend. Drop classes, kids' programs, sales, markets, fitness and networking-only events.
+Reply with only a JSON array, one object per event, in the same order:
+{"id": string, "keep": boolean, "indoor": boolean, "free": boolean or null, "note": one plain sentence (under 25 words) on who is performing or speaking and what it's about}
+Events:
+"""
+
+
+def ics_events(text: str) -> list[dict]:
+    """Minimal iCalendar reader: unfolds lines and returns each VEVENT's fields."""
+    text = re.sub(r"\r?\n[ \t]", "", text)
+    out = []
+    for block in re.findall(r"BEGIN:VEVENT(.*?)END:VEVENT", text, re.S):
+        ev = {}
+        for line in block.strip().splitlines():
+            m = re.match(r"([A-Z-]+)((?:;[^:]*)?):(.*)", line)
+            if m:
+                ev.setdefault(m.group(1), (m.group(2), m.group(3)))
+        out.append(ev)
+    return out
+
+
+def ics_time(field):
+    if not field:
+        return None
+    params, v = field
+    v = v.strip()
+    if re.fullmatch(r"\d{8}", v):
+        return datetime.strptime(v, "%Y%m%d").replace(tzinfo=TZ)
+    if v.endswith("Z"):
+        return datetime.strptime(v, "%Y%m%dT%H%M%SZ").replace(tzinfo=ZoneInfo("UTC")).astimezone(TZ)
+    tz = re.search(r"TZID=([^;:]+)", params or "")
+    return datetime.strptime(v, "%Y%m%dT%H%M%S").replace(tzinfo=ZoneInfo(tz.group(1)) if tz else TZ)
+
+
+def ics_text(v: str) -> str:
+    return v.replace("\\n", " ").replace("\\,", ",").replace("\\;", ";").replace("\\\\", "\\")
+
+
+def luma_feed(url: str):
+    """A Luma calendar page (luma.com/name) publishes its feed at api.lu.ma/ics/get?entity=calendar&id=cal-..."""
+    r = get(url)
+    if not r:
+        return None
+    ids = re.findall(r"cal-[A-Za-z0-9]{8,}", r.text)
+    if not ids:
+        return None
+    best = max(set(ids), key=ids.count)
+    return f"https://api.lu.ma/ics/get?entity=calendar&id={best}"
+
+
+def scrape_calendars(start: date, end: date, edition: str) -> list[dict]:
+    """Every calendar feed in data/calendars.json for this edition: Luma pages, Google public calendars, any .ics URL."""
+    if not CALENDARS.exists():
+        return []
+    out = []
+    for c in json.loads(CALENDARS.read_text()).get("calendars", []):
+        if c.get("edition", "talks-concerts") not in (edition, "both"):
+            continue
+        feed = c.get("ics") or (luma_feed(c["url"]) if "lu.ma" in c.get("url", "") or "luma.com" in c.get("url", "") else c.get("url"))
+        r = get(feed) if feed else None
+        if not r:
+            continue
+        n = 0
+        for ev in ics_events(r.text):
+            s = ics_time(ev.get("DTSTART"))
+            if not s or not (start <= s.date() <= end) or (ev.get("STATUS", ("", ""))[1].upper() == "CANCELLED"):
+                continue
+            en = ics_time(ev.get("DTEND"))
+            lat = lng = None
+            if ev.get("GEO"):
+                try:
+                    lat, lng = map(float, ev["GEO"][1].split(";"))
+                except ValueError:
+                    pass
+            loc = ics_text(ev.get("LOCATION", ("", ""))[1])
+            if not in_bbox(lat, lng) and loc.strip():
+                if re.search(r"(?i)\b(online|virtual|zoom|livestream|live stream)\b", loc):
+                    continue
+                addr = re.search(r"\d+\s+[A-Z][\w .'-]+?(?:St|Street|Ave|Avenue|Blvd|Way|Rd|Road|Pl|Place|Dr|Drive|Embarcadero)\b\.?[ ,]+[A-Za-zé ]+", loc)
+                lat, lng = geocode((addr.group(0) if addr else loc) + ", CA")
+                if not in_bbox(lat, lng):
+                    continue
+            if not in_bbox(lat, lng):
+                blurb = ics_text(ev.get("SUMMARY", ("", ""))[1] + " " + ev.get("DESCRIPTION", ("", ""))[1])
+                online = re.search(r"(?i)\bonline\b|virtual|zoom|webinar|livestream|digital discourse", blurb)
+                if loc.strip() or not c.get("lat") or (c.get("skipNoLocation") and online):
+                    continue
+                lat, lng = c.get("lat"), c.get("lng")
+            desc = ics_text(ev.get("DESCRIPTION", ("", ""))[1])
+            desc = re.sub(r"(?i)^get up-to-date information at:?\s*\S+\s*", "", desc)
+            desc = re.sub(r"https?://\S+", "", desc).strip()
+            note = " ".join(re.split(r"(?<=[.!?])\s+", desc)[:2])[:260]
+            url = (ev.get("URL", ("", ""))[1] or "").strip() or c.get("url")
+            m = re.search(r"https?://(?:lu\.ma|luma\.com)/[A-Za-z0-9\-_]+", ics_text(ev.get("DESCRIPTION", ("", ""))[1]))
+            if m:
+                url = m.group(0)
+            uid = re.sub(r"[^a-z0-9]+", "-", (ev.get("UID", ("", ""))[1] or ev.get("SUMMARY", ("", ""))[1]).lower())[:40]
+            place = re.sub(r"\s{2,}", ", ", loc).split(", San Francisco")[0].strip(" ,") if loc else ""
+            m2 = re.match(r"(.+?[A-Za-z)])\s+(\d+\s+\S.*)", place)  # "SPUR Urban Center 654 Mission Street" -> name, address
+            if m2 and "," not in m2.group(1):
+                place = f"{m2.group(1)}, {m2.group(2)}"
+            out.append(dict(id=f"cal-{uid}", kind="event", source=c["name"], name=ics_text(ev.get("SUMMARY", ("", ""))[1]).strip(),
+                            area=(place or c.get("area") or "").strip(), lat=lat, lng=lng,
+                            indoor=c.get("indoor", True), exp=0 if c.get("indoor", True) else 0.4, off=0, free=c.get("free"),
+                            bookAhead=bool(c.get("bookAhead")),
+                            start=s.isoformat(), end=en.isoformat() if en else None, note=note, url=url))
+            n += 1
+        log(f"{c['name']} calendar: {n} events")
+    return out
+
+
+def scrape_commonwealth(start: date, end: date) -> list[dict]:
+    """Commonwealth Club's events page: 'Location | Day, Mon DD / H:MM PM PDT | Title' rows. Keeps in-person San Francisco talks."""
+    log("Commonwealth Club")
+    r = get("https://www.commonwealthclub.org/events")
+    if not r:
+        return []
+    links = list(dict.fromkeys(re.findall(r'href="(/events/\d{4}-\d{2}-\d{2}/[^"#?]+)"', r.text)))
+    text = re.sub(r"(\|\s*)+", "| ", " ".join(html.unescape(re.sub(r"<[^>]+>", " | ",
+              re.sub(r"<script.*?</script>|<style.*?</style>", "", r.text, flags=re.S))).split()))
+    out = []
+    for loc, mon, day, hm, ap, title in re.findall(
+            r"\| ([^|]{3,40}) \| (?:Mon|Tue|Wed|Thu|Fri|Sat|Sun), ([A-Z][a-z]{2}) (\d{1,2}) / (\d{1,2}:\d\d) (AM|PM) P[DS]T \| ([^|]{4,160}) \| Info & Tickets", text):
+        if loc.strip() != "San Francisco":
+            continue  # skip livestream-only and out-of-town events
+        try:
+            d = date(start.year, {k[:3]: v for k, v in MONTHS.items()}[mon.lower()], int(day))
+        except (KeyError, ValueError):
+            continue
+        if d < start - timedelta(days=200):
+            d = date(d.year + 1, d.month, d.day)
+        if not (start <= d <= end):
+            continue
+        h, m = map(int, hm.split(":")); h = h % 12 + (12 if ap == "PM" else 0)
+        slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+        url = next((("https://www.commonwealthclub.org" + l) for l in links if l.split("/")[2] == d.isoformat() and
+                    any(w in l for w in slug.split("-")[:3] if len(w) > 3)), "https://www.commonwealthclub.org/events")
+        out.append(dict(id=f"cwc-{slug[:50]}-{d.isoformat()}", kind="event", source="Commonwealth Club", name=title.strip(),
+                        area="Commonwealth Club, 110 The Embarcadero", lat=37.7932, lng=-122.3925, indoor=True, exp=0, off=0,
+                        free=None, start=local_iso(d, f"{h:02d}:{m:02d}"), end=None, bookAhead=True,
+                        note="A Commonwealth Club talk; tickets and details on the event page.", url=url))
+    for e in out:  # each event page's summary says who's speaking and about what
+        if e["url"].count("/") > 4:
+            n = page_details(e["url"]).get("note")
+            if n and len(n) > 40:
+                e["note"] = n
+            time.sleep(0.3)
+    log(f"  {len(out)} events")
+    return out
+
+
+def scrape_independent(start: date, end: date) -> list[dict]:
+    """The Independent's calendar loads shows from its TicketWeb plugin; ask it the same way the page does."""
+    log("The Independent")
+    r = get("https://www.theindependentsf.com/calendar/")
+    if not r:
+        return []
+    nonce = re.search(r"action: 'get_events_for_calendar',\s*nonce: '([^']+)'", r.text)
+    params = re.search(r"params: '(\{.*?\})',", r.text, re.S)
+    if not (nonce and params):
+        return []
+    try:
+        d = S.post("https://www.theindependentsf.com/wp-admin/admin-ajax.php", timeout=30,
+                         data={"action": "get_events_for_calendar", "nonce": nonce.group(1), "start": start.isoformat(),
+                               "end": end.isoformat(), "params": params.group(1)}).json()
+    except Exception as e:
+        log(f"  failed: {e}")
+        return []
+    pop = d.get("popupdata") or ""
+    out = []
+    for ev in d.get("events", []):
+        sk = ev.get("sortkey") or ""
+        if not re.match(r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}", sk):
+            continue
+        dd = date.fromisoformat(sk[:10])
+        if not (start <= dd <= end):
+            continue
+        block = pop.split(f'id="tw-event-dialog-{ev["id"]}"')[1].split("tw-event-dialog-")[0] if f'tw-event-dialog-{ev["id"]}"' in pop else ""
+        url = (re.search(r'href="(https://www\.theindependentsf\.com/tm-event/[^"]+)"', block) or [None, "https://www.theindependentsf.com/calendar/"])[1]
+        tour = re.search(r'class="tw-name-presenting">\s*([^<]+)<', block)
+        support = re.search(r'class="tw-attractions">(.*?)</div>', block, re.S)
+        sup = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", support.group(1))).split()) if support else ""
+        name = html.unescape(ev.get("title", "")).strip()
+        note = "Live at The Independent" + (f" ({html.unescape(tour.group(1).strip())})" if tour else "") + \
+               (f", with {sup}" if sup else "") + f". Doors {ev.get('doors', '')}, show {ev.get('displayTime', '')}."
+        out.append(dict(id=f"indy-{ev['id']}-{dd.isoformat()}", kind="event", source="The Independent", name=name,
+                        area="The Independent, 628 Divisadero St", lat=37.7755, lng=-122.4378, indoor=True, exp=0, off=0,
+                        free=False, start=local_iso(dd, sk[11:16]), end=None, bookAhead=True, note=note, url=url, tags=["music"]))
+    log(f"  {len(out)} shows")
+    return out
+
+
+def scrape_cmc(start: date, end: date) -> list[dict]:
+    """Community Music Center (544 Capp St): each event page has 'Date / Time | Day, | Month D, YYYY | 7:00 pm | – 10:00 pm | Cost: ...'."""
+    log("Community Music Center")
+    r = get("https://sfcmc.org/events/")
+    if not r:
+        return []
+    out = []
+    for url in sorted(set(re.findall(r'href="(https://sfcmc\.org/event/[^"]+)"', r.text))):
+        pg = get(url)
+        if not pg:
+            continue
+        x = re.sub(r"(\|\s*)+", "| ", " ".join(html.unescape(re.sub(r"<[^>]+>", " | ",
+               re.sub(r"<script.*?</script>|<style.*?</style>", "", pg.text, flags=re.S))).split()))
+        m = re.search(r"Date / Time \| \w+day, \| ([A-Z][a-z]+) (\d{1,2}), (\d{4}) \| (\d{1,2}:\d\d) ([ap]m)(?: \| – (\d{1,2}:\d\d) ([ap]m))?", x)
+        if not m:
+            continue
+        mon, dd, yy, t1, ap1, t2, ap2 = m.groups()
+        try:
+            d = date(int(yy), MONTHS[mon.lower()], int(dd))
+        except (KeyError, ValueError):
+            continue
+        if not (start <= d <= end):
+            continue
+        hm = lambda t, ap: f"{int(t.split(':')[0]) % 12 + (12 if ap == 'pm' else 0):02d}:{t.split(':')[1]}"
+        title = html.unescape((re.search(r"<title>(.*?)(?:\s*[–|-]\s*Community Music Center)?</title>", pg.text, re.S) or [None, ""])[1]).strip()
+        title = re.sub(r"\s*[-–|]\s*(San Francisco )?Community Music Center$", "", title)
+        loc = (re.search(r"Location \| ([^|]{3,80})", x) or [None, "CMC Concert Hall"])[1].strip()
+        cost = (re.search(r"Cost: ([^|]{1,60})", x) or [None, ""])[1].strip()
+        desc = (re.search(r'<meta[^>]+(?:property="og:description"|name="description")[^>]+content="([^"]*)"', pg.text) or [None, ""])[1]
+        sents = [x for x in re.split(r"(?<=[.!?])\s+", html.unescape(desc)) if re.search(r"[.!?]$", x)]  # whole sentences only
+        note = " ".join(sents[:2])[:240]
+        at_cmc = "CMC" in loc or "Community Music Center" in loc
+        lat, lng = (37.7588, -122.4177) if at_cmc else geocode(loc + ", San Francisco")
+        if not in_bbox(lat, lng):
+            continue
+        out.append(dict(id=f"cmc-{url.rstrip('/').split('/')[-1][:50]}-{d.isoformat()}", kind="event", source="Community Music Center",
+                        name=title, area="Community Music Center, 544 Capp St" if at_cmc else loc, lat=lat, lng=lng, indoor=True,
+                        exp=0, off=0, free=("free" in cost.lower()) or None, start=local_iso(d, hm(t1, ap1)),
+                        end=local_iso(d, hm(t2, ap2)) if t2 else None, note=(note + (f" {cost}." if cost else "")).strip(), url=url,
+                        tags=["music"]))
+        time.sleep(0.3)
+    log(f"  {len(out)} events")
+    return out
+
+
+VENUE_PAGES = ROOT / "data" / "venue_pages.json"
+GENRE_TAG = [("jazz", r"(?i)jazz|soul|funk|blues"), ("classical", r"(?i)classical|chamber|opera"), ("world", r"(?i)latin|world|afro|reggae|cumbia"),
+             ("songs", r"(?i)rock|indie|folk|americana|country|punk|pop|singer|alt")]
+
+
+def scrape_venue_pages(start: date, end: date) -> list[dict]:
+    if not VENUE_PAGES.exists():
+        return []
+    out = []
+    for v in json.loads(VENUE_PAGES.read_text()).get("venues", []):
+        r = get(v["url"])
+        if not r:
+            continue
+        n0 = len(out)
+        base = dict(kind="event", source=v["name"], area=v["area"], lat=v["lat"], lng=v["lng"], indoor=True, exp=0, off=0, bookAhead=True)
+        if v["kind"] == "jsonld":
+            for block in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', r.text, re.S):
+                try:
+                    j = json.loads(block)
+                except json.JSONDecodeError:
+                    continue
+                for it in (j if isinstance(j, list) else j.get("@graph", [j]) if isinstance(j, dict) else []):
+                    if not (isinstance(it, dict) and "Event" in str(it.get("@type")) and it.get("startDate")):
+                        continue
+                    try:
+                        st = datetime.fromisoformat(it["startDate"].replace("Z", "+00:00")).astimezone(TZ)
+                    except ValueError:
+                        continue
+                    if not (start <= st.date() <= end) or "Cancel" in str(it.get("eventStatus", "")):
+                        continue
+                    name = html.unescape(it.get("name", "")).strip()
+                    perf = [p.get("name") for p in (it.get("performer") or []) if isinstance(p, dict) and p.get("name") and p.get("name") != name] if isinstance(it.get("performer"), list) else []
+                    note = f"Live at {v['name']}" + (f", with {', '.join(perf[:3])}" if perf else "") + "."
+                    out.append(dict(base, id=f"vp-{re.sub(r'[^a-z0-9]+', '-', v['name'].lower())[:20]}-{re.sub(r'[^a-z0-9]+', '-', name.lower())[:40]}-{st.date().isoformat()}",
+                                    name=name, start=st.isoformat(), end=None, free=False, note=note, url=it.get("url") or v["url"], tags=["music"]))
+        elif v["kind"] == "seetickets":
+            for card in r.text.split("seetickets-list-event-container")[1:]:
+                f = {}
+                for k, x in re.findall(r'<(?:p|div|span|h\d)[^>]+class="([^"]+)"[^>]*>(.*?)</(?:p|div|span|h\d)>', card, re.S):
+                    key = k.split()[-1].replace("event-", "")  # GAMH uses event-title / event-date
+                    f.setdefault(key, " ".join(html.unescape(re.sub(r"<[^>]+>", " ", x)).split()))
+                if f.get("see-showtime") and "Show at" not in f.get("doortime-showtime", ""):
+                    f["doortime-showtime"] = (f.get("doortime-showtime", "").replace("Event Doortime:", "Doors at") + " / Show at " + f["see-showtime"]).strip(" /")
+                link = (re.search(r'href="(https://wl\.seetickets\.us/[^"]+)"', card) or [None, v["url"]])[1]
+                m = re.match(r"\w{3} (\w{3}) (\d{1,2})", f.get("date", ""))
+                if not m or not f.get("title"):
+                    continue
+                f["title"] = re.sub(r"^\*?RESCHEDULED\*?\s*", "", f["title"])
+                mon, dd = m.groups()
+                try:
+                    d = date(start.year, {k[:3]: x for k, x in MONTHS.items()}[mon.lower()], int(dd))
+                except (KeyError, ValueError):
+                    continue
+                if d < start - timedelta(days=60):
+                    d = date(d.year + 1, d.month, d.day)
+                if not (start <= d <= end):
+                    continue
+                show = re.search(r"Show at (\d{1,2}):(\d\d)\s*([AP])M", f.get("doortime-showtime", ""), re.I)
+                h = (int(show.group(1)) % 12 + (12 if show.group(3).upper() == "P" else 0), int(show.group(2))) if show else (20, 0)
+                genre = f.get("genre", "")
+                tags = ["music"] + [t for t, rx in GENRE_TAG if re.search(rx, genre)]
+                sup = f.get("supporting-talent", "").replace("Supporting Talent:", "").strip() or f.get("subtitle", "").replace("with ", "", 1)
+                price = f.get("fs-12", "")
+                note = " ".join(x for x in [f"{genre} at {v['name']}." if genre else f"Live at {v['name']}.",
+                                            f"With {sup}." if sup else "", f.get("doortime-showtime", "") + ".",
+                                            price + "." if "$" in price or "Ages" in price else ""] if x).strip()
+                out.append(dict(base, id=f"vp-{re.sub(r'[^a-z0-9]+', '-', v['name'].lower())[:20]}-{re.sub(r'[^a-z0-9]+', '-', f['title'].lower())[:40]}-{d.isoformat()}",
+                                name=f["title"], start=local_iso(d, f"{h[0]:02d}:{h[1]:02d}"), end=None, free=False, note=note, url=link, tags=tags))
+        out[n0:] = [e for e in out[n0:] if not re.search(r"(?i)private event|\bpass(es)?\b|show ticket|gift card|parking|add-?on", e["name"])]
+        log(f"{v['name']}: {len(out) - n0} shows")
+        time.sleep(0.5)
+    return out
+
+
+def build_talks_concerts(today: date, far: date):
+    log("— Talks & concerts edition —")
+    feeds = scrape_calendars(today, far, "talks-concerts")
+    jccsf = scrape_tribe("https://www.jccsf.org", "JCCSF Arts & Ideas", "jccsf", today, far, default_geo=(37.7870, -122.4466))
+    ybg = [e for e in scrape_ybg(today, far) if not re.search(r"(?i)children|hoopla|kids|outdoors with", e["name"] + " " + e["area"])]
+    ml = scrape_mission_local(today, far) + scrape_galeria(today, far)
+    for e in jccsf + ybg + ml:
+        e.update(indoor=e.get("indoor", True))
+    watch = watch_venues(today, far, edition="talks-concerts") + scrape_commonwealth(today, far) + scrape_independent(today, far)
+    # Red Poppy Art House (24th St): its own calendar feed of small concerts and performances, plus MAPP nights it hosts
+    rp = scrape_tribe("https://www.redpoppyarthouse.org", "Red Poppy Art House", "rpah", today, far, default_geo=(37.7544, -122.4146))
+    for e in rp:
+        e.pop("_family", None); e.pop("_cats", None)
+        e.update(area="Red Poppy Art House, 2698 Folsom St", indoor=True, exp=0, bookAhead=True)
+        if not e.get("note") or e["note"].lower().startswith("advance tickets"):
+            e["note"] = "An intimate performance at Red Poppy Art House, a small Mission arts space; advance tickets recommended."
+    watch += rp + mapp_events(today, far)
+    watch += scrape_venue_pages(today, far)
+    watch += [e for e in scrape_cmc(today, far) if not re.search(r"(?i)halloween|costume|children|gala", e["name"])]
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        loose = curate(jccsf + ml, prompt=CT_PROMPT)
+    else:
+        loose = [e for e in jccsf + ml if CT_WORDS.search(e["name"] + " " + (e.get("note") or "")) and not FAMILY_WORDS.search(e["name"])
+                 and not CT_SKIP.search(e["name"])]
+    manual = []
+    if MANUAL_CT.exists():
+        manual = [e for e in json.loads(MANUAL_CT.read_text()).get("events", [])
+                  if (e.get("end") or e.get("start") or "")[:10] >= today.isoformat()]
+    events = merge(manual + feeds + watch + ybg + loose)
+    for e in events:
+        e["indoor"] = bool(e.get("indoor", True))
+    OUT_CT.write_text(json.dumps({
+        "generated": datetime.now(TZ).isoformat(timespec="minutes"),
+        "coverage": f"{today:%b %-d}–{far:%b %-d}",
+        "sources": ["Calendar feeds (Luma, SPUR and others)", "Commonwealth Club", "The Independent", "Red Poppy Art House", "Community Music Center", "The Fillmore", "The Chapel", "Great American Music Hall", "MAPP", "JCCSF Arts & Ideas", "Yerba Buena Gardens Festival", "Mission Local",
+                    "Galería de la Raza", "watchlist venues", "manual"],
+        "events": events}, indent=1, ensure_ascii=False) + "\n")
+    write_specials_ics(events, ICS_CT, "Talks & concerts: one-offs")
+    log(f"Wrote {len(events)} events to {OUT_CT.name}")
 
 
 if __name__ == "__main__":

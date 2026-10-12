@@ -1,0 +1,8 @@
+{
+ "_readme": "Concert venue pages read directly each week (no API key). kind 'jsonld' reads schema.org event data on the page; 'seetickets' reads See Tickets show listings. Add a venue by copying an entry.",
+ "venues": [
+  {"name": "The Fillmore", "url": "https://www.thefillmore.com/shows", "kind": "jsonld", "area": "The Fillmore, 1805 Geary Blvd", "lat": 37.7840, "lng": -122.4330},
+  {"name": "The Chapel", "url": "https://thechapelsf.com/music/", "kind": "seetickets", "area": "The Chapel, 777 Valencia St", "lat": 37.7604, "lng": -122.4213},
+  {"name": "Great American Music Hall", "url": "https://gamh.com/calendar/", "kind": "seetickets", "area": "Great American Music Hall, 859 O'Farrell St", "lat": 37.7848, "lng": -122.4189}
+ ]
+}

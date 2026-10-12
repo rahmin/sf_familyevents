@@ -1,0 +1,271 @@
+{
+ "_readme": "Venue websites without a calendar feed. With ANTHROPIC_API_KEY set, the weekly refresh reads these pages and has Claude pull out family events for the next three months. bookAhead marks venues whose shows usually need tickets in advance. Add a venue by copying an entry. 'edition' is family (the default) or talks-concerts.",
+ "venues": [
+  {
+   "name": "Hawk Creek Farm",
+   "pages": [
+    "https://www.hawkcreekfarm.org/farm-experiences.html",
+    "https://www.hawkcreekfarm.org/events.html",
+    "https://www.hawkcreekfarm.org/programs.html"
+   ],
+   "area": "Hawk Creek Farm, 203 Cotter St (Mission Terrace)",
+   "lat": 37.7303,
+   "lng": -122.4378,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0
+  },
+  {
+   "name": "ODC Theater",
+   "pages": [
+    "https://odc.dance/CALENDAR",
+    "https://odc.dance/familymatters"
+   ],
+   "area": "ODC Theater, 3153 17th St (Mission)",
+   "lat": 37.7636,
+   "lng": -122.417,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true
+  },
+  {
+   "name": "SF Ballet family shows",
+   "pages": [
+    "https://www.sfballet.org/productions/tiny-dances/"
+   ],
+   "area": "Palace of Fine Arts Theatre",
+   "lat": 37.803,
+   "lng": -122.4486,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true
+  },
+  {
+   "name": "Oakland Ballet",
+   "pages": [
+    "https://oaklandballet.org/performances-events/"
+   ],
+   "area": "Paramount Theatre, Oakland",
+   "lat": 37.8098,
+   "lng": -122.2685,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true
+  },
+  {
+   "name": "SF Symphony family concerts",
+   "pages": [
+    "https://www.sfsymphony.org/Subscribe/Series/Music-for-Families"
+   ],
+   "area": "Davies Symphony Hall",
+   "lat": 37.7777,
+   "lng": -122.4208,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true
+  },
+  {
+   "name": "SFJAZZ family matinees",
+   "pages": [
+    "https://www.sfjazz.org/education/family-matinee-overview"
+   ],
+   "area": "SFJAZZ Center, Miner Auditorium",
+   "lat": 37.7765,
+   "lng": -122.4216,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true
+  },
+  {
+   "name": "Museum of the African Diaspora",
+   "pages": [
+    "https://www.moadsf.org/events"
+   ],
+   "area": "MoAD, 685 Mission St",
+   "lat": 37.7864,
+   "lng": -122.4012,
+   "indoor": true,
+   "exp": 0,
+   "off": 0
+  },
+  {
+   "name": "Brava Theater",
+   "pages": [
+    "https://www.brava.org/"
+   ],
+   "area": "Brava Theater, 2781 24th St",
+   "lat": 37.7527,
+   "lng": -122.4096,
+   "indoor": true,
+   "exp": 0,
+   "off": 1
+  },
+  {
+   "name": "Precita Eyes Mural Arts",
+   "pages": [
+    "https://www.precitaeyes.org/"
+   ],
+   "area": "Precita Eyes Mural Arts Center, 2981 24th St",
+   "lat": 37.7526,
+   "lng": -122.4126,
+   "indoor": false,
+   "exp": 0.3,
+   "off": 1
+  },
+  {
+   "name": "Loco Bloco",
+   "pages": [
+    "https://www.locoblocosf.org/annualevents/diadelosmuertos"
+   ],
+   "area": "Brava Theater, 2781 24th St",
+   "lat": 37.7527,
+   "lng": -122.4096,
+   "indoor": false,
+   "exp": 0.25,
+   "off": 1
+  },
+  {
+   "name": "PLAY Theatre Company",
+   "pages": [
+    "https://www.playtheatreco.org/"
+   ],
+   "area": "Creativity Theater, Children's Creativity Museum, 221 4th St",
+   "lat": 37.7836,
+   "lng": -122.4022,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true
+  },
+  {
+   "name": "PLAY Theatre: Pigeon holiday show",
+   "pages": [
+    "https://www.playtheatreco.org/pigeon-gets-a-big-time-holiday-extravaganza"
+   ],
+   "area": "Ray of Light Theatre Barbary Stage, 215 Jackson St",
+   "lat": 37.7971,
+   "lng": -122.399,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true
+  },
+  {
+   "name": "City Arts & Lectures",
+   "pages": [
+    "https://www.cityarts.net/"
+   ],
+   "area": "Sydney Goldstein Theater, 275 Hayes St",
+   "lat": 37.7774,
+   "lng": -122.4206,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "edition": "talks-concerts"
+  },
+  {
+   "name": "Long Now",
+   "pages": [
+    "https://longnow.org/events/"
+   ],
+   "area": "The Interval at Long Now, Fort Mason",
+   "lat": 37.8063,
+   "lng": -122.4319,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "edition": "talks-concerts"
+  },
+  {
+   "name": "The Freight",
+   "pages": [
+    "https://thefreight.org/shows/"
+   ],
+   "area": "Freight & Salvage, 2020 Addison St, Berkeley",
+   "lat": 37.8711,
+   "lng": -122.2697,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "edition": "talks-concerts"
+  },
+  {
+   "name": "Gray Area",
+   "pages": [
+    "https://grayarea.org/events/"
+   ],
+   "area": "Gray Area, 2665 Mission St",
+   "lat": 37.7546,
+   "lng": -122.4188,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "edition": "talks-concerts"
+  },
+  {
+   "name": "The Warfield",
+   "pages": [
+    "https://www.thewarfieldtheatre.com/events"
+   ],
+   "area": "The Warfield, 982 Market St",
+   "lat": 37.7826,
+   "lng": -122.4101,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "edition": "talks-concerts"
+  },
+  {
+   "name": "August Hall",
+   "pages": [
+    "https://www.augusthallsf.com/events"
+   ],
+   "area": "August Hall, 420 Mason St",
+   "lat": 37.7878,
+   "lng": -122.4099,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "edition": "talks-concerts"
+  },
+  {
+   "name": "Bottom of the Hill",
+   "pages": [
+    "https://www.bottomofthehill.com/calendar.html"
+   ],
+   "area": "Bottom of the Hill, 1233 17th St",
+   "lat": 37.765,
+   "lng": -122.3961,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "edition": "talks-concerts"
+  },
+  {
+   "name": "Yoshi's Oakland",
+   "pages": [
+    "https://yoshis.com/events/"
+   ],
+   "area": "Yoshi's, 510 Embarcadero West, Oakland",
+   "lat": 37.7957,
+   "lng": -122.2786,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "edition": "talks-concerts"
+  }
+ ]
+}

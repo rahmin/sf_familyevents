@@ -1,5 +1,5 @@
 {
- "Farmers’ Market, 2257 Larkspur Landing Circle, Larkspur, CA 94939": [
+ "Farmers\u2019 Market, 2257 Larkspur Landing Circle, Larkspur, CA 94939": [
   null,
   null
  ],
@@ -131,7 +131,7 @@
   null,
   null
  ],
- "Stockmen’s Park, N. Livermore Avenue and Railroad Avenue, Livermore": [
+ "Stockmen\u2019s Park, N. Livermore Avenue and Railroad Avenue, Livermore": [
   null,
   null
  ],
@@ -163,7 +163,7 @@
   37.775539,
   -122.4203941
  ],
- "Manny’s, 3092 16th St San Francisco, CA 94103": [
+ "Manny\u2019s, 3092 16th St San Francisco, CA 94103": [
   37.7650584,
   -122.4217155
  ],
@@ -207,7 +207,7 @@
   null,
   null
  ],
- "SkyStar Wheel Fisherman’s Wharf, 2860 Taylor St, San Francisco, CA 94133": [
+ "SkyStar Wheel Fisherman\u2019s Wharf, 2860 Taylor St, San Francisco, CA 94133": [
   37.8087297,
   -122.413413
  ],
@@ -291,15 +291,275 @@
   null,
   null
  ],
- "111 Minna Gallery, 111 Minna St, San Francisco": [
-  37.7874657,
-  -122.3993218
+ "2700 Sloat Blvd, San Francisco": [
+  37.7358299,
+  -122.5036356
  ],
- "Mission Street, Mission St., San Francisco": [
-  37.7904031,
-  -122.3967264
+ "900 Innes Avenue, San Francisco": [
+  37.7322046,
+  -122.3757572
  ],
- "Drawing Room ANNEX, 599 Valencia St, San Francisco": [
+ "685 Mission Street, San Francisco": [
+  37.7864689,
+  -122.4014732
+ ],
+ "387 Avenue of the Palms, San Francisco": [
+  37.8187036,
+  -122.3736169
+ ],
+ "between 23rd and 24th St, San Francisco": [
+  null,
+  null
+ ],
+ "HarrisoN Street, between 23rd and 24th St": [
+  null,
+  null
+ ],
+ "500 Beach Street, San Francisco": [
+  37.8071297,
+  -122.417931
+ ],
+ "1199 9th Avenue, San Francisco": [
+  37.7665935,
+  -122.4672772
+ ],
+ "Francisco Park Children\u2019s Playground, San Francisco": [
+  null,
+  null
+ ],
+ "Francisco Park Children\u2019s Playground": [
+  37.784865,
+  -122.4153086
+ ],
+ "750 Howard Street, San Francisco": [
+  37.7846973,
+  -122.4031701
+ ],
+ "Parade starts at Jefferson and Powell Streets in Fisherman\u2019s Wharf, San Francisco": [
+  null,
+  null
+ ],
+ "Parade starts at Jefferson and Powell Streets in Fisherman\u2019s Wharf": [
+  null,
+  null
+ ],
+ "Outer Sunset, San Francisco": [
+  37.7541496,
+  -122.5061507
+ ],
+ "California Academy of Sciences, San Francisco": [
+  37.7698235,
+  -122.4660971
+ ],
+ "Hayes Valley, San Francisco": [
+  37.7766853,
+  -122.4229361
+ ],
+ "Mission, San Francisco": [
+  37.75993,
+  -122.4191376
+ ],
+ "Parkmerced, San Francisco": [
+  37.7171762,
+  -122.4789473
+ ],
+ "Salesforce Park, San Francisco": [
+  37.789115,
+  -122.396655
+ ],
+ "Union Square Alliance, San Francisco": [
+  null,
+  null
+ ],
+ "Union Square Alliance": [
+  37.7911278,
+  -122.4026113
+ ],
+ "Inner Sunset, San Francisco": [
+  37.76145,
+  -122.4676432
+ ],
+ "Children\u2019s Creativity Museum, San Francisco": [
+  37.7830738,
+  -122.4016736
+ ],
+ "Randall Museum, San Francisco": [
+  37.7643981,
+  -122.4383671
+ ],
+ "18 months! - Mission, San Francisco": [
+  null,
+  null
+ ],
+ "18 months! - Mission": [
+  null,
+  null
+ ],
+ "Treasure Island, San Francisco": [
+  37.8238061,
+  -122.3704106
+ ],
+ "Pier 45, San Francisco": [
+  37.8101195,
+  -122.4177169
+ ],
+ "Yerba Buena, San Francisco": [
+  37.7822253,
+  -122.401731
+ ],
+ "Various Neighborhoods, San Francisco": [
+  null,
+  null
+ ],
+ "Various Neighborhoods": [
+  null,
+  null
+ ],
+ "Aquarium of the Bay, San Francisco": [
+  37.8087688,
+  -122.4093054
+ ],
+ "Exploratorium, San Francisco": [
+  37.8008982,
+  -122.3985255
+ ],
+ "Tenderloin, San Francisco": [
+  37.7842493,
+  -122.4139933
+ ],
+ "Golden Gate Park, San Francisco": [
+  37.7693681,
+  -122.4821837
+ ],
+ "The Walt Disney Family Museum, San Francisco": [
+  null,
+  null
+ ],
+ "The Walt Disney Family Museum": [
+  null,
+  null
+ ],
+ "Walt Disney Family Museum, San Francisco": [
+  37.8013627,
+  -122.4587206
+ ],
+ "Presidio, San Francisco": [
+  37.7987926,
+  -122.4645799
+ ],
+ "Legion of Honor, San Francisco": [
+  37.7845556,
+  -122.500962
+ ],
+ "Parkside, San Francisco": [
+  37.742375,
+  -122.4874401
+ ],
+ "Civic Center, San Francisco": [
+  37.7795939,
+  -122.4167938
+ ],
+ "Asian Art Museum, San Francisco": [
+  37.780315,
+  -122.4159922
+ ],
+ "TRIK or TREAT - Crocker Amazon, San Francisco": [
+  null,
+  null
+ ],
+ "TRIK or TREAT - Crocker Amazon": [
+  null,
+  null
+ ],
+ "Sunset Dunes, San Francisco": [
+  37.7506923,
+  -122.5085133
+ ],
+ "Bayview, San Francisco": [
+  37.7152853,
+  -122.3934821
+ ],
+ "North Beach, San Francisco": [
+  37.8011749,
+  -122.4090021
+ ],
+ "Golden Gate Park Bandshell, San Francisco": [
+  null,
+  null
+ ],
+ "Golden Gate Park Bandshell": [
+  null,
+  null
+ ],
+ "Union Square, San Francisco": [
+  37.7879363,
+  -122.4075174
+ ],
+ "Portola, San Francisco": [
+  37.726379,
+  -122.4085514
+ ],
+ "Excelsior, San Francisco": [
+  37.7217943,
+  -122.4353815
+ ],
+ "Visitacion Valley, San Francisco": [
+  37.7121319,
+  -122.4097128
+ ],
+ "SoMA, San Francisco": [
+  37.7808925,
+  -122.4009518
+ ],
+ "Fort Mason, San Francisco": [
+  37.8062814,
+  -122.4289875
+ ],
+ "San Francisco Zoo, San Francisco": [
+  37.7327482,
+  -122.5023923
+ ],
+ "Stonestown Galleria, San Francisco": [
+  37.7282433,
+  -122.4770206
+ ],
+ "Palace of Fine Arts, San Francisco": [
+  37.8029186,
+  -122.4484029
+ ],
+ "Salesforce, San Francisco": [
+  37.7896012,
+  -122.396872
+ ],
+ "6 months - Mission, San Francisco": [
+  null,
+  null
+ ],
+ "6 months - Mission": [
+  null,
+  null
+ ],
+ "2 years - Mission, San Francisco": [
+  null,
+  null
+ ],
+ "2 years - Mission": [
+  null,
+  null
+ ],
+ "West Portal, San Francisco": [
+  37.7411405,
+  -122.4656336
+ ],
+ "38 S Second Street  San Jos\u00e9, CA": [
+  null,
+  null
+ ],
+ "654 Mission Street  San Francisco, CA": [
+  37.787196,
+  -122.4012427
+ ],
+ "Manny&#8217;s, 3092 16th St, San Francisco": [
   null,
   null
  ],
@@ -311,13 +571,17 @@
   null,
   null
  ],
- "Manny&#8217;s, 3092 16th St, San Francisco": [
-  null,
-  null
- ],
  "Ruth&#8217;s Table, 3160 21 st, San Francisco": [
   null,
   null
+ ],
+ "Drawing Room ANNEX, 599 Valencia St, San Francisco": [
+  null,
+  null
+ ],
+ "111 Minna Gallery, 111 Minna St, San Francisco": [
+  37.7874657,
+  -122.3993218
  ],
  "20th Street, 20th Street, San Francisco": [
   37.7604997,
@@ -326,5 +590,13 @@
  "24th Street, 24th Street, San Francisco": [
   37.7522559,
   -122.418449
+ ],
+ "Michelle Thomas Fine Art Gallery + Studio, 40, 29th Street, San Francisco": [
+  null,
+  null
+ ],
+ "The Sycamore, 2140 Mission Street, San Francisco": [
+  37.762774,
+  -122.4196292
  ]
 }

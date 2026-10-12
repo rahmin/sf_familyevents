@@ -129,7 +129,8 @@
    "start": "2026-10-10T10:15:00-07:00",
    "end": "2026-10-10T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
   },
   {
    "area": "Oakland Main Library",
@@ -180,7 +181,8 @@
    "start": "2026-10-10T10:30:00-07:00",
    "end": "2026-10-10T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-10-early-learning-saturday-morning-playtimes",
@@ -214,7 +216,8 @@
    "start": "2026-10-10T11:00:00-07:00",
    "end": "2026-10-10T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
   },
   {
    "area": "India Basin Waterfront Park, Bayview",
@@ -316,7 +319,8 @@
    "start": "2026-10-10T11:30:00-07:00",
    "end": "2026-10-10T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "end": "2026-10-10T16:00:00-07:00",
@@ -398,7 +402,7 @@
    "note": "Free live music on the Great Lawn from a youth arts education group. RSVP suggested.",
    "off": 0,
    "start": "2026-10-10T13:00:00-07:00",
-   "url": "https://sf.funcheap.com/weekend-sessions-w-follow-the-music-yerba-buena-gardens-festival-2026/",
+   "url": "https://ybgfestival.org/event/follow-the-music/",
    "id": "ybg-follow-the-music",
    "source": "manual"
   },
@@ -417,7 +421,8 @@
    "start": "2026-10-10T13:30:00-07:00",
    "end": "2026-10-10T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "area": "Exploratorium, Pier 15",
@@ -485,7 +490,8 @@
    "start": "2026-10-10T15:00:00-07:00",
    "end": "2026-10-10T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "cas-lagoon-senses-2026-10-10-1530",
@@ -502,7 +508,8 @@
    "start": "2026-10-10T15:30:00-07:00",
    "end": "2026-10-10T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
   },
   {
    "id": "shotwell-lantern-parade",
@@ -522,6 +529,23 @@
    "url": "https://missionlocal.org/event/storefrontlab-shotwell-community-lantern-parade/"
   },
   {
+   "id": "lk-bird-curious-beginner-birding-in-the-garden-2026-10-11",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Bird Curious: Beginner Birding in the Garden",
+   "area": "SF Botanical Garden, Golden Gate Park",
+   "lat": 37.767,
+   "lng": -122.4688,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-11T08:30:00-07:00",
+   "end": "2026-10-11T10:30:00-07:00",
+   "note": "A relaxed beginner bird walk through the Botanical Garden's best birding spots. (Picked by Local Kiddo SF.)",
+   "url": "https://gggp.org/event/bird-curious-birding-in-the-garden-4/"
+  },
+  {
    "area": "San Francisco County Fair Building, Golden Gate Park",
    "end": "2026-10-11T12:00:00-07:00",
    "exp": 0,
@@ -539,6 +563,24 @@
    "source": "manual"
   },
   {
+   "id": "lk-activity-zone-2026-10-11",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Activity Zone",
+   "area": "Union Square Plaza",
+   "lat": 37.788,
+   "lng": -122.4075,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-11T10:00:00-07:00",
+   "end": "2026-10-11T18:00:00-07:00",
+   "note": "Free drop-in kids' activities in the plaza, one of Union Square's daily park programs. (Picked by Local Kiddo SF.)",
+   "url": "https://visitunionsquaresf.com/park-programs",
+   "recurring": true
+  },
+  {
    "area": "Francisco Park, Russian Hill",
    "end": "2026-10-11T12:00:00-07:00",
    "exp": 0.6,
@@ -554,6 +596,23 @@
    "url": "https://sf.funcheap.com/dads-strollers-meetup-sfs-francisco-park/",
    "id": "dads-strollers",
    "source": "manual"
+  },
+  {
+   "id": "lk-inner-sunset-flea-market-2026-10-11",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Inner Sunset Flea Market",
+   "area": "Irving St, Inner Sunset",
+   "lat": 37.764,
+   "lng": -122.4665,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-11T10:00:00-07:00",
+   "end": "2026-10-11T16:00:00-07:00",
+   "note": "Outdoor neighborhood flea market along Irving Street. (Picked by Local Kiddo SF.)",
+   "url": "https://sunsetmercantilesf.com/innersunsetflea/"
   },
   {
    "area": "Spreckels Lake, Golden Gate Park",
@@ -585,9 +644,48 @@
    "note": "Free drop-in dance classes until 1:30 pm, then performances on the Great Lawn.",
    "off": 0,
    "start": "2026-10-11T10:00:00-07:00",
-   "url": "https://sf.funcheap.com/ybg-dance-day-yerba-buena-gardens-festival-2026/",
+   "url": "https://ybgfestival.org/event/ybg-dance-day-2026/",
    "id": "ybg-dance-day",
    "source": "manual"
+  },
+  {
+   "id": "play-dragons-love-tacos-2026-10-11-10",
+   "source": "manual",
+   "kind": "event",
+   "name": "Dragons Love Tacos, the Musical (PLAY Theatre)",
+   "area": "Creativity Theater, Children's Creativity Museum, 221 4th St",
+   "lat": 37.7836,
+   "lng": -122.4022,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-11T10:30:00-07:00",
+   "end": "2026-10-11T11:30:00-07:00",
+   "note": "A musical of the picture book, with toe-tapping songs and a scene-stealing dog. Recommended for ages 3 and up; about an hour with a 10-minute intermission. $5 to $39; kids under 2 free. The run ends Oct 18.",
+   "url": "https://www.playtheatreco.org/dragons-love-tacos-the-musical",
+   "tags": [
+    "performance",
+    "music"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "lk-mahjong-at-the-museum-2026-10-11",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Mahjong at the Museum",
+   "area": "Asian Art Museum, 200 Larkin St",
+   "lat": 37.7802,
+   "lng": -122.4161,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-11T10:30:00-07:00",
+   "end": "2026-10-11T16:00:00-07:00",
+   "note": "Drop-in mahjong as part of the museum's Sunday programs. Check the museum's page for admission. (Picked by Local Kiddo SF.)",
+   "url": "https://calendar.asianart.org/event/sundays-at-the-asian-art-museum-october-11/"
   },
   {
    "id": "cas-childrens-puppet-theater-2026-10-11-1100",
@@ -604,7 +702,25 @@
    "start": "2026-10-11T11:00:00-07:00",
    "end": "2026-10-11T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
+  },
+  {
+   "id": "lk-ha-chong-hyun-retrospective-tour-2026-10-11",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Ha Chong-Hyun: Retrospective Tour",
+   "area": "Asian Art Museum, 200 Larkin St",
+   "lat": 37.7802,
+   "lng": -122.4161,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-11T11:00:00-07:00",
+   "end": null,
+   "note": "A guided tour of the Ha Chong-Hyun retrospective, part of the museum's Sunday programs. (Picked by Local Kiddo SF.)",
+   "url": "https://calendar.asianart.org/event/sundays-at-the-asian-art-museum-october-11/"
   },
   {
    "area": "Jack London Square, Oakland",
@@ -638,7 +754,8 @@
    "start": "2026-10-11T11:30:00-07:00",
    "end": "2026-10-11T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "end": "2026-10-11T16:00:00-07:00",
@@ -655,6 +772,58 @@
    "title": "Fleet Week air show",
    "id": "impact-air-show-sun",
    "source": "manual"
+  },
+  {
+   "id": "lk-20-min-docent-talks-2026-10-11",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "20-min Docent Talks",
+   "area": "Asian Art Museum, 200 Larkin St",
+   "lat": 37.7802,
+   "lng": -122.4161,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-11T12:00:00-07:00",
+   "end": null,
+   "note": "Short gallery talks by museum docents, part of the Sunday programs. (Picked by Local Kiddo SF.)",
+   "url": "https://calendar.asianart.org/event/sundays-at-the-asian-art-museum-october-11/",
+   "recurring": true
+  },
+  {
+   "id": "lk-2nd-sunday-serenades-2026-10-11",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "2nd Sunday Serenades",
+   "area": "Sunset Dunes at Judah St (Great Highway)",
+   "lat": 37.7605,
+   "lng": -122.51,
+   "indoor": false,
+   "exp": 0.9,
+   "off": -6,
+   "free": null,
+   "start": "2026-10-11T12:00:00-07:00",
+   "end": "2026-10-11T14:00:00-07:00",
+   "note": "Free live music on the car-free Great Highway at Judah, every second Sunday. (Picked by Local Kiddo SF.)",
+   "url": "https://sunsetdunes.org/events/2nd-sunday-serenades-fake-melody-pdt6y-e2nkb-tjt9h-d9w8w-ezg8d-bawzx-ermec-rhakz-db7m2-swley-49hxb-tjcz9-bdyxy-x4n83-rp5bk-ttkfb-hyke5-7f7e9-37ftx-amkrj"
+  },
+  {
+   "id": "lk-7th-annual-butchertown-jazz-festival-2026-10-11",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "7th Annual Butchertown Jazz Festival",
+   "area": "Gratta Wines, Bayview",
+   "lat": 37.7152853,
+   "lng": -122.3934821,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-11T12:00:00-07:00",
+   "end": "2026-10-11T18:00:00-07:00",
+   "note": "An afternoon jazz festival hosted by Gratta Wines in the Bayview; tickets on Eventbrite. (Picked by Local Kiddo SF.)",
+   "url": "https://www.eventbrite.com/e/7th-annual-butchertown-jazz-festival-tickets-1999122691786"
   },
   {
    "area": "Marina Green",
@@ -691,6 +860,23 @@
    "source": "manual"
   },
   {
+   "id": "lk-the-whale-s-tail-closing-weekend-2026-10-11",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "The Whale’s Tail Closing Weekend",
+   "area": "The Whale's Tail, JFK Promenade at 14th Ave, Golden Gate Park",
+   "lat": 37.7695,
+   "lng": -122.472,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-11T12:00:00-07:00",
+   "end": "2026-10-11T18:00:00-07:00",
+   "note": "Closing weekend of the park's outdoor hangout: live music, food trucks and lawn games, with kids and dogs welcome. Free. (Picked by Local Kiddo SF.)",
+   "url": "https://illuminate.org/event/the-whales-tail-closing-weekend-october-11-2/"
+  },
+  {
    "area": "North Beach",
    "end": null,
    "exp": 0.4,
@@ -708,6 +894,23 @@
    "source": "manual"
   },
   {
+   "id": "lk-tour-of-the-japanese-tea-garden-2026-10-11",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Tour of the Japanese Tea Garden",
+   "area": "Japanese Tea Garden, Golden Gate Park",
+   "lat": 37.7702,
+   "lng": -122.4703,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-11T13:00:00-07:00",
+   "end": null,
+   "note": "A free SF City Guides walking tour of the Japanese Tea Garden; garden admission may apply. (Picked by Local Kiddo SF.)",
+   "url": "https://sfcityguides.org/tour/japanese-tea-garden/"
+  },
+  {
    "id": "sfpl-2026-10-11-storytime-toddlers",
    "kind": "event",
    "source": "sfpl",
@@ -721,7 +924,7 @@
    "free": true,
    "start": "2026-10-11T13:15:00-07:00",
    "end": "2026-10-11T13:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/11/storytime-toddlers"
   },
   {
@@ -739,7 +942,8 @@
    "start": "2026-10-11T13:30:00-07:00",
    "end": "2026-10-11T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-11-storytime-families",
@@ -755,7 +959,7 @@
    "free": true,
    "start": "2026-10-11T13:30:00-07:00",
    "end": "2026-10-11T14:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/11/storytime-families"
   },
   {
@@ -772,8 +976,48 @@
    "free": true,
    "start": "2026-10-11T13:30:00-07:00",
    "end": "2026-10-11T14:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Meet Kora, a PAWS for People -certified therapy dog and her handler, Jake. The duo visits the children's area on the second Sunday of each month, offering kids the opportunity to either read to Kora or simply enjoy her presence. Youth under the age of 8 must be accompanied by an adult.",
    "url": "https://sfpl.org/events/2026/10/11/social-therapy-dog-library"
+  },
+  {
+   "id": "lk-big-feed-2026-10-11",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Big Feed",
+   "area": "Aquarium of the Bay, Pier 39",
+   "lat": 37.8087,
+   "lng": -122.4098,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-11T14:00:00-07:00",
+   "end": null,
+   "note": "One of the aquarium's daily animal feedings, included with admission. (Picked by Local Kiddo SF.)",
+   "url": "https://www.aquariumofthebay.org/daily-programs/",
+   "recurring": true
+  },
+  {
+   "id": "play-dragons-love-tacos-2026-10-11-14",
+   "source": "manual",
+   "kind": "event",
+   "name": "Dragons Love Tacos, the Musical (PLAY Theatre)",
+   "area": "Creativity Theater, Children's Creativity Museum, 221 4th St",
+   "lat": 37.7836,
+   "lng": -122.4022,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-11T14:00:00-07:00",
+   "end": "2026-10-11T15:00:00-07:00",
+   "note": "A musical of the picture book, with toe-tapping songs and a scene-stealing dog. Recommended for ages 3 and up; about an hour with a 10-minute intermission. $5 to $39; kids under 2 free. The run ends Oct 18.",
+   "url": "https://www.playtheatreco.org/dragons-love-tacos-the-musical",
+   "tags": [
+    "performance",
+    "music"
+   ],
+   "bookAhead": true
   },
   {
    "id": "sfpl-2026-10-11-workshop-rangoli-art-shanta-nimbark-sacharoff",
@@ -789,7 +1033,7 @@
    "free": true,
    "start": "2026-10-11T14:00:00-07:00",
    "end": "2026-10-11T15:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Learn the traditional Indian folk art of rangoli with Shanta Nimbark Sacharoff. Work in groups to make a design. For children and their caregivers. Reservations required: (415) 355-5700. Intergenerational",
    "url": "https://sfpl.org/events/2026/10/11/workshop-rangoli-art-shanta-nimbark-sacharoff"
   },
   {
@@ -824,7 +1068,25 @@
    "start": "2026-10-11T15:00:00-07:00",
    "end": "2026-10-11T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
+  },
+  {
+   "id": "lk-snow-white-and-the-seven-dwarfs-1937-2026-10-11",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Snow White and the Seven Dwarfs (1937)",
+   "area": "Walt Disney Family Museum, 104 Montgomery St, Presidio",
+   "lat": 37.8014,
+   "lng": -122.4586,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-11T15:00:00-07:00",
+   "end": null,
+   "note": "A screening of Disney's original 1937 Snow White in the museum's theater. (Picked by Local Kiddo SF.)",
+   "url": "https://www.waltdisney.org/education/films/snow-white-and-seven-dwarfs-1937"
   },
   {
    "id": "cas-lagoon-senses-2026-10-11-1530",
@@ -841,7 +1103,25 @@
    "start": "2026-10-11T15:30:00-07:00",
    "end": "2026-10-11T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
+  },
+  {
+   "id": "lk-fleet-week-high-school-band-challenge-2026-10-12",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Fleet Week High School Band Challenge",
+   "area": "Golden Gate Park Bandshell (Music Concourse)",
+   "lat": 37.7704,
+   "lng": -122.4664,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-12T09:00:00-07:00",
+   "end": "2026-10-12T12:00:00-07:00",
+   "note": "Bay Area high school bands compete on the bandshell stage for music-program prize money. Free. (Picked by Local Kiddo SF.)",
+   "url": "https://fleetweeksf.org/high-school-band-challenge/"
   },
   {
    "id": "exploratorium-holiday-monday",
@@ -859,6 +1139,24 @@
    "end": "2026-10-12T17:00:00-07:00",
    "note": "A rare Monday opening for the holiday. Check the museum's calendar for hours before you go.",
    "url": "https://www.exploratorium.edu/visit/calendar"
+  },
+  {
+   "id": "lk-imagination-mondays-2026-10-12",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Imagination Mondays",
+   "area": "Union Square Plaza",
+   "lat": 37.788,
+   "lng": -122.4075,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-12T10:00:00-07:00",
+   "end": null,
+   "note": "Free Monday kids' program in the plaza, part of Union Square's daily park programs. (Picked by Local Kiddo SF.)",
+   "url": "https://visitunionsquaresf.com/park-programs",
+   "recurring": true
   },
   {
    "id": "lawrence-indigenous-peoples-day",
@@ -892,7 +1190,8 @@
    "start": "2026-10-12T10:15:00-07:00",
    "end": "2026-10-12T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-12-1030",
@@ -909,7 +1208,8 @@
    "start": "2026-10-12T10:30:00-07:00",
    "end": "2026-10-12T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "area": "Oakland Main Library",
@@ -943,7 +1243,26 @@
    "start": "2026-10-12T11:00:00-07:00",
    "end": "2026-10-12T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
+  },
+  {
+   "id": "lk-october-pop-n-play-2026-10-12",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "October Pop N Play",
+   "area": "Family Connections Center Portola, 2565 San Bruno Ave",
+   "lat": 37.7291,
+   "lng": -122.4048,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-12T11:00:00-07:00",
+   "end": "2026-10-12T12:30:00-07:00",
+   "note": "A free playgroup for kids 30 to 42 months with a parent or caregiver; register on Eventbrite. (Picked by Local Kiddo SF.)",
+   "url": "https://www.eventbrite.com/e/october-pop-n-play-portola-tickets-2002228455208",
+   "recurring": true
   },
   {
    "id": "cas-coral-reef-dive-2026-10-12-1130",
@@ -960,7 +1279,8 @@
    "start": "2026-10-12T11:30:00-07:00",
    "end": "2026-10-12T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "id": "ybg-indigenous-peoples-day",
@@ -977,7 +1297,7 @@
    "start": "2026-10-12T12:00:00-07:00",
    "end": "2026-10-12T16:00:00-07:00",
    "note": "Free all-ages celebration with Native American art, music and vendors, headlined by Jeremy Dutcher. Bring a picnic; free RSVP.",
-   "url": "https://www.eventbrite.com/e/indigenous-peoples-day-with-jeremy-dutcher-at-ybgfestival-tickets-1986360842752"
+   "url": "https://ybgfestival.org/event/sf-indigenous-peoples-day-2026/"
   },
   {
    "id": "cas-coral-reef-dive-2026-10-12-1330",
@@ -994,7 +1314,8 @@
    "start": "2026-10-12T13:30:00-07:00",
    "end": "2026-10-12T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-12-1500",
@@ -1011,7 +1332,8 @@
    "start": "2026-10-12T15:00:00-07:00",
    "end": "2026-10-12T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "cas-lagoon-senses-2026-10-12-1530",
@@ -1028,7 +1350,61 @@
    "start": "2026-10-12T15:30:00-07:00",
    "end": "2026-10-12T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
+  },
+  {
+   "id": "lk-free-day-san-francisco-botanical-garden-2026-10-13",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Free Day: San Francisco Botanical Garden",
+   "area": "SF Botanical Garden, Golden Gate Park",
+   "lat": 37.767,
+   "lng": -122.4688,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T07:30:00-07:00",
+   "end": "2026-10-13T18:00:00-07:00",
+   "note": "Free admission day at the 55-acre Botanical Garden. (Picked by Local Kiddo SF.)",
+   "url": "https://gggp.org/event/free-day-san-francisco-botanical-garden-16/"
+  },
+  {
+   "id": "lk-october-first-steps-2026-10-13",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "October First Steps",
+   "area": "Family Connections Center Excelsior, 5016 Mission St",
+   "lat": 37.721,
+   "lng": -122.437,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T09:00:00-07:00",
+   "end": "2026-10-13T10:30:00-07:00",
+   "note": "A free playgroup for kids 12 to 30 months with a parent or caregiver; register on Eventbrite. (Picked by Local Kiddo SF.)",
+   "url": "https://www.eventbrite.com/e/september-first-steps-portola-tickets-1998813435793?aff=oddtdtcreator",
+   "recurring": true
+  },
+  {
+   "id": "lk-october-tummy-time-2026-10-13",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "October Tummy Time",
+   "area": "Family Connections Center Visitacion Valley, 29 Leland Ave",
+   "lat": 37.7118,
+   "lng": -122.4049,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T09:30:00-07:00",
+   "end": null,
+   "note": "A free playgroup for babies 0 to 12 months with a parent or caregiver; register on Eventbrite. (Picked by Local Kiddo SF.)",
+   "url": "https://www.eventbrite.com/e/october-tummy-time-visitacion-valley-tickets-2002227746087",
+   "recurring": true
   },
   {
    "id": "scn-10005156-2026-10-13",
@@ -1048,6 +1424,59 @@
    "url": "https://sfchildrennature.org/event/swing-into-stories-koret-playground-golden-gate-park/2026-10-13/"
   },
   {
+   "id": "lk-free-day-conservatory-of-flowers-2026-10-13",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Free Day: Conservatory of Flowers",
+   "area": "Conservatory of Flowers, Golden Gate Park",
+   "lat": 37.772,
+   "lng": -122.4602,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T10:00:00-07:00",
+   "end": "2026-10-13T16:30:00-07:00",
+   "note": "Free admission day at the Victorian glass greenhouse. (Picked by Local Kiddo SF.)",
+   "url": "https://gggp.org/event/free-day-conservatory-of-flowers-12/"
+  },
+  {
+   "id": "lk-toddler-tuesday-2026-10-13",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Toddler Tuesday",
+   "area": "Salesforce Park, 425 Mission St",
+   "lat": 37.7896,
+   "lng": -122.3964,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T10:00:00-07:00",
+   "end": "2026-10-13T11:00:00-07:00",
+   "note": "Free outdoor music for ages 1 to 4 with Music Together, every Tuesday. (Picked by Local Kiddo SF.)",
+   "url": "https://www.theeastcut.org/event/toddler-tuesday-3-24/",
+   "recurring": true
+  },
+  {
+   "id": "lk-children-s-music-with-emilia-2026-10-13",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Children's Music with Emilia",
+   "area": "Outer Village, Inner Sunset",
+   "lat": 37.76145,
+   "lng": -122.4676432,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T10:15:00-07:00",
+   "end": "2026-10-13T11:00:00-07:00",
+   "note": "A music class for babies to age 4 and their caregivers, led by Malinky Music founder Emilia Lopez-Yanez. (Picked by Local Kiddo SF.)",
+   "url": "https://www.hisawyer.com/outer-village/schedules/activity-set/1954747?day=2026-09-15&view=cal&source=all-activities",
+   "recurring": true
+  },
+  {
    "id": "cas-sensory-storytime-2026-10-13-1015",
    "kind": "event",
    "source": "calacademy",
@@ -1062,7 +1491,8 @@
    "start": "2026-10-13T10:15:00-07:00",
    "end": "2026-10-13T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-13-storytime-babies",
@@ -1078,7 +1508,7 @@
    "free": true,
    "start": "2026-10-13T10:15:00-07:00",
    "end": "2026-10-13T10:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-babies"
   },
   {
@@ -1095,7 +1525,7 @@
    "free": true,
    "start": "2026-10-13T10:15:00-07:00",
    "end": "2026-10-13T10:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the side gate entrance starting at 10:00am. Playtime to follow storytime. Storytime for Babies Songs, rhymes and books for infants and their caregivers.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-babies-1"
   },
   {
@@ -1112,7 +1542,7 @@
    "free": true,
    "start": "2026-10-13T10:15:00-07:00",
    "end": "2026-10-13T10:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-babies-3"
   },
   {
@@ -1129,8 +1559,29 @@
    "free": true,
    "start": "2026-10-13T10:15:00-07:00",
    "end": "2026-10-13T10:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-toddlers-3"
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-storytime-2026-10-13",
+   "name": "Drop-in Storytime at Bernal Heights Rec Center",
+   "start": "2026-10-13T10:30:00-07:00",
+   "end": "2026-10-13T11:00:00-07:00",
+   "note": "A free drop-in storytime in the rec center gym, run by SF Rec & Park. Through Dec 29.",
+   "tags": [
+    "stories"
+   ]
   },
   {
    "id": "cas-penguin-feeding-2026-10-13-1030",
@@ -1147,7 +1598,8 @@
    "start": "2026-10-13T10:30:00-07:00",
    "end": "2026-10-13T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-13-storytime-families",
@@ -1163,7 +1615,7 @@
    "free": true,
    "start": "2026-10-13T10:30:00-07:00",
    "end": "2026-10-13T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-families"
   },
   {
@@ -1180,7 +1632,7 @@
    "free": true,
    "start": "2026-10-13T10:30:00-07:00",
    "end": "2026-10-13T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-families-0"
   },
   {
@@ -1197,7 +1649,7 @@
    "free": true,
    "start": "2026-10-13T10:30:00-07:00",
    "end": "2026-10-13T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Playtime to follow storytime. Storytime for Preschoolers Books, songs, fingerplays and more for ages 3–5. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-preschoolers-2"
   },
   {
@@ -1214,7 +1666,7 @@
    "free": true,
    "start": "2026-10-13T10:30:00-07:00",
    "end": "2026-10-13T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-toddlers-0"
   },
   {
@@ -1231,7 +1683,7 @@
    "free": true,
    "start": "2026-10-13T10:30:00-07:00",
    "end": "2026-10-13T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the front desk starting at 10:00am. Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/13/storytime-toddlers-1"
   },
   {
@@ -1248,7 +1700,7 @@
    "free": true,
    "start": "2026-10-13T10:30:00-07:00",
    "end": "2026-10-13T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-toddlers-11"
   },
   {
@@ -1265,7 +1717,7 @@
    "free": true,
    "start": "2026-10-13T10:30:00-07:00",
    "end": "2026-10-13T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-toddlers-4"
   },
   {
@@ -1282,7 +1734,7 @@
    "free": true,
    "start": "2026-10-13T10:30:00-07:00",
    "end": "2026-10-13T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-toddlers-5"
   },
   {
@@ -1316,7 +1768,7 @@
    "free": true,
    "start": "2026-10-13T10:30:00-07:00",
    "end": "2026-10-13T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-toddlers-7"
   },
   {
@@ -1324,16 +1776,16 @@
    "kind": "event",
    "source": "sfpl",
    "name": "Storytime for Toddlers",
-   "area": "Mission Branch Library",
-   "lat": 37.7525,
-   "lng": -122.4205,
+   "area": "Mission Bay Branch Library",
+   "lat": 37.7716,
+   "lng": -122.3912,
    "indoor": true,
    "exp": 0,
    "off": 0,
    "free": true,
    "start": "2026-10-13T10:30:00-07:00",
    "end": "2026-10-13T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the reference desk starting at 10:00am. Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-toddlers-8"
   },
   {
@@ -1368,7 +1820,8 @@
    "start": "2026-10-13T11:00:00-07:00",
    "end": "2026-10-13T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-13-storytime-preschoolers",
@@ -1384,7 +1837,7 @@
    "free": true,
    "start": "2026-10-13T11:00:00-07:00",
    "end": "2026-10-13T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Preschoolers Books, songs, fingerplays and more for ages 3–5. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-preschoolers"
   },
   {
@@ -1401,7 +1854,7 @@
    "free": true,
    "start": "2026-10-13T11:00:00-07:00",
    "end": "2026-10-13T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Preschoolers Books, songs, fingerplays and more for ages 3–5. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-preschoolers-1"
   },
   {
@@ -1418,7 +1871,7 @@
    "free": true,
    "start": "2026-10-13T11:00:00-07:00",
    "end": "2026-10-13T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Some blankets and chairs provided. In case of extreme weather, storytime will be held inside. Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/13/storytime-toddlers-10"
   },
   {
@@ -1435,7 +1888,7 @@
    "free": true,
    "start": "2026-10-13T11:00:00-07:00",
    "end": "2026-10-13T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-toddlers-12"
   },
   {
@@ -1452,7 +1905,7 @@
    "free": true,
    "start": "2026-10-13T11:00:00-07:00",
    "end": "2026-10-13T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Playtime to follow storytime. Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/13/storytime-toddlers-2"
   },
   {
@@ -1469,7 +1922,7 @@
    "free": true,
    "start": "2026-10-13T11:00:00-07:00",
    "end": "2026-10-13T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-toddlers-9"
   },
   {
@@ -1477,17 +1930,35 @@
    "kind": "event",
    "source": "sfpl",
    "name": "Storytime for Preschoolers",
-   "area": "Mission Branch Library",
-   "lat": 37.7525,
-   "lng": -122.4205,
+   "area": "Mission Bay Branch Library",
+   "lat": 37.7716,
+   "lng": -122.3912,
    "indoor": true,
    "exp": 0,
    "off": 0,
    "free": true,
    "start": "2026-10-13T11:15:00-07:00",
    "end": "2026-10-13T11:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the reference desk starting at 10:45am. Storytime for Preschoolers Books, songs, fingerplays and more for ages 3–5. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/13/storytime-preschoolers-0"
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-tue-2026-10-13",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-10-13T11:30:00-07:00",
+   "end": "2026-10-13T13:00:00-07:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
   },
   {
    "id": "cas-coral-reef-dive-2026-10-13-1130",
@@ -1504,7 +1975,8 @@
    "start": "2026-10-13T11:30:00-07:00",
    "end": "2026-10-13T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-13-storytime-toddlers",
@@ -1520,7 +1992,7 @@
    "free": true,
    "start": "2026-10-13T11:30:00-07:00",
    "end": "2026-10-13T12:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-toddlers"
   },
   {
@@ -1537,8 +2009,26 @@
    "free": true,
    "start": "2026-10-13T11:45:00-07:00",
    "end": "2026-10-13T12:15:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-babies-4"
+  },
+  {
+   "id": "lk-civic-center-soundtrack-2026-10-13",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Civic Center Soundtrack",
+   "area": "Fulton Plaza, Civic Center",
+   "lat": 37.7798,
+   "lng": -122.4165,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T12:00:00-07:00",
+   "end": "2026-10-13T15:00:00-07:00",
+   "note": "Free lunchtime live music between the Main Library and the Asian Art Museum. (Picked by Local Kiddo SF.)",
+   "url": "https://illuminate.org/event/civic-center-soundtrack-october-6/",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-13-storytime-babies-0",
@@ -1554,7 +2044,7 @@
    "free": true,
    "start": "2026-10-13T13:15:00-07:00",
    "end": "2026-10-13T13:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the front desk starting at 1:00pm. Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/13/storytime-babies-0"
   },
   {
@@ -1571,7 +2061,7 @@
    "free": true,
    "start": "2026-10-13T13:15:00-07:00",
    "end": "2026-10-13T13:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/13/storytime-babies-2"
   },
   {
@@ -1589,7 +2079,8 @@
    "start": "2026-10-13T13:30:00-07:00",
    "end": "2026-10-13T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "id": "msw-excelsior-2026-10-13",
@@ -1624,7 +2115,8 @@
    "start": "2026-10-13T15:00:00-07:00",
    "end": "2026-10-13T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "cas-lagoon-senses-2026-10-13-1530",
@@ -1641,7 +2133,26 @@
    "start": "2026-10-13T15:30:00-07:00",
    "end": "2026-10-13T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
+  },
+  {
+   "id": "lk-dance-creative-movement-4-kids-2026-10-13",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Dance & Creative Movement 4 Kids",
+   "area": "The Crossing at East Cut",
+   "lat": 37.7869,
+   "lng": -122.3926,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T16:00:00-07:00",
+   "end": "2026-10-13T16:30:00-07:00",
+   "note": "Free kids' dance with JAMaROO: fly like a butterfly, hop like a bunny. Every Tuesday, 4 to 4:30. (Picked by Local Kiddo SF.)",
+   "url": "https://www.theeastcut.org/event/dance-creative-movement-4-kids-7-2-3-2-2-2-2-2-13-2-9-2-2-2-2-2-11/",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-13-activity-dog-reading-circle",
@@ -1657,8 +2168,26 @@
    "free": true,
    "start": "2026-10-13T16:00:00-07:00",
    "end": "2026-10-13T17:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Practice reading with peers or relax with a certified dog from San Francisco Society for the Prevention of Cruelty to Animals (SF SPCA) on a monthly basis. For ages 5–12. Youth under the age of 8 must be accompanied by an adult.",
    "url": "https://sfpl.org/events/2026/10/13/activity-dog-reading-circle"
+  },
+  {
+   "id": "lk-music-magic-tuesday-all-ages-w-jamaroo-kids-2026-10-13",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Music Magic Tuesday (All Ages) w/ JAMaROO Kids",
+   "area": "Natural Resources, 1051 Valencia St",
+   "lat": 37.7561,
+   "lng": -122.421,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T16:00:00-07:00",
+   "end": "2026-10-13T16:45:00-07:00",
+   "note": "A drop-in music class with JAMaROO for babies to age 5 and their grown-ups. (Picked by Local Kiddo SF.)",
+   "url": "https://www.naturalresources-sf.com/products/music-magic-tuesday-all-ages-in-person?start=2026-10-01T00:00&select=2026-10-13T16:00",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-13-social-family-board-game-and-lego-night",
@@ -1674,8 +2203,78 @@
    "free": true,
    "start": "2026-10-13T18:00:00-07:00",
    "end": "2026-10-13T19:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Enjoy a board game with friends, family and neighbors or build with LEGOs. For children and their caregivers.",
    "url": "https://sfpl.org/events/2026/10/13/social-family-board-game-and-lego-night"
+  },
+  {
+   "id": "lk-circus-by-the-bay-2026-10-13",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Circus by The Bay",
+   "area": "Cowell Theater, Fort Mason",
+   "lat": 37.8065,
+   "lng": -122.431,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T19:00:00-07:00",
+   "end": "2026-10-13T20:30:00-07:00",
+   "note": "An evening of circus performances and a panel conversation. (Picked by Local Kiddo SF.)",
+   "url": "https://www.eventbrite.com/e/circus-by-the-bay-tickets-1999623076450?aff=ebdssbdestsearch"
+  },
+  {
+   "id": "lk-october-first-steps-2026-10-14",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "October First Steps",
+   "area": "Family Connections Center Portola, 2565 San Bruno Ave",
+   "lat": 37.7291,
+   "lng": -122.4048,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-14T09:00:00-07:00",
+   "end": "2026-10-14T10:30:00-07:00",
+   "note": "A free playgroup for kids 12 to 30 months with a parent or caregiver; register on Eventbrite. (Picked by Local Kiddo SF.)",
+   "url": "https://www.eventbrite.com/e/october-first-steps-portola-tickets-2002228313785",
+   "recurring": true
+  },
+  {
+   "id": "lk-sf-resident-free-day-2026-10-14",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "SF Resident Free Day",
+   "area": "San Francisco Zoo",
+   "lat": 37.733,
+   "lng": -122.503,
+   "indoor": false,
+   "exp": 0.85,
+   "off": -7,
+   "free": null,
+   "start": "2026-10-14T10:00:00-07:00",
+   "end": "2026-10-14T16:00:00-07:00",
+   "note": "Free zoo admission for San Francisco residents; check the zoo's site for what proof to bring. (Picked by Local Kiddo SF.)",
+   "url": "https://www.sfzoo.org/calendar/sf-resident-free-day-5/"
+  },
+  {
+   "id": "lk-whimsy-wednesday-2026-10-14",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Whimsy Wednesday",
+   "area": "Salesforce Park kids' play area, 425 Mission St",
+   "lat": 37.7896,
+   "lng": -122.3964,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-14T10:00:00-07:00",
+   "end": "2026-10-14T11:30:00-07:00",
+   "note": "Fairy-themed outdoor activities from Happily Ever Laughter, aimed at ages 5 to 9 and their families. Free, every Wednesday. (Picked by Local Kiddo SF.)",
+   "url": "https://www.theeastcut.org/event/whimsy-wednesday-6/",
+   "recurring": true
   },
   {
    "id": "cas-sensory-storytime-2026-10-14-1015",
@@ -1692,7 +2291,8 @@
    "start": "2026-10-14T10:15:00-07:00",
    "end": "2026-10-14T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-14-1030",
@@ -1709,7 +2309,8 @@
    "start": "2026-10-14T10:30:00-07:00",
    "end": "2026-10-14T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-14-storytime-babies",
@@ -1725,7 +2326,7 @@
    "free": true,
    "start": "2026-10-14T10:30:00-07:00",
    "end": "2026-10-14T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/14/storytime-babies"
   },
   {
@@ -1742,7 +2343,7 @@
    "free": true,
    "start": "2026-10-14T10:30:00-07:00",
    "end": "2026-10-14T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/14/storytime-families"
   },
   {
@@ -1759,7 +2360,7 @@
    "free": true,
    "start": "2026-10-14T10:30:00-07:00",
    "end": "2026-10-14T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/14/storytime-toddlers"
   },
   {
@@ -1777,7 +2378,43 @@
    "start": "2026-10-14T11:00:00-07:00",
    "end": "2026-10-14T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
+  },
+  {
+   "id": "lk-free-day-at-ybca-2026-10-14",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Free Day at YBCA",
+   "area": "Yerba Buena Center for the Arts, 701 Mission St",
+   "lat": 37.7853,
+   "lng": -122.4021,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-14T11:00:00-07:00",
+   "end": "2026-10-14T20:00:00-07:00",
+   "note": "Free admission to YBCA's galleries. (Picked by Local Kiddo SF.)",
+   "url": "https://ybca.org/visit/"
+  },
+  {
+   "id": "lk-october-pop-n-play-2026-10-14",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "October Pop N Play",
+   "area": "Family Connections Center Portola, 2565 San Bruno Ave",
+   "lat": 37.7291,
+   "lng": -122.4048,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-14T11:00:00-07:00",
+   "end": "2026-10-14T12:30:00-07:00",
+   "note": "A free playgroup for kids 30 to 42 months with a parent or caregiver; register on Eventbrite. (Picked by Local Kiddo SF.)",
+   "url": "https://www.eventbrite.com/e/october-pop-n-play-portola-tickets-2002228455208",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-14-storytime-babies-2",
@@ -1793,7 +2430,7 @@
    "free": true,
    "start": "2026-10-14T11:00:00-07:00",
    "end": "2026-10-14T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/14/storytime-babies-2"
   },
   {
@@ -1810,7 +2447,7 @@
    "free": true,
    "start": "2026-10-14T11:00:00-07:00",
    "end": "2026-10-14T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Preschoolers Books, songs, fingerplays and more for ages 3–5. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/14/storytime-preschoolers"
   },
   {
@@ -1827,7 +2464,7 @@
    "free": true,
    "start": "2026-10-14T11:00:00-07:00",
    "end": "2026-10-14T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Playtime to follow storytime. Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/14/storytime-toddlers-0"
   },
   {
@@ -1844,7 +2481,7 @@
    "free": true,
    "start": "2026-10-14T11:00:00-07:00",
    "end": "2026-10-14T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Some blankets and chairs provided. In case of extreme weather, storytime will be held inside. Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/14/storytime-toddlers-1"
   },
   {
@@ -1862,7 +2499,8 @@
    "start": "2026-10-14T11:30:00-07:00",
    "end": "2026-10-14T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-14-storytime-babies-0",
@@ -1878,8 +2516,28 @@
    "free": true,
    "start": "2026-10-14T11:30:00-07:00",
    "end": "2026-10-14T12:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/14/storytime-babies-0"
+  },
+  {
+   "id": "ybg-rhythm-motion-2026-10-14",
+   "source": "manual",
+   "kind": "event",
+   "name": "Dance Outdoors with Rhythm & Motion",
+   "area": "Yerba Buena Gardens",
+   "lat": 37.7848,
+   "lng": -122.4022,
+   "indoor": false,
+   "exp": 0.35,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-14T12:00:00-07:00",
+   "end": "2026-10-14T13:00:00-07:00",
+   "note": "A free, upbeat outdoor dance workout open to everyone at Yerba Buena Gardens.",
+   "url": "https://ybgfestival.org/event/dance-outdoors-with-rhythm-motion-101426/",
+   "tags": [
+    "dance"
+   ]
   },
   {
    "id": "sfpl-2026-10-14-storytime-babies-1",
@@ -1895,7 +2553,7 @@
    "free": true,
    "start": "2026-10-14T12:00:00-07:00",
    "end": "2026-10-14T12:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the door to the playground starting at 12:00pm. Playtime to follow storytime. Storytime for Babies Songs, rhymes and books for infants and their caregivers.",
    "url": "https://sfpl.org/events/2026/10/14/storytime-babies-1"
   },
   {
@@ -1913,7 +2571,8 @@
    "start": "2026-10-14T13:30:00-07:00",
    "end": "2026-10-14T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-14-storytime-families-0",
@@ -1929,7 +2588,7 @@
    "free": true,
    "start": "2026-10-14T14:00:00-07:00",
    "end": "2026-10-14T14:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/14/storytime-families-0"
   },
   {
@@ -1947,7 +2606,8 @@
    "start": "2026-10-14T15:00:00-07:00",
    "end": "2026-10-14T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "cas-lagoon-senses-2026-10-14-1530",
@@ -1964,7 +2624,82 @@
    "start": "2026-10-14T15:30:00-07:00",
    "end": "2026-10-14T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
+  },
+  {
+   "id": "sfpl-2026-10-14-activity-ballet-book-club",
+   "source": "manual",
+   "kind": "event",
+   "name": "Ballet Book Club",
+   "area": "North Beach Branch Library",
+   "lat": 37.803,
+   "lng": -122.414,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-14T16:00:00-07:00",
+   "end": "2026-10-14T17:00:00-07:00",
+   "note": "Explore ballet and dances from around the world through picture books, a beginner-friendly ballet class, creative movement, and music led by experienced instructors from Tutu School San Francisco. For Ages 2–6. In-person registration and a signed waiver are required. Space is limited.",
+   "url": "https://sfpl.org/events/2026/10/14/activity-ballet-book-club",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "id": "sfpl-2026-10-14-workshop-cajon-drum-circle-cunamacue",
+   "source": "manual",
+   "kind": "event",
+   "name": "Cajón Drum Circle with Cunamacué",
+   "area": "Potrero Branch Library",
+   "lat": 37.7598,
+   "lng": -122.3994,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-14T16:00:00-07:00",
+   "end": "2026-10-14T16:45:00-07:00",
+   "note": "Learn a brief history of the Afro-Peruvian Cajón (wooden box drum) and learn to play Afro-Peruvian and Latin rhythms on the instrument. For ages 5 and older. Connect: Cunamacué – Website ¡VIVA!: Latinx Interest Connect to engaging discussions and performances related to the Latinx community. ¡VIVA!",
+   "url": "https://sfpl.org/events/2026/10/14/workshop-cajon-drum-circle-cunamacue",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "lk-market-to-bandshell-2026-10-14",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Market to Bandshell",
+   "area": "Golden Gate Park Bandshell (Music Concourse)",
+   "lat": 37.7704,
+   "lng": -122.4664,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-14T16:00:00-07:00",
+   "end": "2026-10-14T19:00:00-07:00",
+   "note": "A free midweek concert with three local acts starting at 4 pm. Bring snacks. (Picked by Local Kiddo SF.)",
+   "url": "https://illuminate.org/event/midweek-melodies-october-14/"
+  },
+  {
+   "id": "lk-free-community-craft-night-2026-10-14",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Free Community Craft Night",
+   "area": "Natural Resources, 1051 Valencia St",
+   "lat": 37.7561,
+   "lng": -122.421,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-14T17:30:00-07:00",
+   "end": "2026-10-14T19:00:00-07:00",
+   "note": "Bring your own craft project and make things together. Free. (Picked by Local Kiddo SF.)",
+   "url": "https://www.naturalresources-sf.com/products/community-craft-night?start=2026-10-01T00:00&select=2026-10-14T17:30"
   },
   {
    "id": "sfpl-2026-10-14-activity-halloween-costume-swap",
@@ -1980,8 +2715,25 @@
    "free": true,
    "start": "2026-10-14T18:00:00-07:00",
    "end": "2026-10-14T20:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Find a new Halloween look or bring in a clean, gently used costume to swap. Props and accessories are also welcome. For children and their caregivers.",
    "url": "https://sfpl.org/events/2026/10/14/activity-halloween-costume-swap"
+  },
+  {
+   "id": "lk-ni-a-memita-s-kitchen-table-2026-10-14",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Niña Memita's Kitchen Table",
+   "area": "Excelsior",
+   "lat": 37.7217943,
+   "lng": -122.4353815,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-14T18:00:00-07:00",
+   "end": null,
+   "note": "A community gathering in the Excelsior; details are on the organizer's Instagram post. (Picked by Local Kiddo SF.)",
+   "url": "https://www.instagram.com/p/Ddt7OqOGmmZ/?img_index=1"
   },
   {
    "id": "sfpl-2026-10-14-storytime-pajama-storytime",
@@ -1997,8 +2749,80 @@
    "free": true,
    "start": "2026-10-14T19:00:00-07:00",
    "end": "2026-10-14T19:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Snuggle up and enjoy stories, songs, rhymes, movement and lots of fun. Pajamas and stuffed animals optional but highly encouraged. For children and their families. Storytime for Families Books, songs, rhymes and fun for children of all ages.",
    "url": "https://sfpl.org/events/2026/10/14/storytime-pajama-storytime"
+  },
+  {
+   "id": "lk-georgian-national-ballet-2026-10-14",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Georgian National Ballet",
+   "area": "Palace of Fine Arts Theatre, 3301 Lyon St",
+   "lat": 37.8029,
+   "lng": -122.4484,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-14T20:00:00-07:00",
+   "end": null,
+   "note": "The touring Georgian national dance company. Evening show; tickets required. (Picked by Local Kiddo SF.)",
+   "url": "https://gotickets.com/tickets/1424913/georgian-national-ballet-tickets/palace-of-fine-arts-theatre-san-francisco-ca-10-14-2026?quantity=2&orderBy=Price%3A+Low+to+High",
+   "bookAhead": true
+  },
+  {
+   "id": "lk-october-first-steps-2026-10-15",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "October First Steps",
+   "area": "Family Connections Center Excelsior, 5016 Mission St",
+   "lat": 37.721,
+   "lng": -122.437,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T09:00:00-07:00",
+   "end": "2026-10-15T10:30:00-07:00",
+   "note": "A free playgroup for kids 12 to 30 months with a parent or caregiver; register on Eventbrite. (Picked by Local Kiddo SF.)",
+   "url": "https://www.eventbrite.com/e/october-first-steps-excelsior-tickets-2002227542478?aff=erelpanelorg",
+   "recurring": true
+  },
+  {
+   "id": "lk-developmental-playgroup-for-toddlers-13-24-months-2026-10-15",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Developmental Playgroup for Toddlers (13-24 months)",
+   "area": "Outer Village, Inner Sunset",
+   "lat": 37.76145,
+   "lng": -122.4676432,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T09:30:00-07:00",
+   "end": "2026-10-15T10:15:00-07:00",
+   "note": "A gentle movement class for toddlers 13 to 24 months with a parent or caregiver. (Picked by Local Kiddo SF.)",
+   "url": "https://www.hisawyer.com/outer-village/schedules/activity-set/1953097?day=2026-09-17&view=cal&source=all-activities",
+   "recurring": true
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-thu-2026-10-15",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-10-15T10:00:00-07:00",
+   "end": "2026-10-15T11:30:00-07:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
   },
   {
    "id": "sfpl-2026-10-15-storytime-families",
@@ -2014,7 +2838,7 @@
    "free": true,
    "start": "2026-10-15T10:00:00-07:00",
    "end": "2026-10-15T10:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the front desk starting at 10:00am. Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/15/storytime-families"
   },
   {
@@ -2031,8 +2855,26 @@
    "free": true,
    "start": "2026-10-15T10:00:00-07:00",
    "end": "2026-10-15T10:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the door to the playground starting at10:00am. Playtime to follow storytime. Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers.",
    "url": "https://sfpl.org/events/2026/10/15/storytime-toddlers"
+  },
+  {
+   "id": "lk-toddler-thursday-2026-10-15",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Toddler Thursday",
+   "area": "Salesforce Park, 425 Mission St",
+   "lat": 37.7896,
+   "lng": -122.3964,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T10:00:00-07:00",
+   "end": "2026-10-15T10:45:00-07:00",
+   "note": "Free outdoor music for ages 1 to 4 with JAMaROO Kids, every Thursday. (Picked by Local Kiddo SF.)",
+   "url": "https://www.theeastcut.org/event/toddler-thursday-3-2-2-2-2-2-2-2-2-2-9-2-24/",
+   "recurring": true
   },
   {
    "id": "cas-sensory-storytime-2026-10-15-1015",
@@ -2049,7 +2891,8 @@
    "start": "2026-10-15T10:15:00-07:00",
    "end": "2026-10-15T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-15-storytime-babies-0",
@@ -2065,7 +2908,7 @@
    "free": true,
    "start": "2026-10-15T10:15:00-07:00",
    "end": "2026-10-15T10:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/15/storytime-babies-0"
   },
   {
@@ -2082,7 +2925,7 @@
    "free": true,
    "start": "2026-10-15T10:15:00-07:00",
    "end": "2026-10-15T10:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the front door starting at 10:00am. Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/15/storytime-families-1"
   },
   {
@@ -2099,7 +2942,7 @@
    "free": true,
    "start": "2026-10-15T10:15:00-07:00",
    "end": "2026-10-15T10:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Playtime to follow storytime. Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/15/storytime-toddlers-1"
   },
   {
@@ -2117,23 +2960,24 @@
    "start": "2026-10-15T10:30:00-07:00",
    "end": "2026-10-15T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-15-storytime-babies-2",
    "kind": "event",
    "source": "sfpl",
    "name": "Storytime for Babies",
-   "area": "Mission Branch Library",
-   "lat": 37.7525,
-   "lng": -122.4205,
+   "area": "Mission Bay Branch Library",
+   "lat": 37.7716,
+   "lng": -122.3912,
    "indoor": true,
    "exp": 0,
    "off": 0,
    "free": true,
    "start": "2026-10-15T10:30:00-07:00",
    "end": "2026-10-15T11:15:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the reference desk starting at 10:00am. Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/15/storytime-babies-2"
   },
   {
@@ -2150,7 +2994,7 @@
    "free": true,
    "start": "2026-10-15T10:30:00-07:00",
    "end": "2026-10-15T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the front desk starting at 10:00am. Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/15/storytime-families-0"
   },
   {
@@ -2167,7 +3011,7 @@
    "free": true,
    "start": "2026-10-15T10:30:00-07:00",
    "end": "2026-10-15T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/15/storytime-families-3"
   },
   {
@@ -2184,7 +3028,7 @@
    "free": true,
    "start": "2026-10-15T10:30:00-07:00",
    "end": "2026-10-15T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Enjoy songs, rhymes, books and stories in Spanish and English. For children of all ages and their families. Playtime to follow storytime. Disfruten de canciones, rimas, libros e historias en español e inglés. Para niños de todas las edades y sus familias. Tiempo de juego después de historia.",
    "url": "https://sfpl.org/events/2026/10/15/storytime-families-bilingual-englishespanol"
   },
   {
@@ -2201,7 +3045,7 @@
    "free": true,
    "start": "2026-10-15T10:30:00-07:00",
    "end": "2026-10-15T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Enjoy songs, rhymes, books and stories in Cantonese and English. For children of all ages and their families. 家庭雙語(粵語和英語)故事時間。享受歌曲、童謠、書籍和故事。適合所有年齡層的兒童及其家庭。 Storytime for Families Books, songs, rhymes and fun for children of all ages.",
    "url": "https://sfpl.org/events/2026/10/15/storytime-families-bilingual-englishyueyukecheng-cantonese"
   },
   {
@@ -2218,7 +3062,7 @@
    "free": true,
    "start": "2026-10-15T10:30:00-07:00",
    "end": "2026-10-15T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Preschoolers Books, songs, fingerplays and more for ages 3–5. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/15/storytime-preschoolers"
   },
   {
@@ -2235,7 +3079,7 @@
    "free": true,
    "start": "2026-10-15T11:00:00-07:00",
    "end": "2026-10-15T11:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Natalia of Aguacate Music Kids presents an interactive, fun and educational experience where kids and their families sing, dance, play instruments and explore healthy habits together.",
    "url": "https://sfpl.org/events/2026/10/15/performance-aguacate-music-kids"
   },
   {
@@ -2253,7 +3097,8 @@
    "start": "2026-10-15T11:00:00-07:00",
    "end": "2026-10-15T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-15-storytime-babies",
@@ -2269,7 +3114,7 @@
    "free": true,
    "start": "2026-10-15T11:00:00-07:00",
    "end": "2026-10-15T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/15/storytime-babies"
   },
   {
@@ -2286,7 +3131,7 @@
    "free": true,
    "start": "2026-10-15T11:00:00-07:00",
    "end": "2026-10-15T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the reference desk starting at 10:30am. Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/15/storytime-families-2"
   },
   {
@@ -2303,7 +3148,7 @@
    "free": true,
    "start": "2026-10-15T11:00:00-07:00",
    "end": "2026-10-15T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Preschoolers Books, songs, fingerplays and more for ages 3–5. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/15/storytime-preschoolers-0"
   },
   {
@@ -2320,7 +3165,7 @@
    "free": true,
    "start": "2026-10-15T11:00:00-07:00",
    "end": "2026-10-15T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Playtime to follow storytime. Storytime for Toddlers Books, songs, movement and more. For toddlers 16 months through age 2 and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/15/storytime-toddlers-0"
   },
   {
@@ -2338,7 +3183,8 @@
    "start": "2026-10-15T11:30:00-07:00",
    "end": "2026-10-15T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-15-storytime-babies-1",
@@ -2354,8 +3200,26 @@
    "free": true,
    "start": "2026-10-15T11:30:00-07:00",
    "end": "2026-10-15T12:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/15/storytime-babies-1"
+  },
+  {
+   "id": "lk-civic-center-soundtrack-2026-10-15",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Civic Center Soundtrack",
+   "area": "Fulton Plaza, Civic Center",
+   "lat": 37.7798,
+   "lng": -122.4165,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T12:00:00-07:00",
+   "end": "2026-10-15T15:00:00-07:00",
+   "note": "Free lunchtime live music between the Main Library and the Asian Art Museum. (Picked by Local Kiddo SF.)",
+   "url": "https://illuminate.org/event/civic-center-soundtrack-october-15/",
+   "recurring": true
   },
   {
    "id": "cas-coral-reef-dive-2026-10-15-1330",
@@ -2372,7 +3236,8 @@
    "start": "2026-10-15T13:30:00-07:00",
    "end": "2026-10-15T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-15-1500",
@@ -2389,7 +3254,8 @@
    "start": "2026-10-15T15:00:00-07:00",
    "end": "2026-10-15T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-15-performance-guitar-sing-along-grandpa-alan",
@@ -2405,7 +3271,7 @@
    "free": true,
    "start": "2026-10-15T15:30:00-07:00",
    "end": "2026-10-15T16:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Enjoy childhood songs with Grandpa Alan as he plays the guitar and sings. For children and their caregivers. Dance & Music Enjoy performances, talks and workshops that celebrate movement and the musical arts.",
    "url": "https://sfpl.org/events/2026/10/15/performance-guitar-sing-along-grandpa-alan"
   },
   {
@@ -2423,7 +3289,8 @@
    "start": "2026-10-15T15:30:00-07:00",
    "end": "2026-10-15T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-15-activity-halloween-costume-swap",
@@ -2439,8 +3306,95 @@
    "free": true,
    "start": "2026-10-15T16:00:00-07:00",
    "end": "2026-10-15T17:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Find a new Halloween look or bring in a clean, gently-used costume to swap. Props and accessories also welcome. For children and their caregivers.",
    "url": "https://sfpl.org/events/2026/10/15/activity-halloween-costume-swap"
+  },
+  {
+   "id": "lk-the-crossing-5th-anniversary-celebration-2026-10-15",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "The Crossing 5th Anniversary Celebration",
+   "area": "The Crossing at East Cut",
+   "lat": 37.7869,
+   "lng": -122.3926,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T16:00:00-07:00",
+   "end": "2026-10-15T19:00:00-07:00",
+   "note": "A free party for The Crossing's fifth birthday and The East Cut's tenth. (Picked by Local Kiddo SF.)",
+   "url": "https://www.theeastcut.org/event/the-crossing-5th-anniversary-celebration/"
+  },
+  {
+   "id": "lk-crafternoons-2026-10-15",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Crafternoons",
+   "area": "Union Square Plaza",
+   "lat": 37.788,
+   "lng": -122.4075,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T16:30:00-07:00",
+   "end": "2026-10-15T18:30:00-07:00",
+   "note": "Free afternoon crafts in the plaza, part of Union Square's daily park programs. (Picked by Local Kiddo SF.)",
+   "url": "https://visitunionsquaresf.com/park-programs",
+   "recurring": true
+  },
+  {
+   "id": "lk-trick-or-treat-to-the-beat-2026-10-15",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Trick or Treat to the Beat",
+   "area": "Mission",
+   "lat": 37.75993,
+   "lng": -122.4191376,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T17:00:00-07:00",
+   "end": "2026-10-15T21:00:00-07:00",
+   "note": "A Halloween dance and trick-or-treat event in the Mission; details are on the organizer's Instagram post. (Picked by Local Kiddo SF.)",
+   "url": "https://www.instagram.com/p/Dd-Lkx3BehC/"
+  },
+  {
+   "id": "lk-party-with-claire-bobrow-to-celebrate-her-new-chil-2026-10-15",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Party Pony book launch with Claire Bobrow",
+   "area": "Bookshop West Portal, 80 West Portal Ave",
+   "lat": 37.7406,
+   "lng": -122.466,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T19:00:00-07:00",
+   "end": "2026-10-15T20:00:00-07:00",
+   "note": "A launch party for local author Claire Bobrow's new picture book, Party Pony. (Picked by Local Kiddo SF.)",
+   "url": "https://www.eventbrite.com/e/party-with-claire-bobrow-to-celebrate-her-new-childrens-book-party-pony-tickets-1993971005955?aff=ebdssbdestsearch"
+  },
+  {
+   "id": "lk-georgian-national-ballet-2026-10-15",
+   "kind": "event",
+   "source": "Local Kiddo SF",
+   "name": "Georgian National Ballet",
+   "area": "Palace of Fine Arts Theatre, 3301 Lyon St",
+   "lat": 37.8029,
+   "lng": -122.4484,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T20:00:00-07:00",
+   "end": null,
+   "note": "The touring Georgian national dance company. Evening show; tickets required. (Picked by Local Kiddo SF.)",
+   "url": "https://gotickets.com/tickets/1836257/georgian-national-ballet-sukhishvili-tickets/palace-of-fine-arts-theatre-san-francisco-ca-10-15-2026?quantity=2&orderBy=Price%3A+Low+to+High",
+   "bookAhead": true
   },
   {
    "id": "cas-sensory-storytime-2026-10-16-1015",
@@ -2457,7 +3411,8 @@
    "start": "2026-10-16T10:15:00-07:00",
    "end": "2026-10-16T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-16-1030",
@@ -2474,7 +3429,8 @@
    "start": "2026-10-16T10:30:00-07:00",
    "end": "2026-10-16T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "id": "cas-childrens-puppet-theater-2026-10-16-1100",
@@ -2491,7 +3447,8 @@
    "start": "2026-10-16T11:00:00-07:00",
    "end": "2026-10-16T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
   },
   {
    "id": "cas-coral-reef-dive-2026-10-16-1130",
@@ -2508,7 +3465,8 @@
    "start": "2026-10-16T11:30:00-07:00",
    "end": "2026-10-16T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-16-storytime-families",
@@ -2524,7 +3482,7 @@
    "free": true,
    "start": "2026-10-16T13:15:00-07:00",
    "end": "2026-10-16T13:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the side gate entrance starting at 1:00pm. Playtime to follow storytime. Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime .",
    "url": "https://sfpl.org/events/2026/10/16/storytime-families"
   },
   {
@@ -2542,7 +3500,8 @@
    "start": "2026-10-16T13:30:00-07:00",
    "end": "2026-10-16T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-16-1500",
@@ -2559,7 +3518,8 @@
    "start": "2026-10-16T15:00:00-07:00",
    "end": "2026-10-16T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-16-storytime-preschoolers",
@@ -2575,7 +3535,7 @@
    "free": true,
    "start": "2026-10-16T15:00:00-07:00",
    "end": "2026-10-16T15:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Preschoolers Books, songs, fingerplays and more for ages 3–5. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/16/storytime-preschoolers"
   },
   {
@@ -2593,7 +3553,25 @@
    "start": "2026-10-16T15:30:00-07:00",
    "end": "2026-10-16T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
+  },
+  {
+   "id": "omca-12459-2026-10-16",
+   "kind": "event",
+   "source": "Oakland Museum of California",
+   "name": "Friday Nights at OMCA with MacArthur Maze | 60th Anniversary of the Black Panther Party",
+   "area": "OMCA campus",
+   "lat": 37.7987,
+   "lng": -122.264,
+   "indoor": false,
+   "exp": 0.3,
+   "off": 5,
+   "free": true,
+   "start": "2026-10-16T17:00:00-07:00",
+   "end": "2026-10-16T21:00:00-07:00",
+   "note": "Free Friday evening at the Oakland Museum: live music, food trucks, and the gardens. This Friday Night at OMCA, Colombian-American singer-songwriter CHIKA DI brings her vibrant sound to the Garden Stage wi",
+   "url": "https://museumca.org/event/friday-nights-at-omca-with-macarthur-maze-60th-anniversary-of-the-black-panther-party/"
   },
   {
    "id": "msw-excelsior-2026-10-17",
@@ -2627,7 +3605,7 @@
    "free": true,
    "start": "2026-10-17T10:00:00-07:00",
    "end": "2026-10-17T10:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Tickets available on a first come basis at the door to the playground starting at 10:00am. Playtime to follow storytime. Storytime for Families Books, songs, rhymes and fun for children of all ages.",
    "url": "https://sfpl.org/events/2026/10/17/storytime-families"
   },
   {
@@ -2645,7 +3623,30 @@
    "start": "2026-10-17T10:15:00-07:00",
    "end": "2026-10-17T10:45:00-07:00",
    "note": "An interactive storytime about animal senses. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/sensory-storytime"
+   "url": "https://www.calacademy.org/events/programs/sensory-storytime",
+   "recurring": true
+  },
+  {
+   "id": "play-dragons-love-tacos-2026-10-17-10",
+   "source": "manual",
+   "kind": "event",
+   "name": "Dragons Love Tacos, the Musical (PLAY Theatre)",
+   "area": "Creativity Theater, Children's Creativity Museum, 221 4th St",
+   "lat": 37.7836,
+   "lng": -122.4022,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-17T10:30:00-07:00",
+   "end": "2026-10-17T11:30:00-07:00",
+   "note": "A musical of the picture book, with toe-tapping songs and a scene-stealing dog. Recommended for ages 3 and up; about an hour with a 10-minute intermission. $5 to $39; kids under 2 free. The run ends Oct 18.",
+   "url": "https://www.playtheatreco.org/dragons-love-tacos-the-musical",
+   "tags": [
+    "performance",
+    "music"
+   ],
+   "bookAhead": true
   },
   {
    "id": "cas-penguin-feeding-2026-10-17-1030",
@@ -2662,7 +3663,8 @@
    "start": "2026-10-17T10:30:00-07:00",
    "end": "2026-10-17T11:00:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-3",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-17-early-learning-saturday-morning-playtimes",
@@ -2678,7 +3680,7 @@
    "free": true,
    "start": "2026-10-17T10:30:00-07:00",
    "end": "2026-10-17T12:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Share toddler and preschool friendly toys and games with others. For ages 0–5.",
    "url": "https://sfpl.org/events/2026/10/17/early-learning-saturday-morning-playtimes"
   },
   {
@@ -2695,7 +3697,7 @@
    "free": true,
    "start": "2026-10-17T10:30:00-07:00",
    "end": "2026-10-17T11:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/17/storytime-babies-0"
   },
   {
@@ -2712,7 +3714,7 @@
    "free": true,
    "start": "2026-10-17T10:30:00-07:00",
    "end": "2026-10-17T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Playtime or craft activity to follow storytime. Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/17/storytime-families-0"
   },
   {
@@ -2729,7 +3731,7 @@
    "free": true,
    "start": "2026-10-17T10:30:00-07:00",
    "end": "2026-10-17T10:45:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . Read & Write Discover new titles, share inspiring works and participate in challenges and contests.",
    "url": "https://sfpl.org/events/2026/10/17/storytime-families-3"
   },
   {
@@ -2746,7 +3748,7 @@
    "free": true,
    "start": "2026-10-17T10:30:00-07:00",
    "end": "2026-10-17T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/17/storytime-families-4"
   },
   {
@@ -2763,7 +3765,7 @@
    "free": true,
    "start": "2026-10-17T10:30:00-07:00",
    "end": "2026-10-17T11:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Space limited. Playtime to follow storytime. Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/17/storytime-families-5"
   },
   {
@@ -2798,7 +3800,8 @@
    "start": "2026-10-17T11:00:00-07:00",
    "end": "2026-10-17T11:30:00-07:00",
    "note": "A kid-friendly puppet show in the East Garden. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0"
+   "url": "https://www.calacademy.org/events/programs/childrens-puppet-theater-arthropod-opera-0",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-17-celebration-open-house",
@@ -2814,7 +3817,7 @@
    "free": true,
    "start": "2026-10-17T11:00:00-07:00",
    "end": "2026-10-17T16:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Celebrate everything the San Francisco Public Library has to offer at the annual Marina Branch Open House. Highlights: Live music with Bay Beats artist Megan Schoenbohm; Lively Music from SF Opera Brass Quintet; Smoothie Bike with SF Bike Safe Routes to Schools; Fire Truck Visit by SF Fire Department; Kid and Pet Costume Swap; Bingo in the Courtyard.",
    "url": "https://sfpl.org/events/2026/10/17/celebration-open-house"
   },
   {
@@ -2831,7 +3834,7 @@
    "free": true,
    "start": "2026-10-17T11:00:00-07:00",
    "end": "2026-10-17T12:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Playtime to follow storytime. Storytime for Babies Songs, rhymes and books for infants and their caregivers. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/17/storytime-babies"
   },
   {
@@ -2849,7 +3852,8 @@
    "start": "2026-10-17T11:30:00-07:00",
    "end": "2026-10-17T12:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-4",
+   "recurring": true
   },
   {
    "id": "sfpl-2026-10-17-storytime-families-2",
@@ -2865,8 +3869,52 @@
    "free": true,
    "start": "2026-10-17T11:30:00-07:00",
    "end": "2026-10-17T12:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/17/storytime-families-2"
+  },
+  {
+   "id": "brava-block-party-2026-10-17",
+   "source": "manual",
+   "kind": "event",
+   "name": "Brava! Block Party",
+   "area": "24th St at Brava Theater",
+   "lat": 37.7527,
+   "lng": -122.4096,
+   "indoor": false,
+   "exp": 0.25,
+   "off": 1,
+   "free": true,
+   "start": "2026-10-17T12:00:00-07:00",
+   "end": null,
+   "note": "A free street party for Brava's 40th anniversary, with live performances, film screenings, and art activations on 24th Street. Check Brava's site for the full schedule.",
+   "url": "https://www.brava.org/",
+   "tags": [
+    "music",
+    "dance",
+    "performance"
+   ]
+  },
+  {
+   "id": "precita-mural-tour-2026-10-17",
+   "source": "manual",
+   "kind": "event",
+   "name": "Classic Mural Walk with Precita Eyes",
+   "area": "Precita Eyes Mural Arts Center, 2981 24th St",
+   "lat": 37.7526,
+   "lng": -122.4126,
+   "indoor": false,
+   "exp": 0.3,
+   "off": 1,
+   "free": false,
+   "start": "2026-10-17T13:30:00-07:00",
+   "end": "2026-10-17T15:00:00-07:00",
+   "note": "A walking tour of the Mission's murals with longtime Precita Eyes muralist Patricia Rose, about 1.5 hours. Book ahead on Precita Eyes' site.",
+   "tags": [
+    "art"
+   ],
+   "url": "https://www.precitaeyes.org/",
+   "bookAhead": true,
+   "recurring": true
   },
   {
    "id": "cas-coral-reef-dive-2026-10-17-1330",
@@ -2883,7 +3931,50 @@
    "start": "2026-10-17T13:30:00-07:00",
    "end": "2026-10-17T14:00:00-07:00",
    "note": "Watch a diver go into the living coral reef tank. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3"
+   "url": "https://www.calacademy.org/events/programs/coral-reef-dive-3",
+   "recurring": true
+  },
+  {
+   "id": "play-dragons-love-tacos-2026-10-17-14",
+   "source": "manual",
+   "kind": "event",
+   "name": "Dragons Love Tacos, the Musical (PLAY Theatre)",
+   "area": "Creativity Theater, Children's Creativity Museum, 221 4th St",
+   "lat": 37.7836,
+   "lng": -122.4022,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-17T14:00:00-07:00",
+   "end": "2026-10-17T15:00:00-07:00",
+   "note": "A musical of the picture book, with toe-tapping songs and a scene-stealing dog. Recommended for ages 3 and up; about an hour with a 10-minute intermission. $5 to $39; kids under 2 free. The run ends Oct 18.",
+   "url": "https://www.playtheatreco.org/dragons-love-tacos-the-musical",
+   "tags": [
+    "performance",
+    "music"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "ybg-joe-bataan-2026-10-17",
+   "source": "manual",
+   "kind": "event",
+   "name": "Joe Bataan at Yerba Buena Gardens",
+   "area": "Yerba Buena Gardens",
+   "lat": 37.7848,
+   "lng": -122.4022,
+   "indoor": false,
+   "exp": 0.35,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-17T14:00:00-07:00",
+   "end": "2026-10-17T16:30:00-07:00",
+   "note": "Free outdoor afternoon concert by the Latin soul and boogaloo legend. Bring a picnic for the lawn.",
+   "url": "https://ybgfestival.org/event/joe-bataan-2026/",
+   "tags": [
+    "music"
+   ]
   },
   {
    "id": "sfpl-2026-10-17-storytime-families-1",
@@ -2899,7 +3990,7 @@
    "free": true,
    "start": "2026-10-17T14:00:00-07:00",
    "end": "2026-10-17T14:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Storytime for Families Books, songs, rhymes and fun for children of all ages. Learn more about storytimes with SFPL, including current offerings, at sfpl.org/storytime . This program is sponsored by Friends of the San Francisco Public Library.",
    "url": "https://sfpl.org/events/2026/10/17/storytime-families-1"
   },
   {
@@ -2916,7 +4007,7 @@
    "free": true,
    "start": "2026-10-17T14:00:00-07:00",
    "end": "2026-10-17T15:30:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Enjoy lively read alouds of children’s picture books in Turkish followed by interactive activities including singing, movement games and crafts that reinforce key words and themes from the stories. Presented bilingually in Turkish and English by Ayça Yalçın.",
    "url": "https://sfpl.org/events/2026/10/17/activity-turkish-story-hour"
   },
   {
@@ -2933,7 +4024,7 @@
    "free": true,
    "start": "2026-10-17T15:00:00-07:00",
    "end": "2026-10-17T17:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Play, learn and explore with stamping, sensory activities, coloring and more. For ages 5 and younger and their caregivers.",
    "url": "https://sfpl.org/events/2026/10/17/early-learning-big-san-francisco-play-date"
   },
   {
@@ -2950,7 +4041,7 @@
    "free": true,
    "start": "2026-10-17T15:00:00-07:00",
    "end": "2026-10-17T16:00:00-07:00",
-   "note": "Free library program for young children and their grown-ups.",
+   "note": "Save the environment, save money and share with the community at our Halloween Costume Swap. Bring clean, gently used or new costumes sized for children. We will accept donations starting October 1st to October 17th.",
    "url": "https://sfpl.org/events/2026/10/17/social-halloween-costume-swap"
   },
   {
@@ -2968,7 +4059,8 @@
    "start": "2026-10-17T15:00:00-07:00",
    "end": "2026-10-17T15:30:00-07:00",
    "note": "Biologists feed the African penguin colony and talk about the birds. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7"
+   "url": "https://www.calacademy.org/events/programs/penguin-feeding-7",
+   "recurring": true
   },
   {
    "id": "cas-lagoon-senses-2026-10-17-1530",
@@ -2985,7 +4077,1993 @@
    "start": "2026-10-17T15:30:00-07:00",
    "end": "2026-10-17T16:00:00-07:00",
    "note": "See how rays find food at the Reef Lagoon. Included with admission.",
-   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0"
+   "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
+   "recurring": true
+  },
+  {
+   "id": "sfpl-2026-10-17-workshop-cajon-drum-circle-cunamacue",
+   "source": "manual",
+   "kind": "event",
+   "name": "Cajón Drum Circle with Cunamacué",
+   "area": "Main Library",
+   "lat": 37.779,
+   "lng": -122.4157,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-17T16:00:00-07:00",
+   "end": "2026-10-17T17:00:00-07:00",
+   "note": "Learn a brief history about the Afro-Peruvian Cajon (wooden box drum) and learn to play Afro-Peruvian and Latin rhythms on the Cajon. Connect: Cunamacué – Website Dance & Music Enjoy performances, talks and workshops that celebrate movement and the musical arts.",
+   "url": "https://sfpl.org/events/2026/10/17/workshop-cajon-drum-circle-cunamacue",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "sfmoma-family-studio-spiders-2026-10-18",
+   "kind": "event",
+   "source": "SFMOMA",
+   "name": "Family Studio: Spiders",
+   "area": "SFMOMA, 151 Third St",
+   "lat": 37.7857,
+   "lng": -122.4011,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-18T10:00:00-07:00",
+   "end": "2026-10-18T13:00:00-07:00",
+   "note": "Free drop-in art making led by SCRAP educators, plus a book raffle and space to play with blocks. No museum admission needed.",
+   "url": "https://www.sfmoma.org/event/family-studio-spiders/"
+  },
+  {
+   "id": "play-dragons-love-tacos-2026-10-18-10",
+   "source": "manual",
+   "kind": "event",
+   "name": "Dragons Love Tacos, the Musical (PLAY Theatre)",
+   "area": "Creativity Theater, Children's Creativity Museum, 221 4th St",
+   "lat": 37.7836,
+   "lng": -122.4022,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-18T10:30:00-07:00",
+   "end": "2026-10-18T11:30:00-07:00",
+   "note": "A musical of the picture book, with toe-tapping songs and a scene-stealing dog. Recommended for ages 3 and up; about an hour with a 10-minute intermission. $5 to $39; kids under 2 free. The run ends Oct 18.",
+   "url": "https://www.playtheatreco.org/dragons-love-tacos-the-musical",
+   "tags": [
+    "performance",
+    "music"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "sfmoma-spooky-art-spiders-and-more-2026-10-18",
+   "kind": "event",
+   "source": "SFMOMA",
+   "name": "Spooky Art: Spiders and More!",
+   "area": "SFMOMA, 151 Third St",
+   "lat": 37.7857,
+   "lng": -122.4011,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-18T12:00:00-07:00",
+   "end": null,
+   "note": "A family tour of SFMOMA's spookiest art, including Louise Bourgeois's spiders.",
+   "url": "https://www.sfmoma.org/event/spooky-art-spiders-and-more/"
+  },
+  {
+   "id": "play-dragons-love-tacos-2026-10-18-14",
+   "source": "manual",
+   "kind": "event",
+   "name": "Dragons Love Tacos, the Musical (PLAY Theatre)",
+   "area": "Creativity Theater, Children's Creativity Museum, 221 4th St",
+   "lat": 37.7836,
+   "lng": -122.4022,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-18T14:00:00-07:00",
+   "end": "2026-10-18T15:00:00-07:00",
+   "note": "A musical of the picture book, with toe-tapping songs and a scene-stealing dog. Recommended for ages 3 and up; about an hour with a 10-minute intermission. $5 to $39; kids under 2 free. The run ends Oct 18.",
+   "url": "https://www.playtheatreco.org/dragons-love-tacos-the-musical",
+   "tags": [
+    "performance",
+    "music"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "sfpl-2026-10-19-social-monday-fun-day-family-dance-party",
+   "source": "manual",
+   "kind": "event",
+   "name": "Monday Fun Day Family Dance Party",
+   "area": "Glen Park Branch Library",
+   "lat": 37.7337,
+   "lng": -122.4337,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-19T10:00:00-07:00",
+   "end": "2026-10-19T11:00:00-07:00",
+   "note": "Shake your sillies out to a family-friendly pop playlist with your family and friends. For children ages 5 and younger.",
+   "url": "https://sfpl.org/events/2026/10/19/social-monday-fun-day-family-dance-party",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-storytime-2026-10-20",
+   "name": "Drop-in Storytime at Bernal Heights Rec Center",
+   "start": "2026-10-20T10:30:00-07:00",
+   "end": "2026-10-20T11:00:00-07:00",
+   "note": "A free drop-in storytime in the rec center gym, run by SF Rec & Park. Through Dec 29.",
+   "tags": [
+    "stories"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-tue-2026-10-20",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-10-20T11:30:00-07:00",
+   "end": "2026-10-20T13:00:00-07:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "id": "sfpl-2026-10-20-performance-marielas-music-time",
+   "source": "manual",
+   "kind": "event",
+   "name": "Mariela's Music Time",
+   "area": "Presidio Branch Library",
+   "lat": 37.7881,
+   "lng": -122.4446,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-20T15:00:00-07:00",
+   "end": "2026-10-20T16:00:00-07:00",
+   "note": "See an exciting, energetic, and interactive bilingual performance in Spanish and English filled with rhythms and multicultural sounds, along with with the rich traditions of the Bay Area. For children 5 and younger and their families.",
+   "url": "https://sfpl.org/events/2026/10/20/performance-marielas-music-time",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "hcf-wine-tasting-2026-10-20",
+   "source": "manual",
+   "kind": "event",
+   "name": "Wine tasting with Christopher Renfro at Hawk Creek Farm",
+   "area": "Hawk Creek Farm, 203 Cotter St (Mission Terrace)",
+   "lat": 37.7303,
+   "lng": -122.4378,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-20T17:30:00-07:00",
+   "end": "2026-10-20T18:30:00-07:00",
+   "note": "A local winemaker's tasting with small bites and a chance to harvest vegetables and herbs to take home. Family-friendly: adults $50, children $10; space is limited.",
+   "url": "https://www.hawkcreekfarm.org/farm-experiences.html",
+   "bookAhead": true
+  },
+  {
+   "id": "ybg-rhythm-motion-2026-10-21",
+   "source": "manual",
+   "kind": "event",
+   "name": "Dance Outdoors with Rhythm & Motion",
+   "area": "Yerba Buena Gardens",
+   "lat": 37.7848,
+   "lng": -122.4022,
+   "indoor": false,
+   "exp": 0.35,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-21T12:00:00-07:00",
+   "end": "2026-10-21T13:00:00-07:00",
+   "note": "A free, upbeat outdoor dance workout open to everyone at Yerba Buena Gardens.",
+   "url": "https://ybgfestival.org/event/dance-outdoors-with-rhythm-motion-102126/",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-thu-2026-10-22",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-10-22T10:00:00-07:00",
+   "end": "2026-10-22T11:30:00-07:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "id": "hcf-beekeeping-2026-10-22",
+   "source": "manual",
+   "kind": "event",
+   "name": "All-ages backyard beekeeping workshop at Hawk Creek Farm",
+   "area": "Hawk Creek Farm, 203 Cotter St (Mission Terrace)",
+   "lat": 37.7303,
+   "lng": -122.4378,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-22T16:15:00-07:00",
+   "end": "2026-10-22T17:45:00-07:00",
+   "note": "Hands-on beekeeping with the farm's resident beekeepers. Kids under 9 need an adult taking part too; fee covers materials. Rescheduled if it rains; registration on the farm's site.",
+   "url": "https://www.hawkcreekfarm.org/farm-experiences.html",
+   "bookAhead": true
+  },
+  {
+   "id": "omca-12469-2026-10-23",
+   "kind": "event",
+   "source": "Oakland Museum of California",
+   "name": "Friday Nights at OMCA with DATANAGAN",
+   "area": "OMCA campus",
+   "lat": 37.7987,
+   "lng": -122.264,
+   "indoor": false,
+   "exp": 0.3,
+   "off": 5,
+   "free": true,
+   "start": "2026-10-23T17:00:00-07:00",
+   "end": "2026-10-23T21:00:00-07:00",
+   "note": "Free Friday evening at the Oakland Museum: live music, food trucks, and the gardens. Friday Nights at OMCA brings a fresh, genre-fluid sound to the Garden Stage as Bay Area singer-songwriter Victoria Datan",
+   "url": "https://museumca.org/event/friday-nights-at-omca-with-datanagan/"
+  },
+  {
+   "id": "sfpl-2026-10-24-activity-line-dancing",
+   "source": "manual",
+   "kind": "event",
+   "name": "Line Dancing (all ages)",
+   "area": "Potrero Branch Library",
+   "lat": 37.7598,
+   "lng": -122.3994,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-24T10:30:00-07:00",
+   "end": "2026-10-24T11:30:00-07:00",
+   "note": "Kickstart your autumn Saturday mornings with bi-weekly line dancing lessons. For Ages 9-99. Space limited. Seats available first come, first served. The one-hour lessons are October 24, November 7 and 21 and December 5 and 19.",
+   "url": "https://sfpl.org/events/2026/10/24/activity-line-dancing",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "id": "sfpl-2026-10-24-performance-rene-y-familia-0",
+   "source": "manual",
+   "kind": "event",
+   "name": "René y Familia",
+   "area": "Presidio Branch Library",
+   "lat": 37.7881,
+   "lng": -122.4446,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-24T11:00:00-07:00",
+   "end": "2026-10-24T11:45:00-07:00",
+   "note": "René y Familia is a three-generation strong family band that performs original bilingual children's music in Spanish and English as well as traditional and contemporary Latin music.",
+   "url": "https://sfpl.org/events/2026/10/24/performance-rene-y-familia-0",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "sfjazz-family-matinee-2026-10-24",
+   "source": "manual",
+   "kind": "event",
+   "name": "SFJAZZ Family Matinee: Marcus Shelby & Friends, Bebop Legends",
+   "area": "SFJAZZ Center, Miner Auditorium",
+   "lat": 37.7765,
+   "lng": -122.4216,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-24T11:00:00-07:00",
+   "end": null,
+   "note": "An all-ages jazz matinee on the moods of the bebop era. Tickets $10 to $20.",
+   "url": "https://www.sfjazz.org/tickets/productions/26-27/education/family-matinees/marcus-shelby-friends/",
+   "tags": [
+    "music"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "precita-mural-tour-2026-10-24",
+   "source": "manual",
+   "kind": "event",
+   "name": "Classic Mural Walk with Precita Eyes",
+   "area": "Precita Eyes Mural Arts Center, 2981 24th St",
+   "lat": 37.7526,
+   "lng": -122.4126,
+   "indoor": false,
+   "exp": 0.3,
+   "off": 1,
+   "free": false,
+   "start": "2026-10-24T13:30:00-07:00",
+   "end": "2026-10-24T15:00:00-07:00",
+   "note": "A walking tour of the Mission's murals with longtime Precita Eyes muralist Patricia Rose, about 1.5 hours. Book ahead on Precita Eyes' site.",
+   "tags": [
+    "art"
+   ],
+   "url": "https://www.precitaeyes.org/",
+   "bookAhead": true,
+   "recurring": true
+  },
+  {
+   "id": "ybg-afro-filipino-jazz-2026-10-24",
+   "source": "manual",
+   "kind": "event",
+   "name": "Afro-Filipino Jazz Project at Yerba Buena Gardens",
+   "area": "Yerba Buena Gardens",
+   "lat": 37.7848,
+   "lng": -122.4022,
+   "indoor": false,
+   "exp": 0.35,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-24T14:00:00-07:00",
+   "end": "2026-10-24T15:30:00-07:00",
+   "note": "Free outdoor jazz on the lawn.",
+   "url": "https://ybgfestival.org/event/afro-filipino-jazz-project/",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "sfs-music-for-families-2026-10-24",
+   "source": "manual",
+   "kind": "event",
+   "name": "SF Symphony: Music for Families",
+   "area": "Davies Symphony Hall",
+   "lat": 37.7777,
+   "lng": -122.4208,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-24T14:00:00-07:00",
+   "end": null,
+   "note": "A classical concert designed for families, recommended for ages 5 to 12. Kids' tickets are half off, and past concerts have had an instrument petting zoo in the lobby beforehand.",
+   "url": "https://www.sfsymphony.org/Subscribe/Series/Music-for-Families",
+   "tags": [
+    "music"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "sfpl-2026-10-24-performance-rene-y-familia",
+   "source": "manual",
+   "kind": "event",
+   "name": "René y Familia",
+   "area": "Main Library",
+   "lat": 37.779,
+   "lng": -122.4157,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-24T15:00:00-07:00",
+   "end": "2026-10-24T15:45:00-07:00",
+   "note": "René y Familia is a three-generation strong family band that performs original bilingual children's music in Spanish and English as well as traditional and contemporary Latin music.",
+   "url": "https://sfpl.org/events/2026/10/24/performance-rene-y-familia",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "sfpl-2026-10-24-social-family-dance-party",
+   "source": "manual",
+   "kind": "event",
+   "name": "Family Dance Party",
+   "area": "Bernal Heights Branch Library",
+   "lat": 37.7389,
+   "lng": -122.4167,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-24T16:00:00-07:00",
+   "end": "2026-10-24T17:00:00-07:00",
+   "note": "Dance to funky family-friendly jams and be silly with your little one. For children and their caregivers. Dance & Music Enjoy performances, talks and workshops that celebrate movement and the musical arts. This program is sponsored by Friends of the San Francisco Public Library.",
+   "url": "https://sfpl.org/events/2026/10/24/social-family-dance-party",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "id": "sfmoma-free-family-day-k-pop-art-and-beyond-2026-10-25",
+   "kind": "event",
+   "source": "SFMOMA",
+   "name": "Free Family Day: K-Pop, Art, and Beyond",
+   "area": "SFMOMA, 151 Third St",
+   "lat": 37.7857,
+   "lng": -122.4011,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-25T10:00:00-07:00",
+   "end": "2026-10-25T16:00:00-07:00",
+   "note": "Free museum admission for families with art making, storytime with SFPL, a scavenger hunt, and a K-pop dance party. Free with RSVP.",
+   "url": "https://www.sfmoma.org/event/free-family-day-k-pop-art-and-beyond/"
+  },
+  {
+   "id": "omca-12514-2026-10-25",
+   "kind": "event",
+   "source": "Oakland Museum of California",
+   "name": "32nd Annual Día de los Muertos Community Celebration",
+   "area": "OMCA Campus",
+   "lat": 37.7987,
+   "lng": -122.264,
+   "indoor": false,
+   "exp": 0.3,
+   "off": 5,
+   "free": false,
+   "start": "2026-10-25T11:00:00-07:00",
+   "end": "2026-10-25T16:00:00-07:00",
+   "note": "OMCA's 32nd annual Día de los Muertos celebration with ofrendas, live performances, and family art making. $10. ",
+   "url": "https://museumca.org/event/32nd-annual-dia-de-los-muertos-community-celebration/"
+  },
+  {
+   "id": "hjk-rock-roll-playhouse-2026-10-25",
+   "source": "manual",
+   "kind": "event",
+   "name": "Rock and Roll Playhouse: Music of The Beatles",
+   "area": "Henry J. Kaiser Center for the Arts, Oakland",
+   "lat": 37.7978,
+   "lng": -122.2649,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-25T12:00:00-07:00",
+   "end": "2026-10-25T13:00:00-07:00",
+   "note": "An hour-long kids' concert with singing, dancing, and games, for ages 10 and under, with the volume turned down. $24; under 1 free.",
+   "url": "https://www.510families.com/ticket-alert-four-incredible-family-events-come-to-oakland/",
+   "tags": [
+    "music",
+    "dance"
+   ],
+   "bookAhead": true
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-storytime-2026-10-27",
+   "name": "Drop-in Storytime at Bernal Heights Rec Center",
+   "start": "2026-10-27T10:30:00-07:00",
+   "end": "2026-10-27T11:00:00-07:00",
+   "note": "A free drop-in storytime in the rec center gym, run by SF Rec & Park. Through Dec 29.",
+   "tags": [
+    "stories"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-tue-2026-10-27",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-10-27T11:30:00-07:00",
+   "end": "2026-10-27T13:00:00-07:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "id": "ybg-rhythm-motion-2026-10-28",
+   "source": "manual",
+   "kind": "event",
+   "name": "Dance Outdoors with Rhythm & Motion",
+   "area": "Yerba Buena Gardens",
+   "lat": 37.7848,
+   "lng": -122.4022,
+   "indoor": false,
+   "exp": 0.35,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-28T12:00:00-07:00",
+   "end": "2026-10-28T13:00:00-07:00",
+   "note": "A free, upbeat outdoor dance workout open to everyone at Yerba Buena Gardens.",
+   "url": "https://ybgfestival.org/event/dance-outdoors-with-rhythm-motion-102826/",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "id": "sfpl-2026-10-28-social-halloween-family-dance-party",
+   "source": "manual",
+   "kind": "event",
+   "name": "Halloween Family Dance Party",
+   "area": "Excelsior Branch Library",
+   "lat": 37.7255,
+   "lng": -122.4343,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-28T15:00:00-07:00",
+   "end": "2026-10-28T16:00:00-07:00",
+   "note": "Shake your sillies out and dance to a high energy contemporary pop playlist. Drop in anytime during the session for as much dancing as you like. Dance & Music Enjoy performances, talks and workshops that celebrate movement and the musical arts.",
+   "url": "https://sfpl.org/events/2026/10/28/social-halloween-family-dance-party",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "id": "cmc-halloween-parade-2026-10-28",
+   "source": "manual",
+   "kind": "event",
+   "name": "Halloween Party & Costume Parade",
+   "area": "Community Music Center, 544 Capp St",
+   "lat": 37.7588,
+   "lng": -122.4177,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-28T16:15:00-07:00",
+   "end": "2026-10-28T17:15:00-07:00",
+   "note": "CMC's annual Halloween spooktacular with a costume parade. Free; bring a small snack or drink to share if you can.",
+   "tags": [
+    "music"
+   ],
+   "url": "https://sfcmc.org/event/cmc-halloween-party-costume-parade-3/"
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-thu-2026-10-29",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-10-29T10:00:00-07:00",
+   "end": "2026-10-29T11:30:00-07:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "id": "sfpl-2026-10-29-social-halloween-family-dance-party",
+   "source": "manual",
+   "kind": "event",
+   "name": "Halloween Family Dance Party",
+   "area": "Potrero Branch Library",
+   "lat": 37.7598,
+   "lng": -122.3994,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-29T16:00:00-07:00",
+   "end": "2026-10-29T17:00:00-07:00",
+   "note": "Witches will wiggle and monsters will mash at this special Halloween-themed dance party bash. Make the most of it by arriving in costume. For children ages 0–5 and their caregivers. Space limited. Tickets available on a first come basis at the front desk starting at 3:30 p.m.",
+   "url": "https://sfpl.org/events/2026/10/29/social-halloween-family-dance-party",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "id": "omca-12477-2026-10-30",
+   "kind": "event",
+   "source": "Oakland Museum of California",
+   "name": "Friday Nights at OMCA with LA GENTE SF",
+   "area": "OMCA campus",
+   "lat": 37.7987,
+   "lng": -122.264,
+   "indoor": false,
+   "exp": 0.3,
+   "off": 5,
+   "free": true,
+   "start": "2026-10-30T17:00:00-07:00",
+   "end": "2026-10-30T21:00:00-07:00",
+   "note": "Free Friday evening at the Oakland Museum: live music, food trucks, and the gardens. Friday Night at OMCA brings an infectious global sound to the Garden Stage as San Francisco’s LA GENTE SF delivers a hig",
+   "url": "https://museumca.org/event/friday-nights-at-omca-with-la-gente-sf/"
+  },
+  {
+   "id": "obc-luna-mexicana-2026-10-30",
+   "source": "manual",
+   "kind": "event",
+   "name": "Luna Mexicana (Oakland Ballet)",
+   "area": "Paramount Theatre, Oakland",
+   "lat": 37.8098,
+   "lng": -122.2685,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-30T19:30:00-07:00",
+   "end": null,
+   "note": "Oakland Ballet's Día de los Muertos celebration with ballet, Ballet Folklórico, live mariachi, and ofrendas in the lobby. Recommended for ages 7 and up; tickets required.",
+   "url": "https://oaklandballet.org/performances-events/",
+   "tags": [
+    "dance"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "sfmoma-sfmomaween-2026-10-31",
+   "kind": "event",
+   "source": "SFMOMA",
+   "name": "SFMOMAween",
+   "area": "SFMOMA, 151 Third St",
+   "lat": 37.7857,
+   "lng": -122.4011,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-31T11:00:00-07:00",
+   "end": "2026-10-31T16:00:00-07:00",
+   "note": "A Halloween day for all ages; costumes encouraged, from toddlers in Warhol wigs up. Free with museum admission.",
+   "url": "https://www.sfmoma.org/event/sfmomaween/"
+  },
+  {
+   "id": "ybg-halloween-hoopla-2026-10-31",
+   "source": "manual",
+   "kind": "event",
+   "name": "Halloween Hoopla (Children's Garden Series)",
+   "area": "Yerba Buena Gardens",
+   "lat": 37.7848,
+   "lng": -122.4022,
+   "indoor": false,
+   "exp": 0.35,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-31T12:00:00-07:00",
+   "end": "2026-10-31T15:00:00-07:00",
+   "note": "Free interactive Halloween shows for kids under 10 and their grown-ups in the Children's Garden. Costumes welcome.",
+   "url": "https://ybgfestival.org/event/halloween-hoopla-2026/",
+   "tags": [
+    "music",
+    "performance"
+   ]
+  },
+  {
+   "id": "precita-mural-tour-2026-10-31",
+   "source": "manual",
+   "kind": "event",
+   "name": "Classic Mural Walk with Precita Eyes",
+   "area": "Precita Eyes Mural Arts Center, 2981 24th St",
+   "lat": 37.7526,
+   "lng": -122.4126,
+   "indoor": false,
+   "exp": 0.3,
+   "off": 1,
+   "free": false,
+   "start": "2026-10-31T13:30:00-07:00",
+   "end": "2026-10-31T15:00:00-07:00",
+   "note": "A walking tour of the Mission's murals with longtime Precita Eyes muralist Patricia Rose, about 1.5 hours. Book ahead on Precita Eyes' site.",
+   "tags": [
+    "art"
+   ],
+   "url": "https://www.precitaeyes.org/",
+   "bookAhead": true,
+   "recurring": true
+  },
+  {
+   "id": "brava-loco-bloco-dia-2026-11-01",
+   "source": "manual",
+   "kind": "event",
+   "name": "Loco Bloco presents Día de los Muertos: Esto No Se Vende",
+   "area": "Brava Theater, 2781 24th St",
+   "lat": 37.7527,
+   "lng": -122.4096,
+   "indoor": false,
+   "exp": 0.25,
+   "off": 1,
+   "free": true,
+   "start": "2026-11-01T11:00:00-08:00",
+   "end": "2026-11-01T20:00:00-08:00",
+   "note": "Loco Bloco's annual celebration with altars in the Brava lobby, Aztec dance, a stage show by the youth drum and dance company, and a procession. Last year: altars 11 to 4, blessing at 4, show at 5 ($10), procession at 7. Check Brava for this year's times.",
+   "tags": [
+    "music",
+    "dance"
+   ],
+   "url": "https://www.brava.org/"
+  },
+  {
+   "id": "odc-family-matters-2026-11-01",
+   "source": "manual",
+   "kind": "event",
+   "name": "Family Matters: ODC/Dance",
+   "area": "ODC Theater, 3153 17th St (Mission)",
+   "lat": 37.7636,
+   "lng": -122.417,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-01T13:00:00-08:00",
+   "end": "2026-11-01T14:00:00-08:00",
+   "note": "ODC's free one-hour Sunday dance series for families, mixing performance, participation, and a chance to meet the artists.",
+   "url": "https://odc.dance/familymatters",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "id": "obc-luna-mexicana-2026-11-01",
+   "source": "manual",
+   "kind": "event",
+   "name": "Luna Mexicana (Oakland Ballet)",
+   "area": "Paramount Theatre, Oakland",
+   "lat": 37.8098,
+   "lng": -122.2685,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-01T14:30:00-08:00",
+   "end": null,
+   "note": "Oakland Ballet's Día de los Muertos celebration with ballet, Ballet Folklórico, live mariachi, and ofrendas in the lobby. Recommended for ages 7 and up; tickets required. This is the matinee.",
+   "url": "https://oaklandballet.org/performances-events/",
+   "tags": [
+    "dance"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "cmc-dia-de-muertos-2026-11-01",
+   "source": "manual",
+   "kind": "event",
+   "name": "Día de Muertos en la Misión (Community Music Center)",
+   "area": "Mission Dolores Basilica, 3321 16th St",
+   "lat": 37.7643,
+   "lng": -122.4269,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-01T16:00:00-08:00",
+   "end": null,
+   "note": "A Día de Muertos concert by CMC faculty musicians. Sliding scale $5 to $15; no one turned away for lack of funds.",
+   "tags": [
+    "music"
+   ],
+   "url": "https://sfcmc.org/event/dia-de-muertos-en-la-mision/"
+  },
+  {
+   "id": "marigold-festival-altars-2026-11-02",
+   "source": "manual",
+   "kind": "event",
+   "name": "Festival of Altars (Marigold Project)",
+   "area": "Potrero del Sol Park",
+   "lat": 37.752,
+   "lng": -122.4067,
+   "indoor": false,
+   "exp": 0.4,
+   "off": 1,
+   "free": true,
+   "start": "2026-11-02T10:00:00-08:00",
+   "end": "2026-11-02T19:00:00-08:00",
+   "note": "Community altars in the park through the day, with workshops and performances later. Held every Nov 2; this year's schedule isn't posted yet.",
+   "tags": [
+    "performance"
+   ]
+  },
+  {
+   "id": "mission-dia-procession-2026-11-02",
+   "source": "manual",
+   "kind": "event",
+   "name": "Día de los Muertos Procession in the Mission",
+   "area": "Starts at 22nd St and Bryant St",
+   "lat": 37.756,
+   "lng": -122.409,
+   "indoor": false,
+   "exp": 0.3,
+   "off": 1,
+   "free": true,
+   "start": "2026-11-02T19:00:00-08:00",
+   "end": "2026-11-02T21:00:00-08:00",
+   "note": "The Mission's big annual procession, led by Aztec dancers, with music and painted faces along 24th Street. It's held every Nov 2 at 7 pm; this year's details aren't posted yet.",
+   "tags": [
+    "music",
+    "dance"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-storytime-2026-11-03",
+   "name": "Drop-in Storytime at Bernal Heights Rec Center",
+   "start": "2026-11-03T10:30:00-08:00",
+   "end": "2026-11-03T11:00:00-08:00",
+   "note": "A free drop-in storytime in the rec center gym, run by SF Rec & Park. Through Dec 29.",
+   "tags": [
+    "stories"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-tue-2026-11-03",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-11-03T11:30:00-08:00",
+   "end": "2026-11-03T13:00:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-thu-2026-11-05",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-11-05T10:00:00-08:00",
+   "end": "2026-11-05T11:30:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "id": "msw-bayview-2026-11-07",
+   "kind": "event",
+   "source": "Mission Science Workshop",
+   "name": "Mission Science Workshop free Saturday open house",
+   "area": "Mission Science Workshop Bayview, 50 Pomona St (inside Charles Drew Elementary)",
+   "lat": 37.7336,
+   "lng": -122.3921,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-07T10:00:00-08:00",
+   "end": "2026-11-07T15:00:00-08:00",
+   "note": "Free drop-in hands-on science: build and tinker, explore bones, fossils and rocks, and meet the workshop's animals. Runs during the school year, so check the workshop's site around holidays.",
+   "url": "https://www.missionscienceworkshop.org/programs",
+   "recurring": false
+  },
+  {
+   "id": "sfpl-2026-11-07-activity-line-dancing",
+   "source": "manual",
+   "kind": "event",
+   "name": "Line Dancing (all ages)",
+   "area": "Potrero Branch Library",
+   "lat": 37.7598,
+   "lng": -122.3994,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-07T10:30:00-08:00",
+   "end": "2026-11-07T11:30:00-08:00",
+   "note": "Kickstart your autumn Saturday mornings with bi-weekly line dancing lessons. For Ages 9-99. Space limited. Seats available first come, first served. The one-hour lessons are November 7 and 21 and December 5 and 19.",
+   "url": "https://sfpl.org/events/2026/11/07/activity-line-dancing",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "id": "sfmoma-make-a-kite-with-jacob-hashimoto-2026-11-07",
+   "kind": "event",
+   "source": "SFMOMA",
+   "name": "Make a Kite with Jacob Hashimoto",
+   "area": "SFMOMA, 151 Third St",
+   "lat": 37.7857,
+   "lng": -122.4011,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-07T11:00:00-08:00",
+   "end": "2026-11-07T13:00:00-08:00",
+   "note": "Make your own kite with the artist inside his installation of nearly 70,000 kites. Free and open to the public.",
+   "url": "https://www.sfmoma.org/event/make-a-kite-with-jacob-hashimoto/"
+  },
+  {
+   "id": "sfb-tiny-dances-11-07-11",
+   "source": "manual",
+   "kind": "event",
+   "name": "Tiny Dances: Swan Lake (SF Ballet)",
+   "area": "Palace of Fine Arts Theatre",
+   "lat": 37.803,
+   "lng": -122.4486,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-07T11:00:00-08:00",
+   "end": "2026-11-07T12:20:00-08:00",
+   "note": "San Francisco Ballet's new family series for ages 2 to 8: an hour of Swan Lake in two halves with an intermission, plus pre-show lobby activities and a chance for kids to dance.",
+   "url": "https://www.sfballet.org/productions/tiny-dances/",
+   "tags": [
+    "dance"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "sfpl-2026-11-07-performance-nutcracker-sweets-ballet-mark-foehringer-dance-project",
+   "source": "manual",
+   "kind": "event",
+   "name": "Nutcracker Sweets Ballet (Mark Foehringer Dance Project)",
+   "area": "Main Library",
+   "lat": 37.779,
+   "lng": -122.4157,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-07T13:30:00-08:00",
+   "end": "2026-11-07T14:15:00-08:00",
+   "note": "Enjoy costumed dancers perform selections of Mark Foehringer Dance Project's Nutcracker Sweets, based on E.T.A. Hoffman's “The Nutcracker and the Mouse King.” Connect: Mark Foehringer Dance Project–Website",
+   "url": "https://sfpl.org/events/2026/11/07/performance-nutcracker-sweets-ballet-mark-foehringer-dance-project",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "id": "sfpl-2026-11-07-performance-sampaguitas",
+   "source": "manual",
+   "kind": "event",
+   "name": "The Sampaguitas",
+   "area": "Mission Bay Branch Library",
+   "lat": 37.7716,
+   "lng": -122.3912,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-07T14:00:00-08:00",
+   "end": "2026-11-07T15:00:00-08:00",
+   "note": "Based in the San Francisco Bay Area, Bay Beats artists, The Sampaguitas, sing Filipino folk songs and inspired originals in three-part harmony.",
+   "url": "https://sfpl.org/events/2026/11/07/performance-sampaguitas",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "sfb-tiny-dances-11-07-15",
+   "source": "manual",
+   "kind": "event",
+   "name": "Tiny Dances: Swan Lake (SF Ballet)",
+   "area": "Palace of Fine Arts Theatre",
+   "lat": 37.803,
+   "lng": -122.4486,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-07T15:00:00-08:00",
+   "end": "2026-11-07T16:20:00-08:00",
+   "note": "San Francisco Ballet's new family series for ages 2 to 8: an hour of Swan Lake in two halves with an intermission, plus pre-show lobby activities and a chance for kids to dance. This show is sensory friendly.",
+   "url": "https://www.sfballet.org/productions/tiny-dances/",
+   "tags": [
+    "dance"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "sfmoma-family-studio-lines-that-move-2026-11-08",
+   "kind": "event",
+   "source": "SFMOMA",
+   "name": "Family Studio: Lines That Move",
+   "area": "SFMOMA, 151 Third St",
+   "lat": 37.7857,
+   "lng": -122.4011,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-08T10:00:00-08:00",
+   "end": "2026-11-08T13:00:00-08:00",
+   "note": "Free drop-in art making for the whole family, inspired by William Kentridge. No museum admission needed.",
+   "url": "https://www.sfmoma.org/event/family-studio-lines-that-move-11-8/"
+  },
+  {
+   "id": "sfb-tiny-dances-11-08-11",
+   "source": "manual",
+   "kind": "event",
+   "name": "Tiny Dances: Swan Lake (SF Ballet)",
+   "area": "Palace of Fine Arts Theatre",
+   "lat": 37.803,
+   "lng": -122.4486,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-08T11:00:00-08:00",
+   "end": "2026-11-08T12:20:00-08:00",
+   "note": "San Francisco Ballet's new family series for ages 2 to 8: an hour of Swan Lake in two halves with an intermission, plus pre-show lobby activities and a chance for kids to dance.",
+   "url": "https://www.sfballet.org/productions/tiny-dances/",
+   "tags": [
+    "dance"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "sfb-tiny-dances-11-08-15",
+   "source": "manual",
+   "kind": "event",
+   "name": "Tiny Dances: Swan Lake (SF Ballet)",
+   "area": "Palace of Fine Arts Theatre",
+   "lat": 37.803,
+   "lng": -122.4486,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-08T15:00:00-08:00",
+   "end": "2026-11-08T16:20:00-08:00",
+   "note": "San Francisco Ballet's new family series for ages 2 to 8: an hour of Swan Lake in two halves with an intermission, plus pre-show lobby activities and a chance for kids to dance.",
+   "url": "https://www.sfballet.org/productions/tiny-dances/",
+   "tags": [
+    "dance"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "sfpl-2026-11-09-social-monday-fun-day-family-dance-party",
+   "source": "manual",
+   "kind": "event",
+   "name": "Monday Fun Day Family Dance Party",
+   "area": "Glen Park Branch Library",
+   "lat": 37.7337,
+   "lng": -122.4337,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-09T10:00:00-08:00",
+   "end": "2026-11-09T11:00:00-08:00",
+   "note": "Shake your sillies out to a family-friendly pop playlist with your family and friends. For children ages 5 and younger.",
+   "url": "https://sfpl.org/events/2026/11/09/social-monday-fun-day-family-dance-party",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-storytime-2026-11-10",
+   "name": "Drop-in Storytime at Bernal Heights Rec Center",
+   "start": "2026-11-10T10:30:00-08:00",
+   "end": "2026-11-10T11:00:00-08:00",
+   "note": "A free drop-in storytime in the rec center gym, run by SF Rec & Park. Through Dec 29.",
+   "tags": [
+    "stories"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-tue-2026-11-10",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-11-10T11:30:00-08:00",
+   "end": "2026-11-10T13:00:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-thu-2026-11-12",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-11-12T10:00:00-08:00",
+   "end": "2026-11-12T11:30:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "id": "ybg-bhangra-beats-2026-11-13",
+   "source": "manual",
+   "kind": "event",
+   "name": "Bhangra & Beats Night Market",
+   "area": "Yerba Buena Gardens",
+   "lat": 37.7848,
+   "lng": -122.4022,
+   "indoor": false,
+   "exp": 0.35,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-13T16:00:00-08:00",
+   "end": "2026-11-13T21:00:00-08:00",
+   "note": "Free evening market with bhangra music and dancing at Yerba Buena Gardens.",
+   "url": "https://ybgfestival.org/event/bhangra-and-beats-111326/",
+   "tags": [
+    "music",
+    "dance"
+   ]
+  },
+  {
+   "id": "msw-mission-2026-11-14",
+   "kind": "event",
+   "source": "Mission Science Workshop",
+   "name": "Mission Science Workshop free Saturday open house",
+   "area": "Mission Science Workshop, 3750 18th St (Church St between 17th and 18th)",
+   "lat": 37.7616,
+   "lng": -122.4283,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-14T10:00:00-08:00",
+   "end": "2026-11-14T15:00:00-08:00",
+   "note": "Free drop-in hands-on science: build and tinker, explore bones, fossils and rocks, and meet the workshop's animals. Runs during the school year, so check the workshop's site around holidays.",
+   "url": "https://www.missionscienceworkshop.org/programs",
+   "recurring": false
+  },
+  {
+   "id": "galeria-belonging-workshop-2026-11-14",
+   "source": "manual",
+   "kind": "event",
+   "name": "A Sense of Belonging: art workshop with Mabel Valdiviezo",
+   "area": "Galería de la Raza Studio 24, 2857 24th St",
+   "lat": 37.7527,
+   "lng": -122.4108,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-14T14:00:00-08:00",
+   "end": "2026-11-14T16:00:00-08:00",
+   "note": "A community collage and painting workshop at Galería de la Raza. Check the listing for ages.",
+   "tags": [
+    "art"
+   ],
+   "url": "https://galeriadelaraza.org/calendar/a-sense-of-belonging-workshop-with-mabel-valdiviezo/"
+  },
+  {
+   "id": "sfpl-2026-11-14-early-learning-malinky-music",
+   "source": "manual",
+   "kind": "event",
+   "name": "Malinky Music",
+   "area": "Sunset Branch Library",
+   "lat": 37.7635,
+   "lng": -122.476,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-14T16:30:00-08:00",
+   "end": "2026-11-14T17:00:00-08:00",
+   "note": "Shake your hips and sing with Malinky Music , a bilingual Spanish-English music and movement class designed to immerse young children in both languages through music, play and engaging activities. For children and their caregivers.",
+   "url": "https://sfpl.org/events/2026/11/14/early-learning-malinky-music",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "sfpl-2026-11-16-performance-nutcracker-sweets-ballet-mark-foehringer-dance-project",
+   "source": "manual",
+   "kind": "event",
+   "name": "Nutcracker Sweets Ballet (Mark Foehringer Dance Project)",
+   "area": "Visitacion Valley Branch Library",
+   "lat": 37.7119,
+   "lng": -122.4049,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-16T10:30:00-08:00",
+   "end": "2026-11-16T11:00:00-08:00",
+   "note": "Watch as costumed dancers perform selections of Mark Foehringer Dance Project's Nutcracker Sweets , based on E.T.A. Hoffman's “The Nutcracker and the Mouse King.” Connect: Mark Foehringer - Website Dance & Music Enjoy performances, talks and workshops that celebrate movement and the musical arts.",
+   "url": "https://sfpl.org/events/2026/11/16/performance-nutcracker-sweets-ballet-mark-foehringer-dance-project",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-storytime-2026-11-17",
+   "name": "Drop-in Storytime at Bernal Heights Rec Center",
+   "start": "2026-11-17T10:30:00-08:00",
+   "end": "2026-11-17T11:00:00-08:00",
+   "note": "A free drop-in storytime in the rec center gym, run by SF Rec & Park. Through Dec 29.",
+   "tags": [
+    "stories"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-tue-2026-11-17",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-11-17T11:30:00-08:00",
+   "end": "2026-11-17T13:00:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "id": "sfpl-2026-11-18-performance-nutcracker-sweets-ballet-mark-foehringer-dance-project",
+   "source": "manual",
+   "kind": "event",
+   "name": "Nutcracker Sweets Ballet (Mark Foehringer Dance Project)",
+   "area": "Richmond Branch Library",
+   "lat": 37.7814,
+   "lng": -122.4675,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-18T11:00:00-08:00",
+   "end": "2026-11-18T11:15:00-08:00",
+   "note": "Bring in the holidays with Nutcracker Sweets, a unique production of the classic holiday ballet. This special production is a danced storytelling of the performance that is magical, zany and fun. A 15-minute dance performance will be followed by a photo opportunity with the dancers.",
+   "url": "https://sfpl.org/events/2026/11/18/performance-nutcracker-sweets-ballet-mark-foehringer-dance-project",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "id": "sfpl-2026-11-18-performance-mark-foehringers-nutcracker-sweets",
+   "source": "manual",
+   "kind": "event",
+   "name": "Mark Foehringer's Nutcracker Sweets",
+   "area": "Sunset Branch Library",
+   "lat": 37.7635,
+   "lng": -122.476,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-18T13:30:00-08:00",
+   "end": "2026-11-18T14:30:00-08:00",
+   "note": "Watch as costumed dancers perform selections of Mark Foehringer's Nutcracker Sweets show, based on E.T.A. Hoffman's “The Nutcracker and the Mouse King.” For children and their caregivers. Connect: Mark Foehringer Dance Project–Website",
+   "url": "https://sfpl.org/events/2026/11/18/performance-mark-foehringers-nutcracker-sweets",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-thu-2026-11-19",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-11-19T10:00:00-08:00",
+   "end": "2026-11-19T11:30:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "id": "sfpl-2026-11-19-performance-nutcracker-sweets-ballet-mark-foehringer-dance-project",
+   "source": "manual",
+   "kind": "event",
+   "name": "Nutcracker Sweets Ballet (Mark Foehringer Dance Project)",
+   "area": "Bayview Branch Library",
+   "lat": 37.7334,
+   "lng": -122.3906,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-19T11:00:00-08:00",
+   "end": "2026-11-19T11:30:00-08:00",
+   "note": "Watch as costumed dancers perform selections of Mark Foehringer Dance Project's Nutcracker Sweets , based on E.T.A. Hoffman's “The Nutcracker and the Mouse King.” A 20-minute dance performance will be followed by a photo opportunity with the dancers. For children and their caregivers.",
+   "url": "https://sfpl.org/events/2026/11/19/performance-nutcracker-sweets-ballet-mark-foehringer-dance-project",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "id": "sfpl-2026-11-19-performance-guitar-sing-along-grandpa-alan",
+   "source": "manual",
+   "kind": "event",
+   "name": "Guitar Sing-Along with Grandpa Alan",
+   "area": "Eureka Valley Branch Library",
+   "lat": 37.7635,
+   "lng": -122.433,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-19T15:30:00-08:00",
+   "end": "2026-11-19T16:00:00-08:00",
+   "note": "Enjoy childhood songs with Grandpa Alan as he plays the guitar and sings. For children and their caregivers. Dance & Music Enjoy performances, talks and workshops that celebrate movement and the musical arts.",
+   "url": "https://sfpl.org/events/2026/11/19/performance-guitar-sing-along-grandpa-alan",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "msw-excelsior-2026-11-21",
+   "kind": "event",
+   "source": "Mission Science Workshop",
+   "name": "Mission Science Workshop free Saturday open house",
+   "area": "Mission Science Workshop Excelsior, 4458 Mission St",
+   "lat": 37.7253,
+   "lng": -122.4344,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-21T10:00:00-08:00",
+   "end": "2026-11-21T15:00:00-08:00",
+   "note": "Free drop-in hands-on science: build and tinker, explore bones, fossils and rocks, and meet the workshop's animals. Runs during the school year, so check the workshop's site around holidays.",
+   "url": "https://www.missionscienceworkshop.org/programs",
+   "recurring": false
+  },
+  {
+   "id": "sfjazz-family-matinee-2026-11-21",
+   "source": "manual",
+   "kind": "event",
+   "name": "SFJAZZ Family Matinee: Mariachi Flor de Toloache",
+   "area": "SFJAZZ Center, Miner Auditorium",
+   "lat": 37.7765,
+   "lng": -122.4216,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-21T11:00:00-08:00",
+   "end": null,
+   "note": "An all-ages matinee with the Grammy-winning all-women mariachi band. Family matinees are usually at 11 am; confirm the time with SFJAZZ.",
+   "url": "https://www.sfjazz.org/education/family-matinee-overview",
+   "tags": [
+    "music"
+   ],
+   "bookAhead": true
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-storytime-2026-11-24",
+   "name": "Drop-in Storytime at Bernal Heights Rec Center",
+   "start": "2026-11-24T10:30:00-08:00",
+   "end": "2026-11-24T11:00:00-08:00",
+   "note": "A free drop-in storytime in the rec center gym, run by SF Rec & Park. Through Dec 29.",
+   "tags": [
+    "stories"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-tue-2026-11-24",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-11-24T11:30:00-08:00",
+   "end": "2026-11-24T13:00:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-thu-2026-11-26",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-11-26T10:00:00-08:00",
+   "end": "2026-11-26T11:30:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "id": "odc-velveteen-rabbit-2026-11-28",
+   "source": "manual",
+   "kind": "event",
+   "name": "The Velveteen Rabbit (ODC/Dance)",
+   "area": "ODC Theater, 3153 17th St (Mission)",
+   "lat": 37.7636,
+   "lng": -122.417,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-28T11:00:00-08:00",
+   "end": null,
+   "note": "ODC/Dance's holiday family favorite, based on the children's book. Runs Nov 28 through Dec 6; see ODC's calendar for every show.",
+   "url": "https://odc.dance/CALENDAR",
+   "tags": [
+    "dance"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "odc-velveteen-rabbit-2026-11-29",
+   "source": "manual",
+   "kind": "event",
+   "name": "The Velveteen Rabbit (ODC/Dance)",
+   "area": "ODC Theater, 3153 17th St (Mission)",
+   "lat": 37.7636,
+   "lng": -122.417,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-29T14:00:00-08:00",
+   "end": null,
+   "note": "ODC/Dance's holiday family favorite, based on the children's book. Runs Nov 28 through Dec 6; see ODC's calendar for every show.",
+   "url": "https://odc.dance/CALENDAR",
+   "tags": [
+    "dance"
+   ],
+   "bookAhead": true
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-storytime-2026-12-01",
+   "name": "Drop-in Storytime at Bernal Heights Rec Center",
+   "start": "2026-12-01T10:30:00-08:00",
+   "end": "2026-12-01T11:00:00-08:00",
+   "note": "A free drop-in storytime in the rec center gym, run by SF Rec & Park. Through Dec 29.",
+   "tags": [
+    "stories"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-tue-2026-12-01",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-12-01T11:30:00-08:00",
+   "end": "2026-12-01T13:00:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-thu-2026-12-03",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-12-03T10:00:00-08:00",
+   "end": "2026-12-03T11:30:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "id": "msw-bayview-2026-12-05",
+   "kind": "event",
+   "source": "Mission Science Workshop",
+   "name": "Mission Science Workshop free Saturday open house",
+   "area": "Mission Science Workshop Bayview, 50 Pomona St (inside Charles Drew Elementary)",
+   "lat": 37.7336,
+   "lng": -122.3921,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-05T10:00:00-08:00",
+   "end": "2026-12-05T15:00:00-08:00",
+   "note": "Free drop-in hands-on science: build and tinker, explore bones, fossils and rocks, and meet the workshop's animals. Runs during the school year, so check the workshop's site around holidays.",
+   "url": "https://www.missionscienceworkshop.org/programs",
+   "recurring": false
+  },
+  {
+   "id": "mapp-2026-12-05",
+   "kind": "event",
+   "source": "MAPP",
+   "name": "MAPP: Mission Arts & Performance Project",
+   "area": "Pop-up venues around the Mission near 24th St",
+   "lat": 37.7544,
+   "lng": -122.4146,
+   "indoor": false,
+   "exp": 0.25,
+   "off": 1,
+   "free": true,
+   "start": "2026-12-05T18:00:00-08:00",
+   "end": "2026-12-05T22:00:00-08:00",
+   "note": "Free art, music, dance and poetry in garages, gardens, galleries and cafes around the Mission. Early sets are the most kid-friendly; check Red Poppy Art House for the night's schedule.",
+   "url": "https://www.redpoppyarthouse.org/tag/mission-arts-performance-project/"
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-storytime-2026-12-08",
+   "name": "Drop-in Storytime at Bernal Heights Rec Center",
+   "start": "2026-12-08T10:30:00-08:00",
+   "end": "2026-12-08T11:00:00-08:00",
+   "note": "A free drop-in storytime in the rec center gym, run by SF Rec & Park. Through Dec 29.",
+   "tags": [
+    "stories"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-tue-2026-12-08",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-12-08T11:30:00-08:00",
+   "end": "2026-12-08T13:00:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-thu-2026-12-10",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-12-10T10:00:00-08:00",
+   "end": "2026-12-10T11:30:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "id": "msw-mission-2026-12-12",
+   "kind": "event",
+   "source": "Mission Science Workshop",
+   "name": "Mission Science Workshop free Saturday open house",
+   "area": "Mission Science Workshop, 3750 18th St (Church St between 17th and 18th)",
+   "lat": 37.7616,
+   "lng": -122.4283,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-12T10:00:00-08:00",
+   "end": "2026-12-12T15:00:00-08:00",
+   "note": "Free drop-in hands-on science: build and tinker, explore bones, fossils and rocks, and meet the workshop's animals. Runs during the school year, so check the workshop's site around holidays.",
+   "url": "https://www.missionscienceworkshop.org/programs",
+   "recurring": false
+  },
+  {
+   "id": "sfjazz-family-matinee-2026-12-12",
+   "source": "manual",
+   "kind": "event",
+   "name": "SFJAZZ Family Matinee: A Charlie Brown Christmas",
+   "area": "SFJAZZ Center, Miner Auditorium",
+   "lat": 37.7765,
+   "lng": -122.4216,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-12-12T11:00:00-08:00",
+   "end": null,
+   "note": "The Adam Shulman Trio and the San Francisco Girls Chorus play Vince Guaraldi's holiday classic. Family matinees are usually at 11 am; confirm the time with SFJAZZ.",
+   "url": "https://www.sfjazz.org/education/family-matinee-overview",
+   "tags": [
+    "music"
+   ],
+   "bookAhead": true
+  },
+  {
+   "id": "odc-family-matters-2026-12-13",
+   "source": "manual",
+   "kind": "event",
+   "name": "Family Matters at ODC",
+   "area": "ODC Theater, 3153 17th St (Mission)",
+   "lat": 37.7636,
+   "lng": -122.417,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-13T13:00:00-08:00",
+   "end": "2026-12-13T14:00:00-08:00",
+   "note": "ODC's free one-hour Sunday dance series for families, mixing performance, participation, and a chance to meet the artists.",
+   "url": "https://odc.dance/familymatters",
+   "tags": [
+    "dance"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-storytime-2026-12-15",
+   "name": "Drop-in Storytime at Bernal Heights Rec Center",
+   "start": "2026-12-15T10:30:00-08:00",
+   "end": "2026-12-15T11:00:00-08:00",
+   "note": "A free drop-in storytime in the rec center gym, run by SF Rec & Park. Through Dec 29.",
+   "tags": [
+    "stories"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-tue-2026-12-15",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-12-15T11:30:00-08:00",
+   "end": "2026-12-15T13:00:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-thu-2026-12-17",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-12-17T10:00:00-08:00",
+   "end": "2026-12-17T11:30:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "id": "msw-excelsior-2026-12-19",
+   "kind": "event",
+   "source": "Mission Science Workshop",
+   "name": "Mission Science Workshop free Saturday open house",
+   "area": "Mission Science Workshop Excelsior, 4458 Mission St",
+   "lat": 37.7253,
+   "lng": -122.4344,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-19T10:00:00-08:00",
+   "end": "2026-12-19T15:00:00-08:00",
+   "note": "Free drop-in hands-on science: build and tinker, explore bones, fossils and rocks, and meet the workshop's animals. Runs during the school year, so check the workshop's site around holidays.",
+   "url": "https://www.missionscienceworkshop.org/programs",
+   "recurring": false
+  },
+  {
+   "id": "hjk-rockin-holiday-2026-12-20",
+   "source": "manual",
+   "kind": "event",
+   "name": "Rockin' Holiday with Alphabet Rockers",
+   "area": "Henry J. Kaiser Center for the Arts, Oakland",
+   "lat": 37.7978,
+   "lng": -122.2649,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-12-20T14:00:00-08:00",
+   "end": "2026-12-20T17:00:00-08:00",
+   "note": "A family holiday celebration with the Grammy-nominated kids' hip-hop group.",
+   "url": "https://www.510families.com/ticket-alert-four-incredible-family-events-come-to-oakland/",
+   "tags": [
+    "music",
+    "dance"
+   ],
+   "bookAhead": true
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-storytime-2026-12-22",
+   "name": "Drop-in Storytime at Bernal Heights Rec Center",
+   "start": "2026-12-22T10:30:00-08:00",
+   "end": "2026-12-22T11:00:00-08:00",
+   "note": "A free drop-in storytime in the rec center gym, run by SF Rec & Park. Through Dec 29.",
+   "tags": [
+    "stories"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-tue-2026-12-22",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-12-22T11:30:00-08:00",
+   "end": "2026-12-22T13:00:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-thu-2026-12-24",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-12-24T10:00:00-08:00",
+   "end": "2026-12-24T11:30:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-storytime-2026-12-29",
+   "name": "Drop-in Storytime at Bernal Heights Rec Center",
+   "start": "2026-12-29T10:30:00-08:00",
+   "end": "2026-12-29T11:00:00-08:00",
+   "note": "A free drop-in storytime in the rec center gym, run by SF Rec & Park. Through Dec 29.",
+   "tags": [
+    "stories"
+   ]
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-tue-2026-12-29",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-12-29T11:30:00-08:00",
+   "end": "2026-12-29T13:00:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "source": "manual",
+   "kind": "event",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.7387,
+   "lng": -122.4162,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "url": "https://sfrecpark.org/Facilities/Facility/Details/83",
+   "id": "bhrc-placetoplay-thu-2026-12-31",
+   "name": "A Place to Play: Bernal Heights Rec Center",
+   "start": "2026-12-31T10:00:00-08:00",
+   "end": "2026-12-31T11:30:00-08:00",
+   "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
+  },
+  {
+   "id": "msw-bayview-2027-01-02",
+   "kind": "event",
+   "source": "Mission Science Workshop",
+   "name": "Mission Science Workshop free Saturday open house",
+   "area": "Mission Science Workshop Bayview, 50 Pomona St (inside Charles Drew Elementary)",
+   "lat": 37.7336,
+   "lng": -122.3921,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2027-01-02T10:00:00-08:00",
+   "end": "2027-01-02T15:00:00-08:00",
+   "note": "Free drop-in hands-on science: build and tinker, explore bones, fossils and rocks, and meet the workshop's animals. Runs during the school year, so check the workshop's site around holidays.",
+   "url": "https://www.missionscienceworkshop.org/programs",
+   "recurring": false
   }
  ]
 }

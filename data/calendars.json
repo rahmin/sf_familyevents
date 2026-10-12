@@ -1,0 +1,25 @@
+{
+ "_readme": "Calendar feeds read by the weekly refresh. 'url' can be a Luma calendar page (luma.com/name), a public Google Calendar .ics link, or any .ics feed. 'edition' is talks-concerts, family, or both. lat/lng and area are used when an event doesn't carry its own location.",
+ "calendars": [
+  {
+   "name": "The Fold",
+   "url": "https://luma.com/thefoldsf",
+   "edition": "talks-concerts",
+   "area": "The Fold, 3359 26th St (Mission)",
+   "lat": 37.7491,
+   "lng": -122.4177,
+   "indoor": true
+  },
+  {
+   "name": "SPUR",
+   "url": "https://www.spur.org/events/list/all/export.ics",
+   "edition": "talks-concerts",
+   "area": "SPUR Urban Center, 654 Mission St",
+   "lat": 37.7863,
+   "lng": -122.4012,
+   "indoor": true,
+   "bookAhead": true,
+   "skipNoLocation": true
+  }
+ ]
+}

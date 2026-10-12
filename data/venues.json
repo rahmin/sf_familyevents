@@ -1,0 +1,6 @@
+{
+ "_readme": "Known venues for listings that only name a neighborhood. If an event's link contains the 'match' text, the refresh uses this venue's name and location. Add one by copying an entry.",
+ "venues": [
+  {"match": "naturalresources-sf.com", "area": "Natural Resources, 1051 Valencia St", "lat": 37.7561, "lng": -122.4210, "indoor": true}
+ ]
+}

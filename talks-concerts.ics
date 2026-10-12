@@ -1,0 +1,2104 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//sf_familyevents//one-off family events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Talks & concerts: one-offs
+X-WR-TIMEZONE:America/Los_Angeles
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VEVENT
+UID:ybg-25723-2026-10-12@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261012T190000Z
+DTEND:20261012T230000Z
+SUMMARY:San Francisco Indigenous Peoples Day with special performance by J
+ eremy Dutcher
+LOCATION:Great Lawn\, Yerba Buena Gardens
+DESCRIPTION:Free RSVP Join us in celebration of San Francisco Indigenous P
+ eoples Day with a magnificent profusion of Native American art\, music an
+ d vendors. The event highlights the vastly diverse and talented community
+  of Indigenou\nhttps://ybgfestival.org/event/sf-indigenous-peoples-day-20
+ 26/
+URL:https://ybgfestival.org/event/sf-indigenous-peoples-day-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2756-2026-10-12@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261013T030000Z
+DTEND:20261013T050000Z
+SUMMARY:KiNG MALA
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (The Golden Thing Tour). Doors 7:30 PM
+ \, show 8:00 PM.\nhttps://www.theindependentsf.com/tm-event/king-mala/
+URL:https://www.theindependentsf.com/tm-event/king-mala/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-chapel-militarie-gun-2026-10-13@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261014T020000Z
+DTEND:20261014T040000Z
+SUMMARY:Militarie Gun
+LOCATION:The Chapel\, 777 Valencia St
+DESCRIPTION:Alternative at The Chapel. With Softcult\, Shady Nasty\, Dazy.
+  Doors at 6:00PM / Show at 7:00PM. All Ages.\nhttps://wl.seetickets.us/ev
+ ent/militarie-gun/693468?afflky=TheChapel
+URL:https://wl.seetickets.us/event/militarie-gun/693468?afflky=TheChapel
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-great-american-music-provoker-2026-10-13@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261014T020000Z
+DTEND:20261014T040000Z
+SUMMARY:Provoker
+LOCATION:Great American Music Hall\, 859 O'Farrell St
+DESCRIPTION:Post Punk at Great American Music Hall. With with Topographies
+ \, Dalmatia. Doors at 6:00PM / Show at 7:00PM. $27.50-$30.00.\nhttps://wl
+ .seetickets.us/event/provoker/703886?afflky=GreatAmericanMusicHall
+URL:https://wl.seetickets.us/event/provoker/703886?afflky=GreatAmericanMus
+ icHall
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2738-2026-10-13@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261014T030000Z
+DTEND:20261014T050000Z
+SUMMARY:Automatic
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/automatic/
+URL:https://www.theindependentsf.com/tm-event/automatic/
+END:VEVENT
+BEGIN:VEVENT
+UID:cwc-loubna-mrie-defiance-a-memoir-of-awakening-rebelli-2026-10-14@sf_f
+ amilyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261015T003000Z
+DTEND:20261015T023000Z
+SUMMARY:Loubna Mrie: Defiance\, a Memoir of Awakening\, Rebellion\, and Su
+ rvival in Syria
+LOCATION:Commonwealth Club\, 110 The Embarcadero
+DESCRIPTION:In the Syria in which Loubna Mrie was a schoolgirl\, loyalty w
+ as survival.\nhttps://www.commonwealthclub.org/events/2026-10-14/loubna-m
+ rie-defiance-memoir-awakening-rebellion-and-survival-syria
+URL:https://www.commonwealthclub.org/events/2026-10-14/loubna-mrie-defianc
+ e-memoir-awakening-rebellion-and-survival-syria
+END:VEVENT
+BEGIN:VEVENT
+UID:cwc-pg-e-chief-patti-poppe-on-affordability-outages-an-2026-10-14@sf_f
+ amilyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261015T010000Z
+DTEND:20261015T030000Z
+SUMMARY:PG&E Chief Patti Poppe On Affordability\, Outages and Public Outra
+ ge
+LOCATION:Commonwealth Club\, 110 The Embarcadero
+DESCRIPTION:Due to a scheduling conflict\, Senator Wiener will not be able
+  to join the program.\nhttps://www.commonwealthclub.org/events/2026-10-14
+ /pge-chief-patti-poppe-affordability-outages-and-public-outrage
+URL:https://www.commonwealthclub.org/events/2026-10-14/pge-chief-patti-pop
+ pe-affordability-outages-and-public-outrage
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-874554-2026-10-14@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261015T010000Z
+DTEND:20261015T040000Z
+SUMMARY:Patch Bay: Yoon Chung Han + Tori Sommerhof [Artist Talks]
+LOCATION:Gray Area Grand Theater
+DESCRIPTION:For the inaugural Patch Bay series\, we’re excited to welcom
+ e current exhibiting artists Yoon Chung Han and Tori Sommerhof! Join us a
+ t Gray Area for happy hour\, and artist talks where we’ll take a closer
+  look at current w\nhttps://missionlocal.org/event/gray-area-grand-theate
+ r-patch-bay-yoon-chung-han-tori-sommerhof-artist-talks/
+URL:https://missionlocal.org/event/gray-area-grand-theater-patch-bay-yoon-
+ chung-han-tori-sommerhof-artist-talks/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-chapel-dummy-2026-10-14@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261015T023000Z
+DTEND:20261015T043000Z
+SUMMARY:Dummy
+LOCATION:The Chapel\, 777 Valencia St
+DESCRIPTION:Alternative at The Chapel. With Golomb\, figure eight\, sachi'
+ s mirror. Doors at 7:00PM / Show at 7:30PM. All Ages.\nhttps://wl.seetick
+ ets.us/event/dummy/700215?afflky=TheChapel
+URL:https://wl.seetickets.us/event/dummy/700215?afflky=TheChapel
+END:VEVENT
+BEGIN:VEVENT
+UID:jccsf-109982-2026-10-14@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261015T023000Z
+DTEND:20261015T040000Z
+SUMMARY:Jon Ronson – Adventures in a World Of Unraveling Men
+LOCATION:JCCSF
+DESCRIPTION:The bestselling author takes on the modern masculinity crisis 
+ in a deeply strange\, darkly comic one-man show.\nhttps://www.jccsf.org/e
+ vent/jon-ronson-adventures-in-a-world-of-unraveling-men/
+URL:https://www.jccsf.org/event/jon-ronson-adventures-in-a-world-of-unrave
+ ling-men/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-great-american-music-mexican-institute-of-sound-2026-10-14@sf_famil
+ yevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261015T023000Z
+DTEND:20261015T043000Z
+SUMMARY:Mexican Institute of Sound
+LOCATION:Great American Music Hall\, 859 O'Farrell St
+DESCRIPTION:Electronic at Great American Music Hall. With with Spaghetti C
+ umbia\, Edgar\, Kaefan. Doors at 7:00PM / Show at 7:30PM. $27.00-$32.00.\
+ nhttps://wl.seetickets.us/event/mexican-institute-of-sound/701759?afflky=
+ GreatAmericanMusicHall
+URL:https://wl.seetickets.us/event/mexican-institute-of-sound/701759?afflk
+ y=GreatAmericanMusicHall
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2790-2026-10-14@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261015T030000Z
+DTEND:20261015T050000Z
+SUMMARY:Juice
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/juice/
+URL:https://www.theindependentsf.com/tm-event/juice/
+END:VEVENT
+BEGIN:VEVENT
+UID:ybg-25786-2026-10-15@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261015T193000Z
+DTEND:20261015T203000Z
+SUMMARY:Richard Howell’s John Coltrane Tribute
+LOCATION:Great Lawn\, Yerba Buena Gardens
+DESCRIPTION:The 100 th anniversary of John Coltrane’s birthday has inspi
+ red dozens of performances across the Bay Area this year\, but no artist 
+ is better equipped to evoke the legacy of the saxophone titan and spiritu
+ al seeker than \nhttps://ybgfestival.org/event/richard-howells-john-coltr
+ ane-tribute-2026/
+URL:https://ybgfestival.org/event/richard-howells-john-coltrane-tribute-20
+ 26/
+END:VEVENT
+BEGIN:VEVENT
+UID:cal-evt-0i9xbwvwkbp9kxo-events-lu-ma@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261016T010000Z
+DTEND:20261016T050000Z
+SUMMARY:Polyphonic Open Mic
+LOCATION:The Fold\, 3359 26th St
+DESCRIPTION:Address: The Fold San Francisco\, CA United States  Hosted by 
+ The Fold SF\nhttps://luma.com/thefoldopenmic
+URL:https://luma.com/thefoldopenmic
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-874557-2026-10-15@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261016T020000Z
+DTEND:20261016T050000Z
+SUMMARY:BYOB (Bring Your Own Beamer) Pop-Up Projector Show
+LOCATION:Gray Area Grand Theater
+DESCRIPTION:Fall is here! Gray Area hosts another Bring Your Own Beamer on
+  October 15 — creating a one-night-only exhibit of projectors and light
+ ! ​Originally conceived by pioneer digital artist Rafaël Rozendaal\, B
+ ring Your Own Beam\nhttps://missionlocal.org/event/gray-area-grand-theate
+ r-byob-bring-your-own-beamer-pop-up-projector-show-2/
+URL:https://missionlocal.org/event/gray-area-grand-theater-byob-bring-your
+ -own-beamer-pop-up-projector-show-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-chapel-hot-flash-heat-wave-2026-10-15@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261016T030000Z
+DTEND:20261016T050000Z
+SUMMARY:Hot Flash Heat Wave
+LOCATION:The Chapel\, 777 Valencia St
+DESCRIPTION:Indie at The Chapel. With Carpool Tunnel\, Starzdust. Doors at
+  7:00PM / Show at 8:00PM. All Ages.\nhttps://wl.seetickets.us/event/hot-f
+ lash-heat-wave/693459?afflky=TheChapel
+URL:https://wl.seetickets.us/event/hot-flash-heat-wave/693459?afflky=TheCh
+ apel
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-great-american-music-kelsey-lu-2026-10-15@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261016T030000Z
+DTEND:20261016T050000Z
+SUMMARY:Kelsey Lu
+LOCATION:Great American Music Hall\, 859 O'Farrell St
+DESCRIPTION:R&B at Great American Music Hall. With So Help Me God Tour. Do
+ ors at 7:00PM / Show at 8:00PM. $30.00-$35.00.\nhttps://wl.seetickets.us/
+ event/kelsey-lu/694273?afflky=GreatAmericanMusicHall
+URL:https://wl.seetickets.us/event/kelsey-lu/694273?afflky=GreatAmericanMu
+ sicHall
+END:VEVENT
+BEGIN:VEVENT
+UID:cal-evt-kb66dbtki8nvxbt-events-lu-ma@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261016T233000Z
+DTEND:20261017T013000Z
+SUMMARY:The Fold Town Hall
+LOCATION:The Fold\, 3359 26th St
+DESCRIPTION:Address: The Fold San Francisco\, CA United States  Hosted by 
+ Eileen Jubilee\nhttps://luma.com/a9g3gtgk
+URL:https://luma.com/a9g3gtgk
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-868557-2026-10-16@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261017T020000Z
+DTEND:20261017T040000Z
+SUMMARY:2026 Murphy & Cadogan Art Awards Ceremony (opening reception)
+LOCATION:SOMArts Cultural Center
+DESCRIPTION:SOMArts is proud to partner with the San Francisco Foundation 
+ to present the 2026 Murphy and Cadogan Contemporary Art Awards Exhibition
+ \, a focused look at the future of the Bay Area visual arts. Join us for 
+ the opening r\nhttps://missionlocal.org/event/somarts-cultural-center-202
+ 6-murphy-cadogan-art-awards-ceremony-opening-reception/
+URL:https://missionlocal.org/event/somarts-cultural-center-2026-murphy-cad
+ ogan-art-awards-ceremony-opening-reception/
+END:VEVENT
+BEGIN:VEVENT
+UID:jccsf-110183-2026-10-16@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261017T020000Z
+DTEND:20261017T040000Z
+SUMMARY:Here-ish & Queer-ish: Stories of Queer Jewish California
+LOCATION:JCCSF
+DESCRIPTION:Join Keshet\, Nice Jewish Boys+\, and Sapphic Jewish Social Cl
+ ub for a joyful Shabbat with stories\, laughter\, live performances\, and
+  an open mic. Come share your voice and queer Jewish joy.\nhttps://www.jc
+ csf.org/event/hereish-and-queerish-stories-of-queer-jewish-california/
+URL:https://www.jccsf.org/event/hereish-and-queerish-stories-of-queer-jewi
+ sh-california/
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-874052-2026-10-16@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261017T020000Z
+DTEND:20261017T060000Z
+SUMMARY:Quarter Century Of Psycho: A San Franpsycho Retrospective (closing
+  party)
+LOCATION:111 Minna Gallery
+DESCRIPTION:Celebrate 25 years of San Franpsycho at the closing party for 
+ Quarter Century of Psycho. Join us at 111 Minna Gallery for live music\, 
+ art\, and a rare screening of the surf film Wet and Wreckless—a night h
+ onoring San Fran\nhttps://missionlocal.org/event/111-minna-gallery-quarte
+ r-century-of-psycho-a-san-franpsycho-retrospective-closing-party/
+URL:https://missionlocal.org/event/111-minna-gallery-quarter-century-of-ps
+ ycho-a-san-franpsycho-retrospective-closing-party/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-neurosis-2026-10-16@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261017T030000Z
+DTEND:20261017T050000Z
+SUMMARY:Neurosis
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/neurosis-s
+ an-francisco-california-10-16-2026/event/1C0064E1FA1668C6
+URL:https://www.ticketmaster.com/neurosis-san-francisco-california-10-16-2
+ 026/event/1C0064E1FA1668C6
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-great-american-music-the-jungle-giants-2026-10-16@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261017T030000Z
+DTEND:20261017T050000Z
+SUMMARY:The Jungle Giants
+LOCATION:Great American Music Hall\, 859 O'Farrell St
+DESCRIPTION:Indie at Great American Music Hall. With with Morning Silk. Do
+ ors at 7:00PM / Show at 8:00PM. $20.75-$35.00.\nhttps://wl.seetickets.us/
+ event/the-jungle-giants/690946?afflky=GreatAmericanMusicHall
+URL:https://wl.seetickets.us/event/the-jungle-giants/690946?afflky=GreatAm
+ ericanMusicHall
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-chapel-am-lie-farren-lilith-max-rabbitology-2026-10-16@sf_famil
+ yevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261017T040000Z
+DTEND:20261017T060000Z
+SUMMARY:Amélie Farren\, Lilith Max\, Rabbitology
+LOCATION:The Chapel\, 777 Valencia St
+DESCRIPTION:Alternative at The Chapel. With The Three Wishes Tour. Doors a
+ t 8:00PM / Show at 9:00PM. All Ages.\nhttps://wl.seetickets.us/event/amel
+ ie-farren-lilith-max-rabbitology/695956?afflky=TheChapel
+URL:https://wl.seetickets.us/event/amelie-farren-lilith-max-rabbitology/69
+ 5956?afflky=TheChapel
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2613-2026-10-16@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261017T040000Z
+DTEND:20261017T060000Z
+SUMMARY:This is Lorelei
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 8:30 PM\, show 9:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/this-is-lorelei/
+URL:https://www.theindependentsf.com/tm-event/this-is-lorelei/
+END:VEVENT
+BEGIN:VEVENT
+UID:ybg-25733-2026-10-17@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261017T210000Z
+DTEND:20261017T233000Z
+SUMMARY:Joe Bataan
+LOCATION:Great Lawn\, Yerba Buena Gardens
+DESCRIPTION:Free RSVP Opening Set from MeloDious Festival favorite Joe Bat
+ aan \, a Latin music legend since the mid-1960s\, returns to the Gardens 
+ for his third performance in the past four years. He made an indelible ma
+ rk as one of t\nhttps://ybgfestival.org/event/joe-bataan-2026/
+URL:https://ybgfestival.org/event/joe-bataan-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:cmc-bootleggers-ball-with-nick-rossis-swing-six-2026-10-17@sf_familyev
+ ents
+DTSTAMP:20261012T075457Z
+DTSTART:20261018T020000Z
+DTEND:20261018T050000Z
+SUMMARY:Bootlegger's Ball with Nick Rossi's Swing Six
+LOCATION:Community Music Center\, 544 Capp St
+DESCRIPTION:A Prohibition-era swing dance party with Nick Rossi's Swing Si
+ x in CMC's concert hall. $25\, or $20 for students and seniors.\nhttps://
+ sfcmc.org/event/bootleggers-ball-with-nick-rossis-swing-six/
+URL:https://sfcmc.org/event/bootleggers-ball-with-nick-rossis-swing-six/
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-10041045-2026-10-17@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261018T020000Z
+DTEND:20261018T040000Z
+SUMMARY:Harvest: The Fall Choreographers Showcase
+LOCATION:Dance Mission Theater
+DESCRIPTION:Dance Mission Theater presents Harvest: The Fall Choreographer
+ s Showcase Oct 17-18\, 2026: Sat 7pm\, Sun 6pm Tickets: https://events.hu
+ manitix.com/harvest-the-fall-choreographers-showcase At Dance Mission The
+ ater The Chore\nhttps://missionlocal.org/event/dance-mission-theater-harv
+ est-the-fall-choreographers-showcase/2026-10-17/
+URL:https://missionlocal.org/event/dance-mission-theater-harvest-the-fall-
+ choreographers-showcase/2026-10-17/
+END:VEVENT
+BEGIN:VEVENT
+UID:rpah-18419-2026-10-17@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261018T023000Z
+DTEND:20261018T040000Z
+SUMMARY:‘The Human Experience’ – by Ramya Shankar’s Ensemble
+LOCATION:Red Poppy Art House\, 2698 Folsom St
+DESCRIPTION:The Human Experience is an interactive performance exploring w
+ hat it means to be human through jazz standards\, Carnatic motifs\, ancie
+ nt Tamil poetry\, and original compositions. Moving through emotions such
+  as grief\, love\nhttps://redpoppyarthouse.org/event/the-human-experience
+ -by-ramya-shankars-ensemble/
+URL:https://redpoppyarthouse.org/event/the-human-experience-by-ramya-shank
+ ars-ensemble/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-neurosis-2026-10-17@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261018T030000Z
+DTEND:20261018T050000Z
+SUMMARY:Neurosis
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/neurosis-s
+ an-francisco-california-10-17-2026/event/1C0064E1FA1A68D0
+URL:https://www.ticketmaster.com/neurosis-san-francisco-california-10-17-2
+ 026/event/1C0064E1FA1A68D0
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2725-2026-10-17@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261018T040000Z
+DTEND:20261018T060000Z
+SUMMARY:Asha Banks
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (something inbetween tour). Doors 8:30
+  PM\, show 9:00 PM.\nhttps://www.theindependentsf.com/tm-event/asha-banks
+ /
+URL:https://www.theindependentsf.com/tm-event/asha-banks/
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-874565-2026-10-18@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261018T190000Z
+DTEND:20261018T210000Z
+SUMMARY:Cybersentics Book Club October 2026: Here/There
+LOCATION:Gray Area Grand Theater
+DESCRIPTION:Join us for October’s Cybersentics Book Club\, where we’ll
+  discuss a chapter on artists’ work with telepresence\, focusing on the
+  Satellite Arts Project—pioneering telecollaborative performance work c
+ reated by Kit Galloway\nhttps://missionlocal.org/event/gray-area-grand-th
+ eater-cybersentics-book-club-october-2026-here-there/
+URL:https://missionlocal.org/event/gray-area-grand-theater-cybersentics-bo
+ ok-club-october-2026-here-there/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-chapel-love-supreme-summer-day-party-series-2026-10-18@sf_famil
+ yevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261018T210000Z
+DTEND:20261018T230000Z
+SUMMARY:LOVE SUPREME Summer Day Party Series
+LOCATION:The Chapel\, 777 Valencia St
+DESCRIPTION:DJ/Dance at The Chapel. Doors at 2:00PM / Show at 2:00PM.\nhtt
+ ps://wl.seetickets.us/event/LOVE-SUPREME-Summer-Day-Party-Series/697839?a
+ fflky=TheChapel
+URL:https://wl.seetickets.us/event/LOVE-SUPREME-Summer-Day-Party-Series/69
+ 7839?afflky=TheChapel
+END:VEVENT
+BEGIN:VEVENT
+UID:cmc-e4tt-call-for-scores-solo-piano-vol-3-2026-10-18@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261018T220000Z
+DTEND:20261019T000000Z
+SUMMARY:E4TT Call for Scores: Solo Piano\, Vol. 3
+LOCATION:Community Music Center\, 544 Capp St
+DESCRIPTION:Ensemble for These Times opens its 19th season with new solo p
+ iano works chosen through a call for scores. $5–$30\; no one turned awa
+ y.\nhttps://sfcmc.org/event/e4tt-call-for-scores-solo-piano-vol-3/
+URL:https://sfcmc.org/event/e4tt-call-for-scores-solo-piano-vol-3/
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-10041046-2026-10-18@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261019T010000Z
+DTEND:20261019T030000Z
+SUMMARY:Harvest: The Fall Choreographers Showcase
+LOCATION:Dance Mission Theater
+DESCRIPTION:Dance Mission Theater presents Harvest: The Fall Choreographer
+ s Showcase Oct 17-18\, 2026: Sat 7pm\, Sun 6pm Tickets: https://events.hu
+ manitix.com/harvest-the-fall-choreographers-showcase At Dance Mission The
+ ater The Chore\nhttps://missionlocal.org/event/dance-mission-theater-harv
+ est-the-fall-choreographers-showcase/2026-10-18/
+URL:https://missionlocal.org/event/dance-mission-theater-harvest-the-fall-
+ choreographers-showcase/2026-10-18/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-chapel-women-s-rebel-voices-film-music-tour-eve-2026-10-18@sf_f
+ amilyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261019T010000Z
+DTEND:20261019T030000Z
+SUMMARY:WOMEN’S REBEL VOICES FILM + MUSIC TOUR EVENT ft. MIKO MARKS
+LOCATION:The Chapel\, 777 Valencia St
+DESCRIPTION:Americana at The Chapel. With Maureen Gosling\, Jed Riffe. Doo
+ rs at 5:00PM / Show at 6:00PM. All Ages.\nhttps://wl.seetickets.us/event/
+ womens-rebel-voices-film-music-tour-event-ft-miko-marks/706154?afflky=The
+ Chapel
+URL:https://wl.seetickets.us/event/womens-rebel-voices-film-music-tour-eve
+ nt-ft-miko-marks/706154?afflky=TheChapel
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-great-american-music-peaches-2026-10-18@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261019T020000Z
+DTEND:20261019T040000Z
+SUMMARY:Peaches
+LOCATION:Great American Music Hall\, 859 O'Farrell St
+DESCRIPTION:Electronic at Great American Music Hall. With with SOLTERA\, S
+ ola Guinto\, Shifters!!. Doors at 6:00PM / Show at 7:00PM. $69.00-$111.00
+ .\nhttps://wl.seetickets.us/event/peaches/704246?afflky=GreatAmericanMusi
+ cHall
+URL:https://wl.seetickets.us/event/peaches/704246?afflky=GreatAmericanMusi
+ cHall
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2806-2026-10-18@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261019T030000Z
+DTEND:20261019T050000Z
+SUMMARY:Raaginder
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (be:coming USA Tour). Doors 7:30 PM\, 
+ show 8:00 PM.\nhttps://www.theindependentsf.com/tm-event/raaginder/
+URL:https://www.theindependentsf.com/tm-event/raaginder/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-the-wallflowers-2026-10-18@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261019T030000Z
+DTEND:20261019T050000Z
+SUMMARY:The Wallflowers
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/the-wallfl
+ owers-san-francisco-california-10-18-2026/event/1C00647982EA6007
+URL:https://www.ticketmaster.com/the-wallflowers-san-francisco-california-
+ 10-18-2026/event/1C00647982EA6007
+END:VEVENT
+BEGIN:VEVENT
+UID:cal-eed3489a-5e03-49a5-bf40-f28b87263214@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261020T003000Z
+DTEND:20261020T014500Z
+SUMMARY:SF Politics 101 with Joel Engardio [October Edition]
+LOCATION:SPUR Urban Center\, 654 Mission St
+DESCRIPTION:SF Politics 101\, presented by Joel Engardio\, is an entertain
+ ing look at how local politics work and the history that shaped San Franc
+ isco — brought to life with visuals and narrative storytelling. It’s 
+ designed for both newcomers and longtime residents who wan\nhttps://www.s
+ pur.org/events/2026-10-19/sf-politics-101-joel-engardio-october-edition
+URL:https://www.spur.org/events/2026-10-19/sf-politics-101-joel-engardio-o
+ ctober-edition
+END:VEVENT
+BEGIN:VEVENT
+UID:cwc-kevin-roose-inside-the-race-to-create-an-artificia-2026-10-19@sf_f
+ amilyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261020T010000Z
+DTEND:20261020T030000Z
+SUMMARY:Kevin Roose: Inside the Race to Create an Artificial Superintellig
+ ence
+LOCATION:Commonwealth Club\, 110 The Embarcadero
+DESCRIPTION:Imagine a 21st century Manhattan Project\, tasked with creatin
+ g artificial general intelligence.\nhttps://www.commonwealthclub.org/even
+ ts/2026-10-19/kevin-roose-inside-race-create-artificial-superintelligence
+URL:https://www.commonwealthclub.org/events/2026-10-19/kevin-roose-inside-
+ race-create-artificial-superintelligence
+END:VEVENT
+BEGIN:VEVENT
+UID:cwc-how-america-looks-from-everywhere-else-2026-10-19@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261020T013000Z
+DTEND:20261020T033000Z
+SUMMARY:How America Looks from Everywhere Else
+LOCATION:Commonwealth Club\, 110 The Embarcadero
+DESCRIPTION:What the world sees: Eight foreign correspondents on America\,
+  two weeks before the midterms.\nhttps://www.commonwealthclub.org/events/
+ 2026-10-19/how-america-looks-everywhere-else
+URL:https://www.commonwealthclub.org/events/2026-10-19/how-america-looks-e
+ verywhere-else
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-great-american-music-dj-x-ces-2026-10-19@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261020T030000Z
+DTEND:20261020T050000Z
+SUMMARY:DJ X'ces
+LOCATION:Great American Music Hall\, 859 O'Farrell St
+DESCRIPTION:Latin at Great American Music Hall. With with Turbo Sonidero\,
+  Grupo Gallardo\, Sonido Aztlan. Doors at 7:00PM / Show at 8:00PM. $24.00
+ -$27.00.\nhttps://wl.seetickets.us/event/dj-xces/701664?afflky=GreatAmeri
+ canMusicHall
+URL:https://wl.seetickets.us/event/dj-xces/701664?afflky=GreatAmericanMusi
+ cHall
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-chapel-hovvdy-2026-10-19@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261020T030000Z
+DTEND:20261020T050000Z
+SUMMARY:Hovvdy
+LOCATION:The Chapel\, 777 Valencia St
+DESCRIPTION:Indie at The Chapel. With Emma Ogier. Doors at 7:00PM / Show a
+ t 8:00PM. All Ages.\nhttps://wl.seetickets.us/event/hovvdy/691044?afflky=
+ TheChapel
+URL:https://wl.seetickets.us/event/hovvdy/691044?afflky=TheChapel
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2760-2026-10-19@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261020T030000Z
+DTEND:20261020T050000Z
+SUMMARY:New Constellations
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (It Comes In Waves Tour). Doors 7:30 P
+ M\, show 8:00 PM.\nhttps://www.theindependentsf.com/tm-event/new-constell
+ ations/
+URL:https://www.theindependentsf.com/tm-event/new-constellations/
+END:VEVENT
+BEGIN:VEVENT
+UID:cwc-katie-sanders-ortiz-s-war-2026-10-20@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261021T003000Z
+DTEND:20261021T023000Z
+SUMMARY:Katie Sanders: Ortiz’s War
+LOCATION:Commonwealth Club\, 110 The Embarcadero
+DESCRIPTION:Peter Ortiz’s path to becoming the most battle-decorated mem
+ ber of America’s first spy agency—and one of the most decorated Marin
+ es of World War II—was unlike any other.\nhttps://www.commonwealthclub.
+ org/events/2026-10-20/katie-sanders-ortizs-war
+URL:https://www.commonwealthclub.org/events/2026-10-20/katie-sanders-ortiz
+ s-war
+END:VEVENT
+BEGIN:VEVENT
+UID:cwc-rev-richard-cizik-s-route-from-the-altar-to-k-stre-2026-10-20@sf_f
+ amilyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261021T010000Z
+DTEND:20261021T030000Z
+SUMMARY:Rev. Richard Cizik’s Route from the Altar to K Street to Lyft Dr
+ iver
+LOCATION:Commonwealth Club\, 110 The Embarcadero
+DESCRIPTION:Join Climate One\, in partnership with The Redford Center\, fo
+ r a screening of the short film In Earth We Trust\, followed by a convers
+ ation with the filmmaker\, the film’s central figure\, and other faith 
+ leaders.\nhttps://www.commonwealthclub.org/events/2026-10-20/rev-richard-
+ ciziks-route-altar-k-street-lyft-driver
+URL:https://www.commonwealthclub.org/events/2026-10-20/rev-richard-ciziks-
+ route-altar-k-street-lyft-driver
+END:VEVENT
+BEGIN:VEVENT
+UID:jccsf-110249-2026-10-20@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261021T020000Z
+DTEND:20261021T033000Z
+SUMMARY:benny blanco – F*ck Failure
+LOCATION:JCCSF
+DESCRIPTION:The Grammy Award–nominated producer\, artist\, actor\, and N
+ ew York Times bestselling author comes to the JCCSF to discuss his remark
+ able career and why getting it wrong may be the secret to getting where y
+ ou want to go.\nhttps://www.jccsf.org/event/benny-blanco-fck-failure/
+URL:https://www.jccsf.org/event/benny-blanco-fck-failure/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-great-american-music-allah-las-2026-10-20@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261021T030000Z
+DTEND:20261021T050000Z
+SUMMARY:Allah-Las
+LOCATION:Great American Music Hall\, 859 O'Farrell St
+DESCRIPTION:Rock at Great American Music Hall. With with April Magazine. D
+ oors at 7:00PM / Show at 8:00PM. $39.50-$44.00.\nhttps://wl.seetickets.us
+ /event/allah-las/700624?afflky=GreatAmericanMusicHall
+URL:https://wl.seetickets.us/event/allah-las/700624?afflky=GreatAmericanMu
+ sicHall
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2688-2026-10-20@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261021T030000Z
+DTEND:20261021T050000Z
+SUMMARY:Sawyer Hill
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (Everyone's Home\, Nobody's Happy Tour
+ ). Doors 7:30 PM\, show 8:00 PM.\nhttps://www.theindependentsf.com/tm-eve
+ nt/sawyer-hill/
+URL:https://www.theindependentsf.com/tm-event/sawyer-hill/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-chapel-the-devil-makes-three-2026-10-20@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261021T030000Z
+DTEND:20261021T050000Z
+SUMMARY:The Devil Makes Three
+LOCATION:The Chapel\, 777 Valencia St
+DESCRIPTION:Americana at The Chapel. With Two Runner. Doors at 7:00PM / Sh
+ ow at 8:00PM. All Ages.\nhttps://wl.seetickets.us/event/the-devil-makes-t
+ hree/693372?afflky=TheChapel
+URL:https://wl.seetickets.us/event/the-devil-makes-three/693372?afflky=The
+ Chapel
+END:VEVENT
+BEGIN:VEVENT
+UID:cwc-jessica-marie-alba-the-inner-work-of-transforming--2026-10-21@sf_f
+ amilyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261022T003000Z
+DTEND:20261022T023000Z
+SUMMARY:Jessica Marie Alba: The Inner Work of Transforming a Region
+LOCATION:Commonwealth Club\, 110 The Embarcadero
+DESCRIPTION:Join us for this Transforming Our Region Member-led Forum prog
+ ram on personal change and place-based identity\, featuring Jessica Marie
+  Alba.\nhttps://www.commonwealthclub.org/events/2026-10-21/jessica-marie-
+ alba-inner-work-transforming-region
+URL:https://www.commonwealthclub.org/events/2026-10-21/jessica-marie-alba-
+ inner-work-transforming-region
+END:VEVENT
+BEGIN:VEVENT
+UID:jccsf-109133-2026-10-21@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261022T020000Z
+DTEND:20261022T043000Z
+SUMMARY:The Last Waltz – Co-Presented with SFFILM
+LOCATION:JCCSF
+DESCRIPTION:Celebrating the 50th anniversary of The Band’s legendary far
+ ewell concert\, Martin Scorsese’s The Last Waltz captures an unforgetta
+ ble night at Bill Graham’s Winterland Ballroom in San Francisco\, creat
+ ing one of cinema’s \nhttps://www.jccsf.org/event/the-last-waltz-co-pre
+ sented-with-sffilm/
+URL:https://www.jccsf.org/event/the-last-waltz-co-presented-with-sffilm/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2785-2026-10-21@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261022T030000Z
+DTEND:20261022T050000Z
+SUMMARY:City of the Sun
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/city-of-the-sun/
+URL:https://www.theindependentsf.com/tm-event/city-of-the-sun/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-great-american-music-diiv-2026-10-21@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261022T030000Z
+DTEND:20261022T050000Z
+SUMMARY:DIIV
+LOCATION:Great American Music Hall\, 859 O'Farrell St
+DESCRIPTION:Rock at Great American Music Hall. With with Pink Breath of He
+ aven. Doors at 7:00PM / Show at 8:00PM. $47.00-$50.00.\nhttps://wl.seetic
+ kets.us/event/diiv/701325?afflky=GreatAmericanMusicHall
+URL:https://wl.seetickets.us/event/diiv/701325?afflky=GreatAmericanMusicHa
+ ll
+END:VEVENT
+BEGIN:VEVENT
+UID:cal-472a369e-45da-43db-8879-9ecc9b9d9e8b@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261022T230000Z
+DTEND:20261023T023000Z
+SUMMARY:2026 Silver SPUR Awards
+LOCATION:SPUR Urban Center\, 654 Mission St
+DESCRIPTION:Join SPUR for an evening of celebration\, inspiration\, and ne
+ tworking. Save the date — The Silver SPUR Awards are back on Thursday\,
+  October 22!\nhttps://www.spur.org/events/2026-10-22/2026-silver-spur-awa
+ rds
+URL:https://www.spur.org/events/2026-10-22/2026-silver-spur-awards
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-876200-2026-10-22@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261023T000000Z
+DTEND:20261023T050000Z
+SUMMARY:Randy Gaul’s INNER WORKINGS | Opening Night
+LOCATION:111 Minna Gallery
+DESCRIPTION:eet film artist Randy Gaul and explore his worlds beyond Indus
+ trial Light & Magic at Inner Workings\, opening at 111 Minna Gallery. Bef
+ ore an extraordinary world reaches the screen\, someone has to imagine it
+ . Randy Gaul h\nhttps://missionlocal.org/event/111-minna-gallery-randy-ga
+ uls-inner-workings-opening-night/
+URL:https://missionlocal.org/event/111-minna-gallery-randy-gauls-inner-wor
+ kings-opening-night/
+END:VEVENT
+BEGIN:VEVENT
+UID:cwc-tom-rosenstiel-how-the-press-must-change-to-save-d-2026-10-22@sf_f
+ amilyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261023T003000Z
+DTEND:20261023T023000Z
+SUMMARY:Tom Rosenstiel: How the Press Must Change to Save Democracy
+LOCATION:Commonwealth Club\, 110 The Embarcadero
+DESCRIPTION:The crisis in journalism\, says veteran journalist and media c
+ ritic Tom Rosenstiel\, reflects a crisis in American democracy.\nhttps://
+ www.commonwealthclub.org/events/2026-10-22/tom-rosenstiel-how-press-must-
+ change-save-democracy-0
+URL:https://www.commonwealthclub.org/events/2026-10-22/tom-rosenstiel-how-
+ press-must-change-save-democracy-0
+END:VEVENT
+BEGIN:VEVENT
+UID:cwc-bing-gordon-and-chloe-gordon-everybody-wins-2026-10-22@sf_familyev
+ ents
+DTSTAMP:20261012T075457Z
+DTSTART:20261023T010000Z
+DTEND:20261023T030000Z
+SUMMARY:Bing Gordon and Chloe Gordon: Everybody Wins
+LOCATION:Commonwealth Club\, 110 The Embarcadero
+DESCRIPTION:What can the billion-dollar secrets of game design teach peopl
+ e about building products better and making customers happier?Video games
+  are one of the biggest entertainment industry in the world—for a reaso
+ n.\nhttps://www.commonwealthclub.org/events/2026-10-22/bing-gordon-and-ch
+ loe-gordon-everybody-wins
+URL:https://www.commonwealthclub.org/events/2026-10-22/bing-gordon-and-chl
+ oe-gordon-everybody-wins
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-876203-2026-10-22@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261023T010000Z
+DTEND:20261023T050000Z
+SUMMARY:PASSION PROJECTS SF: The Artist Behind the Effect | Opening Night
+LOCATION:111 Minna Gallery
+DESCRIPTION:Meet the visual effects artists behind films and television yo
+ u love. Discover their personal art at 111 Minna Gallery on Oct 22. You k
+ now the worlds they help bring to life. Now meet the artists behind them.
+  Join us on \nhttps://missionlocal.org/event/111-minna-gallery-passion-pr
+ ojects-sf-the-artist-behind-the-effect-opening-night/
+URL:https://missionlocal.org/event/111-minna-gallery-passion-projects-sf-t
+ he-artist-behind-the-effect-opening-night/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2622-2026-10-22@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261023T030000Z
+DTEND:20261023T050000Z
+SUMMARY:Frankie Cosmos - Celebrating 10 Years of Next Thing
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/frankie-cosmos-celebrating-10-years-o
+ f-next-thing/
+URL:https://www.theindependentsf.com/tm-event/frankie-cosmos-celebrating-1
+ 0-years-of-next-thing/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-pouya-the-forever-glades-tour-2026-2026-10-23@sf_famil
+ yevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261024T020000Z
+DTEND:20261024T040000Z
+SUMMARY:Pouya - The Forever Glades Tour 2026
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/pouya-the-
+ forever-glades-tour-2026-san-francisco-california-10-23-2026/event/1C0064
+ C4FF6A8769
+URL:https://www.ticketmaster.com/pouya-the-forever-glades-tour-2026-san-fr
+ ancisco-california-10-23-2026/event/1C0064C4FF6A8769
+END:VEVENT
+BEGIN:VEVENT
+UID:cmc-new-music-for-wind-trio-2026-10-23@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261024T030000Z
+DTEND:20261024T050000Z
+SUMMARY:New Music for Wind Trio
+LOCATION:Community Music Center\, 544 Capp St
+DESCRIPTION:An evening of brand-new music for winds from the Bay Area chap
+ ter of the National Association of Composers USA. $15–$25.\nhttps://sfc
+ mc.org/event/new-music-for-wind-trio/
+URL:https://sfcmc.org/event/new-music-for-wind-trio/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2740-2026-10-23@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261024T040000Z
+DTEND:20261024T060000Z
+SUMMARY:Frog
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (FROG FOR SALE FALL TOUR 2026). Doors 
+ 8:30 PM\, show 9:00 PM.\nhttps://www.theindependentsf.com/tm-event/frog/
+URL:https://www.theindependentsf.com/tm-event/frog/
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-870263-2026-10-24@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261024T180000Z
+DTEND:20261024T190000Z
+SUMMARY:“Drawn Together” Curator Walkthrough with Auriel Garza
+LOCATION:Creativity Explored
+DESCRIPTION:Join us for a curator walkthrough of Drawn Together with Aurie
+ l Garaza on Saturday\, October 24th. About the Exhibition: Creativity Exp
+ lored is pleased to present Drawn Together\, a group exhibition celebrati
+ ng human conne\nhttps://missionlocal.org/event/creativity-explored-drawn-
+ together-curator-walkthrough-with-auriel-garza/
+URL:https://missionlocal.org/event/creativity-explored-drawn-together-cura
+ tor-walkthrough-with-auriel-garza/
+END:VEVENT
+BEGIN:VEVENT
+UID:ybg-25748-2026-10-24@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261024T210000Z
+DTEND:20261024T223000Z
+SUMMARY:Afro-Filipino Jazz Project
+LOCATION:Great Lawn\, Yerba Buena Gardens
+DESCRIPTION:Free RSVP Few artists have appeared at the Festival more frequ
+ ently than flutist\, percussionist and arranger John Calloway . Whether h
+ e’s leading his own band\, performing in the sextet of longtime creativ
+ e partner John S\nhttps://ybgfestival.org/event/afro-filipino-jazz-projec
+ t/
+URL:https://ybgfestival.org/event/afro-filipino-jazz-project/
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-875083-2026-10-24@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261025T000000Z
+DTEND:20261025T010000Z
+SUMMARY:You’re Invited: 826 Valencia Quarterly\, Volume 34 Release Party
+ !
+LOCATION:826 Valencia
+DESCRIPTION:We are back for our yearly Quarterly release party\, celebrati
+ ng the publication of the 826 Valencia Quarterly\, volume 34! 🥳 📚 J
+ oin us on Saturday\, October 24\, from 5 to 6 pm for student readings and
+  a book signing in par\nhttps://missionlocal.org/event/826-valencia-youre
+ -invited-826-valencia-quarterly-volume-34-release-party/
+URL:https://missionlocal.org/event/826-valencia-youre-invited-826-valencia
+ -quarterly-volume-34-release-party/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-amble-2026-10-24@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261025T030000Z
+DTEND:20261025T050000Z
+SUMMARY:Amble
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/amble-san-
+ francisco-california-10-24-2026/event/1C0064CABFC98DA4
+URL:https://www.ticketmaster.com/amble-san-francisco-california-10-24-2026
+ /event/1C0064CABFC98DA4
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2627-2026-10-24@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261025T040000Z
+DTEND:20261025T060000Z
+SUMMARY:Everclear with American Hi-Fi
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (Lucky 7 Tour). Doors 8:30 PM\, show 9
+ :00 PM.\nhttps://www.theindependentsf.com/tm-event/everclear/
+URL:https://www.theindependentsf.com/tm-event/everclear/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2690-2026-10-25@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261026T030000Z
+DTEND:20261026T050000Z
+SUMMARY:BALTHVS
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/balthvs/
+URL:https://www.theindependentsf.com/tm-event/balthvs/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-kishi-bashi-sonderlust-10th-anniversary--2026-10-25@sf
+ _familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261026T030000Z
+DTEND:20261026T050000Z
+SUMMARY:Kishi Bashi: Sonderlust 10th Anniversary Tour
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/kishi-bash
+ i-sonderlust-10th-anniversary-tour-san-francisco-california-10-25-2026/ev
+ ent/1C006470E74207E3
+URL:https://www.ticketmaster.com/kishi-bashi-sonderlust-10th-anniversary-t
+ our-san-francisco-california-10-25-2026/event/1C006470E74207E3
+END:VEVENT
+BEGIN:VEVENT
+UID:jccsf-106950-2026-10-27@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261028T014500Z
+DTEND:20261028T044500Z
+SUMMARY:Rikud By The Bay Israeli Dance
+LOCATION:JCCSF
+DESCRIPTION:Join Rikud By The Bay for an all-level Israeli folk dance nigh
+ t with choreographer Tovael Hagai.\nhttps://www.jccsf.org/event/rikud-by-
+ the-bay-israeli-dance-night-2/
+URL:https://www.jccsf.org/event/rikud-by-the-bay-israeli-dance-night-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-slow-pulp-2026-10-27@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261028T030000Z
+DTEND:20261028T050000Z
+SUMMARY:Slow Pulp
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/slow-pulp-
+ san-francisco-california-10-27-2026/event/1C0064A49383A7BE
+URL:https://www.ticketmaster.com/slow-pulp-san-francisco-california-10-27-
+ 2026/event/1C0064A49383A7BE
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2721-2026-10-27@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261028T030000Z
+DTEND:20261028T050000Z
+SUMMARY:The Wldlfe
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/the-wldlfe/
+URL:https://www.theindependentsf.com/tm-event/the-wldlfe/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2758-2026-10-28@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261029T030000Z
+DTEND:20261029T050000Z
+SUMMARY:Freak Slug
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (AMULET TOUR NA). Doors 7:30 PM\, show
+  8:00 PM.\nhttps://www.theindependentsf.com/tm-event/freak-slug/
+URL:https://www.theindependentsf.com/tm-event/freak-slug/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-slow-pulp-2026-10-28@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261029T030000Z
+DTEND:20261029T050000Z
+SUMMARY:Slow Pulp
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/slow-pulp-
+ san-francisco-california-10-28-2026/event/1C0064E690EF7D86
+URL:https://www.ticketmaster.com/slow-pulp-san-francisco-california-10-28-
+ 2026/event/1C0064E690EF7D86
+END:VEVENT
+BEGIN:VEVENT
+UID:cal-a67fdb9d-a769-4a87-b160-9485289f9fb9@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261030T010000Z
+DTEND:20261030T020000Z
+SUMMARY:Investing in Housing: The Housing Trust Fund and the November Ball
+ ot
+LOCATION:SPUR Urban Center\, 654 Mission St
+DESCRIPTION:This November\, San Francisco voters will decide whether to in
+ crease the funding cap for the city’s Housing Trust Fund. Hear from exp
+ erts in affordable housing\, homelessness prevention\, tenant protections
+  and public policy about the fund’s impact\, future\, and c\nhttps://ww
+ w.spur.org/events/2026-10-29/investing-housing-housing-trust-fund-and-nov
+ ember-ballot
+URL:https://www.spur.org/events/2026-10-29/investing-housing-housing-trust
+ -fund-and-november-ballot
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-dilated-peoples-2026-10-29@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261030T030000Z
+DTEND:20261030T050000Z
+SUMMARY:Dilated Peoples
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/dilated-pe
+ oples-san-francisco-california-10-29-2026/event/1C00648F95D78073
+URL:https://www.ticketmaster.com/dilated-peoples-san-francisco-california-
+ 10-29-2026/event/1C00648F95D78073
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2820-2026-10-29@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261030T030000Z
+DTEND:20261030T050000Z
+SUMMARY:Patrick Wolf
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/patrick-wolf/
+URL:https://www.theindependentsf.com/tm-event/patrick-wolf/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-galactic-2026-10-30@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261031T030000Z
+DTEND:20261031T050000Z
+SUMMARY:Galactic
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/galactic-s
+ an-francisco-california-10-30-2026/event/1C0064E1AF3FC808
+URL:https://www.ticketmaster.com/galactic-san-francisco-california-10-30-2
+ 026/event/1C0064E1AF3FC808
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2717-2026-10-30@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261031T040000Z
+DTEND:20261031T060000Z
+SUMMARY:High Step Society
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 8:30 PM\, show 9:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/high-step-society/
+URL:https://www.theindependentsf.com/tm-event/high-step-society/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-galactic-2026-10-31@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261101T030000Z
+DTEND:20261101T050000Z
+SUMMARY:Galactic
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/galactic-s
+ an-francisco-california-10-31-2026/event/1C0064E1AF3BC802
+URL:https://www.ticketmaster.com/galactic-san-francisco-california-10-31-2
+ 026/event/1C0064E1AF3BC802
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-8206-2026-10-31@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261101T040000Z
+DTEND:20261101T060000Z
+SUMMARY:The Emo Night Tour
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (It's Relative! Presents). Doors 8:30 
+ PM\, show 9:00 PM.\nhttps://www.theindependentsf.com/tm-event/the-emo-nig
+ ht-tour-13/
+URL:https://www.theindependentsf.com/tm-event/the-emo-night-tour-13/
+END:VEVENT
+BEGIN:VEVENT
+UID:cmc-dia-de-muertos-en-la-mision-2026-11-01@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261102T000000Z
+DTEND:20261102T020000Z
+SUMMARY:Día de Muertos en la Misión
+LOCATION:Mission Dolores Basilica
+DESCRIPTION:A Day of the Dead concert by CMC choirs and musicians at Missi
+ on Dolores Basilica. $5–$15\; no one turned away for lack of funds.\nht
+ tps://sfcmc.org/event/dia-de-muertos-en-la-mision/
+URL:https://sfcmc.org/event/dia-de-muertos-en-la-mision/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-jose-madero-usa-tour-2026-2026-11-01@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261102T040000Z
+DTEND:20261102T060000Z
+SUMMARY:Jose Madero - USA Tour 2026
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/jose-mader
+ o-usa-tour-2026-san-francisco-california-11-01-2026/event/1C0064D18D5F88F
+ 0
+URL:https://www.ticketmaster.com/jose-madero-usa-tour-2026-san-francisco-c
+ alifornia-11-01-2026/event/1C0064D18D5F88F0
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2808-2026-11-01@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261102T040000Z
+DTEND:20261102T060000Z
+SUMMARY:SIX60
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/six60/
+URL:https://www.theindependentsf.com/tm-event/six60/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-7736-2026-11-02@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261103T040000Z
+DTEND:20261103T060000Z
+SUMMARY:Lexi Jayde
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/lexi-jayde/
+URL:https://www.theindependentsf.com/tm-event/lexi-jayde/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2653-2026-11-03@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261104T040000Z
+DTEND:20261104T060000Z
+SUMMARY:Gilla Band
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/gilla-band/
+URL:https://www.theindependentsf.com/tm-event/gilla-band/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2727-2026-11-04@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261105T040000Z
+DTEND:20261105T060000Z
+SUMMARY:INOHA
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/inoha/
+URL:https://www.theindependentsf.com/tm-event/inoha/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2803-2026-11-05@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261106T040000Z
+DTEND:20261106T060000Z
+SUMMARY:Greg Freeman
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/greg-freeman/
+URL:https://www.theindependentsf.com/tm-event/greg-freeman/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-thee-sinseers-love-stories-tour-2026-11-06@sf_familyev
+ ents
+DTSTAMP:20261012T075457Z
+DTSTART:20261107T040000Z
+DTEND:20261107T060000Z
+SUMMARY:Thee Sinseers: Love Stories Tour
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/thee-sinse
+ ers-love-stories-tour-san-francisco-california-11-06-2026/event/1C0064A7C
+ 0CACE11
+URL:https://www.ticketmaster.com/thee-sinseers-love-stories-tour-san-franc
+ isco-california-11-06-2026/event/1C0064A7C0CACE11
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2631-2026-11-06@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261107T050000Z
+DTEND:20261107T070000Z
+SUMMARY:King Buffalo
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 8:30 PM\, show 9:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/king-buffalo/
+URL:https://www.theindependentsf.com/tm-event/king-buffalo/
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-875073-2026-11-07@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261108T020000Z
+DTEND:20261108T040000Z
+SUMMARY:The Last Supper Party
+LOCATION:The Sycamore
+DESCRIPTION:An Evening of Poetry and Music with Colleen Shoshana McKee\, O
+ lga Zilberbourg and Timothy Goodspeed curated by Kimi Sugioka and present
+ ed in collaboration with The Sycamore. We invite our audience to share id
+ eas and bread\nhttps://missionlocal.org/event/the-sycamore-the-last-suppe
+ r-party/
+URL:https://missionlocal.org/event/the-sycamore-the-last-supper-party/
+END:VEVENT
+BEGIN:VEVENT
+UID:rpah-18484-2026-11-07@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261108T033000Z
+DTEND:20261108T050000Z
+SUMMARY:Hot Blood Orkestar
+LOCATION:Red Poppy Art House\, 2698 Folsom St
+DESCRIPTION:An intimate performance at Red Poppy Art House\, a small Missi
+ on arts space\; advance tickets recommended.\nhttps://redpoppyarthouse.or
+ g/event/hot-blood-orkestar-20261107/
+URL:https://redpoppyarthouse.org/event/hot-blood-orkestar-20261107/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-the-big-star-quintet-2026-11-07@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261108T040000Z
+DTEND:20261108T060000Z
+SUMMARY:The Big Star Quintet
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/the-big-st
+ ar-quintet-san-francisco-california-11-07-2026/event/1C0064FDD0AC3682
+URL:https://www.ticketmaster.com/the-big-star-quintet-san-francisco-califo
+ rnia-11-07-2026/event/1C0064FDD0AC3682
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2723-2026-11-07@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261108T050000Z
+DTEND:20261108T070000Z
+SUMMARY:Karina Rykman
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 8:30 PM\, show 9:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/karina-rykman/
+URL:https://www.theindependentsf.com/tm-event/karina-rykman/
+END:VEVENT
+BEGIN:VEVENT
+UID:jccsf-109831-2026-11-08@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261109T010000Z
+DTEND:20261109T043000Z
+SUMMARY:Hold on to Your Music – A Mother’s Legacy
+LOCATION:JCCSF
+DESCRIPTION:Mona Golabek\, the Grammy-nominated artist\, shares her mother
+ ’s journey from Nazi-occupied Vienna to wartime London through the mult
+ i-award winning film\, performance\, and conversation.\nhttps://www.jccsf
+ .org/event/hold-on-to-your-music-a-mothers-legacy/
+URL:https://www.jccsf.org/event/hold-on-to-your-music-a-mothers-legacy/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2976-2026-11-08@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261109T040000Z
+DTEND:20261109T060000Z
+SUMMARY:THAO
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent ("Show Me" Album Release). Doors 7:30 
+ PM\, show 8:00 PM.\nhttps://www.theindependentsf.com/tm-event/thao/
+URL:https://www.theindependentsf.com/tm-event/thao/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-quadeca-2026-11-09@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261110T040000Z
+DTEND:20261110T060000Z
+SUMMARY:Quadeca
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/quadeca-sa
+ n-francisco-california-11-09-2026/event/1C0064F48D166DDE
+URL:https://www.ticketmaster.com/quadeca-san-francisco-california-11-09-20
+ 26/event/1C0064F48D166DDE
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-8403-2026-11-09@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261110T040000Z
+DTEND:20261110T060000Z
+SUMMARY:Weston Estate
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (Second Night Added By Popular Demand!
+ ). Doors 7:30 PM\, show 8:00 PM.\nhttps://www.theindependentsf.com/tm-eve
+ nt/weston-estate-2/
+URL:https://www.theindependentsf.com/tm-event/weston-estate-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:jccsf-110044-2026-11-10@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261110T210000Z
+DTEND:20261110T223000Z
+SUMMARY:Cream: The Legendary Reign of the Original Rock Supergroup
+LOCATION:JCCSF
+DESCRIPTION:Thrill to film clips of 1960s musical pioneers Cream\, whose p
+ owerful and dynamic sound belied the fact they were a trio. Their classic
+ s live on.\nhttps://www.jccsf.org/event/cream-the-legendary-reign-of-the-
+ original-rock-supergroup/
+URL:https://www.jccsf.org/event/cream-the-legendary-reign-of-the-original-
+ rock-supergroup/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-6054-2026-11-10@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261111T040000Z
+DTEND:20261111T060000Z
+SUMMARY:Weston Estate
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/weston-estate/
+URL:https://www.theindependentsf.com/tm-event/weston-estate/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2673-2026-11-11@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261112T040000Z
+DTEND:20261112T060000Z
+SUMMARY:Stop Light Observations
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/stop-light-observation/
+URL:https://www.theindependentsf.com/tm-event/stop-light-observation/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-the-damned-final-damnation-50-2026-11-11@sf_familyeven
+ ts
+DTSTAMP:20261012T075457Z
+DTSTART:20261112T040000Z
+DTEND:20261112T060000Z
+SUMMARY:THE DAMNED - FINAL DAMNATION 50
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/the-damned
+ -final-damnation-50-san-francisco-california-11-11-2026/event/1C00648ED04
+ CE8BF
+URL:https://www.ticketmaster.com/the-damned-final-damnation-50-san-francis
+ co-california-11-11-2026/event/1C00648ED04CE8BF
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-gene-2026-11-12@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261113T040000Z
+DTEND:20261113T060000Z
+SUMMARY:Gene
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/gene-san-f
+ rancisco-california-11-12-2026/event/1C0064A1CF5AAAE5
+URL:https://www.ticketmaster.com/gene-san-francisco-california-11-12-2026/
+ event/1C0064A1CF5AAAE5
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2686-2026-11-12@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261113T040000Z
+DTEND:20261113T060000Z
+SUMMARY:Stephen Day
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (The Self Titled Tour). Doors 7:30 PM\
+ , show 8:00 PM.\nhttps://www.theindependentsf.com/tm-event/stephen-day/
+URL:https://www.theindependentsf.com/tm-event/stephen-day/
+END:VEVENT
+BEGIN:VEVENT
+UID:ybg-26259-2026-11-13@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261114T000000Z
+DTEND:20261114T050000Z
+SUMMARY:Bhangra & Beats Night Market
+LOCATION:Great Lawn\, Yerba Buena Gardens
+DESCRIPTION:San Francisco’s biggest South Asian celebration is back\, an
+ d for the first time ever\, it lands at Yerba Buena Gardens\, one of down
+ town’s most iconic arts and cultural destinations. On July 24 and Novem
+ ber 13\, Yerba Buena\nhttps://ybgfestival.org/event/bhangra-and-beats-111
+ 326/
+URL:https://ybgfestival.org/event/bhangra-and-beats-111326/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-ceremony-2026-11-13@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261114T040000Z
+DTEND:20261114T060000Z
+SUMMARY:Ceremony
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/ceremony-s
+ an-francisco-california-11-13-2026/event/1C0064CF8DB96D00
+URL:https://www.ticketmaster.com/ceremony-san-francisco-california-11-13-2
+ 026/event/1C0064CF8DB96D00
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-6056-2026-11-13@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261114T040000Z
+DTEND:20261114T060000Z
+SUMMARY:Whitmer Thomas
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:00 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/whitmer-thomas/
+URL:https://www.theindependentsf.com/tm-event/whitmer-thomas/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-allison-russell-2026-11-14@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261115T033000Z
+DTEND:20261115T053000Z
+SUMMARY:Allison Russell
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/allison-ru
+ ssell-san-francisco-california-11-14-2026/event/1C0065069F51D791
+URL:https://www.ticketmaster.com/allison-russell-san-francisco-california-
+ 11-14-2026/event/1C0065069F51D791
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2701-2026-11-14@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261115T050000Z
+DTEND:20261115T070000Z
+SUMMARY:Sean Hayes with KATZROAR and Etienne de Rocher (Haunted Shed)
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 8:30 PM\, show 9:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/sean-hayes/
+URL:https://www.theindependentsf.com/tm-event/sean-hayes/
+END:VEVENT
+BEGIN:VEVENT
+UID:jccsf-109233-2026-11-15@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261116T010000Z
+DTEND:20261116T030000Z
+SUMMARY:Ketubah Renaissance – Reception with the Curator
+LOCATION:JCCSF
+DESCRIPTION:Join the curator to explore the history behind the exhibit mor
+ e deeply.\nhttps://www.jccsf.org/event/ketubah-renaissance-reception-with
+ -the-curator/
+URL:https://www.jccsf.org/event/ketubah-renaissance-reception-with-the-cur
+ ator/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-the-mountain-goats-night-one-openers-2026-11-15@sf_fam
+ ilyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261116T040000Z
+DTEND:20261116T060000Z
+SUMMARY:The Mountain Goats - Night One: Openers
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/the-mounta
+ in-goats-night-one-openers-san-francisco-california-11-15-2026/event/1C00
+ 64C40B89B3F9
+URL:https://www.ticketmaster.com/the-mountain-goats-night-one-openers-san-
+ francisco-california-11-15-2026/event/1C0064C40B89B3F9
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-the-mountain-goats-night-two-alpha-2026-11-16@sf_famil
+ yevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261117T040000Z
+DTEND:20261117T060000Z
+SUMMARY:The Mountain Goats - Night Two: Alpha
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/the-mounta
+ in-goats-night-two-alpha-san-francisco-california-11-16-2026/event/1C0064
+ C40B8DB3FE
+URL:https://www.ticketmaster.com/the-mountain-goats-night-two-alpha-san-fr
+ ancisco-california-11-16-2026/event/1C0064C40B8DB3FE
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2712-2026-11-17@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261118T040000Z
+DTEND:20261118T060000Z
+SUMMARY:Silverada
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/silverada/
+URL:https://www.theindependentsf.com/tm-event/silverada/
+END:VEVENT
+BEGIN:VEVENT
+UID:cal-40a6ab7c-173e-44cd-843e-845c5c1b16a2@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261119T013000Z
+DTEND:20261119T030000Z
+SUMMARY:San Francisco Post-Election Debrief
+LOCATION:SPUR Urban Center\, 654 Mission St
+DESCRIPTION:Join SPUR members for a conversation about what the November 3
+  election results mean for San Francisco’s future. Ruth Bernstein\, Pre
+ sident of EMC Research\; Aaron Peskin\, former President of the San Franc
+ isco Board of Supervisors\; and Sean Elsbernd\, President a\nhttps://www.
+ spur.org/events/2026-11-18/san-francisco-post-election-debrief
+URL:https://www.spur.org/events/2026-11-18/san-francisco-post-election-deb
+ rief
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-7303-2026-11-18@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261119T040000Z
+DTEND:20261119T060000Z
+SUMMARY:Icona Pop
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/icona-pop/
+URL:https://www.theindependentsf.com/tm-event/icona-pop/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-the-mountain-goats-night-three-stump-the-2026-11-18@sf
+ _familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261119T040000Z
+DTEND:20261119T060000Z
+SUMMARY:The Mountain Goats - Night Three: Stump the Band
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/the-mounta
+ in-goats-night-three-stump-san-francisco-california-11-18-2026/event/1C00
+ 64C40B92B419
+URL:https://www.ticketmaster.com/the-mountain-goats-night-three-stump-san-
+ francisco-california-11-18-2026/event/1C0064C40B92B419
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-5227-2026-11-19@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261120T040000Z
+DTEND:20261120T060000Z
+SUMMARY:Pretty Sick
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/pretty-sick/
+URL:https://www.theindependentsf.com/tm-event/pretty-sick/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-the-mountain-goats-night-four-six-long-s-2026-11-19@sf
+ _familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261120T040000Z
+DTEND:20261120T060000Z
+SUMMARY:The Mountain Goats - Night Four: Six Long Songs
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/the-mounta
+ in-goats-night-four-six-san-francisco-california-11-19-2026/event/1C0064C
+ 40B96B421
+URL:https://www.ticketmaster.com/the-mountain-goats-night-four-six-san-fra
+ ncisco-california-11-19-2026/event/1C0064C40B96B421
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-the-mountain-goats-night-five-cast-of-th-2026-11-20@sf
+ _familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261121T040000Z
+DTEND:20261121T060000Z
+SUMMARY:The Mountain Goats - Night Five: Cast of Thousands
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/the-mounta
+ in-goats-night-five-cast-san-francisco-california-11-20-2026/event/1C0064
+ C40B9AB433
+URL:https://www.ticketmaster.com/the-mountain-goats-night-five-cast-san-fr
+ ancisco-california-11-20-2026/event/1C0064C40B9AB433
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-7330-2026-11-20@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261121T050000Z
+DTEND:20261121T070000Z
+SUMMARY:@NICKCHEO the *TOUR* the *MOVIE*
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (In the Round!). Doors 8:30 PM\, show 
+ 9:00 PM.\nhttps://www.theindependentsf.com/tm-event/nickcheo-the-tour-the
+ -movie/
+URL:https://www.theindependentsf.com/tm-event/nickcheo-the-tour-the-movie/
+END:VEVENT
+BEGIN:VEVENT
+UID:rpah-18491-2026-11-21@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261122T033000Z
+DTEND:20261122T050000Z
+SUMMARY:Ragamenco
+LOCATION:Red Poppy Art House\, 2698 Folsom St
+DESCRIPTION:An intimate performance at Red Poppy Art House\, a small Missi
+ on arts space\; advance tickets recommended.\nhttps://redpoppyarthouse.or
+ g/event/ragamenco/
+URL:https://redpoppyarthouse.org/event/ragamenco/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-the-mountain-goats-night-six-closers-2026-11-21@sf_fam
+ ilyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261122T040000Z
+DTEND:20261122T060000Z
+SUMMARY:The Mountain Goats - Night Six: Closers
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/the-mounta
+ in-goats-night-six-closers-san-francisco-california-11-21-2026/event/1C00
+ 64C40B9DB43D
+URL:https://www.ticketmaster.com/the-mountain-goats-night-six-closers-san-
+ francisco-california-11-21-2026/event/1C0064C40B9DB43D
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-6059-2026-11-21@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261122T050000Z
+DTEND:20261122T070000Z
+SUMMARY:Q Marsden
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (DO YOU SEE ME?). Doors 8:30 PM\, show
+  9:00 PM.\nhttps://www.theindependentsf.com/tm-event/q-marsden/
+URL:https://www.theindependentsf.com/tm-event/q-marsden/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2814-2026-11-22@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261123T040000Z
+DTEND:20261123T060000Z
+SUMMARY:Mark William Lewis
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/mark-william-lewis/
+URL:https://www.theindependentsf.com/tm-event/mark-william-lewis/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-cocorosie-2026-11-23@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261124T040000Z
+DTEND:20261124T060000Z
+SUMMARY:CocoRosie
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/cocorosie-
+ san-francisco-california-11-23-2026/event/1C006511BAEB3B53
+URL:https://www.ticketmaster.com/cocorosie-san-francisco-california-11-23-
+ 2026/event/1C006511BAEB3B53
+END:VEVENT
+BEGIN:VEVENT
+UID:jccsf-110050-2026-11-24@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261124T210000Z
+DTEND:20261124T220000Z
+SUMMARY:A Joyful Thanksgiving Concert: Come Celebrate with Us
+LOCATION:JCCSF
+DESCRIPTION:Be part of this festive musical event with our special guests\
+ , accordionist Jim Rebhan and soprano Barbara Hollinger. It’s a great w
+ ay to embrace the holiday spirit.\nhttps://www.jccsf.org/event/a-joyful-t
+ hanksgiving-concert-come-celebrate-with-us/
+URL:https://www.jccsf.org/event/a-joyful-thanksgiving-concert-come-celebra
+ te-with-us/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-8409-2026-11-25@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261126T040000Z
+DTEND:20261126T060000Z
+SUMMARY:1 Umbrella
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (The DHS Tour). Doors 7:30 PM\, show 8
+ :00 PM.\nhttps://www.theindependentsf.com/tm-event/1-umbrella/
+URL:https://www.theindependentsf.com/tm-event/1-umbrella/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-chapel-sleepless-nights-xx-a-tribute-to-gram-pa-2026-11-27@sf_f
+ amilyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261128T040000Z
+DTEND:20261128T060000Z
+SUMMARY:Sleepless Nights XX: A Tribute to Gram Parsons
+LOCATION:The Chapel\, 777 Valencia St
+DESCRIPTION:Americana at The Chapel. With Bar Fight\, Aaron Burnham & the 
+ Brushfires\, East Bay Breeze\, Paula Frazer & Tarnation\, Sweet Chariot\,
+  Brian Mello & the Afterglow\, Country Risqué\, Nashville Honeymoon\, Pe
+ nelope Houston & the Jailbirds. Doors at 7:30PM / Show at 8:00PM. All Age
+ s.\nhttps://wl.seetickets.us/event/sleepless-nights-xx-a-tribute-to-gram-
+ parsons/707714?afflky=TheChapel
+URL:https://wl.seetickets.us/event/sleepless-nights-xx-a-tribute-to-gram-p
+ arsons/707714?afflky=TheChapel
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-6408-2026-11-27@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261128T050000Z
+DTEND:20261128T070000Z
+SUMMARY:O'Flynn
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (In the Round!). Doors 8:30 PM\, show 
+ 9:00 PM.\nhttps://www.theindependentsf.com/tm-event/oflynn/
+URL:https://www.theindependentsf.com/tm-event/oflynn/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-jackie-greene-2026-11-28@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261129T040000Z
+DTEND:20261129T060000Z
+SUMMARY:Jackie Greene
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/jackie-gre
+ ene-san-francisco-california-11-28-2026/event/1C006519AA671008
+URL:https://www.ticketmaster.com/jackie-greene-san-francisco-california-11
+ -28-2026/event/1C006519AA671008
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-8435-2026-11-28@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261129T050000Z
+DTEND:20261129T070000Z
+SUMMARY:Oden & Fatzo Live
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (Somehow It Flies US Album Tour). Door
+ s 8:30 PM\, show 9:00 PM.\nhttps://www.theindependentsf.com/tm-event/oden
+ -fatzo-live/
+URL:https://www.theindependentsf.com/tm-event/oden-fatzo-live/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-8415-2026-11-30@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261201T040000Z
+DTEND:20261201T060000Z
+SUMMARY:UNKLE
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (UNKLE SOUNDS North America Tour 2026)
+ . Doors 7:30 PM\, show 8:00 PM.\nhttps://www.theindependentsf.com/tm-even
+ t/unkle/
+URL:https://www.theindependentsf.com/tm-event/unkle/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-eloise-the-drama-queen-tour-2026-12-02@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261203T040000Z
+DTEND:20261203T060000Z
+SUMMARY:Eloise - The Drama Queen Tour
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/eloise-the
+ -drama-queen-tour-san-francisco-california-12-02-2026/event/1C0064EA7F417
+ 10E
+URL:https://www.ticketmaster.com/eloise-the-drama-queen-tour-san-francisco
+ -california-12-02-2026/event/1C0064EA7F41710E
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-8270-2026-12-02@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261203T040000Z
+DTEND:20261203T060000Z
+SUMMARY:The Buttertones
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/the-buttertones/
+URL:https://www.theindependentsf.com/tm-event/the-buttertones/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2659-2026-12-03@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261204T040000Z
+DTEND:20261204T060000Z
+SUMMARY:MEEK
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (Wonderful World of Weirdos Tour). Doo
+ rs 7:30 PM\, show 8:00 PM.\nhttps://www.theindependentsf.com/tm-event/mee
+ k/
+URL:https://www.theindependentsf.com/tm-event/meek/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-pattie-gonia-save-her-feat-sequoia-and-v-2026-12-03@sf
+ _familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261204T040000Z
+DTEND:20261204T060000Z
+SUMMARY:Pattie Gonia: SAVE HER! Feat. Sequoia and VERA!
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/pattie-gon
+ ia-save-her-feat-sequoia-san-francisco-california-12-03-2026/event/1C0064
+ 733BB5E74D
+URL:https://www.ticketmaster.com/pattie-gonia-save-her-feat-sequoia-san-fr
+ ancisco-california-12-03-2026/event/1C0064733BB5E74D
+END:VEVENT
+BEGIN:VEVENT
+UID:mapp-2026-12-05@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261206T020000Z
+DTEND:20261206T060000Z
+SUMMARY:MAPP: Mission Arts & Performance Project
+LOCATION:Pop-up venues around the Mission near 24th St
+DESCRIPTION:Free art\, music\, dance and poetry in garages\, gardens\, gal
+ leries and cafes around the Mission. Early sets are the most kid-friendly
+ \; check Red Poppy Art House for the night's schedule.\nhttps://www.redpo
+ ppyarthouse.org/tag/mission-arts-performance-project/
+URL:https://www.redpoppyarthouse.org/tag/mission-arts-performance-project/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2759-2026-12-05@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261206T050000Z
+DTEND:20261206T070000Z
+SUMMARY:Dragon Smoke
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 8:30 PM\, show 9:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/dragon-smoke-2/
+URL:https://www.theindependentsf.com/tm-event/dragon-smoke-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-10040138-2026-12-05@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261206T050000Z
+DTEND:20261206T075900Z
+SUMMARY:Killing My Lobster and Z Space present ‘Sketch on Speed’ at Z 
+ Below
+LOCATION:Z Space
+DESCRIPTION:In today’s fast-paced world\, immediate gratification is all
+  the rage–and sketch comedy troupe Killing My Lobster is here to provid
+ e! Over the course of twelve hours\, we are forcing our writers and actor
+ s to produce an en\nhttps://missionlocal.org/event/z-space-killing-my-lob
+ ster-and-z-space-present-sketch-on-speed-at-z-below/2026-12-05/
+URL:https://missionlocal.org/event/z-space-killing-my-lobster-and-z-space-
+ present-sketch-on-speed-at-z-below/2026-12-05/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2793-2026-12-06@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261207T040000Z
+DTEND:20261207T060000Z
+SUMMARY:Fireworks
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (Gospel 15-Year Anniversary). Doors 7:
+ 30 PM\, show 8:00 PM.\nhttps://www.theindependentsf.com/tm-event/firework
+ s/
+URL:https://www.theindependentsf.com/tm-event/fireworks/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-matt-rogers-this-time-it-s-really-christ-2026-12-06@sf
+ _familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261207T040000Z
+DTEND:20261207T060000Z
+SUMMARY:Matt Rogers: THIS TIME IT'S *REALLY* CHRISTMAS Tour
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/matt-roger
+ s-this-time-its-really-san-francisco-california-12-06-2026/event/1C00651B
+ AC2F7CD1
+URL:https://www.ticketmaster.com/matt-rogers-this-time-its-really-san-fran
+ cisco-california-12-06-2026/event/1C00651BAC2F7CD1
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-6208-2026-12-08@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261209T040000Z
+DTEND:20261209T060000Z
+SUMMARY:Wishy
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (Nature's Pill Tour). Doors 7:30 PM\, 
+ show 8:00 PM.\nhttps://www.theindependentsf.com/tm-event/wishy/
+URL:https://www.theindependentsf.com/tm-event/wishy/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-sanctuary-park-tour-celebrating-40-years-2026-12-09@sf
+ _familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261210T040000Z
+DTEND:20261210T060000Z
+SUMMARY:Sanctuary Park Tour: Celebrating 40 Years of The Jayhawks
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/sanctuary-
+ park-tour-celebrating-40-years-san-francisco-california-12-09-2026/event/
+ 1C0064D0C756F6B6
+URL:https://www.ticketmaster.com/sanctuary-park-tour-celebrating-40-years-
+ san-francisco-california-12-09-2026/event/1C0064D0C756F6B6
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2772-2026-12-09@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261210T040000Z
+DTEND:20261210T060000Z
+SUMMARY:feeble little horse
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (2ND SHOW ADDED BY POPULAR DEMAND! - b
+ itknot tour). Doors 7:30 PM\, show 8:00 PM.\nhttps://www.theindependentsf
+ .com/tm-event/feeble-little-horse/
+URL:https://www.theindependentsf.com/tm-event/feeble-little-horse/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-strawberry-guy-2026-12-10@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261211T040000Z
+DTEND:20261211T060000Z
+SUMMARY:Strawberry Guy
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/strawberry
+ -guy-san-francisco-california-12-10-2026/event/1C0064B4B64E3F1B
+URL:https://www.ticketmaster.com/strawberry-guy-san-francisco-california-1
+ 2-10-2026/event/1C0064B4B64E3F1B
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2646-2026-12-10@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261211T040000Z
+DTEND:20261211T060000Z
+SUMMARY:feeble little horse
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (bitknot tour). Doors 7:30 PM\, show 8
+ :00 PM.\nhttps://www.theindependentsf.com/tm-event/feeble-little-horse-wi
+ th-mop/
+URL:https://www.theindependentsf.com/tm-event/feeble-little-horse-with-mop
+ /
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-jorma-kaukonen-2026-12-11@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261212T040000Z
+DTEND:20261212T060000Z
+SUMMARY:Jorma Kaukonen
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/jorma-kauk
+ onen-san-francisco-california-12-11-2026/event/1C0065218501B5E7
+URL:https://www.ticketmaster.com/jorma-kaukonen-san-francisco-california-1
+ 2-11-2026/event/1C0065218501B5E7
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2616-2026-12-11@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261212T050000Z
+DTEND:20261212T070000Z
+SUMMARY:THE BOBBY LEES
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 8:30 PM\, show 9:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/the-bobby-lees/
+URL:https://www.theindependentsf.com/tm-event/the-bobby-lees/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-fillmore-jorma-kaukonen-2026-12-12@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261213T040000Z
+DTEND:20261213T060000Z
+SUMMARY:Jorma Kaukonen
+LOCATION:The Fillmore\, 1805 Geary Blvd
+DESCRIPTION:Live at The Fillmore.\nhttps://www.ticketmaster.com/jorma-kauk
+ onen-san-francisco-california-12-12-2026/event/1C0065218505B5F1
+URL:https://www.ticketmaster.com/jorma-kaukonen-san-francisco-california-1
+ 2-12-2026/event/1C0065218505B5F1
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-5088-2026-12-12@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261213T050000Z
+DTEND:20261213T070000Z
+SUMMARY:the olllam
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 8:30 PM\, show 9:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/the-olllam/
+URL:https://www.theindependentsf.com/tm-event/the-olllam/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2609-2026-12-13@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261214T040000Z
+DTEND:20261214T060000Z
+SUMMARY:Swervedriver raise at 35
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (Brooklyn Vegan Presents). Doors 7:30 
+ PM\, show 8:00 PM.\nhttps://www.theindependentsf.com/tm-event/swervedrive
+ r-raise-at-35/
+URL:https://www.theindependentsf.com/tm-event/swervedriver-raise-at-35/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2795-2026-12-14@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261215T040000Z
+DTEND:20261215T060000Z
+SUMMARY:Willi Carlisle
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (The Universal Bubba Tour). Doors 7:30
+  PM\, show 8:00 PM.\nhttps://www.theindependentsf.com/tm-event/willi-carl
+ isle-2/
+URL:https://www.theindependentsf.com/tm-event/willi-carlisle-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-8418-2026-12-15@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261216T040000Z
+DTEND:20261216T060000Z
+SUMMARY:Labiahead - California Tour 2026 - 2 Nights!
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (LPR x Another Planet Entertainment Pr
+ esents). Doors 7:30 PM\, show 8:00 PM.\nhttps://www.theindependentsf.com/
+ tm-event/labiahead-california-tour-2026/
+URL:https://www.theindependentsf.com/tm-event/labiahead-california-tour-20
+ 26/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-8452-2026-12-16@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261217T040000Z
+DTEND:20261217T060000Z
+SUMMARY:Labiahead - California Tour 2026 - 2 Nights!
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent (LPR x Another Planet Entertainment Pr
+ esents). Doors 7:30 PM\, show 8:00 PM.\nhttps://www.theindependentsf.com/
+ tm-event/labiahead-california-tour-2026-2-nights/
+URL:https://www.theindependentsf.com/tm-event/labiahead-california-tour-20
+ 26-2-nights/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-8477-2026-12-17@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261218T040000Z
+DTEND:20261218T060000Z
+SUMMARY:The Polish Ambassador
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/the-polish-ambassador-2/
+URL:https://www.theindependentsf.com/tm-event/the-polish-ambassador-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-8420-2026-12-18@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261219T050000Z
+DTEND:20261219T070000Z
+SUMMARY:Petey USA
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 8:30 PM\, show 9:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/petey-usa/
+URL:https://www.theindependentsf.com/tm-event/petey-usa/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-chapel-chuck-prophet-2026-12-26@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20261227T040000Z
+DTEND:20261227T060000Z
+SUMMARY:Chuck Prophet
+LOCATION:The Chapel\, 777 Valencia St
+DESCRIPTION:Alternative at The Chapel. Doors at 7:00PM / Show at 8:00PM. A
+ ll Ages.\nhttps://wl.seetickets.us/event/chuck-prophet/706760?afflky=TheC
+ hapel
+URL:https://wl.seetickets.us/event/chuck-prophet/706760?afflky=TheChapel
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-8422-2027-01-07@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20270108T040000Z
+DTEND:20270108T060000Z
+SUMMARY:Live on the Stoop
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/stoop-sessions-live/
+URL:https://www.theindependentsf.com/tm-event/stoop-sessions-live/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-chapel-the-loved-ones-latest-hits-record-releas-2027-01-07@sf_f
+ amilyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20270108T040000Z
+DTEND:20270108T060000Z
+SUMMARY:The Loved Ones - Latest Hits Record Release!
+LOCATION:The Chapel\, 777 Valencia St
+DESCRIPTION:Alternative at The Chapel. With The Vesuvians\, Karina Deniké
+ \, Russell Quan. Doors at 7:00PM / Show at 8:00PM. All Ages.\nhttps://wl.
+ seetickets.us/event/the-loved-ones-latest-hits-record-release/707499?affl
+ ky=TheChapel
+URL:https://wl.seetickets.us/event/the-loved-ones-latest-hits-record-relea
+ se/707499?afflky=TheChapel
+END:VEVENT
+BEGIN:VEVENT
+UID:indy-2773-2027-01-08@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20270109T050000Z
+DTEND:20270109T070000Z
+SUMMARY:Com Truise b2b Matthew Dear
+LOCATION:The Independent\, 628 Divisadero St
+DESCRIPTION:Live at The Independent. Doors 8:30 PM\, show 9:00 PM.\nhttps:
+ //www.theindependentsf.com/tm-event/com-truise-b2b-matthew-dear/
+URL:https://www.theindependentsf.com/tm-event/com-truise-b2b-matthew-dear/
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-chapel-swirlies-2027-01-09@sf_familyevents
+DTSTAMP:20261012T075457Z
+DTSTART:20270110T040000Z
+DTEND:20270110T060000Z
+SUMMARY:Swirlies
+LOCATION:The Chapel\, 777 Valencia St
+DESCRIPTION:Alternative at The Chapel. With Seko. Doors at 7:00PM / Show a
+ t 8:00PM. All Ages.\nhttps://wl.seetickets.us/event/swirlies/706410?afflk
+ y=TheChapel
+URL:https://wl.seetickets.us/event/swirlies/706410?afflky=TheChapel
+END:VEVENT
+BEGIN:VEVENT
+UID:vp-the-chapel-nora-brown-with-stephanie-coleman-2027-01-10@sf_familyev
+ ents
+DTSTAMP:20261012T075457Z
+DTSTART:20270111T040000Z
+DTEND:20270111T060000Z
+SUMMARY:Nora Brown with Stephanie Coleman
+LOCATION:The Chapel\, 777 Valencia St
+DESCRIPTION:Bluegrass at The Chapel. Doors at 7:00PM / Show at 8:00PM. All
+  Ages.\nhttps://wl.seetickets.us/event/nora-brown-with-stephanie-coleman/
+ 706553?afflky=TheChapel
+URL:https://wl.seetickets.us/event/nora-brown-with-stephanie-coleman/70655
+ 3?afflky=TheChapel
+END:VEVENT
+END:VCALENDAR
