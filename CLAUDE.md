@@ -15,7 +15,8 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 ### Key client concepts (in each page's main `<script>`)
 - `S` — UI state, saved to localStorage (`fdo` / `fdo-ct`). `PREFS` — likes, hides, follows, saved ("Interested"), learned weights (`fdo-prefs` / `fdo-ct-prefs`).
 - `items()` builds the ranked list: weather score per spot (`condFor`, exposure `exp`, warmth offset `off`; indoors is a flat 0.58 so a good outdoor day can win) + one-off boost (+0.30, library one-offs +0.10) / regular-program penalty (−0.12) / places (−0.10) + kid focus (family: +0.15 for a kid word or a family-only source in `KIDSRC`, no penalty otherwise) + interests (+0.2) + learned prefs, then filters.
-- `rankRows()` sorts by score and keeps the top 10 varied: at most 3 library events; extras move just below the top 10.
+- `rankRows()` sorts by score (ties: sooner, then closer) and keeps the top 10 varied: at most 2 events per venue and 3 library events; extras move just below the top 10.
+- Talks & concerts differs: indoors scores 0.75 (most of the page is indoors), and events get up to +0.15 for being soon (fading over 14 days) so a month view isn't one big tie.
 - `render()` draws list, map (numbered top-10 pins), Coming up, On the horizon, preferences, venues, Interested.
 - A second `<script>` at the end of the body builds the **compact controls** (From ✎, When/Time/Drive pills, Filters sheet, weather one-liner) by moving existing controls; it wraps `render()` to keep the pills in sync.
 - Venue view (`openVenue`), Venues directory, follow/hide venue, 📌 Interested list, 👍/👎 learning.
@@ -38,7 +39,7 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 
 Event fields: `id, kind ("event"|"impact"), source, name, area, lat, lng, start, end, rangeStart/rangeEnd/rangeLabel, indoor, exp (0–1), off (°F), free, note, url, tags, recurring, bookAhead, also`.
 
-`also` = `{page, id}` of the same event on the other page, set by `crosslink()` at the end of the refresh (same start time + one name contains the other, or a shared name word at the same place). Cards show it as a chip linking to `<page>#ev=<id>`; that deep link opens the event's day with filters wide open and selects it. 📌 Interested on a cross-listed event is mirrored into the other page's prefs.
+`also` = `{page, id}` of the same event on the other page, set by `crosslink()` at the end of the refresh (same start time + one name contains the other, or a shared name word at the same place). Cards show it as a plain label ("Also on Talks & concerts" / "Good with kids too"). 📌 Interested on a cross-listed event is mirrored into the other page's prefs.
 
 ## Refresh script: `scripts/refresh_events.py`
 Run locally: `pip install requests` then `python scripts/refresh_events.py` (≈10 min; network heavy).

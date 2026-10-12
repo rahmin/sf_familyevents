@@ -1154,6 +1154,7 @@ MANUAL_CT = ROOT / "data" / "manual-talks-concerts.json"
 CT_WORDS = re.compile(r"(?i)concert|live music|\bband\b|jazz|\bdj\b|symphon|orchestra|quartet|chamber|opera|recital|singer|songwriter|"
                       r"\btalk\b|conversation|lecture|panel|forum|town hall|discussion|in conversation|\bauthor|book launch|reading|poetry|"
                       r"screening|\bfilm\b|exhibit|opening|gallery|comedy|open mic|perform|dance|theater|theatre|cabaret|salon")
+OUTDOOR_PLACE = re.compile(r"(?i)\b(park|plaza|lawn|garden|beach|street fair|block party|outdoors?|open air|parklet|alley)\b")
 CT_SKIP = re.compile(r"(?i)\bclass\b|workshop|lesson|beginner|training|where to begin|mahjong|\bmeetup\b|networking")
 CT_PROMPT = """You help curate a page of concerts, talks, readings and arts events for adults in San Francisco and Oakland.
 For each event below, decide whether it is a public concert, talk, lecture, conversation, reading, screening, performance,
@@ -1474,8 +1475,11 @@ def build_talks_concerts(today: date, far: date):
     jccsf = scrape_tribe("https://www.jccsf.org", "JCCSF Arts & Ideas", "jccsf", today, far, default_geo=(37.7870, -122.4466))
     ybg = [e for e in scrape_ybg(today, far) if not re.search(r"(?i)children|hoopla|kids|outdoors with", e["name"] + " " + e["area"])]
     ml = scrape_mission_local(today, far) + scrape_galeria(today, far)
-    for e in jccsf + ybg + ml:
-        e.update(indoor=e.get("indoor", True))
+    # scrape_tribe marks everything outdoors (right for family street fairs); talks, shows and openings are indoors
+    # unless the place says otherwise. YBG keeps its own value: its stages are on the lawn.
+    for e in jccsf + ml:
+        if not OUTDOOR_PLACE.search(e["name"] + " " + e["area"]):
+            e.update(indoor=True, exp=0)
     watch = watch_venues(today, far, edition="talks-concerts") + scrape_commonwealth(today, far) + scrape_independent(today, far)
     # Red Poppy Art House (24th St): its own calendar feed of small concerts and performances, plus MAPP nights it hosts
     rp = scrape_tribe("https://www.redpoppyarthouse.org", "Red Poppy Art House", "rpah", today, far, default_geo=(37.7544, -122.4146))
