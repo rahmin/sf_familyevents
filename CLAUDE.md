@@ -19,6 +19,7 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 - Talks & concerts differs: indoors scores 0.75 (most of the page is indoors), and events get up to +0.15 for being soon (fading over 14 days) so a month view isn't one big tie.
 - `render()` draws list, map (numbered top-10 pins), Coming up, On the horizon, preferences, venues, Interested.
 - A second `<script>` at the end of the body builds the **compact controls** (From ✎, When/Time/Drive pills, Filters sheet, weather one-liner) by moving existing controls; it wraps `render()` to keep the pills in sync.
+  It also builds the **tools row** under the intro (`nav.tools`): 📌 Interested (count; hidden when empty), ⭐ Venues, 👍 Your taste, 📅 Add to calendar, ➕ Suggest an event. Each button moves that section's body (`savedbody`, `venuesbody`, `prefsbody`, `icsfoot`) into one shared sheet (`#msheet`) and back on close; `openVenue` is wrapped to close it first.
 - Venue view (`openVenue`), Venues directory, follow/hide venue, 📌 Interested list, 👍/👎 learning.
 
 ## Data files

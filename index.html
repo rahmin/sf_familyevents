@@ -117,6 +117,10 @@ h2{font-weight:600}
 .specials h2{margin:0 0 8px}
 .also{margin:4px 0 2px;font-size:14px;font-weight:700;color:var(--ink-2)}
 .suggest{margin:18px 0 6px;font-weight:600}.suggest a{color:var(--indoor);font-weight:700}
+.tools{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 12px}
+.tool{font-family:"Fredoka",system-ui,sans-serif;font-weight:500;font-size:14px;color:var(--ink);background:color-mix(in srgb,var(--panel) 70%,transparent);border:1.5px solid color-mix(in srgb,var(--stroke) 25%,transparent);border-radius:999px;padding:4px 11px;min-height:32px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.tool:hover{border-color:var(--stroke)}.tool .tcount{font-weight:700}.tool[hidden]{display:none}
+#msheet .foot{font-size:15px}
 .chiphead{font-family:"Fredoka",system-ui,sans-serif;font-weight:600;font-size:15px;margin:0 0 6px}
 .chips{display:flex;gap:8px;overflow-x:auto;padding:2px 4px 8px 2px}
 .chip{flex:0 0 auto;max-width:270px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:inherit;font-size:14px;font-weight:700;color:var(--ink);background:color-mix(in srgb,var(--sun) 22%,var(--panel));border:2px solid var(--stroke);border-radius:999px;box-shadow:2px 2px 0 var(--stroke);padding:6px 12px;cursor:pointer}
@@ -934,13 +938,30 @@ fbtn.onclick=openF;fs.querySelector(".vclose").onclick=closeF;$("filtDone").oncl
 $("vback").addEventListener("click",()=>{closeF();if(typeof closeVenue==="function")closeVenue();});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!fs.hidden)closeF();});
 $("filtReset").onclick=()=>{S.pgTot=S.pgRest=S.pgAcc=false;S.kind=DEF_KIND;S.evonly=false;S.hideSoon=true;S.hideRec=false;S.free=false;S.interests=[];S.onlyInt=false;S.sel=null;save();render();};
-// 5) preferences and venues move to the bottom of the page
-const foot=document.createElement("div");foot.className="footlinks";foot.appendChild($("savedbox"));foot.appendChild($("prefsbox"));foot.appendChild($("venuesbox"));
-($("horizon")||$("upcoming")).after(foot);
+// 5) Interested, venues, preferences, calendar and suggest: a row of small buttons under the intro, each opening a sheet
+const tools=document.createElement("nav");tools.className="tools";tools.setAttribute("aria-label","Your lists and links");
+document.querySelector("p.from").after(tools);
+const ms=document.createElement("section");ms.id="msheet";ms.className="vsheet prefs";ms.hidden=true;ms.setAttribute("role","dialog");
+ms.innerHTML=`<button class="vclose" aria-label="Close">✕</button><h2 id="mtitle"></h2>`;document.body.appendChild(ms);
+let mBody=null,mHome=null;
+const closeM=()=>{if(mBody){mHome.appendChild(mBody);mBody=null;}ms.hidden=true;if($("vsheet").hidden&&(!$("fsheet")||$("fsheet").hidden))$("vback").hidden=true;};
+const openM=(title,body)=>{closeM();mBody=body;mHome=body.parentNode;$("mtitle").textContent=title;ms.appendChild(body);ms.hidden=false;ms.scrollTop=0;$("vback").hidden=false;ms.querySelector(".vclose").focus();};
+ms.querySelector(".vclose").onclick=closeM;$("vback").addEventListener("click",closeM);
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!ms.hidden)closeM();});
+// opening a venue (or jumping to an event from a list) closes this sheet first
+const _openVenue=openVenue;window.openVenue=function(){closeM();return _openVenue.apply(this,arguments);};
+ms.addEventListener("click",e=>{if(e.target.closest("[data-act],.chip,.scard"))setTimeout(closeM,0);});
+const TOOLS=[["savedbox","savedbody","📌 Interested","savedcount"],["venuesbox","venuesbody","⭐ Venues",null],["prefsbox","prefsbody","👍 Your taste",null],["icsfoot","icsfoot","📅 Add to calendar",null]];
+TOOLS.forEach(([box,body,label,cnt])=>{const b=document.createElement("button");b.className="tool";b.dataset.box=box;b.innerHTML=`${label}${cnt?` <span class="tcount" id="t-${cnt}"></span>`:""}`;
+ const wrap=box===body?null:$(box);if(wrap)wrap.hidden=true;
+ let holder=$(body).parentNode;if(!wrap){const h=document.createElement("div");h.hidden=true;$(body).before(h);h.appendChild($(body));holder=h;}
+ b.onclick=()=>openM(label.replace(/^\S+ /,""),$(body));tools.appendChild(b);});
+if(SUGGEST_URL){const a=document.createElement("a");a.className="tool";a.href=SUGGEST_URL;a.target="_blank";a.rel="noopener";a.textContent="➕ Suggest an event";tools.appendChild(a);$("suggest").hidden=true;$("suggest").remove();}
 // keep the bar in sync after every render
 const orig=window.render;
 window.render=function(){const r=orig.apply(this,arguments);try{sync();}catch(e){}return r;};
 function sync(){
+ const sc=$("savedcount").textContent.replace(/[()]/g,"");$("t-savedcount").textContent=sc;document.querySelector('.tool[data-box="savedbox"]').hidden=!sc;
  const tl={am:"Morning",pm:"Afternoon",eve:"Evening",all:"Anytime"};$("tod2Lbl").textContent=tl[S.tod]||"Anytime";todDD.style.display=S.when==="now"?"none":"";
  $("drv2Lbl").textContent="🚗 Within "+S.drive+" min";
  todDD.querySelectorAll(".ddmenu button").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.v===S.tod)));
