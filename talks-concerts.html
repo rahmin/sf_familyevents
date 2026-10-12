@@ -325,7 +325,7 @@ function dateOffset(n){const d=new Date();d.setDate(d.getDate()+n);return d.getF
 const WIN={am:[8,12],pm:[12,17],eve:[17,24],all:[8,24]};
 const TODLABEL={am:"morning",pm:"afternoon",eve:"evening",all:"day"};
 function todayStr(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
-const SUGGEST_URL=""; // Google Form for visitor suggestions (see README); empty hides the link
+const SUGGEST_URL="https://forms.gle/K9yS3iCrfxgttuFi7"; // Google Form for visitor suggestions (see README); empty hides the link
 if(SUGGEST_URL){const a=document.getElementById("suggestlink");a.href=SUGGEST_URL;document.getElementById("suggest").hidden=false;}
 let S={when:"month",pick:"",tod:"all",kind:"both",drive:30,free:false,evonly:false,hideSoon:true,hideRec:false,interests:[],onlyInt:false,sel:null,custom:{t:62,g:15,r:0,date:todayStr()}};
 let EVENTS=[],META=null,dbState="loading";
@@ -853,7 +853,6 @@ setInterval(()=>{if(!document.hidden)loadWeather();},3*3600e3);
 (async()=>{
  try{const r=await fetch("talks-concerts.json",{cache:"no-cache"});if(!r.ok)throw 0;const d=await r.json();
   EVENTS=(d.events||[]).filter(e=>e&&e.id);
-  if(tgt&&tgt.start){S.when="pick";S.pick=tgt.start.slice(0,10);S.tod="all";S.kind="both";S.free=false;S.evonly=false;S.hideRec=false;S.hideSoon=false;S.interests=[];S.mode="out";S.sel=tgt.id;S.drive=Math.max(S.drive,30);history.replaceState(null,"",location.pathname);setTimeout(()=>{const el=document.getElementById("c-"+tgt.id);if(el)el.scrollIntoView({block:"center"});},300);}
   META={refreshedLabel:d.generated?new Date(d.generated).toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"}):"",coverage:d.coverage||""};
   dbState="ready";}catch(e){dbState="none";}
  render();
