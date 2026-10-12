@@ -28,7 +28,11 @@
    "start": "2026-10-12T12:00:00-07:00",
    "end": "2026-10-12T16:00:00-07:00",
    "note": "Free RSVP Join us in celebration of San Francisco Indigenous Peoples Day with a magnificent profusion of Native American art, music and vendors. The event highlights the vastly diverse and talented community of Indigenou",
-   "url": "https://ybgfestival.org/event/sf-indigenous-peoples-day-2026/"
+   "url": "https://ybgfestival.org/event/sf-indigenous-peoples-day-2026/",
+   "also": {
+    "page": "index.html",
+    "id": "ybg-indigenous-peoples-day"
+   }
   },
   {
    "id": "indy-2756-2026-10-12",
@@ -549,7 +553,11 @@
    "start": "2026-10-17T14:00:00-07:00",
    "end": "2026-10-17T16:30:00-07:00",
    "note": "Free RSVP Opening Set from MeloDious Festival favorite Joe Bataan , a Latin music legend since the mid-1960s, returns to the Gardens for his third performance in the past four years. He made an indelible mark as one of t",
-   "url": "https://ybgfestival.org/event/joe-bataan-2026/"
+   "url": "https://ybgfestival.org/event/joe-bataan-2026/",
+   "also": {
+    "page": "index.html",
+    "id": "ybg-joe-bataan-2026-10-17"
+   }
   },
   {
    "id": "cmc-bootleggers-ball-with-nick-rossis-swing-six-2026-10-17",
@@ -1377,7 +1385,11 @@
    "start": "2026-10-24T14:00:00-07:00",
    "end": "2026-10-24T15:30:00-07:00",
    "note": "Free RSVP Few artists have appeared at the Festival more frequently than flutist, percussionist and arranger John Calloway . Whether he’s leading his own band, performing in the sextet of longtime creative partner John S",
-   "url": "https://ybgfestival.org/event/afro-filipino-jazz-project/"
+   "url": "https://ybgfestival.org/event/afro-filipino-jazz-project/",
+   "also": {
+    "page": "index.html",
+    "id": "ybg-afro-filipino-jazz-2026-10-24"
+   }
   },
   {
    "id": "ml-875083-2026-10-24",
@@ -1811,7 +1823,11 @@
    "url": "https://sfcmc.org/event/dia-de-muertos-en-la-mision/",
    "tags": [
     "music"
-   ]
+   ],
+   "also": {
+    "page": "index.html",
+    "id": "cmc-dia-de-muertos-2026-11-01"
+   }
   },
   {
    "kind": "event",
@@ -2275,7 +2291,11 @@
    "start": "2026-11-13T16:00:00-08:00",
    "end": "2026-11-13T21:00:00-08:00",
    "note": "San Francisco’s biggest South Asian celebration is back, and for the first time ever, it lands at Yerba Buena Gardens, one of downtown’s most iconic arts and cultural destinations. On July 24 and November 13, Yerba Buena",
-   "url": "https://ybgfestival.org/event/bhangra-and-beats-111326/"
+   "url": "https://ybgfestival.org/event/bhangra-and-beats-111326/",
+   "also": {
+    "page": "index.html",
+    "id": "ybg-bhangra-beats-2026-11-13"
+   }
   },
   {
    "kind": "event",
@@ -2930,7 +2950,11 @@
    "start": "2026-12-05T18:00:00-08:00",
    "end": "2026-12-05T22:00:00-08:00",
    "note": "Free art, music, dance and poetry in garages, gardens, galleries and cafes around the Mission. Early sets are the most kid-friendly; check Red Poppy Art House for the night's schedule.",
-   "url": "https://www.redpoppyarthouse.org/tag/mission-arts-performance-project/"
+   "url": "https://www.redpoppyarthouse.org/tag/mission-arts-performance-project/",
+   "also": {
+    "page": "index.html",
+    "id": "mapp-2026-12-05"
+   }
   },
   {
    "id": "indy-2759-2026-12-05",

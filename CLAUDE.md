@@ -35,11 +35,13 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 | `data/playgrounds.json` | Phase 0 audit | Source copy of the playground list embedded in `index.html` |
 | `data/geocache.json` | refresh script | Saved Nominatim lookups |
 
-Event fields: `id, kind ("event"|"impact"), source, name, area, lat, lng, start, end, rangeStart/rangeEnd/rangeLabel, indoor, exp (0–1), off (°F), free, note, url, tags, recurring, bookAhead`.
+Event fields: `id, kind ("event"|"impact"), source, name, area, lat, lng, start, end, rangeStart/rangeEnd/rangeLabel, indoor, exp (0–1), off (°F), free, note, url, tags, recurring, bookAhead, also`.
+
+`also` = `{page, id}` of the same event on the other page, set by `crosslink()` at the end of the refresh (same start time + one name contains the other, or a shared name word at the same place). Cards show it as a chip linking to `<page>#ev=<id>`; that deep link opens the event's day with filters wide open and selects it. 📌 Interested on a cross-listed event is mirrored into the other page's prefs.
 
 ## Refresh script: `scripts/refresh_events.py`
 Run locally: `pip install requests` then `python scripts/refresh_events.py` (≈10 min; network heavy).
-`main()` builds the family page, then `build_talks_concerts()` builds the second page; `merge()` dedupes (same id, same start+place, or near-identical names on the same day; earlier lists win).
+`main()` builds the family page, then `build_talks_concerts()` builds the second page, then `crosslink()` tags events on both; `merge()` dedupes (same id, same start+place, or near-identical names on the same day; earlier lists win).
 
 Family sources: SF Public Library (`scrape_sfpl`, with real program descriptions via `sfpl_note`), Cal Academy, SFMOMA, OMCA, Mission Science Workshop & MAPP (rules), YBG, SF Children & Nature, Mission Local, Galería de la Raza, Local Kiddo SF newsletter (`scrape_localkiddo` + `enrich_events`), Funcheap (key), watchlist (key), manual.
 Talks & concerts sources: calendar feeds (The Fold, SPUR), JCCSF, Commonwealth Club, The Independent (TicketWeb ajax), Red Poppy Art House, Community Music Center, MAPP, venue pages (Fillmore, The Chapel, GAMH), YBG, Mission Local/Galería (adult filter), watchlist (key), manual.

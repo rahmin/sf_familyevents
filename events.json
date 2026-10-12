@@ -1297,7 +1297,11 @@
    "start": "2026-10-12T12:00:00-07:00",
    "end": "2026-10-12T16:00:00-07:00",
    "note": "Free all-ages celebration with Native American art, music and vendors, headlined by Jeremy Dutcher. Bring a picnic; free RSVP.",
-   "url": "https://ybgfestival.org/event/sf-indigenous-peoples-day-2026/"
+   "url": "https://ybgfestival.org/event/sf-indigenous-peoples-day-2026/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ybg-25723-2026-10-12"
+   }
   },
   {
    "id": "cas-coral-reef-dive-2026-10-12-1330",
@@ -3974,7 +3978,11 @@
    "url": "https://ybgfestival.org/event/joe-bataan-2026/",
    "tags": [
     "music"
-   ]
+   ],
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ybg-25733-2026-10-17"
+   }
   },
   {
    "id": "sfpl-2026-10-17-storytime-families-1",
@@ -4449,7 +4457,11 @@
    "url": "https://ybgfestival.org/event/afro-filipino-jazz-project/",
    "tags": [
     "music"
-   ]
+   ],
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ybg-25748-2026-10-24"
+   }
   },
   {
    "id": "sfs-music-for-families-2026-10-24",
@@ -4883,7 +4895,11 @@
    "tags": [
     "music"
    ],
-   "url": "https://sfcmc.org/event/dia-de-muertos-en-la-mision/"
+   "url": "https://sfcmc.org/event/dia-de-muertos-en-la-mision/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "cmc-dia-de-muertos-en-la-mision-2026-11-01"
+   }
   },
   {
    "id": "marigold-festival-altars-2026-11-02",
@@ -5273,7 +5289,11 @@
    "tags": [
     "music",
     "dance"
-   ]
+   ],
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ybg-26259-2026-11-13"
+   }
   },
   {
    "id": "msw-mission-2026-11-14",
@@ -5718,7 +5738,11 @@
    "start": "2026-12-05T18:00:00-08:00",
    "end": "2026-12-05T22:00:00-08:00",
    "note": "Free art, music, dance and poetry in garages, gardens, galleries and cafes around the Mission. Early sets are the most kid-friendly; check Red Poppy Art House for the night's schedule.",
-   "url": "https://www.redpoppyarthouse.org/tag/mission-arts-performance-project/"
+   "url": "https://www.redpoppyarthouse.org/tag/mission-arts-performance-project/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "mapp-2026-12-05"
+   }
   },
   {
    "source": "manual",

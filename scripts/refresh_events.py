@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import html
 import json
+import math
 import os
 import re
 import sys
@@ -1108,6 +1109,7 @@ def main():
     write_specials_ics(events)
     log(f"Wrote {len(events)} events to {OUT.name}")
     build_talks_concerts(today, far)
+    crosslink()
     GEOCACHE.write_text(json.dumps(_geocache, indent=1, ensure_ascii=False) + "\n")
 
 
@@ -1503,6 +1505,40 @@ def build_talks_concerts(today: date, far: date):
         "events": events}, indent=1, ensure_ascii=False) + "\n")
     write_specials_ics(events, ICS_CT, "Talks & concerts: one-offs")
     log(f"Wrote {len(events)} events to {OUT_CT.name}")
+
+
+def _name_words(name: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z0-9áéíóúñ]+", name.lower()) if len(w) >= 4} - {"with", "from", "night", "festival", "gardens", "yerba", "buena", "free"}
+
+def crosslink():
+    """Tag events that appear on both pages: same start time, and one name contains the other
+    or they share a name word at the same place. Each gets also={page, id} pointing at its twin."""
+    fam, ct = json.loads(OUT.read_text()), json.loads(OUT_CT.read_text())
+    norm = lambda e: re.sub(r"\W+", " ", (e.get("name") or "").lower()).strip()
+    for e in fam["events"] + ct["events"]:
+        e.pop("also", None)
+    by_start = {}
+    for e in fam["events"]:
+        if e.get("kind") != "impact" and e.get("start") and not e.get("rangeStart"):
+            by_start.setdefault(e["start"][:16], []).append(e)
+    n = 0
+    for c in ct["events"]:
+        for f in by_start.get((c.get("start") or "")[:16], []):
+            a, b = norm(c), norm(f)
+            same = a in b or b in a
+            if not same and _name_words(c["name"]) & _name_words(f["name"]):
+                try:
+                    same = math.hypot(c["lat"] - f["lat"], (c["lng"] - f["lng"]) * 0.79) * 69 < 0.25
+                except (KeyError, TypeError):
+                    pass
+            if same:
+                c["also"] = {"page": "index.html", "id": f["id"]}
+                f["also"] = {"page": "talks-concerts.html", "id": c["id"]}
+                n += 1
+                break
+    for path, data in ((OUT, fam), (OUT_CT, ct)):
+        path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n")
+    log(f"Cross-linked {n} events that appear on both pages")
 
 
 if __name__ == "__main__":
