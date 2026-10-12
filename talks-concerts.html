@@ -359,7 +359,7 @@ function dt(dateStr,h){const [y,m,d]=dateStr.split("-").map(Number);return new D
 function winRange(){return winFor(curDate());}
 function fmtT(d){let h=d.getHours(),m=d.getMinutes();const ap=h>=12?"pm":"am";h=h%12||12;return h+(m?":"+String(m).padStart(2,"0"):"")+" "+ap;}
 function evalPlace(p,c){
- if(p.indoor)return{score:.72,tier:"indoor",label:"Indoors",why:"Indoors, so the weather won't matter."};
+ if(p.indoor)return{score:.58,tier:"indoor",label:"Indoors",why:"Indoors, so the weather won't matter."};
  const gust=c.g*p.exp,felt=Math.round(c.t+p.off-gust*.25);
  const wind=1-clamp(gust/30,0,1);let temp=clamp((felt-48)/16,0,1);if(felt>86)temp=clamp(1-(felt-86)/12,0,1);
  const score=(.5*wind+.5*temp)*(1-(c.r/100)*.8);
@@ -415,6 +415,9 @@ function recurringKeys(){const m={};EVENTS.forEach(e=>{if(e.kind==="impact"||e.r
 function normName(e){return String(e.name||"").toLowerCase().replace(/\s+/g," ").trim();}
 function isLib(e){return /library/i.test(e.area||"");}
 function isRecurring(e,REC){if(e.recurring!==true&&e.bookAhead===true)return false;return e.recurring===true||REC.has(evKey(e))||(isLib(e)&&REC.has("lib|"+normName(e)))||/^(storytime (for|in)\b|(toddler|baby|babies|family|preschool) storytime\b)/i.test(e.name||"");}
+// sort by score, keeping the top 10 varied: at most 3 library events, the rest move just below
+function rankRows(rows){const v=rows.filter(r=>r.v).sort((a,b)=>b.e.score-a.e.score||a.p.min-b.p.min);const top=[],later=[];let libs=0;
+ v.forEach(r=>{const lib=r.p.isEvent&&isLib(r.p);if(top.length>=10||(lib&&libs>=3)){later.push(r);return;}if(lib)libs++;top.push(r);});return top.concat(later);}
 function items(){
  SOON=0;RECN=0;const RALL=recurringKeys();const REC=S.hideRec?RALL:null;const c=cond();const [ws,we]=winRange();
  const impacts={};
@@ -432,7 +435,7 @@ function items(){
   let when;if(ev.rangeStart){when="Open daily through "+ev.rangeLabel;}else{const [s,en]=evInterval(ev);when=(multiDay()?dayWord(ymd(s))+" ":"")+fmtT(s)+(ev.end?"–"+fmtT(en):" start");if(conflicts(s,en))flags.push("Overlaps something on your calendar");}
   (impacts[ev.id]||[]).forEach(t=>flags.push("Heads up: "+t));
   const kidish=/\bkids?\b|kids'|toddler|bab(y|ies)|child|famil|storytime|ages? \d|preschool|puppet|playground|all[- ]ages|halloween|dance party|sing|story/i.test((p.name||"")+" "+(p.note||"").replace(/Local Kiddo SF/g,""));
-  out.push({p,e:Object.assign(e,{score:e.score+(p.oneOff?.3:-.12)+0-(flags.length?.3:0)}),flags,when,v:visible(p),ts:p.start?new Date(p.start).getTime():0});
+  out.push({p,e:Object.assign(e,{score:e.score+(p.oneOff?(isLib(p)?.1:.3):-.12)+0-(flags.length?.3:0)}),flags,when,v:visible(p),ts:p.start?new Date(p.start).getTime():0});
  });
  // learned preferences: 👎 hides that event or place (and its repeats); votes nudge similar things up or down
  out.forEach(r=>{if(PREFS.hidden[prefKey(r.p)]||(PREFS.hidVen||{})[venueOf(r.p).key]){r.v=false;return;}const d=prefScore(r.p);if(d)r.e=Object.assign({},r.e,{score:r.e.score+d});});
@@ -674,7 +677,7 @@ function render(){
  if(CAL.on&&MCP)whenDates().forEach(d=>{if(!CAL.byDate[d])fetchCal(d);});
  renderCal();drawRings();
  const rows=items();
- const ranked=rows.filter(r=>r.v).sort((a,b)=>b.e.score-a.e.score||a.p.min-b.p.min);RANK={};ranked.slice(0,10).forEach((r,i)=>RANK[r.p.id]=i+1);
+ const ranked=rankRows(rows);RANK={};ranked.slice(0,10).forEach((r,i)=>RANK[r.p.id]=i+1);
  PPOS={};const placed=[];
  ranked.slice(0,10).forEach(r=>{let {x,y}=pos(r.p);for(let k=0;k<8;k++){const hit=placed.find(q=>Math.hypot(q.x-x,q.y-y)<21);if(!hit)break;let dx=x-hit.x,dy=y-hit.y;const d=Math.hypot(dx,dy)||1;if(d<1){dx=1;dy=0;}x=hit.x+dx/d*21;y=hit.y+dy/d*21;}placed.push({x,y});PPOS[r.p.id]={x,y};});
  let small="",big="";
@@ -692,7 +695,7 @@ function render(){
  const fw=freeWindows();const [ws,we]=winRange();
  const winFree=(!fw||multiDay()||S.when==="now")?true:fw.some(([a,b])=>a<we&&b>ws&&(Math.min(b,we)-Math.max(a,ws))>=90*60e3);
  document.getElementById("banner").innerHTML=winFree?"":`<div class="banner">Your ${TODLABEL[S.tod]} is mostly booked. ${fw&&fw.length?"Try "+fw.map(([a,b])=>fmtT(a)+"–"+fmtT(b)).join(" or ")+".":""}</div>`;
- const vis=rows.filter(r=>r.v).sort((a,b)=>b.e.score-a.e.score||a.p.min-b.p.min);
+ const vis=rankRows(rows);
  LASTVIS=vis;const sb=document.getElementById("surprise");if(sb)sb.disabled=!vis.length;
  const good=vis.filter(r=>(r.e.tier==="great"||r.e.tier==="indoor")&&!r.flags.length).length;
  const evn=vis.filter(r=>r.p.isEvent).length;

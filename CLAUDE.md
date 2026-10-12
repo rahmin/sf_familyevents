@@ -9,13 +9,13 @@ Static HTML pages + JSON data, rebuilt twice a week by a Python script in GitHub
 |---|---|
 | `index.html` | **Family outings** page ("Where should we go today?"). Two tabs: *Outings & events* (≈20 hand-curated places + kid/family events) and *🛝 Playgrounds* (135 SF Rec & Park playgrounds, embedded as `const PLAYGROUNDS=[…]`). |
 | `talks-concerts.html` | **Talks & concerts · adults** page ("What's on tonight?"). Same engine, no places, evening-first, its own tags. |
-| `claude-artifacts/*.html` | Copies of the two Claude.ai artifact versions. They read data from the artifact's database (`db.collection("events")`, `meta/weather`) instead of JSON files, and sync likes to `data/users/<id>/prefs`. (Their "Your day" Google Calendar panel is hidden.) They can only be published from claude.ai; keep them in step with the GitHub pages when changing shared code. |
 
-Both GitHub pages share almost all of their JavaScript. **A change to shared behavior (cards, filters, map, likes, venues, compact controls) usually needs to be made in both `index.html` and `talks-concerts.html`** (and the two `claude-artifacts/` copies). Page-specific differences: `PLACES`/`PLAYGROUNDS` (family only), `TAGS` list, default `S.tod`/`S.kind`, `WIN` time windows, kid-focus scoring (family only), localStorage keys (`fdo*` vs `fdo-ct*`), data file names.
+Both GitHub pages share almost all of their JavaScript. **A change to shared behavior (cards, filters, map, likes, venues, compact controls) usually needs to be made in both `index.html` and `talks-concerts.html`**. Page-specific differences: `PLACES`/`PLAYGROUNDS` (family only), `TAGS` list, default `S.tod`/`S.kind`, `WIN` time windows, kid-focus scoring (family only), localStorage keys (`fdo*` vs `fdo-ct*`), data file names.
 
 ### Key client concepts (in each page's main `<script>`)
 - `S` — UI state, saved to localStorage (`fdo` / `fdo-ct`). `PREFS` — likes, hides, follows, saved ("Interested"), learned weights (`fdo-prefs` / `fdo-ct-prefs`).
-- `items()` builds the ranked list: weather score per spot (`condFor`, exposure `exp`, warmth offset `off`) + one-off boost (+0.30) / regular-program penalty (−0.12) / places (−0.10) + kid focus (family) + interests (+0.2) + learned prefs, then filters.
+- `items()` builds the ranked list: weather score per spot (`condFor`, exposure `exp`, warmth offset `off`; indoors is a flat 0.58 so a good outdoor day can win) + one-off boost (+0.30, library one-offs +0.10) / regular-program penalty (−0.12) / places (−0.10) + kid focus (family: +0.15 for a kid word or a family-only source in `KIDSRC`, no penalty otherwise) + interests (+0.2) + learned prefs, then filters.
+- `rankRows()` sorts by score and keeps the top 10 varied: at most 3 library events; extras move just below the top 10.
 - `render()` draws list, map (numbered top-10 pins), Coming up, On the horizon, preferences, venues, Interested.
 - A second `<script>` at the end of the body builds the **compact controls** (From ✎, When/Time/Drive pills, Filters sheet, weather one-liner) by moving existing controls; it wraps `render()` to keep the pills in sync.
 - Venue view (`openVenue`), Venues directory, follow/hide venue, 📌 Interested list, 👍/👎 learning.
