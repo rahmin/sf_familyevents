@@ -51,6 +51,8 @@ Talks & concerts sources: calendar feeds (The Fold, SPUR), JCCSF, Commonwealth C
 
 Env (repo Settings → Secrets and variables → Actions): secret `ANTHROPIC_API_KEY` (enables Funcheap, Claude screening, watchlist), variable `CONTACT_EMAIL` (Nominatim user-agent), optional `CLAUDE_MODEL`, `SUGGESTIONS_CSV`.
 
+Each source (`scrape_*`, `msw_events`, `mapp_events`, `watch_venues`, `load_suggestions`, plus `build_talks_concerts` and `crosslink`) is wrapped by `_isolated()` at the bottom of the script: a crash logs the traceback, that source returns nothing, and the run continues. `report_failures()` lists skipped sources in the log and on the Actions run summary.
+
 Workflow: `.github/workflows/refresh-and-deploy.yml` — Thu + Sat 7 am Pacific, plus manual runs and redeploy on push.
 
 ## Working on it

@@ -26,6 +26,7 @@ import os
 import re
 import sys
 import time
+import traceback
 from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -1624,5 +1625,39 @@ def crosslink():
     log(f"Cross-linked {n} events that appear on both pages")
 
 
+# ---------------------------------------------------------------- one broken source shouldn't stop the refresh
+FAILED: list[str] = []
+
+def _isolated(fn, empty):
+    """Run fn; if it crashes, log the traceback, note it in FAILED and return `empty` so the refresh carries on."""
+    def run(*a, **kw):
+        try:
+            return fn(*a, **kw)
+        except Exception as e:
+            log(f"!! {fn.__name__} failed, skipping it this run: {type(e).__name__}: {e}")
+            log(traceback.format_exc())
+            FAILED.append(f"{fn.__name__}: {type(e).__name__}: {e}")
+            return empty() if callable(empty) else empty
+    run.__name__ = fn.__name__
+    return run
+
+for _name in [n for n in list(globals()) if n.startswith("scrape_")] + [
+        "msw_events", "mapp_events", "watch_venues", "load_suggestions"]:
+    globals()[_name] = _isolated(globals()[_name], list)
+build_talks_concerts = _isolated(build_talks_concerts, None)
+crosslink = _isolated(crosslink, None)
+
+def report_failures():
+    if not FAILED:
+        return
+    log(f"{len(FAILED)} source(s) failed and were skipped:\n  " + "\n  ".join(FAILED))
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:  # shows on the run's page in GitHub Actions
+        with open(summary, "a") as fh:
+            fh.write("### ⚠️ Sources skipped this run\n\n" + "".join(f"- `{x}`\n" for x in FAILED)
+                     + "\nEverything else was refreshed. These sources keep no events until the next run that works.\n")
+
+
 if __name__ == "__main__":
     main()
+    report_failures()
