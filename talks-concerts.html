@@ -321,7 +321,7 @@ function dateOffset(n){const d=new Date();d.setDate(d.getDate()+n);return d.getF
 const WIN={am:[8,12],pm:[12,17],eve:[17,24],all:[8,24]};
 const TODLABEL={am:"morning",pm:"afternoon",eve:"evening",all:"day"};
 function todayStr(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
-let S={when:"today",pick:"",tod:"am",kind:"both",drive:30,free:false,evonly:false,hideSoon:true,hideRec:false,interests:[],onlyInt:false,sel:null,custom:{t:62,g:15,r:0,date:todayStr()}};
+let S={when:"month",pick:"",tod:"all",kind:"both",drive:30,free:false,evonly:false,hideSoon:true,hideRec:false,interests:[],onlyInt:false,sel:null,custom:{t:62,g:15,r:0,date:todayStr()}};
 let EVENTS=[],META=null,dbState="loading";
 let CAL={on:false,status:"off",byDate:{},msg:""};
 try{const s=JSON.parse(localStorage.getItem("fdo-ct")||"null");if(s){S.kind=s.kind||S.kind;S.drive=s.drive===15?10:(s.drive||S.drive);S.free=!!s.free;S.evonly=!!s.evonly;if(s.when)S.when=s.when;if(s.pick)S.pick=s.pick;if(s.hideSoon===false)S.hideSoon=false;S.hideRec=!!s.hideRec;if(Array.isArray(s.interests))S.interests=s.interests;S.onlyInt=!!s.onlyInt;if(s.custom)S.custom=Object.assign(S.custom,s.custom);CAL.on=!!s.calOn;}}catch(e){}
@@ -813,7 +813,7 @@ document.getElementById("ogeo").addEventListener("click",()=>{
   setOrigin({label:"your current location",lat:la,lng:lo,q:la.toFixed(5)+","+lo.toFixed(5),approx:false});},
   ()=>ostat("Couldn't get your location. Enter an address or ZIP code instead."),{timeout:10000,maximumAge:600000});
 });
-S.tod="eve";
+S.tod="all";
 ostat();
 render();
 setInterval(()=>{if(!document.hidden)render();},60000);
