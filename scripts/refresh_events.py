@@ -1116,6 +1116,7 @@ def main():
     log(f"Wrote {len(events)} events to {OUT.name}")
     build_talks_concerts(today, far)
     crosslink()
+    write_share_pages()
     GEOCACHE.write_text(json.dumps(_geocache, indent=1, ensure_ascii=False) + "\n")
 
 
@@ -1675,6 +1676,42 @@ def crosslink():
     log(f"Cross-linked {n} events that appear on both pages")
 
 
+SHARE_DIR = ROOT / "e"
+
+def share_name(prefix: str, event_id: str) -> str:
+    # must match sharePage() in the pages
+    return prefix + "-" + re.sub(r"[^A-Za-z0-9_-]+", "-", event_id)[:90] + ".html"
+
+def write_share_pages():
+    """One tiny page per upcoming event (e/f-<id>.html, e/t-<id>.html) so links shared by text or chat
+    show the event's name, time and place in the preview; the page then opens the event on the site."""
+    import shutil
+    shutil.rmtree(SHARE_DIR, ignore_errors=True)
+    SHARE_DIR.mkdir()
+    now, n = datetime.now(TZ), 0
+    for path, prefix, page, site in ((OUT, "f", "index.html", "Family outings"), (OUT_CT, "t", "talks-concerts.html", "Talks & concerts")):
+        for e in json.loads(path.read_text()).get("events", []):
+            if e.get("kind") == "impact" or not e.get("start") or e.get("rangeStart"):
+                continue
+            st = datetime.fromisoformat(e["start"])
+            if st < now - timedelta(hours=6):
+                continue
+            when = f"{st:%a, %b} {st.day}, " + (f"{st.hour % 12 or 12}" + (f":{st.minute:02d}" if st.minute else "") + (" am" if st.hour < 12 else " pm"))
+            place = (e.get("area") or "").split(",")[0]
+            title = f"{e['name']} · {when}"
+            desc = " · ".join(x for x in [place, "free" if e.get("free") else "", (e.get("note") or "").replace(" (Picked by Local Kiddo SF.)", "")] if x)[:300]
+            target = f"../{page}#ev={requests.utils.quote(e['id'], safe='')}"
+            q = lambda x: html.escape(x, quote=True)
+            (SHARE_DIR / share_name(prefix, e["id"])).write_text(f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>{q(title)}</title>
+<meta name="description" content="{q(desc)}"><meta property="og:title" content="{q(title)}"><meta property="og:description" content="{q(desc)}">
+<meta property="og:type" content="website"><meta property="og:site_name" content="{q(site)} · SF"><meta name="twitter:card" content="summary">
+<meta http-equiv="refresh" content="0; url={q(target)}"><script>location.replace({json.dumps(target)})</script></head>
+<body style="font-family:system-ui,sans-serif;padding:24px"><p><b>{q(e['name'])}</b><br>{q(when)} · {q(place)}</p><p><a href="{q(target)}">Open the event</a></p></body></html>
+""")
+            n += 1
+    log(f"Wrote {n} share pages to {SHARE_DIR.name}/")
+
 # ---------------------------------------------------------------- one broken source shouldn't stop the refresh
 FAILED: list[str] = []
 
@@ -1696,6 +1733,7 @@ for _name in [n for n in list(globals()) if n.startswith("scrape_")] + [
     globals()[_name] = _isolated(globals()[_name], list)
 build_talks_concerts = _isolated(build_talks_concerts, None)
 crosslink = _isolated(crosslink, None)
+write_share_pages = _isolated(write_share_pages, None)
 
 def report_failures():
     if not FAILED:

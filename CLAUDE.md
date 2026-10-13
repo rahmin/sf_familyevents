@@ -23,7 +23,7 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
   It also builds the **tools row** under the intro (`nav.tools`): 📌 Interested (count; hidden when empty), ⭐ Venues, 👍 Your taste, 📅 Add to calendar, ➕ Suggest an event. Each button moves that section's body (`savedbody`, `venuesbody`, `prefsbody`, `icsfoot`) into one shared sheet (`#msheet`) and back on close; `openVenue` is wrapped to close it first.
 - Venue view (`openVenue`), Venues directory, follow/hide venue, 📌 Interested list, 👍/👎 learning.
 - 📌 Interested panel opens with a **Next 10 days** timeline (`interestedTimeline`): saves from both pages (`allSaved()` reads the other page's prefs from localStorage), one row per day with weather from `DAYS`, blocks on an 8 am–midnight track colored by page (both = split), linking to `<page>#ev=<id>`. The 📌 Interested tool button counts both pages.
-- Planning together: 📤 Share on cards and Coming up / On the horizon rows (`shareEvent`: share sheet or copy) links to `<page>#ev=<id>`; `openDeepLink()` (on load and `hashchange`) opens that event's day with filters wide open and selects it. A partner email saved in the Add to calendar panel (`fdo-partner`, both pages) is added as a guest on every Add to calendar link (`gcal`, `calLabel`).
+- Planning together: 📤 Share on cards and Coming up / On the horizon rows (`shareEvent`: share sheet or copy) links to the event's preview page in `e/`, which forwards to `<page>#ev=<id>`; `openDeepLink()` (on load and `hashchange`) opens that event's day with filters wide open and selects it. A partner email saved in the Add to calendar panel (`fdo-partner`, both pages) is added as a guest on every Add to calendar link (`gcal`, `calLabel`).
 
 ## Data files
 
@@ -39,6 +39,7 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 | `data/venues.json` | hand | Venue overrides matched by event link (e.g. Natural Resources) |
 | `data/playgrounds.json` | Phase 0 audit | Source copy of the playground list embedded in `index.html` |
 | `data/geocache.json` | refresh script | Saved Nominatim lookups |
+| `e/f-<id>.html`, `e/t-<id>.html` | refresh script (`write_share_pages`) | One page per upcoming event with og:title/description so shared links preview the event; redirects to `<page>#ev=<id>`. Rebuilt every refresh. `eventLink()` in the pages builds the same file name. |
 | Google Sheet (CSV in var `SUGGESTIONS_CSV`) | visitors via Google Form | Suggestions; `load_suggestions()` keeps rows with Approved = yes. Setup and approving: README "Visitor suggestions". Pages link to the Form via `SUGGEST_URL` (empty hides the link). |
 
 Event fields: `id, kind ("event"|"impact"), source, name, area, lat, lng, start, end, rangeStart/rangeEnd/rangeLabel, indoor, exp (0–1), off (°F), free, note, url, tags, recurring, bookAhead, also`.
