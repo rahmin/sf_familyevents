@@ -1237,6 +1237,8 @@ def scrape_calendars(start: date, end: date, edition: str) -> list[dict]:
                 except ValueError:
                     pass
             loc = ics_text(ev.get("LOCATION", ("", ""))[1])
+            if re.match(r"(?i)\s*(https?://|www\.)", loc):
+                loc = ""  # some hosts put a ticket link in LOCATION; fall back to GEO or the calendar's own place
             if not in_bbox(lat, lng) and loc.strip():
                 if re.search(r"(?i)\b(online|virtual|zoom|livestream|live stream)\b", loc):
                     continue
