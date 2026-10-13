@@ -149,9 +149,12 @@ h2{font-weight:600}
 .ivb b{font-weight:800}.ivb:hover,.ivb:focus-visible{z-index:2;outline:2px solid var(--stroke)}
 .ivb.fam,.ivkey .fam{background:color-mix(in srgb,var(--grass) 75%,#fff)}.ivb.ct,.ivkey .ct{background:color-mix(in srgb,var(--berry) 45%,#fff)}.ivb.both,.ivkey .both{background:linear-gradient(135deg,color-mix(in srgb,var(--grass) 75%,#fff) 50%,color-mix(in srgb,var(--berry) 45%,#fff) 50%)}
 .wkstrip{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;margin:8px 0 2px}.wkstrip:empty{display:none}
-.wkday{display:flex;flex-direction:column;align-items:center;gap:0;font:inherit;color:var(--ink);background:color-mix(in srgb,var(--panel) 60%,transparent);border:1.5px solid color-mix(in srgb,var(--stroke) 15%,transparent);border-radius:12px;padding:4px 0;cursor:pointer;line-height:1.2;min-width:0}
+.wkday{position:relative;display:flex;flex-direction:column;align-items:center;gap:0;font:inherit;color:var(--ink);background:color-mix(in srgb,var(--panel) 60%,transparent);border:1.5px solid color-mix(in srgb,var(--stroke) 15%,transparent);border-radius:12px;padding:4px 0;cursor:pointer;line-height:1.2;min-width:0}
 .wkday.on{background:color-mix(in srgb,var(--sun) 40%,var(--panel));border-color:var(--stroke)}.wkday:hover{border-color:var(--stroke)}
 .wkn{font-size:11px;font-weight:700;letter-spacing:-.02em;max-width:100%;overflow:hidden}.wki{font-size:17px}.wkt{font-size:13px;font-weight:700}.wkr{font-size:11px;color:var(--indoor)}.wkl{font-size:12px;color:var(--ink-2)}
+.wktip{display:none;position:absolute;z-index:40;top:calc(100% + 6px);left:50%;transform:translateX(-50%);width:max-content;max-width:220px;white-space:normal;text-align:left;font-size:13px;font-weight:500;line-height:1.35;color:var(--panel);background:var(--ink);border-radius:10px;padding:7px 10px;box-shadow:0 4px 14px rgba(0,0,0,.18);pointer-events:none}
+.wkday.tl .wktip{left:0;transform:none}.wkday.tr .wktip{left:auto;right:0;transform:none}
+@media (hover:hover){.wkday:hover .wktip{display:block}}.wkday:focus-visible .wktip{display:block}
 .acts{display:flex;flex-wrap:nowrap;gap:6px;margin-top:8px;overflow-x:auto}.acts .vote{margin:0;flex:0 0 auto;white-space:nowrap}.acts .vote.icon{min-width:44px;padding-left:10px;padding-right:10px}
 .partner{display:flex;flex-direction:column;gap:4px;margin-top:14px;padding-top:12px;border-top:1px solid color-mix(in srgb,var(--stroke) 12%,transparent)}.partner .toggle{align-self:flex-start;margin-top:4px}
 .prow{display:flex;gap:8px;margin-top:4px}.prow input{flex:1;min-width:0;font:inherit;font-size:16px;padding:7px 12px;border:2px solid var(--stroke);border-radius:999px;background:var(--panel);color:var(--ink)}
@@ -1052,9 +1055,11 @@ const orig=window.render;
 window.render=function(){const r=orig.apply(this,arguments);try{sync();}catch(e){}return r;};
 // the week at a glance: tap a day to see it
 function renderWeek(){const wk=$("wkstrip");if(!wk)return;if(!DAYS){wk.innerHTML="";return;}const sel=new Set(whenDates());
- wk.innerHTML=Object.values(DAYS).map((d,i)=>{const a=d.all;if(!a)return"";const ic=a.r>=50?"🌧️":a.r>=20?"🌦️":a.g>=25?"💨":a.t>=68?"☀️":a.t>=60?"🌤️":"⛅";
+ const html=Object.values(DAYS).map((d,i)=>{const a=d.all;if(!a)return"";const ic=a.r>=50?"🌧️":a.r>=20?"🌦️":a.g>=25?"💨":a.t>=68?"☀️":a.t>=60?"🌤️":"⛅";
   const nm=i===0?"Today":dt(d.date,12).toLocaleDateString("en-US",{weekday:"short"});
-  return `<button class="wkday${sel.has(d.date)?" on":""}" data-d="${d.date}" title="${esc(d.label)}: high ${a.t}°F${a.lo!=null?", low "+a.lo+"°F":""}, wind ${a.w??"?"} mph, gusts ${a.g} mph${a.r?", "+a.r+"% rain":""}"><span class="wkn">${nm}</span><span class="wki" aria-hidden="true">${ic}</span><span class="wkt">${a.t}°</span><span class="wkl">${a.lo!=null?a.lo+"°":"&nbsp;"}</span><span class="wkr">${a.r>=10?a.r+"%💧":"&nbsp;"}</span></button>`;}).join("");
+  const tip=`${d.label}: high ${a.t}°F${a.lo!=null?", low "+a.lo+"°F":""}. Wind ${a.w??"?"} mph, gusts to ${a.g}.${a.r?" "+a.r+"% chance of rain.":""}`;
+  return `<button class="wkday${sel.has(d.date)?" on":""}${i<2?" tl":i>4?" tr":""}" data-d="${d.date}" aria-label="${esc(tip)}"><span class="wktip" aria-hidden="true">${esc(tip)}</span><span class="wkn">${nm}</span><span class="wki" aria-hidden="true">${ic}</span><span class="wkt">${a.t}°</span><span class="wkl">${a.lo!=null?a.lo+"°":"&nbsp;"}</span><span class="wkr">${a.r>=10?a.r+"%💧":"&nbsp;"}</span></button>`;}).join("");
+ if(html===wk.dataset.html)return;wk.dataset.html=html;wk.innerHTML=html;
  wk.querySelectorAll(".wkday").forEach(b=>b.onclick=()=>{const d=b.dataset.d;if(d===todayStr())S.when="today";else if(d===addDays(todayStr(),1))S.when="tomorrow";else{S.when="pick";S.pick=d;}S.sel=null;save();render();});}
 function sync(){
  renderWeek();
