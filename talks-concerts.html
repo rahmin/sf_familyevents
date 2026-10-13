@@ -140,6 +140,8 @@ h2{font-weight:600}
 .uprow summary::-webkit-details-marker{display:none}
 .uprow p{margin:6px 0 4px;font-size:15px}
 .upint{margin-top:8px}
+.card .top>.tag{position:relative}.tagtip{display:none;position:absolute;z-index:30;top:calc(100% + 6px);right:0;width:max-content;max-width:260px;white-space:normal;text-align:left;font-family:"Atkinson Hyperlegible",system-ui,sans-serif;font-size:13px;font-weight:500;line-height:1.4;color:var(--panel);background:var(--ink);border-radius:10px;padding:8px 11px;box-shadow:0 4px 14px rgba(0,0,0,.18);pointer-events:none}
+@media (hover:hover){.card .tag:hover .tagtip{display:block}}.card .tag:focus-visible .tagtip{display:block}
 #tiles image{filter:grayscale(.55) contrast(.92) brightness(1.04)}
 .mapcredit{margin:4px 2px 0;font-size:11px;color:var(--ink-2);text-align:right}.mapcredit a{color:inherit}
 #map .water{fill:color-mix(in srgb,var(--sky) 28%,var(--panel))}#map .land{fill:var(--panel);stroke:color-mix(in srgb,var(--stroke) 35%,transparent);stroke-width:1;stroke-linejoin:round}
@@ -417,12 +419,12 @@ function cond(){return condFor(curDate());}
 function curDate(){return whenDates()[0];}
 function bestEval(p){const ds=whenDates();if(ds.length===1)return evalPlace(p,condFor(ds[0]));let best=null,bd=null;
  ds.forEach(d=>{const e=evalPlace(p,condFor(d));if(!best||e.score>best.score){best=e;bd=d;}});
- if(!p.indoor)best.why="Best "+(bd===todayStr()?"today":bd===addDays(todayStr(),1)?"tomorrow":"on "+wkday(bd,true))+". "+best.why;return best;}
+ if(!p.indoor){const bw="Best "+(bd===todayStr()?"today":bd===addDays(todayStr(),1)?"tomorrow":"on "+wkday(bd,true))+". ";best.why=bw+best.why;best.tip=bw+best.tip;}return best;}
 function dt(dateStr,h){const [y,m,d]=dateStr.split("-").map(Number);return new Date(y,m-1,d,Math.floor(h),Math.round((h%1)*60));}
 function winRange(){return winFor(curDate());}
 function fmtT(d){let h=d.getHours(),m=d.getMinutes();const ap=h>=12?"pm":"am";h=h%12||12;return h+(m?":"+String(m).padStart(2,"0"):"")+" "+ap;}
 function evalPlace(p,c){
- if(p.indoor)return{score:.75,tier:"indoor",label:"Indoors",why:"Indoors, so the weather won't matter."};
+ if(p.indoor)return{tip:"Indoors, so the weather won't matter. Indoor spots get a steady middle score, so a really nice outdoor option can rank above them.",score:.75,tier:"indoor",label:"Indoors",why:"Indoors, so the weather won't matter."};
  const gust=c.g*p.exp,felt=Math.round(c.t+p.off-gust*.25);
  const wind=1-clamp(gust/30,0,1);let temp=clamp((felt-48)/16,0,1);if(felt>86)temp=clamp(1-(felt-86)/12,0,1);
  const score=(.5*wind+.5*temp)*(1-(c.r/100)*.8);
@@ -433,7 +435,13 @@ function evalPlace(p,c){
  const w=gust<8?"little wind":gust<20?"some wind":"strong gusts";
  let why=felt>86?`Feels about ${felt}°F, so look for shade.`:`Feels about ${felt}°F with ${w}.`;
  if(c.r>=15)why+=` ${c.r}% chance of rain.`;
- return{score,tier,label,why};
+ // tooltip: the same reasons the score uses
+ const tT=felt>86?`Feels about ${felt}°F: hot, so look for shade`:felt>=64?`Feels about ${felt}°F: comfortable`:felt>=56?`Feels about ${felt}°F: a bit cool, so bring a layer`:`Feels about ${felt}°F: chilly`;
+ const ex=p.exp>=.8?"an exposed spot":p.exp<=.35?"a sheltered spot":"a partly sheltered spot";
+ const tW=`Gusts around ${Math.round(gust)} mph here (${ex}; ${c.g} mph in the forecast)`+(gust<8?": calm":gust<20?": a little breezy":": windy");
+ const tR=c.r>=15?`${c.r}% chance of rain`:"Little or no rain expected";
+ const tip=`${label}. ${tT}. ${tW}. ${tR}. Weather score ${Math.round(score*100)} of 100 (70+ is Great, 45–69 Go prepared, under 45 Not today).`;
+ return{score,tier,label,why,tip};
 }
 function evInterval(e){const s=new Date(e.start);const en=e.end?new Date(e.end):new Date(s.getTime()+2*3600e3);return[s,en];}
 function eventActive(e){
@@ -872,7 +880,7 @@ function render(){
  else list.innerHTML=vis.map(({p,e,flags,when})=>{
   const url=`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(HOME.q||(HOME.lat+","+HOME.lng))}&destination=${p.lat},${p.lng}`;
   return `<div class="card${e.tier==="skip"?" dim":""}" id="c-${esc(p.id)}" role="button" tabindex="0" aria-expanded="${S.sel===p.id}" data-id="${esc(p.id)}">
-   <div class="top"><div>${when?`<div class="evtime">${esc(when)}</div>`:""}<div class="name">${RANK[p.id]?`<span class="rk">${RANK[p.id]}</span>`:""}${(PREFS.saved||{})[p.id]?`<span class="pin" title="You're interested">📌</span> `:""}${esc(p.name)}</div><div class="meta">${venueLink(p)}, ${distText(p)}${p.free?", free":""}${!p.isEvent?esc(hoursMeta(p)):""}${p.isEvent&&bookAhead(p)?", book ahead":""}</div>${p.also?`<div class="also">👨‍👩‍👧 Good with kids too</div>`:""}${flags.map(f=>`<div class="flag">${esc(f)}</div>`).join("")}${(()=>{const tl=tagsFor(p);return tl.length?`<div class="tagline">${tl.slice(0,3).map(id=>{const t=TAGS.find(x=>x.id===id);return `<span class="tg${S.interests.includes(id)?" on":""}">${t.icon} ${t.label}</span>`;}).join("")}</div>`:"";})()}${p.branchList&&p.branchList.length?`<div class="meta">Also at ${p.branchList.length} other ${p.branchList.length===1?"branch":"branches"}</div>`:""}</div><span class="tag t-${e.tier}">${e.label}</span></div>
+   <div class="top"><div>${when?`<div class="evtime">${esc(when)}</div>`:""}<div class="name">${RANK[p.id]?`<span class="rk">${RANK[p.id]}</span>`:""}${(PREFS.saved||{})[p.id]?`<span class="pin" title="You're interested">📌</span> `:""}${esc(p.name)}</div><div class="meta">${venueLink(p)}, ${distText(p)}${p.free?", free":""}${!p.isEvent?esc(hoursMeta(p)):""}${p.isEvent&&bookAhead(p)?", book ahead":""}</div>${p.also?`<div class="also">👨‍👩‍👧 Good with kids too</div>`:""}${flags.map(f=>`<div class="flag">${esc(f)}</div>`).join("")}${(()=>{const tl=tagsFor(p);return tl.length?`<div class="tagline">${tl.slice(0,3).map(id=>{const t=TAGS.find(x=>x.id===id);return `<span class="tg${S.interests.includes(id)?" on":""}">${t.icon} ${t.label}</span>`;}).join("")}</div>`:"";})()}${p.branchList&&p.branchList.length?`<div class="meta">Also at ${p.branchList.length} other ${p.branchList.length===1?"branch":"branches"}</div>`:""}</div><span class="tag t-${e.tier}" tabindex="0" aria-label="${esc(e.tip||e.label)}">${e.label}<span class="tagtip" aria-hidden="true">${esc(e.tip||e.why||"")}</span></span></div>
    <div class="more">${branchDetail(p)}${hoursDetail(p)}<p style="margin:0 0 6px">${esc(p.note)} <span class="why">${esc(e.why)}</span></p><div class="links"><a href="${url}" target="_blank" rel="noopener">Directions</a>${p.isEvent&&p.start&&!p.rangeStart&&!p.multi?`<a class="cal" href="${gcal(p)}" target="_blank" rel="noopener">${calLabel(true)}</a>`:""}${p.url?`<a href="${esc(p.url)}" target="_blank" rel="noopener">${p.isEvent?"Details":"Park page"}</a>`:(p.isEvent?`<a href="https://www.google.com/search?q=${encodeURIComponent(p.name+" "+(p.area||"")+" San Francisco")}" target="_blank" rel="noopener">Search</a>`:"")}</div>${(()=>{const k=prefKey(p);const sv=!!(PREFS.saved||{})[p.id];return `<div class="acts">${p.isEvent?`<button class="vote int" data-int="1" aria-pressed="${sv}">📌 ${sv?"Interested ✓":"Interested"}</button><button class="vote" data-share="1">📤 Share</button>`:""}<button class="vote icon" data-vote="1" aria-pressed="${!!PREFS.liked[k]}" aria-label="More like this" title="More like this">👍</button><button class="vote icon" data-vote="-1" aria-label="Not for us" title="Not for us">👎</button></div>`;})()}</div></div>`;}).join("");
  list.querySelectorAll(".card").forEach(cd=>{const hr=vis.find(q=>q.p.id===cd.dataset.id);cd.addEventListener("mouseenter",()=>hoverLabel(hr));cd.addEventListener("mouseleave",()=>hoverLabel(null));const go=()=>{S.sel=S.sel===cd.dataset.id?null:cd.dataset.id;render();};
   cd.addEventListener("click",ev=>{const ib=ev.target.closest("button[data-int]");if(ib){ev.stopPropagation();const r=vis.find(q=>q.p.id===cd.dataset.id);if(r)toggleInterested(r.p);return;}const sb=ev.target.closest("button[data-share]");if(sb){ev.stopPropagation();const r=vis.find(q=>q.p.id===cd.dataset.id);if(r)shareEvent(r.p,sb);return;}const vb=ev.target.closest("button.vote");if(vb){ev.stopPropagation();const r=vis.find(q=>q.p.id===cd.dataset.id);if(r)vote(r.p,+vb.dataset.vote);return;}if(ev.target.closest("a"))return;go();});cd.addEventListener("keydown",ev=>{if(ev.target.closest("a")||ev.target.closest("button.vote"))return;if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});});
