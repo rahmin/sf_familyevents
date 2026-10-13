@@ -304,10 +304,10 @@ h2{font-weight:600}
 
       <div class="panel" style="margin-top:14px">
         <svg id="map" viewBox="0 0 360 360" role="img" aria-labelledby="mapt">
-          <title id="mapt">Map of events around your starting point, which is at the center. Rings mark drive times, or walking times when Walking distance is chosen. The map zooms to the range you pick.</title>
+          <title id="mapt">Map of events around your starting point, which is at the center. Rings mark rough drive times by distance (the list uses road times), or walking times when Walking distance is chosen. The map zooms to the range you pick.</title>
           <defs><clipPath id="tileclip"><rect x="0" y="0" width="360" height="360" rx="14"/></clipPath></defs><g id="tiles" clip-path="url(#tileclip)"></g><g id="rings"></g><g id="pins"></g><g id="sel"></g><g id="hov" style="pointer-events:none"></g>
         </svg>
-        <p class="mapcredit">Map © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a></p>
+        <p class="mapcredit">Map and drive times © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, routing by <a href="https://project-osrm.org" target="_blank" rel="noopener">OSRM</a></p>
         <div class="legend">
           <span><i style="background:var(--great)"></i>Great</span>
           <span><i style="background:var(--okay)"></i>Go prepared</span>
@@ -347,7 +347,26 @@ const ZIPS={"94102":[37.7795,-122.4193],"94103":[37.7725,-122.411],"94104":[37.7
 function miles(a,b){const R=3958.8,r=Math.PI/180;const dl=(b.lat-a.lat)*r,dg=(b.lng-a.lng)*r;const x=Math.sin(dl/2)**2+Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin(dg/2)**2;return 2*R*Math.asin(Math.sqrt(x));}
 // rough drive time: city streets for the first 4 straight-line miles (5 min each), then about 1.75 min per mile (roads wind, bridges and ramps).
 // Checked against Google Maps: Shotwell St to Golden Gate Park, 3.8 mi straight / 5.5 by road, 22 min; this gives 21.
-function driveMin(p){const d=miles(HOME,p);return Math.max(3,Math.round(2+5*Math.min(d,4)+1.75*Math.max(d-4,0)));}
+function guessMin(p){const d=miles(HOME,p);return Math.max(3,Math.round(2+5*Math.min(d,4)+1.75*Math.max(d-4,0)));}
+// real road times from the public OSRM server (OpenStreetMap routing), fetched once per starting point and kept in this
+// browser (shared by both pages). OSRM is free-flow (no signals, traffic or parking), so short city trips read low: we add
+// 3 min + 45% of the trip, capped at 9 (Shotwell St → Golden Gate Park: OSRM 13, Google 22, this 22);
+// until it answers, or if it can't, the distance guess above is used.
+const OSRM_KEY="fdo-osrm",okey=c=>(+c.lat).toFixed(4)+","+(+c.lng).toFixed(4),hkey=()=>(+HOME.lat).toFixed(3)+","+(+HOME.lng).toFixed(3);
+let OSRM={},OSRM_HOME="",OSRM_BUSY=false;
+function osrmLoad(){OSRM_HOME=hkey();try{const all=JSON.parse(localStorage.getItem(OSRM_KEY)||"{}");OSRM=all[OSRM_HOME]||{};}catch(e){OSRM={};}}
+function osrmSave(){try{const all=JSON.parse(localStorage.getItem(OSRM_KEY)||"{}");all[OSRM_HOME]=OSRM;const ks=Object.keys(all);while(ks.length>4)delete all[ks.shift()];localStorage.setItem(OSRM_KEY,JSON.stringify(all));}catch(e){}}
+function driveMin(p){if(hkey()!==OSRM_HOME)osrmLoad();const v=OSRM[okey(p)];if(typeof v!=="number")return guessMin(p);const m=v/60;return Math.max(3,Math.round(m+Math.min(9,3+m*.45)));}
+async function osrmFetch(){if(OSRM_BUSY||!EVENTS.length)return;if(hkey()!==OSRM_HOME)osrmLoad();
+ const pts=[...(typeof allPlaces==="function"?allPlaces():[]),...EVENTS].filter(c=>isFinite(c.lat)&&isFinite(c.lng)&&miles(HOME,c)<40);
+ const todo=[...new Set(pts.map(okey))].filter(k=>!(k in OSRM));if(!todo.length)return;
+ OSRM_BUSY=true;const home=OSRM_HOME;
+ try{for(let i=0;i<todo.length;i+=90){const chunk=todo.slice(i,i+90);
+   const coords=[HOME,...chunk.map(k=>{const [la,lo]=k.split(",");return{lat:la,lng:lo};})].map(c=>(+c.lng).toFixed(5)+","+(+c.lat).toFixed(5)).join(";");
+   const r=await fetch("https://router.project-osrm.org/table/v1/driving/"+coords+"?sources=0&annotations=duration");if(!r.ok)break;const j=await r.json();
+   if(home!==OSRM_HOME||j.code!=="Ok")break;chunk.forEach((k,n)=>{const d=j.durations[0][n+1];OSRM[k]=d==null?null:Math.round(d);});
+   osrmSave();render();if(i+90<todo.length)await new Promise(res=>setTimeout(res,1100));}}
+ catch(e){}finally{OSRM_BUSY=false;}}
 // walking: straight-line distance × 1.3 for the street grid, at 3 mph (a city block is about a minute)
 function walkMin(p){return Math.max(1,Math.round(miles(HOME,p)*1.3/3*60));}
 function withMin(p){return Object.assign({},p,{min:driveMin(p),walk:walkMin(p)});}
@@ -795,6 +814,7 @@ function renderCal(){
  el.innerHTML=`<div class="daybar" role="img" aria-label="Busy times between 8 am and 7 pm">${bars}</div><div class="ticks"><span>8 am</span><span>11</span><span>2 pm</span><span>5</span><span>7</span></div><p class="calmsg">${esc(txt)}</p>`;
 }
 function render(){
+ if(EVENTS.length&&!OSRM_BUSY&&hkey()!==OSRM_HOME)setTimeout(osrmFetch,0);
  const c=cond();
  const dl=whenDates(),d0=dl[0];
  if(dl.length>7){const fc=dl.filter(hasWx);document.getElementById("wx").textContent=WHEN_LABEL[S.when]+", "+spanLabel(dl[0],dl[dl.length-1])+(fc.length?": forecast covers "+(fc.length===1?"today":"the next "+fc.length+" days")+"; later days use typical weather":"");}
@@ -925,7 +945,7 @@ function enableCal(){CAL.on=true;CAL.msg="";save();delete CAL.byDate[curDate()];
  fetchCal(curDate(),true);}
 
 function ostat(msg){document.getElementById("ostat").textContent=msg||(HOME.isDefault?"Starting from downtown San Francisco until you set your own starting point. It's saved only in this browser.":`Starting from ${HOME.label}${HOME.approx?" (approximate)":""}. Saved only in this browser.`);}
-function setOrigin(o){HOME=o;try{localStorage.setItem("fdo-origin",JSON.stringify(o))}catch(e){}S.sel=null;ostat();render();}
+function setOrigin(o){HOME=o;setTimeout(osrmFetch,0);try{localStorage.setItem("fdo-origin",JSON.stringify(o))}catch(e){}S.sel=null;ostat();render();}
 async function lookup(){
  const raw=document.getElementById("oin").value.trim();
  if(!raw){ostat("Enter an address or a 5-digit ZIP code.");return;}
@@ -990,7 +1010,7 @@ setInterval(()=>{if(!document.hidden)loadWeather();},3*3600e3);
   openDeepLink();
   META={refreshedLabel:d.generated?new Date(d.generated).toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"}):"",coverage:d.coverage||""};
   dbState="ready";}catch(e){dbState="none";}
- render();
+ render();osrmFetch();
 })();
 </script>
 <div id="vback" class="vback" hidden></div><section id="vsheet" class="vsheet" role="dialog" aria-modal="true" aria-labelledby="vtitle" hidden></section>
@@ -1024,7 +1044,7 @@ const mkPill=(id,segId,label)=>{const dd=document.createElement("div");dd.classN
 const todDD=mkPill("tod2","tod","Time of day"),drvDD=mkPill("drv2","drive","Maximum drive time");
 {const sub={"0":"up to a 15-minute walk, about a dozen blocks","10":"your neighborhood and the ones next to it","20":"a big part of San Francisco","30":"all of SF, plus Oakland and Sausalito","45":"Berkeley hills, Marin and the Peninsula"};
  drvDD.querySelectorAll(".ddmenu button").forEach(b=>{b.querySelector("span").textContent=b.dataset.v==="0"?"🚶 Walking distance":"Within "+b.dataset.v+" min";b.querySelector(".sub").textContent=sub[b.dataset.v]||"";});
- drvDD.querySelector(".ddmenu").insertAdjacentHTML("beforeend",`<p class="mnote">Estimated driving time from your starting point, without traffic. Events within a short walk rank higher. Set your own starting point with ✎.</p>`);}bar.appendChild(todDD);bar.appendChild(drvDD);
+ drvDD.querySelector(".ddmenu").insertAdjacentHTML("beforeend",`<p class="mnote">Driving time by road from your starting point (OpenStreetMap routing, adjusted for typical city traffic). Events within a short walk rank higher. Set your own starting point with ✎.</p>`);}bar.appendChild(todDD);bar.appendChild(drvDD);
 const fbtn=document.createElement("button");fbtn.className="ddbtn lite";fbtn.id="filtBtn";fbtn.innerHTML=`Filters <span id="filtN" class="fbadge"></span>`;bar.appendChild(fbtn);
 todRow.hidden=true;todRow.style.display="none";driveRow.style.display="none";
 // selected interests as removable chips
