@@ -441,9 +441,17 @@ function hasWx(ds){return !!wxFor(ds);}
 function condFor(ds){const D=wxFor(ds);const k=S.when==="now"?nowBucket():S.tod;if(D)return D[k]||D.all||FALLBACK;if(S.when==="pick")return S.custom;return FALLBACK;}
 function cond(){return condFor(curDate());}
 function curDate(){return whenDates()[0];}
-function bestEval(p){const ds=whenDates();if(ds.length===1)return evalPlace(p,condFor(ds[0]));let best=null,bd=null;
- ds.forEach(d=>{const e=evalPlace(p,condFor(d));if(!best||e.score>best.score){best=e;bd=d;}});
- if(!p.indoor){const bw="Best "+(bd===todayStr()?"today":bd===addDays(todayStr(),1)?"tomorrow":"on "+wkday(bd,true))+". ";best.why=bw+best.why;best.tip=bw+best.tip;}return best;}
+// a place over several days: rate each day and show the best; days within 5 points of it count as equally good
+function bestEval(p){const ds=whenDates();if(ds.length===1)return evalPlace(p,condFor(ds[0]));let best=null,bd=null;const all=[];
+ ds.forEach(d=>{const e=evalPlace(p,condFor(d));all.push([d,e.score]);if(!best||e.score>best.score){best=e;bd=d;}});
+ if(!p.indoor){const tops=all.filter(([,sc])=>sc>=best.score-.05).map(([d])=>d);
+  const dn=d=>d===todayStr()?"today":d===addDays(todayStr(),1)?"tomorrow":wkday(d,true);
+  const list=a=>a.length<=2?a.join(" and "):a.slice(0,-1).join(", ")+" and "+a[a.length-1];
+  let bw;if(tops.length===ds.length)bw=ds.length>2?"About the same every day you're viewing. ":"Same both days. ";
+  else if(tops.length>4)bw=`Best on ${tops.length} of the ${ds.length} days you're viewing. `;
+  else if(tops.length>1)bw="Best "+list(tops.map(dn))+". ";
+  else bw="Best "+(bd===todayStr()?"today":bd===addDays(todayStr(),1)?"tomorrow":"on "+wkday(bd,true))+". ";
+  best.why=bw+best.why;best.tip=bw+(tops.length>1?"On the best day: ":"")+best.tip;}return best;}
 function dt(dateStr,h){const [y,m,d]=dateStr.split("-").map(Number);return new Date(y,m-1,d,Math.floor(h),Math.round((h%1)*60));}
 function winRange(){return winFor(curDate());}
 function fmtT(d){let h=d.getHours(),m=d.getMinutes();const ap=h>=12?"pm":"am";h=h%12||12;return h+(m?":"+String(m).padStart(2,"0"):"")+" "+ap;}
