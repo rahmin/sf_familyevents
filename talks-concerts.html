@@ -140,6 +140,8 @@ h2{font-weight:600}
 .uprow summary::-webkit-details-marker{display:none}
 .uprow p{margin:6px 0 4px;font-size:15px}
 .upint{margin-top:8px}
+.partner{display:flex;flex-direction:column;gap:4px;margin-top:14px;padding-top:12px;border-top:1px solid color-mix(in srgb,var(--stroke) 12%,transparent)}.partner .toggle{align-self:flex-start;margin-top:4px}
+.prow{display:flex;gap:8px;margin-top:4px}.prow input{flex:1;min-width:0;font:inherit;font-size:16px;padding:7px 12px;border:2px solid var(--stroke);border-radius:999px;background:var(--panel);color:var(--ink)}
 .calbtns{display:flex;flex-wrap:wrap;gap:8px}.calbtns .ddbtn{text-decoration:none;font-size:15px}
 .uprow a,.scard a{color:var(--indoor);font-weight:700}
 .legend i.star{border:0;width:auto;height:auto;font-style:normal;color:var(--ink);background:none;font-size:15px;line-height:1}
@@ -628,11 +630,14 @@ function renderSaved(){const box=document.getElementById("savedbody");if(!box)re
  box.innerHTML=!all.length?`<p class="calmsg">Tap 📌 Interested on any event to keep it here. Interested events also get their own chip under Interests.</p>`:
   all.map(([id,v])=>{const d=v.s?new Date(v.s):null;const g=v.s?gcal({name:v.n,start:v.s,end:v.e,area:v.a,note:v.note,url:v.u}):"";
    return `<div class="vrow"><span class="evtime">${d?esc(d.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"})+", "+fmtT(d)):""}</span><b>${esc(v.n)}</b><div class="meta">${esc(v.a)}</div>
-    ${g?`<a href="${g}" target="_blank" rel="noopener">Add to calendar</a>`:""}${v.u?` · <a href="${esc(v.u)}" target="_blank" rel="noopener">Event details</a>`:""} · <button class="star" data-unsave="${esc(id)}">Remove</button></div>`;}).join("");
+    ${g?`<a href="${g}" target="_blank" rel="noopener">${calLabel()}</a>`:""}${v.u?` · <a href="${esc(v.u)}" target="_blank" rel="noopener">Event details</a>`:""} · <button class="star" data-unsave="${esc(id)}">Remove</button></div>`;}).join("");
  box.querySelectorAll("[data-unsave]").forEach(b=>b.onclick=()=>{delete PREFS.saved[b.dataset.unsave];savePrefs();render();});}
 function star(x,y,r){let d="";for(let i=0;i<10;i++){const a=-Math.PI/2+i*Math.PI/5,q=i%2?r*.45:r;d+=(i?"L":"M")+(x+q*Math.cos(a)).toFixed(1)+" "+(y+q*Math.sin(a)).toFixed(1);}return d+"Z";}
+// partner's email, kept only in this browser (shared by both pages); added as a guest on Add to calendar links
+let PARTNER="";try{PARTNER=localStorage.getItem("fdo-partner")||"";}catch(e){}
 function gcal(p){const [s0,e0]=evInterval(p);const f=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
- return "https://calendar.google.com/calendar/render?"+new URLSearchParams({action:"TEMPLATE",text:p.name||"Family outing",dates:f(s0)+"/"+f(e0),details:(p.note||"")+(p.url?"\n"+p.url:""),location:p.area||""});}
+ return "https://calendar.google.com/calendar/render?"+new URLSearchParams({action:"TEMPLATE",text:p.name||"Family outing",dates:f(s0)+"/"+f(e0),details:(p.note||"")+(p.url?"\n"+p.url:""),location:p.area||"",...(PARTNER?{add:PARTNER}:{})});}
+function calLabel(){return PARTNER?"Add to calendar + invite "+PARTNER.split("@")[0]:"Add to calendar";}
 function oneOffs(fromMs,toMs){const RALL=recurringKeys();const keepInt=p=>!PREFS.hidden[prefKey(p)]&&!(PREFS.hidVen||{})[venueOf(p).key]&&!(S.onlyInt&&S.interests.length)||interestMatch(p);
  return EVENTS.filter(e=>e.kind!=="impact"&&!e.rangeStart&&e.start&&!isRecurring(e,RALL)).map(e=>withMin(Object.assign({},e,{isEvent:true,oneOff:true})))
   .filter(p=>{const [s0,e0]=evInterval(p);return keepInt(p)&&s0.getTime()<toMs&&e0.getTime()>fromMs&&e0.getTime()>Date.now()+15*60e3&&p.min<=S.drive&&!(S.free&&!p.free);})
@@ -640,12 +645,33 @@ function oneOffs(fromMs,toMs){const RALL=recurringKeys();const keepInt=p=>!PREFS
 function bookAhead(p){return p.bookAhead===true||(p.tags||[]).includes("book-ahead");}
 // 📌 Interested on Coming up / On the horizon rows; the row stays open after toggling
 const UPMAP={};
-function upInt(p){const sv=!!(PREFS.saved||{})[p.id];return `<div class="upint"><button class="vote int" data-upint="${esc(p.id)}" aria-pressed="${sv}">📌 ${sv?"Interested ✓":"Interested"}</button></div>`;}
+function upInt(p){const sv=!!(PREFS.saved||{})[p.id];return `<div class="upint"><button class="vote int" data-upint="${esc(p.id)}" aria-pressed="${sv}">📌 ${sv?"Interested ✓":"Interested"}</button><button class="vote" data-upshare="${esc(p.id)}">📤 Share</button></div>`;}
 document.addEventListener("click",ev=>{const b=ev.target.closest&&ev.target.closest("button[data-upint]");if(!b)return;ev.preventDefault();const id=b.dataset.upint,p=UPMAP[id];if(!p)return;
  const box=b.closest("#upcoming,#horizon");toggleInterested(p);const row=box&&[...box.querySelectorAll("details.uprow")].find(d=>d.dataset.id===id);if(row)row.open=true;});
 document.addEventListener("click",ev=>{const b=ev.target.closest&&ev.target.closest("#icscopy");if(!b)return;
  const done=()=>{b.textContent="Copied ✓";setTimeout(()=>b.textContent="Copy link",2000);};
  (navigator.clipboard?navigator.clipboard.writeText(b.dataset.u):Promise.reject()).then(done,()=>{window.prompt("Copy this link:",b.dataset.u);});});
+function renderPartner(){const b=document.getElementById("partnerbox");if(!b)return;
+ b.innerHTML=PARTNER?`<b>Inviting ${esc(PARTNER)}</b><span class="calmsg">Add to calendar links put them on the invite, so plans land on both calendars.</span><button class="toggle" id="partnerdel">Stop inviting</button>`
+  :`<b>Plan together</b><span class="calmsg">Add your partner's email and every Add to calendar link invites them too. It stays in this browser.</span><span class="prow"><input type="email" id="partnerin" placeholder="partner@example.com" autocomplete="email"><button class="ddbtn" id="partnersave">Save</button></span>`;}
+document.addEventListener("click",ev=>{const t=ev.target;if(!t.closest)return;
+ if(t.closest("#partnersave")){const v=(document.getElementById("partnerin").value||"").trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){document.getElementById("partnerin").focus();return;}
+  PARTNER=v;try{localStorage.setItem("fdo-partner",v);}catch(e){}renderPartner();render();}
+ else if(t.closest("#partnerdel")){PARTNER="";try{localStorage.removeItem("fdo-partner");}catch(e){}renderPartner();render();}});
+// 📤 Share: the phone's share sheet (or copy the link); the link opens this event on its day
+function eventLink(p){return location.origin+location.pathname+"#ev="+encodeURIComponent(p.id);}
+function shareEvent(p,btn){const [s0]=evInterval(p);const when=p.rangeStart?"through "+(p.rangeLabel||""):s0.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"})+", "+fmtT(s0);
+ const text=`${p.name}, ${when} at ${venueOf(p).name}`,url=eventLink(p);
+ if(navigator.share){navigator.share({title:p.name,text,url}).catch(()=>{});return;}
+ const ok=()=>{if(btn){const o=btn.textContent;btn.textContent="Link copied ✓";setTimeout(()=>btn.textContent=o,2000);}};
+ (navigator.clipboard?navigator.clipboard.writeText(text+" "+url):Promise.reject()).then(ok,()=>window.prompt("Copy this link:",url));}
+document.addEventListener("click",ev=>{const b=ev.target.closest&&ev.target.closest("button[data-upshare]");if(!b)return;ev.preventDefault();const p=UPMAP[b.dataset.upshare];if(p)shareEvent(p,b);});
+// #ev=<id> (from 📤 Share) opens that event's day with filters wide open and selects it
+function openDeepLink(){const m=/^#ev=(.+)$/.exec(location.hash),tgt=m&&EVENTS.find(e=>e.id===decodeURIComponent(m[1]));if(!m)return;
+ history.replaceState(null,"",location.pathname);if(!tgt||!tgt.start)return;
+ S.when="pick";S.pick=tgt.start.slice(0,10);S.tod="all";S.kind="both";S.free=false;S.evonly=false;S.hideRec=false;S.hideSoon=false;S.interests=[];S.onlyInt=false;S.mode="out";S.sel=tgt.id;S.drive=Math.max(S.drive,30);
+ render();setTimeout(()=>{const el=document.getElementById("c-"+tgt.id);if(el)el.scrollIntoView({block:"center"});},300);}
+window.addEventListener("hashchange",()=>{if(EVENTS.length)openDeepLink();});
 function renderHorizon(){
  const el=document.getElementById("horizon");if(!el)return;
  const dl=whenDates(),lastSel=dl[dl.length-1],from=addDays(lastSel>todayStr()?lastSel:todayStr(),8),t0=dt(from,0).getTime(),list=oneOffs(t0,dt(todayStr(),0).getTime()+92*864e5);
@@ -653,7 +679,7 @@ function renderHorizon(){
  let html=`<h2>On the horizon</h2><p class="calmsg" style="margin:0 0 4px">One-off events over the next three months, within your drive time. Shows marked Book ahead usually need tickets in advance.</p>`,last="";
  list.forEach(p=>{const [s0]=evInterval(p);const mon=s0.toLocaleDateString("en-US",{month:"long",year:"numeric"});
   if(mon!==last){html+=`<div class="upday">${esc(mon)}</div>`;last=mon;}
-  UPMAP[p.id]=p;html+=`<details class="uprow" data-id="${esc(p.id)}"><summary><span class="evtime">${esc(s0.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"})+", "+fmtT(s0))}</span>${bookAhead(p)?` <span class="bk">Book ahead</span>`:""}<br><b>${(PREFS.saved||{})[p.id]?"📌 ":""}${esc(p.name)}</b><div class="meta">${venueLink(p)}, about ${p.min} min${p.free?", free":""}</div></summary><p>${esc(p.note||"")}</p><a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}${upInt(p)}</details>`;});
+  UPMAP[p.id]=p;html+=`<details class="uprow" data-id="${esc(p.id)}"><summary><span class="evtime">${esc(s0.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"})+", "+fmtT(s0))}</span>${bookAhead(p)?` <span class="bk">Book ahead</span>`:""}<br><b>${(PREFS.saved||{})[p.id]?"📌 ":""}${esc(p.name)}</b><div class="meta">${venueLink(p)}, about ${p.min} min${p.free?", free":""}</div></summary><p>${esc(p.note||"")}</p><a href="${gcal(p)}" target="_blank" rel="noopener">${calLabel()}</a>${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}${upInt(p)}</details>`;});
  el.innerHTML=html;
 }
 function renderUpcoming(){
@@ -663,7 +689,7 @@ function renderUpcoming(){
  let html=`<h2>Coming up</h2><p class="calmsg" style="margin:0 0 4px">One-off events in the week after the dates you’re viewing, within your drive time.</p>`,last="";
  list.forEach(p=>{const [s0,e0]=evInterval(p);const day=s0.toLocaleDateString("en-US",{weekday:"long",month:"short",day:"numeric"});
   if(day!==last){html+=`<div class="upday">${esc(day)}</div>`;last=day;}
-  UPMAP[p.id]=p;html+=`<details class="uprow" data-id="${esc(p.id)}"><summary><span class="evtime">${esc(fmtT(s0))}</span> <b>${(PREFS.saved||{})[p.id]?"📌 ":""}${esc(p.name)}</b><div class="meta">${venueLink(p)}, about ${p.min} min${p.free?", free":""}</div></summary><p>${esc(p.note||"")}</p><a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}${upInt(p)}</details>`;});
+  UPMAP[p.id]=p;html+=`<details class="uprow" data-id="${esc(p.id)}"><summary><span class="evtime">${esc(fmtT(s0))}</span> <b>${(PREFS.saved||{})[p.id]?"📌 ":""}${esc(p.name)}</b><div class="meta">${venueLink(p)}, about ${p.min} min${p.free?", free":""}</div></summary><p>${esc(p.note||"")}</p><a href="${gcal(p)}" target="_blank" rel="noopener">${calLabel()}</a>${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}${upInt(p)}</details>`;});
  el.innerHTML=html;
 }
 function renderCal(){
@@ -739,10 +765,10 @@ function render(){
   const url=`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(HOME.q||(HOME.lat+","+HOME.lng))}&destination=${p.lat},${p.lng}`;
   return `<div class="card${e.tier==="skip"?" dim":""}" id="c-${esc(p.id)}" role="button" tabindex="0" aria-expanded="${S.sel===p.id}" data-id="${esc(p.id)}">
    <div class="top"><div>${when?`<div class="evtime">${esc(when)}</div>`:""}<div class="name">${RANK[p.id]?`<span class="rk">${RANK[p.id]}</span>`:""}${(PREFS.saved||{})[p.id]?`<span class="pin" title="You're interested">📌</span> `:""}${esc(p.name)}</div><div class="meta">${venueLink(p)}, about ${p.min} min${p.free?", free":""}${!p.isEvent?esc(hoursMeta(p)):""}${p.isEvent&&bookAhead(p)?", book ahead":""}</div>${p.also?`<div class="also">👨‍👩‍👧 Good with kids too</div>`:""}${flags.map(f=>`<div class="flag">${esc(f)}</div>`).join("")}${(()=>{const tl=tagsFor(p);return tl.length?`<div class="tagline">${tl.slice(0,3).map(id=>{const t=TAGS.find(x=>x.id===id);return `<span class="tg${S.interests.includes(id)?" on":""}">${t.icon} ${t.label}</span>`;}).join("")}</div>`:"";})()}${p.branchList&&p.branchList.length?`<div class="meta">Also at ${p.branchList.length} other ${p.branchList.length===1?"branch":"branches"}</div>`:""}</div><span class="tag t-${e.tier}">${e.label}</span></div>
-   <div class="more">${branchDetail(p)}${hoursDetail(p)}<p style="margin:0 0 6px">${esc(p.note)} <span class="why">${esc(e.why)}</span></p><a href="${url}" target="_blank" rel="noopener">Get directions</a>${p.isEvent&&p.start&&!p.rangeStart&&!p.multi?` · <a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>`:""}${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:(p.isEvent?` · <a href="https://www.google.com/search?q=${encodeURIComponent(p.name+" "+(p.area||"")+" San Francisco")}" target="_blank" rel="noopener">Search for details</a>`:"")}${(()=>{const k=prefKey(p);const sv=!!(PREFS.saved||{})[p.id];return `<div>${p.isEvent?`<button class="vote int" data-int="1" aria-pressed="${sv}">📌 ${sv?"Interested ✓":"Interested"}</button>`:""}<button class="vote" data-vote="1" aria-pressed="${!!PREFS.liked[k]}">👍 More like this</button><button class="vote" data-vote="-1">👎 Not for us</button></div>`;})()}</div></div>`;}).join("");
+   <div class="more">${branchDetail(p)}${hoursDetail(p)}<p style="margin:0 0 6px">${esc(p.note)} <span class="why">${esc(e.why)}</span></p><a href="${url}" target="_blank" rel="noopener">Get directions</a>${p.isEvent&&p.start&&!p.rangeStart&&!p.multi?` · <a href="${gcal(p)}" target="_blank" rel="noopener">${calLabel()}</a>`:""}${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:(p.isEvent?` · <a href="https://www.google.com/search?q=${encodeURIComponent(p.name+" "+(p.area||"")+" San Francisco")}" target="_blank" rel="noopener">Search for details</a>`:"")}${(()=>{const k=prefKey(p);const sv=!!(PREFS.saved||{})[p.id];return `<div>${p.isEvent?`<button class="vote int" data-int="1" aria-pressed="${sv}">📌 ${sv?"Interested ✓":"Interested"}</button><button class="vote" data-share="1">📤 Share</button>`:""}<button class="vote" data-vote="1" aria-pressed="${!!PREFS.liked[k]}">👍 More like this</button><button class="vote" data-vote="-1">👎 Not for us</button></div>`;})()}</div></div>`;}).join("");
  list.querySelectorAll(".card").forEach(cd=>{const hr=vis.find(q=>q.p.id===cd.dataset.id);cd.addEventListener("mouseenter",()=>hoverLabel(hr));cd.addEventListener("mouseleave",()=>hoverLabel(null));const go=()=>{S.sel=S.sel===cd.dataset.id?null:cd.dataset.id;render();};
-  cd.addEventListener("click",ev=>{const ib=ev.target.closest("button[data-int]");if(ib){ev.stopPropagation();const r=vis.find(q=>q.p.id===cd.dataset.id);if(r)toggleInterested(r.p);return;}const vb=ev.target.closest("button.vote");if(vb){ev.stopPropagation();const r=vis.find(q=>q.p.id===cd.dataset.id);if(r)vote(r.p,+vb.dataset.vote);return;}if(ev.target.closest("a"))return;go();});cd.addEventListener("keydown",ev=>{if(ev.target.closest("a")||ev.target.closest("button.vote"))return;if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});});
- const icsEl=document.getElementById("icsfoot");if(icsEl&&!icsEl.dataset.done){const u=new URL("talks-concerts.ics",location.href).href;icsEl.innerHTML=`<span style="display:block;margin:0 0 10px">Subscribe to every one-day talks and concerts on this page. Your calendar stays up to date by itself as events are added.</span><span class="calbtns"><a class="ddbtn" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(u.replace(/^https?:/,"webcal:"))}" target="_blank" rel="noopener">Google Calendar</a><a class="ddbtn lite" href="${esc(u.replace(/^https?:/,"webcal:"))}">Apple Calendar</a><button class="ddbtn lite" id="icscopy" data-u="${esc(u)}">Copy link</button></span><span class="calmsg" style="display:block;margin-top:10px">Google opens on the web: click Add, and it shows up on your phone too. For Outlook or other apps, copy the link and add it as an internet calendar. To save just one event, open it and tap Add to calendar.</span>`;icsEl.dataset.done="1";}
+  cd.addEventListener("click",ev=>{const ib=ev.target.closest("button[data-int]");if(ib){ev.stopPropagation();const r=vis.find(q=>q.p.id===cd.dataset.id);if(r)toggleInterested(r.p);return;}const sb=ev.target.closest("button[data-share]");if(sb){ev.stopPropagation();const r=vis.find(q=>q.p.id===cd.dataset.id);if(r)shareEvent(r.p,sb);return;}const vb=ev.target.closest("button.vote");if(vb){ev.stopPropagation();const r=vis.find(q=>q.p.id===cd.dataset.id);if(r)vote(r.p,+vb.dataset.vote);return;}if(ev.target.closest("a"))return;go();});cd.addEventListener("keydown",ev=>{if(ev.target.closest("a")||ev.target.closest("button.vote"))return;if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});});
+ const icsEl=document.getElementById("icsfoot");if(icsEl&&!icsEl.dataset.done){const u=new URL("talks-concerts.ics",location.href).href;icsEl.innerHTML=`<span style="display:block;margin:0 0 10px">Subscribe to every one-day talks and concerts on this page. Your calendar stays up to date by itself as events are added.</span><span class="calbtns"><a class="ddbtn" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(u.replace(/^https?:/,"webcal:"))}" target="_blank" rel="noopener">Google Calendar</a><a class="ddbtn lite" href="${esc(u.replace(/^https?:/,"webcal:"))}">Apple Calendar</a><button class="ddbtn lite" id="icscopy" data-u="${esc(u)}">Copy link</button></span><span class="calmsg" style="display:block;margin-top:10px">Google opens on the web: click Add, and it shows up on your phone too. For Outlook or other apps, copy the link and add it as an internet calendar. To save just one event, open it and tap Add to calendar.</span><span class="partner" id="partnerbox"></span>`;icsEl.dataset.done="1";renderPartner();}
  const f=document.getElementById("evfoot");
  if(dbState==="none")f.textContent="Couldn't load events.json.";
  else if(dbState==="loading")f.textContent="Loading events…";
@@ -867,6 +893,7 @@ setInterval(()=>{if(!document.hidden)loadWeather();},3*3600e3);
 (async()=>{
  try{const r=await fetch("talks-concerts.json",{cache:"no-cache"});if(!r.ok)throw 0;const d=await r.json();
   EVENTS=(d.events||[]).filter(e=>e&&e.id);
+  openDeepLink();
   META={refreshedLabel:d.generated?new Date(d.generated).toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"}):"",coverage:d.coverage||""};
   dbState="ready";}catch(e){dbState="none";}
  render();

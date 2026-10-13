@@ -21,6 +21,7 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 - A second `<script>` at the end of the body builds the **compact controls** (From ✎, When/Time/Drive pills, Filters sheet, weather one-liner) by moving existing controls; it wraps `render()` to keep the pills in sync.
   It also builds the **tools row** under the intro (`nav.tools`): 📌 Interested (count; hidden when empty), ⭐ Venues, 👍 Your taste, 📅 Add to calendar, ➕ Suggest an event. Each button moves that section's body (`savedbody`, `venuesbody`, `prefsbody`, `icsfoot`) into one shared sheet (`#msheet`) and back on close; `openVenue` is wrapped to close it first.
 - Venue view (`openVenue`), Venues directory, follow/hide venue, 📌 Interested list, 👍/👎 learning.
+- Planning together: 📤 Share on cards and Coming up / On the horizon rows (`shareEvent`: share sheet or copy) links to `<page>#ev=<id>`; `openDeepLink()` (on load and `hashchange`) opens that event's day with filters wide open and selects it. A partner email saved in the Add to calendar panel (`fdo-partner`, both pages) is added as a guest on every Add to calendar link (`gcal`, `calLabel`).
 
 ## Data files
 
