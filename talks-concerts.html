@@ -139,6 +139,7 @@ h2{font-weight:600}
 .uprow summary{cursor:pointer;list-style:none}
 .uprow summary::-webkit-details-marker{display:none}
 .uprow p{margin:6px 0 4px;font-size:15px}
+.upint{margin-top:8px}
 .uprow a,.scard a{color:var(--indoor);font-weight:700}
 .legend i.star{border:0;width:auto;height:auto;font-style:normal;color:var(--ink);background:none;font-size:15px;line-height:1}
 .dd{position:relative}
@@ -636,6 +637,11 @@ function oneOffs(fromMs,toMs){const RALL=recurringKeys();const keepInt=p=>!PREFS
   .filter(p=>{const [s0,e0]=evInterval(p);return keepInt(p)&&s0.getTime()<toMs&&e0.getTime()>fromMs&&e0.getTime()>Date.now()+15*60e3&&p.min<=S.drive&&!(S.free&&!p.free);})
   .sort((a,b)=>new Date(a.start)-new Date(b.start));}
 function bookAhead(p){return p.bookAhead===true||(p.tags||[]).includes("book-ahead");}
+// 📌 Interested on Coming up / On the horizon rows; the row stays open after toggling
+const UPMAP={};
+function upInt(p){const sv=!!(PREFS.saved||{})[p.id];return `<div class="upint"><button class="vote int" data-upint="${esc(p.id)}" aria-pressed="${sv}">📌 ${sv?"Interested ✓":"Interested"}</button></div>`;}
+document.addEventListener("click",ev=>{const b=ev.target.closest&&ev.target.closest("button[data-upint]");if(!b)return;ev.preventDefault();const id=b.dataset.upint,p=UPMAP[id];if(!p)return;
+ const box=b.closest("#upcoming,#horizon");toggleInterested(p);const row=box&&[...box.querySelectorAll("details.uprow")].find(d=>d.dataset.id===id);if(row)row.open=true;});
 function renderHorizon(){
  const el=document.getElementById("horizon");if(!el)return;
  const dl=whenDates(),lastSel=dl[dl.length-1],from=addDays(lastSel>todayStr()?lastSel:todayStr(),8),t0=dt(from,0).getTime(),list=oneOffs(t0,dt(todayStr(),0).getTime()+92*864e5);
@@ -643,7 +649,7 @@ function renderHorizon(){
  let html=`<h2>On the horizon</h2><p class="calmsg" style="margin:0 0 4px">One-off events over the next three months, within your drive time. Shows marked Book ahead usually need tickets in advance.</p>`,last="";
  list.forEach(p=>{const [s0]=evInterval(p);const mon=s0.toLocaleDateString("en-US",{month:"long",year:"numeric"});
   if(mon!==last){html+=`<div class="upday">${esc(mon)}</div>`;last=mon;}
-  html+=`<details class="uprow"><summary><span class="evtime">${esc(s0.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"})+", "+fmtT(s0))}</span>${bookAhead(p)?` <span class="bk">Book ahead</span>`:""}<br><b>${esc(p.name)}</b><div class="meta">${venueLink(p)}, about ${p.min} min${p.free?", free":""}</div></summary><p>${esc(p.note||"")}</p><a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}</details>`;});
+  UPMAP[p.id]=p;html+=`<details class="uprow" data-id="${esc(p.id)}"><summary><span class="evtime">${esc(s0.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"})+", "+fmtT(s0))}</span>${bookAhead(p)?` <span class="bk">Book ahead</span>`:""}<br><b>${(PREFS.saved||{})[p.id]?"📌 ":""}${esc(p.name)}</b><div class="meta">${venueLink(p)}, about ${p.min} min${p.free?", free":""}</div></summary><p>${esc(p.note||"")}</p><a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}${upInt(p)}</details>`;});
  el.innerHTML=html;
 }
 function renderUpcoming(){
@@ -653,7 +659,7 @@ function renderUpcoming(){
  let html=`<h2>Coming up</h2><p class="calmsg" style="margin:0 0 4px">One-off events in the week after the dates you’re viewing, within your drive time.</p>`,last="";
  list.forEach(p=>{const [s0,e0]=evInterval(p);const day=s0.toLocaleDateString("en-US",{weekday:"long",month:"short",day:"numeric"});
   if(day!==last){html+=`<div class="upday">${esc(day)}</div>`;last=day;}
-  html+=`<details class="uprow"><summary><span class="evtime">${esc(fmtT(s0))}</span> <b>${esc(p.name)}</b><div class="meta">${venueLink(p)}, about ${p.min} min${p.free?", free":""}</div></summary><p>${esc(p.note||"")}</p><a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}</details>`;});
+  UPMAP[p.id]=p;html+=`<details class="uprow" data-id="${esc(p.id)}"><summary><span class="evtime">${esc(fmtT(s0))}</span> <b>${(PREFS.saved||{})[p.id]?"📌 ":""}${esc(p.name)}</b><div class="meta">${venueLink(p)}, about ${p.min} min${p.free?", free":""}</div></summary><p>${esc(p.note||"")}</p><a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:""}${upInt(p)}</details>`;});
  el.innerHTML=html;
 }
 function renderCal(){
