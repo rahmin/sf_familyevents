@@ -18,6 +18,7 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 - Nearness: `walkMin()` (straight line × 1.3, 3 mph) sits beside `driveMin()`; events get up to +0.3 (`near`) for a short walk (full within 12 min ≈ 6 blocks, none past 25). Cards say "🚶 N min walk" within 15 min (`distText`). The drive filter has a **Walking distance** option stored as `S.drive=0` (`inRange()`).
 - `rankRows()` sorts by score (ties: sooner, then closer) and keeps the top 10 varied: at most 2 events per venue and 3 library events; extras move just below the top 10.
 - Talks & concerts differs: indoors scores 0.75 (most of the page is indoors), and events get up to +0.15 for being soon (fading over 14 days) so a month view isn't one big tie.
+- The map is geographic (`proj()`): home at the center, scaled so the chosen range fills it (`mapScale()`: 15-min walk, or the drive ring from `driveMiles()`; driveMin depends only on distance, so rings are true circles). Water + land (`data/bayland.json`) drawn in `drawRings()`; region labels only for places off the map, never in walking mode.
 - `render()` draws list, map (numbered top-10 pins), Coming up, On the horizon, preferences, venues, Interested.
 - A second `<script>` at the end of the body builds the **compact controls** (From ✎, When/Time/Drive pills, Filters sheet, weather one-liner, 7-day weather strip `#wkstrip` from `DAYS`: tap a day to view it) by moving existing controls; it wraps `render()` to keep the pills in sync.
   It also builds the **tools row** under the intro (`nav.tools`): 📌 Interested (count; hidden when empty), ⭐ Venues, 👍 Your taste, 📅 Add to calendar, ➕ Suggest an event. Each button moves that section's body (`savedbody`, `venuesbody`, `prefsbody`, `icsfoot`) into one shared sheet (`#msheet`) and back on close; `openVenue` is wrapped to close it first.
@@ -39,6 +40,7 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 | `data/venues.json` | hand | Venue overrides matched by event link (e.g. Natural Resources) |
 | `data/playgrounds.json` | Phase 0 audit | Source copy of the playground list embedded in `index.html` |
 | `data/geocache.json` | refresh script | Saved Nominatim lookups |
+| `data/bayland.json` | one-off | Bay Area land outline for the map: US Census 1:500k state boundary (cb_2023_us_state_500k), clipped to lon −123.15…−121.6, lat 37.15…38.35 and simplified; rings of [lat,lng]. |
 | `e/f-<id>.html`, `e/t-<id>.html` | refresh script (`write_share_pages`) | One page per upcoming event with og:title/description so shared links preview the event; redirects to `<page>#ev=<id>`. Rebuilt every refresh. `eventLink()` in the pages builds the same file name. |
 | Google Sheet (CSV in var `SUGGESTIONS_CSV`) | visitors via Google Form | Suggestions; `load_suggestions()` keeps rows with Approved = yes. Setup and approving: README "Visitor suggestions". Pages link to the Form via `SUGGEST_URL` (empty hides the link). |
 

@@ -138,6 +138,7 @@ h2{font-weight:600}
 .uprow summary::-webkit-details-marker{display:none}
 .uprow p{margin:6px 0 4px;font-size:15px}
 .upint{margin-top:8px}
+#map .water{fill:color-mix(in srgb,var(--sky) 28%,var(--panel))}#map .land{fill:var(--panel);stroke:color-mix(in srgb,var(--stroke) 35%,transparent);stroke-width:1;stroke-linejoin:round}
 .links{display:flex;flex-wrap:nowrap;align-items:baseline;min-width:0;white-space:nowrap}.links a{flex:0 0 auto}.links a+a::before{content:"·";display:inline-block;margin:0 6px;color:var(--ink-2);text-decoration:none}
 .links a.cal{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}
 .itl h3,.ivlist{font-family:"Fredoka",system-ui,sans-serif;font-size:17px;margin:4px 0 6px}.ivlist{margin-top:18px}
@@ -301,7 +302,7 @@ body.pgmode #upcoming,body.pgmode #horizon,body.pgmode #evonly,body.pgmode #hide
 
       <div class="panel" style="margin-top:14px">
         <svg id="map" viewBox="0 0 360 360" role="img" aria-labelledby="mapt">
-          <title id="mapt">Drive-time map. Home is at the center; rings mark 10, 20 and 30 minutes. Pins are placed by direction and drive time.</title>
+          <title id="mapt">Map of events around your starting point, which is at the center. Rings mark drive times, or walking times when Walking distance is chosen. The map zooms to the range you pick.</title>
           <g id="rings"></g><g id="pins"></g><g id="sel"></g><g id="hov" style="pointer-events:none"></g>
         </svg>
         <div class="legend">
@@ -446,7 +447,14 @@ function freeWindows(){const b=busyBlocks();if(!b)return null;const d=curDate();
  b.slice().sort((a,c)=>a.s-c.s).forEach(x=>{if(x.s>cur){const s=cur,e=x.s<end?x.s:end;if(e-s>=90*60e3)out.push([s,e]);}if(x.e>cur)cur=x.e;});
  if(end-cur>=90*60e3)out.push([cur,end]);return out;}
 function bearing(p){const k=Math.cos(HOME.lat*Math.PI/180);return Math.atan2(p.lat-HOME.lat,(p.lng-HOME.lng)*k);}
-function pos(p){const a=bearing(p);const r=Math.min(p.min/30*148,166);return{x:180+r*Math.cos(a),y:180-r*Math.sin(a)};}
+// the map is geographic: home at the center, zoomed so the chosen range (walk, 10, 20 or 30 min) fills it.
+// driveMin() depends only on distance, so its rings are true circles: 10 min ≈ 1.6 mi, 20 ≈ 6, 30 ≈ 16.
+function driveMiles(m){return m<=17?(m-2)/5:3+(m-17);}
+function walkMiles(m){return m/60*3/1.3;}
+function mapScale(){return 148/(S.drive===0?walkMiles(15):driveMiles(S.drive));} // px per mile
+function proj(c){const k=Math.cos(HOME.lat*Math.PI/180),sc=mapScale();return{x:180+(c.lng-HOME.lng)*k*69*sc,y:180-(c.lat-HOME.lat)*69*sc};}
+function pos(p){const q=proj(p),dx=q.x-180,dy=q.y-180,d=Math.hypot(dx,dy);if(d<=166)return q;return{x:180+dx/d*166,y:180+dy/d*166};}
+let BAYLAND=null;fetch("data/bayland.json").then(r=>r.json()).then(j=>{BAYLAND=j;drawRings();}).catch(()=>{});
 function visible(p){if(!inRange(p))return false;if(S.free&&!p.free)return false;if(S.kind==="outdoor"&&p.indoor)return false;if(S.kind==="indoor"&&!p.indoor)return false;if(S.evonly&&!p.isEvent&&!p.pg)return false;return true;}
 const VAR={great:"var(--great)",okay:"var(--okay)",skip:"var(--skip)",indoor:"var(--indoor)"};
 function pillText(g,x,y,txt,anchor,size,weight){const NS="http://www.w3.org/2000/svg";const t=document.createElementNS(NS,"text");
@@ -457,15 +465,20 @@ function pillText(g,x,y,txt,anchor,size,weight){const NS="http://www.w3.org/2000
   const r=document.createElementNS(NS,"rect");r.setAttribute("x",bb.x-6);r.setAttribute("y",bb.y-3);r.setAttribute("width",bb.width+12);r.setAttribute("height",bb.height+6);r.setAttribute("rx",(bb.height+6)/2);
   r.style.fill="var(--panel)";r.style.stroke="color-mix(in srgb,var(--stroke) 25%,transparent)";r.setAttribute("stroke-width","1");g.insertBefore(r,t);}
  return t;}
-function drawRings(){let h="";const DIAG=Math.PI*1.25;
- [10,20,30].forEach(m=>{const r=m/30*148;const on=m<=S.drive;h+=`<circle cx="180" cy="180" r="${r}" fill="none" style="stroke:var(--sky)" stroke-width="${m===S.drive?2.5:1.6}" ${on?"":'stroke-dasharray="3 5"'}/>`;});
+function drawRings(){let h="";const DIAG=Math.PI*1.25,sc=mapScale(),WALK=S.drive===0;
+ // water, then land (Census 1:500k shoreline), clipped to the map
+ h+=`<defs><clipPath id="mapclip"><rect x="0" y="0" width="360" height="360" rx="14"/></clipPath></defs><g clip-path="url(#mapclip)"><rect width="360" height="360" class="water"/>`;
+ if(BAYLAND)h+=`<path class="land" fill-rule="evenodd" d="${BAYLAND.map(r=>"M"+r.map(([la,lo])=>{const q=proj({lat:la,lng:lo});return q.x.toFixed(1)+" "+q.y.toFixed(1);}).join("L")+"Z").join("")}"/>`;
+ h+="</g>";
+ const RINGS=WALK?[5,10,15].map(m=>[m,walkMiles(m)*sc,m+" min walk",m===15]):[10,20,30].map(m=>[m,driveMiles(m)*sc,m+" min",m===S.drive]).filter(x=>x[1]<=176);
+ RINGS.forEach(([m,r,,cur])=>{h+=`<circle cx="180" cy="180" r="${r.toFixed(1)}" fill="none" style="stroke:var(--sky)" stroke-width="${cur?2.5:1.6}" ${cur?"":'stroke-dasharray="3 5"'}/>`;});
 
  h+=`<path d="M169 183 L180 172 L191 183 V192 H169 Z" style="fill:var(--sun);stroke:var(--stroke)" stroke-width="2.5" stroke-linejoin="round"/><rect x="177" y="185" width="6" height="7" style="fill:var(--stroke)"/>`;
  h+=`<g id="ringlbl"></g>`;
  document.getElementById("rings").innerHTML=h;
  const g=document.getElementById("ringlbl");
- [10,20,30].forEach(m=>{const r=m/30*148;pillText(g,180+r*Math.cos(DIAG),180-r*Math.sin(DIAG)+4,m+" min","middle",10,600);});
- [["East Bay",37.83,-122.25],["Coast",37.76,-122.51],["Marin",37.9,-122.52],["Peninsula",37.58,-122.36],["San Francisco",37.765,-122.44]].forEach(([t,la,lo])=>{const c={lat:la,lng:lo};if(miles(HOME,c)<3.5)return;
+ RINGS.forEach(([,r,lbl])=>{if(r>=16)pillText(g,180+r*Math.cos(DIAG),180-r*Math.sin(DIAG)+4,lbl,"middle",10,600);});
+ [["East Bay",37.83,-122.25],["Coast",37.76,-122.51],["Marin",37.9,-122.52],["Peninsula",37.58,-122.36],["San Francisco",37.765,-122.44]].forEach(([t,la,lo])=>{const c={lat:la,lng:lo},q=proj(c);if(WALK||miles(HOME,c)<3.5||Math.hypot(q.x-180,q.y-180)<150)return; // only regions off the map, and not when zoomed to walking
   let a=bearing(c);let diff=Math.atan2(Math.sin(a-DIAG),Math.cos(a-DIAG));if(Math.abs(diff)<0.45)a=DIAG+(diff<0?-0.45:0.45);
   const x=180+166*Math.cos(a),y=180-166*Math.sin(a)+4;const anc=Math.cos(a)>.35?"end":Math.cos(a)<-.35?"start":"middle";
   const tt=pillText(g,clamp(x,8,352),clamp(y,14,352),t,anc,11,700);tt.style.fill="var(--ink-2)";});}
