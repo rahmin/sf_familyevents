@@ -673,7 +673,7 @@ document.addEventListener("click",ev=>{const a=ev.target.closest&&ev.target.clos
 function renderSaved(){const box=document.getElementById("savedbody");if(!box)return;const now=Date.now();PREFS.saved=PREFS.saved||{};
  const all=Object.entries(PREFS.saved).filter(([,v])=>!v.s||new Date(v.e||v.s).getTime()+2*3600e3>now).sort((a,b)=>new Date(a[1].s||0)-new Date(b[1].s||0));
  document.getElementById("savedcount").textContent=all.length?`(${all.length})`:"";
- box.innerHTML=interestedTimeline()+(!all.length?`<p class="calmsg">Tap 📌 Interested on any event to keep it here. Interested events also get their own chip under Interests.</p>`:`<h3 class="ivlist">On this page</h3>`+
+ box.innerHTML=interestedTimeline()+(!all.length?`<p class="calmsg">Tap 📌 Interested on any event to keep it here. Interested events also get their own chip under Interests.</p>`:`<h3 class="ivlist">Talks &amp; concerts</h3>`+
   all.map(([id,v])=>{const d=v.s?new Date(v.s):null;const g=v.s?gcal({name:v.n,start:v.s,end:v.e,area:v.a,note:v.note,url:v.u}):"";
    return `<div class="vrow"><span class="evtime">${d?esc(d.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"})+", "+fmtT(d)):""}</span><b>${esc(v.n)}</b><div class="meta">${esc(v.a)}</div>
     ${g?`<a href="${g}" target="_blank" rel="noopener">${calLabel()}</a>`:""}${v.u?` · <a href="${esc(v.u)}" target="_blank" rel="noopener">Event details</a>`:""} · <button class="star" data-unsave="${esc(id)}">Remove</button></div>`;}).join(""));
