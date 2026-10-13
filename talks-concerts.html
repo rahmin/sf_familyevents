@@ -683,10 +683,10 @@ function renderSaved(){const box=document.getElementById("savedbody");if(!box)re
  box.querySelectorAll("[data-unsave]").forEach(b=>b.onclick=()=>{delete PREFS.saved[b.dataset.unsave];savePrefs();render();});}
 function star(x,y,r){let d="";for(let i=0;i<10;i++){const a=-Math.PI/2+i*Math.PI/5,q=i%2?r*.45:r;d+=(i?"L":"M")+(x+q*Math.cos(a)).toFixed(1)+" "+(y+q*Math.sin(a)).toFixed(1);}return d+"Z";}
 // partner's email, kept only in this browser (shared by both pages); added as a guest on Add to calendar links
-let PARTNER="";try{PARTNER=localStorage.getItem("fdo-partner")||"";}catch(e){}
+let PARTNER="",PNAME="";try{PARTNER=localStorage.getItem("fdo-partner")||"";PNAME=localStorage.getItem("fdo-partner-name")||"";}catch(e){}
 function gcal(p){const [s0,e0]=evInterval(p);const f=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
  return "https://calendar.google.com/calendar/render?"+new URLSearchParams({action:"TEMPLATE",text:p.name||"Family outing",dates:f(s0)+"/"+f(e0),details:(p.note||"")+(p.url?"\n"+p.url:""),location:p.area||"",...(PARTNER?{add:PARTNER}:{})});}
-function calLabel(){return PARTNER?"Add to calendar + invite "+PARTNER.split("@")[0]:"Add to calendar";}
+function calLabel(){return PARTNER&&PNAME?"Add to calendar + invite "+PNAME:"Add to calendar";} // the invite is added either way; the name only labels it
 function oneOffs(fromMs,toMs){const RALL=recurringKeys();const keepInt=p=>!PREFS.hidden[prefKey(p)]&&!(PREFS.hidVen||{})[venueOf(p).key]&&!(S.onlyInt&&S.interests.length)||interestMatch(p);
  return EVENTS.filter(e=>e.kind!=="impact"&&!e.rangeStart&&e.start&&!isRecurring(e,RALL)).map(e=>withMin(Object.assign({},e,{isEvent:true,oneOff:true})))
   .filter(p=>{const [s0,e0]=evInterval(p);return keepInt(p)&&s0.getTime()<toMs&&e0.getTime()>fromMs&&e0.getTime()>Date.now()+15*60e3&&inRange(p)&&!(S.free&&!p.free);})
@@ -700,13 +700,15 @@ document.addEventListener("click",ev=>{const b=ev.target.closest&&ev.target.clos
 document.addEventListener("click",ev=>{const b=ev.target.closest&&ev.target.closest("#icscopy");if(!b)return;
  const done=()=>{b.textContent="Copied ✓";setTimeout(()=>b.textContent="Copy link",2000);};
  (navigator.clipboard?navigator.clipboard.writeText(b.dataset.u):Promise.reject()).then(done,()=>{window.prompt("Copy this link:",b.dataset.u);});});
+let PEDIT=false;
 function renderPartner(){const b=document.getElementById("partnerbox");if(!b)return;
- b.innerHTML=PARTNER?`<b>Inviting ${esc(PARTNER)}</b><span class="calmsg">Add to calendar links put them on the invite, so plans land on both calendars.</span><button class="toggle" id="partnerdel">Stop inviting</button>`
-  :`<b>Plan together</b><span class="calmsg">Add your partner's email and every Add to calendar link invites them too. It stays in this browser.</span><span class="prow"><input type="email" id="partnerin" placeholder="partner@example.com" autocomplete="email"><button class="ddbtn" id="partnersave">Save</button></span>`;}
+ b.innerHTML=PARTNER&&!PEDIT?`<b>Inviting ${esc(PNAME?PNAME+" ("+PARTNER+")":PARTNER)}</b><span class="calmsg">Add to calendar links put them on the invite, so plans land on both calendars.</span><span class="prow"><button class="toggle" id="partneredit">Edit</button><button class="toggle" id="partnerdel">Stop inviting</button></span>`
+  :`<b>Plan together</b><span class="calmsg">Add your partner's email and every Add to calendar link invites them too. It stays in this browser.</span><span class="prow"><input type="text" id="partnername" placeholder="Their name (optional)" autocomplete="off" value="${esc(PNAME)}" style="flex:0 1 40%"><input type="email" id="partnerin" placeholder="partner@example.com" autocomplete="off" value="${esc(PARTNER)}"></span><span class="prow"><button class="ddbtn" id="partnersave">Save</button></span>`;}
 document.addEventListener("click",ev=>{const t=ev.target;if(!t.closest)return;
  if(t.closest("#partnersave")){const v=(document.getElementById("partnerin").value||"").trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){document.getElementById("partnerin").focus();return;}
-  PARTNER=v;try{localStorage.setItem("fdo-partner",v);}catch(e){}renderPartner();render();}
- else if(t.closest("#partnerdel")){PARTNER="";try{localStorage.removeItem("fdo-partner");}catch(e){}renderPartner();render();}});
+  PEDIT=false;PARTNER=v;PNAME=(document.getElementById("partnername").value||"").trim().slice(0,30);try{localStorage.setItem("fdo-partner",v);if(PNAME)localStorage.setItem("fdo-partner-name",PNAME);else localStorage.removeItem("fdo-partner-name");}catch(e){}renderPartner();render();}
+ else if(t.closest("#partneredit")){PEDIT=true;renderPartner();}
+ else if(t.closest("#partnerdel")){PEDIT=false;PARTNER="";PNAME="";try{localStorage.removeItem("fdo-partner");localStorage.removeItem("fdo-partner-name");}catch(e){}renderPartner();render();}});
 // 📤 Share: the phone's share sheet (or copy the link); the link opens this event on its day
 // shared links go to e/<prefix>-<id>.html (written at each refresh, see write_share_pages) so message previews show the event
 function eventLink(p){if(p.rangeStart||!p.start)return location.origin+location.pathname+"#ev="+encodeURIComponent(p.id);
