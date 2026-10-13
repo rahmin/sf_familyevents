@@ -1159,6 +1159,11 @@ CT_WORDS = re.compile(r"(?i)concert|live music|\bband\b|jazz|\bdj\b|symphon|orch
                       r"\btalk\b|conversation|lecture|panel|forum|town hall|discussion|in conversation|\bauthor|book launch|reading|poetry|"
                       r"screening|\bfilm\b|exhibit|opening|gallery|comedy|open mic|perform|dance|theater|theatre|cabaret|salon")
 OUTDOOR_PLACE = re.compile(r"(?i)\b(park|plaza|lawn|garden|beach|street fair|block party|outdoors?|open air|parklet|alley)\b")
+# social events (mixers, singles nights, networking) aren't talks or concerts: names are checked for all of these,
+# descriptions only for the unmistakable ones, since a talk may mention a happy hour afterwards
+SOCIAL_NAME = re.compile(r"(?i)\bmixers?\b|\bsingles\b(?!\s+(release|launch|club))|speed[- ]?dating|\bdating (event|night|experience|party)\b|"
+                         r"\bhappy hour\b|\bnetworking\b|\bsocial hour\b|matchmak|\bmeet[- ]?ups?\b|\bmingle\b")
+SOCIAL_NOTE = re.compile(r"(?i)\bsingles (event|night|mixer|experience)|speed[- ]?dating|matchmak")
 CT_SKIP = re.compile(r"(?i)\bclass\b|workshop|lesson|beginner|training|where to begin|mahjong|\bmeetup\b|networking")
 CT_PROMPT = """You help curate a page of concerts, talks, readings and arts events for adults in San Francisco and Oakland.
 For each event below, decide whether it is a public concert, talk, lecture, conversation, reading, screening, performance,
@@ -1506,6 +1511,10 @@ def build_talks_concerts(today: date, far: date):
     if MANUAL_CT.exists():
         manual = [e for e in json.loads(MANUAL_CT.read_text()).get("events", [])
                   if (e.get("end") or e.get("start") or "")[:10] >= today.isoformat()]
+    social = [e for e in feeds + watch + ybg + loose if SOCIAL_NAME.search(e["name"]) or SOCIAL_NOTE.search(e.get("note") or "")]
+    if social:
+        log(f"Dropped {len(social)} social events: " + "; ".join(e["name"][:50] for e in social))
+    feeds, watch, ybg, loose = ([e for e in x if e not in social] for x in (feeds, watch, ybg, loose))
     events = merge(manual + load_suggestions("talks-concerts", today) + feeds + watch + ybg + loose)
     for e in events:
         e["indoor"] = bool(e.get("indoor", True))

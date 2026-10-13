@@ -180,24 +180,6 @@
    "url": "https://missionlocal.org/event/gray-area-grand-theater-patch-bay-yoon-chung-han-tori-sommerhof-artist-talks/"
   },
   {
-   "id": "cal-calev-zkjijpcvi796rok-events-lu-ma",
-   "kind": "event",
-   "source": "The Fold",
-   "name": "The Feels SF ed 21: an IRL singles experience",
-   "area": "The Fold, 3359 26th St (Mission)",
-   "lat": 37.7489607,
-   "lng": -122.4172885,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "bookAhead": false,
-   "start": "2026-10-14T18:30:00-07:00",
-   "end": "2026-10-14T21:30:00-07:00",
-   "note": "Find more information on",
-   "url": "https://luma.com/thefoldsf"
-  },
-  {
    "kind": "event",
    "source": "The Chapel",
    "area": "The Chapel, 777 Valencia St",
