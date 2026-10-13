@@ -140,6 +140,10 @@ h2{font-weight:600}
 .uprow summary::-webkit-details-marker{display:none}
 .uprow p{margin:6px 0 4px;font-size:15px}
 .upint{margin-top:8px}
+.wkstrip{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;margin:8px 0 2px}.wkstrip:empty{display:none}
+.wkday{display:flex;flex-direction:column;align-items:center;gap:0;font:inherit;color:var(--ink);background:color-mix(in srgb,var(--panel) 60%,transparent);border:1.5px solid color-mix(in srgb,var(--stroke) 15%,transparent);border-radius:12px;padding:4px 0;cursor:pointer;line-height:1.2;min-width:0}
+.wkday.on{background:color-mix(in srgb,var(--sun) 40%,var(--panel));border-color:var(--stroke)}.wkday:hover{border-color:var(--stroke)}
+.wkn{font-size:11px;font-weight:700;letter-spacing:-.02em;max-width:100%;overflow:hidden}.wki{font-size:17px}.wkt{font-size:13px;font-weight:700}.wkr{font-size:11px;color:var(--indoor)}
 .acts{display:flex;flex-wrap:nowrap;gap:6px;margin-top:8px;overflow-x:auto}.acts .vote{margin:0;flex:0 0 auto;white-space:nowrap}.acts .vote.icon{min-width:44px;padding-left:10px;padding-right:10px}
 .partner{display:flex;flex-direction:column;gap:4px;margin-top:14px;padding-top:12px;border-top:1px solid color-mix(in srgb,var(--stroke) 12%,transparent)}.partner .toggle{align-self:flex-start;margin-top:4px}
 .prow{display:flex;gap:8px;margin-top:4px}.prow input{flex:1;min-width:0;font:inherit;font-size:16px;padding:7px 12px;border:2px solid var(--stroke);border-radius:999px;background:var(--panel);color:var(--ink)}
@@ -942,7 +946,7 @@ todRow.hidden=true;todRow.style.display="none";driveRow.style.display="none";
 // selected interests as removable chips
 const sel=document.createElement("div");sel.id="selchips";sel.className="selchips";bar.after(sel);
 // 3) weather on one line, details behind ⓘ
-const wx=$("wx"),wxn=$("wxnote");const ws=document.createElement("div");ws.className="wxshort";ws.innerHTML=`<span id="wxs"></span> <button class="pencil" id="wxi" aria-expanded="false" aria-label="Show forecast details">ⓘ</button>`;sel.after(ws);
+const wx=$("wx"),wxn=$("wxnote");const ws=document.createElement("div");ws.className="wxshort";ws.innerHTML=`<span id="wxs"></span> <button class="pencil" id="wxi" aria-expanded="false" aria-label="Show forecast details">ⓘ</button>`;sel.after(ws);const wk=document.createElement("div");wk.className="wkstrip";wk.id="wkstrip";wk.setAttribute("role","group");wk.setAttribute("aria-label","This week's weather. Tap a day to see it.");ws.after(wk);
 const wxBox=document.createElement("div");wxBox.id="wxBox";wxBox.hidden=true;ws.after(wxBox);wxBox.appendChild(wx);wxBox.appendChild(wxn);
 $("wxi").onclick=()=>{wxBox.hidden=!wxBox.hidden;$("wxi").setAttribute("aria-expanded",String(!wxBox.hidden));};
 // 4) Filters sheet: Show, toggles, Free only, Interests
@@ -977,7 +981,14 @@ if(SUGGEST_URL){const a=document.createElement("a");a.className="tool";a.href=SU
 // keep the bar in sync after every render
 const orig=window.render;
 window.render=function(){const r=orig.apply(this,arguments);try{sync();}catch(e){}return r;};
+// the week at a glance: tap a day to see it
+function renderWeek(){const wk=$("wkstrip");if(!wk)return;if(!DAYS){wk.innerHTML="";return;}const sel=new Set(whenDates());
+ wk.innerHTML=Object.values(DAYS).map((d,i)=>{const a=d.all;if(!a)return"";const ic=a.r>=50?"🌧️":a.r>=20?"🌦️":a.g>=25?"💨":a.t>=68?"☀️":a.t>=60?"🌤️":"⛅";
+  const nm=i===0?"Today":dt(d.date,12).toLocaleDateString("en-US",{weekday:"short"});
+  return `<button class="wkday${sel.has(d.date)?" on":""}" data-d="${d.date}" title="${esc(d.label)}: high ${a.t}°F, gusts ${a.g} mph${a.r?", "+a.r+"% rain":""}"><span class="wkn">${nm}</span><span class="wki" aria-hidden="true">${ic}</span><span class="wkt">${a.t}°</span><span class="wkr">${a.r>=10?a.r+"%":"&nbsp;"}</span></button>`;}).join("");
+ wk.querySelectorAll(".wkday").forEach(b=>b.onclick=()=>{const d=b.dataset.d;if(d===todayStr())S.when="today";else if(d===addDays(todayStr(),1))S.when="tomorrow";else{S.when="pick";S.pick=d;}S.sel=null;save();render();});}
 function sync(){
+ renderWeek();
  const sc=$("savedcount").textContent.replace(/[()]/g,"");$("t-savedcount").textContent=sc;document.querySelector('.tool[data-box="savedbox"]').hidden=!sc;
  const tl={am:"Morning",pm:"Afternoon",eve:"Evening",all:"Anytime"};$("tod2Lbl").textContent=tl[S.tod]||"Anytime";todDD.style.display=S.when==="now"?"none":"";
  $("drv2Lbl").textContent=(S.drive===0?"🚶 Walking distance":"🚗 Within "+S.drive+" min");
