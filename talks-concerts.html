@@ -140,6 +140,7 @@ h2{font-weight:600}
 .uprow summary::-webkit-details-marker{display:none}
 .uprow p{margin:6px 0 4px;font-size:15px}
 .upint{margin-top:8px}
+.calbtns{display:flex;flex-wrap:wrap;gap:8px}.calbtns .ddbtn{text-decoration:none;font-size:15px}
 .uprow a,.scard a{color:var(--indoor);font-weight:700}
 .legend i.star{border:0;width:auto;height:auto;font-style:normal;color:var(--ink);background:none;font-size:15px;line-height:1}
 .dd{position:relative}
@@ -642,6 +643,9 @@ const UPMAP={};
 function upInt(p){const sv=!!(PREFS.saved||{})[p.id];return `<div class="upint"><button class="vote int" data-upint="${esc(p.id)}" aria-pressed="${sv}">📌 ${sv?"Interested ✓":"Interested"}</button></div>`;}
 document.addEventListener("click",ev=>{const b=ev.target.closest&&ev.target.closest("button[data-upint]");if(!b)return;ev.preventDefault();const id=b.dataset.upint,p=UPMAP[id];if(!p)return;
  const box=b.closest("#upcoming,#horizon");toggleInterested(p);const row=box&&[...box.querySelectorAll("details.uprow")].find(d=>d.dataset.id===id);if(row)row.open=true;});
+document.addEventListener("click",ev=>{const b=ev.target.closest&&ev.target.closest("#icscopy");if(!b)return;
+ const done=()=>{b.textContent="Copied ✓";setTimeout(()=>b.textContent="Copy link",2000);};
+ (navigator.clipboard?navigator.clipboard.writeText(b.dataset.u):Promise.reject()).then(done,()=>{window.prompt("Copy this link:",b.dataset.u);});});
 function renderHorizon(){
  const el=document.getElementById("horizon");if(!el)return;
  const dl=whenDates(),lastSel=dl[dl.length-1],from=addDays(lastSel>todayStr()?lastSel:todayStr(),8),t0=dt(from,0).getTime(),list=oneOffs(t0,dt(todayStr(),0).getTime()+92*864e5);
@@ -738,7 +742,7 @@ function render(){
    <div class="more">${branchDetail(p)}${hoursDetail(p)}<p style="margin:0 0 6px">${esc(p.note)} <span class="why">${esc(e.why)}</span></p><a href="${url}" target="_blank" rel="noopener">Get directions</a>${p.isEvent&&p.start&&!p.rangeStart&&!p.multi?` · <a href="${gcal(p)}" target="_blank" rel="noopener">Add to calendar</a>`:""}${p.url?` · <a href="${esc(p.url)}" target="_blank" rel="noopener">Event details</a>`:(p.isEvent?` · <a href="https://www.google.com/search?q=${encodeURIComponent(p.name+" "+(p.area||"")+" San Francisco")}" target="_blank" rel="noopener">Search for details</a>`:"")}${(()=>{const k=prefKey(p);const sv=!!(PREFS.saved||{})[p.id];return `<div>${p.isEvent?`<button class="vote int" data-int="1" aria-pressed="${sv}">📌 ${sv?"Interested ✓":"Interested"}</button>`:""}<button class="vote" data-vote="1" aria-pressed="${!!PREFS.liked[k]}">👍 More like this</button><button class="vote" data-vote="-1">👎 Not for us</button></div>`;})()}</div></div>`;}).join("");
  list.querySelectorAll(".card").forEach(cd=>{const hr=vis.find(q=>q.p.id===cd.dataset.id);cd.addEventListener("mouseenter",()=>hoverLabel(hr));cd.addEventListener("mouseleave",()=>hoverLabel(null));const go=()=>{S.sel=S.sel===cd.dataset.id?null:cd.dataset.id;render();};
   cd.addEventListener("click",ev=>{const ib=ev.target.closest("button[data-int]");if(ib){ev.stopPropagation();const r=vis.find(q=>q.p.id===cd.dataset.id);if(r)toggleInterested(r.p);return;}const vb=ev.target.closest("button.vote");if(vb){ev.stopPropagation();const r=vis.find(q=>q.p.id===cd.dataset.id);if(r)vote(r.p,+vb.dataset.vote);return;}if(ev.target.closest("a"))return;go();});cd.addEventListener("keydown",ev=>{if(ev.target.closest("a")||ev.target.closest("button.vote"))return;if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});});
- const icsEl=document.getElementById("icsfoot");if(icsEl&&!icsEl.dataset.done){const u=new URL("talks-concerts.ics",location.href).href;icsEl.innerHTML=`Get one-off events in your calendar: in Google Calendar, choose Other calendars, then From URL, and paste <a href="${esc(u)}">${esc(u)}</a>. On an iPhone, open the link and tap Subscribe.`;icsEl.dataset.done="1";}
+ const icsEl=document.getElementById("icsfoot");if(icsEl&&!icsEl.dataset.done){const u=new URL("talks-concerts.ics",location.href).href;icsEl.innerHTML=`<span style="display:block;margin:0 0 10px">Subscribe to every one-day talks and concerts on this page. Your calendar stays up to date by itself as events are added.</span><span class="calbtns"><a class="ddbtn" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(u.replace(/^https?:/,"webcal:"))}" target="_blank" rel="noopener">Google Calendar</a><a class="ddbtn lite" href="${esc(u.replace(/^https?:/,"webcal:"))}">Apple Calendar</a><button class="ddbtn lite" id="icscopy" data-u="${esc(u)}">Copy link</button></span><span class="calmsg" style="display:block;margin-top:10px">Google opens on the web: click Add, and it shows up on your phone too. For Outlook or other apps, copy the link and add it as an internet calendar. To save just one event, open it and tap Add to calendar.</span>`;icsEl.dataset.done="1";}
  const f=document.getElementById("evfoot");
  if(dbState==="none")f.textContent="Couldn't load events.json.";
  else if(dbState==="loading")f.textContent="Loading events…";
