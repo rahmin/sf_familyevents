@@ -1630,7 +1630,8 @@ def load_suggestions(edition: str, today: date) -> list[dict]:
         if lat is None:
             log(f"  suggestion skipped, couldn't find the place: {name} @ {addr or place}")
             continue
-        indoor = not re.search(r"(?i)outdoor", cell(row, "indoor"))
+        said = cell(row, "indoor")  # the Form may not ask; then guess from the name and place
+        indoor = not re.search(r"(?i)outdoor", said) if said else not OUTDOOR_PLACE.search(f"{name} {place} {addr}")
         e = dict(id=f"sug-{re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')[:40]}-{day.isoformat()}", kind="event", source="suggested",
                  name=name, area=", ".join(x for x in (place, addr) if x) or addr, lat=lat, lng=lng,
                  start=start.isoformat(), indoor=indoor, exp=0 if indoor else 0.6, off=0,
