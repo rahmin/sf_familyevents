@@ -1411,15 +1411,54 @@ GENRE_TAG = [("jazz", r"(?i)jazz|soul|funk|blues"), ("classical", r"(?i)classica
              ("songs", r"(?i)rock|indie|folk|americana|country|punk|pop|singer|alt")]
 
 
+def venue_feed(v: dict, slug: str, start: date, end: date) -> list[dict]:
+    """A venue's own event feed: Squarespace (/events?format=json) or The Events Calendar (WordPress)."""
+    base = dict(kind="event", source=v["name"], area=v["area"], lat=v["lat"], lng=v["lng"], indoor=True, exp=0, off=0,
+                bookAhead=bool(v.get("bookAhead")))
+    out = []
+    if v["kind"] == "tribe":
+        site = re.match(r"https?://[^/]+", v["url"]).group(0)
+        for e in scrape_tribe(site, v["name"], slug, start, end, default_geo=(v["lat"], v["lng"])):
+            e.update({k: base[k] for k in ("area", "lat", "lng", "indoor", "exp", "bookAhead")})
+            e.pop("_family", None); e.pop("_cats", None)
+            out.append(e)
+        return out
+    r = get(v["url"].split("?")[0] + "?format=json")
+    if not r:
+        return out
+    site = re.match(r"https?://[^/]+", v["url"]).group(0)
+    for it in r.json().get("upcoming") or r.json().get("items") or []:
+        try:
+            st = datetime.fromtimestamp(it["startDate"] / 1000, TZ)
+            en = datetime.fromtimestamp(it["endDate"] / 1000, TZ) if it.get("endDate") else None
+        except (KeyError, TypeError, ValueError):
+            continue
+        if not (start <= st.date() <= end):
+            continue
+        name = html.unescape(it.get("title") or "").strip()
+        text = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", (it.get("excerpt") or "") + " " + (it.get("body") or "")[:3000])).split())
+        note = " ".join(re.split(r"(?<=[.!?])\s+", text)[:2])[:240] or f"At {v['name']}."
+        out.append(dict(base, id=f"vp-{slug}-{re.sub(r'[^a-z0-9]+', '-', name.lower())[:40]}-{st.date().isoformat()}",
+                        name=name, start=st.isoformat(), end=en.isoformat() if en and en > st else None,
+                        free=True if re.search(r"(?i)\bfree\b", text) else None, note=note, url=site + (it.get("fullUrl") or "")))
+    return out
+
+
 def scrape_venue_pages(start: date, end: date) -> list[dict]:
     if not VENUE_PAGES.exists():
         return []
     out = []
     for v in json.loads(VENUE_PAGES.read_text()).get("venues", []):
+        n0 = len(out)
+        slug = re.sub(r"[^a-z0-9]+", "-", v["name"].lower()).strip("-")[:20]
+        if v["kind"] in ("squarespace", "tribe"):  # small neighborhood venues: talks, readings, screenings
+            out += venue_feed(v, slug, start, end)
+            log(f"{v['name']}: {len(out) - n0} events")
+            time.sleep(0.5)
+            continue
         r = get(v["url"])
         if not r:
             continue
-        n0 = len(out)
         base = dict(kind="event", source=v["name"], area=v["area"], lat=v["lat"], lng=v["lng"], indoor=True, exp=0, off=0, bookAhead=True)
         if v["kind"] == "jsonld":
             for block in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', r.text, re.S):

@@ -1,8 +1,45 @@
 {
- "_readme": "Concert venue pages read directly each week (no API key). kind 'jsonld' reads schema.org event data on the page; 'seetickets' reads See Tickets show listings. Add a venue by copying an entry.",
+ "_readme": "Venue pages read directly each week (no API key). kind 'jsonld' reads schema.org event data on the page; 'seetickets' reads See Tickets show listings; 'squarespace' reads a Squarespace events page (url = the /events page); 'tribe' reads a WordPress site using The Events Calendar. Add a venue by copying an entry.",
  "venues": [
-  {"name": "The Fillmore", "url": "https://www.thefillmore.com/shows", "kind": "jsonld", "area": "The Fillmore, 1805 Geary Blvd", "lat": 37.7840, "lng": -122.4330},
-  {"name": "The Chapel", "url": "https://thechapelsf.com/music/", "kind": "seetickets", "area": "The Chapel, 777 Valencia St", "lat": 37.7604, "lng": -122.4213},
-  {"name": "Great American Music Hall", "url": "https://gamh.com/calendar/", "kind": "seetickets", "area": "Great American Music Hall, 859 O'Farrell St", "lat": 37.7848, "lng": -122.4189}
+  {
+   "name": "The Fillmore",
+   "url": "https://www.thefillmore.com/shows",
+   "kind": "jsonld",
+   "area": "The Fillmore, 1805 Geary Blvd",
+   "lat": 37.784,
+   "lng": -122.433
+  },
+  {
+   "name": "The Chapel",
+   "url": "https://thechapelsf.com/music/",
+   "kind": "seetickets",
+   "area": "The Chapel, 777 Valencia St",
+   "lat": 37.7604,
+   "lng": -122.4213
+  },
+  {
+   "name": "Great American Music Hall",
+   "url": "https://gamh.com/calendar/",
+   "kind": "seetickets",
+   "area": "Great American Music Hall, 859 O'Farrell St",
+   "lat": 37.7848,
+   "lng": -122.4189
+  },
+  {
+   "name": "Medicine for Nightmares",
+   "url": "https://www.medicinefornightmares.com/events",
+   "kind": "squarespace",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123
+  },
+  {
+   "name": "Artists' Television Access",
+   "url": "https://www.atasite.org/",
+   "kind": "tribe",
+   "area": "Artists' Television Access, 992 Valencia St",
+   "lat": 37.7569,
+   "lng": -122.4212
+  }
  ]
 }

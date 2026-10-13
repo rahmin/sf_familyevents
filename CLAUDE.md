@@ -15,6 +15,7 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 ### Key client concepts (in each page's main `<script>`)
 - `S` — UI state, saved to localStorage (`fdo` / `fdo-ct`). `PREFS` — likes, hides, follows, saved ("Interested"), learned weights (`fdo-prefs` / `fdo-ct-prefs`).
 - `items()` builds the ranked list: weather score per spot (`condFor`, exposure `exp`, warmth offset `off`; indoors is a flat 0.58 so a good outdoor day can win) + one-off boost (+0.30, library one-offs +0.10) / regular-program penalty (−0.12) / places (−0.10) + kid focus (family: +0.15 for a kid word or a family-only source in `KIDSRC`, no penalty otherwise) + interests (+0.2) + learned prefs, then filters.
+- Nearness: `walkMin()` (straight line × 1.3, 3 mph) sits beside `driveMin()`; events get up to +0.3 (`near`) for a short walk (full within 12 min ≈ 6 blocks, none past 25). Cards say "🚶 N min walk" within 15 min (`distText`). The drive filter has a **Walking distance** option stored as `S.drive=0` (`inRange()`).
 - `rankRows()` sorts by score (ties: sooner, then closer) and keeps the top 10 varied: at most 2 events per venue and 3 library events; extras move just below the top 10.
 - Talks & concerts differs: indoors scores 0.75 (most of the page is indoors), and events get up to +0.15 for being soon (fading over 14 days) so a month view isn't one big tie.
 - `render()` draws list, map (numbered top-10 pins), Coming up, On the horizon, preferences, venues, Interested.
@@ -33,7 +34,7 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 | `data/manual-talks-concerts.json` | hand | Hand-added talks/concerts |
 | `data/watchlist.json` | hand | Venue sites Claude reads weekly (needs `ANTHROPIC_API_KEY`); `edition` = family or talks-concerts |
 | `data/calendars.json` | hand | iCal feeds: Luma pages (luma.com/name), SPUR, any .ics |
-| `data/venue_pages.json` | hand | Concert venue pages read directly (`jsonld` or `seetickets`) |
+| `data/venue_pages.json` | hand | Venue pages read directly: `jsonld`, `seetickets`, `squarespace` (an /events page, e.g. Medicine for Nightmares) or `tribe` (WordPress Events Calendar, e.g. Artists' Television Access) |
 | `data/venues.json` | hand | Venue overrides matched by event link (e.g. Natural Resources) |
 | `data/playgrounds.json` | Phase 0 audit | Source copy of the playground list embedded in `index.html` |
 | `data/geocache.json` | refresh script | Saved Nominatim lookups |
