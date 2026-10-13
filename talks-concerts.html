@@ -140,6 +140,16 @@ h2{font-weight:600}
 .uprow summary::-webkit-details-marker{display:none}
 .uprow p{margin:6px 0 4px;font-size:15px}
 .upint{margin-top:8px}
+.itl h3,.ivlist{font-family:"Fredoka",system-ui,sans-serif;font-size:17px;margin:4px 0 6px}.ivlist{margin-top:18px}
+.ivkey{display:flex;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--ink-2);margin:0 0 8px}.ivkey i{display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:5px;vertical-align:-1px}
+.ivrow{display:flex;align-items:stretch;gap:8px;border-top:1px solid color-mix(in srgb,var(--stroke) 10%,transparent);padding:3px 0}.ivhead{border:0;padding:0}
+.ivday{flex:0 0 58px;display:flex;flex-direction:column;font-size:12px;line-height:1.25;color:var(--ink-2)}.ivday b{color:var(--ink);font-size:13px}.ivwx{white-space:nowrap}
+.ivrow.empty .ivday{flex-direction:row;gap:4px;align-items:center}.ivrow.empty .ivwx{display:none}
+.ivticks{flex:1;display:flex;justify-content:space-between;font-size:11px;color:var(--ink-2)}
+.ivtrack{flex:1;position:relative;min-width:0;background:repeating-linear-gradient(90deg,color-mix(in srgb,var(--stroke) 7%,transparent) 0 1px,transparent 1px 25%);border-radius:8px}
+.ivb{position:absolute;height:26px;border-radius:8px;padding:3px 6px;font-size:12px;line-height:20px;color:#10203a;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border:1.5px solid var(--stroke);box-sizing:border-box}
+.ivb b{font-weight:800}.ivb:hover,.ivb:focus-visible{z-index:2;outline:2px solid var(--stroke)}
+.ivb.fam,.ivkey .fam{background:color-mix(in srgb,var(--grass) 75%,#fff)}.ivb.ct,.ivkey .ct{background:color-mix(in srgb,var(--berry) 45%,#fff)}.ivb.both,.ivkey .both{background:linear-gradient(135deg,color-mix(in srgb,var(--grass) 75%,#fff) 50%,color-mix(in srgb,var(--berry) 45%,#fff) 50%)}
 .wkstrip{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;margin:8px 0 2px}.wkstrip:empty{display:none}
 .wkday{display:flex;flex-direction:column;align-items:center;gap:0;font:inherit;color:var(--ink);background:color-mix(in srgb,var(--panel) 60%,transparent);border:1.5px solid color-mix(in srgb,var(--stroke) 15%,transparent);border-radius:12px;padding:4px 0;cursor:pointer;line-height:1.2;min-width:0}
 .wkday.on{background:color-mix(in srgb,var(--sun) 40%,var(--panel));border-color:var(--stroke)}.wkday:hover{border-color:var(--stroke)}
@@ -634,13 +644,39 @@ function toggleInterested(p){PREFS.saved=PREFS.saved||{};if(PREFS.saved[p.id])de
  // events listed on both pages share their 📌 (both pages live on the same site, so they can read each other's prefs)
  if(p.also)try{const o=JSON.parse(localStorage.getItem("fdo-prefs")||"{}");o.saved=o.saved||{};if(PREFS.saved[p.id])o.saved[p.also.id]=PREFS.saved[p.id];else delete o.saved[p.also.id];localStorage.setItem("fdo-prefs",JSON.stringify(o));}catch(e){}
  render();}
+// Interested across both pages: this page's saves plus the other page's (same site, so its prefs are readable)
+function allSaved(){const out=[],seen=new Set(),now=Date.now();
+ const add=(saved,page)=>Object.entries(saved||{}).forEach(([id,v])=>{if(!v||!v.s)return;const end=new Date(v.e||v.s).getTime()+(v.e?0:2*3600e3);if(end<now)return;
+  const k=String(v.n||"").toLowerCase().replace(/\W+/g," ").trim()+"|"+String(v.s).slice(0,16);
+  if(seen.has(k)){const o=out.find(x=>x.k===k);if(o&&o.page!==page)o.both=true;return;}seen.add(k);out.push({id,v,page,k,both:false});});
+ add(PREFS.saved,"talks-concerts.html");try{add((JSON.parse(localStorage.getItem("fdo-prefs")||"{}")||{}).saved,"index.html");}catch(e){}
+ return out.sort((a,b)=>new Date(a.v.s)-new Date(b.v.s));}
+// the next 10 days as a timeline: one row per day (weather + 8 am–midnight track), saved events as blocks
+function interestedTimeline(){const list=allSaved(),H0=8,H1=24,span=H1-H0,days=[...Array(10)].map((_,i)=>addDays(todayStr(),i));
+ const inWin=list.filter(x=>days.includes(ymd(new Date(x.v.s))));
+ if(!inWin.length)return `<div class="itl"><h3>Next 10 days</h3><p class="calmsg">Nothing saved for the next 10 days yet. Tap 📌 Interested on any event, on either page.</p></div>`;
+ const pct=h=>Math.max(0,Math.min(100,(h-H0)/span*100));
+ const rows=days.map((d,i)=>{const evs=inWin.filter(x=>ymd(new Date(x.v.s))===d);const W=DAYS&&DAYS[d]&&DAYS[d].all;
+  const ic=W?(W.r>=50?"🌧️":W.r>=20?"🌦️":W.g>=25?"💨":W.t>=68?"☀️":W.t>=60?"🌤️":"⛅"):"";
+  const lanes=[];const blocks=evs.map(x=>{const s0=new Date(x.v.s),e0=x.v.e?new Date(x.v.e):new Date(s0.getTime()+2*3600e3);
+   const a=s0.getHours()+s0.getMinutes()/60,b=Math.max(a+.75,e0.getDate()!==s0.getDate()?24:e0.getHours()+e0.getMinutes()/60);
+   const w=Math.max(pct(b)-pct(a),34),l=Math.min(pct(a),100-w); // wide enough to read the name; stays inside the track
+   let lane=lanes.findIndex(end=>end<=l);if(lane<0){lane=lanes.length;lanes.push(0);}lanes[lane]=l+w;
+   const cls=x.both?"both":x.page==="index.html"?"fam":"ct";
+   return `<a class="ivb ${cls}" style="left:${l}%;width:${w}%;top:${4+lane*30}px" href="${x.page}#ev=${encodeURIComponent(x.id)}" data-page="${x.page}" title="${esc(fmtT(s0)+" · "+x.v.n+(x.v.a?" · "+x.v.a:""))}"><b>${esc(fmtT(s0).replace(":00","").replace(" ",""))}</b> ${esc(x.v.n)}</a>`;}).join("");
+  const nm=i===0?"Today":i===1?"Tmrw":dt(d,12).toLocaleDateString("en-US",{weekday:"short"});
+  return `<div class="ivrow${evs.length?"":" empty"}"><div class="ivday"><b>${nm}</b><span>${dt(d,12).getDate()}</span>${W?`<span class="ivwx">${ic} ${W.t}°</span>`:""}</div><div class="ivtrack" style="height:${evs.length?8+Math.max(1,lanes.length)*30:22}px">${blocks}</div></div>`;}).join("");
+ return `<div class="itl"><h3>Next 10 days <span class="calmsg">${inWin.length} saved</span></h3><div class="ivkey"><span><i class="fam"></i>Family outings</span><span><i class="ct"></i>Talks &amp; concerts</span><span><i class="both"></i>Both</span></div>
+  <div class="ivrow ivhead"><div class="ivday"></div><div class="ivticks"><span>8a</span><span>noon</span><span>4p</span><span>8p</span><span>12a</span></div></div>${rows}</div>`;}
+document.addEventListener("click",ev=>{const a=ev.target.closest&&ev.target.closest("a.ivb");if(!a||a.dataset.page!=="talks-concerts.html")return;
+ const c=document.querySelector("#msheet:not([hidden]) .vclose");if(c)c.click();}); // same page: close the sheet, the hash link selects the event
 function renderSaved(){const box=document.getElementById("savedbody");if(!box)return;const now=Date.now();PREFS.saved=PREFS.saved||{};
  const all=Object.entries(PREFS.saved).filter(([,v])=>!v.s||new Date(v.e||v.s).getTime()+2*3600e3>now).sort((a,b)=>new Date(a[1].s||0)-new Date(b[1].s||0));
  document.getElementById("savedcount").textContent=all.length?`(${all.length})`:"";
- box.innerHTML=!all.length?`<p class="calmsg">Tap 📌 Interested on any event to keep it here. Interested events also get their own chip under Interests.</p>`:
+ box.innerHTML=interestedTimeline()+(!all.length?`<p class="calmsg">Tap 📌 Interested on any event to keep it here. Interested events also get their own chip under Interests.</p>`:`<h3 class="ivlist">On this page</h3>`+
   all.map(([id,v])=>{const d=v.s?new Date(v.s):null;const g=v.s?gcal({name:v.n,start:v.s,end:v.e,area:v.a,note:v.note,url:v.u}):"";
    return `<div class="vrow"><span class="evtime">${d?esc(d.toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"})+", "+fmtT(d)):""}</span><b>${esc(v.n)}</b><div class="meta">${esc(v.a)}</div>
-    ${g?`<a href="${g}" target="_blank" rel="noopener">${calLabel()}</a>`:""}${v.u?` · <a href="${esc(v.u)}" target="_blank" rel="noopener">Event details</a>`:""} · <button class="star" data-unsave="${esc(id)}">Remove</button></div>`;}).join("");
+    ${g?`<a href="${g}" target="_blank" rel="noopener">${calLabel()}</a>`:""}${v.u?` · <a href="${esc(v.u)}" target="_blank" rel="noopener">Event details</a>`:""} · <button class="star" data-unsave="${esc(id)}">Remove</button></div>`;}).join(""));
  box.querySelectorAll("[data-unsave]").forEach(b=>b.onclick=()=>{delete PREFS.saved[b.dataset.unsave];savePrefs();render();});}
 function star(x,y,r){let d="";for(let i=0;i<10;i++){const a=-Math.PI/2+i*Math.PI/5,q=i%2?r*.45:r;d+=(i?"L":"M")+(x+q*Math.cos(a)).toFixed(1)+" "+(y+q*Math.sin(a)).toFixed(1);}return d+"Z";}
 // partner's email, kept only in this browser (shared by both pages); added as a guest on Add to calendar links
@@ -989,7 +1025,7 @@ function renderWeek(){const wk=$("wkstrip");if(!wk)return;if(!DAYS){wk.innerHTML
  wk.querySelectorAll(".wkday").forEach(b=>b.onclick=()=>{const d=b.dataset.d;if(d===todayStr())S.when="today";else if(d===addDays(todayStr(),1))S.when="tomorrow";else{S.when="pick";S.pick=d;}S.sel=null;save();render();});}
 function sync(){
  renderWeek();
- const sc=$("savedcount").textContent.replace(/[()]/g,"");$("t-savedcount").textContent=sc;document.querySelector('.tool[data-box="savedbox"]').hidden=!sc;
+ const sc=String(allSaved().length||"");$("t-savedcount").textContent=sc;document.querySelector('.tool[data-box="savedbox"]').hidden=!sc;
  const tl={am:"Morning",pm:"Afternoon",eve:"Evening",all:"Anytime"};$("tod2Lbl").textContent=tl[S.tod]||"Anytime";todDD.style.display=S.when==="now"?"none":"";
  $("drv2Lbl").textContent=(S.drive===0?"🚶 Walking distance":"🚗 Within "+S.drive+" min");
  todDD.querySelectorAll(".ddmenu button").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.v===S.tod)));
