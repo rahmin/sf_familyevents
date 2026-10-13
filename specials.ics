@@ -8,7 +8,7 @@ X-WR-TIMEZONE:America/Los_Angeles
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 BEGIN:VEVENT
 UID:lk-fleet-week-high-school-band-challenge-2026-10-12@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261012T160000Z
 DTEND:20261012T190000Z
 SUMMARY:Fleet Week High School Band Challenge
@@ -19,7 +19,7 @@ URL:https://fleetweeksf.org/high-school-band-challenge/
 END:VEVENT
 BEGIN:VEVENT
 UID:exploratorium-holiday-monday@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261012T170000Z
 DTEND:20261013T000000Z
 SUMMARY:Exploratorium open on Indigenous Peoples' Day
@@ -31,7 +31,7 @@ URL:https://www.exploratorium.edu/visit/calendar
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-imagination-mondays-2026-10-12@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261012T170000Z
 DTEND:20261012T190000Z
 SUMMARY:Imagination Mondays
@@ -42,7 +42,7 @@ URL:https://visitunionsquaresf.com/park-programs
 END:VEVENT
 BEGIN:VEVENT
 UID:lawrence-indigenous-peoples-day@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261012T170000Z
 DTEND:20261013T000000Z
 SUMMARY:Indigenous Peoples' Day at The Lawrence
@@ -55,7 +55,7 @@ URL:https://www.510families.com/31-things-east-bay-kids-october/
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-october-pop-n-play-2026-10-12@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261012T180000Z
 DTEND:20261012T193000Z
 SUMMARY:October Pop N Play
@@ -67,7 +67,7 @@ URL:https://www.eventbrite.com/e/october-pop-n-play-portola-tickets-200222
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-free-day-of-play-2026-10-12@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261012T183000Z
 DTEND:20261012T200000Z
 SUMMARY:FREE Day of Play!
@@ -80,7 +80,7 @@ URL:https://www.naturalresources-sf.com/products/free-natural-resources-pl
 END:VEVENT
 BEGIN:VEVENT
 UID:ybg-indigenous-peoples-day@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261012T190000Z
 DTEND:20261012T230000Z
 SUMMARY:Indigenous Peoples Day at Yerba Buena Gardens
@@ -92,7 +92,7 @@ URL:https://ybgfestival.org/event/sf-indigenous-peoples-day-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-free-day-san-francisco-botanical-garden-2026-10-13@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261013T143000Z
 DTEND:20261014T010000Z
 SUMMARY:Free Day: San Francisco Botanical Garden
@@ -103,7 +103,7 @@ URL:https://gggp.org/event/free-day-san-francisco-botanical-garden-16/
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-october-first-steps-2026-10-13@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261013T160000Z
 DTEND:20261013T173000Z
 SUMMARY:October First Steps
@@ -116,7 +116,7 @@ URL:https://www.eventbrite.com/e/september-first-steps-portola-tickets-199
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-october-tummy-time-2026-10-13@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261013T163000Z
 DTEND:20261013T183000Z
 SUMMARY:October Tummy Time
@@ -128,7 +128,7 @@ URL:https://www.eventbrite.com/e/october-tummy-time-visitacion-valley-tick
 END:VEVENT
 BEGIN:VEVENT
 UID:scn-10005156-2026-10-13@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261013T163000Z
 DTEND:20261013T190000Z
 SUMMARY:Swing into Stories @ Koret Playground (Golden Gate Park)
@@ -143,7 +143,7 @@ URL:https://sfchildrennature.org/event/swing-into-stories-koret-playground
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-free-day-conservatory-of-flowers-2026-10-13@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261013T170000Z
 DTEND:20261013T233000Z
 SUMMARY:Free Day: Conservatory of Flowers
@@ -154,7 +154,7 @@ URL:https://gggp.org/event/free-day-conservatory-of-flowers-12/
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-toddler-tuesdays-2026-10-13@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261013T170000Z
 DTEND:20261013T190000Z
 SUMMARY:Toddler Tuesdays
@@ -164,18 +164,8 @@ DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://visitun
 URL:https://visitunionsquaresf.com/park-programs
 END:VEVENT
 BEGIN:VEVENT
-UID:sug-test-2026-10-13@sf_familyevents
-DTSTAMP:20261012T223126Z
-DTSTART:20261013T170000Z
-DTEND:20261013T190000Z
-SUMMARY:test
-LOCATION:Precita Park\, Precita Ave & Folsom St\, San Francisco
-DESCRIPTION:\nhttp://none.org
-URL:http://none.org
-END:VEVENT
-BEGIN:VEVENT
 UID:lk-children-s-music-with-emilia-2026-10-13@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261013T171500Z
 DTEND:20261013T180000Z
 SUMMARY:Children's Music with Emilia
@@ -188,7 +178,7 @@ URL:https://www.hisawyer.com/outer-village/schedules/activity-set/1954747?
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-13-storytime-swing-stories@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261013T173000Z
 DTEND:20261013T180000Z
 SUMMARY:Storytime: Swing Into Stories
@@ -199,7 +189,7 @@ URL:https://sfpl.org/events/2026/10/13/storytime-swing-stories
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-civic-center-soundtrack-2026-10-13@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261013T190000Z
 DTEND:20261013T220000Z
 SUMMARY:Civic Center Soundtrack
@@ -210,7 +200,7 @@ URL:https://illuminate.org/event/civic-center-soundtrack-october-6/
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-dance-creative-movement-4-kids-2026-10-13@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261013T230000Z
 DTEND:20261013T233000Z
 SUMMARY:Dance & Creative Movement 4 Kids
@@ -223,7 +213,7 @@ URL:https://www.theeastcut.org/event/dance-creative-movement-4-kids-7-2-3-
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-13-activity-dog-reading-circle@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261013T230000Z
 DTEND:20261014T000000Z
 SUMMARY:Dog Reading Circle
@@ -238,7 +228,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-music-magic-tuesday-all-ages-w-jamaroo-kids-2026-10-13@sf_familyeve
  nts
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261013T230000Z
 DTEND:20261013T234500Z
 SUMMARY:Music Magic Tuesday (All Ages) w/ JAMaROO Kids
@@ -252,7 +242,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-13-social-family-board-game-and-lego-night@sf_familyevent
  s
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261014T010000Z
 DTEND:20261014T023000Z
 SUMMARY:Family Board Game and LEGO Night
@@ -265,7 +255,7 @@ URL:https://sfpl.org/events/2026/10/13/social-family-board-game-and-lego-n
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-circus-by-the-bay-2026-10-13@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261014T020000Z
 DTEND:20261014T033000Z
 SUMMARY:Circus by The Bay
@@ -278,7 +268,7 @@ URL:https://www.eventbrite.com/e/circus-by-the-bay-tickets-1999623076450?a
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-october-first-steps-2026-10-14@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261014T160000Z
 DTEND:20261014T173000Z
 SUMMARY:October First Steps
@@ -291,7 +281,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-early-connections-play-with-purpose-playgroup-2026-10-14@sf_familye
  vents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261014T170000Z
 DTEND:20261014T181500Z
 SUMMARY:- Early Connections: Play with Purpose Playgroup
@@ -304,7 +294,7 @@ URL:https://www.hisawyer.com/outer-village/schedules/activity-set/2040438?
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-sf-resident-free-day-2026-10-14@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261014T170000Z
 DTEND:20261014T230000Z
 SUMMARY:SF Resident Free Day
@@ -315,7 +305,7 @@ URL:https://www.sfzoo.org/calendar/sf-resident-free-day-5/
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-whimsy-wednesday-2026-10-14@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261014T170000Z
 DTEND:20261014T183000Z
 SUMMARY:Whimsy Wednesday
@@ -326,7 +316,7 @@ URL:https://www.theeastcut.org/event/whimsy-wednesday-6/
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-free-day-at-ybca-2026-10-14@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261014T180000Z
 DTEND:20261015T030000Z
 SUMMARY:Free Day at YBCA
@@ -337,7 +327,7 @@ URL:https://ybca.org/visit/
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-october-pop-n-play-2026-10-14@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261014T180000Z
 DTEND:20261014T193000Z
 SUMMARY:October Pop N Play
@@ -349,7 +339,7 @@ URL:https://www.eventbrite.com/e/october-pop-n-play-portola-tickets-200222
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-14-activity-ballet-book-club@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261014T230000Z
 DTEND:20261015T000000Z
 SUMMARY:Ballet Book Club
@@ -360,7 +350,7 @@ URL:https://sfpl.org/events/2026/10/14/activity-ballet-book-club
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-14-workshop-cajon-drum-circle-cunamacue@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261014T230000Z
 DTEND:20261014T234500Z
 SUMMARY:Cajón Drum Circle with Cunamacué
@@ -373,7 +363,7 @@ URL:https://sfpl.org/events/2026/10/14/workshop-cajon-drum-circle-cunamacu
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-market-to-bandshell-2026-10-14@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261014T230000Z
 DTEND:20261015T020000Z
 SUMMARY:Market to Bandshell
@@ -384,7 +374,7 @@ URL:https://illuminate.org/event/midweek-melodies-october-14/
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-free-community-craft-night-2026-10-14@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T003000Z
 DTEND:20261015T020000Z
 SUMMARY:Free Community Craft Night
@@ -397,7 +387,7 @@ URL:https://www.naturalresources-sf.com/products/community-craft-night?sta
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-14-activity-halloween-costume-swap@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T010000Z
 DTEND:20261015T030000Z
 SUMMARY:Halloween Costume Swap
@@ -410,7 +400,7 @@ URL:https://sfpl.org/events/2026/10/14/activity-halloween-costume-swap
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-ni-a-memita-s-kitchen-table-2026-10-14@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T010000Z
 DTEND:20261015T030000Z
 SUMMARY:Niña Memita's Kitchen Table
@@ -421,7 +411,7 @@ URL:https://www.instagram.com/p/Ddt7OqOGmmZ/?img_index=1
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-14-storytime-pajama-storytime@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T020000Z
 DTEND:20261015T023000Z
 SUMMARY:Storytime: Pajama Storytime
@@ -435,7 +425,7 @@ URL:https://sfpl.org/events/2026/10/14/storytime-pajama-storytime
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-georgian-national-ballet-2026-10-14@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T030000Z
 DTEND:20261015T050000Z
 SUMMARY:Georgian National Ballet
@@ -450,7 +440,7 @@ URL:https://gotickets.com/tickets/1424913/georgian-national-ballet-tickets
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-october-first-steps-2026-10-15@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T160000Z
 DTEND:20261015T173000Z
 SUMMARY:October First Steps
@@ -464,7 +454,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-developmental-playgroup-for-toddlers-13-24-months-2026-10-15@sf_fam
  ilyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T163000Z
 DTEND:20261015T171500Z
 SUMMARY:Developmental Playgroup for Toddlers (13-24 months)
@@ -477,7 +467,7 @@ URL:https://www.hisawyer.com/outer-village/schedules/activity-set/1953097?
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-toddler-thursday-2026-10-15@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T170000Z
 DTEND:20261015T174500Z
 SUMMARY:Toddler Thursday
@@ -489,7 +479,7 @@ URL:https://www.theeastcut.org/event/toddler-thursday-3-2-2-2-2-2-2-2-2-2-
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-15-performance-aguacate-music-kids@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T180000Z
 DTEND:20261015T184500Z
 SUMMARY:Aguacate Music Kids
@@ -502,7 +492,7 @@ URL:https://sfpl.org/events/2026/10/15/performance-aguacate-music-kids
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-civic-center-soundtrack-2026-10-15@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T190000Z
 DTEND:20261015T220000Z
 SUMMARY:Civic Center Soundtrack
@@ -513,7 +503,7 @@ URL:https://illuminate.org/event/civic-center-soundtrack-october-15/
 END:VEVENT
 BEGIN:VEVENT
 UID:ybg-25786-2026-10-15@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T193000Z
 DTEND:20261015T203000Z
 SUMMARY:Richard Howell’s John Coltrane Tribute
@@ -528,7 +518,7 @@ URL:https://ybgfestival.org/event/richard-howells-john-coltrane-tribute-20
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-new-parent-circle-newborn-6-months-2026-10-15@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T200000Z
 DTEND:20261015T210000Z
 SUMMARY:New Parent Circle: Newborn - 6 months
@@ -542,7 +532,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-15-performance-guitar-sing-along-grandpa-alan@sf_familyev
  ents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T223000Z
 DTEND:20261015T230000Z
 SUMMARY:Guitar Sing-Along with Grandpa Alan
@@ -558,7 +548,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-new-parent-circle-growing-babies-6-months-2-years-2026-10-15@sf_fam
  ilyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T223000Z
 DTEND:20261015T233000Z
 SUMMARY:New Parent Circle: Growing Babies 6 months - 2 years
@@ -571,7 +561,7 @@ URL:https://www.naturalresources-sf.com/products/new-parent-circle-growing
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-15-activity-halloween-costume-swap@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T230000Z
 DTEND:20261016T003000Z
 SUMMARY:Halloween Costume Swap
@@ -584,7 +574,7 @@ URL:https://sfpl.org/events/2026/10/15/activity-halloween-costume-swap
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-the-crossing-5th-anniversary-celebration-2026-10-15@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T230000Z
 DTEND:20261016T020000Z
 SUMMARY:The Crossing 5th Anniversary Celebration
@@ -596,7 +586,7 @@ URL:https://www.theeastcut.org/event/the-crossing-5th-anniversary-celebrat
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-crafternoons-2026-10-15@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261015T233000Z
 DTEND:20261016T013000Z
 SUMMARY:Crafternoons
@@ -607,7 +597,7 @@ URL:https://visitunionsquaresf.com/park-programs
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-trick-or-treat-to-the-beat-2026-10-15@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261016T000000Z
 DTEND:20261016T040000Z
 SUMMARY:Trick or Treat to the Beat
@@ -619,7 +609,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lk-party-with-claire-bobrow-to-celebrate-her-new-chil-2026-10-15@sf_fa
  milyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261016T020000Z
 DTEND:20261016T030000Z
 SUMMARY:Party with Claire Bobrow to celebrate her new children's book "Par
@@ -633,7 +623,7 @@ URL:https://www.eventbrite.com/e/party-with-claire-bobrow-to-celebrate-her
 END:VEVENT
 BEGIN:VEVENT
 UID:lk-georgian-national-ballet-2026-10-15@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261016T030000Z
 DTEND:20261016T050000Z
 SUMMARY:Georgian National Ballet
@@ -648,7 +638,7 @@ URL:https://gotickets.com/tickets/1836257/georgian-national-ballet-sukhish
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12459-2026-10-16@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261017T000000Z
 DTEND:20261017T040000Z
 SUMMARY:Friday Nights at OMCA with MacArthur Maze | 60th Anniversary of t
@@ -664,7 +654,7 @@ URL:https://museumca.org/event/friday-nights-at-omca-with-macarthur-maze-6
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-872245-2026-10-17@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261017T170000Z
 DTEND:20261017T230000Z
 SUMMARY:51st Annual Potrero Hill Rhythm & Blues Festival
@@ -679,7 +669,7 @@ URL:https://missionlocal.org/event/20th-street-51st-annual-potrero-hill-rh
 END:VEVENT
 BEGIN:VEVENT
 UID:play-dragons-love-tacos-2026-10-17-10@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261017T173000Z
 DTEND:20261017T183000Z
 SUMMARY:Dragons Love Tacos\, the Musical (PLAY Theatre)
@@ -693,7 +683,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-early-learning-saturday-morning-playtimes@sf_familyeve
  nts
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261017T173000Z
 DTEND:20261017T193000Z
 SUMMARY:Saturday Morning Playtimes
@@ -706,7 +696,7 @@ URL:https://sfpl.org/events/2026/10/17/early-learning-saturday-morning-pla
 END:VEVENT
 BEGIN:VEVENT
 UID:scn-6472-2026-10-17@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261017T180000Z
 DTEND:20261017T230000Z
 SUMMARY:Bay Area Science Festival
@@ -720,7 +710,7 @@ URL:https://sfchildrennature.org/event/bay-area-science-festival/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-celebration-open-house@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261017T180000Z
 DTEND:20261017T230000Z
 SUMMARY:Open House
@@ -735,7 +725,7 @@ URL:https://sfpl.org/events/2026/10/17/celebration-open-house
 END:VEVENT
 BEGIN:VEVENT
 UID:brava-block-party-2026-10-17@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261017T190000Z
 DTEND:20261017T210000Z
 SUMMARY:Brava! Block Party
@@ -747,7 +737,7 @@ URL:https://www.brava.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:ybg-joe-bataan-2026-10-17@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261017T210000Z
 DTEND:20261017T233000Z
 SUMMARY:Joe Bataan at Yerba Buena Gardens
@@ -759,7 +749,7 @@ URL:https://ybgfestival.org/event/joe-bataan-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-activity-turkish-story-hour@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261017T210000Z
 DTEND:20261017T223000Z
 SUMMARY:Turkish Story Hour
@@ -774,7 +764,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-early-learning-big-san-francisco-play-date@sf_familyev
  ents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261017T220000Z
 DTEND:20261018T000000Z
 SUMMARY:Big San Francisco Play Date
@@ -787,7 +777,7 @@ URL:https://sfpl.org/events/2026/10/17/early-learning-big-san-francisco-pl
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-social-halloween-costume-swap@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261017T220000Z
 DTEND:20261017T230000Z
 SUMMARY:Halloween Costume Swap
@@ -801,7 +791,7 @@ URL:https://sfpl.org/events/2026/10/17/social-halloween-costume-swap
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-workshop-cajon-drum-circle-cunamacue@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261017T230000Z
 DTEND:20261018T000000Z
 SUMMARY:Cajón Drum Circle with Cunamacué
@@ -814,7 +804,7 @@ URL:https://sfpl.org/events/2026/10/17/workshop-cajon-drum-circle-cunamacu
 END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-family-studio-spiders-2026-10-18@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261018T170000Z
 DTEND:20261018T200000Z
 SUMMARY:Family Studio: Spiders
@@ -825,7 +815,7 @@ URL:https://www.sfmoma.org/event/family-studio-spiders/
 END:VEVENT
 BEGIN:VEVENT
 UID:play-dragons-love-tacos-2026-10-18-10@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261018T173000Z
 DTEND:20261018T183000Z
 SUMMARY:Dragons Love Tacos\, the Musical (PLAY Theatre)
@@ -838,7 +828,7 @@ URL:https://www.playtheatreco.org/dragons-love-tacos-the-musical
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-18-celebration-open-house@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261018T180000Z
 DTEND:20261018T230000Z
 SUMMARY:Open House
@@ -852,7 +842,7 @@ URL:https://sfpl.org/events/2026/10/18/celebration-open-house
 END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-spooky-art-spiders-and-more-2026-10-18@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261018T190000Z
 DTEND:20261018T210000Z
 SUMMARY:Spooky Art: Spiders and More!
@@ -863,7 +853,7 @@ URL:https://www.sfmoma.org/event/spooky-art-spiders-and-more/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-18-social-family-game-time@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261018T210000Z
 DTEND:20261018T223000Z
 SUMMARY:Family Game Time
@@ -876,7 +866,7 @@ URL:https://sfpl.org/events/2026/10/18/social-family-game-time
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-18-social-halloween-costume-swap@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261018T210000Z
 DTEND:20261018T223000Z
 SUMMARY:Halloween Costume Swap
@@ -891,7 +881,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-19-social-monday-fun-day-family-dance-party@sf_familyeven
  ts
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261019T170000Z
 DTEND:20261019T180000Z
 SUMMARY:Monday Fun Day Family Dance Party
@@ -904,7 +894,7 @@ URL:https://sfpl.org/events/2026/10/19/social-monday-fun-day-family-dance-
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-19-activity-monday-morning-play@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261019T170000Z
 DTEND:20261019T190000Z
 SUMMARY:Monday Morning Play
@@ -919,7 +909,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-19-full-early-learning-play-purpose-playgroup@sf_familyev
  ents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261019T183000Z
 DTEND:20261019T193000Z
 SUMMARY:FULL - Early Learning: Play with Purpose Playgroup
@@ -935,7 +925,7 @@ URL:https://sfpl.org/events/2026/10/19/full-early-learning-play-purpose-pl
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-20-performance-marielas-music-time@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261020T220000Z
 DTEND:20261020T230000Z
 SUMMARY:Mariela's Music Time
@@ -946,7 +936,7 @@ URL:https://sfpl.org/events/2026/10/20/performance-marielas-music-time
 END:VEVENT
 BEGIN:VEVENT
 UID:hcf-wine-tasting-2026-10-20@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261021T003000Z
 DTEND:20261021T013000Z
 SUMMARY:Wine tasting with Christopher Renfro at Hawk Creek Farm
@@ -958,8 +948,23 @@ DESCRIPTION:A local winemaker's tasting with small bites and a chance to h
 URL:https://www.hawkcreekfarm.org/farm-experiences.html
 END:VEVENT
 BEGIN:VEVENT
+UID:ml-875077-2026-10-20@sf_familyevents
+DTSTAMP:20261013T060723Z
+DTSTART:20261021T010000Z
+DTEND:20261021T040000Z
+SUMMARY:Writer’s Block Party: an 826 Valencia Fundraiser
+LOCATION:Southern Pacific Brewing Company
+DESCRIPTION:Every block has a story\, and every ticket supports our city
+ ’s young storytellers. The 826 Valencia Associate Board invites you to 
+ Writer’s Block Party at Southern Pacific Brewing. This year’s theme c
+ elebrates SF’s neighb\nhttps://missionlocal.org/event/southern-pacific-
+ brewing-company-writers-block-party-an-826-valencia-fundraiser/
+URL:https://missionlocal.org/event/southern-pacific-brewing-company-writer
+ s-block-party-an-826-valencia-fundraiser/
+END:VEVENT
+BEGIN:VEVENT
 UID:hcf-beekeeping-2026-10-22@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261022T231500Z
 DTEND:20261023T004500Z
 SUMMARY:All-ages backyard beekeeping workshop at Hawk Creek Farm
@@ -972,7 +977,7 @@ URL:https://www.hawkcreekfarm.org/farm-experiences.html
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12469-2026-10-23@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261024T000000Z
 DTEND:20261024T040000Z
 SUMMARY:Friday Nights at OMCA with DATANAGAN
@@ -985,8 +990,37 @@ DESCRIPTION:Friday Nights at OMCA brings a fresh\, genre-fluid sound to th
 URL:https://museumca.org/event/friday-nights-at-omca-with-datanagan/
 END:VEVENT
 BEGIN:VEVENT
+UID:ml-871803-2026-10-23@sf_familyevents
+DTSTAMP:20261013T060723Z
+DTSTART:20261024T010000Z
+DTEND:20261024T040000Z
+SUMMARY:In Their Name: Día de Los Muertos (opening reception)
+LOCATION:SOMArts Cultural Center
+DESCRIPTION:Now in its 27th year\, SOMArts’ annual Día de Los Muertos e
+ xhibition is one of the most internationally diverse Day of the Dead cele
+ brations in the United States. Founded by beloved San Francisco artist an
+ d curator René Y\nhttps://missionlocal.org/event/somarts-cultural-center
+ -in-their-name-dia-de-los-muertos-opening-reception/
+URL:https://missionlocal.org/event/somarts-cultural-center-in-their-name-d
+ ia-de-los-muertos-opening-reception/
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-875429-2026-10-24@sf_familyevents
+DTSTAMP:20261013T060723Z
+DTSTART:20261024T170000Z
+DTEND:20261024T210000Z
+SUMMARY:Family Halloween 2026
+LOCATION:Randall Museum
+DESCRIPTION:Come in costume and celebrate “The Magic of Halloween” at 
+ the Randall. Expect a gamut of fun family activities including ghoulish g
+ ames\, creepy crafts\, tricks & treats\, costume awards\, live music\, en
+ tertainment in the th\nhttps://missionlocal.org/event/randall-museum-fami
+ ly-halloween-2026/
+URL:https://missionlocal.org/event/randall-museum-family-halloween-2026/
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-10-24-activity-line-dancing@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261024T173000Z
 DTEND:20261024T183000Z
 SUMMARY:Line Dancing (all ages)
@@ -997,7 +1031,7 @@ URL:https://sfpl.org/events/2026/10/24/activity-line-dancing
 END:VEVENT
 BEGIN:VEVENT
 UID:sfjazz-family-matinee-2026-10-24@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261024T180000Z
 DTEND:20261024T200000Z
 SUMMARY:SFJAZZ Family Matinee: Marcus Shelby & Friends\, Bebop Legends
@@ -1010,7 +1044,7 @@ URL:https://www.sfjazz.org/tickets/productions/26-27/education/family-mati
 END:VEVENT
 BEGIN:VEVENT
 UID:ybg-afro-filipino-jazz-2026-10-24@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261024T210000Z
 DTEND:20261024T223000Z
 SUMMARY:Afro-Filipino Jazz Project at Yerba Buena Gardens
@@ -1021,7 +1055,7 @@ URL:https://ybgfestival.org/event/afro-filipino-jazz-project/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfs-music-for-families-2026-10-24@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261024T210000Z
 DTEND:20261024T230000Z
 SUMMARY:SF Symphony: Music for Families
@@ -1034,7 +1068,7 @@ URL:https://www.sfsymphony.org/Subscribe/Series/Music-for-Families
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-24-performance-rene-y-familia@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261024T220000Z
 DTEND:20261024T224500Z
 SUMMARY:René y Familia
@@ -1045,7 +1079,7 @@ URL:https://sfpl.org/events/2026/10/24/performance-rene-y-familia
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-24-social-family-dance-party@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261024T230000Z
 DTEND:20261025T000000Z
 SUMMARY:Family Dance Party
@@ -1056,7 +1090,7 @@ URL:https://sfpl.org/events/2026/10/24/social-family-dance-party
 END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-free-family-day-k-pop-art-and-beyond-2026-10-25@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261025T170000Z
 DTEND:20261025T230000Z
 SUMMARY:Free Family Day: K-Pop\, Art\, and Beyond
@@ -1068,7 +1102,7 @@ URL:https://www.sfmoma.org/event/free-family-day-k-pop-art-and-beyond/
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12514-2026-10-25@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261025T180000Z
 DTEND:20261025T230000Z
 SUMMARY:32nd Annual Día de los Muertos Community Celebration
@@ -1083,7 +1117,7 @@ URL:https://museumca.org/event/32nd-annual-dia-de-los-muertos-community-ce
 END:VEVENT
 BEGIN:VEVENT
 UID:hjk-rock-roll-playhouse-2026-10-25@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261025T190000Z
 DTEND:20261025T200000Z
 SUMMARY:Rock and Roll Playhouse: Music of The Beatles
@@ -1097,7 +1131,7 @@ URL:https://www.510families.com/ticket-alert-four-incredible-family-events
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12505-2026-10-25@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261025T200000Z
 DTEND:20261025T204500Z
 SUMMARY:Special Guest Gallery Chat with Traditional Medicine Practitioner 
@@ -1113,7 +1147,7 @@ URL:https://museumca.org/event/special-guest-gallery-chat-with-traditional
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-28-social-halloween-family-dance-party@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261028T220000Z
 DTEND:20261028T230000Z
 SUMMARY:Halloween Family Dance Party
@@ -1124,7 +1158,7 @@ URL:https://sfpl.org/events/2026/10/28/social-halloween-family-dance-party
 END:VEVENT
 BEGIN:VEVENT
 UID:cmc-halloween-parade-2026-10-28@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261028T231500Z
 DTEND:20261029T001500Z
 SUMMARY:Halloween Party & Costume Parade
@@ -1136,7 +1170,7 @@ URL:https://sfcmc.org/event/cmc-halloween-party-costume-parade-3/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-29-social-halloween-family-dance-party@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261029T230000Z
 DTEND:20261030T000000Z
 SUMMARY:Halloween Family Dance Party
@@ -1148,7 +1182,7 @@ URL:https://sfpl.org/events/2026/10/29/social-halloween-family-dance-party
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12477-2026-10-30@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261031T000000Z
 DTEND:20261031T040000Z
 SUMMARY:Friday Nights at OMCA with LA GENTE SF
@@ -1162,7 +1196,7 @@ URL:https://museumca.org/event/friday-nights-at-omca-with-la-gente-sf/
 END:VEVENT
 BEGIN:VEVENT
 UID:obc-luna-mexicana-2026-10-30@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261031T023000Z
 DTEND:20261031T043000Z
 SUMMARY:Luna Mexicana (Oakland Ballet)
@@ -1175,7 +1209,7 @@ URL:https://oaklandballet.org/performances-events/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-sfmomaween-2026-10-31@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261031T180000Z
 DTEND:20261031T230000Z
 SUMMARY:SFMOMAween
@@ -1185,8 +1219,23 @@ DESCRIPTION:Special Event at SFMOMA. Check the event page for admission an
 URL:https://www.sfmoma.org/event/sfmomaween/
 END:VEVENT
 BEGIN:VEVENT
+UID:ml-875465-2026-10-31@sf_familyevents
+DTSTAMP:20261013T060723Z
+DTSTART:20261031T180000Z
+DTEND:20261031T200000Z
+SUMMARY:Word for WordPlay presents: Spooky Fam Jam!
+LOCATION:Z Space
+DESCRIPTION:Join Word for WordPLAY at Z Space for a spine-tingling\, fun-f
+ illed adventure where imaginations run wild! Gather the family for spooky
+  storytelling with Word for WordPLAY’s Director\, Gendell Hing-Hernánd
+ ez\, who will deli\nhttps://missionlocal.org/event/z-space-word-for-wordp
+ lay-presents-spooky-fam-jam/
+URL:https://missionlocal.org/event/z-space-word-for-wordplay-presents-spoo
+ ky-fam-jam/
+END:VEVENT
+BEGIN:VEVENT
 UID:ybg-halloween-hoopla-2026-10-31@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261031T190000Z
 DTEND:20261031T220000Z
 SUMMARY:Halloween Hoopla (Children's Garden Series)
@@ -1198,7 +1247,7 @@ URL:https://ybgfestival.org/event/halloween-hoopla-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:brava-loco-bloco-dia-2026-11-01@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261101T190000Z
 DTEND:20261102T040000Z
 SUMMARY:Loco Bloco presents Día de los Muertos: Esto No Se Vende
@@ -1212,7 +1261,7 @@ URL:https://www.brava.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:odc-family-matters-2026-11-01@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261101T210000Z
 DTEND:20261101T220000Z
 SUMMARY:Family Matters: ODC/Dance
@@ -1224,7 +1273,7 @@ URL:https://odc.dance/familymatters
 END:VEVENT
 BEGIN:VEVENT
 UID:obc-luna-mexicana-2026-11-01@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261101T223000Z
 DTEND:20261102T003000Z
 SUMMARY:Luna Mexicana (Oakland Ballet)
@@ -1237,7 +1286,7 @@ URL:https://oaklandballet.org/performances-events/
 END:VEVENT
 BEGIN:VEVENT
 UID:cmc-dia-de-muertos-2026-11-01@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261102T000000Z
 DTEND:20261102T020000Z
 SUMMARY:Día de Muertos en la Misión (Community Music Center)
@@ -1249,7 +1298,7 @@ URL:https://sfcmc.org/event/dia-de-muertos-en-la-mision/
 END:VEVENT
 BEGIN:VEVENT
 UID:marigold-festival-altars-2026-11-02@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261102T180000Z
 DTEND:20261103T030000Z
 SUMMARY:Festival of Altars (Marigold Project)
@@ -1260,7 +1309,7 @@ DESCRIPTION:Community altars in the park through the day\, with workshops
 END:VEVENT
 BEGIN:VEVENT
 UID:mission-dia-procession-2026-11-02@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261103T030000Z
 DTEND:20261103T050000Z
 SUMMARY:Día de los Muertos Procession in the Mission
@@ -1271,7 +1320,7 @@ DESCRIPTION:The Mission's big annual procession\, led by Aztec dancers\, w
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-bayview-2026-11-07@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261107T180000Z
 DTEND:20261107T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1285,7 +1334,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-07-activity-line-dancing@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261107T183000Z
 DTEND:20261107T193000Z
 SUMMARY:Line Dancing (all ages)
@@ -1296,7 +1345,7 @@ URL:https://sfpl.org/events/2026/11/07/activity-line-dancing
 END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-make-a-kite-with-jacob-hashimoto-2026-11-07@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261107T190000Z
 DTEND:20261107T210000Z
 SUMMARY:Make a Kite with Jacob Hashimoto
@@ -1308,7 +1357,7 @@ URL:https://www.sfmoma.org/event/make-a-kite-with-jacob-hashimoto/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfb-tiny-dances-11-07-11@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261107T190000Z
 DTEND:20261107T202000Z
 SUMMARY:Tiny Dances: Swan Lake (SF Ballet)
@@ -1322,7 +1371,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-07-performance-nutcracker-sweets-ballet-mark-foehringer-d
  ance-project@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261107T213000Z
 DTEND:20261107T221500Z
 SUMMARY:Nutcracker Sweets Ballet (Mark Foehringer Dance Project)
@@ -1335,7 +1384,7 @@ URL:https://sfpl.org/events/2026/11/07/performance-nutcracker-sweets-balle
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-07-performance-sampaguitas@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261107T220000Z
 DTEND:20261107T230000Z
 SUMMARY:The Sampaguitas
@@ -1346,7 +1395,7 @@ URL:https://sfpl.org/events/2026/11/07/performance-sampaguitas
 END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-family-studio-lines-that-move-2026-11-08@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261108T180000Z
 DTEND:20261108T210000Z
 SUMMARY:Family Studio: Lines That Move
@@ -1358,7 +1407,7 @@ URL:https://www.sfmoma.org/event/family-studio-lines-that-move-11-8/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfb-tiny-dances-11-08-11@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261108T190000Z
 DTEND:20261108T202000Z
 SUMMARY:Tiny Dances: Swan Lake (SF Ballet)
@@ -1372,7 +1421,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-09-social-monday-fun-day-family-dance-party@sf_familyeven
  ts
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261109T180000Z
 DTEND:20261109T190000Z
 SUMMARY:Monday Fun Day Family Dance Party
@@ -1385,7 +1434,7 @@ URL:https://sfpl.org/events/2026/11/09/social-monday-fun-day-family-dance-
 END:VEVENT
 BEGIN:VEVENT
 UID:ybg-bhangra-beats-2026-11-13@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261114T000000Z
 DTEND:20261114T050000Z
 SUMMARY:Bhangra & Beats Night Market
@@ -1396,7 +1445,7 @@ URL:https://ybgfestival.org/event/bhangra-and-beats-111326/
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-mission-2026-11-14@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261114T180000Z
 DTEND:20261114T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1410,7 +1459,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:galeria-belonging-workshop-2026-11-14@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261114T220000Z
 DTEND:20261115T000000Z
 SUMMARY:A Sense of Belonging: art workshop with Mabel Valdiviezo
@@ -1423,7 +1472,7 @@ URL:https://galeriadelaraza.org/calendar/a-sense-of-belonging-workshop-wit
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-14-early-learning-malinky-music@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261115T003000Z
 DTEND:20261115T010000Z
 SUMMARY:Malinky Music
@@ -1435,7 +1484,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-16-performance-nutcracker-sweets-ballet-mark-foehringer-d
  ance-project@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261116T183000Z
 DTEND:20261116T190000Z
 SUMMARY:Nutcracker Sweets Ballet (Mark Foehringer Dance Project)
@@ -1449,7 +1498,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-18-performance-nutcracker-sweets-ballet-mark-foehringer-d
  ance-project@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261118T190000Z
 DTEND:20261118T191500Z
 SUMMARY:Nutcracker Sweets Ballet (Mark Foehringer Dance Project)
@@ -1463,7 +1512,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-18-performance-mark-foehringers-nutcracker-sweets@sf_fami
  lyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261118T213000Z
 DTEND:20261118T223000Z
 SUMMARY:Mark Foehringer's Nutcracker Sweets
@@ -1476,7 +1525,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-19-performance-nutcracker-sweets-ballet-mark-foehringer-d
  ance-project@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261119T190000Z
 DTEND:20261119T193000Z
 SUMMARY:Nutcracker Sweets Ballet (Mark Foehringer Dance Project)
@@ -1490,7 +1539,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-19-performance-guitar-sing-along-grandpa-alan@sf_familyev
  ents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261119T233000Z
 DTEND:20261120T000000Z
 SUMMARY:Guitar Sing-Along with Grandpa Alan
@@ -1502,7 +1551,7 @@ URL:https://sfpl.org/events/2026/11/19/performance-guitar-sing-along-grand
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-excelsior-2026-11-21@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261121T180000Z
 DTEND:20261121T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1515,7 +1564,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:sfjazz-family-matinee-2026-11-21@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261121T190000Z
 DTEND:20261121T210000Z
 SUMMARY:SFJAZZ Family Matinee: Mariachi Flor de Toloache
@@ -1527,7 +1576,7 @@ URL:https://www.sfjazz.org/education/family-matinee-overview
 END:VEVENT
 BEGIN:VEVENT
 UID:odc-velveteen-rabbit-2026-11-28@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261128T190000Z
 DTEND:20261128T210000Z
 SUMMARY:The Velveteen Rabbit (ODC/Dance)
@@ -1539,7 +1588,7 @@ URL:https://odc.dance/CALENDAR
 END:VEVENT
 BEGIN:VEVENT
 UID:odc-velveteen-rabbit-2026-11-29@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261129T220000Z
 DTEND:20261130T000000Z
 SUMMARY:The Velveteen Rabbit (ODC/Dance)
@@ -1551,7 +1600,7 @@ URL:https://odc.dance/CALENDAR
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-bayview-2026-12-05@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261205T180000Z
 DTEND:20261205T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1565,7 +1614,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:mapp-2026-12-05@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261206T020000Z
 DTEND:20261206T060000Z
 SUMMARY:MAPP: Mission Arts & Performance Project
@@ -1578,7 +1627,7 @@ URL:https://www.redpoppyarthouse.org/tag/mission-arts-performance-project/
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-mission-2026-12-12@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261212T180000Z
 DTEND:20261212T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1592,7 +1641,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:sfjazz-family-matinee-2026-12-12@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261212T190000Z
 DTEND:20261212T210000Z
 SUMMARY:SFJAZZ Family Matinee: A Charlie Brown Christmas
@@ -1605,7 +1654,7 @@ URL:https://www.sfjazz.org/education/family-matinee-overview
 END:VEVENT
 BEGIN:VEVENT
 UID:odc-family-matters-2026-12-13@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261213T210000Z
 DTEND:20261213T220000Z
 SUMMARY:Family Matters at ODC
@@ -1617,7 +1666,7 @@ URL:https://odc.dance/familymatters
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-excelsior-2026-12-19@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261219T180000Z
 DTEND:20261219T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1630,7 +1679,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:hjk-rockin-holiday-2026-12-20@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20261220T220000Z
 DTEND:20261221T010000Z
 SUMMARY:Rockin' Holiday with Alphabet Rockers
@@ -1643,7 +1692,7 @@ URL:https://www.510families.com/ticket-alert-four-incredible-family-events
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-bayview-2027-01-02@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20270102T180000Z
 DTEND:20270102T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1657,7 +1706,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-mission-2027-01-09@sf_familyevents
-DTSTAMP:20261012T223126Z
+DTSTAMP:20261013T060723Z
 DTSTART:20270109T180000Z
 DTEND:20270109T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
