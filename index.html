@@ -345,8 +345,9 @@ const ZIPS={"94102":[37.7795,-122.4193],"94103":[37.7725,-122.411],"94104":[37.7
 "94014":[37.696,-122.452],"94015":[37.681,-122.48],"94005":[37.688,-122.403],"94080":[37.655,-122.423],"94044":[37.613,-122.487],"94066":[37.625,-122.43],"94030":[37.599,-122.402],"94010":[37.57,-122.363],"94401":[37.573,-122.32],"94402":[37.555,-122.333],"94403":[37.539,-122.3],
 "94965":[37.859,-122.485],"94941":[37.896,-122.517],"94920":[37.889,-122.467],"94925":[37.923,-122.513],"94901":[37.97,-122.513]};
 function miles(a,b){const R=3958.8,r=Math.PI/180;const dl=(b.lat-a.lat)*r,dg=(b.lng-a.lng)*r;const x=Math.sin(dl/2)**2+Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin(dg/2)**2;return 2*R*Math.asin(Math.sqrt(x));}
-// rough drive time, no traffic: city streets for the first 3 straight-line miles (5 min each), then about 1.75 min per mile (roads wind, bridges and ramps)
-function driveMin(p){const d=miles(HOME,p);return Math.max(3,Math.round(2+5*Math.min(d,3)+1.75*Math.max(d-3,0)));}
+// rough drive time: city streets for the first 4 straight-line miles (5 min each), then about 1.75 min per mile (roads wind, bridges and ramps).
+// Checked against Google Maps: Shotwell St to Golden Gate Park, 3.8 mi straight / 5.5 by road, 22 min; this gives 21.
+function driveMin(p){const d=miles(HOME,p);return Math.max(3,Math.round(2+5*Math.min(d,4)+1.75*Math.max(d-4,0)));}
 // walking: straight-line distance × 1.3 for the street grid, at 3 mph (a city block is about a minute)
 function walkMin(p){return Math.max(1,Math.round(miles(HOME,p)*1.3/3*60));}
 function withMin(p){return Object.assign({},p,{min:driveMin(p),walk:walkMin(p)});}
@@ -452,8 +453,8 @@ function freeWindows(){const b=busyBlocks();if(!b)return null;const d=curDate();
  if(end-cur>=90*60e3)out.push([cur,end]);return out;}
 function bearing(p){const k=Math.cos(HOME.lat*Math.PI/180);return Math.atan2(p.lat-HOME.lat,(p.lng-HOME.lng)*k);}
 // the map is geographic: home at the center, zoomed so the chosen range (walk, 10, 20 or 30 min) fills it.
-// driveMin() depends only on distance, so its rings are true circles: 10 min ≈ 1.6 mi, 20 ≈ 4.7, 30 ≈ 10.4, 45 ≈ 19.
-function driveMiles(m){return m<=17?(m-2)/5:3+(m-17)/1.75;}
+// driveMin() depends only on distance, so its rings are true circles: 10 min ≈ 1.6 mi, 20 ≈ 3.6, 30 ≈ 8.6, 45 ≈ 17.
+function driveMiles(m){return m<=22?(m-2)/5:4+(m-22)/1.75;}
 function walkMiles(m){return m/60*3/1.3;}
 function mapScale(){return 148/(S.drive===0?walkMiles(15):driveMiles(S.drive));} // px per mile
 function proj(c){const k=Math.cos(HOME.lat*Math.PI/180),sc=mapScale();return{x:180+(c.lng-HOME.lng)*k*69*sc,y:180-(c.lat-HOME.lat)*69*sc};}
@@ -1045,7 +1046,7 @@ const mkPill=(id,segId,label)=>{const dd=document.createElement("div");dd.classN
  document.addEventListener("click",e=>{if(!dd.contains(e.target)){menu.hidden=true;btn.setAttribute("aria-expanded","false");}});
  return dd;};
 const todDD=mkPill("tod2","tod","Time of day"),drvDD=mkPill("drv2","drive","Maximum drive time");
-{const sub={"0":"up to a 15-minute walk, about a dozen blocks","10":"your neighborhood and the ones next to it","20":"most of San Francisco","30":"all of SF, plus Oakland and Sausalito","45":"Berkeley hills, Marin and the Peninsula"};
+{const sub={"0":"up to a 15-minute walk, about a dozen blocks","10":"your neighborhood and the ones next to it","20":"a big part of San Francisco","30":"all of SF, plus Oakland and Sausalito","45":"Berkeley hills, Marin and the Peninsula"};
  drvDD.querySelectorAll(".ddmenu button").forEach(b=>{b.querySelector("span").textContent=b.dataset.v==="0"?"🚶 Walking distance":"Within "+b.dataset.v+" min";b.querySelector(".sub").textContent=sub[b.dataset.v]||"";});
  drvDD.querySelector(".ddmenu").insertAdjacentHTML("beforeend",`<p class="mnote">Estimated driving time from your starting point, without traffic. Events within a short walk rank higher. Set your own starting point with ✎.</p>`);}bar.appendChild(todDD);bar.appendChild(drvDD);
 const fbtn=document.createElement("button");fbtn.className="ddbtn lite";fbtn.id="filtBtn";fbtn.innerHTML=`Filters <span id="filtN" class="fbadge"></span>`;bar.appendChild(fbtn);
