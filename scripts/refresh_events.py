@@ -1137,33 +1137,129 @@ def main():
     GEOCACHE.write_text(json.dumps(_geocache, indent=1, ensure_ascii=False) + "\n")
 
 
+DUP_STOP = {"with", "from", "night", "event", "events", "annual", "presents", "celebration", "anniversary", "free", "family", "festival",
+            "san", "francisco", "mission", "and", "the", "for", "day", "show", "live", "edition", "series", "part", "2025", "2026", "2027"}
+
+def _dup_words(name: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z0-9áéíóúñ]+", (name or "").lower()) if len(w) >= 4} - DUP_STOP
+
+def _shared(a: dict, b: dict) -> tuple[set, float]:
+    """Distinctive name words both share (venue/place words don't count) and how much of the shorter name they cover."""
+    wa = _dup_words(a.get("name")) - _dup_words(a.get("area")) - _dup_words(b.get("area"))
+    wb = _dup_words(b.get("name")) - _dup_words(a.get("area")) - _dup_words(b.get("area"))
+    sh = wa & wb
+    return sh, (len(sh) / min(len(wa), len(wb)) if wa and wb else 0.0)
+
+def _miles(a, b) -> float:
+    try:
+        return math.hypot(a["lat"] - b["lat"], (a["lng"] - b["lng"]) * 0.79) * 69
+    except (KeyError, TypeError):
+        return 99.0
+
+def _hours_apart(a, b) -> float:
+    try:
+        return abs((datetime.fromisoformat(a["start"]) - datetime.fromisoformat(b["start"])).total_seconds()) / 3600
+    except (KeyError, TypeError, ValueError):
+        return 99.0
+
+DUP_PROMPT = """Each item below is a pair of event listings from different San Francisco calendars. For each pair, decide whether
+they describe the SAME real-world event (same happening, same day, same place; different wording, start time a little off, or
+one listing being part of the other all count as the same). Different events at the same venue on the same day are NOT the same.
+Reply with only a JSON array of booleans, one per pair, in order.
+Pairs:
+"""
+
+def ask_same(pairs: list[tuple[dict, dict]]) -> list[bool]:
+    """Claude's yes/no on near-miss duplicate pairs; without a key (or on failure) nothing is merged."""
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    if not key or not pairs:
+        return [False] * len(pairs)
+    model = os.environ.get("CLAUDE_MODEL") or "claude-haiku-5-5"
+    pick = lambda e: {k: (e.get(k) or "")[:160] if isinstance(e.get(k), str) else e.get(k) for k in ("name", "start", "end", "area", "note")}
+    out = []
+    for i in range(0, len(pairs), 30):
+        batch = pairs[i : i + 30]
+        try:
+            r = requests.post("https://api.anthropic.com/v1/messages",
+                              headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+                              json={"model": model, "max_tokens": 1000, "messages": [{"role": "user", "content": DUP_PROMPT +
+                                    json.dumps([[pick(a), pick(b)] for a, b in batch], ensure_ascii=False)}]}, timeout=120)
+            r.raise_for_status()
+            text = "".join(b.get("text", "") for b in r.json().get("content", []))
+            ans = json.loads(re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M))
+            out += [bool(x) for x in ans][:len(batch)] + [False] * max(0, len(batch) - len(ans))
+        except Exception as e:
+            log(f"  duplicate check failed: {e}")
+            out += [False] * len(batch)
+    return out
+
 def merge(items: list[dict]) -> list[dict]:
-    """Drop duplicates (same id, same start at the same spot, or near-identical names on the same day); first wins."""
+    """Drop duplicates; earlier lists (hand-added first) win. Same event =
+    same id; same start at the same spot; near-identical names on the same day; or (new) same day, within ~300 m,
+    starting within 3 hours and sharing 2+ distinctive name words (not venue words; ≥60% of the shorter name; different sources). Near misses (same day, close by, one shared word,
+    or two shared words a little farther apart) go to Claude for a yes/no. Every merge is logged."""
     for e in items:
         e.pop("_family", None)
         e.pop("_cats", None)
     from difflib import SequenceMatcher
     by_day: dict = {}
 
-    def near_duplicate(e):
-        n = re.sub(r"[^a-z0-9]+", " ", (e.get("name") or "").lower()).strip()
-        for other in by_day.get((e.get("start") or "")[:10], []):
-            if (n in other or other in n or SequenceMatcher(None, n, other).ratio() >= 0.75) and min(len(n), len(other)) >= 6:
-                return True
-        return False
+    def norm(e):
+        return re.sub(r"[^a-z0-9]+", " ", (e.get("name") or "").lower()).strip()
 
-    seen, events = set(), []
-    for e in items:  # earlier lists (hand-added first) win on duplicates
+    def near_duplicate(e):
+        n = norm(e)
+        for other in by_day.get((e.get("start") or "")[:10], []):
+            o = norm(other)
+            if (n in o or o in n or SequenceMatcher(None, n, o).ratio() >= 0.75) and min(len(n), len(o)) >= 6:
+                return other, "similar name"
+            if e.get("source") == other.get("source"):
+                continue  # a source doesn't list the same event twice, but it does list look-alike sessions
+            shared, cover = _shared(e, other)
+            if len(shared) >= 2 and cover >= .6 and _miles(e, other) <= 0.2 and _hours_apart(e, other) <= 3:
+                return other, "same place and time, shared words " + ", ".join(sorted(shared))
+        return None, ""
+
+    def maybe_duplicate(e):
+        for other in by_day.get((e.get("start") or "")[:10], []):
+            if e.get("source") == other.get("source"):
+                continue
+            shared, _ = _shared(e, other)
+            d, h = _miles(e, other), _hours_apart(e, other)
+            if (shared and d <= 0.2 and h <= 3) or (len(shared) >= 2 and d <= 1 and h <= 4):
+                return other
+        return None
+
+    seen, events, maybes = set(), [], []
+    for e in items:
         same_slot = (e.get("start"), round(e.get("lat") or 0, 2), round(e.get("lng") or 0, 2))
-        same_name = (re.sub(r"[^a-z0-9]+", " ", (e.get("name") or "").lower()).strip(), (e.get("start") or "")[:10])
-        if e["id"] in seen or (e.get("start") and (same_slot in seen or same_name in seen or near_duplicate(e))):
+        same_name = (norm(e), (e.get("start") or "")[:10])
+        if e["id"] in seen:
             continue
+        if e.get("start"):
+            if same_slot in seen or same_name in seen:
+                continue
+            other, why = near_duplicate(e)
+            if other:
+                log(f"  merged duplicate ({why}): {e['name'][:60]} [{e.get('source')}] → keeps {other['name'][:60]} [{other.get('source')}]")
+                continue
+            m = maybe_duplicate(e)
+            if m:
+                maybes.append((m, e))
         seen.add(e["id"])
         if e.get("start"):
             seen.add(same_slot)
             seen.add(same_name)
-            by_day.setdefault(same_name[1], []).append(same_name[0])
+            by_day.setdefault(same_name[1], []).append(e)
         events.append(e)
+    if maybes:
+        drop = set()
+        for (keep, dup), same in zip(maybes, ask_same(maybes)):
+            if same and keep["id"] not in drop:
+                drop.add(dup["id"])
+                log(f"  merged duplicate (Claude: same event): {dup['name'][:60]} [{dup.get('source')}] → keeps {keep['name'][:60]} [{keep.get('source')}]")
+        log(f"  duplicate check: {len(maybes)} near misses, {len(drop)} merged by Claude")
+        events = [e for e in events if e["id"] not in drop]
     events.sort(key=lambda e: (e.get("start") or "", e.get("name") or ""))
     return events
 
