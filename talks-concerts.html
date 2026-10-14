@@ -444,20 +444,23 @@ function fmtT(d){let h=d.getHours(),m=d.getMinutes();const ap=h>=12?"pm":"am";h=
 function evalPlace(p,c){
  if(p.indoor)return{tip:"Indoors, so the weather won't matter. Indoor spots get a steady middle score, so a really nice outdoor option can rank above them.",score:.75,tier:"indoor",label:"Indoors",why:"Indoors, so the weather won't matter."};
  const gust=c.g*p.exp,felt=Math.round(c.t+p.off-gust*.25);
- const wind=1-clamp(gust/30,0,1);let temp=clamp((felt-48)/16,0,1);if(felt>86)temp=clamp(1-(felt-86)/12,0,1);
+ // comfortable from about 64 to 76°F; past 76 the score falls off (0 at 92). On the hot side, trees nearby count:
+ // a leafy spot (shade 1) feels up to 5°F cooler. shade comes from city street trees within 60 m (playgrounds only).
+ const sh=+p.shade||0,hot=felt-5*sh,wind=1-clamp(gust/30,0,1);let temp=clamp((felt-48)/16,0,1);if(hot>76)temp=clamp(1-(hot-76)/16,0,1);
  const score=(.5*wind+.5*temp)*(1-(c.r/100)*.8);
  const tier=score>=.7?"great":score>=.45?"okay":"skip";
- const why0=c.r>=30?"rain":wind<temp?"wind":felt>86?"heat":"cold";
+ const why0=c.r>=30?"rain":wind<temp?"wind":hot>76?"heat":"cold";
  const L={okay:{rain:"Chance of rain",wind:"Breezy",cold:"Bring a jacket",heat:"Hot, find shade"},skip:{rain:"Rain likely",wind:"Too windy",cold:"Too chilly",heat:"Too hot"}};
  const label=tier==="great"?"Great":L[tier][why0];
  const w=gust<8?"little wind":gust<20?"some wind":"strong gusts";
- let why=felt>86?`Feels about ${felt}°F, so look for shade.`:`Feels about ${felt}°F with ${w}.`;
+ let why=hot>80?`Feels about ${felt}°F, so look for shade.`:`Feels about ${felt}°F with ${w}.`;
  if(c.r>=15)why+=` ${c.r}% chance of rain.`;
  // tooltip: the same reasons the score uses
- const tT=felt>86?`Feels about ${felt}°F: hot, so look for shade`:felt>=64?`Feels about ${felt}°F: comfortable`:felt>=56?`Feels about ${felt}°F: a bit cool, so bring a layer`:`Feels about ${felt}°F: chilly`;
+ const tT=felt>86?`Feels about ${felt}°F: hot, so look for shade`:felt>78?`Feels about ${felt}°F: warm`:felt>=64?`Feels about ${felt}°F: comfortable`:felt>=56?`Feels about ${felt}°F: a bit cool, so bring a layer`:`Feels about ${felt}°F: chilly`;
  const tW=`Gusts around ${Math.round(gust)} mph here`+(gust<8?": calm":gust<20?": a little breezy":": windy");
  const tR=c.r>=15?`${c.r}% chance of rain`:"Little or no rain expected";
- const tip=`${tT}. ${tW}. ${tR}. Weather score ${Math.round(score*100)} of 100.`;
+ const tS=p.shade==null||felt<=74?"":sh>=.6?" Lots of trees on the surrounding blocks, so it should feel cooler.":sh<.25?" Few trees on the surrounding blocks, so expect full sun.":" Some trees on the surrounding blocks.";
+ const tip=`${tT}.${tS} ${tW}. ${tR}. Weather score ${Math.round(score*100)} of 100.`;
  return{score,tier,label,why,tip};
 }
 function evInterval(e){const s=new Date(e.start);const en=e.end?new Date(e.end):new Date(s.getTime()+2*3600e3);return[s,en];}
