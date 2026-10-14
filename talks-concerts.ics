@@ -8,7 +8,7 @@ X-WR-TIMEZONE:America/Los_Angeles
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 BEGIN:VEVENT
 UID:w-make-out-room-happy-endings-2026-10-13@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261014T020000Z
 DTEND:20261014T040000Z
 SUMMARY:HAPPY ENDINGS
@@ -19,7 +19,7 @@ URL:https://www.makeoutroom.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-great-american-music-provoker-2026-10-13@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261014T020000Z
 DTEND:20261014T040000Z
 SUMMARY:Provoker
@@ -33,7 +33,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-medicine-for-nightma-sacred-lessons-healing-across-generation-2026-
  10-13@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261014T020000Z
 DTEND:20261014T040000Z
 SUMMARY:Sacred Lessons: Healing Across Generations
@@ -47,7 +47,7 @@ URL:https://www.medicinefornightmares.com/events/mike-de-la-rocha
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2738-2026-10-13@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261014T030000Z
 DTEND:20261014T050000Z
 SUMMARY:Automatic
@@ -57,21 +57,32 @@ DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
 URL:https://www.theindependentsf.com/tm-event/automatic/
 END:VEVENT
 BEGIN:VEVENT
+UID:w-make-out-room-paradiso-2026-10-13@sf_familyevents
+DTSTAMP:20261014T032421Z
+DTSTART:20261014T040000Z
+DTEND:20261013T090000Z
+SUMMARY:PARADISO
+LOCATION:Make-Out Room\, 3225 22nd St
+DESCRIPTION:DJs Rebecca\, Carla Lyn\, Rumerosa and Nati spin deep tech and
+  Latin house at a dance night.\nhttps://www.makeoutroom.com/
+URL:https://www.makeoutroom.com/
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-876451-2026-10-13@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261014T040000Z
 DTEND:20261014T063000Z
 SUMMARY:Radio Gatsby Swing Band at the Woodchopper’s Ball
 LOCATION:Verdi Club
-DESCRIPTION:Radio Gatsby Swing Band performs classic swing and jazz improv
- isation at the Woodchopper's Ball dance night.\nhttps://missionlocal.org/
- event/verdi-club-radio-gatsby-swing-band-at-the-woodchoppers-ball/
+DESCRIPTION:Radio Gatsby Swing Band plays classic swing melodies and jazz 
+ improvisations at the Woodchopper's Ball.\nhttps://missionlocal.org/event
+ /verdi-club-radio-gatsby-swing-band-at-the-woodchoppers-ball/
 URL:https://missionlocal.org/event/verdi-club-radio-gatsby-swing-band-at-t
  he-woodchoppers-ball/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-14-film-killers@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261014T220000Z
 DTEND:20261014T234500Z
 SUMMARY:Film: The Killers
@@ -85,7 +96,7 @@ URL:https://sfpl.org/events/2026/10/14/film-killers
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-14-film-gerald@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261015T000000Z
 DTEND:20261015T030000Z
 SUMMARY:Film: Gerald
@@ -100,7 +111,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:cwc-loubna-mrie-defiance-a-memoir-of-awakening-rebelli-2026-10-14@sf_f
  amilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261015T003000Z
 DTEND:20261015T023000Z
 SUMMARY:Loubna Mrie: Defiance\, a Memoir of Awakening\, Rebellion\, and Su
@@ -115,7 +126,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:cwc-pg-e-chief-patti-poppe-on-affordability-outages-an-2026-10-14@sf_f
  amilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261015T010000Z
 DTEND:20261015T030000Z
 SUMMARY:PG&E Chief Patti Poppe On Affordability\, Outages and Public Outra
@@ -129,22 +140,22 @@ URL:https://www.commonwealthclub.org/events/2026-10-14/pge-chief-patti-pop
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-874554-2026-10-14@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261015T010000Z
 DTEND:20261015T040000Z
 SUMMARY:Patch Bay: Yoon Chung Han + Tori Sommerhof [Artist Talks]
 LOCATION:Gray Area Grand Theater
-DESCRIPTION:Artists Yoon Chung Han and Tori Sommerhof give talks about the
- ir current work during a Gray Area happy hour.\nhttps://missionlocal.org/
- event/gray-area-grand-theater-patch-bay-yoon-chung-han-tori-sommerhof-art
- ist-talks/
+DESCRIPTION:Exhibiting artists Yoon Chung Han and Tori Sommerhof give talk
+ s about their current work over happy hour.\nhttps://missionlocal.org/eve
+ nt/gray-area-grand-theater-patch-bay-yoon-chung-han-tori-sommerhof-artist
+ -talks/
 URL:https://missionlocal.org/event/gray-area-grand-theater-patch-bay-yoon-
  chung-han-tori-sommerhof-artist-talks/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-14-presentation-photograph-history-care-and-conservation@
  sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261015T010000Z
 DTEND:20261015T020000Z
 SUMMARY:Photograph History\, Care and Conservation
@@ -159,21 +170,9 @@ URL:https://sfpl.org/events/2026/10/14/presentation-photograph-history-car
  e-and-conservation
 END:VEVENT
 BEGIN:VEVENT
-UID:w-make-out-room-litquake-presents-a-poetry-fiction-exchange-2026-10-14
- @sf_familyevents
-DTSTAMP:20261014T030125Z
-DTSTART:20261015T013000Z
-DTEND:20261015T040000Z
-SUMMARY:LITQUAKE presents: A Poetry/Fiction Exchange
-LOCATION:Make-Out Room\, 3225 22nd St
-DESCRIPTION:Poets and fiction writers exchange readings in a Litquake-pres
- ented literary evening.\nhttps://www.makeoutroom.com/
-URL:https://www.makeoutroom.com/
-END:VEVENT
-BEGIN:VEVENT
 UID:vp-medicine-for-nightma-anhad-naad-collective-2026-10-14@sf_familyeven
  ts
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261015T020000Z
 DTEND:20261015T040000Z
 SUMMARY:Anhad Naad Collective
@@ -186,34 +185,34 @@ DESCRIPTION:Formed in 2019\, Anhad Naad Collective is a genre-defying ense
 URL:https://www.medicinefornightmares.com/events/anhad-naad-collective
 END:VEVENT
 BEGIN:VEVENT
-UID:vp-the-chapel-dummy-2026-10-14@sf_familyevents
-DTSTAMP:20261014T030125Z
-DTSTART:20261015T023000Z
-DTEND:20261015T043000Z
-SUMMARY:Dummy
-LOCATION:The Chapel\, 777 Valencia St
-DESCRIPTION:Alternative at The Chapel. With Golomb\, figure eight\, sachi'
- s mirror\, Visuals by Zack Rodell. Doors at 7:00PM / Show at 7:30PM. All 
- Ages.\nhttps://wl.seetickets.us/event/dummy/700215?afflky=TheChapel
-URL:https://wl.seetickets.us/event/dummy/700215?afflky=TheChapel
-END:VEVENT
-BEGIN:VEVENT
 UID:jccsf-109982-2026-10-14@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261015T023000Z
 DTEND:20261015T040000Z
 SUMMARY:Jon Ronson – Adventures in a World Of Unraveling Men
 LOCATION:JCCSF
 DESCRIPTION:Bestselling author Jon Ronson performs a darkly comic one-man 
- show about the modern masculinity crisis.\nhttps://www.jccsf.org/event/jo
- n-ronson-adventures-in-a-world-of-unraveling-men/
+ show about the modern crisis of masculinity.\nhttps://www.jccsf.org/event
+ /jon-ronson-adventures-in-a-world-of-unraveling-men/
 URL:https://www.jccsf.org/event/jon-ronson-adventures-in-a-world-of-unrave
  ling-men/
 END:VEVENT
 BEGIN:VEVENT
+UID:w-make-out-room-litquake-presents-a-poetry-fiction-exchange-2026-10-14
+ @sf_familyevents
+DTSTAMP:20261014T032421Z
+DTSTART:20261015T023000Z
+DTEND:20261015T040000Z
+SUMMARY:LITQUAKE presents: A Poetry/Fiction Exchange
+LOCATION:Make-Out Room\, 3225 22nd St
+DESCRIPTION:A literary reading exchange between poets and fiction writers\
+ , presented by Litquake.\nhttps://www.makeoutroom.com/
+URL:https://www.makeoutroom.com/
+END:VEVENT
+BEGIN:VEVENT
 UID:vp-great-american-music-mexican-institute-of-sound-2026-10-14@sf_famil
  yevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261015T023000Z
 DTEND:20261015T043000Z
 SUMMARY:Mexican Institute of Sound
@@ -227,7 +226,7 @@ URL:https://wl.seetickets.us/event/mexican-institute-of-sound/701759?afflk
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2790-2026-10-14@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261015T030000Z
 DTEND:20261015T050000Z
 SUMMARY:Juice
@@ -237,8 +236,19 @@ DESCRIPTION:Live at The Independent. Doors 7:30 PM\, show 8:00 PM.\nhttps:
 URL:https://www.theindependentsf.com/tm-event/juice/
 END:VEVENT
 BEGIN:VEVENT
+UID:w-make-out-room-la-danse-2026-10-14@sf_familyevents
+DTSTAMP:20261014T032421Z
+DTSTART:20261015T050000Z
+DTEND:20261014T090000Z
+SUMMARY:LA DANSE
+LOCATION:Make-Out Room\, 3225 22nd St
+DESCRIPTION:DJs Tom Thump and Wonway Posibul play disco\, funk\, soul and 
+ hip-hop at a dance night.\nhttps://www.makeoutroom.com/
+URL:https://www.makeoutroom.com/
+END:VEVENT
+BEGIN:VEVENT
 UID:ybg-25786-2026-10-15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261015T193000Z
 DTEND:20261015T203000Z
 SUMMARY:Richard Howell’s John Coltrane Tribute
@@ -253,32 +263,32 @@ URL:https://ybgfestival.org/event/richard-howells-john-coltrane-tribute-20
 END:VEVENT
 BEGIN:VEVENT
 UID:jccsf-109382-2026-10-15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261015T200000Z
 DTEND:20261015T213000Z
 SUMMARY:The Art of Living and Dying: Looking Through a Jewish Lens
 LOCATION:JCCSF
-DESCRIPTION:A talk exploring end-of-life questions through Jewish wisdom a
- nd values\, and how traditions shape how we live and die.\nhttps://www.jc
- csf.org/event/the-art-of-living-and-dying-looking-through-a-jewish-lens/
+DESCRIPTION:A talk exploring how Jewish wisdom and values shape how we app
+ roach end of life and the legacy we leave.\nhttps://www.jccsf.org/event/t
+ he-art-of-living-and-dying-looking-through-a-jewish-lens/
 URL:https://www.jccsf.org/event/the-art-of-living-and-dying-looking-throug
  h-a-jewish-lens/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-875420-2026-10-15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261016T010000Z
 DTEND:20261016T033000Z
 SUMMARY:Editing: Where To Begin
 LOCATION:Bay Area Video Coalition (BAVC)
-DESCRIPTION:Documentary editor Kristina Motwani discusses editing through 
- a case study of the film Adam's Apple in a virtual talk.\nhttps://mission
- local.org/event/bavc-editing-where-to-begin/
+DESCRIPTION:Documentary editor Kristina Motwani discusses editing using th
+ e film Adam's Apple as a case study.\nhttps://missionlocal.org/event/bavc
+ -editing-where-to-begin/
 URL:https://missionlocal.org/event/bavc-editing-where-to-begin/
 END:VEVENT
 BEGIN:VEVENT
 UID:cal-evt-0i9xbwvwkbp9kxo-events-lu-ma@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261016T010000Z
 DTEND:20261016T050000Z
 SUMMARY:Polyphonic Open Mic
@@ -290,34 +300,34 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-make-out-room-litquake-presents-sweet-lowdown-poets-at-the-b-2026-10
  -15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261016T013000Z
 DTEND:20261016T040000Z
 SUMMARY:LITQUAKE presents: Sweet & Lowdown: Poets at the Bar
 LOCATION:Make-Out Room\, 3225 22nd St
 DESCRIPTION:Poets Nancy Miller Gomez\, Prairie Moon Dalton\, Ibe Liebenber
- g\, Leigh Lucas\, and Preeti Vangani read\, hosted by Graham Todd.\nhttps
- ://www.makeoutroom.com/
+ g\, Leigh Lucas and Preeti Vangani read\, hosted by Graham Todd.\nhttps:/
+ /www.makeoutroom.com/
 URL:https://www.makeoutroom.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-874557-2026-10-15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261016T020000Z
 DTEND:20261016T050000Z
 SUMMARY:BYOB (Bring Your Own Beamer) Pop-Up Projector Show
 LOCATION:Gray Area Grand Theater
-DESCRIPTION:A one-night pop-up exhibit of projected light and digital art 
- from attendees' own projectors at Gray Area.\nhttps://missionlocal.org/ev
- ent/gray-area-grand-theater-byob-bring-your-own-beamer-pop-up-projector-s
- how-2/
+DESCRIPTION:A one-night projection art exhibit where attendees bring their
+  own projectors to create light installations.\nhttps://missionlocal.org/
+ event/gray-area-grand-theater-byob-bring-your-own-beamer-pop-up-projector
+ -show-2/
 URL:https://missionlocal.org/event/gray-area-grand-theater-byob-bring-your
  -own-beamer-pop-up-projector-show-2/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-medicine-for-nightma-speaking-axolotl-presents-pam-concepcion-2026-
  10-15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261016T020000Z
 DTEND:20261016T040000Z
 SUMMARY:Speaking Axolotl presents Pam Concepcion
@@ -332,21 +342,21 @@ URL:https://www.medicinefornightmares.com/events/speaking-axolotl-curated-
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10041023-2026-10-15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261016T023000Z
 DTEND:20261016T040000Z
 SUMMARY:Algiin Ford – Silent Assassin: My Addictive Mind
 LOCATION:Brava Theater
-DESCRIPTION:Algiin Ford presents a solo performance and talk on addiction 
- as a question of attention and consciousness.\nhttps://missionlocal.org/e
- vent/brava-theater-algiin-ford-silent-assassin-my-addictive-mind/2026-10-
- 15/
+DESCRIPTION:Performer Algiin Ford presents a solo work examining addiction
+  as a matter of attention and consciousness.\nhttps://missionlocal.org/ev
+ ent/brava-theater-algiin-ford-silent-assassin-my-addictive-mind/2026-10-1
+ 5/
 URL:https://missionlocal.org/event/brava-theater-algiin-ford-silent-assass
  in-my-addictive-mind/2026-10-15/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39087-2026-10-15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261016T023000Z
 DTEND:20261016T040000Z
 SUMMARY:Walker Talks\, on Attar of Nishapur – a live stream
@@ -359,7 +369,7 @@ URL:https://birdbeckett.com/event/walker-talks_2026-10-15/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-chapel-hot-flash-heat-wave-2026-10-15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261016T030000Z
 DTEND:20261016T050000Z
 SUMMARY:Hot Flash Heat Wave
@@ -372,7 +382,7 @@ URL:https://wl.seetickets.us/event/hot-flash-heat-wave/693459?afflky=TheCh
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-great-american-music-kelsey-lu-2026-10-15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261016T030000Z
 DTEND:20261016T050000Z
 SUMMARY:Kelsey Lu
@@ -385,18 +395,30 @@ URL:https://wl.seetickets.us/event/kelsey-lu/694273?afflky=GreatAmericanMu
 END:VEVENT
 BEGIN:VEVENT
 UID:w-the-lab-the-tenses-mshr-sung-kim-2026-10-15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261016T030000Z
 DTEND:20261016T060000Z
 SUMMARY:The Tenses + MSHR + Sung Kim
 LOCATION:The Lab\, 2948 16th St
-DESCRIPTION:Live performances by The Tenses\, MSHR\, and Sung Kim at The L
- ab\, with doors at 8pm and show at 8:30pm.\nhttps://www.thelab.org/
+DESCRIPTION:Live music from The Tenses\, MSHR\, and Sung Kim\; doors 8pm\,
+  show 8:30pm.\nhttps://www.thelab.org/
 URL:https://www.thelab.org/
 END:VEVENT
 BEGIN:VEVENT
+UID:w-make-out-room-timeless-reggae-dancehall-3rd-thursdays-2026-10-15@sf_
+ familyevents
+DTSTAMP:20261014T032421Z
+DTSTART:20261016T050000Z
+DTEND:20261015T090000Z
+SUMMARY:TIMELESS REGGAE DANCEHALL (3rd Thursdays)
+LOCATION:Make-Out Room\, 3225 22nd St
+DESCRIPTION:DJs Jah Yzer\, King I-Vier and Trueverse play reggae and dance
+ hall at a monthly night.\nhttps://www.makeoutroom.com/
+URL:https://www.makeoutroom.com/
+END:VEVENT
+BEGIN:VEVENT
 UID:cal-evt-kb66dbtki8nvxbt-events-lu-ma@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261016T233000Z
 DTEND:20261017T013000Z
 SUMMARY:The Fold Town Hall
@@ -406,35 +428,22 @@ DESCRIPTION:Address: The Fold San Francisco\, CA United States  Hosted by
 URL:https://luma.com/a9g3gtgk
 END:VEVENT
 BEGIN:VEVENT
-UID:w-make-out-room-litquake-presents-writers-on-music-2026-10-16@sf_famil
- yevents
-DTSTAMP:20261014T030125Z
-DTSTART:20261017T013000Z
-DTEND:20261017T040000Z
-SUMMARY:LITQUAKE presents: Writers on Music
-LOCATION:Make-Out Room\, 3225 22nd St
-DESCRIPTION:Writers Michael-Vincent D'Anella-Mercanti\, Kai Gault\, Joan G
- ranite\, Brittany Newell\, and Kochina Rude read new work about music\, h
- osted by Micheal Foulk.\nhttps://www.makeoutroom.com/
-URL:https://www.makeoutroom.com/
-END:VEVENT
-BEGIN:VEVENT
 UID:ml-868557-2026-10-16@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T020000Z
 DTEND:20261017T040000Z
 SUMMARY:2026 Murphy & Cadogan Art Awards Ceremony (opening reception)
 LOCATION:SOMArts Cultural Center
-DESCRIPTION:SOMArts and the San Francisco Foundation open the 2026 Murphy 
- and Cadogan Art Awards exhibition\, showcasing emerging Bay Area visual a
- rtists.\nhttps://missionlocal.org/event/somarts-cultural-center-2026-murp
- hy-cadogan-art-awards-ceremony-opening-reception/
+DESCRIPTION:Opening reception for the 2026 Murphy and Cadogan Contemporary
+  Art Awards exhibition\, showcasing the future of Bay Area visual arts.\n
+ https://missionlocal.org/event/somarts-cultural-center-2026-murphy-cadoga
+ n-art-awards-ceremony-opening-reception/
 URL:https://missionlocal.org/event/somarts-cultural-center-2026-murphy-cad
  ogan-art-awards-ceremony-opening-reception/
 END:VEVENT
 BEGIN:VEVENT
 UID:jccsf-110183-2026-10-16@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T020000Z
 DTEND:20261017T040000Z
 SUMMARY:Here-ish & Queer-ish: Stories of Queer Jewish California
@@ -448,23 +457,23 @@ URL:https://www.jccsf.org/event/hereish-and-queerish-stories-of-queer-jewi
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-874052-2026-10-16@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T020000Z
 DTEND:20261017T060000Z
 SUMMARY:Quarter Century Of Psycho: A San Franpsycho Retrospective (closing
   party)
 LOCATION:111 Minna Gallery
-DESCRIPTION:Closing party marking 25 years of San Franpsycho\, with live m
- usic\, art\, and a rare screening of the surf film Wet and Wreckless.\nht
- tps://missionlocal.org/event/111-minna-gallery-quarter-century-of-psycho-
- a-san-franpsycho-retrospective-closing-party/
+DESCRIPTION:Closing party for a 25-year San Franpsycho retrospective\, wit
+ h live music\, art\, and a rare screening of the surf film Wet and Wreckl
+ ess.\nhttps://missionlocal.org/event/111-minna-gallery-quarter-century-of
+ -psycho-a-san-franpsycho-retrospective-closing-party/
 URL:https://missionlocal.org/event/111-minna-gallery-quarter-century-of-ps
  ycho-a-san-franpsycho-retrospective-closing-party/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-medicine-for-nightma-other-dimensions-in-sound-presents-wande-2026-
  10-16@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T020000Z
 DTEND:20261017T040000Z
 SUMMARY:Other Dimensions in Sound presents Wandering Clouds & Warm Spell.
@@ -479,35 +488,21 @@ URL:https://www.medicinefornightmares.com/events/hhmnldby2bh6sp3w7xe24y7ye
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10041024-2026-10-16@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T023000Z
 DTEND:20261017T040000Z
 SUMMARY:Algiin Ford – Silent Assassin: My Addictive Mind
 LOCATION:Brava Theater
-DESCRIPTION:Algiin Ford presents a performance on addiction\, asking wheth
- er it is really about substances or where we direct our attention and ene
- rgy.\nhttps://missionlocal.org/event/brava-theater-algiin-ford-silent-ass
- assin-my-addictive-mind/2026-10-16/
+DESCRIPTION:Performer Algiin Ford presents a personal show on addiction an
+ d where our attention and consciousness are directed.\nhttps://missionloc
+ al.org/event/brava-theater-algiin-ford-silent-assassin-my-addictive-mind/
+ 2026-10-16/
 URL:https://missionlocal.org/event/brava-theater-algiin-ford-silent-assass
  in-my-addictive-mind/2026-10-16/
 END:VEVENT
 BEGIN:VEVENT
-UID:ml-10040927-2026-10-16@sf_familyevents
-DTSTAMP:20261014T030125Z
-DTSTART:20261017T023000Z
-DTEND:20261017T040000Z
-SUMMARY:Grief Dialogues’ Our Loving Companions
-LOCATION:The Marsh
-DESCRIPTION:An immersive theater piece by Grief Dialogues exploring the bo
- nd between people and their pets\, and the grief that comes with losing t
- hem.\nhttps://missionlocal.org/event/the-marsh-grief-dialogues-our-loving
- -companions/2026-10-16/
-URL:https://missionlocal.org/event/the-marsh-grief-dialogues-our-loving-co
- mpanions/2026-10-16/
-END:VEVENT
-BEGIN:VEVENT
 UID:bird-beckett-books-39089-2026-10-16@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T023000Z
 DTEND:20261017T043000Z
 SUMMARY:Jeffrey Burr Trio with Noel Jewkes\, reeds
@@ -520,8 +515,20 @@ DESCRIPTION:Jeffrey Burr\, guitar\; Eric Markowitz\, bass\; Smith Dobson\,
 URL:https://birdbeckett.com/event/jeffrey-burr_2026-10-16/
 END:VEVENT
 BEGIN:VEVENT
+UID:w-make-out-room-litquake-presents-writers-on-music-2026-10-16@sf_famil
+ yevents
+DTSTAMP:20261014T032421Z
+DTSTART:20261017T023000Z
+DTEND:20261017T040000Z
+SUMMARY:LITQUAKE presents: Writers on Music
+LOCATION:Make-Out Room\, 3225 22nd St
+DESCRIPTION:Writers including Kai Gault and Kochina Rude read new work abo
+ ut music\, hosted by Micheal Foulk.\nhttps://www.makeoutroom.com/
+URL:https://www.makeoutroom.com/
+END:VEVENT
+BEGIN:VEVENT
 UID:artists-television-a-17465-2026-10-16@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T030000Z
 DTEND:20261017T030000Z
 SUMMARY:An Evening with Mike Kuchar
@@ -534,18 +541,18 @@ URL:https://www.atasite.org/event/an-evening-with-mike-kuchar/
 END:VEVENT
 BEGIN:VEVENT
 UID:w-the-lab-hana-stretton-phipps-pt-2026-10-16@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T030000Z
 DTEND:20261017T060000Z
 SUMMARY:Hana Stretton + Phipps Pt
 LOCATION:The Lab\, 2948 16th St
-DESCRIPTION:Live performance by Hana Stretton and Phipps Pt\, with doors a
- t 8pm and show at 8:30pm.\nhttps://www.thelab.org/
+DESCRIPTION:Live music from Hana Stretton and Phipps Pt\; doors 8pm\, show
+  8:30pm.\nhttps://www.thelab.org/
 URL:https://www.thelab.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-neurosis-2026-10-16@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T030000Z
 DTEND:20261017T050000Z
 SUMMARY:Neurosis
@@ -557,7 +564,7 @@ URL:https://www.ticketmaster.com/neurosis-san-francisco-california-10-16-2
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-great-american-music-the-jungle-giants-2026-10-16@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T030000Z
 DTEND:20261017T050000Z
 SUMMARY:The Jungle Giants
@@ -571,7 +578,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-chapel-am-lie-farren-lilith-max-rabbitology-2026-10-16@sf_famil
  yevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T040000Z
 DTEND:20261017T060000Z
 SUMMARY:Amélie Farren\, Lilith Max\, Rabbitology
@@ -584,22 +591,22 @@ URL:https://wl.seetickets.us/event/amelie-farren-lilith-max-rabbitology/69
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-874388-2026-10-16@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T040000Z
 DTEND:20261017T065900Z
 SUMMARY:PW 16-Year Anniversary Night One: Detroit Love with Carl Craig & M
  oodymann
 LOCATION:Public Works
-DESCRIPTION:Public Works' 16th anniversary night featuring Detroit techno 
- DJs Carl Craig and Moodymann spinning a late-night set.\nhttps://missionl
- ocal.org/event/public-works-pw-16-year-anniversary-night-one-detroit-love
- -with-carl-craig-moodymann/
+DESCRIPTION:Club night celebrating Public Works' 16th anniversary with Det
+ roit techno DJs Carl Craig and Moodymann.\nhttps://missionlocal.org/event
+ /public-works-pw-16-year-anniversary-night-one-detroit-love-with-carl-cra
+ ig-moodymann/
 URL:https://missionlocal.org/event/public-works-pw-16-year-anniversary-nig
  ht-one-detroit-love-with-carl-craig-moodymann/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2613-2026-10-16@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T040000Z
 DTEND:20261017T060000Z
 SUMMARY:This is Lorelei
@@ -609,34 +616,45 @@ DESCRIPTION:Live at The Independent. Doors 8:30 PM\, show 9:00 PM.\nhttps:
 URL:https://www.theindependentsf.com/tm-event/this-is-lorelei/
 END:VEVENT
 BEGIN:VEVENT
+UID:w-make-out-room-city-beat-2026-10-16@sf_familyevents
+DTSTAMP:20261014T032421Z
+DTSTART:20261017T050000Z
+DTEND:20261016T090000Z
+SUMMARY:CITY BEAT
+LOCATION:Make-Out Room\, 3225 22nd St
+DESCRIPTION:DJs Tom Thump and Centipede play disco\, house\, electro and h
+ ip-hop at a dance night.\nhttps://www.makeoutroom.com/
+URL:https://www.makeoutroom.com/
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-872245-2026-10-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T170000Z
 DTEND:20261017T230000Z
 SUMMARY:51st Annual Potrero Hill Rhythm & Blues Festival
 LOCATION:20th Street
-DESCRIPTION:A long-running outdoor street festival on 20th Street featurin
- g rhythm and blues music and community performers.\nhttps://missionlocal.
- org/event/20th-street-51st-annual-potrero-hill-rhythm-blues-festival/
+DESCRIPTION:Annual street festival on 20th Street featuring rhythm and blu
+ es music celebrating the Potrero Hill community.\nhttps://missionlocal.or
+ g/event/20th-street-51st-annual-potrero-hill-rhythm-blues-festival/
 URL:https://missionlocal.org/event/20th-street-51st-annual-potrero-hill-rh
  ythm-blues-festival/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-875790-2026-10-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T190000Z
 DTEND:20261018T000000Z
 SUMMARY:Brava! Block Party
 LOCATION:24th Street
-DESCRIPTION:A free outdoor block party celebrating Brava Theater's 40 year
- s\, with live performances and community activities on 24th Street.\nhttp
- s://missionlocal.org/event/24th-street-brava-block-party/
+DESCRIPTION:Free street party marking 40 years of Brava Theater\, with liv
+ e performances and community celebration on 24th Street.\nhttps://mission
+ local.org/event/24th-street-brava-block-party/
 URL:https://missionlocal.org/event/24th-street-brava-block-party/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-performance-freedom-comes-when-one-walks-through-it@sf
  _familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T200000Z
 DTEND:20261017T224500Z
 SUMMARY:Performance: FREEDOM COMES WHEN ONE WALKS THROUGH IT
@@ -652,7 +670,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-film-prodigal-daughter-screening-director-qa@sf_family
  events
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T210000Z
 DTEND:20261017T223000Z
 SUMMARY:Film: Prodigal Daughter\, Screening with Director Q&A
@@ -667,7 +685,7 @@ URL:https://sfpl.org/events/2026/10/17/film-prodigal-daughter-screening-di
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-film-killer@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T210000Z
 DTEND:20261017T230000Z
 SUMMARY:Film: The Killer
@@ -679,7 +697,7 @@ URL:https://sfpl.org/events/2026/10/17/film-killer
 END:VEVENT
 BEGIN:VEVENT
 UID:ybg-25733-2026-10-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T210000Z
 DTEND:20261017T233000Z
 SUMMARY:Joe Bataan
@@ -693,7 +711,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-17-presentation-ocean-view-merced-heights-and-ingleside-h
  istory-day@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T220000Z
 DTEND:20261018T000000Z
 SUMMARY:Ocean View\, Merced Heights\, and Ingleside History Day
@@ -710,7 +728,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-medicine-for-nightma-artist-conversation-with-christl-rikka-p-2026-
  10-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261017T220000Z
 DTEND:20261018T010000Z
 SUMMARY:Artist conversation with Christl Rikka Perkins & Shizue Seigel
@@ -725,7 +743,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:cmc-bootleggers-ball-with-nick-rossis-swing-six-2026-10-17@sf_familyev
  ents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T020000Z
 DTEND:20261018T050000Z
 SUMMARY:Bootlegger's Ball with Nick Rossi's Swing Six
@@ -737,22 +755,21 @@ URL:https://sfcmc.org/event/bootleggers-ball-with-nick-rossis-swing-six/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10041045-2026-10-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T020000Z
 DTEND:20261018T040000Z
 SUMMARY:Harvest: The Fall Choreographers Showcase
 LOCATION:Dance Mission Theater
-DESCRIPTION:Dance Mission Theater's fall showcase of new works by local ch
- oreographers\, performed in a ticketed evening program.\nhttps://missionl
- ocal.org/event/dance-mission-theater-harvest-the-fall-choreographers-show
- case/2026-10-17/
+DESCRIPTION:A showcase of new works by local choreographers presented by D
+ ance Mission Theater.\nhttps://missionlocal.org/event/dance-mission-theat
+ er-harvest-the-fall-choreographers-showcase/2026-10-17/
 URL:https://missionlocal.org/event/dance-mission-theater-harvest-the-fall-
  choreographers-showcase/2026-10-17/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-medicine-for-nightma-lalo-guerrero-listening-party-and-platic-2026-
  10-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T020000Z
 DTEND:20261018T040000Z
 SUMMARY:Lalo Guerrero Listening Party and Platica with Jesse "Chuy" Varela
@@ -768,21 +785,21 @@ URL:https://www.medicinefornightmares.com/events/lalo-guerrero-listening-p
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10040928-2026-10-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T023000Z
 DTEND:20261018T040000Z
 SUMMARY:Grief Dialogues’ Our Loving Companions
 LOCATION:The Marsh
-DESCRIPTION:An immersive theater piece by Grief Dialogues exploring the bo
- nd between people and their pets\, and the grief that comes with losing t
- hem.\nhttps://missionlocal.org/event/the-marsh-grief-dialogues-our-loving
- -companions/2026-10-17/
+DESCRIPTION:An immersive theater piece exploring the bond between people a
+ nd their pets\, aimed at empathy and reflection on grief.\nhttps://missio
+ nlocal.org/event/the-marsh-grief-dialogues-our-loving-companions/2026-10-
+ 17/
 URL:https://missionlocal.org/event/the-marsh-grief-dialogues-our-loving-co
  mpanions/2026-10-17/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39091-2026-10-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T023000Z
 DTEND:20261018T043000Z
 SUMMARY:Standard Issue – CD release! – Johnston / Lyons / Shelby / Har
@@ -796,36 +813,34 @@ DESCRIPTION:Darren Johnston\, peace cannon\; Kai Lyons\, guitar\; Marcus S
 URL:https://birdbeckett.com/event/standard-issue_2026-10-17/
 END:VEVENT
 BEGIN:VEVENT
-UID:rpah-18419-2026-10-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+UID:ml-874571-2026-10-17@sf_familyevents
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T023000Z
 DTEND:20261018T040000Z
 SUMMARY:‘The Human Experience’ – by Ramya Shankar’s Ensemble
-LOCATION:Red Poppy Art House\, 2698 Folsom St
-DESCRIPTION:The Human Experience is an interactive performance exploring w
- hat it means to be human through jazz standards\, Carnatic motifs\, ancie
- nt Tamil poetry\, and original compositions. Moving through emotions such
-  as grief\, love\nhttps://redpoppyarthouse.org/event/the-human-experience
- -by-ramya-shankars-ensemble/
-URL:https://redpoppyarthouse.org/event/the-human-experience-by-ramya-shank
- ars-ensemble/
+LOCATION:Red Poppy Art House
+DESCRIPTION:Ramya Shankar's ensemble blends jazz standards\, Carnatic moti
+ fs\, and ancient Tamil poetry to explore what it means to be human.\nhttp
+ s://missionlocal.org/event/red-poppy-art-house-the-human-experience-by-ra
+ mya-shankars-ensemble/
+URL:https://missionlocal.org/event/red-poppy-art-house-the-human-experienc
+ e-by-ramya-shankars-ensemble/
 END:VEVENT
 BEGIN:VEVENT
 UID:w-the-lab-marisa-anderson-camellia-boutros-and-kumi-maxson-2026-10-17@
  sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T030000Z
 DTEND:20261018T060000Z
 SUMMARY:Marisa Anderson + Camellia Boutros and Kumi Maxson
 LOCATION:The Lab\, 2948 16th St
-DESCRIPTION:Live performance by Marisa Anderson\, with Camellia Boutros an
- d Kumi Maxson\, with doors at 8pm and show at 8:30pm.\nhttps://www.thelab
- .org/
+DESCRIPTION:Live music from Marisa Anderson\, Camellia Boutros\, and Kumi 
+ Maxson\; doors 8pm\, show 8:30pm.\nhttps://www.thelab.org/
 URL:https://www.thelab.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-neurosis-2026-10-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T030000Z
 DTEND:20261018T050000Z
 SUMMARY:Neurosis
@@ -837,7 +852,7 @@ URL:https://www.ticketmaster.com/neurosis-san-francisco-california-10-17-2
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2725-2026-10-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T040000Z
 DTEND:20261018T060000Z
 SUMMARY:Asha Banks
@@ -849,22 +864,22 @@ URL:https://www.theindependentsf.com/tm-event/asha-banks/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-874565-2026-10-18@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T190000Z
 DTEND:20261018T210000Z
 SUMMARY:Cybersentics Book Club October 2026: Here/There
 LOCATION:Gray Area Grand Theater
-DESCRIPTION:A book club discussion of a chapter on artists' telepresence w
- ork\, focusing on Kit Galloway's Satellite Arts Project.\nhttps://mission
- local.org/event/gray-area-grand-theater-cybersentics-book-club-october-20
- 26-here-there/
+DESCRIPTION:Book club discussion of a chapter on artists' telepresence wor
+ k\, focusing on Kit Galloway's Satellite Arts Project.\nhttps://missionlo
+ cal.org/event/gray-area-grand-theater-cybersentics-book-club-october-2026
+ -here-there/
 URL:https://missionlocal.org/event/gray-area-grand-theater-cybersentics-bo
  ok-club-october-2026-here-there/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-chapel-love-supreme-summer-day-party-series-2026-10-18@sf_famil
  yevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T210000Z
 DTEND:20261018T230000Z
 SUMMARY:LOVE SUPREME Summer Day Party Series
@@ -878,7 +893,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-18-presentation-listen-your-elders-elder-project-get-toge
  ther-reading@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T210000Z
 DTEND:20261018T230000Z
 SUMMARY:Listen to Your Elders—An Elder Project Get-Together & Reading
@@ -891,22 +906,31 @@ URL:https://sfpl.org/events/2026/10/18/presentation-listen-your-elders-eld
  er-project-get-together-reading
 END:VEVENT
 BEGIN:VEVENT
+UID:cal-kv9da9v9tiusftmccngul4h8o0-google-com@sf_familyevents
+DTSTAMP:20261014T032421Z
+DTSTART:20261018T213000Z
+DTEND:20261019T003000Z
+SUMMARY:CHAMBER SESSIONS
+LOCATION:The Drawing Room\, 599 Valencia St
+DESCRIPTION:
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-874560-2026-10-18@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T213000Z
 DTEND:20261019T000000Z
 SUMMARY:Litquake presents: Menopause Extravaganza
 LOCATION:Gray Area Grand Theater
-DESCRIPTION:A Litquake talk on menopause\, examining how it has been ignor
- ed and misunderstood and what a growing body of research now shows.\nhttp
- s://missionlocal.org/event/gray-area-grand-theater-litquake-presents-meno
- pause-extravaganza/
+DESCRIPTION:Litquake talk and celebration examining menopause\, long dismi
+ ssed\, through a growing body of women-centered writing.\nhttps://mission
+ local.org/event/gray-area-grand-theater-litquake-presents-menopause-extra
+ vaganza/
 URL:https://missionlocal.org/event/gray-area-grand-theater-litquake-presen
  ts-menopause-extravaganza/
 END:VEVENT
 BEGIN:VEVENT
 UID:cmc-e4tt-call-for-scores-solo-piano-vol-3-2026-10-18@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261018T220000Z
 DTEND:20261019T000000Z
 SUMMARY:E4TT Call for Scores: Solo Piano\, Vol. 3
@@ -919,7 +943,7 @@ URL:https://sfcmc.org/event/e4tt-call-for-scores-solo-piano-vol-3/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39096-2026-10-18@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261019T000000Z
 DTEND:20261019T020000Z
 SUMMARY:Tony Johnson Quartet
@@ -933,22 +957,21 @@ URL:https://birdbeckett.com/event/tony-johnson_2026-10-18/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10041046-2026-10-18@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261019T010000Z
 DTEND:20261019T030000Z
 SUMMARY:Harvest: The Fall Choreographers Showcase
 LOCATION:Dance Mission Theater
-DESCRIPTION:Dance Mission Theater's fall showcase of new works by local ch
- oreographers\, performed in a ticketed evening program.\nhttps://missionl
- ocal.org/event/dance-mission-theater-harvest-the-fall-choreographers-show
- case/2026-10-18/
+DESCRIPTION:A showcase of new works by local choreographers presented by D
+ ance Mission Theater.\nhttps://missionlocal.org/event/dance-mission-theat
+ er-harvest-the-fall-choreographers-showcase/2026-10-18/
 URL:https://missionlocal.org/event/dance-mission-theater-harvest-the-fall-
  choreographers-showcase/2026-10-18/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-chapel-women-s-rebel-voices-film-music-tour-eve-2026-10-18@sf_f
  amilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261019T010000Z
 DTEND:20261019T030000Z
 SUMMARY:WOMEN’S REBEL VOICES FILM + MUSIC TOUR EVENT ft. MIKO MARKS
@@ -962,7 +985,7 @@ URL:https://wl.seetickets.us/event/womens-rebel-voices-film-music-tour-eve
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-great-american-music-peaches-2026-10-18@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261019T020000Z
 DTEND:20261019T040000Z
 SUMMARY:Peaches
@@ -976,7 +999,7 @@ URL:https://wl.seetickets.us/event/peaches/704246?afflky=GreatAmericanMusi
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2806-2026-10-18@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261019T030000Z
 DTEND:20261019T050000Z
 SUMMARY:Raaginder
@@ -987,7 +1010,7 @@ URL:https://www.theindependentsf.com/tm-event/raaginder/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-the-wallflowers-2026-10-18@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261019T030000Z
 DTEND:20261019T050000Z
 SUMMARY:The Wallflowers
@@ -999,7 +1022,7 @@ URL:https://www.ticketmaster.com/the-wallflowers-san-francisco-california-
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-19-panel-fiction-after-protest@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261019T210000Z
 DTEND:20261019T230000Z
 SUMMARY:Panel: Fiction After Protest
@@ -1012,7 +1035,7 @@ URL:https://sfpl.org/events/2026/10/19/panel-fiction-after-protest
 END:VEVENT
 BEGIN:VEVENT
 UID:cal-eed3489a-5e03-49a5-bf40-f28b87263214@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261020T003000Z
 DTEND:20261020T014500Z
 SUMMARY:SF Politics 101 with Joel Engardio [October Edition]
@@ -1028,7 +1051,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:cwc-kevin-roose-inside-the-race-to-create-an-artificia-2026-10-19@sf_f
  amilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261020T010000Z
 DTEND:20261020T030000Z
 SUMMARY:Kevin Roose: Inside the Race to Create an Artificial Superintellig
@@ -1042,7 +1065,7 @@ URL:https://www.commonwealthclub.org/events/2026-10-19/kevin-roose-inside-
 END:VEVENT
 BEGIN:VEVENT
 UID:cwc-how-america-looks-from-everywhere-else-2026-10-19@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261020T013000Z
 DTEND:20261020T033000Z
 SUMMARY:How America Looks from Everywhere Else
@@ -1055,7 +1078,7 @@ URL:https://www.commonwealthclub.org/events/2026-10-19/how-america-looks-e
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-great-american-music-dj-x-ces-2026-10-19@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261020T030000Z
 DTEND:20261020T050000Z
 SUMMARY:DJ X'ces
@@ -1069,7 +1092,7 @@ URL:https://wl.seetickets.us/event/dj-xces/701664?afflky=GreatAmericanMusi
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-chapel-hovvdy-2026-10-19@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261020T030000Z
 DTEND:20261020T050000Z
 SUMMARY:Hovvdy
@@ -1081,7 +1104,7 @@ URL:https://wl.seetickets.us/event/hovvdy/691044?afflky=TheChapel
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2760-2026-10-19@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261020T030000Z
 DTEND:20261020T050000Z
 SUMMARY:New Constellations
@@ -1094,7 +1117,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-20-film-kansas-city-confidential-screening-and-discussion
  @sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261021T000000Z
 DTEND:20261021T023000Z
 SUMMARY:Film: Kansas City Confidential\, Screening and Discussion
@@ -1109,7 +1132,7 @@ URL:https://sfpl.org/events/2026/10/20/film-kansas-city-confidential-scree
 END:VEVENT
 BEGIN:VEVENT
 UID:cwc-katie-sanders-ortiz-s-war-2026-10-20@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261021T003000Z
 DTEND:20261021T023000Z
 SUMMARY:Katie Sanders: Ortiz’s War
@@ -1123,7 +1146,7 @@ URL:https://www.commonwealthclub.org/events/2026-10-20/katie-sanders-ortiz
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-20-panel-living-shadow-silicon-valley@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261021T010000Z
 DTEND:20261021T023000Z
 SUMMARY:Panel: Living in the Shadow of Silicon Valley
@@ -1137,7 +1160,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:cwc-rev-richard-cizik-s-route-from-the-altar-to-k-stre-2026-10-20@sf_f
  amilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261021T010000Z
 DTEND:20261021T030000Z
 SUMMARY:Rev. Richard Cizik’s Route from the Altar to K Street to Lyft Dr
@@ -1153,7 +1176,7 @@ URL:https://www.commonwealthclub.org/events/2026-10-20/rev-richard-ciziks-
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39425-2026-10-20@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261021T020000Z
 DTEND:20261021T040000Z
 SUMMARY:Poets Milo Starr Johnson\, Steve Arntson & Tim Xonnelly + open mic
@@ -1167,19 +1190,19 @@ URL:https://birdbeckett.com/event/johnson-xonnelly-loranger_2026-10-20/
 END:VEVENT
 BEGIN:VEVENT
 UID:jccsf-110249-2026-10-20@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261021T020000Z
 DTEND:20261021T033000Z
 SUMMARY:benny blanco – F*ck Failure
 LOCATION:JCCSF
-DESCRIPTION:Grammy-nominated producer benny blanco discusses his career an
- d why failure may lead to success.\nhttps://www.jccsf.org/event/benny-bla
- nco-fck-failure/
+DESCRIPTION:Grammy-nominated producer and bestselling author benny blanco 
+ discusses his career and why failure can lead to success.\nhttps://www.jc
+ csf.org/event/benny-blanco-fck-failure/
 URL:https://www.jccsf.org/event/benny-blanco-fck-failure/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-great-american-music-allah-las-2026-10-20@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261021T030000Z
 DTEND:20261021T050000Z
 SUMMARY:Allah-Las
@@ -1192,7 +1215,7 @@ URL:https://wl.seetickets.us/event/allah-las/700624?afflky=GreatAmericanMu
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2688-2026-10-20@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261021T030000Z
 DTEND:20261021T050000Z
 SUMMARY:Sawyer Hill
@@ -1204,7 +1227,7 @@ URL:https://www.theindependentsf.com/tm-event/sawyer-hill/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-chapel-the-devil-makes-three-2026-10-20@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261021T030000Z
 DTEND:20261021T050000Z
 SUMMARY:The Devil Makes Three
@@ -1217,34 +1240,34 @@ URL:https://wl.seetickets.us/event/the-devil-makes-three/693372?afflky=The
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-876454-2026-10-20@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261021T040000Z
 DTEND:20261021T063000Z
 SUMMARY:Mike Rinta & The Swing Therapists at the Woodchopper’s Ball
 LOCATION:Verdi Club
 DESCRIPTION:Mike Rinta & The Swing Therapists play jazz from 1945 and earl
- ier for a swing dance night at the Verdi Club.\nhttps://missionlocal.org/
- event/verdi-club-mike-rinta-the-swing-therapists-at-the-woodchoppers-ball
- /
+ ier for dancers at the Woodchopper's Ball\, Verdi Club.\nhttps://missionl
+ ocal.org/event/verdi-club-mike-rinta-the-swing-therapists-at-the-woodchop
+ pers-ball/
 URL:https://missionlocal.org/event/verdi-club-mike-rinta-the-swing-therapi
  sts-at-the-woodchoppers-ball/
 END:VEVENT
 BEGIN:VEVENT
 UID:jccsf-109380-2026-10-21@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261021T200000Z
 DTEND:20261021T210000Z
 SUMMARY:Aging or Sage-ing: Thriving as the Seasons Change
 LOCATION:JCCSF
-DESCRIPTION:A gentle autumn discussion on aging with Jewish wisdom\, serve
- d with traditional herbal tea.\nhttps://www.jccsf.org/event/aging-or-sage
- -ing-thriving-as-the-seasons-change/
+DESCRIPTION:A discussion of Jewish wisdom on aging and the sage-ing path\,
+  paired with herbal tea and reflection on the autumn season.\nhttps://www
+ .jccsf.org/event/aging-or-sage-ing-thriving-as-the-seasons-change/
 URL:https://www.jccsf.org/event/aging-or-sage-ing-thriving-as-the-seasons-
  change/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-21-film-mrs-miniver@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261021T200000Z
 DTEND:20261021T230000Z
 SUMMARY:Film: Mrs. Miniver
@@ -1257,7 +1280,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-21-film-rocky-horror-picture-show-full-shadow-cast@sf_fam
  ilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261022T000000Z
 DTEND:20261022T024500Z
 SUMMARY:Film: Rocky Horror Picture Show with a Full Shadow Cast
@@ -1272,7 +1295,7 @@ URL:https://sfpl.org/events/2026/10/21/film-rocky-horror-picture-show-full
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-21-film-birds@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261022T000000Z
 DTEND:20261022T020000Z
 SUMMARY:Film: The Birds
@@ -1287,7 +1310,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-21-presentation-photograph-history-care-and-conservation@
  sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261022T000000Z
 DTEND:20261022T013000Z
 SUMMARY:Photograph History\, Care and Conservation
@@ -1304,7 +1327,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:cwc-jessica-marie-alba-the-inner-work-of-transforming--2026-10-21@sf_f
  amilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261022T003000Z
 DTEND:20261022T023000Z
 SUMMARY:Jessica Marie Alba: The Inner Work of Transforming a Region
@@ -1318,7 +1341,7 @@ URL:https://www.commonwealthclub.org/events/2026-10-21/jessica-marie-alba-
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-21-panel-emerging-shadows@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261022T010000Z
 DTEND:20261022T023000Z
 SUMMARY:Panel: Emerging from the Shadows
@@ -1331,20 +1354,20 @@ URL:https://sfpl.org/events/2026/10/21/panel-emerging-shadows
 END:VEVENT
 BEGIN:VEVENT
 UID:jccsf-109133-2026-10-21@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261022T020000Z
 DTEND:20261022T043000Z
 SUMMARY:The Last Waltz – Co-Presented with SFFILM
 LOCATION:JCCSF
-DESCRIPTION:Martin Scorsese's film of The Band's 1976 farewell concert at 
- Winterland\, screened for its 50th anniversary\, co-presented with SFFILM
- .\nhttps://www.jccsf.org/event/the-last-waltz-co-presented-with-sffilm/
+DESCRIPTION:A screening of Martin Scorsese's The Last Waltz\, marking the 
+ 50th anniversary of The Band's farewell concert at Winterland.\nhttps://w
+ ww.jccsf.org/event/the-last-waltz-co-presented-with-sffilm/
 URL:https://www.jccsf.org/event/the-last-waltz-co-presented-with-sffilm/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-medicine-for-nightma-surreal-or-real-a-conversation-between-t-2026-
  10-21@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261022T020000Z
 DTEND:20261022T040000Z
 SUMMARY:Surreal or real? A conversation between two writers on their style
@@ -1361,7 +1384,7 @@ URL:https://www.medicinefornightmares.com/events/surreal-or-real-a-convers
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2785-2026-10-21@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261022T030000Z
 DTEND:20261022T050000Z
 SUMMARY:City of the Sun
@@ -1372,7 +1395,7 @@ URL:https://www.theindependentsf.com/tm-event/city-of-the-sun/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-great-american-music-diiv-2026-10-21@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261022T030000Z
 DTEND:20261022T050000Z
 SUMMARY:DIIV
@@ -1385,7 +1408,7 @@ URL:https://wl.seetickets.us/event/diiv/701325?afflky=GreatAmericanMusicHa
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-chapel-the-devil-makes-three-2026-10-21@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261022T030000Z
 DTEND:20261022T050000Z
 SUMMARY:The Devil Makes Three
@@ -1398,7 +1421,7 @@ URL:https://wl.seetickets.us/event/the-devil-makes-three/693375?afflky=The
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-22-performance-poetry-open-mic@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261022T220000Z
 DTEND:20261023T000000Z
 SUMMARY:Performance: Poetry Open Mic
@@ -1410,7 +1433,7 @@ URL:https://sfpl.org/events/2026/10/22/performance-poetry-open-mic
 END:VEVENT
 BEGIN:VEVENT
 UID:cal-472a369e-45da-43db-8879-9ecc9b9d9e8b@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261022T230000Z
 DTEND:20261023T023000Z
 SUMMARY:2026 Silver SPUR Awards
@@ -1423,7 +1446,7 @@ URL:https://www.spur.org/events/2026-10-22/2026-silver-spur-awards
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-22-social-french-conversation@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261023T000000Z
 DTEND:20261023T010000Z
 SUMMARY:French Conversation
@@ -1437,22 +1460,22 @@ URL:https://sfpl.org/events/2026/10/22/social-french-conversation
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-876200-2026-10-22@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261023T000000Z
 DTEND:20261023T050000Z
 SUMMARY:Randy Gaul’s INNER WORKINGS | Opening Night
 LOCATION:111 Minna Gallery
-DESCRIPTION:Film artist Randy Gaul opens Inner Workings\, showing his pers
- onal art and imagined worlds beyond his visual effects career.\nhttps://m
- issionlocal.org/event/111-minna-gallery-randy-gauls-inner-workings-openin
- g-night/
+DESCRIPTION:Opening night of Inner Workings\, an exhibition by visual effe
+ cts artist Randy Gaul showing his work beyond Industrial Light & Magic.\n
+ https://missionlocal.org/event/111-minna-gallery-randy-gauls-inner-workin
+ gs-opening-night/
 URL:https://missionlocal.org/event/111-minna-gallery-randy-gauls-inner-wor
  kings-opening-night/
 END:VEVENT
 BEGIN:VEVENT
 UID:cwc-tom-rosenstiel-how-the-press-must-change-to-save-d-2026-10-22@sf_f
  amilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261023T003000Z
 DTEND:20261023T023000Z
 SUMMARY:Tom Rosenstiel: How the Press Must Change to Save Democracy
@@ -1467,7 +1490,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:cwc-bing-gordon-and-chloe-gordon-everybody-wins-2026-10-22@sf_familyev
  ents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261023T010000Z
 DTEND:20261023T030000Z
 SUMMARY:Bing Gordon and Chloe Gordon: Everybody Wins
@@ -1482,37 +1505,37 @@ URL:https://www.commonwealthclub.org/events/2026-10-22/bing-gordon-and-chl
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-876475-2026-10-22@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261023T010000Z
 DTEND:20261023T030000Z
 SUMMARY:Her Story\, History\, Their Story\, Whose Story? Facts and Fiction
  s in Historical Queer Books
 LOCATION:GLBT History Museum
 DESCRIPTION:A Litquake panel with the GLBT Historical Society and Bay Area
-  Reporter on where fact and fiction meet in historical queer books.\nhttp
- s://missionlocal.org/event/glbt-history-museum-her-story-history-their-st
- ory-whose-story-facts-and-fictions-in-historical-queer-books/
+  Reporter on how historical queer novels blend fact and fiction.\nhttps:/
+ /missionlocal.org/event/glbt-history-museum-her-story-history-their-story
+ -whose-story-facts-and-fictions-in-historical-queer-books/
 URL:https://missionlocal.org/event/glbt-history-museum-her-story-history-t
  heir-story-whose-story-facts-and-fictions-in-historical-queer-books/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-876203-2026-10-22@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261023T010000Z
 DTEND:20261023T050000Z
 SUMMARY:PASSION PROJECTS SF: The Artist Behind the Effect | Opening Night
 LOCATION:111 Minna Gallery
-DESCRIPTION:Visual effects artists behind well-known films and TV shows op
- en an exhibition of their personal artwork.\nhttps://missionlocal.org/eve
- nt/111-minna-gallery-passion-projects-sf-the-artist-behind-the-effect-ope
- ning-night/
+DESCRIPTION:Opening night of Passion Projects SF\, showing personal art by
+  visual effects artists behind well-known films and television.\nhttps://
+ missionlocal.org/event/111-minna-gallery-passion-projects-sf-the-artist-b
+ ehind-the-effect-opening-night/
 URL:https://missionlocal.org/event/111-minna-gallery-passion-projects-sf-t
  he-artist-behind-the-effect-opening-night/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-great-american-music-a-split-second-crash-course-in-science-2026-10
  -22@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261023T013000Z
 DTEND:20261023T033000Z
 SUMMARY:A Split Second\, Crash Course in Science
@@ -1526,7 +1549,7 @@ URL:https://wl.seetickets.us/event/a-split-second-crash-course-in-science/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39490-2026-10-22@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261023T013000Z
 DTEND:20261023T030000Z
 SUMMARY:Amy O’Hair presents “History Walks in Sunnyside”
@@ -1541,19 +1564,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-the-lab-cherub-dream-records-x-the-lab-tricky-fm-twin-star-f-2026-10
  -22@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261023T030000Z
 DTEND:20261023T060000Z
 SUMMARY:Cherub Dream Records x The Lab: Tricky FM "Twin Star Fantasy" + Ed
  gar + Tugboyz
 LOCATION:The Lab\, 2948 16th St
-DESCRIPTION:Cherub Dream Records showcase featuring Tricky FM's "Twin Star
-  Fantasy" with Edgar and Tugboyz.\nhttps://www.thelab.org/
+DESCRIPTION:Cherub Dream Records event featuring Tricky FM's "Twin Star Fa
+ ntasy" with Edgar and Tugboyz\; doors 8pm\, show 8:30pm.\nhttps://www.the
+ lab.org/
 URL:https://www.thelab.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2622-2026-10-22@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261023T030000Z
 DTEND:20261023T050000Z
 SUMMARY:Frankie Cosmos - Celebrating 10 Years of Next Thing
@@ -1566,21 +1590,21 @@ URL:https://www.theindependentsf.com/tm-event/frankie-cosmos-celebrating-1
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-871803-2026-10-23@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T010000Z
 DTEND:20261024T040000Z
 SUMMARY:In Their Name: Día de Los Muertos (opening reception)
 LOCATION:SOMArts Cultural Center
-DESCRIPTION:SOMArts opens its 27th annual Día de los Muertos exhibition\,
-  featuring diverse international Day of the Dead artists.\nhttps://missio
- nlocal.org/event/somarts-cultural-center-in-their-name-dia-de-los-muertos
- -opening-reception/
+DESCRIPTION:Opening reception for SOMArts' 27th annual Día de los Muertos
+  exhibition\, featuring diverse Day of the Dead art and traditions.\nhttp
+ s://missionlocal.org/event/somarts-cultural-center-in-their-name-dia-de-l
+ os-muertos-opening-reception/
 URL:https://missionlocal.org/event/somarts-cultural-center-in-their-name-d
  ia-de-los-muertos-opening-reception/
 END:VEVENT
 BEGIN:VEVENT
 UID:artists-television-a-17599-2026-10-23@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T013000Z
 DTEND:20261024T013000Z
 SUMMARY:Cine+Mas: Carmela and the Walkers (Carmela y los caminantes)
@@ -1596,7 +1620,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-great-american-music-tr-st-dj-set-buzz-kull-2026-10-23@sf_familyeve
  nts
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T013000Z
 DTEND:20261024T033000Z
 SUMMARY:TR/ST (DJ set) \, Buzz Kull
@@ -1611,7 +1635,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-pouya-the-forever-glades-tour-2026-2026-10-23@sf_famil
  yevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T020000Z
 DTEND:20261024T040000Z
 SUMMARY:Pouya - The Forever Glades Tour 2026
@@ -1625,7 +1649,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-medicine-for-nightma-other-dimensions-in-sound-rigo-solo-1st--2026-
  10-23@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T020000Z
 DTEND:20261024T040000Z
 SUMMARY:Other Dimensions in Sound\; Rigo(solo-1st set) & Carolina Chubb\, 
@@ -1641,7 +1665,7 @@ URL:https://www.medicinefornightmares.com/events/p2fl3nc6w4nc2bcz436zgl5z8
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39098-2026-10-23@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T023000Z
 DTEND:20261024T043000Z
 SUMMARY:Kurt Ribak Trio
@@ -1655,7 +1679,7 @@ URL:https://birdbeckett.com/event/kurt-riback_2026-10-23/
 END:VEVENT
 BEGIN:VEVENT
 UID:cmc-new-music-for-wind-trio-2026-10-23@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T030000Z
 DTEND:20261024T050000Z
 SUMMARY:New Music for Wind Trio
@@ -1667,7 +1691,7 @@ URL:https://sfcmc.org/event/new-music-for-wind-trio/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2740-2026-10-23@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T040000Z
 DTEND:20261024T060000Z
 SUMMARY:Frog
@@ -1678,7 +1702,7 @@ URL:https://www.theindependentsf.com/tm-event/frog/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-24-author-beneath-sicilian-stars@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T173000Z
 DTEND:20261024T183000Z
 SUMMARY:Author: Beneath the Sicilian Stars
@@ -1690,21 +1714,21 @@ URL:https://sfpl.org/events/2026/10/24/author-beneath-sicilian-stars
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-870263-2026-10-24@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T180000Z
 DTEND:20261024T190000Z
 SUMMARY:“Drawn Together” Curator Walkthrough with Auriel Garza
 LOCATION:Creativity Explored
 DESCRIPTION:Curator Auriel Garza leads a walkthrough of Drawn Together\, a
-  group show about human connection at Creativity Explored.\nhttps://missi
- onlocal.org/event/creativity-explored-drawn-together-curator-walkthrough-
- with-auriel-garza/
+  group exhibition about human connection at Creativity Explored.\nhttps:/
+ /missionlocal.org/event/creativity-explored-drawn-together-curator-walkth
+ rough-with-auriel-garza/
 URL:https://missionlocal.org/event/creativity-explored-drawn-together-cura
  tor-walkthrough-with-auriel-garza/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-24-workshop-improv-theatre@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T200000Z
 DTEND:20261024T213000Z
 SUMMARY:Improv Theatre
@@ -1719,7 +1743,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-medicine-for-nightma-sf-bay-area-tatreez-circle-2026-10-24@sf_famil
  yevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T200000Z
 DTEND:20261024T230000Z
 SUMMARY:SF Bay Area Tatreez Circle
@@ -1734,7 +1758,7 @@ URL:https://www.medicinefornightmares.com/events/sf-bay-area-tatreez-circl
 END:VEVENT
 BEGIN:VEVENT
 UID:ybg-25748-2026-10-24@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T210000Z
 DTEND:20261024T223000Z
 SUMMARY:Afro-Filipino Jazz Project
@@ -1748,7 +1772,7 @@ URL:https://ybgfestival.org/event/afro-filipino-jazz-project/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-24-performance-bay-beats-launch-party@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261024T210000Z
 DTEND:20261025T010000Z
 SUMMARY:Performance: Bay Beats Launch Party
@@ -1759,22 +1783,21 @@ URL:https://sfpl.org/events/2026/10/24/performance-bay-beats-launch-party
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-875083-2026-10-24@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261025T000000Z
 DTEND:20261025T010000Z
 SUMMARY:You’re Invited: 826 Valencia Quarterly\, Volume 34 Release Party
  !
 LOCATION:826 Valencia
-DESCRIPTION:826 Valencia celebrates volume 34 of its student-written Quart
- erly with student readings and a book signing.\nhttps://missionlocal.org/
- event/826-valencia-youre-invited-826-valencia-quarterly-volume-34-release
- -party/
+DESCRIPTION:Release party for 826 Valencia Quarterly Volume 34\, featuring
+  student readings and a book signing.\nhttps://missionlocal.org/event/826
+ -valencia-youre-invited-826-valencia-quarterly-volume-34-release-party/
 URL:https://missionlocal.org/event/826-valencia-youre-invited-826-valencia
  -quarterly-volume-34-release-party/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-medicine-for-nightma-litcrawl--2026-10-24@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261025T000000Z
 DTEND:20261025T050000Z
 SUMMARY:Litcrawl!
@@ -1788,7 +1811,7 @@ URL:https://www.medicinefornightmares.com/events/litcrawl
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39101-2026-10-24@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261025T023000Z
 DTEND:20261025T043000Z
 SUMMARY:Pickpocket Ensemble
@@ -1802,7 +1825,7 @@ URL:https://birdbeckett.com/event/pickpocket-ensemble_2026-10-24/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-amble-2026-10-24@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261025T030000Z
 DTEND:20261025T050000Z
 SUMMARY:Amble
@@ -1814,18 +1837,18 @@ URL:https://www.ticketmaster.com/amble-san-francisco-california-10-24-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:w-the-lab-tyondai-braxton-matt-robidoux-2026-10-24@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261025T033000Z
 DTEND:20261025T063000Z
 SUMMARY:Tyondai Braxton + Matt Robidoux
 LOCATION:The Lab\, 2948 16th St
-DESCRIPTION:Live performance by Tyondai Braxton and Matt Robidoux\, with d
- oors at 8pm and show at 8:30pm.\nhttps://www.thelab.org/
+DESCRIPTION:Live music from Tyondai Braxton and Matt Robidoux\; doors 8pm\
+ , show 8:30pm.\nhttps://www.thelab.org/
 URL:https://www.thelab.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2627-2026-10-24@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261025T040000Z
 DTEND:20261025T060000Z
 SUMMARY:Everclear with American Hi-Fi
@@ -1836,7 +1859,7 @@ URL:https://www.theindependentsf.com/tm-event/everclear/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39348-2026-10-25@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261025T160000Z
 DTEND:20261025T180000Z
 SUMMARY:Kamal Ahmad: A Program of Morning Ragas
@@ -1851,7 +1874,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-25-full-workshop-embroidering-queer-history@sf_familyeven
  ts
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261025T200000Z
 DTEND:20261025T230000Z
 SUMMARY:FULL: Workshop: Embroidering Queer History
@@ -1868,7 +1891,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-25-author-final-reading-dispatches-city-awe@sf_familyeven
  ts
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261025T210000Z
 DTEND:20261025T230000Z
 SUMMARY:Author: Final Reading for Dispatches from the City of Awe
@@ -1883,7 +1906,7 @@ URL:https://sfpl.org/events/2026/10/25/author-final-reading-dispatches-cit
 END:VEVENT
 BEGIN:VEVENT
 UID:artists-television-a-17601-2026-10-25@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261025T210000Z
 DTEND:20261025T210000Z
 SUMMARY:Cine+Mas: Garden of Silences (Jardim dos Silêncios)
@@ -1899,22 +1922,21 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-medicine-for-nightma-filipina-x-poetry-poetics-pinaylit-with--2026-
  10-25@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261025T210000Z
 DTEND:20261025T230000Z
 SUMMARY:Filipina/x Poetry+Poetics #PinayLit with Barbara Jane Reyes
 LOCATION:Medicine for Nightmares\, 3036 24th St
 DESCRIPTION:[ { "shape": "underline"\, "isFront": false\, "isAnimationEnab
  led": false\, "animation": "draw"\, "duration": 0.5\, "direction": "right
- "\, "color": { "type": "THEME_COLOR" }\, "thickness": { "unit": "em"\, "v
- alue": 0.1 }\, "linecap": "square"\, "type\nhttps://www.medicinefornightm
- ares.com/events/filipinax-poetrypoetics-pinaylit-with-barbara-jane-reyes
+ "\,\nhttps://www.medicinefornightmares.com/events/filipinax-poetrypoetics
+ -pinaylit-with-barbara-jane-reyes
 URL:https://www.medicinefornightmares.com/events/filipinax-poetrypoetics-p
  inaylit-with-barbara-jane-reyes
 END:VEVENT
 BEGIN:VEVENT
 UID:artists-television-a-17603-2026-10-25@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261025T230000Z
 DTEND:20261026T010000Z
 SUMMARY:Cine+Mas: Oca
@@ -1927,7 +1949,7 @@ URL:https://www.atasite.org/event/cinemas-oca/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39103-2026-10-25@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261026T000000Z
 DTEND:20261026T020000Z
 SUMMARY:Jam Session w/ Vince Lateano Trio
@@ -1942,7 +1964,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-medicine-for-nightma-bay-area-queer-open-mic-2026-10-25@sf_familyev
  ents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261026T010000Z
 DTEND:20261026T040000Z
 SUMMARY:Bay Area Queer Open Mic
@@ -1957,7 +1979,7 @@ URL:https://www.medicinefornightmares.com/events/2wxtb8bl8fbm99gn7jk5s2pks
 END:VEVENT
 BEGIN:VEVENT
 UID:artists-television-a-17472-2026-10-25@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261026T020000Z
 DTEND:20261026T020000Z
 SUMMARY:TINAFF: Program 8
@@ -1970,7 +1992,7 @@ URL:https://www.atasite.org/event/tinaff-202609-2/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2690-2026-10-25@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261026T030000Z
 DTEND:20261026T050000Z
 SUMMARY:BALTHVS
@@ -1982,7 +2004,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-kishi-bashi-sonderlust-10th-anniversary--2026-10-25@sf
  _familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261026T030000Z
 DTEND:20261026T050000Z
 SUMMARY:Kishi Bashi: Sonderlust 10th Anniversary Tour
@@ -1995,7 +2017,7 @@ URL:https://www.ticketmaster.com/kishi-bashi-sonderlust-10th-anniversary-t
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-26-film-young-china-and-panel@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261026T210000Z
 DTEND:20261026T230000Z
 SUMMARY:Film: Young China and Panel
@@ -2009,7 +2031,7 @@ URL:https://sfpl.org/events/2026/10/26/film-young-china-and-panel
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-26-film-amazing-mr-x@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261026T220000Z
 DTEND:20261026T233000Z
 SUMMARY:Film: The Amazing Mr. X
@@ -2022,9 +2044,23 @@ DESCRIPTION:A grieving widow meets a man who seems to have a connection to
 URL:https://sfpl.org/events/2026/10/26/film-amazing-mr-x
 END:VEVENT
 BEGIN:VEVENT
+UID:cwc-evan-barker-nothing-left-2026-10-26@sf_familyevents
+DTSTAMP:20261014T032421Z
+DTSTART:20261027T003000Z
+DTEND:20261027T023000Z
+SUMMARY:Evan Barker: Nothing Left
+LOCATION:Commonwealth Club\, 110 The Embarcadero
+DESCRIPTION:Has the Democratic Party lost its soul? Evan Barker says the p
+ arty she grew up identifying with has been hijacked by out-of-touch activ
+ ists\, coastal elitists\, and powerful special interests.\nhttps://www.co
+ mmonwealthclub.org/events/2026-10-26/evan-barker-nothing-left
+URL:https://www.commonwealthclub.org/events/2026-10-26/evan-barker-nothing
+ -left
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-10-27-film-santa-sangre-screening-and-discussion@sf_familyev
  ents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261027T150000Z
 DTEND:20261027T160000Z
 SUMMARY:Film: Santa Sangre\, Screening and Discussion
@@ -2040,7 +2076,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-27-author-sarita-sarvate-conversation-sabina-khan-ibarra@
  sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261028T010000Z
 DTEND:20261028T023000Z
 SUMMARY:Author: Sarita Sarvate in Conversation with Sabina Khan-Ibarra
@@ -2055,7 +2091,7 @@ URL:https://sfpl.org/events/2026/10/27/author-sarita-sarvate-conversation-
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39105-2026-10-27@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261028T020000Z
 DTEND:20261028T033000Z
 SUMMARY:All About San Francisco’s Stairways: No Walking Required! w/ Mar
@@ -2070,7 +2106,7 @@ URL:https://birdbeckett.com/event/stairway-to-stairway_2026-10-27/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-slow-pulp-2026-10-27@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261028T030000Z
 DTEND:20261028T050000Z
 SUMMARY:Slow Pulp
@@ -2082,7 +2118,7 @@ URL:https://www.ticketmaster.com/slow-pulp-san-francisco-california-10-27-
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2721-2026-10-27@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261028T030000Z
 DTEND:20261028T050000Z
 SUMMARY:The Wldlfe
@@ -2093,7 +2129,7 @@ URL:https://www.theindependentsf.com/tm-event/the-wldlfe/
 END:VEVENT
 BEGIN:VEVENT
 UID:artists-television-a-17479-2026-10-28@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261029T020000Z
 DTEND:20261029T020000Z
 SUMMARY:When ICE Melts
@@ -2106,7 +2142,7 @@ URL:https://www.atasite.org/event/when-ice-melts/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2758-2026-10-28@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261029T030000Z
 DTEND:20261029T050000Z
 SUMMARY:Freak Slug
@@ -2117,7 +2153,7 @@ URL:https://www.theindependentsf.com/tm-event/freak-slug/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-slow-pulp-2026-10-28@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261029T030000Z
 DTEND:20261029T050000Z
 SUMMARY:Slow Pulp
@@ -2129,7 +2165,7 @@ URL:https://www.ticketmaster.com/slow-pulp-san-francisco-california-10-28-
 END:VEVENT
 BEGIN:VEVENT
 UID:cal-a67fdb9d-a769-4a87-b160-9485289f9fb9@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261030T010000Z
 DTEND:20261030T020000Z
 SUMMARY:Investing in Housing: The Housing Trust Fund and the November Ball
@@ -2146,21 +2182,21 @@ URL:https://www.spur.org/events/2026-10-29/investing-housing-housing-trust
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-876479-2026-10-29@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261030T010000Z
 DTEND:20261030T030000Z
 SUMMARY:Queer Home on Film: A Shorts Program
 LOCATION:GLBT History Museum
-DESCRIPTION:The GLBT Historical Society screens a shorts program of queer 
- films exploring home and belonging.\nhttps://missionlocal.org/event/glbt-
- history-museum-queer-home-on-film-a-shorts-program/
+DESCRIPTION:The GLBT Historical Society screens a shorts program of queer-
+ themed films exploring home and belonging.\nhttps://missionlocal.org/even
+ t/glbt-history-museum-queer-home-on-film-a-shorts-program/
 URL:https://missionlocal.org/event/glbt-history-museum-queer-home-on-film-
  a-shorts-program/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-29-performance-spooky-stories-and-sips-ward-four-wines@sf
  _familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261030T014500Z
 DTEND:20261030T024500Z
 SUMMARY:Performance: Spooky Stories and Sips with Ward Four Wines
@@ -2175,7 +2211,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-medicine-for-nightma-noche-de-movies-presents-wolven-2026-10-29@sf_
  familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261030T020000Z
 DTEND:20261030T040000Z
 SUMMARY:Noche De Movies presents Wolven
@@ -2190,7 +2226,7 @@ URL:https://www.medicinefornightmares.com/events/noche-de-miovies-presents
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-dilated-peoples-2026-10-29@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261030T030000Z
 DTEND:20261030T050000Z
 SUMMARY:Dilated Peoples
@@ -2202,7 +2238,7 @@ URL:https://www.ticketmaster.com/dilated-peoples-san-francisco-california-
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2820-2026-10-29@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261030T030000Z
 DTEND:20261030T050000Z
 SUMMARY:Patrick Wolf
@@ -2214,7 +2250,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-medicine-for-nightma-other-dimensions-in-sound-presents-the-f-2026-
  10-30@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261031T020000Z
 DTEND:20261031T040000Z
 SUMMARY:Other Dimensions in Sound presents the films of David Michalak
@@ -2229,7 +2265,7 @@ URL:https://www.medicinefornightmares.com/events/t9r98xe6k5jepeyz8b5ety24a
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39107-2026-10-30@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261031T023000Z
 DTEND:20261031T043000Z
 SUMMARY:Kazemde George / Kai Lyons Duo
@@ -2243,7 +2279,7 @@ URL:https://birdbeckett.com/event/kazemde-george_2026-10-30/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-galactic-2026-10-30@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261031T030000Z
 DTEND:20261031T050000Z
 SUMMARY:Galactic
@@ -2255,7 +2291,7 @@ URL:https://www.ticketmaster.com/galactic-san-francisco-california-10-30-2
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2717-2026-10-30@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261031T040000Z
 DTEND:20261031T060000Z
 SUMMARY:High Step Society
@@ -2266,7 +2302,7 @@ URL:https://www.theindependentsf.com/tm-event/high-step-society/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-10-31-film-maxita@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261031T210000Z
 DTEND:20261031T230000Z
 SUMMARY:Film: Maxita
@@ -2277,7 +2313,7 @@ URL:https://sfpl.org/events/2026/10/31/film-maxita
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39109-2026-10-31@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261101T023000Z
 DTEND:20261101T043000Z
 SUMMARY:Hillbillies on Halloween
@@ -2290,7 +2326,7 @@ URL:https://birdbeckett.com/event/hillbillies_2026-10-31/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-galactic-2026-10-31@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261101T030000Z
 DTEND:20261101T050000Z
 SUMMARY:Galactic
@@ -2302,7 +2338,7 @@ URL:https://www.ticketmaster.com/galactic-san-francisco-california-10-31-2
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-8206-2026-10-31@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261101T040000Z
 DTEND:20261101T060000Z
 SUMMARY:The Emo Night Tour
@@ -2313,8 +2349,20 @@ DESCRIPTION:Live at The Independent (It's Relative! Presents). Doors 8:30
 URL:https://www.theindependentsf.com/tm-event/the-emo-night-tour-13/
 END:VEVENT
 BEGIN:VEVENT
+UID:jccsf-109855-2026-11-01@sf_familyevents
+DTSTAMP:20261014T032421Z
+DTSTART:20261101T163000Z
+DTEND:20261102T033000Z
+SUMMARY:Z3 Conference 2026
+LOCATION:Oshman Family JCC
+DESCRIPTION:A full-day public conference of talks and discussions on big i
+ deas and the future\, hosted by the Oshman Family JCC.\nhttps://www.jccsf
+ .org/event/z3-conference-2026/
+URL:https://www.jccsf.org/event/z3-conference-2026/
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-11-01-film-kikuyu-land@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261101T220000Z
 DTEND:20261102T000000Z
 SUMMARY:Film: Kikuyu Land
@@ -2328,7 +2376,7 @@ URL:https://sfpl.org/events/2026/11/01/film-kikuyu-land
 END:VEVENT
 BEGIN:VEVENT
 UID:cmc-dia-de-muertos-en-la-mision-2026-11-01@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261102T000000Z
 DTEND:20261102T020000Z
 SUMMARY:Día de Muertos en la Misión
@@ -2340,7 +2388,7 @@ URL:https://sfcmc.org/event/dia-de-muertos-en-la-mision/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39111-2026-11-01@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261102T010000Z
 DTEND:20261102T030000Z
 SUMMARY:Next Gen Jam w/ Lick-Wilmerding High School Jazz Ensemble
@@ -2353,7 +2401,7 @@ URL:https://birdbeckett.com/event/next-gen-jam_2026-11-01/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-jose-madero-usa-tour-2026-2026-11-01@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261102T040000Z
 DTEND:20261102T060000Z
 SUMMARY:Jose Madero - USA Tour 2026
@@ -2366,7 +2414,7 @@ URL:https://www.ticketmaster.com/jose-madero-usa-tour-2026-san-francisco-c
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2808-2026-11-01@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261102T040000Z
 DTEND:20261102T060000Z
 SUMMARY:SIX60
@@ -2377,7 +2425,7 @@ URL:https://www.theindependentsf.com/tm-event/six60/
 END:VEVENT
 BEGIN:VEVENT
 UID:artists-television-a-17470-2026-11-02@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261103T033000Z
 DTEND:20261103T033000Z
 SUMMARY:Rewards Program
@@ -2390,7 +2438,7 @@ URL:https://www.atasite.org/event/rewards-program-202610/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-7736-2026-11-02@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261103T040000Z
 DTEND:20261103T060000Z
 SUMMARY:Lexi Jayde
@@ -2401,7 +2449,7 @@ URL:https://www.theindependentsf.com/tm-event/lexi-jayde/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2653-2026-11-03@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261104T040000Z
 DTEND:20261104T060000Z
 SUMMARY:Gilla Band
@@ -2412,7 +2460,7 @@ URL:https://www.theindependentsf.com/tm-event/gilla-band/
 END:VEVENT
 BEGIN:VEVENT
 UID:cal-4cc2e3d5-8416-423c-9158-ae721eab2c4c@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261104T200000Z
 DTEND:20261104T211500Z
 SUMMARY:Preparing for El Niño: What Cities\, Community Groups\, and Advoc
@@ -2429,7 +2477,7 @@ URL:https://www.spur.org/events/2026-11-04/preparing-el-nino-what-cities-c
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-04-social-french-conversation@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261105T010000Z
 DTEND:20261105T023000Z
 SUMMARY:French Conversation
@@ -2440,7 +2488,7 @@ URL:https://sfpl.org/events/2026/11/04/social-french-conversation
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-04-panel-evolving-archive@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261105T020000Z
 DTEND:20261105T033000Z
 SUMMARY:Panel: Evolving the Archive
@@ -2453,7 +2501,7 @@ URL:https://sfpl.org/events/2026/11/04/panel-evolving-archive
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2727-2026-11-04@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261105T040000Z
 DTEND:20261105T060000Z
 SUMMARY:INOHA
@@ -2464,7 +2512,7 @@ URL:https://www.theindependentsf.com/tm-event/inoha/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-05-author-josie-iselin-art-algae@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261106T020000Z
 DTEND:20261106T030000Z
 SUMMARY:Author: Josie Iselin—Art & Algae
@@ -2476,30 +2524,30 @@ URL:https://sfpl.org/events/2026/11/05/author-josie-iselin-art-algae
 END:VEVENT
 BEGIN:VEVENT
 UID:jccsf-109543-2026-11-05@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261106T030000Z
 DTEND:20261106T050000Z
 SUMMARY:Daniel Kahn & Jake Shulman-Ment – UMRU/UNREST
 LOCATION:JCCSF
-DESCRIPTION:Daniel Kahn and Jake Shulman-Ment pair new music with Yiddish 
- versions of songs by Cohen\, Dylan\, Waits\, and Guthrie.\nhttps://www.jc
- csf.org/event/daniel-kahn-jake-shulman-ment-umru-unrest/
+DESCRIPTION:Daniel Kahn and Jake Shulman-Ment perform new music and Yiddis
+ h versions of songs by Cohen\, Dylan\, Waits\, and Guthrie.\nhttps://www.
+ jccsf.org/event/daniel-kahn-jake-shulman-ment-umru-unrest/
 URL:https://www.jccsf.org/event/daniel-kahn-jake-shulman-ment-umru-unrest/
 END:VEVENT
 BEGIN:VEVENT
 UID:w-the-lab-marjorie-keller-intimate-observer-2026-11-05@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261106T030000Z
 DTEND:20261106T050000Z
 SUMMARY:Marjorie Keller: Intimate Observer
 LOCATION:The Lab\, 2948 16th St
-DESCRIPTION:Film screening of Marjorie Keller's Intimate Observer\, with d
- oors at 6:30pm and film at 7pm.\nhttps://www.thelab.org/
+DESCRIPTION:Film screening of Marjorie Keller's Intimate Observer\; doors 
+ 6:30pm\, film at 7pm.\nhttps://www.thelab.org/
 URL:https://www.thelab.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39117-2026-11-05@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261106T030000Z
 DTEND:20261106T050000Z
 SUMMARY:POETS! Angie Minkin & Heather Saunders Estes + Open Mic
@@ -2512,7 +2560,7 @@ URL:https://birdbeckett.com/event/poets-open-mic_2026-11-05/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2803-2026-11-05@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261106T040000Z
 DTEND:20261106T060000Z
 SUMMARY:Greg Freeman
@@ -2523,7 +2571,7 @@ URL:https://www.theindependentsf.com/tm-event/greg-freeman/
 END:VEVENT
 BEGIN:VEVENT
 UID:artists-television-a-10000016-2026-11-05@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261106T040000Z
 DTEND:20261106T060000Z
 SUMMARY:Open Screening
@@ -2536,7 +2584,7 @@ URL:https://www.atasite.org/event/openscreening/2026-11-05/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-06-film-monty-python-and-holy-grail@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261106T233000Z
 DTEND:20261107T013000Z
 SUMMARY:Film: Monty Python and the Holy Grail
@@ -2551,7 +2599,7 @@ URL:https://sfpl.org/events/2026/11/06/film-monty-python-and-holy-grail
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39124-2026-11-06@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261107T033000Z
 DTEND:20261107T053000Z
 SUMMARY:Mike Greensill Trio
@@ -2563,34 +2611,33 @@ URL:https://birdbeckett.com/event/mike-greensill_2026-11-06/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-872051-2026-11-06@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261107T034500Z
 DTEND:20261107T053000Z
 SUMMARY:About Last Night: Dating Disaster Stories! (SF)
 LOCATION:Make-Out Room
-DESCRIPTION:San Francisco locals share their cringiest dating stories on s
- tage\, and a live pianist turns them into songs.\nhttps://missionlocal.or
- g/event/make-out-room-about-last-night-dating-disaster-stories-sf-3/
+DESCRIPTION:Local storytellers share their cringiest dates\, and a live pi
+ anist turns the stories into songs.\nhttps://missionlocal.org/event/make-
+ out-room-about-last-night-dating-disaster-stories-sf-3/
 URL:https://missionlocal.org/event/make-out-room-about-last-night-dating-d
  isaster-stories-sf-3/
 END:VEVENT
 BEGIN:VEVENT
 UID:w-the-lab-eternities-bob-bellerue-katie-porter-antimatter-2026-11-06@s
  f_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261107T040000Z
 DTEND:20261107T070000Z
 SUMMARY:Eternities (Bob Bellerue / Katie Porter) + Antimatter
 LOCATION:The Lab\, 2948 16th St
-DESCRIPTION:Live performance by Eternities (Bob Bellerue and Katie Porter)
-  with Antimatter\, with doors at 8pm and show at 8:30pm.\nhttps://www.the
- lab.org/
+DESCRIPTION:Live music from Eternities (Bob Bellerue and Katie Porter) and
+  Antimatter\; doors 8pm\, show 8:30pm.\nhttps://www.thelab.org/
 URL:https://www.thelab.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-thee-sinseers-love-stories-tour-2026-11-06@sf_familyev
  ents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261107T040000Z
 DTEND:20261107T060000Z
 SUMMARY:Thee Sinseers: Love Stories Tour
@@ -2603,7 +2650,7 @@ URL:https://www.ticketmaster.com/thee-sinseers-love-stories-tour-san-franc
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2631-2026-11-06@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261107T050000Z
 DTEND:20261107T070000Z
 SUMMARY:King Buffalo
@@ -2615,7 +2662,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-07-workshop-national-aids-memorial-quilt-repair-panel-mak
  ing-workshop@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261107T200000Z
 DTEND:20261108T000000Z
 SUMMARY:National AIDS Memorial Quilt Repair & Panel Making Workshop
@@ -2630,7 +2677,7 @@ URL:https://sfpl.org/events/2026/11/07/workshop-national-aids-memorial-qui
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-07-film-wood-street-post-film-discussion@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261107T220000Z
 DTEND:20261108T003000Z
 SUMMARY:Film: Wood Street + Post-Film Discussion
@@ -2644,7 +2691,7 @@ URL:https://sfpl.org/events/2026/11/07/film-wood-street-post-film-discussi
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-07-workshop-dj-poetics-david-maduli@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261107T230000Z
 DTEND:20261108T000000Z
 SUMMARY:DJ Poetics with David Maduli
@@ -2658,7 +2705,7 @@ URL:https://sfpl.org/events/2026/11/07/workshop-dj-poetics-david-maduli
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-07-activity-improv-theatre@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261107T230000Z
 DTEND:20261108T003000Z
 SUMMARY:Improv Theatre
@@ -2672,19 +2719,19 @@ URL:https://sfpl.org/events/2026/11/07/activity-improv-theatre
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-875073-2026-11-07@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261108T020000Z
 DTEND:20261108T040000Z
 SUMMARY:The Last Supper Party
 LOCATION:The Sycamore
-DESCRIPTION:An evening of poetry and music by Colleen Shoshana McKee\, Olg
- a Zilberbourg\, and Timothy Goodspeed\, curated by Kimi Sugioka.\nhttps:/
- /missionlocal.org/event/the-sycamore-the-last-supper-party/
+DESCRIPTION:An evening of poetry and music with Colleen Shoshana McKee\, O
+ lga Zilberbourg\, and Timothy Goodspeed\, curated by Kimi Sugioka.\nhttps
+ ://missionlocal.org/event/the-sycamore-the-last-supper-party/
 URL:https://missionlocal.org/event/the-sycamore-the-last-supper-party/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39129-2026-11-07@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261108T033000Z
 DTEND:20261108T053000Z
 SUMMARY:Chris Trinidad’s Chroma Tonic
@@ -2697,20 +2744,8 @@ DESCRIPTION:Naima Shalhoub\, voice/keyboards\; Scott Oshiro\, flute/quantu
 URL:https://birdbeckett.com/event/chroma-tonic_2026-11-07/
 END:VEVENT
 BEGIN:VEVENT
-UID:rpah-18484-2026-11-07@sf_familyevents
-DTSTAMP:20261014T030125Z
-DTSTART:20261108T033000Z
-DTEND:20261108T050000Z
-SUMMARY:Hot Blood Orkestar
-LOCATION:Red Poppy Art House\, 2698 Folsom St
-DESCRIPTION:An intimate performance at Red Poppy Art House\, a small Missi
- on arts space\; advance tickets recommended.\nhttps://redpoppyarthouse.or
- g/event/hot-blood-orkestar-20261107/
-URL:https://redpoppyarthouse.org/event/hot-blood-orkestar-20261107/
-END:VEVENT
-BEGIN:VEVENT
 UID:vp-the-fillmore-the-big-star-quintet-2026-11-07@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261108T040000Z
 DTEND:20261108T060000Z
 SUMMARY:The Big Star Quintet
@@ -2722,7 +2757,7 @@ URL:https://www.ticketmaster.com/the-big-star-quintet-san-francisco-califo
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2723-2026-11-07@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261108T050000Z
 DTEND:20261108T070000Z
 SUMMARY:Karina Rykman
@@ -2732,8 +2767,17 @@ DESCRIPTION:Live at The Independent. Doors 8:30 PM\, show 9:00 PM.\nhttps:
 URL:https://www.theindependentsf.com/tm-event/karina-rykman/
 END:VEVENT
 BEGIN:VEVENT
+UID:cal-2l9v5fsm6a7pp75dif4p42nqg4-google-com@sf_familyevents
+DTSTAMP:20261014T032421Z
+DTSTART:20261108T223000Z
+DTEND:20261109T013000Z
+SUMMARY:CHAMBER SESSIONS
+LOCATION:The Drawing Room\, 599 Valencia St
+DESCRIPTION:
+END:VEVENT
+BEGIN:VEVENT
 UID:cmc-from-baroque-to-cinema-2026-11-08@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261108T230000Z
 DTEND:20261109T010000Z
 SUMMARY:From Baroque to Cinema
@@ -2745,19 +2789,19 @@ URL:https://sfcmc.org/event/from-baroque-to-cinema/
 END:VEVENT
 BEGIN:VEVENT
 UID:jccsf-109831-2026-11-08@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261109T010000Z
 DTEND:20261109T043000Z
 SUMMARY:Hold on to Your Music – A Mother’s Legacy
 LOCATION:JCCSF
-DESCRIPTION:Grammy-nominated pianist Mona Golabek presents her mother's st
- ory of escaping Nazi-occupied Vienna\, through performance and conversati
- on.\nhttps://www.jccsf.org/event/hold-on-to-your-music-a-mothers-legacy/
+DESCRIPTION:Pianist Mona Golabek performs and discusses her mother's escap
+ e from Nazi-occupied Vienna to wartime London\, with a film.\nhttps://www
+ .jccsf.org/event/hold-on-to-your-music-a-mothers-legacy/
 URL:https://www.jccsf.org/event/hold-on-to-your-music-a-mothers-legacy/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39132-2026-11-08@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261109T010000Z
 DTEND:20261109T030000Z
 SUMMARY:Mitch Polzak & the Royal Deuces
@@ -2770,7 +2814,7 @@ URL:https://birdbeckett.com/event/mitch-polzak_2026-11-08/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39590-2026-11-08@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261109T033000Z
 DTEND:20261109T053000Z
 SUMMARY:Danny Rosen & J Grabowski w/ Starry Skemes: A Two-Way Book Party &
@@ -2785,7 +2829,7 @@ URL:https://birdbeckett.com/event/rosen_grabowski_starry-skemes/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2976-2026-11-08@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261109T040000Z
 DTEND:20261109T060000Z
 SUMMARY:THAO
@@ -2796,7 +2840,7 @@ URL:https://www.theindependentsf.com/tm-event/thao/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-09-film-asphalt-jungle@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261109T230000Z
 DTEND:20261110T010000Z
 SUMMARY:Film: The Asphalt Jungle
@@ -2810,7 +2854,7 @@ URL:https://sfpl.org/events/2026/11/09/film-asphalt-jungle
 END:VEVENT
 BEGIN:VEVENT
 UID:artists-television-a-10000170-2026-11-09@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261110T030000Z
 DTEND:20261110T030000Z
 SUMMARY:Studio 26: Fantom Classroom of the Art Institute
@@ -2824,7 +2868,7 @@ URL:https://www.atasite.org/event/studio-26-fantom-classroom-of-the-art-in
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-quadeca-2026-11-09@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261110T040000Z
 DTEND:20261110T060000Z
 SUMMARY:Quadeca
@@ -2836,7 +2880,7 @@ URL:https://www.ticketmaster.com/quadeca-san-francisco-california-11-09-20
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-8403-2026-11-09@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261110T040000Z
 DTEND:20261110T060000Z
 SUMMARY:Weston Estate
@@ -2848,20 +2892,20 @@ URL:https://www.theindependentsf.com/tm-event/weston-estate-2/
 END:VEVENT
 BEGIN:VEVENT
 UID:jccsf-110044-2026-11-10@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261110T210000Z
 DTEND:20261110T223000Z
 SUMMARY:Cream: The Legendary Reign of the Original Rock Supergroup
 LOCATION:JCCSF
 DESCRIPTION:A film-clip presentation on Cream\, the 1960s rock trio whose 
- powerful sound left a lasting legacy.\nhttps://www.jccsf.org/event/cream-
- the-legendary-reign-of-the-original-rock-supergroup/
+ powerful sound and classic songs endure.\nhttps://www.jccsf.org/event/cre
+ am-the-legendary-reign-of-the-original-rock-supergroup/
 URL:https://www.jccsf.org/event/cream-the-legendary-reign-of-the-original-
  rock-supergroup/
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-10-film-100th-seeds-aloha@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261110T210000Z
 DTEND:20261111T000000Z
 SUMMARY:Film: The 100th—Seeds of Aloha
@@ -2876,7 +2920,7 @@ URL:https://sfpl.org/events/2026/11/10/film-100th-seeds-aloha
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-10-performance-page-page@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261111T020000Z
 DTEND:20261111T033000Z
 SUMMARY:Performance: On the Page\, Off the Page
@@ -2891,7 +2935,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-10-presentation-photograph-history-care-and-conservation@
  sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261111T020000Z
 DTEND:20261111T030000Z
 SUMMARY:Photograph History\, Care and Conservation
@@ -2907,7 +2951,7 @@ URL:https://sfpl.org/events/2026/11/10/presentation-photograph-history-car
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-6054-2026-11-10@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261111T040000Z
 DTEND:20261111T060000Z
 SUMMARY:Weston Estate
@@ -2918,7 +2962,7 @@ URL:https://www.theindependentsf.com/tm-event/weston-estate/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39454-2026-11-11@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261112T033000Z
 DTEND:20261112T053000Z
 SUMMARY:Will Bernard + Beth Custer
@@ -2932,7 +2976,7 @@ URL:https://birdbeckett.com/event/bernard-custer_2026-11-11/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2673-2026-11-11@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261112T040000Z
 DTEND:20261112T060000Z
 SUMMARY:Stop Light Observations
@@ -2944,7 +2988,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-the-damned-final-damnation-50-2026-11-11@sf_familyeven
  ts
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261112T040000Z
 DTEND:20261112T060000Z
 SUMMARY:THE DAMNED - FINAL DAMNATION 50
@@ -2957,7 +3001,7 @@ URL:https://www.ticketmaster.com/the-damned-final-damnation-50-san-francis
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-12-film-100th-seeds-aloha@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261112T200000Z
 DTEND:20261112T220000Z
 SUMMARY:Film: The 100th—Seeds of Aloha
@@ -2973,7 +3017,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-12-book-club-discuss-talking-books-braille-audio-reading-
  download-service@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261112T230000Z
 DTEND:20261113T003000Z
 SUMMARY:Book Club: Discuss Talking Books from Braille & Audio Reading Down
@@ -2990,7 +3034,7 @@ URL:https://sfpl.org/events/2026/11/12/book-club-discuss-talking-books-bra
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-12-film-unknown-country@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261112T230000Z
 DTEND:20261113T003000Z
 SUMMARY:Film: The Unknown Country
@@ -3003,7 +3047,7 @@ URL:https://sfpl.org/events/2026/11/12/film-unknown-country
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-12-film-children-lesser-god@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261113T011500Z
 DTEND:20261113T031500Z
 SUMMARY:Film: Children of a Lesser God
@@ -3018,7 +3062,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-12-performance-kim-shucks-poem-jam-celebrates-janice-goul
  ds-music@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261113T020000Z
 DTEND:20261113T031500Z
 SUMMARY:Performance: Kim Shuck's Poem Jam Celebrates Janice Gould's This M
@@ -3035,7 +3079,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-12-panel-mother-jones-50-years-fearless-journalism@sf_fam
  ilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261113T023000Z
 DTEND:20261113T033000Z
 SUMMARY:Panel: Mother Jones—50 Years of Fearless Journalism
@@ -3050,7 +3094,7 @@ URL:https://sfpl.org/events/2026/11/12/panel-mother-jones-50-years-fearles
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39134-2026-11-12@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261113T033000Z
 DTEND:20261113T053000Z
 SUMMARY:George Rogers Quartet
@@ -3064,7 +3108,7 @@ URL:https://birdbeckett.com/event/george-rogers_2026-11-12/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-gene-2026-11-12@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261113T040000Z
 DTEND:20261113T060000Z
 SUMMARY:Gene
@@ -3076,7 +3120,7 @@ URL:https://www.ticketmaster.com/gene-san-francisco-california-11-12-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2686-2026-11-12@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261113T040000Z
 DTEND:20261113T060000Z
 SUMMARY:Stephen Day
@@ -3087,7 +3131,7 @@ URL:https://www.theindependentsf.com/tm-event/stephen-day/
 END:VEVENT
 BEGIN:VEVENT
 UID:ybg-26259-2026-11-13@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261114T000000Z
 DTEND:20261114T050000Z
 SUMMARY:Bhangra & Beats Night Market
@@ -3101,7 +3145,7 @@ URL:https://ybgfestival.org/event/bhangra-and-beats-111326/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39136-2026-11-13@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261114T033000Z
 DTEND:20261114T053000Z
 SUMMARY:Eric & the In Crowd
@@ -3115,7 +3159,7 @@ URL:https://birdbeckett.com/event/eric-the-in-crowd_2026-11-13/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-ceremony-2026-11-13@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261114T040000Z
 DTEND:20261114T060000Z
 SUMMARY:Ceremony
@@ -3128,18 +3172,18 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-the-lab-dorian-wood-canto-de-todes-roco-c-rdova-2026-11-13@sf_family
  events
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261114T040000Z
 DTEND:20261114T070000Z
 SUMMARY:Dorian Wood: Canto de Todes + Roco Córdova
 LOCATION:The Lab\, 2948 16th St
-DESCRIPTION:Dorian Wood presents Canto de Todes with Roco Córdova\, with 
- doors at 7:30pm and show at 8pm.\nhttps://www.thelab.org/
+DESCRIPTION:Dorian Wood presents Canto de Todes with Roco Córdova\; doors
+  7:30pm\, show 8pm.\nhttps://www.thelab.org/
 URL:https://www.thelab.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-6056-2026-11-13@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261114T040000Z
 DTEND:20261114T060000Z
 SUMMARY:Whitmer Thomas
@@ -3149,8 +3193,17 @@ DESCRIPTION:Live at The Independent. Doors 7:00 PM\, show 8:00 PM.\nhttps:
 URL:https://www.theindependentsf.com/tm-event/whitmer-thomas/
 END:VEVENT
 BEGIN:VEVENT
+UID:cal-38mv9fviu5e0q7ufas03bkrgsi-google-com@sf_familyevents
+DTSTAMP:20261014T032421Z
+DTSTART:20261115T000000Z
+DTEND:20261115T050000Z
+SUMMARY:OPENING RECEPTION WONDERLAND
+LOCATION:The Drawing Room\, 599 Valencia St
+DESCRIPTION:
+END:VEVENT
+BEGIN:VEVENT
 UID:vp-the-fillmore-allison-russell-2026-11-14@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261115T033000Z
 DTEND:20261115T053000Z
 SUMMARY:Allison Russell
@@ -3162,7 +3215,7 @@ URL:https://www.ticketmaster.com/allison-russell-san-francisco-california-
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39138-2026-11-14@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261115T033000Z
 DTEND:20261115T053000Z
 SUMMARY:In a Silent Way: Joel Harrison Quintet plays Miles Davis
@@ -3177,18 +3230,18 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-the-lab-max-jaffe-you-want-that-too-burden-of-dreams-2026-11-14@sf_f
  amilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261115T043000Z
 DTEND:20261115T070000Z
 SUMMARY:Max Jaffe: You Want That Too! + Burden of Dreams
 LOCATION:The Lab\, 2948 16th St
 DESCRIPTION:Max Jaffe presents "You Want That Too!" with Burden of Dreams\
- , with doors at 8pm and show at 8:30pm.\nhttps://www.thelab.org/
+ ; doors 8pm\, show 8:30pm.\nhttps://www.thelab.org/
 URL:https://www.thelab.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2701-2026-11-14@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261115T050000Z
 DTEND:20261115T070000Z
 SUMMARY:Sean Hayes with KATZROAR and Etienne de Rocher (Haunted Shed)
@@ -3199,20 +3252,20 @@ URL:https://www.theindependentsf.com/tm-event/sean-hayes/
 END:VEVENT
 BEGIN:VEVENT
 UID:jccsf-109233-2026-11-15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261116T010000Z
 DTEND:20261116T030000Z
 SUMMARY:Ketubah Renaissance – Reception with the Curator
 LOCATION:JCCSF
-DESCRIPTION:A reception where the curator discusses the history and themes
-  behind the Ketubah Renaissance exhibit.\nhttps://www.jccsf.org/event/ket
- ubah-renaissance-reception-with-the-curator/
+DESCRIPTION:A reception for the Ketubah Renaissance exhibition where the c
+ urator explains the history behind the works.\nhttps://www.jccsf.org/even
+ t/ketubah-renaissance-reception-with-the-curator/
 URL:https://www.jccsf.org/event/ketubah-renaissance-reception-with-the-cur
  ator/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39140-2026-11-15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261116T010000Z
 DTEND:20261116T030000Z
 SUMMARY:Vince Lateano Trio
@@ -3227,7 +3280,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-the-mountain-goats-night-one-openers-2026-11-15@sf_fam
  ilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261116T040000Z
 DTEND:20261116T060000Z
 SUMMARY:The Mountain Goats - Night One: Openers
@@ -3241,7 +3294,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-the-mountain-goats-night-two-alpha-2026-11-16@sf_famil
  yevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261117T040000Z
 DTEND:20261117T060000Z
 SUMMARY:The Mountain Goats - Night Two: Alpha
@@ -3254,7 +3307,7 @@ URL:https://www.ticketmaster.com/the-mountain-goats-night-two-alpha-san-fr
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39496-2026-11-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261118T030000Z
 DTEND:20261118T043000Z
 SUMMARY:Poet Kim Shuck: A reading
@@ -3267,7 +3320,7 @@ URL:https://birdbeckett.com/event/kim-shuck_2026-11-17/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2712-2026-11-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261118T040000Z
 DTEND:20261118T060000Z
 SUMMARY:Silverada
@@ -3278,20 +3331,20 @@ URL:https://www.theindependentsf.com/tm-event/silverada/
 END:VEVENT
 BEGIN:VEVENT
 UID:jccsf-110046-2026-11-18@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261118T210000Z
 DTEND:20261118T230000Z
 SUMMARY:Gertrude Stein: a Family Saga Meets the Birth of Modernism
 LOCATION:JCCSF
-DESCRIPTION:Family member Nick Stein shares the story of Gertrude Stein an
- d her role in the birth of modernism.\nhttps://www.jccsf.org/event/gertru
- de-stein-a-family-saga-meets-the-birth-of-modernism/
+DESCRIPTION:Family member Nick Stein presents the story of Gertrude Stein 
+ and her role in the birth of modernism.\nhttps://www.jccsf.org/event/gert
+ rude-stein-a-family-saga-meets-the-birth-of-modernism/
 URL:https://www.jccsf.org/event/gertrude-stein-a-family-saga-meets-the-bir
  th-of-modernism/
 END:VEVENT
 BEGIN:VEVENT
 UID:cal-40a6ab7c-173e-44cd-843e-845c5c1b16a2@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261119T013000Z
 DTEND:20261119T030000Z
 SUMMARY:San Francisco Post-Election Debrief
@@ -3306,7 +3359,7 @@ URL:https://www.spur.org/events/2026-11-18/san-francisco-post-election-deb
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-7303-2026-11-18@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261119T040000Z
 DTEND:20261119T060000Z
 SUMMARY:Icona Pop
@@ -3318,7 +3371,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-the-mountain-goats-night-three-stump-the-2026-11-18@sf
  _familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261119T040000Z
 DTEND:20261119T060000Z
 SUMMARY:The Mountain Goats - Night Three: Stump the Band
@@ -3331,7 +3384,7 @@ URL:https://www.ticketmaster.com/the-mountain-goats-night-three-stump-san-
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39142-2026-11-19@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261120T033000Z
 DTEND:20261120T053000Z
 SUMMARY:Walker Talks
@@ -3344,7 +3397,7 @@ URL:https://birdbeckett.com/event/walker-talks_2026-11-19/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-5227-2026-11-19@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261120T040000Z
 DTEND:20261120T060000Z
 SUMMARY:Pretty Sick
@@ -3356,7 +3409,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-the-mountain-goats-night-four-six-long-s-2026-11-19@sf
  _familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261120T040000Z
 DTEND:20261120T060000Z
 SUMMARY:The Mountain Goats - Night Four: Six Long Songs
@@ -3369,7 +3422,7 @@ URL:https://www.ticketmaster.com/the-mountain-goats-night-four-six-san-fra
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39146-2026-11-20@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261121T033000Z
 DTEND:20261121T053000Z
 SUMMARY:Scott Foster Combo
@@ -3383,7 +3436,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-the-mountain-goats-night-five-cast-of-th-2026-11-20@sf
  _familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261121T040000Z
 DTEND:20261121T060000Z
 SUMMARY:The Mountain Goats - Night Five: Cast of Thousands
@@ -3396,7 +3449,7 @@ URL:https://www.ticketmaster.com/the-mountain-goats-night-five-cast-san-fr
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-7330-2026-11-20@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261121T050000Z
 DTEND:20261121T070000Z
 SUMMARY:@NICKCHEO the *TOUR* the *MOVIE*
@@ -3408,7 +3461,7 @@ URL:https://www.theindependentsf.com/tm-event/nickcheo-the-tour-the-movie/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39155-2026-11-21@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261122T033000Z
 DTEND:20261122T053000Z
 SUMMARY:Dima + Four
@@ -3417,21 +3470,9 @@ DESCRIPTION:\nhttps://birdbeckett.com/event/dima_2026-11-21/
 URL:https://birdbeckett.com/event/dima_2026-11-21/
 END:VEVENT
 BEGIN:VEVENT
-UID:rpah-18491-2026-11-21@sf_familyevents
-DTSTAMP:20261014T030125Z
-DTSTART:20261122T033000Z
-DTEND:20261122T050000Z
-SUMMARY:Ragamenco
-LOCATION:Red Poppy Art House\, 2698 Folsom St
-DESCRIPTION:An intimate performance at Red Poppy Art House\, a small Missi
- on arts space\; advance tickets recommended.\nhttps://redpoppyarthouse.or
- g/event/ragamenco/
-URL:https://redpoppyarthouse.org/event/ragamenco/
-END:VEVENT
-BEGIN:VEVENT
 UID:vp-the-fillmore-the-mountain-goats-night-six-closers-2026-11-21@sf_fam
  ilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261122T040000Z
 DTEND:20261122T060000Z
 SUMMARY:The Mountain Goats - Night Six: Closers
@@ -3444,7 +3485,7 @@ URL:https://www.ticketmaster.com/the-mountain-goats-night-six-closers-san-
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-6059-2026-11-21@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261122T050000Z
 DTEND:20261122T070000Z
 SUMMARY:Q Marsden
@@ -3455,7 +3496,7 @@ URL:https://www.theindependentsf.com/tm-event/q-marsden/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39157-2026-11-22@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261123T010000Z
 DTEND:20261123T030000Z
 SUMMARY:Jam Session\, hosted by the Vince Lateano Trio
@@ -3469,7 +3510,7 @@ URL:https://birdbeckett.com/event/jam-session_2026-11-22/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2814-2026-11-22@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261123T040000Z
 DTEND:20261123T060000Z
 SUMMARY:Mark William Lewis
@@ -3480,7 +3521,7 @@ URL:https://www.theindependentsf.com/tm-event/mark-william-lewis/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-cocorosie-2026-11-23@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261124T040000Z
 DTEND:20261124T060000Z
 SUMMARY:CocoRosie
@@ -3492,7 +3533,7 @@ URL:https://www.ticketmaster.com/cocorosie-san-francisco-california-11-23-
 END:VEVENT
 BEGIN:VEVENT
 UID:jccsf-110050-2026-11-24@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261124T210000Z
 DTEND:20261124T220000Z
 SUMMARY:A Joyful Thanksgiving Concert: Come Celebrate with Us
@@ -3505,7 +3546,7 @@ URL:https://www.jccsf.org/event/a-joyful-thanksgiving-concert-come-celebra
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39159-2026-11-24@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261125T030000Z
 DTEND:20261125T050000Z
 SUMMARY:Tom Molanphy – Marie’s Tree: Implosions and Injustice in San F
@@ -3519,7 +3560,7 @@ URL:https://birdbeckett.com/event/tom-molanphy_2026-11-24/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-8409-2026-11-25@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261126T040000Z
 DTEND:20261126T060000Z
 SUMMARY:1 Umbrella
@@ -3530,7 +3571,7 @@ URL:https://www.theindependentsf.com/tm-event/1-umbrella/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39162-2026-11-27@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261128T033000Z
 DTEND:20261128T053000Z
 SUMMARY:Macy Blackman & the Mighty Fines
@@ -3544,7 +3585,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-chapel-sleepless-nights-xx-a-tribute-to-gram-pa-2026-11-27@sf_f
  amilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261128T040000Z
 DTEND:20261128T060000Z
 SUMMARY:Sleepless Nights XX: A Tribute to Gram Parsons
@@ -3560,7 +3601,7 @@ URL:https://wl.seetickets.us/event/sleepless-nights-xx-a-tribute-to-gram-p
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-6408-2026-11-27@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261128T050000Z
 DTEND:20261128T070000Z
 SUMMARY:O'Flynn
@@ -3571,7 +3612,7 @@ URL:https://www.theindependentsf.com/tm-event/oflynn/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39164-2026-11-28@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261129T033000Z
 DTEND:20261129T053000Z
 SUMMARY:New Squatoolas
@@ -3584,7 +3625,7 @@ URL:https://birdbeckett.com/event/new-squatoolas_2026-11-28/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-jackie-greene-2026-11-28@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261129T040000Z
 DTEND:20261129T060000Z
 SUMMARY:Jackie Greene
@@ -3596,7 +3637,7 @@ URL:https://www.ticketmaster.com/jackie-greene-san-francisco-california-11
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-8435-2026-11-28@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261129T050000Z
 DTEND:20261129T070000Z
 SUMMARY:Oden & Fatzo Live
@@ -3608,7 +3649,7 @@ URL:https://www.theindependentsf.com/tm-event/oden-fatzo-live/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39350-2026-11-29@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261129T170000Z
 DTEND:20261129T190000Z
 SUMMARY:Monthly Morning Ragas
@@ -3619,7 +3660,7 @@ URL:https://birdbeckett.com/event/monthly-morning-ragas_2026-11-29/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39166-2026-11-29@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261130T010000Z
 DTEND:20261130T030000Z
 SUMMARY:Cottontails
@@ -3633,7 +3674,7 @@ URL:https://birdbeckett.com/event/cottontails_2026-11-29/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-8415-2026-11-30@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261201T040000Z
 DTEND:20261201T060000Z
 SUMMARY:UNKLE
@@ -3645,7 +3686,7 @@ URL:https://www.theindependentsf.com/tm-event/unkle/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39429-2026-12-02@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261203T030000Z
 DTEND:20261203T043000Z
 SUMMARY:Esmail Rahimian – “I Was There Before: Stories Without Names
@@ -3660,7 +3701,7 @@ URL:https://birdbeckett.com/event/esmail-rahimian_2026-12-02/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-eloise-the-drama-queen-tour-2026-12-02@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261203T040000Z
 DTEND:20261203T060000Z
 SUMMARY:Eloise - The Drama Queen Tour
@@ -3673,7 +3714,7 @@ URL:https://www.ticketmaster.com/eloise-the-drama-queen-tour-san-francisco
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-8270-2026-12-02@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261203T040000Z
 DTEND:20261203T060000Z
 SUMMARY:The Buttertones
@@ -3684,7 +3725,7 @@ URL:https://www.theindependentsf.com/tm-event/the-buttertones/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39119-2026-12-03@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261204T030000Z
 DTEND:20261204T050000Z
 SUMMARY:POETS! Featured Readers + Open Mic
@@ -3696,7 +3737,7 @@ URL:https://birdbeckett.com/event/poets-open-mic_2026-12-03/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2659-2026-12-03@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261204T040000Z
 DTEND:20261204T060000Z
 SUMMARY:MEEK
@@ -3708,7 +3749,7 @@ URL:https://www.theindependentsf.com/tm-event/meek/
 END:VEVENT
 BEGIN:VEVENT
 UID:artists-television-a-10000017-2026-12-03@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261204T040000Z
 DTEND:20261204T060000Z
 SUMMARY:Open Screening
@@ -3722,7 +3763,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-pattie-gonia-save-her-feat-sequoia-and-v-2026-12-03@sf
  _familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261204T040000Z
 DTEND:20261204T060000Z
 SUMMARY:Pattie Gonia: SAVE HER! Feat. Sequoia and VERA!
@@ -3735,32 +3776,32 @@ URL:https://www.ticketmaster.com/pattie-gonia-save-her-feat-sequoia-san-fr
 END:VEVENT
 BEGIN:VEVENT
 UID:w-the-lab-jeremiah-chiu-2026-12-03@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261204T043000Z
 DTEND:20261204T070000Z
 SUMMARY:Jeremiah Chiu
 LOCATION:The Lab\, 2948 16th St
-DESCRIPTION:Live performance by Jeremiah Chiu\, with doors at 8pm and show
-  at 8:30pm.\nhttps://www.thelab.org/
+DESCRIPTION:Live performance by Jeremiah Chiu\; doors 8pm\, show 8:30pm.\n
+ https://www.thelab.org/
 URL:https://www.thelab.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:w-the-lab-ff-in-sf-a-celebration-of-50-years-of-free-expressio-2026-12
  -04@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261205T030000Z
 DTEND:20261205T050000Z
 SUMMARY:FF in SF: A Celebration of 50 Years of Free Expression with Frankl
  in Furnace
 LOCATION:The Lab\, 2948 16th St
 DESCRIPTION:Celebration of Franklin Furnace's 50 years of free expression\
- , with doors at 6:30pm and event at 7pm\, no RSVP required.\nhttps://www.
- thelab.org/
+ ; free\, no RSVP required\, doors 6:30pm\, event 7pm.\nhttps://www.thelab
+ .org/
 URL:https://www.thelab.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39556-2026-12-04@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261205T033000Z
 DTEND:20261205T053000Z
 SUMMARY:Le Jazz Hot
@@ -3773,7 +3814,7 @@ URL:https://birdbeckett.com/event/le-jazz-hot_2026-12-04/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-8491-2026-12-04@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261205T050000Z
 DTEND:20261205T070000Z
 SUMMARY:Nirosta Steel
@@ -3784,7 +3825,7 @@ URL:https://www.theindependentsf.com/tm-event/nirosta-steel/
 END:VEVENT
 BEGIN:VEVENT
 UID:mapp-2026-12-05@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261206T020000Z
 DTEND:20261206T060000Z
 SUMMARY:MAPP: Mission Arts & Performance Project
@@ -3797,7 +3838,7 @@ URL:https://www.redpoppyarthouse.org/tag/mission-arts-performance-project/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39179-2026-12-05@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261206T033000Z
 DTEND:20261206T053000Z
 SUMMARY:ATOM Ensemble (Amos/Trinidad/Oba/Mahadevan)
@@ -3811,7 +3852,7 @@ URL:https://birdbeckett.com/event/atom-ensemble_2026-12-05/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2759-2026-12-05@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261206T050000Z
 DTEND:20261206T070000Z
 SUMMARY:Dragon Smoke
@@ -3822,22 +3863,22 @@ URL:https://www.theindependentsf.com/tm-event/dragon-smoke-2/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10040138-2026-12-05@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261206T050000Z
 DTEND:20261206T075900Z
 SUMMARY:Killing My Lobster and Z Space present ‘Sketch on Speed’ at Z 
  Below
 LOCATION:Z Space
-DESCRIPTION:Sketch comedy troupe Killing My Lobster writes and performs sk
- etches within twelve hours at Z Below.\nhttps://missionlocal.org/event/z-
- space-killing-my-lobster-and-z-space-present-sketch-on-speed-at-z-below/2
- 026-12-05/
+DESCRIPTION:Sketch comedy troupe Killing My Lobster and Z Space present a 
+ twelve-hour sketch challenge\, with writers and actors creating a show on
+  the spot.\nhttps://missionlocal.org/event/z-space-killing-my-lobster-and
+ -z-space-present-sketch-on-speed-at-z-below/2026-12-05/
 URL:https://missionlocal.org/event/z-space-killing-my-lobster-and-z-space-
  present-sketch-on-speed-at-z-below/2026-12-05/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39113-2026-12-06@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261207T010000Z
 DTEND:20261207T030000Z
 SUMMARY:Next Gen Jam w/ RASOTA Jazz Combo Showcase
@@ -3850,7 +3891,7 @@ URL:https://birdbeckett.com/event/next-gen-jam_2026-12-06/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2793-2026-12-06@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261207T040000Z
 DTEND:20261207T060000Z
 SUMMARY:Fireworks
@@ -3863,7 +3904,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-matt-rogers-this-time-it-s-really-christ-2026-12-06@sf
  _familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261207T040000Z
 DTEND:20261207T060000Z
 SUMMARY:Matt Rogers: THIS TIME IT'S *REALLY* CHRISTMAS Tour
@@ -3876,7 +3917,7 @@ URL:https://www.ticketmaster.com/matt-rogers-this-time-its-really-san-fran
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-6208-2026-12-08@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261209T040000Z
 DTEND:20261209T060000Z
 SUMMARY:Wishy
@@ -3888,7 +3929,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-sanctuary-park-tour-celebrating-40-years-2026-12-09@sf
  _familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261210T040000Z
 DTEND:20261210T060000Z
 SUMMARY:Sanctuary Park Tour: Celebrating 40 Years of The Jayhawks
@@ -3901,7 +3942,7 @@ URL:https://www.ticketmaster.com/sanctuary-park-tour-celebrating-40-years-
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2772-2026-12-09@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261210T040000Z
 DTEND:20261210T060000Z
 SUMMARY:feeble little horse
@@ -3913,7 +3954,7 @@ URL:https://www.theindependentsf.com/tm-event/feeble-little-horse/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39431-2026-12-10@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261211T033000Z
 DTEND:20261211T053000Z
 SUMMARY:Taurean Horn Poets: Jack Crimmins\, Melissa Eleftherion & Bill Var
@@ -3927,7 +3968,7 @@ URL:https://birdbeckett.com/event/taurean-horn-poets_2026-12-10/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-strawberry-guy-2026-12-10@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261211T040000Z
 DTEND:20261211T060000Z
 SUMMARY:Strawberry Guy
@@ -3939,7 +3980,7 @@ URL:https://www.ticketmaster.com/strawberry-guy-san-francisco-california-1
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2646-2026-12-10@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261211T040000Z
 DTEND:20261211T060000Z
 SUMMARY:feeble little horse
@@ -3952,7 +3993,7 @@ URL:https://www.theindependentsf.com/tm-event/feeble-little-horse-with-mop
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39181-2026-12-11@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261212T033000Z
 DTEND:20261212T053000Z
 SUMMARY:John Calloway’s Fall to Winter Musings
@@ -3962,7 +4003,7 @@ URL:https://birdbeckett.com/event/john-calloway_2026-12-11/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-jorma-kaukonen-2026-12-11@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261212T040000Z
 DTEND:20261212T060000Z
 SUMMARY:Jorma Kaukonen
@@ -3974,7 +4015,7 @@ URL:https://www.ticketmaster.com/jorma-kaukonen-san-francisco-california-1
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2616-2026-12-11@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261212T050000Z
 DTEND:20261212T070000Z
 SUMMARY:THE BOBBY LEES
@@ -3984,8 +4025,20 @@ DESCRIPTION:Live at The Independent. Doors 8:30 PM\, show 9:00 PM.\nhttps:
 URL:https://www.theindependentsf.com/tm-event/the-bobby-lees/
 END:VEVENT
 BEGIN:VEVENT
+UID:w-ruth-s-table-gen-blend-open-mic-2026-12-12@sf_familyevents
+DTSTAMP:20261014T032421Z
+DTSTART:20261212T220000Z
+DTEND:20261212T233000Z
+SUMMARY:Gen Blend Open Mic!
+LOCATION:Ruth's Table\, 3160 21st St
+DESCRIPTION:Featured readers and an open mic where community members share
+  spoken word and creative work\; doors open at 2:00pm and the open mic st
+ arts at 2:30pm.\nhttps://www.ruthstable.org/programs
+URL:https://www.ruthstable.org/programs
+END:VEVENT
+BEGIN:VEVENT
 UID:bird-beckett-books-39183-2026-12-12@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261213T033000Z
 DTEND:20261213T053000Z
 SUMMARY:Fog City Groove
@@ -3995,7 +4048,7 @@ URL:https://birdbeckett.com/event/fog-city-groove_2026-12-12/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-jorma-kaukonen-2026-12-12@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261213T040000Z
 DTEND:20261213T060000Z
 SUMMARY:Jorma Kaukonen
@@ -4007,7 +4060,7 @@ URL:https://www.ticketmaster.com/jorma-kaukonen-san-francisco-california-1
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-5088-2026-12-12@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261213T050000Z
 DTEND:20261213T070000Z
 SUMMARY:the olllam
@@ -4018,7 +4071,7 @@ URL:https://www.theindependentsf.com/tm-event/the-olllam/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39185-2026-12-13@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261214T010000Z
 DTEND:20261214T030000Z
 SUMMARY:Nashville Honeymoon
@@ -4032,7 +4085,7 @@ URL:https://birdbeckett.com/event/nashville-honeymoon_2026-12-13/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39639-2026-12-13@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261214T033000Z
 DTEND:20261214T053000Z
 SUMMARY:Ella Dair Ensemble
@@ -4045,7 +4098,7 @@ URL:https://birdbeckett.com/event/ella-dair_2026-12-13/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-fillmore-jorma-kaukonen-2026-12-13@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261214T040000Z
 DTEND:20261214T060000Z
 SUMMARY:Jorma Kaukonen
@@ -4057,7 +4110,7 @@ URL:https://www.ticketmaster.com/jorma-kaukonen-san-francisco-california-1
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2609-2026-12-13@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261214T040000Z
 DTEND:20261214T060000Z
 SUMMARY:Swervedriver raise at 35
@@ -4069,7 +4122,7 @@ URL:https://www.theindependentsf.com/tm-event/swervedriver-raise-at-35/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2795-2026-12-14@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261215T040000Z
 DTEND:20261215T060000Z
 SUMMARY:Willi Carlisle
@@ -4081,7 +4134,7 @@ URL:https://www.theindependentsf.com/tm-event/willi-carlisle-2/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-8418-2026-12-15@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261216T040000Z
 DTEND:20261216T060000Z
 SUMMARY:Labiahead - California Tour 2026 - 2 Nights!
@@ -4094,7 +4147,7 @@ URL:https://www.theindependentsf.com/tm-event/labiahead-california-tour-20
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-8452-2026-12-16@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261217T040000Z
 DTEND:20261217T060000Z
 SUMMARY:Labiahead - California Tour 2026 - 2 Nights!
@@ -4107,7 +4160,7 @@ URL:https://www.theindependentsf.com/tm-event/labiahead-california-tour-20
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39144-2026-12-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261218T033000Z
 DTEND:20261218T050000Z
 SUMMARY:Walker Talks
@@ -4120,7 +4173,7 @@ URL:https://birdbeckett.com/event/walker-talks_2026-12-17/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-8477-2026-12-17@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261218T040000Z
 DTEND:20261218T060000Z
 SUMMARY:The Polish Ambassador
@@ -4131,7 +4184,7 @@ URL:https://www.theindependentsf.com/tm-event/the-polish-ambassador-2/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39149-2026-12-18@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261219T033000Z
 DTEND:20261219T053000Z
 SUMMARY:Scott Foster Combo
@@ -4145,19 +4198,18 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-the-lab-whitney-johnson-lia-kohl-macie-stewart-marguerite-br-2026-12
  -18@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261219T043000Z
 DTEND:20261219T063000Z
 SUMMARY:Whitney Johnson\, Lia Kohl\, Macie Stewart + Marguerite Brown
 LOCATION:The Lab\, 2948 16th St
-DESCRIPTION:Live performance by Whitney Johnson\, Lia Kohl\, Macie Stewart
- \, and Marguerite Brown\, with doors at 8pm and show at 8:30pm.\nhttps://
- www.thelab.org/
+DESCRIPTION:Live music from Whitney Johnson\, Lia Kohl\, Macie Stewart\, a
+ nd Marguerite Brown\; doors 8pm\, show 8:30pm.\nhttps://www.thelab.org/
 URL:https://www.thelab.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-8420-2026-12-18@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261219T050000Z
 DTEND:20261219T070000Z
 SUMMARY:Petey USA
@@ -4168,7 +4220,7 @@ URL:https://www.theindependentsf.com/tm-event/petey-usa/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39187-2026-12-19@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261220T033000Z
 DTEND:20261220T053000Z
 SUMMARY:Nick Otis
@@ -4182,7 +4234,7 @@ URL:https://birdbeckett.com/event/nick-otis_2026-12-19/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39317-2026-12-20@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261221T010000Z
 DTEND:20261221T030000Z
 SUMMARY:Tony Johnson’s 230 Jones Street Literary Jazz Band
@@ -4196,7 +4248,7 @@ URL:https://birdbeckett.com/event/230-jones-street_2026-12-20/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39189-2026-12-26@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261227T033000Z
 DTEND:20261227T053000Z
 SUMMARY:Duncan James Memorial Quartet
@@ -4209,7 +4261,7 @@ URL:https://birdbeckett.com/event/duncan-james_2026-12-26/
 END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-chapel-chuck-prophet-2026-12-26@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261227T040000Z
 DTEND:20261227T060000Z
 SUMMARY:Chuck Prophet
@@ -4221,7 +4273,7 @@ URL:https://wl.seetickets.us/event/chuck-prophet/706760?afflky=TheChapel
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39319-2026-12-27@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261228T010000Z
 DTEND:20261228T030000Z
 SUMMARY:Jam Session\, hosted by the Vince Lateano Trio
@@ -4235,7 +4287,7 @@ URL:https://birdbeckett.com/event/jam-session_2026-12-20/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39321-2026-12-27@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20261228T033000Z
 DTEND:20261228T053000Z
 SUMMARY:Annette A Aguilar Beans on the Left
@@ -4249,7 +4301,7 @@ URL:https://birdbeckett.com/event/beans-on-the-left_2026-12-27/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-38865-2027-01-03@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20270104T010000Z
 DTEND:20270104T030000Z
 SUMMARY:Avotcja & Modúpue: afro-latin jazz and poetry
@@ -4263,7 +4315,7 @@ URL:https://birdbeckett.com/event/avotcja-modupue_2027-01-03/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-38875-2027-01-07@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20270108T030000Z
 DTEND:20270108T050000Z
 SUMMARY:POETS! Featured Readers + Open Mic
@@ -4275,7 +4327,7 @@ URL:https://birdbeckett.com/event/poets-open-mic_2027-01-07/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-8422-2027-01-07@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20270108T040000Z
 DTEND:20270108T060000Z
 SUMMARY:Live on the Stoop
@@ -4287,7 +4339,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vp-the-chapel-the-loved-ones-latest-hits-record-releas-2027-01-07@sf_f
  amilyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20270108T040000Z
 DTEND:20270108T060000Z
 SUMMARY:The Loved Ones - Latest Hits Record Release!
@@ -4301,7 +4353,7 @@ URL:https://wl.seetickets.us/event/the-loved-ones-latest-hits-record-relea
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-38878-2027-01-08@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20270109T033000Z
 DTEND:20270109T053000Z
 SUMMARY:Eric & the In Crowd
@@ -4315,7 +4367,7 @@ URL:https://birdbeckett.com/event/eric-the-in-crowd_2027-01-08/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-2773-2027-01-08@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20270109T050000Z
 DTEND:20270109T070000Z
 SUMMARY:Com Truise b2b Matthew Dear
@@ -4326,7 +4378,7 @@ URL:https://www.theindependentsf.com/tm-event/com-truise-b2b-matthew-dear/
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-38881-2027-01-09@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20270110T033000Z
 DTEND:20270110T053000Z
 SUMMARY:Yoav Konig Quartet
@@ -4340,7 +4392,7 @@ URL:https://birdbeckett.com/event/yoav-konig-quartet_2027-01-09/
 END:VEVENT
 BEGIN:VEVENT
 UID:indy-8494-2027-01-09@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20270110T050000Z
 DTEND:20270110T070000Z
 SUMMARY:Scott Pemberton + The Westones + Boot Juice
@@ -4353,7 +4405,7 @@ URL:https://www.theindependentsf.com/tm-event/scott-pemberton-the-westones
 END:VEVENT
 BEGIN:VEVENT
 UID:bird-beckett-books-39459-2027-01-10@sf_familyevents
-DTSTAMP:20261014T030125Z
+DTSTAMP:20261014T032421Z
 DTSTART:20270111T010000Z
 DTEND:20270111T030000Z
 SUMMARY:Nashville Honeymoon

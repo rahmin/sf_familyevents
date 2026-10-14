@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T19:55-07:00",
+ "generated": "2026-10-13T20:20-07:00",
  "coverage": "Oct 13–Oct 20, with one-off events through Jan 11",
  "sources": [
   "SF Public Library",
@@ -97,12 +97,12 @@
    "lat": 37.7681285327,
    "lng": -122.457671443,
    "indoor": false,
-   "exp": 0.3,
-   "off": -2,
-   "free": true,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
    "start": "2026-10-13T09:30:00-07:00",
    "end": "2026-10-13T12:00:00-07:00",
-   "note": "A library storytime with songs and movement at Koret Playground in Golden Gate Park, great for toddlers and preschoolers.",
+   "note": "The Library’s YouthMobile is coming to the park! Movement and play are essential building blocks in fostering literacy and a love of reading. In partnership with the SF Rec & Park, we bring stories and song to our City’s",
    "url": "https://sfchildrennature.org/event/swing-into-stories-koret-playground-golden-gate-park/2026-10-13/"
   },
   {
@@ -337,6 +337,23 @@
    "url": "https://www.naturalresources-sf.com/products/music-magic-tuesday-all-ages-in-person?start=2026-10-01T00:00&select=2026-10-13T16:00"
   },
   {
+   "id": "ml-10041036-2026-10-13",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Kitchen Confidence",
+   "area": "18 Reasons",
+   "lat": 37.7615756,
+   "lng": -122.4253905,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T18:00:00-07:00",
+   "end": "2026-10-13T21:30:00-07:00",
+   "note": "Are you ready to level up your kitchen skills? This three week series was created for the beginner cook to help set a foundation for a future of confident and creative cooking! On day one, students will get to know the m",
+   "url": "https://missionlocal.org/event/18-reasons-kitchen-confidence/2026-10-13/"
+  },
+  {
    "id": "lk-circus-by-the-bay-2026-10-13",
    "kind": "event",
    "source": "Local Kiddo SF",
@@ -352,6 +369,78 @@
    "end": "2026-10-13T20:30:00-07:00",
    "note": "Picked by Local Kiddo SF's weekly newsletter.",
    "url": "https://www.eventbrite.com/e/circus-by-the-bay-tickets-1999623076450?aff=ebdssbdestsearch"
+  },
+  {
+   "id": "ml-875510-2026-10-13",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Militarie Gun",
+   "area": "The Chapel",
+   "lat": 37.760565,
+   "lng": -122.421188,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T19:00:00-07:00",
+   "end": "2026-10-13T21:00:00-07:00",
+   "note": "20 Songs for 20 Dollars Militarie Gun Tue Oct 13 Softcult, Shady Nasty, Dazy Doors at 6:00PM / Show at 7:00PM All Ages,",
+   "url": "https://missionlocal.org/event/the-chapel-militarie-gun/"
+  },
+  {
+   "id": "ml-10040899-2026-10-13",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Tuesday Night Lindy Hop and Balboa Classes",
+   "area": "Verdi Club",
+   "lat": 37.7634058,
+   "lng": -122.4079386,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T19:00:00-07:00",
+   "end": "2026-10-13T21:00:00-07:00",
+   "note": "In October 2026, the Woodchopper’s Ball is offering monthly class series in LINDY HOP, BALBOA, and SLOW BALBOA. All October 2026 monthly class series run on Tuesdays for 4 weeks: October 6, 13, 20, and 27. Check the clas",
+   "url": "https://missionlocal.org/event/verdi-club-tuesday-night-lindy-hop-and-balboa-classes-6/2026-10-13/"
+  },
+  {
+   "id": "ml-876451-2026-10-13",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Radio Gatsby Swing Band at the Woodchopper’s Ball",
+   "area": "Verdi Club",
+   "lat": 37.7634058,
+   "lng": -122.4079386,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-13T21:00:00-07:00",
+   "end": "2026-10-13T23:30:00-07:00",
+   "note": "RADIO GATSBY SWING BAND; Radio Gatsby Swing Band captivates audiences with its dynamic performances, showcasing a fusion of timeless swing melodies and vibrant jazz improvisations. What sets them apart is their ensemble ",
+   "url": "https://missionlocal.org/event/verdi-club-radio-gatsby-swing-band-at-the-woodchoppers-ball/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-876451-2026-10-13"
+   }
+  },
+  {
+   "id": "ml-10040163-2026-10-14",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Clases de Yoga",
+   "area": "The Women’s Building",
+   "lat": 37.7614397,
+   "lng": -122.4226557,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-14T08:00:00-07:00",
+   "end": "2026-10-14T17:00:00-07:00",
+   "note": "¡Regresan nuestras clases de Yoga! Acompáñanos todos los miércoles desde el 15 de julio, de 2:00 a 3:00 PM, en El Edificio de Mujeres, segundo piso. Facilita Majo García. Parte de SanArte: Bienestar Comunitario para Ment",
+   "url": "https://missionlocal.org/event/the-womens-building-clases-de-yoga/2026-10-14/"
   },
   {
    "id": "lk-october-first-steps-2026-10-14",
@@ -582,6 +671,23 @@
    ]
   },
   {
+   "id": "ml-10040687-2026-10-14",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Gratitude Network Annual Summit 2026: Rooted & Rising",
+   "area": "The Women’s Building",
+   "lat": 37.7614397,
+   "lng": -122.4226557,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-14T14:00:00-07:00",
+   "end": "2026-10-14T17:00:00-07:00",
+   "note": "Join Gratitude Network for its 2026 Annual Summit, Rooted & Rising: Cultivate. Collaborate. Lead. This inspiring gathering brings together changemakers, nonprofit leaders, and social impact professionals from around the ",
+   "url": "https://missionlocal.org/event/the-womens-building-gratitude-network-annual-summit-2026-rooted-rising/2026-10-14/"
+  },
+  {
    "id": "cas-lagoon-senses-2026-10-14-1530",
    "kind": "event",
    "source": "calacademy",
@@ -706,6 +812,27 @@
    "end": null,
    "note": "Picked by Local Kiddo SF's weekly newsletter.",
    "url": "https://www.instagram.com/p/Ddt7OqOGmmZ/?img_index=1"
+  },
+  {
+   "id": "ml-874554-2026-10-14",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Patch Bay: Yoon Chung Han + Tori Sommerhof [Artist Talks]",
+   "area": "Gray Area Grand Theater",
+   "lat": 37.7544054,
+   "lng": -122.4183493,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-14T18:00:00-07:00",
+   "end": "2026-10-14T21:00:00-07:00",
+   "note": "For the inaugural Patch Bay series, we’re excited to welcome current exhibiting artists Yoon Chung Han and Tori Sommerhof! Join us at Gray Area for happy hour, and artist talks where we’ll take a closer look at current w",
+   "url": "https://missionlocal.org/event/gray-area-grand-theater-patch-bay-yoon-chung-han-tori-sommerhof-artist-talks/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-874554-2026-10-14"
+   }
   },
   {
    "id": "sfpl-2026-10-14-storytime-pajama-storytime",
@@ -1006,6 +1133,23 @@
    "url": "https://www.naturalresources-sf.com/products/new-parent-support-group-circle?start=2026-10-01T00:00&select=2026-10-15T13:00"
   },
   {
+   "id": "ml-10040688-2026-10-15",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Gratitude Network Annual Summit 2026: Rooted & Rising",
+   "area": "The Women’s Building",
+   "lat": 37.7614397,
+   "lng": -122.4226557,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T14:00:00-07:00",
+   "end": "2026-10-15T17:00:00-07:00",
+   "note": "Join Gratitude Network for its 2026 Annual Summit, Rooted & Rising: Cultivate. Collaborate. Lead. This inspiring gathering brings together changemakers, nonprofit leaders, and social impact professionals from around the ",
+   "url": "https://missionlocal.org/event/the-womens-building-gratitude-network-annual-summit-2026-rooted-rising/2026-10-15/"
+  },
+  {
    "id": "fc-haunted-halloween-hoopla-artisan-night-market-sf-2026-10-15",
    "kind": "event",
    "source": "funcheap",
@@ -1143,6 +1287,65 @@
    "url": "https://www.instagram.com/p/Dd-Lkx3BehC/"
   },
   {
+   "id": "ml-875864-2026-10-15",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Basic Knife Skills",
+   "area": "18 Reasons",
+   "lat": 37.7615756,
+   "lng": -122.4253905,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T18:00:00-07:00",
+   "end": "2026-10-15T21:00:00-07:00",
+   "note": "Join Chef Helena for a class on the basics of using your chef’s knife at home. We will discuss the ins and outs of knife use, care, honing, and safety. You will walk away more confident in cutting vegetables and herbs wi",
+   "url": "https://missionlocal.org/event/18-reasons-basic-knife-skills-2/"
+  },
+  {
+   "id": "ml-875420-2026-10-15",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Editing: Where To Begin",
+   "area": "Bay Area Video Coalition (BAVC)",
+   "lat": 37.7628656,
+   "lng": -122.4105349,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T18:00:00-07:00",
+   "end": "2026-10-15T20:30:00-07:00",
+   "note": "💻 Join us for our next VERSED, Editing: Where To Begin Featuring a Case Study on ADAM’S APPLE. Using the film ADAM’S APPLE, directed by Amy Jenkins, as a case study, award-winning documentary editor Kristina Motwani, wil",
+   "url": "https://missionlocal.org/event/bavc-editing-where-to-begin/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-875420-2026-10-15"
+   }
+  },
+  {
+   "id": "ml-874557-2026-10-15",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "BYOB (Bring Your Own Beamer) Pop-Up Projector Show",
+   "area": "Gray Area Grand Theater",
+   "lat": 37.7544054,
+   "lng": -122.4183493,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T19:00:00-07:00",
+   "end": "2026-10-15T22:00:00-07:00",
+   "note": "Fall is here! Gray Area hosts another Bring Your Own Beamer on October 15 — creating a one-night-only exhibit of projectors and light! ​Originally conceived by pioneer digital artist Rafaël Rozendaal, Bring Your Own Beam",
+   "url": "https://missionlocal.org/event/gray-area-grand-theater-byob-bring-your-own-beamer-pop-up-projector-show-2/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-874557-2026-10-15"
+   }
+  },
+  {
    "id": "fc-disney-ice-find-hero-october-1518-2026-10-15",
    "kind": "event",
    "source": "funcheap",
@@ -1150,13 +1353,13 @@
    "area": "Oakland Coliseum",
    "lat": 37.7516333,
    "lng": -122.2004749,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
+   "indoor": true,
+   "exp": 0,
+   "off": 3,
+   "free": false,
    "start": "2026-10-15T19:00:00-07:00",
    "end": "2026-10-15T22:00:00-07:00",
-   "note": "Submitted by the Event OrganizerFeld EntertainmentDisney On Ice is bringing a new magical adventure for the whole family! Audiences will discover what it truly means to be a hero as Mickey Mouse, Minnie Mouse and friends from around the Disney Kingdom come together to take families on a journey thro",
+   "note": "Ticketed Disney On Ice show with Mickey, Minnie, and friends in an indoor arena, starting at 7 pm.",
    "url": "https://sf.funcheap.com/disney-ice-find-hero-october-1518/"
   },
   {
@@ -1175,6 +1378,48 @@
    "end": "2026-10-15T20:00:00-07:00",
    "note": "Picked by Local Kiddo SF's weekly newsletter.",
    "url": "https://www.eventbrite.com/e/party-with-claire-bobrow-to-celebrate-her-new-childrens-book-party-pony-tickets-1993971005955?aff=ebdssbdestsearch"
+  },
+  {
+   "id": "ml-10041023-2026-10-15",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Algiin Ford – Silent Assassin: My Addictive Mind",
+   "area": "Brava Theater",
+   "lat": 37.7526752,
+   "lng": -122.4078258,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T19:30:00-07:00",
+   "end": "2026-10-15T21:00:00-07:00",
+   "note": "What if addiction is not only about the substance itself—but about where we direct our attention, our energy, and ultimately, our consciousness? That question lies at the heart of Algiin Ford’s Silent Assassin: My Addict",
+   "url": "https://missionlocal.org/event/brava-theater-algiin-ford-silent-assassin-my-addictive-mind/2026-10-15/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-10041023-2026-10-15"
+   }
+  },
+  {
+   "id": "ml-10040831-2026-10-15",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "The Empire Strips Back: A Burlesque Parody",
+   "area": "Victoria Theatre",
+   "lat": 37.764859,
+   "lng": -122.418865,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-15T19:30:00-07:00",
+   "end": "2026-10-15T21:30:00-07:00",
+   "note": "⭐ The hit burlesque parody The Empire Strips Back: A Burlesque Parody is making its way to San Francisco! This audience fave drops classic characters into the world of burlesque. Don’t miss out! ﻿﻿🎟️ Returning Customer O",
+   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-10-15/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-10040831-2026-10-15"
+   }
   },
   {
    "id": "lk-georgian-national-ballet-2026-10-15",
@@ -1283,6 +1528,23 @@
    "url": "https://sfpl.org/events/2026/10/16/storytime-families"
   },
   {
+   "id": "ml-10040689-2026-10-16",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Gratitude Network Annual Summit 2026: Rooted & Rising",
+   "area": "The Women’s Building",
+   "lat": 37.7614397,
+   "lng": -122.4226557,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-16T14:00:00-07:00",
+   "end": "2026-10-16T17:00:00-07:00",
+   "note": "Join Gratitude Network for its 2026 Annual Summit, Rooted & Rising: Cultivate. Collaborate. Lead. This inspiring gathering brings together changemakers, nonprofit leaders, and social impact professionals from around the ",
+   "url": "https://missionlocal.org/event/the-womens-building-gratitude-network-annual-summit-2026-rooted-rising/2026-10-16/"
+  },
+  {
    "id": "sfpl-2026-10-16-storytime-preschoolers",
    "kind": "event",
    "source": "sfpl",
@@ -1352,6 +1614,107 @@
    "url": "https://sf.funcheap.com/pleasant-hills-new-night-market-12/"
   },
   {
+   "id": "ml-868557-2026-10-16",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "2026 Murphy & Cadogan Art Awards Ceremony (opening reception)",
+   "area": "SOMArts Cultural Center",
+   "lat": 37.7710595,
+   "lng": -122.4065654,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-16T19:00:00-07:00",
+   "end": "2026-10-16T21:00:00-07:00",
+   "note": "SOMArts is proud to partner with the San Francisco Foundation to present the 2026 Murphy and Cadogan Contemporary Art Awards Exhibition, a focused look at the future of the Bay Area visual arts. Join us for the opening r",
+   "url": "https://missionlocal.org/event/somarts-cultural-center-2026-murphy-cadogan-art-awards-ceremony-opening-reception/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-868557-2026-10-16"
+   }
+  },
+  {
+   "id": "ml-874052-2026-10-16",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Quarter Century Of Psycho: A San Franpsycho Retrospective (closing party)",
+   "area": "111 Minna Gallery",
+   "lat": 37.7874657,
+   "lng": -122.3993218,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-16T19:00:00-07:00",
+   "end": "2026-10-16T23:00:00-07:00",
+   "note": "Celebrate 25 years of San Franpsycho at the closing party for Quarter Century of Psycho. Join us at 111 Minna Gallery for live music, art, and a rare screening of the surf film Wet and Wreckless—a night honoring San Fran",
+   "url": "https://missionlocal.org/event/111-minna-gallery-quarter-century-of-psycho-a-san-franpsycho-retrospective-closing-party/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-874052-2026-10-16"
+   }
+  },
+  {
+   "id": "ml-10040832-2026-10-16",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "The Empire Strips Back: A Burlesque Parody",
+   "area": "Victoria Theatre",
+   "lat": 37.764859,
+   "lng": -122.418865,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-16T19:00:00-07:00",
+   "end": "2026-10-16T21:00:00-07:00",
+   "note": "⭐ The hit burlesque parody The Empire Strips Back: A Burlesque Parody is making its way to San Francisco! This audience fave drops classic characters into the world of burlesque. Don’t miss out! ﻿﻿🎟️ Returning Customer O",
+   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-10-16/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-10040832-2026-10-16"
+   }
+  },
+  {
+   "id": "ml-10041024-2026-10-16",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Algiin Ford – Silent Assassin: My Addictive Mind",
+   "area": "Brava Theater",
+   "lat": 37.7526752,
+   "lng": -122.4078258,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-16T19:30:00-07:00",
+   "end": "2026-10-16T21:00:00-07:00",
+   "note": "What if addiction is not only about the substance itself—but about where we direct our attention, our energy, and ultimately, our consciousness? That question lies at the heart of Algiin Ford’s Silent Assassin: My Addict",
+   "url": "https://missionlocal.org/event/brava-theater-algiin-ford-silent-assassin-my-addictive-mind/2026-10-16/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-10041024-2026-10-16"
+   }
+  },
+  {
+   "id": "ml-10040927-2026-10-16",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Grief Dialogues’ Our Loving Companions",
+   "area": "The Marsh",
+   "lat": 37.7558531,
+   "lng": -122.4212321,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-16T19:30:00-07:00",
+   "end": "2026-10-16T21:00:00-07:00",
+   "note": "Using immersive theatre to support empathy, reflection & community connection Our Loving Companions is a groundbreaking immersive theater experience celebrating the beautiful bond at the heart of pet ownership. A bond st",
+   "url": "https://missionlocal.org/event/the-marsh-grief-dialogues-our-loving-companions/2026-10-16/"
+  },
+  {
    "id": "fc-mainstage-1-beethovens-eroica-heros-journey-sf-2026-10-16",
    "kind": "event",
    "source": "funcheap",
@@ -1369,6 +1732,27 @@
    "url": "https://sf.funcheap.com/mainstage-1-beethovens-eroica-heros-journey-sf/"
   },
   {
+   "id": "ml-874388-2026-10-16",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "PW 16-Year Anniversary Night One: Detroit Love with Carl Craig & Moodymann",
+   "area": "Public Works",
+   "lat": 37.7689012,
+   "lng": -122.4193734,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-16T21:00:00-07:00",
+   "end": "2026-10-16T23:59:00-07:00",
+   "note": "We’re celebrating 16 years of giving people what they want on the weekend of October 16th/17th. The full line up yet to come, but we promise you won’t be disappointed. We’re serving up a little something for everyone wit",
+   "url": "https://missionlocal.org/event/public-works-pw-16-year-anniversary-night-one-detroit-love-with-carl-craig-moodymann/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-874388-2026-10-16"
+   }
+  },
+  {
    "id": "ml-872245-2026-10-17",
    "kind": "event",
    "source": "Mission Local",
@@ -1377,17 +1761,34 @@
    "lat": 37.7604997,
    "lng": -122.3885771,
    "indoor": false,
-   "exp": 0.2,
+   "exp": 0.5,
    "off": 0,
    "free": null,
    "start": "2026-10-17T10:00:00-07:00",
    "end": "2026-10-17T16:00:00-07:00",
-   "note": "A family-friendly street festival with rhythm and blues music on 20th Street in Potrero Hill, 10 am to 4 pm.",
+   "note": "The Potrero Hill R&B Festival will take place Saturday, October 17, 2026 on 20th Street between Wisconsin and Missouri Streets from 10 am – 4 pm. This annual family-friendly festival celebrates the best of our community,",
    "url": "https://missionlocal.org/event/20th-street-51st-annual-potrero-hill-rhythm-blues-festival/",
    "also": {
     "page": "talks-concerts.html",
     "id": "ml-872245-2026-10-17"
    }
+  },
+  {
+   "id": "ml-10041007-2026-10-17",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Introduction to Sustainable Gardening Series: Fall 2026",
+   "area": "Garden for the Environment",
+   "lat": 37.7587104,
+   "lng": -122.4638137,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-17T10:00:00-07:00",
+   "end": "2026-10-17T12:00:00-07:00",
+   "note": "Do you want to learn the basics of sustainable gardening design and care? Join us for this informative, hands-on, three-part series! Introduction to Sustainable Gardening Series – Fall 2026 October 17th, 24th, and 31st –",
+   "url": "https://missionlocal.org/event/garden-for-the-environment-introduction-to-sustainable-gardening-series-fall-2026/2026-10-17/"
   },
   {
    "id": "cas-sensory-storytime-2026-10-17-1015",
@@ -1474,12 +1875,12 @@
    "lat": 37.7434057,
    "lng": -122.386962,
    "indoor": false,
-   "exp": 0.5,
+   "exp": 0.4,
    "off": 0,
-   "free": null,
+   "free": true,
    "start": "2026-10-17T11:00:00-07:00",
    "end": "2026-10-17T16:00:00-07:00",
-   "note": "SFPUC/SECC The Southeast Community Center Presents: The 14th Annual District 10 Health Fest: Bayview in Motion! Saturday, October 17, 11AM – 4PM. This dynamic, community-centered wellness celebration merges movement, prevention, sustainability and neighborhood pride into one exciting festival at the",
+   "note": "Free neighborhood health fair with movement activities, prevention info, and community fun for families.",
    "url": "https://sf.funcheap.com/14th-annual-bayview-motion-health-fest-sf/"
   },
   {
@@ -1492,11 +1893,11 @@
    "lng": -122.3902219,
    "indoor": true,
    "exp": 0,
-   "off": -1,
-   "free": true,
+   "off": 0,
+   "free": null,
    "start": "2026-10-17T11:00:00-07:00",
    "end": "2026-10-17T16:00:00-07:00",
-   "note": "A free hands-on science festival with experiments, demonstrations, games, and shows on the UCSF Mission Bay campus.",
+   "note": "Join the Bay Area Science Festival for a free day of hands-on experiments, interactive demonstrations, games, science shows, and more. Bring the whole family to explore the wonders of science and discover something new t",
    "url": "https://sfchildrennature.org/event/bay-area-science-festival/"
   },
   {
@@ -1560,12 +1961,12 @@
    "lat": 37.7527725,
    "lng": -122.4079629,
    "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
+   "exp": 0.1,
+   "off": 1,
+   "free": true,
    "start": "2026-10-17T11:00:00-07:00",
    "end": "2026-10-17T17:00:00-07:00",
-   "note": "Brava! for Women in the ArtsBrava Theater Center hosts a free, family-friendly block party on 24th Street between Bryant and Hampshire celebrating 40 years of Brava!, 30 years of community ownership, and 100 years of the historic theater. The event includes live performances, film screenings, and ar",
+   "note": "Free family block party on 24th Street with live performances, film screenings, and art activities at a historic theater.",
    "url": "https://sf.funcheap.com/brava-40th-anniversary-celebration-block-party-2026mission/"
   },
   {
@@ -1587,10 +1988,10 @@
    "recurring": true
   },
   {
-   "id": "w-precita-eyes-mural-arts-saturday-morning-special-mural-walk-2026-10-17",
+   "id": "w-precita-eyes-mural-arts-saturday-special-mural-walk-led-by-c-2026-10-17",
    "kind": "event",
    "source": "Precita Eyes Mural Arts",
-   "name": "Saturday Morning Special Mural Walk",
+   "name": "Saturday Special Mural Walk (led by Carmela Gaspar)",
    "area": "Precita Eyes Mural Arts Center, 2981 24th St",
    "lat": 37.7526,
    "lng": -122.4126,
@@ -1600,7 +2001,7 @@
    "free": null,
    "start": "2026-10-17T11:30:00-07:00",
    "end": "2026-10-17T13:00:00-07:00",
-   "note": "Public mural walk led by Carmela Gaspar, about 1.5 hours; price and age limits are not stated, so check when booking.",
+   "note": "About 1.5-hour neighborhood mural tour; price and age limits are not stated, so check before booking.",
    "url": "https://www.precitaeyes.org/",
    "bookAhead": false
   },
@@ -1629,23 +2030,6 @@
     "page": "talks-concerts.html",
     "id": "ml-875790-2026-10-17"
    }
-  },
-  {
-   "id": "fc-district-8-castro-family-summit-2026-10-17",
-   "kind": "event",
-   "source": "funcheap",
-   "name": "District 8 Castro Family Summit",
-   "area": "Eureka Valley Recreation Center",
-   "lat": 37.7601919,
-   "lng": -122.4364867,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-17T13:00:00-07:00",
-   "end": "2026-10-17T15:30:00-07:00",
-   "note": "San Francisco Department of Children, Youth & Their Families (DCYF) This is Your City. This is Your Voice. This is Your Future. Share your story about growing up and raising your family in San Francisco. Every family has a story. Every voice matters. Please share yours. Join us for the District 8 Ca",
-   "url": "https://sf.funcheap.com/district-8-castro-family-summit/"
   },
   {
    "id": "precita-mural-tour-2026-10-17",
@@ -1683,7 +2067,7 @@
    "free": null,
    "start": "2026-10-17T14:00:00-07:00",
    "end": "2026-10-17T16:30:00-07:00",
-   "note": "Outdoor festival concert on the Great Lawn at Yerba Buena Gardens; the listing doesn't state price or age limits.",
+   "note": "Outdoor music performance on the Great Lawn at Yerba Buena Gardens; price and age limits are not stated.",
    "url": "https://www.moadsf.org/events",
    "bookAhead": false,
    "also": {
@@ -1818,6 +2202,103 @@
    ]
   },
   {
+   "id": "ml-10041045-2026-10-17",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Harvest: The Fall Choreographers Showcase",
+   "area": "Dance Mission Theater",
+   "lat": 37.7524015,
+   "lng": -122.4188994,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-17T19:00:00-07:00",
+   "end": "2026-10-17T21:00:00-07:00",
+   "note": "Dance Mission Theater presents Harvest: The Fall Choreographers Showcase Oct 17-18, 2026: Sat 7pm, Sun 6pm Tickets: https://events.humanitix.com/harvest-the-fall-choreographers-showcase At Dance Mission Theater The Chore",
+   "url": "https://missionlocal.org/event/dance-mission-theater-harvest-the-fall-choreographers-showcase/2026-10-17/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-10041045-2026-10-17"
+   }
+  },
+  {
+   "id": "ml-10040833-2026-10-17",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "The Empire Strips Back: A Burlesque Parody",
+   "area": "Victoria Theatre",
+   "lat": 37.764859,
+   "lng": -122.418865,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-17T19:00:00-07:00",
+   "end": "2026-10-17T21:00:00-07:00",
+   "note": "⭐ The hit burlesque parody The Empire Strips Back: A Burlesque Parody is making its way to San Francisco! This audience fave drops classic characters into the world of burlesque. Don’t miss out! ﻿﻿🎟️ Returning Customer O",
+   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-10-17/1/"
+  },
+  {
+   "id": "ml-10040928-2026-10-17",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Grief Dialogues’ Our Loving Companions",
+   "area": "The Marsh",
+   "lat": 37.7558531,
+   "lng": -122.4212321,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-17T19:30:00-07:00",
+   "end": "2026-10-17T21:00:00-07:00",
+   "note": "Using immersive theatre to support empathy, reflection & community connection Our Loving Companions is a groundbreaking immersive theater experience celebrating the beautiful bond at the heart of pet ownership. A bond st",
+   "url": "https://missionlocal.org/event/the-marsh-grief-dialogues-our-loving-companions/2026-10-17/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-10040928-2026-10-17"
+   }
+  },
+  {
+   "id": "ml-874571-2026-10-17",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "‘The Human Experience’ – by Ramya Shankar’s Ensemble",
+   "area": "Red Poppy Art House",
+   "lat": 37.7542156,
+   "lng": -122.4145376,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-17T19:30:00-07:00",
+   "end": "2026-10-17T21:00:00-07:00",
+   "note": "The Human Experience is an interactive performance exploring what it means to be human through jazz standards, Carnatic motifs, ancient Tamil poetry, and original compositions. Moving through emotions such as grief, love",
+   "url": "https://missionlocal.org/event/red-poppy-art-house-the-human-experience-by-ramya-shankars-ensemble/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-874571-2026-10-17"
+   }
+  },
+  {
+   "id": "ml-10041057-2026-10-18",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Basic Stone Lithography",
+   "area": "Graphic Arts Workshop",
+   "lat": 37.7570009,
+   "lng": -122.3880184,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-18T10:00:00-07:00",
+   "end": "2026-10-18T16:00:00-07:00",
+   "note": "In this 4-day class, students will learn the basics of stone lithography from preparing, drawing, and processing of the stone through the printing of the edition and documentation. We will focus on the basics but will to",
+   "url": "https://missionlocal.org/event/graphic-arts-workshop-basic-stone-lithography/2026-10-18/"
+  },
+  {
    "id": "fc-brain-brew-ride-sf-2026-10-18",
    "kind": "event",
    "source": "funcheap",
@@ -1825,13 +2306,13 @@
    "area": "YMCA Buchanan",
    "lat": 37.7842386,
    "lng": -122.4291749,
-   "indoor": false,
-   "exp": 0.5,
+   "indoor": true,
+   "exp": 0,
    "off": 0,
-   "free": null,
+   "free": true,
    "start": "2026-10-18T10:00:00-07:00",
    "end": "2026-10-18T15:00:00-07:00",
-   "note": "Submitted by the Event OrganizerBrain BrewBrain Brew is a youth-led brain health initiative bringing a free, interactive Community Day to San Francisco. Visitors can take part in Brain Olympics, hands-on neuroscience activities, the Community Memory Wall, brain-health demonstrations, prizes, food an",
+   "note": "Free community day at the YMCA Buchanan with brain games, hands-on neuroscience activities, prizes, and food.",
    "url": "https://sf.funcheap.com/brain-brew-ride-sf/"
   },
   {
@@ -1946,6 +2427,27 @@
    "recurring": true
   },
   {
+   "id": "ml-874565-2026-10-18",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Cybersentics Book Club October 2026: Here/There",
+   "area": "Gray Area Grand Theater",
+   "lat": 37.7544054,
+   "lng": -122.4183493,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-18T12:00:00-07:00",
+   "end": "2026-10-18T14:00:00-07:00",
+   "note": "Join us for October’s Cybersentics Book Club, where we’ll discuss a chapter on artists’ work with telepresence, focusing on the Satellite Arts Project—pioneering telecollaborative performance work created by Kit Galloway",
+   "url": "https://missionlocal.org/event/gray-area-grand-theater-cybersentics-book-club-october-2026-here-there/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-874565-2026-10-18"
+   }
+  },
+  {
    "id": "fc-mxtx-wei-ying-birthday-cupsleeve-event-sf-2026-10-18",
    "kind": "event",
    "source": "funcheap",
@@ -2031,6 +2533,44 @@
    "url": "https://sfpl.org/events/2026/10/18/social-halloween-costume-swap"
   },
   {
+   "id": "ml-874560-2026-10-18",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Litquake presents: Menopause Extravaganza",
+   "area": "Gray Area Grand Theater",
+   "lat": 37.7544054,
+   "lng": -122.4183493,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-18T14:30:00-07:00",
+   "end": "2026-10-18T17:00:00-07:00",
+   "note": "Menopause, a natural consequence of aging, has for centuries been alternately ignored and belittled, seen mostly through a male lens of bafflement, repugnance, and boilerplate misogyny. Now, however, a growing body of wo",
+   "url": "https://missionlocal.org/event/gray-area-grand-theater-litquake-presents-menopause-extravaganza/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-874560-2026-10-18"
+   }
+  },
+  {
+   "id": "ml-10040929-2026-10-18",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Grief Dialogues’ Our Loving Companions",
+   "area": "The Marsh",
+   "lat": 37.7558531,
+   "lng": -122.4212321,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-18T15:00:00-07:00",
+   "end": "2026-10-18T17:00:00-07:00",
+   "note": "Using immersive theatre to support empathy, reflection & community connection Our Loving Companions is a groundbreaking immersive theater experience celebrating the beautiful bond at the heart of pet ownership. A bond st",
+   "url": "https://missionlocal.org/event/the-marsh-grief-dialogues-our-loving-companions/2026-10-18/"
+  },
+  {
    "id": "fc-mainstage-1-beethovens-eroica-heros-journey-2026-10-18",
    "kind": "event",
    "source": "funcheap",
@@ -2082,6 +2622,65 @@
    "note": "Discover how these incredible animals use electric signals to locate prey on the ocean floor. (Picked by Local Kiddo SF.)",
    "url": "https://www.calacademy.org/events/programs/lagoon-senses-0",
    "recurring": true
+  },
+  {
+   "id": "ml-10040835-2026-10-18",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "The Empire Strips Back: A Burlesque Parody",
+   "area": "Victoria Theatre",
+   "lat": 37.764859,
+   "lng": -122.418865,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-18T16:00:00-07:00",
+   "end": "2026-10-18T18:00:00-07:00",
+   "note": "⭐ The hit burlesque parody The Empire Strips Back: A Burlesque Parody is making its way to San Francisco! This audience fave drops classic characters into the world of burlesque. Don’t miss out! ﻿﻿🎟️ Returning Customer O",
+   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-10-18/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-10040835-2026-10-18"
+   }
+  },
+  {
+   "id": "ml-10041046-2026-10-18",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Harvest: The Fall Choreographers Showcase",
+   "area": "Dance Mission Theater",
+   "lat": 37.7524015,
+   "lng": -122.4188994,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-18T18:00:00-07:00",
+   "end": "2026-10-18T20:00:00-07:00",
+   "note": "Dance Mission Theater presents Harvest: The Fall Choreographers Showcase Oct 17-18, 2026: Sat 7pm, Sun 6pm Tickets: https://events.humanitix.com/harvest-the-fall-choreographers-showcase At Dance Mission Theater The Chore",
+   "url": "https://missionlocal.org/event/dance-mission-theater-harvest-the-fall-choreographers-showcase/2026-10-18/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-10041046-2026-10-18"
+   }
+  },
+  {
+   "id": "ml-876459-2026-10-18",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Mucha Salsa+",
+   "area": "Verdi Club",
+   "lat": 37.7634058,
+   "lng": -122.4079386,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-18T18:30:00-07:00",
+   "end": "2026-10-18T23:00:00-07:00",
+   "note": "Mucha Salsa Social in the heart of San Francisco Mission District! Complimentary Beginner Salsa and Intermediate Salsa classes 7pm-8pm. Social dancing to live DJ from 8pm-11:30pm at Verdi Club (2424 Mariposa St, San Fran",
+   "url": "https://missionlocal.org/event/verdi-club-mucha-salsa/"
   },
   {
    "id": "sfpl-2026-10-19-social-monday-fun-day-family-dance-party",
@@ -2254,11 +2853,11 @@
    "lng": -122.4190674,
    "indoor": false,
    "exp": 0.5,
-   "off": -2,
-   "free": true,
+   "off": 0,
+   "free": null,
    "start": "2026-10-20T09:30:00-07:00",
    "end": "2026-10-20T12:00:00-07:00",
-   "note": "A library storytime with songs and movement at Hellen Willis Playground, suited to young children.",
+   "note": "The Library’s YouthMobile is coming to the park!",
    "url": "https://sfchildrennature.org/event/swing-into-stories-hilltop-playground-2-2/2026-10-20/"
   },
   {
@@ -2499,6 +3098,95 @@
    "price": "$10–50"
   },
   {
+   "id": "ml-10041037-2026-10-20",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Kitchen Confidence",
+   "area": "18 Reasons",
+   "lat": 37.7615756,
+   "lng": -122.4253905,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-20T18:00:00-07:00",
+   "end": "2026-10-20T21:30:00-07:00",
+   "note": "Are you ready to level up your kitchen skills? This three week series was created for the beginner cook to help set a foundation for a future of confident and creative cooking! On day one, students will get to know the m",
+   "url": "https://missionlocal.org/event/18-reasons-kitchen-confidence/2026-10-20/"
+  },
+  {
+   "id": "ml-875077-2026-10-20",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Writer’s Block Party: an 826 Valencia Fundraiser",
+   "area": "Southern Pacific Brewing Company",
+   "lat": 37.7601026,
+   "lng": -122.4142258,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-20T18:00:00-07:00",
+   "end": "2026-10-20T21:00:00-07:00",
+   "note": "Every block has a story, and every ticket supports our city’s young storytellers. The 826 Valencia Associate Board invites you to Writer’s Block Party at Southern Pacific Brewing. This year’s theme celebrates SF’s neighb",
+   "url": "https://missionlocal.org/event/southern-pacific-brewing-company-writers-block-party-an-826-valencia-fundraiser/"
+  },
+  {
+   "id": "ml-10040900-2026-10-20",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Tuesday Night Lindy Hop and Balboa Classes",
+   "area": "Verdi Club",
+   "lat": 37.7634058,
+   "lng": -122.4079386,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-20T19:00:00-07:00",
+   "end": "2026-10-20T21:00:00-07:00",
+   "note": "In October 2026, the Woodchopper’s Ball is offering monthly class series in LINDY HOP, BALBOA, and SLOW BALBOA. All October 2026 monthly class series run on Tuesdays for 4 weeks: October 6, 13, 20, and 27. Check the clas",
+   "url": "https://missionlocal.org/event/verdi-club-tuesday-night-lindy-hop-and-balboa-classes-6/2026-10-20/"
+  },
+  {
+   "id": "ml-876454-2026-10-20",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Mike Rinta & The Swing Therapists at the Woodchopper’s Ball",
+   "area": "Verdi Club",
+   "lat": 37.7634058,
+   "lng": -122.4079386,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-20T21:00:00-07:00",
+   "end": "2026-10-20T23:30:00-07:00",
+   "note": "MIKE RINTA & THE SWING THERAPISTS: Mike Rinta & The Swing Therapists work together regularly, 3 to 4 days a week, playing jazz from 1945 and earlier for seniors under the name The Jazz Therapists. All the musicians are f",
+   "url": "https://missionlocal.org/event/verdi-club-mike-rinta-the-swing-therapists-at-the-woodchoppers-ball/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-876454-2026-10-20"
+   }
+  },
+  {
+   "id": "ml-10040164-2026-10-21",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Clases de Yoga",
+   "area": "The Women’s Building",
+   "lat": 37.7614397,
+   "lng": -122.4226557,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-21T08:00:00-07:00",
+   "end": "2026-10-21T17:00:00-07:00",
+   "note": "¡Regresan nuestras clases de Yoga! Acompáñanos todos los miércoles desde el 15 de julio, de 2:00 a 3:00 PM, en El Edificio de Mujeres, segundo piso. Facilita Majo García. Parte de SanArte: Bienestar Comunitario para Ment",
+   "url": "https://missionlocal.org/event/the-womens-building-clases-de-yoga/2026-10-21/"
+  },
+  {
    "id": "ybg-rhythm-motion-2026-10-21",
    "source": "manual",
    "kind": "event",
@@ -2517,6 +3205,27 @@
    "tags": [
     "dance"
    ]
+  },
+  {
+   "id": "ml-10040836-2026-10-21",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "The Empire Strips Back: A Burlesque Parody",
+   "area": "Victoria Theatre",
+   "lat": 37.764859,
+   "lng": -122.418865,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-21T19:30:00-07:00",
+   "end": "2026-10-21T21:30:00-07:00",
+   "note": "⭐ The hit burlesque parody The Empire Strips Back: A Burlesque Parody is making its way to San Francisco! This audience fave drops classic characters into the world of burlesque. Don’t miss out! ﻿﻿🎟️ Returning Customer O",
+   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-10-21/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-10040836-2026-10-21"
+   }
   },
   {
    "source": "manual",
@@ -2553,6 +3262,69 @@
    "note": "Hands-on beekeeping with the farm's resident beekeepers. Kids under 9 need an adult taking part too; fee covers materials. Rescheduled if it rains; registration on the farm's site.",
    "url": "https://www.hawkcreekfarm.org/farm-experiences.html",
    "bookAhead": true
+  },
+  {
+   "id": "ml-876200-2026-10-22",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Randy Gaul’s INNER WORKINGS | Opening Night",
+   "area": "111 Minna Gallery",
+   "lat": 37.7874657,
+   "lng": -122.3993218,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-22T17:00:00-07:00",
+   "end": "2026-10-22T22:00:00-07:00",
+   "note": "eet film artist Randy Gaul and explore his worlds beyond Industrial Light & Magic at Inner Workings, opening at 111 Minna Gallery. Before an extraordinary world reaches the screen, someone has to imagine it. Randy Gaul h",
+   "url": "https://missionlocal.org/event/111-minna-gallery-randy-gauls-inner-workings-opening-night/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-876200-2026-10-22"
+   }
+  },
+  {
+   "id": "ml-876475-2026-10-22",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Her Story, History, Their Story, Whose Story? Facts and Fictions in Historical Queer Books",
+   "area": "GLBT History Museum",
+   "lat": 37.7606979,
+   "lng": -122.4356494,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-22T18:00:00-07:00",
+   "end": "2026-10-22T20:00:00-07:00",
+   "note": "RSVP and reserve tickets here https://herstory_history_litquake.eventbrite.com/ The GLBT Historical Society in partnership with the Bay Area Reporter and Litquake present a panel discussion as part of the 2026 Litquake f",
+   "url": "https://missionlocal.org/event/glbt-history-museum-her-story-history-their-story-whose-story-facts-and-fictions-in-historical-queer-books/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-876475-2026-10-22"
+   }
+  },
+  {
+   "id": "ml-876203-2026-10-22",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "PASSION PROJECTS SF: The Artist Behind the Effect | Opening Night",
+   "area": "111 Minna Gallery",
+   "lat": 37.7874657,
+   "lng": -122.3993218,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-22T18:00:00-07:00",
+   "end": "2026-10-22T22:00:00-07:00",
+   "note": "Meet the visual effects artists behind films and television you love. Discover their personal art at 111 Minna Gallery on Oct 22. You know the worlds they help bring to life. Now meet the artists behind them. Join us on ",
+   "url": "https://missionlocal.org/event/111-minna-gallery-passion-projects-sf-the-artist-behind-the-effect-opening-night/",
+   "also": {
+    "page": "talks-concerts.html",
+    "id": "ml-876203-2026-10-22"
+   }
   },
   {
    "id": "ml-10040837-2026-10-22",
@@ -2791,10 +3563,10 @@
    }
   },
   {
-   "id": "w-precita-eyes-mural-arts-saturday-morning-special-mural-walk-2026-10-24",
+   "id": "w-precita-eyes-mural-arts-saturday-special-mural-walk-led-by-c-2026-10-24",
    "kind": "event",
    "source": "Precita Eyes Mural Arts",
-   "name": "Saturday Morning Special Mural Walk",
+   "name": "Saturday Special Mural Walk (led by Carmela Gaspar)",
    "area": "Precita Eyes Mural Arts Center, 2981 24th St",
    "lat": 37.7526,
    "lng": -122.4126,
@@ -2804,7 +3576,7 @@
    "free": null,
    "start": "2026-10-24T11:30:00-07:00",
    "end": "2026-10-24T13:00:00-07:00",
-   "note": "Public mural walk led by Carmela Gaspar, about 1.5 hours; price and age limits are not stated, so check when booking.",
+   "note": "About 1.5-hour neighborhood mural tour; price and age limits are not stated, so check before booking.",
    "url": "https://www.precitaeyes.org/",
    "bookAhead": false
   },
@@ -3565,10 +4337,10 @@
    "url": "https://missionlocal.org/event/z-space-word-for-wordplay-presents-spooky-fam-jam/"
   },
   {
-   "id": "w-precita-eyes-mural-arts-saturday-morning-special-mural-walk-2026-10-31",
+   "id": "w-precita-eyes-mural-arts-saturday-special-mural-walk-led-by-c-2026-10-31",
    "kind": "event",
    "source": "Precita Eyes Mural Arts",
-   "name": "Saturday Morning Special Mural Walk",
+   "name": "Saturday Special Mural Walk (led by Carmela Gaspar)",
    "area": "Precita Eyes Mural Arts Center, 2981 24th St",
    "lat": 37.7526,
    "lng": -122.4126,
@@ -3578,7 +4350,7 @@
    "free": null,
    "start": "2026-10-31T11:30:00-07:00",
    "end": "2026-10-31T13:00:00-07:00",
-   "note": "Public mural walk led by Carmela Gaspar, about 1.5 hours; price and age limits are not stated, so check when booking.",
+   "note": "About 1.5-hour neighborhood mural tour; price and age limits are not stated, so check before booking.",
    "url": "https://www.precitaeyes.org/",
    "bookAhead": false
   },
@@ -3936,7 +4708,7 @@
    "free": true,
    "start": "2026-11-05T16:00:00-08:00",
    "end": "2026-11-05T20:00:00-08:00",
-   "note": "Free access to current exhibitions at MoAD on the first Thursday evening; no age limits are stated.",
+   "note": "Free access to current exhibitions on an evening visit; no age limits are stated.",
    "url": "https://www.moadsf.org/events",
    "bookAhead": false
   },
@@ -4014,7 +4786,7 @@
    "indoor": false,
    "exp": 0.5,
    "off": 0,
-   "free": true,
+   "free": null,
    "start": "2026-11-07T10:00:00-08:00",
    "end": "2026-11-07T12:00:00-08:00",
    "note": "Learn how to make your own backyard compost… for FREE! Keep precious organic matter and plant nutrients in your yard and improve your soil Learn how to make your very own compost! The backbone of every healthy garden, co",
@@ -4097,10 +4869,10 @@
    "bookAhead": true
   },
   {
-   "id": "w-precita-eyes-mural-arts-classic-mural-tour-2026-11-07",
+   "id": "w-precita-eyes-mural-arts-classic-mural-tour-led-by-patricia-r-2026-11-07",
    "kind": "event",
    "source": "Precita Eyes Mural Arts",
-   "name": "Classic Mural Tour",
+   "name": "Classic Mural Tour (led by Patricia Rose)",
    "area": "Precita Eyes Mural Arts Center, 2981 24th St",
    "lat": 37.7526,
    "lng": -122.4126,
@@ -4110,7 +4882,7 @@
    "free": null,
    "start": "2026-11-07T13:30:00-08:00",
    "end": "2026-11-07T15:00:00-08:00",
-   "note": "Neighborhood mural tour led by Patricia Rose, about 1.5 hours; price and age limits are not stated, so check when booking.",
+   "note": "About 1.5-hour tour with local history; price and age limits are not stated, so check before booking.",
    "url": "https://www.precitaeyes.org/",
    "bookAhead": false
   },
@@ -4153,6 +4925,24 @@
    "tags": [
     "music"
    ]
+  },
+  {
+   "id": "w-sf-ballet-family-shows-tiny-dances-swan-lake-sensory-friendl-2026-11-07",
+   "kind": "event",
+   "source": "SF Ballet family shows",
+   "name": "Tiny Dances: Swan Lake (Sensory Friendly Performance)",
+   "area": "Palace of Fine Arts Theatre",
+   "lat": 37.803,
+   "lng": -122.4486,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-07T15:00:00-08:00",
+   "end": "2026-11-07T16:20:00-08:00",
+   "note": "Adapted for neurodivergent audiences of all ages, with modified lighting and sound, an ASL interpreter, and quiet spaces. Ticketed; prices not listed.",
+   "url": "https://www.sfballet.org/productions/tiny-dances/",
+   "bookAhead": true
   },
   {
    "id": "ml-875073-2026-11-07",
@@ -4434,44 +5224,6 @@
    }
   },
   {
-   "id": "ml-10040856-2026-11-13",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "The Empire Strips Back: A Burlesque Parody",
-   "area": "Victoria Theatre",
-   "lat": 37.764859,
-   "lng": -122.418865,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-11-13T19:00:00-08:00",
-   "end": "2026-11-13T21:00:00-08:00",
-   "note": "⭐ The hit burlesque parody The Empire Strips Back: A Burlesque Parody is making its way to San Francisco! This audience fave drops classic characters into the world of burlesque. Don’t miss out! ﻿﻿🎟️ Returning Customer O",
-   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-13/",
-   "also": {
-    "page": "talks-concerts.html",
-    "id": "ml-10040856-2026-11-13"
-   }
-  },
-  {
-   "id": "ml-10038120-2026-11-14",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Grow Your Own Food Workshops 2026",
-   "area": "Garden for the Environment",
-   "lat": 37.7587104,
-   "lng": -122.4638137,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
-   "start": "2026-11-14T10:00:00-08:00",
-   "end": "2026-11-14T12:00:00-08:00",
-   "note": "In this engaging workshop, learn about how to grow your own edible plants year-round in San Francisco’s mild climate. In this in-person workshop, learn to take full advantage of the unique gardening climate in San Franci",
-   "url": "https://missionlocal.org/event/garden-for-the-environment-grow-your-own-food-workshops-2026/2026-11-14/"
-  },
-  {
    "id": "msw-mission-2026-11-14",
    "kind": "event",
    "source": "Mission Science Workshop",
@@ -4493,7 +5245,7 @@
    "id": "w-museum-of-the-african-diaspora-thrive-moad-free-community-da-2026-11-14",
    "kind": "event",
    "source": "Museum of the African Diaspora",
-   "name": "Thrive @ MoAD Free Community Day, sponsored by Kaiser Permanente",
+   "name": "Thrive @ MoAD Free Community Day",
    "area": "MoAD, 685 Mission St",
    "lat": 37.7864,
    "lng": -122.4012,
@@ -4503,15 +5255,15 @@
    "free": true,
    "start": "2026-11-14T11:00:00-08:00",
    "end": "2026-11-14T17:00:00-08:00",
-   "note": "Free community day at MoAD, sponsored by Kaiser Permanente, with no age limits stated.",
+   "note": "Free community day sponsored by Kaiser Permanente, suitable for a family outing.",
    "url": "https://www.moadsf.org/events",
    "bookAhead": false
   },
   {
-   "id": "w-precita-eyes-mural-arts-classic-mural-tour-2026-11-14",
+   "id": "w-precita-eyes-mural-arts-classic-mural-tour-led-by-patricia-r-2026-11-14",
    "kind": "event",
    "source": "Precita Eyes Mural Arts",
-   "name": "Classic Mural Tour",
+   "name": "Classic Mural Tour (led by Patricia Rose)",
    "area": "Precita Eyes Mural Arts Center, 2981 24th St",
    "lat": 37.7526,
    "lng": -122.4126,
@@ -4521,7 +5273,7 @@
    "free": null,
    "start": "2026-11-14T13:30:00-08:00",
    "end": "2026-11-14T15:00:00-08:00",
-   "note": "Neighborhood mural tour led by Patricia Rose, about 1.5 hours; price and age limits are not stated, so check when booking.",
+   "note": "About 1.5-hour tour with local history; price and age limits are not stated, so check before booking.",
    "url": "https://www.precitaeyes.org/",
    "bookAhead": false
   },
@@ -4559,7 +5311,7 @@
    "free": null,
    "start": "2026-11-14T14:00:00-08:00",
    "end": "2026-11-14T16:00:00-08:00",
-   "note": "Cat-themed in-person event at MoAD; the listing doesn't state price or age limits.",
+   "note": "Playful cat-themed community event; the listing does not state price or age limits, so check with the museum.",
    "url": "https://www.moadsf.org/events",
    "bookAhead": false
   },
@@ -4582,48 +5334,6 @@
    "tags": [
     "music"
    ]
-  },
-  {
-   "id": "ml-10040857-2026-11-14",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "The Empire Strips Back: A Burlesque Parody",
-   "area": "Victoria Theatre",
-   "lat": 37.764859,
-   "lng": -122.418865,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-11-14T19:00:00-08:00",
-   "end": "2026-11-14T21:00:00-08:00",
-   "note": "⭐ The hit burlesque parody The Empire Strips Back: A Burlesque Parody is making its way to San Francisco! This audience fave drops classic characters into the world of burlesque. Don’t miss out! ﻿﻿🎟️ Returning Customer O",
-   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-14/1/",
-   "also": {
-    "page": "talks-concerts.html",
-    "id": "ml-10040857-2026-11-14"
-   }
-  },
-  {
-   "id": "ml-10040859-2026-11-15",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "The Empire Strips Back: A Burlesque Parody",
-   "area": "Victoria Theatre",
-   "lat": 37.764859,
-   "lng": -122.418865,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-11-15T16:00:00-08:00",
-   "end": "2026-11-15T18:00:00-08:00",
-   "note": "⭐ The hit burlesque parody The Empire Strips Back: A Burlesque Parody is making its way to San Francisco! This audience fave drops classic characters into the world of burlesque. Don’t miss out! ﻿﻿🎟️ Returning Customer O",
-   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-15/",
-   "also": {
-    "page": "talks-concerts.html",
-    "id": "ml-10040859-2026-11-15"
-   }
   },
   {
    "id": "sfpl-2026-11-16-performance-nutcracker-sweets-ballet-mark-foehringer-dance-project",
@@ -4683,23 +5393,6 @@
    "start": "2026-11-17T11:30:00-08:00",
    "end": "2026-11-17T13:00:00-08:00",
    "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
-  },
-  {
-   "id": "ml-10040168-2026-11-18",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Clases de Yoga",
-   "area": "The Women’s Building",
-   "lat": 37.7614397,
-   "lng": -122.4226557,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
-   "start": "2026-11-18T08:00:00-08:00",
-   "end": "2026-11-18T17:00:00-08:00",
-   "note": "¡Regresan nuestras clases de Yoga! Acompáñanos todos los miércoles desde el 15 de julio, de 2:00 a 3:00 PM, en El Edificio de Mujeres, segundo piso. Facilita Majo García. Parte de SanArte: Bienestar Comunitario para Ment",
-   "url": "https://missionlocal.org/event/the-womens-building-clases-de-yoga/2026-11-18/"
   },
   {
    "id": "sfpl-2026-11-18-performance-nutcracker-sweets-ballet-mark-foehringer-dance-project",
@@ -4839,10 +5532,10 @@
    "bookAhead": true
   },
   {
-   "id": "w-precita-eyes-mural-arts-classic-mural-tour-2026-11-21",
+   "id": "w-precita-eyes-mural-arts-classic-mural-tour-led-by-patricia-r-2026-11-21",
    "kind": "event",
    "source": "Precita Eyes Mural Arts",
-   "name": "Classic Mural Tour",
+   "name": "Classic Mural Tour (led by Patricia Rose)",
    "area": "Precita Eyes Mural Arts Center, 2981 24th St",
    "lat": 37.7526,
    "lng": -122.4126,
@@ -4852,7 +5545,7 @@
    "free": null,
    "start": "2026-11-21T13:30:00-08:00",
    "end": "2026-11-21T15:00:00-08:00",
-   "note": "Neighborhood mural tour led by Patricia Rose, about 1.5 hours; price and age limits are not stated, so check when booking.",
+   "note": "About 1.5-hour tour with local history; price and age limits are not stated, so check before booking.",
    "url": "https://www.precitaeyes.org/",
    "bookAhead": false
   },
@@ -4894,23 +5587,6 @@
    "start": "2026-11-24T11:30:00-08:00",
    "end": "2026-11-24T13:00:00-08:00",
    "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
-  },
-  {
-   "id": "ml-10040169-2026-11-25",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Clases de Yoga",
-   "area": "The Women’s Building",
-   "lat": 37.7614397,
-   "lng": -122.4226557,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
-   "start": "2026-11-25T08:00:00-08:00",
-   "end": "2026-11-25T17:00:00-08:00",
-   "note": "¡Regresan nuestras clases de Yoga! Acompáñanos todos los miércoles desde el 15 de julio, de 2:00 a 3:00 PM, en El Edificio de Mujeres, segundo piso. Facilita Majo García. Parte de SanArte: Bienestar Comunitario para Ment",
-   "url": "https://missionlocal.org/event/the-womens-building-clases-de-yoga/2026-11-25/"
   },
   {
    "source": "manual",
@@ -5012,27 +5688,10 @@
    "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
   },
   {
-   "id": "ml-10040170-2026-12-02",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Clases de Yoga",
-   "area": "The Women’s Building",
-   "lat": 37.7614397,
-   "lng": -122.4226557,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
-   "start": "2026-12-02T08:00:00-08:00",
-   "end": "2026-12-02T17:00:00-08:00",
-   "note": "¡Regresan nuestras clases de Yoga! Acompáñanos todos los miércoles desde el 15 de julio, de 2:00 a 3:00 PM, en El Edificio de Mujeres, segundo piso. Facilita Majo García. Parte de SanArte: Bienestar Comunitario para Ment",
-   "url": "https://missionlocal.org/event/the-womens-building-clases-de-yoga/2026-12-02/"
-  },
-  {
-   "id": "w-odc-theater-odc-dance-presents-the-velveteen-rabbit-2026-12-02",
+   "id": "w-odc-theater-the-velveteen-rabbit-2026-12-02",
    "kind": "event",
    "source": "ODC Theater",
-   "name": "ODC/Dance presents: The Velveteen Rabbit",
+   "name": "The Velveteen Rabbit",
    "area": "ODC Theater, 3153 17th St (Mission)",
    "lat": 37.7636,
    "lng": -122.417,
@@ -5042,7 +5701,7 @@
    "free": null,
    "start": "2026-12-02T11:00:00-08:00",
    "end": null,
-   "note": "Children's ballet adaptation of the classic story; ticket price and age recommendations are not listed on the website.",
+   "note": "Family-friendly children's ballet; the listing doesn't state an age limit or ticket price, so check before attending.",
    "url": "https://odc.dance/CALENDAR",
    "bookAhead": true
   },
@@ -5065,10 +5724,10 @@
    "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
   },
   {
-   "id": "w-odc-theater-odc-dance-presents-the-velveteen-rabbit-2026-12-04",
+   "id": "w-odc-theater-the-velveteen-rabbit-2026-12-04",
    "kind": "event",
    "source": "ODC Theater",
-   "name": "ODC/Dance presents: The Velveteen Rabbit",
+   "name": "The Velveteen Rabbit",
    "area": "ODC Theater, 3153 17th St (Mission)",
    "lat": 37.7636,
    "lng": -122.417,
@@ -5078,26 +5737,9 @@
    "free": null,
    "start": "2026-12-04T11:00:00-08:00",
    "end": null,
-   "note": "Children's ballet adaptation of the classic story; ticket price and age recommendations are not listed on the website.",
+   "note": "Family-friendly children's ballet; the listing doesn't state an age limit or ticket price, so check before attending.",
    "url": "https://odc.dance/CALENDAR",
    "bookAhead": true
-  },
-  {
-   "id": "ml-10038132-2026-12-05",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Free Urban Composting Workshops 2026",
-   "area": "Garden for the Environment",
-   "lat": 37.7587104,
-   "lng": -122.4638137,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": true,
-   "start": "2026-12-05T10:00:00-08:00",
-   "end": "2026-12-05T12:00:00-08:00",
-   "note": "Learn how to make your own backyard compost… for FREE! Keep precious organic matter and plant nutrients in your yard and improve your soil Learn how to make your very own compost! The backbone of every healthy garden, co",
-   "url": "https://missionlocal.org/event/garden-for-the-environment-free-urban-composting-workshops-2026/2026-12-05/"
   },
   {
    "id": "msw-bayview-2026-12-05",
@@ -5118,10 +5760,10 @@
    "recurring": false
   },
   {
-   "id": "w-odc-theater-odc-dance-presents-the-velveteen-rabbit-2026-12-05",
+   "id": "w-odc-theater-the-velveteen-rabbit-2026-12-05",
    "kind": "event",
    "source": "ODC Theater",
-   "name": "ODC/Dance presents: The Velveteen Rabbit",
+   "name": "The Velveteen Rabbit",
    "area": "ODC Theater, 3153 17th St (Mission)",
    "lat": 37.7636,
    "lng": -122.417,
@@ -5131,7 +5773,7 @@
    "free": null,
    "start": "2026-12-05T11:00:00-08:00",
    "end": null,
-   "note": "Children's ballet adaptation of the classic story; ticket price and age recommendations are not listed on the website.",
+   "note": "Family-friendly children's ballet; the listing doesn't state an age limit or ticket price, so check before attending.",
    "url": "https://odc.dance/CALENDAR",
    "bookAhead": true
   },
@@ -5157,31 +5799,10 @@
    }
   },
   {
-   "id": "ml-10040138-2026-12-05",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Killing My Lobster and Z Space present ‘Sketch on Speed’ at Z Below",
-   "area": "Z Space",
-   "lat": 37.7637026,
-   "lng": -122.411551,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-12-05T21:00:00-08:00",
-   "end": "2026-12-05T23:59:00-08:00",
-   "note": "In today’s fast-paced world, immediate gratification is all the rage–and sketch comedy troupe Killing My Lobster is here to provide! Over the course of twelve hours, we are forcing our writers and actors to produce an en",
-   "url": "https://missionlocal.org/event/z-space-killing-my-lobster-and-z-space-present-sketch-on-speed-at-z-below/2026-12-05/",
-   "also": {
-    "page": "talks-concerts.html",
-    "id": "ml-10040138-2026-12-05"
-   }
-  },
-  {
-   "id": "w-odc-theater-odc-dance-presents-the-velveteen-rabbit-2026-12-06",
+   "id": "w-odc-theater-the-velveteen-rabbit-2026-12-06",
    "kind": "event",
    "source": "ODC Theater",
-   "name": "ODC/Dance presents: The Velveteen Rabbit",
+   "name": "The Velveteen Rabbit",
    "area": "ODC Theater, 3153 17th St (Mission)",
    "lat": 37.7636,
    "lng": -122.417,
@@ -5191,26 +5812,9 @@
    "free": null,
    "start": "2026-12-06T14:00:00-08:00",
    "end": null,
-   "note": "Children's ballet adaptation of the classic story; ticket price and age recommendations are not listed on the website.",
+   "note": "Family-friendly children's ballet; the listing doesn't state an age limit or ticket price, so check before attending.",
    "url": "https://odc.dance/CALENDAR",
    "bookAhead": true
-  },
-  {
-   "id": "ml-10040893-2026-12-06",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "1st Sundays in SF are for Salsa | Salsa Lesson & Party",
-   "area": "Verdi Club",
-   "lat": 37.7634058,
-   "lng": -122.4079386,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
-   "start": "2026-12-06T19:00:00-08:00",
-   "end": "2026-12-06T23:30:00-08:00",
-   "note": "🔥 FIRST SUNDAYS ARE FOR SALSA in SAN FRANCISCO! 🔥 Join us Sunday, October 4 at the Verdi Club for SF Salsa Social, a night dedicated to 100% Salsa & Mambo in San Francisco. Come dance, meet new people, catch up with frie",
-   "url": "https://missionlocal.org/event/verdi-club-1st-sundays-in-sf-are-for-salsa-salsa-lesson-party/2026-12-06/"
   },
   {
    "source": "manual",
@@ -5252,23 +5856,6 @@
    "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
   },
   {
-   "id": "ml-10040171-2026-12-09",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Clases de Yoga",
-   "area": "The Women’s Building",
-   "lat": 37.7614397,
-   "lng": -122.4226557,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
-   "start": "2026-12-09T08:00:00-08:00",
-   "end": "2026-12-09T17:00:00-08:00",
-   "note": "¡Regresan nuestras clases de Yoga! Acompáñanos todos los miércoles desde el 15 de julio, de 2:00 a 3:00 PM, en El Edificio de Mujeres, segundo piso. Facilita Majo García. Parte de SanArte: Bienestar Comunitario para Ment",
-   "url": "https://missionlocal.org/event/the-womens-building-clases-de-yoga/2026-12-09/"
-  },
-  {
    "source": "manual",
    "kind": "event",
    "area": "Bernal Heights Rec Center, 500 Moultrie St",
@@ -5287,23 +5874,6 @@
    "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
   },
   {
-   "id": "ml-10038171-2026-12-12",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Growing a Garden: Where to Start Workshops 2026",
-   "area": "Garden for the Environment",
-   "lat": 37.7587104,
-   "lng": -122.4638137,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
-   "start": "2026-12-12T10:00:00-08:00",
-   "end": "2026-12-12T12:00:00-08:00",
-   "note": "Do you have a space that you would like to turn into a garden, but don’t know where to start? This class is perfect for beginner gardeners or anyone looking for a refresher. We will guide you through the steps to transfo",
-   "url": "https://missionlocal.org/event/garden-for-the-environment-growing-a-garden-where-to-start-workshops-2026/2026-12-12/"
-  },
-  {
    "id": "msw-mission-2026-12-12",
    "kind": "event",
    "source": "Mission Science Workshop",
@@ -5320,6 +5890,24 @@
    "note": "Free drop-in hands-on science: build and tinker, explore bones, fossils and rocks, and meet the workshop's animals. Runs during the school year, so check the workshop's site around holidays.",
    "url": "https://www.missionscienceworkshop.org/programs",
    "recurring": false
+  },
+  {
+   "id": "w-museum-of-the-african-diaspora-free-saturday-second-saturday-2026-12-12",
+   "kind": "event",
+   "source": "Museum of the African Diaspora",
+   "name": "Free Saturday (second Saturday of the month)",
+   "area": "MoAD, 685 Mission St",
+   "lat": 37.7864,
+   "lng": -122.4012,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-12T11:00:00-08:00",
+   "end": "2026-12-12T17:00:00-08:00",
+   "note": "Museum admission is free on the second Saturday of each month; hours are the general Saturday hours.",
+   "url": "https://www.moadsf.org/events",
+   "bookAhead": false
   },
   {
    "id": "sfjazz-family-matinee-2026-12-12",
@@ -5363,23 +5951,6 @@
    ]
   },
   {
-   "id": "ml-10040222-2026-12-14",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Karaoke: NIGHTZ @ Z",
-   "area": "Z Space",
-   "lat": 37.7637026,
-   "lng": -122.411551,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-12-14T19:00:00-08:00",
-   "end": "2026-12-14T22:00:00-08:00",
-   "note": "In Z Space’s Lobby Hosted by Charlie Gray Join us in the Z Space Lobby every second Monday of the month for YouTube Karaoke with our artistic community (that means you!). This ain’t your average Karaoke night. Whether yo",
-   "url": "https://missionlocal.org/event/z-space-karaoke-nightz-z/2026-12-14/"
-  },
-  {
    "source": "manual",
    "kind": "event",
    "area": "Bernal Heights Rec Center, 500 Moultrie St",
@@ -5417,23 +5988,6 @@
    "start": "2026-12-15T11:30:00-08:00",
    "end": "2026-12-15T13:00:00-08:00",
    "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
-  },
-  {
-   "id": "ml-10040172-2026-12-16",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Clases de Yoga",
-   "area": "The Women’s Building",
-   "lat": 37.7614397,
-   "lng": -122.4226557,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
-   "start": "2026-12-16T08:00:00-08:00",
-   "end": "2026-12-16T17:00:00-08:00",
-   "note": "¡Regresan nuestras clases de Yoga! Acompáñanos todos los miércoles desde el 15 de julio, de 2:00 a 3:00 PM, en El Edificio de Mujeres, segundo piso. Facilita Majo García. Parte de SanArte: Bienestar Comunitario para Ment",
-   "url": "https://missionlocal.org/event/the-womens-building-clases-de-yoga/2026-12-16/"
   },
   {
    "source": "manual",
@@ -5533,23 +6087,6 @@
    "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
   },
   {
-   "id": "ml-10040173-2026-12-23",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Clases de Yoga",
-   "area": "The Women’s Building",
-   "lat": 37.7614397,
-   "lng": -122.4226557,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
-   "start": "2026-12-23T08:00:00-08:00",
-   "end": "2026-12-23T17:00:00-08:00",
-   "note": "¡Regresan nuestras clases de Yoga! Acompáñanos todos los miércoles desde el 15 de julio, de 2:00 a 3:00 PM, en El Edificio de Mujeres, segundo piso. Facilita Majo García. Parte de SanArte: Bienestar Comunitario para Ment",
-   "url": "https://missionlocal.org/event/the-womens-building-clases-de-yoga/2026-12-23/"
-  },
-  {
    "source": "manual",
    "kind": "event",
    "area": "Bernal Heights Rec Center, 500 Moultrie St",
@@ -5607,23 +6144,6 @@
    "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
   },
   {
-   "id": "ml-10040174-2026-12-30",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Clases de Yoga",
-   "area": "The Women’s Building",
-   "lat": 37.7614397,
-   "lng": -122.4226557,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
-   "start": "2026-12-30T08:00:00-08:00",
-   "end": "2026-12-30T17:00:00-08:00",
-   "note": "¡Regresan nuestras clases de Yoga! Acompáñanos todos los miércoles desde el 15 de julio, de 2:00 a 3:00 PM, en El Edificio de Mujeres, segundo piso. Facilita Majo García. Parte de SanArte: Bienestar Comunitario para Ment",
-   "url": "https://missionlocal.org/event/the-womens-building-clases-de-yoga/2026-12-30/"
-  },
-  {
    "source": "manual",
    "kind": "event",
    "area": "Bernal Heights Rec Center, 500 Moultrie St",
@@ -5660,23 +6180,6 @@
    "recurring": false
   },
   {
-   "id": "ml-10040894-2027-01-03",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "1st Sundays in SF are for Salsa | Salsa Lesson & Party",
-   "area": "Verdi Club",
-   "lat": 37.7634058,
-   "lng": -122.4079386,
-   "indoor": false,
-   "exp": 0.5,
-   "off": 0,
-   "free": null,
-   "start": "2027-01-03T19:00:00-08:00",
-   "end": "2027-01-03T23:30:00-08:00",
-   "note": "🔥 FIRST SUNDAYS ARE FOR SALSA in SAN FRANCISCO! 🔥 Join us Sunday, October 4 at the Verdi Club for SF Salsa Social, a night dedicated to 100% Salsa & Mambo in San Francisco. Come dance, meet new people, catch up with frie",
-   "url": "https://missionlocal.org/event/verdi-club-1st-sundays-in-sf-are-for-salsa-salsa-lesson-party/2027-01-03/"
-  },
-  {
    "id": "msw-mission-2027-01-09",
    "kind": "event",
    "source": "Mission Science Workshop",
@@ -5693,6 +6196,24 @@
    "note": "Free drop-in hands-on science: build and tinker, explore bones, fossils and rocks, and meet the workshop's animals. Runs during the school year, so check the workshop's site around holidays.",
    "url": "https://www.missionscienceworkshop.org/programs",
    "recurring": false
+  },
+  {
+   "id": "w-museum-of-the-african-diaspora-free-saturday-second-saturday-2027-01-09",
+   "kind": "event",
+   "source": "Museum of the African Diaspora",
+   "name": "Free Saturday (second Saturday of the month)",
+   "area": "MoAD, 685 Mission St",
+   "lat": 37.7864,
+   "lng": -122.4012,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2027-01-09T11:00:00-08:00",
+   "end": "2027-01-09T17:00:00-08:00",
+   "note": "Museum admission is free on the second Saturday of each month; hours are the general Saturday hours.",
+   "url": "https://www.moadsf.org/events",
+   "bookAhead": false
   }
  ]
 }
