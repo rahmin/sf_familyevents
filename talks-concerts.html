@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#E8F5FF; --panel:#FFFFFF; --ink:#1F2A44; --ink-2:#4D5B78; --line:#C9DDEE; --stroke:#1F2A44;
+  --bg:#DCD5EA; --panel:#FFFFFF; --ink:#1F2A44; --ink-2:#4D5B78; --line:#C9DDEE; --stroke:#1F2A44;
   --sun:#FFC93C; --sun-ink:#1F2A44; --sky:#7CC4F5; --grass:#7BD389; --berry:#F25C78;
   --great:#17955A; --great-bg:#D6F6E3; --okay:#C97A00; --okay-bg:#FFEDC2;
   --skip:#D93A55; --skip-bg:#FFE0E6; --indoor:#3A63D8; --indoor-bg:#DEE7FF;
@@ -85,7 +85,8 @@ input[type=date]{font:inherit;font-size:14px;padding:6px 8px;border:1px solid va
 
 
 /* playful layer */
-body{background:var(--bg);background-image:radial-gradient(circle at 12% -10%,var(--glow) 0,transparent 38%)}
+/* dusk: lavender sky warming toward peach, with a low sunset glow at the top right */
+body{background:var(--bg);background-image:radial-gradient(ellipse at 88% -6%,color-mix(in srgb,#F4A27A 42%,transparent) 0,transparent 42%),linear-gradient(180deg,#CFC8E8 0,#DCD3EA 32%,#EBDDE4 70%,#F2E2DA 100%);background-attachment:fixed}
 h1{font-weight:700;letter-spacing:-0.01em;font-size:clamp(30px,7.5vw,48px)}
 .hero{position:relative;padding-right:72px;margin-bottom:6px}
 .hero .sun{position:absolute;right:0;top:-6px;width:68px;height:68px}
