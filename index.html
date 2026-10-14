@@ -479,7 +479,7 @@ function evalPlace(p,c){
  const tT=felt>86?`Feels about ${felt}°F: hot, so look for shade`:felt>=64?`Feels about ${felt}°F: comfortable`:felt>=56?`Feels about ${felt}°F: a bit cool, so bring a layer`:`Feels about ${felt}°F: chilly`;
  const tW=`Gusts around ${Math.round(gust)} mph here`+(gust<8?": calm":gust<20?": a little breezy":": windy");
  const tR=c.r>=15?`${c.r}% chance of rain`:"Little or no rain expected";
- const tip=`${label}. ${tT}. ${tW}. ${tR}. Weather score ${Math.round(score*100)} of 100.`;
+ const tip=`${tT}. ${tW}. ${tR}. Weather score ${Math.round(score*100)} of 100.`;
  return{score,tier,label,why,tip};
 }
 function evInterval(e){const s=new Date(e.start);const en=e.end?new Date(e.end):new Date(s.getTime()+2*3600e3);return[s,en];}
