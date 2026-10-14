@@ -40,6 +40,14 @@
    "area": "Artists' Television Access, 992 Valencia St",
    "lat": 37.7569,
    "lng": -122.4212
+  },
+  {
+   "name": "Bird & Beckett Books",
+   "url": "https://www.birdbeckett.com/",
+   "kind": "tribe",
+   "area": "Bird & Beckett Books, 653 Chenery St",
+   "lat": 37.7344,
+   "lng": -122.433
   }
  ]
 }

@@ -216,8 +216,13 @@ def sfpl_note(lines: list[str]) -> str:
     return note.strip()
 
 
-def scrape_sfpl(start: date, end: date) -> list[dict]:
-    log("SFPL")
+# adult programs worth a trip: talks, readings, music, film (the kids' list is filtered by SFPL_SLUG_HINT instead)
+SFPL_ADULT_SLUG = re.compile(r"author|book-?talk|conversation|concert|music|jazz|blues|film|screening|cinema|lecture|reading|poet|panel|"
+                             r"talk|discussion|history|performance|dance|theater|theatre|comedy|exhibit|opening|in-person-with|live", re.I)
+
+def scrape_sfpl(start: date, end: date, adults: bool = False) -> list[dict]:
+    """Family programs by default; adults=True picks talks, readings, music and film for adults (Talks & concerts)."""
+    log("SFPL" + (" (adult programs)" if adults else ""))
     closed = sfpl_closures(start.year)
     links = set()
     # sfpl.org/events is a chronological listing, about 25 events per page.
@@ -233,7 +238,7 @@ def scrape_sfpl(start: date, end: date) -> list[dict]:
             dd = date(int(y), int(m), int(d))
             if dd <= end:
                 past_end = False
-            if start <= dd <= end and dd not in closed and SFPL_SLUG_HINT.search(slug):
+            if start <= dd <= end and dd not in closed and (SFPL_ADULT_SLUG if adults else SFPL_SLUG_HINT).search(slug):
                 links.add(path)
         if past_end:
             break
@@ -255,10 +260,14 @@ def scrape_sfpl(start: date, end: date) -> list[dict]:
         if title.lower().startswith("canceled") or any(l.lower().startswith("canceled") for l in lines[max(0, i - 3) : i]):
             continue
         window = " ".join(lines[i : i + 14])
-        if not KID_AUDIENCE.search(window):
-            continue
-        if re.search(r"\bTeens\b|Adults", window) and not re.search(r"Babies, Toddlers or Preschoolers", window):
-            continue
+        if adults:
+            if not re.search(r"\bAdults\b", window):
+                continue
+        else:
+            if not KID_AUDIENCE.search(window):
+                continue
+            if re.search(r"\bTeens\b|Adults", window) and not re.search(r"Babies, Toddlers or Preschoolers", window):
+                continue
         tr = sfpl_time_range(lines[i + 1])
         if not tr:
             continue
@@ -276,14 +285,19 @@ def scrape_sfpl(start: date, end: date) -> list[dict]:
         bname, lat, lng = branch
         area = "Main Library" if bname == "Main" else f"{bname} Branch Library"
         nice = re.sub(r"^Storytime:\s*[Ff]or\s+", "Storytime for ", title)
-        nice = re.sub(r"^(Activity|Performance|Workshop|Film|Social|Early Learning|Make \+ Do|Celebration):\s*", "", nice)
+        if adults:  # keep "Film:" / "Performance:" so a bare title still reads as what it is
+            if re.search(r"(?i)conversation club|\besl\b|tutor|homework|\bclass\b|job|resume|tax|citizenship|computer|tech help", nice):
+                continue
+            nice = re.sub(r"^(Activity|Workshop|Social|Celebration|Presentation|Dialogue):\s*", "", nice)
+        else:
+            nice = re.sub(r"^(Activity|Performance|Workshop|Film|Social|Early Learning|Make \+ Do|Celebration):\s*", "", nice)
         out.append(
             dict(
                 id="sfpl-" + path.split("/events/")[1].replace("/", "-"),
                 kind="event", source="sfpl", name=nice, area=area, lat=lat, lng=lng,
                 indoor=True, exp=0, off=0, free=True,
                 start=local_iso(d, tr[0]), end=local_iso(d, tr[1]),
-                note=sfpl_note(lines[i:]) or "Free library program for young children and their grown-ups.",
+                note=sfpl_note(lines[i:]) or ("Free program at the library." if adults else "Free library program for young children and their grown-ups."),
                 url="https://sfpl.org" + path,
             )
         )
@@ -1561,6 +1575,7 @@ def build_talks_concerts(today: date, far: date):
     watch += rp + mapp_events(today, far)
     watch += scrape_venue_pages(today, far)
     watch += [e for e in scrape_cmc(today, far) if not re.search(r"(?i)halloween|costume|children|gala", e["name"])]
+    watch += scrape_sfpl(today, min(far, today + timedelta(days=45)), adults=True)  # library talks, readings, music, film
     if os.environ.get("ANTHROPIC_API_KEY"):
         loose = curate(jccsf + ml, prompt=CT_PROMPT)
     else:
@@ -1580,7 +1595,7 @@ def build_talks_concerts(today: date, far: date):
     OUT_CT.write_text(json.dumps({
         "generated": datetime.now(TZ).isoformat(timespec="minutes"),
         "coverage": f"{today:%b %-d}–{far:%b %-d}",
-        "sources": ["Calendar feeds (Luma, SPUR and others)", "Commonwealth Club", "The Independent", "Red Poppy Art House", "Community Music Center", "The Fillmore", "The Chapel", "Great American Music Hall", "MAPP", "JCCSF Arts & Ideas", "Yerba Buena Gardens Festival", "Mission Local",
+        "sources": ["SF Public Library (adult programs)", "Calendar feeds (Luma, SPUR and others)", "Commonwealth Club", "The Independent", "Red Poppy Art House", "Community Music Center", "The Fillmore", "The Chapel", "Great American Music Hall", "MAPP", "JCCSF Arts & Ideas", "Yerba Buena Gardens Festival", "Mission Local",
                     "Galería de la Raza", "watchlist venues", "manual"],
         "events": events}, indent=1, ensure_ascii=False) + "\n")
     write_specials_ics(events, ICS_CT, "Talks & concerts: one-offs")

@@ -556,6 +556,7 @@ function isLib(e){return /library/i.test(e.area||"");}
 function isRecurring(e,REC){if(e.recurring!==true&&e.bookAhead===true)return false;return e.recurring===true||REC.has(evKey(e))||(isLib(e)&&REC.has("lib|"+normName(e)))||/^(storytime (for|in)\b|(toddler|baby|babies|family|preschool) storytime\b)/i.test(e.name||"");}
 const KIDSRC=new Set(["manual","Local Kiddo SF","childrennature","suggested"]); // family-only sources count as kid-friendly
 // sort by score, keeping the top 10 varied: at most 2 events per venue and 3 library events; the rest move just below
+const BIG_ROOMS=new Set(["The Fillmore","The Independent","The Chapel","Great American Music Hall"]);
 function rankRows(rows){const v=rows.filter(r=>r.v).sort((a,b)=>b.e.score-a.e.score||a.ts-b.ts||a.p.min-b.p.min);const top=[],later=[],per={};let libs=0;
  v.forEach(r=>{const lib=r.p.isEvent&&isLib(r.p),vk=r.p.isEvent?venueOf(r.p).key:"";
   if(top.length>=10||(lib&&libs>=3)||(vk&&(per[vk]||0)>=2)){later.push(r);return;}if(lib)libs++;if(vk)per[vk]=(per[vk]||0)+1;top.push(r);});return top.concat(later);}
@@ -576,7 +577,7 @@ function items(){
   let when;if(ev.rangeStart){when="Open daily through "+ev.rangeLabel;}else{const [s,en]=evInterval(ev);when=(multiDay()?dayWord(ymd(s))+" ":"")+fmtT(s)+(ev.end?"–"+fmtT(en):" start");if(conflicts(s,en))flags.push("Overlaps something on your calendar");}
   (impacts[ev.id]||[]).forEach(t=>flags.push("Heads up: "+t));
   const kidish=KIDSRC.has(p.source)||/\bkids?\b|kids'|toddler|bab(y|ies)|child|famil|storytime|ages? \d|preschool|puppet|playground|all[- ]ages|halloween|dance party|\bsing(ing|-?alongs?)?\b|\bstor(y|ies)\b/i.test((p.name||"")+" "+(p.note||"").replace(/Local Kiddo SF/g,""));
-  const near=.3*clamp((25-p.walk)/13,0,1); // nearby events rank higher: full boost within a 12-minute walk (about 6 blocks), none past 25
+  const near=.3*clamp((25-p.walk)/13,0,1)-(BIG_ROOMS.has(p.source)?.15:0); // big concert halls rank a little lower so small, local rooms come first // nearby events rank higher: full boost within a 12-minute walk (about 6 blocks), none past 25
   out.push({p,e:Object.assign(e,{score:e.score+near+(p.oneOff?(isLib(p)?.1:.3):-.12)+(kidish?.15:0)-(flags.length?.3:0)}),flags,when,v:visible(p),ts:p.start?new Date(p.start).getTime():0});
  });
  // learned preferences: 👎 hides that event or place (and its repeats); votes nudge similar things up or down

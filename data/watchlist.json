@@ -212,34 +212,6 @@
    "edition": "talks-concerts"
   },
   {
-   "name": "The Warfield",
-   "pages": [
-    "https://www.thewarfieldtheatre.com/events"
-   ],
-   "area": "The Warfield, 982 Market St",
-   "lat": 37.7826,
-   "lng": -122.4101,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "edition": "talks-concerts"
-  },
-  {
-   "name": "August Hall",
-   "pages": [
-    "https://www.augusthallsf.com/events"
-   ],
-   "area": "August Hall, 420 Mason St",
-   "lat": 37.7878,
-   "lng": -122.4099,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "edition": "talks-concerts"
-  },
-  {
    "name": "Bottom of the Hill",
    "pages": [
     "https://www.bottomofthehill.com/calendar.html"
@@ -266,6 +238,84 @@
    "off": 0,
    "bookAhead": true,
    "edition": "talks-concerts"
+  },
+  {
+   "name": "The Lab",
+   "pages": [
+    "https://www.thelab.org/"
+   ],
+   "area": "The Lab, 2948 16th St",
+   "lat": 37.7653,
+   "lng": -122.4184,
+   "edition": "talks-concerts",
+   "indoor": true,
+   "exp": 0,
+   "off": 0
+  },
+  {
+   "name": "Adobe Books",
+   "pages": [
+    "https://www.adobebooks.com/events"
+   ],
+   "area": "Adobe Books, 3130 24th St",
+   "lat": 37.7527,
+   "lng": -122.4148,
+   "edition": "talks-concerts",
+   "indoor": true,
+   "exp": 0,
+   "off": 0
+  },
+  {
+   "name": "Creativity Explored",
+   "pages": [
+    "https://creativityexplored.org/events/"
+   ],
+   "area": "Creativity Explored, 3245 16th St",
+   "lat": 37.7645,
+   "lng": -122.4251,
+   "edition": "both",
+   "indoor": true,
+   "exp": 0,
+   "off": 0
+  },
+  {
+   "name": "Bernal Heights Neighborhood Center",
+   "pages": [
+    "https://bhnc.org/events/"
+   ],
+   "area": "Bernal Heights Neighborhood Center, 515 Cortland Ave",
+   "lat": 37.7392,
+   "lng": -122.4161,
+   "edition": "both",
+   "indoor": true,
+   "exp": 0,
+   "off": 0
+  },
+  {
+   "name": "Manny's",
+   "pages": [
+    "https://welcometomannys.com/events"
+   ],
+   "area": "Manny's, 3092 16th St",
+   "lat": 37.7651,
+   "lng": -122.4217,
+   "edition": "talks-concerts",
+   "indoor": true,
+   "exp": 0,
+   "off": 0
+  },
+  {
+   "name": "Make-Out Room",
+   "pages": [
+    "https://www.makeoutroom.com/"
+   ],
+   "area": "Make-Out Room, 3225 22nd St",
+   "lat": 37.7553,
+   "lng": -122.4194,
+   "edition": "talks-concerts",
+   "indoor": true,
+   "exp": 0,
+   "off": 0
   }
  ]
 }
