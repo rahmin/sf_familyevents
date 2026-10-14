@@ -412,11 +412,11 @@ const TODLABEL={am:"morning",pm:"afternoon",eve:"evening",all:"day"};
 function todayStr(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
 const SUGGEST_URL="https://forms.gle/K9yS3iCrfxgttuFi7"; // Google Form for visitor suggestions (see README); empty hides the link
 if(SUGGEST_URL){const a=document.getElementById("suggestlink");a.href=SUGGEST_URL;document.getElementById("suggest").hidden=false;}
-let S={when:"today",pick:"",tod:"am",kind:"outdoor",drive:30,free:false,evonly:false,hideSoon:true,hideRec:false,interests:[],onlyInt:false,sel:null,custom:{t:62,g:15,r:0,date:todayStr()}};
+let S={when:"today",pick:"",tod:"am",kind:"both",drive:30,free:false,evonly:false,hideSoon:true,hideRec:false,interests:[],onlyInt:false,sel:null,custom:{t:62,g:15,r:0,date:todayStr()}};
 let EVENTS=[],META=null,dbState="loading";
 let CAL={on:false,status:"off",byDate:{},msg:""};
-try{const s=JSON.parse(localStorage.getItem("fdo")||"null");if(s){S.kind=s.kind||S.kind;S.drive=s.drive===15?10:(s.drive===0?0:(s.drive||S.drive));S.free=!!s.free;S.evonly=!!s.evonly;if(s.when)S.when=s.when;if(s.pick)S.pick=s.pick;if(s.hideSoon===false)S.hideSoon=false;S.hideRec=!!s.hideRec;S.mode=s.mode==="pg"?"pg":"out";S.pgTot=!!s.pgTot;S.pgRest=!!s.pgRest;S.pgAcc=!!s.pgAcc;if(Array.isArray(s.interests))S.interests=s.interests;S.onlyInt=!!s.onlyInt;if(s.custom)S.custom=Object.assign(S.custom,s.custom);CAL.on=!!s.calOn;}}catch(e){}
-function save(){try{localStorage.setItem("fdo",JSON.stringify({kind:S.kind,drive:S.drive,free:S.free,evonly:S.evonly,when:S.when,pick:S.pick,hideSoon:S.hideSoon,hideRec:S.hideRec,mode:S.mode,pgTot:S.pgTot,pgRest:S.pgRest,pgAcc:S.pgAcc,interests:S.interests,onlyInt:S.onlyInt,custom:S.custom,calOn:CAL.on}))}catch(e){}}
+try{const s=JSON.parse(localStorage.getItem("fdo")||"null");if(s){S.kind=(s.kv>=2?s.kind:"both")||S.kind;S.drive=s.drive===15?10:(s.drive===0?0:(s.drive||S.drive));S.free=!!s.free;S.evonly=!!s.evonly;if(s.when)S.when=s.when;if(s.pick)S.pick=s.pick;if(s.hideSoon===false)S.hideSoon=false;S.hideRec=!!s.hideRec;S.mode=s.mode==="pg"?"pg":"out";S.pgTot=!!s.pgTot;S.pgRest=!!s.pgRest;S.pgAcc=!!s.pgAcc;if(Array.isArray(s.interests))S.interests=s.interests;S.onlyInt=!!s.onlyInt;if(s.custom)S.custom=Object.assign(S.custom,s.custom);CAL.on=!!s.calOn;}}catch(e){}
+function save(){try{localStorage.setItem("fdo",JSON.stringify({kv:2,kind:S.kind,drive:S.drive,free:S.free,evonly:S.evonly,when:S.when,pick:S.pick,hideSoon:S.hideSoon,hideRec:S.hideRec,mode:S.mode,pgTot:S.pgTot,pgRest:S.pgRest,pgAcc:S.pgAcc,interests:S.interests,onlyInt:S.onlyInt,custom:S.custom,calOn:CAL.on}))}catch(e){}}
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const WHEN_LABEL={now:"Right now",today:"Today",tomorrow:"Tomorrow",few:"Next few days",weekend:"This weekend",nextweekend:"Next weekend",month:"This month",pick:"Pick a date…"};
@@ -1078,7 +1078,7 @@ setInterval(()=>{if(!document.hidden)loadWeather();},3*3600e3);
 (()=>{
 const $=id=>document.getElementById(id);
 const panel=document.querySelector(".sticky .panel");if(!panel||$("cbar"))return;
-const IS_CT=/Talks/.test(document.title),DEF_KIND=IS_CT?"both":"outdoor";
+const IS_CT=/Talks/.test(document.title),DEF_KIND="both";
 const startRow=$("oin").closest(".row"),ostat=$("ostat"),todRow=$("todRow"),driveRow=$("drive").closest(".row"),showRow=$("kind").closest(".row"),intRow=$("tagchips").closest(".row");
 // 1) "From …" line with an edit pencil
 const tabs=document.createElement("div");tabs.className="modetabs";tabs.setAttribute("role","tablist");

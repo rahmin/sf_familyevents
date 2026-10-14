@@ -1057,7 +1057,7 @@ setInterval(()=>{if(!document.hidden)loadWeather();},3*3600e3);
 (()=>{
 const $=id=>document.getElementById(id);
 const panel=document.querySelector(".sticky .panel");if(!panel||$("cbar"))return;
-const IS_CT=/Talks/.test(document.title),DEF_KIND=IS_CT?"both":"outdoor";
+const IS_CT=/Talks/.test(document.title),DEF_KIND="both";
 const startRow=$("oin").closest(".row"),ostat=$("ostat"),todRow=$("todRow"),driveRow=$("drive").closest(".row"),showRow=$("kind").closest(".row"),intRow=$("tagchips").closest(".row");
 // 1) "From …" line with an edit pencil
 const fromLine=document.createElement("div");fromLine.className="fromline";fromLine.innerHTML=`<span id="fromTxt"></span> <button class="pencil" id="editStart" aria-expanded="false" aria-label="Change starting point">✎</button>`;
