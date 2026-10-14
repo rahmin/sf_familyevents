@@ -569,7 +569,8 @@ function rankRows(rows){const v=rows.filter(r=>r.v).sort((a,b)=>b.e.score-a.e.sc
 let CLASSES=null;fetch("data/classes.json",{cache:"no-cache"}).then(r=>r.json()).then(j=>{CLASSES=(j.classes||[]).map(c=>Object.assign({cl:1,indoor:c.indoor!==false,exp:0,off:0},c));if(S.mode==="cl")render();}).catch(()=>{CLASSES=[];});
 const CLCATS={martial:{icon:"🥋",label:"Martial arts"},sports:{icon:"🏊",label:"Sports & swim"},arts:{icon:"🎨",label:"Arts & music"},stem:{icon:"🔬",label:"STEM & more"}};
 const SIGNUP={dropin:"Drop-in",trial:"Free trial",term:"Enroll by term",membership:"Membership"};
-function clFilter(p){return(!S.clCat.length||S.clCat.includes(p.cat))&&(!S.clAge||!p.ages||(p.ages[0]<=S.clAge&&S.clAge<=p.ages[1]));}
+const CLAGES={3:[2,4],6:[5,7],9:[8,11],13:[12,17]}; // age button → age range (keys kept from earlier saved choices)
+function clFilter(p){const r=CLAGES[S.clAge];return(!S.clCat.length||S.clCat.includes(p.cat))&&(!r||!p.ages||(p.ages[0]<=r[1]&&r[0]<=p.ages[1]));}
 function classEval(p){const su=SIGNUP[p.signup]||"See site";return{score:1-Math.min(p.min,60)/90,tier:"indoor",label:su,why:p.when||"",tip:`${su}${p.ages?` · ages ${p.ages[0]}–${p.ages[1]}`:""}${p.when?` · ${p.when}`:""}`};}
 function items(){
  SOON=0;RECN=0;const RALL=recurringKeys();const REC=S.hideRec?RALL:null;const c=cond();const [ws,we]=winRange();
