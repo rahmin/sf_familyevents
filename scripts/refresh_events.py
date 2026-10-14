@@ -1266,6 +1266,8 @@ def scrape_calendars(start: date, end: date, edition: str) -> list[dict]:
         n = 0
         for ev in ics_events(r.text):
             s = ics_time(ev.get("DTSTART"))
+            if c.get("skip") and re.search(c["skip"], ics_text(ev.get("SUMMARY", ("", ""))[1]), re.I):
+                continue
             if not s or not (start <= s.date() <= end) or (ev.get("STATUS", ("", ""))[1].upper() == "CANCELLED"):
                 continue
             en = ics_time(ev.get("DTEND"))
@@ -1472,6 +1474,13 @@ def venue_feed(v: dict, slug: str, start: date, end: date) -> list[dict]:
         name = html.unescape(it.get("title") or "").strip()
         text = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", (it.get("excerpt") or "") + " " + (it.get("body") or "")[:3000])).split())
         note = " ".join(re.split(r"(?<=[.!?])\s+", text)[:2])[:240] or f"At {v['name']}."
+        if en and en - st > timedelta(hours=20):  # an exhibition: show it as open through its last day
+            if en.date() < start:
+                continue
+            out.append(dict(base, id=f"vp-{slug}-{re.sub(r'[^a-z0-9]+', '-', name.lower())[:40]}-{st.date().isoformat()}", name=name,
+                            rangeStart=max(st.date(), start).isoformat(), rangeEnd=en.date().isoformat(), rangeLabel=f"{en:%b} {en.day}",
+                            free=True if re.search(r"(?i)\bfree\b", text) else None, note=note, url=site + (it.get("fullUrl") or "")))
+            continue
         out.append(dict(base, id=f"vp-{slug}-{re.sub(r'[^a-z0-9]+', '-', name.lower())[:40]}-{st.date().isoformat()}",
                         name=name, start=st.isoformat(), end=en.isoformat() if en and en > st else None,
                         free=True if re.search(r"(?i)\bfree\b", text) else None, note=note, url=site + (it.get("fullUrl") or "")))

@@ -316,6 +316,99 @@
    "indoor": true,
    "exp": 0,
    "off": 0
+  },
+  {
+   "name": "Southern Exposure",
+   "pages": [
+    "https://www.soex.org/projects-exhibitions/current-upcoming"
+   ],
+   "area": "Southern Exposure, 3030 20th St",
+   "lat": 37.7593,
+   "lng": -122.4114,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "edition": "talks-concerts"
+  },
+  {
+   "name": "City Art Cooperative Gallery",
+   "pages": [
+    "https://www.cityartgallery.org/"
+   ],
+   "area": "City Art Gallery, 828 Valencia St",
+   "lat": 37.7595,
+   "lng": -122.4215,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "edition": "talks-concerts"
+  },
+  {
+   "name": "Ruth's Table",
+   "pages": [
+    "https://www.ruthstable.org/programs",
+    "https://www.ruthstable.org/exhibitions"
+   ],
+   "area": "Ruth's Table, 3160 21st St",
+   "lat": 37.7572,
+   "lng": -122.4181,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "edition": "talks-concerts"
+  },
+  {
+   "name": "The Marsh",
+   "pages": [
+    "https://themarsh.org/shows_and_events/"
+   ],
+   "area": "The Marsh, 1062 Valencia St",
+   "lat": 37.7558,
+   "lng": -122.4213,
+   "bookAhead": true,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "edition": "talks-concerts"
+  },
+  {
+   "name": "Incline Gallery",
+   "pages": [
+    "https://www.inclinegallerysf.com/"
+   ],
+   "area": "Incline Gallery, 766 Valencia St",
+   "lat": 37.7607,
+   "lng": -122.4218,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "edition": "talks-concerts"
+  },
+  {
+   "name": "Acción Latina: Juan R. Fuentes Gallery",
+   "pages": [
+    "https://accionlatina.org/fuentesgallery/"
+   ],
+   "area": "Juan R. Fuentes Gallery, 2958 24th St",
+   "lat": 37.7529,
+   "lng": -122.4113,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "edition": "talks-concerts"
+  },
+  {
+   "name": "500 Capp Street",
+   "pages": [
+    "https://500cappstreet.org/upcoming-programs/"
+   ],
+   "area": "500 Capp Street (David Ireland House)",
+   "lat": 37.7586,
+   "lng": -122.4182,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "edition": "talks-concerts"
   }
  ]
 }

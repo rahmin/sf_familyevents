@@ -38,7 +38,7 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 | `data/manual.json` | hand | Hand-added family events (kept until they end) |
 | `data/manual-talks-concerts.json` | hand | Hand-added talks/concerts |
 | `data/watchlist.json` | hand | Venue sites Claude reads weekly (needs `ANTHROPIC_API_KEY`); `edition` = family or talks-concerts |
-| `data/calendars.json` | hand | iCal feeds: Luma pages (luma.com/name), SPUR, any .ics |
+| `data/calendars.json` | hand | iCal feeds: Luma pages (luma.com/name), SPUR, The Drawing Room (Google Calendar), any .ics; optional `skip` = title regex to drop (open hours, markets) |
 | `data/venue_pages.json` | hand | Venue pages read directly: `jsonld`, `seetickets`, `squarespace` (an /events page, e.g. Medicine for Nightmares) or `tribe` (WordPress Events Calendar, e.g. Artists' Television Access) |
 | `data/venues.json` | hand | Venue overrides matched by event link (e.g. Natural Resources) |
 | `data/playgrounds.json` | Phase 0 audit | Source copy of the playground list embedded in `index.html` |

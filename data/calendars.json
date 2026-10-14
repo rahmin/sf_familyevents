@@ -20,6 +20,16 @@
    "indoor": true,
    "bookAhead": true,
    "skipNoLocation": true
+  },
+  {
+   "name": "The Drawing Room",
+   "ics": "https://calendar.google.com/calendar/ical/c_6e5c7d273864e5ecf53a746164093b7a61c24a9b21b6df1174dfa905f70cb140%40group.calendar.google.com/public/basic.ics",
+   "edition": "talks-concerts",
+   "area": "The Drawing Room, 599 Valencia St",
+   "lat": 37.7635,
+   "lng": -122.4214,
+   "indoor": true,
+   "skip": "open hours|gallery hours|closed|market"
   }
  ]
 }

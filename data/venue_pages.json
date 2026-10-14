@@ -1,5 +1,5 @@
 {
- "_readme": "Venue pages read directly each week (no API key). kind 'jsonld' reads schema.org event data on the page; 'seetickets' reads See Tickets show listings; 'squarespace' reads a Squarespace events page (url = the /events page); 'tribe' reads a WordPress site using The Events Calendar. Add a venue by copying an entry.",
+ "_readme": "Venue pages read directly each week (no API key). kind 'jsonld' reads schema.org event data on the page; 'seetickets' reads See Tickets show listings; 'squarespace' reads a Squarespace events page (url = the events page; multi-day shows become 'open through' listings); 'tribe' reads a WordPress site using The Events Calendar. Add a venue by copying an entry.",
  "venues": [
   {
    "name": "The Fillmore",
@@ -48,6 +48,14 @@
    "area": "Bird & Beckett Books, 653 Chenery St",
    "lat": 37.7344,
    "lng": -122.433
+  },
+  {
+   "name": "Inclusions Gallery",
+   "url": "https://www.inclusionsgallery.com/exhibits",
+   "kind": "squarespace",
+   "area": "Inclusions Gallery, 627 Cortland Ave",
+   "lat": 37.7391,
+   "lng": -122.4154
   }
  ]
 }
