@@ -121,7 +121,8 @@
    "tags": [
     "music",
     "songs"
-   ]
+   ],
+   "price": "$28–30"
   },
   {
    "kind": "event",
@@ -291,7 +292,8 @@
    "url": "https://wl.seetickets.us/event/mexican-institute-of-sound/701759?afflky=GreatAmericanMusicHall",
    "tags": [
     "music"
-   ]
+   ],
+   "price": "$27–32"
   },
   {
    "id": "indy-2790-2026-10-14",
@@ -446,7 +448,8 @@
    "url": "https://wl.seetickets.us/event/kelsey-lu/694273?afflky=GreatAmericanMusicHall",
    "tags": [
     "music"
-   ]
+   ],
+   "price": "$30–35"
   },
   {
    "id": "cal-evt-kb66dbtki8nvxbt-events-lu-ma",
@@ -611,7 +614,8 @@
    "tags": [
     "music",
     "songs"
-   ]
+   ],
+   "price": "$21–35"
   },
   {
    "kind": "event",
@@ -706,14 +710,15 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": null,
+   "free": false,
    "start": "2026-10-17T19:00:00-07:00",
    "end": "2026-10-17T22:00:00-07:00",
    "note": "Longtime community partner Bootlegger's Ball returns to the CMC Concert Hall! $25 General, $20 Students/Seniors.",
    "url": "https://sfcmc.org/event/bootleggers-ball-with-nick-rossis-swing-six/",
    "tags": [
     "music"
-   ]
+   ],
+   "price": "$20–25"
   },
   {
    "id": "ml-10041045-2026-10-17",
@@ -876,14 +881,15 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": null,
+   "free": false,
    "start": "2026-10-18T15:00:00-07:00",
    "end": null,
    "note": "Award-winning SF contemporary chamber group Ensemble for These Times is excited to kick off it's 19th season with “Call for Scores: Solo Piano, Vol. $5–$30.",
    "url": "https://sfcmc.org/event/e4tt-call-for-scores-solo-piano-vol-3/",
    "tags": [
     "music"
-   ]
+   ],
+   "price": "$5–30"
   },
   {
    "id": "ml-10041046-2026-10-18",
@@ -943,7 +949,8 @@
    "url": "https://wl.seetickets.us/event/peaches/704246?afflky=GreatAmericanMusicHall",
    "tags": [
     "music"
-   ]
+   ],
+   "price": "$69–111"
   },
   {
    "id": "indy-2806-2026-10-18",
@@ -1061,7 +1068,8 @@
    "tags": [
     "music",
     "world"
-   ]
+   ],
+   "price": "$24–27"
   },
   {
    "kind": "event",
@@ -1179,7 +1187,8 @@
    "tags": [
     "music",
     "songs"
-   ]
+   ],
+   "price": "$40–44"
   },
   {
    "id": "indy-2688-2026-10-20",
@@ -1318,7 +1327,8 @@
    "tags": [
     "music",
     "songs"
-   ]
+   ],
+   "price": "$47–50"
   },
   {
    "kind": "event",
@@ -1450,7 +1460,8 @@
    "tags": [
     "music",
     "songs"
-   ]
+   ],
+   "price": "$22–90"
   },
   {
    "id": "indy-2622-2026-10-22",
@@ -1510,7 +1521,8 @@
    "url": "https://wl.seetickets.us/event/trst-dj-set-buzz-kull/698251?afflky=GreatAmericanMusicHall",
    "tags": [
     "music"
-   ]
+   ],
+   "price": "$22–90"
   },
   {
    "kind": "event",
@@ -1596,14 +1608,15 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": null,
+   "free": false,
    "start": "2026-10-23T20:00:00-07:00",
    "end": null,
    "note": "The San Francisco Bay Area Chapter of NACUSA (National Association of Composers USA) will present an evening dedicated to music for winds. $15–$25.",
    "url": "https://sfcmc.org/event/new-music-for-wind-trio/",
    "tags": [
     "music"
-   ]
+   ],
+   "price": "$15–25"
   },
   {
    "id": "indy-2740-2026-10-23",
@@ -2287,7 +2300,7 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": null,
+   "free": false,
    "start": "2026-11-01T16:00:00-08:00",
    "end": null,
    "note": "Join us for a joyful celebration honoring the Mexican tradition of Day of the Dead at Mission Dolores Basílica! $5–$15 (notaflof).",
@@ -2298,7 +2311,8 @@
    "also": {
     "page": "index.html",
     "id": "cmc-dia-de-muertos-2026-11-01"
-   }
+   },
+   "price": "$5–15"
   },
   {
    "kind": "event",

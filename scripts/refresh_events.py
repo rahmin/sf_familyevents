@@ -527,7 +527,7 @@ def scrape_tribe(base: str, source: str, prefix: str, start: date, end: date, de
                 lat=float(lat), lng=float(lng), indoor=False, exp=0.5, off=0,
                 free=bool(re.fullmatch(r"(?i)\s*(free)?\s*", e.get("cost") or "")),
                 start=s.isoformat(), end=en.isoformat(),
-                note=" ".join(desc.split())[:220], url=e["url"],
+                note=" ".join(desc.split())[:220], url=e["url"], cost=html.unescape(e.get("cost") or ""),
                 _family=bool(FAMILY_DESC.search(full)),
                 _cats=any(c.get("name", "").lower() == "family" for c in (e.get("categories") or [])),
             )
@@ -1116,6 +1116,7 @@ def main():
     write_specials_ics(events)
     log(f"Wrote {len(events)} events to {OUT.name}")
     build_talks_concerts(today, far)
+    set_prices()
     apply_overrides()
     crosslink()
     write_share_pages()
@@ -1498,7 +1499,7 @@ def scrape_venue_pages(start: date, end: date) -> list[dict]:
                     perf = [p.get("name") for p in (it.get("performer") or []) if isinstance(p, dict) and p.get("name") and p.get("name") != name] if isinstance(it.get("performer"), list) else []
                     note = f"Live at {v['name']}" + (f", with {', '.join(perf[:3])}" if perf else "") + "."
                     out.append(dict(base, id=f"vp-{re.sub(r'[^a-z0-9]+', '-', v['name'].lower())[:20]}-{re.sub(r'[^a-z0-9]+', '-', name.lower())[:40]}-{st.date().isoformat()}",
-                                    name=name, start=st.isoformat(), end=None, free=False, note=note, url=it.get("url") or v["url"], tags=["music"]))
+                                    name=name, start=st.isoformat(), end=None, free=False, note=note, cost=offer_text(it.get("offers")), url=it.get("url") or v["url"], tags=["music"]))
         elif v["kind"] == "seetickets":
             for card in r.text.split("seetickets-list-event-container")[1:]:
                 f = {}
@@ -1531,7 +1532,7 @@ def scrape_venue_pages(start: date, end: date) -> list[dict]:
                                             f"With {sup}." if sup else "", f.get("doortime-showtime", "") + ".",
                                             price + "." if "$" in price or "Ages" in price else ""] if x).strip()
                 out.append(dict(base, id=f"vp-{re.sub(r'[^a-z0-9]+', '-', v['name'].lower())[:20]}-{re.sub(r'[^a-z0-9]+', '-', f['title'].lower())[:40]}-{d.isoformat()}",
-                                name=f["title"], start=local_iso(d, f"{h[0]:02d}:{h[1]:02d}"), end=None, free=False, note=note, url=link, tags=tags))
+                                name=f["title"], start=local_iso(d, f"{h[0]:02d}:{h[1]:02d}"), end=None, free=False, cost=price, note=note, url=link, tags=tags))
         out[n0:] = [e for e in out[n0:] if not re.search(r"(?i)private event|\bpass(es)?\b|show ticket|gift card|parking|add-?on", e["name"])]
         log(f"{v['name']}: {len(out) - n0} shows")
         time.sleep(0.5)
@@ -1678,6 +1679,39 @@ def apply_overrides():
         path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n")
     log(f"Applied {n} hand fixes from {OVERRIDES.name}")
 
+def offer_text(offers) -> str:
+    """schema.org offers (dict or list) → '$20 $35' so set_prices() can read it."""
+    out = []
+    for o in offers if isinstance(offers, list) else [offers] if isinstance(offers, dict) else []:
+        for k in ("price", "lowPrice", "highPrice"):
+            try:
+                if o.get(k) not in (None, "") and float(o[k]) > 0:
+                    out.append(f"${float(o[k]):g}")
+            except (TypeError, ValueError):
+                pass
+    return " ".join(out)
+
+PRICE = re.compile(r"\$\s?(\d{1,4}(?:\.\d\d)?)")
+
+def set_prices():
+    """price = '$28' or '$28–33' from the source's ticket data, else a dollar amount in the description.
+    Free events keep free=True and no price; anything with a price is marked paid."""
+    for path in (OUT, OUT_CT):
+        data = json.loads(path.read_text())
+        for e in data["events"]:
+            cost = e.pop("cost", "") or ""
+            if e.get("free") or e.get("kind") == "impact":
+                continue
+            if re.fullmatch(r"(?i)\s*free\s*", cost):
+                e["free"] = True
+                continue
+            amounts = [round(float(x)) for x in PRICE.findall(cost) or PRICE.findall(e.get("note") or "") if float(x) > 0]
+            if amounts:
+                lo, hi = min(amounts), max(amounts)
+                e["price"] = f"${lo}" if lo == hi else f"${lo}–{hi}"
+                e["free"] = False
+        path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n")
+
 def _name_words(name: str) -> set[str]:
     return {w for w in re.findall(r"[a-z0-9áéíóúñ]+", name.lower()) if len(w) >= 4} - {"with", "from", "night", "festival", "gardens", "yerba", "buena", "free"}
 
@@ -1770,6 +1804,7 @@ for _name in [n for n in list(globals()) if n.startswith("scrape_")] + [
 build_talks_concerts = _isolated(build_talks_concerts, None)
 crosslink = _isolated(crosslink, None)
 apply_overrides = _isolated(apply_overrides, None)
+set_prices = _isolated(set_prices, None)
 write_share_pages = _isolated(write_share_pages, None)
 
 def report_failures():

@@ -1688,7 +1688,8 @@
     "performance",
     "music"
    ],
-   "bookAhead": true
+   "bookAhead": true,
+   "price": "$5–39"
   },
   {
    "id": "cas-penguin-feeding-2026-10-17-1030",
@@ -2006,7 +2007,8 @@
     "performance",
     "music"
    ],
-   "bookAhead": true
+   "bookAhead": true,
+   "price": "$5–39"
   },
   {
    "id": "cas-childrens-puppet-theater-2026-10-18-1100",
@@ -2401,7 +2403,8 @@
    "end": "2026-10-20T18:30:00-07:00",
    "note": "A local winemaker's tasting with small bites and a chance to harvest vegetables and herbs to take home. Family-friendly: adults $50, children $10; space is limited.",
    "url": "https://www.hawkcreekfarm.org/farm-experiences.html",
-   "bookAhead": true
+   "bookAhead": true,
+   "price": "$10–50"
   },
   {
    "id": "ml-875077-2026-10-20",
@@ -2566,7 +2569,8 @@
    "tags": [
     "music"
    ],
-   "bookAhead": true
+   "bookAhead": true,
+   "price": "$10–20"
   },
   {
    "id": "precita-mural-tour-2026-10-24",
@@ -2729,7 +2733,8 @@
     "music",
     "dance"
    ],
-   "bookAhead": true
+   "bookAhead": true,
+   "price": "$24"
   },
   {
    "id": "omca-12505-2026-10-25",
@@ -3084,7 +3089,8 @@
    "also": {
     "page": "talks-concerts.html",
     "id": "cmc-dia-de-muertos-en-la-mision-2026-11-01"
-   }
+   },
+   "price": "$5–15"
   },
   {
    "id": "marigold-festival-altars-2026-11-02",
