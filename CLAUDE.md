@@ -42,6 +42,7 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 | `data/venue_pages.json` | hand | Venue pages read directly: `jsonld`, `seetickets`, `squarespace` (an /events page, e.g. Medicine for Nightmares) or `tribe` (WordPress Events Calendar, e.g. Artists' Television Access) |
 | `data/venues.json` | hand | Venue overrides matched by event link (e.g. Natural Resources) |
 | `data/playgrounds.json` | Phase 0 audit | Source copy of the playground list embedded in `index.html` |
+| `data/markets.json` | hand | Farmers, flea and night markets (verified 2026-10-14): weekly/seasonal/monthly schedules (`days`, `hours`, `months`, `nth`, `until`, `dates`) → dated recurring events on Family outings via `load_markets()`; tag `markets` (🧺). Refresh `until`/`dates` each season. |
 | `data/overrides.json` | hand | Fixes applied to both pages at the end of every refresh (`apply_overrides`): `match` = name regex, `set` = fields (e.g. `indoor`). Use it when an event is labelled wrong. |
 | `data/geocache.json` | refresh script | Saved Nominatim lookups |
 | `data/bayland.json` | one-off | Bay Area land outline for the map: US Census 1:500k state boundary (cb_2023_us_state_500k), clipped to lon −123.15…−121.6, lat 37.15…38.35 and simplified; rings of [lat,lng]. |

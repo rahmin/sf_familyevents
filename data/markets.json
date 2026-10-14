@@ -1,0 +1,418 @@
+{
+ "_readme": "Farmers, flea and night markets, verified against each operator's own page on 2026-10-14 (night markets partly from Funcheap listings). Each refresh turns these into dated, recurring events on Family outings. Fields: days, hours [start,end], optional months (season), nth (week of month; -1 = last), until (last date), dates (announced dates only). Update 'until' and 'dates' each season.",
+ "markets": [
+  {
+   "name": "Ferry Plaza Farmers Market",
+   "kind": "farmers",
+   "area": "Ferry Building, Embarcadero at Market St",
+   "lat": 37.79555,
+   "lng": -122.39347,
+   "days": [
+    "Tue",
+    "Thu"
+   ],
+   "hours": [
+    "10:00",
+    "14:00"
+   ],
+   "url": "https://foodwise.org/markets/ferry-plaza-farmers-market/",
+   "note": "Foodwise's flagship farmers market along the Embarcadero, year-round."
+  },
+  {
+   "name": "Ferry Plaza Farmers Market (Saturday)",
+   "kind": "farmers",
+   "area": "Ferry Building, Embarcadero at Market St",
+   "lat": 37.79555,
+   "lng": -122.39347,
+   "days": [
+    "Sat"
+   ],
+   "hours": [
+    "08:00",
+    "14:00"
+   ],
+   "url": "https://foodwise.org/markets/ferry-plaza-farmers-market/",
+   "note": "The big Saturday market at the Ferry Building, year-round."
+  },
+  {
+   "name": "Alemany Farmers Market",
+   "kind": "farmers",
+   "area": "100 Alemany Blvd (Bernal Heights)",
+   "lat": 37.73694,
+   "lng": -122.40892,
+   "days": [
+    "Sat"
+   ],
+   "hours": [
+    "07:00",
+    "14:00"
+   ],
+   "url": "https://foodwise.org/markets/alemany-farmers-market/",
+   "note": "The city's oldest farmers market, now run by Foodwise; year-round."
+  },
+  {
+   "name": "Mission Community Market",
+   "kind": "farmers",
+   "area": "22nd St & Bartlett St",
+   "lat": 37.75537,
+   "lng": -122.41987,
+   "days": [
+    "Thu"
+   ],
+   "hours": [
+    "15:00",
+    "19:00"
+   ],
+   "url": "https://foodwise.org/markets/mission-community-market/",
+   "note": "Thursday evening market on Bartlett St, mid-March to mid-November.",
+   "months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "until": "2026-11-19"
+  },
+  {
+   "name": "Heart of the City Farmers Market",
+   "kind": "farmers",
+   "area": "Fulton St between Hyde & Larkin (Civic Center)",
+   "lat": 37.77958,
+   "lng": -122.41681,
+   "days": [
+    "Wed",
+    "Sun"
+   ],
+   "hours": [
+    "07:00",
+    "16:00"
+   ],
+   "url": "https://hotcfarmersmarket.org",
+   "note": "Long-running Civic Center market, now on Fulton St; year-round."
+  },
+  {
+   "name": "Noe Valley Farmers Market",
+   "kind": "farmers",
+   "area": "Noe Valley Town Square, 3861 24th St",
+   "lat": 37.75154,
+   "lng": -122.42886,
+   "days": [
+    "Sat"
+   ],
+   "hours": [
+    "08:00",
+    "13:00"
+   ],
+   "url": "https://noevalleyfarmersmarket.com",
+   "note": "Year-round Saturday market in Noe Valley Town Square."
+  },
+  {
+   "name": "Fort Mason Center Farmers Market",
+   "kind": "farmers",
+   "area": "Fort Mason Center, Marina Blvd",
+   "lat": 37.80689,
+   "lng": -122.43221,
+   "days": [
+    "Sun"
+   ],
+   "hours": [
+    "09:30",
+    "13:30"
+   ],
+   "url": "https://cafarmersmkts.com/fort-mason-center-farmers-market",
+   "note": "Sunday market at Fort Mason with bay views."
+  },
+  {
+   "name": "Castro Farmers Market",
+   "kind": "farmers",
+   "area": "270 Noe St",
+   "lat": 37.76469,
+   "lng": -122.43336,
+   "days": [
+    "Wed"
+   ],
+   "hours": [
+    "15:00",
+    "19:00"
+   ],
+   "url": "https://pcfma.org/castro",
+   "note": "Wednesday evening market in the Castro, April to mid-November.",
+   "months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "until": "2026-11-18"
+  },
+  {
+   "name": "Inner Sunset Farmers Market",
+   "kind": "farmers",
+   "area": "1315 8th Ave (off Irving St)",
+   "lat": 37.76374,
+   "lng": -122.46542,
+   "days": [
+    "Sun"
+   ],
+   "hours": [
+    "09:00",
+    "13:00"
+   ],
+   "url": "https://pcfma.org/innersunset",
+   "note": "Year-round Sunday market off Irving St."
+  },
+  {
+   "name": "Divisadero Farmers Market",
+   "kind": "farmers",
+   "area": "1377 Fell St (DMV lot)",
+   "lat": 37.77333,
+   "lng": -122.44047,
+   "days": [
+    "Sun"
+   ],
+   "hours": [
+    "09:00",
+    "13:00"
+   ],
+   "url": "https://pcfma.org/divisadero",
+   "note": "Year-round Sunday market, now on Fell St."
+  },
+  {
+   "name": "Fillmore Farmers Market",
+   "kind": "farmers",
+   "area": "1700 O'Farrell St",
+   "lat": 37.78336,
+   "lng": -122.43288,
+   "days": [
+    "Sat"
+   ],
+   "hours": [
+    "09:00",
+    "13:00"
+   ],
+   "url": "https://pcfma.org/fillmore",
+   "note": "Year-round Saturday market in the Fillmore."
+  },
+  {
+   "name": "Hayes Valley Farmers Market",
+   "kind": "farmers",
+   "area": "450 Hayes St",
+   "lat": 37.77703,
+   "lng": -122.42388,
+   "days": [
+    "Sat"
+   ],
+   "hours": [
+    "10:00",
+    "14:00"
+   ],
+   "url": "https://pcfma.org/market/hayes-valley-farmers-market",
+   "note": "Year-round Saturday market in Hayes Valley."
+  },
+  {
+   "name": "Clement St. Farmers Market",
+   "kind": "farmers",
+   "area": "244 Clement St (Inner Richmond)",
+   "lat": 37.78315,
+   "lng": -122.46171,
+   "days": [
+    "Sun"
+   ],
+   "hours": [
+    "09:00",
+    "14:00"
+   ],
+   "url": "https://agriculturalinstitute.org/clement-st",
+   "note": "Sunday street-closure market, year-round, rain or shine."
+  },
+  {
+   "name": "Stonestown Farmers Market",
+   "kind": "farmers",
+   "area": "501 Buckingham Way",
+   "lat": 37.72974,
+   "lng": -122.4791,
+   "days": [
+    "Sun"
+   ],
+   "hours": [
+    "09:00",
+    "13:00"
+   ],
+   "url": "https://agriculturalinstitute.org/stonestown",
+   "note": "Year-round Sunday market at Stonestown."
+  },
+  {
+   "name": "North Beach Farmers Market",
+   "kind": "farmers",
+   "area": "725 Greenwich St (by Joe DiMaggio Playground)",
+   "lat": 37.80193,
+   "lng": -122.41189,
+   "days": [
+    "Sat"
+   ],
+   "hours": [
+    "09:00",
+    "14:00"
+   ],
+   "url": "https://northbeachfarmersmarket.com",
+   "note": "Neighborhood-run Saturday market next to Joe DiMaggio Playground."
+  },
+  {
+   "name": "Outer Sunset Farmers Market & Mercantile",
+   "kind": "farmers",
+   "area": "37th Ave from Ortega to Quintara",
+   "lat": 37.75153,
+   "lng": -122.49565,
+   "days": [
+    "Sun"
+   ],
+   "hours": [
+    "09:00",
+    "14:00"
+   ],
+   "url": "https://sunsetmercantilesf.com",
+   "note": "Sunday market with local makers on 37th Ave, year-round, rain or shine.",
+   "off": -5
+  },
+  {
+   "name": "Alemany Flea Market",
+   "kind": "flea",
+   "area": "100 Alemany Blvd (Bernal Heights)",
+   "lat": 37.73694,
+   "lng": -122.40892,
+   "days": [
+    "Sun"
+   ],
+   "hours": [
+    "07:00",
+    "15:00"
+   ],
+   "url": "https://www.sf.gov/location--alemany-flea-market",
+   "note": "The city-run Sunday flea market: antiques, records, odds and ends."
+  },
+  {
+   "name": "Inner Sunset Flea Market",
+   "kind": "flea",
+   "area": "Irving St from 9th to 11th Ave",
+   "lat": 37.7644,
+   "lng": -122.45842,
+   "days": [
+    "Sun"
+   ],
+   "hours": [
+    "10:00",
+    "16:00"
+   ],
+   "url": "https://sunsetmercantilesf.com",
+   "note": "Second-Sunday flea market on Irving St, April to November.",
+   "months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "nth": [
+    2
+   ]
+  },
+  {
+   "name": "Secondhand Saturdays",
+   "kind": "flea",
+   "area": "37th Ave from Ortega to Quintara",
+   "lat": 37.75153,
+   "lng": -122.49565,
+   "days": [
+    "Sat"
+   ],
+   "hours": [
+    "10:00",
+    "16:00"
+   ],
+   "url": "https://sunsetmercantilesf.com",
+   "note": "Third-Saturday secondhand market in the Outer Sunset, April to November.",
+   "months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "nth": [
+    3
+   ],
+   "off": -5
+  },
+  {
+   "name": "Fort Mason Night Market",
+   "kind": "night",
+   "area": "Fort Mason Center, 2 Marina Blvd",
+   "lat": 37.80689,
+   "lng": -122.43221,
+   "days": [],
+   "hours": [
+    "17:00",
+    "22:00"
+   ],
+   "url": "https://fortmason.org/series/fort-mason-night-market-2026/",
+   "note": "Free monthly night market with food trucks and makers. Later 2026 dates not yet announced.",
+   "dates": [
+    "2026-10-16"
+   ]
+  },
+  {
+   "name": "Noe Valley Night Market",
+   "kind": "night",
+   "area": "Noe Valley Town Square, 3861 24th St",
+   "lat": 37.75154,
+   "lng": -122.42886,
+   "days": [
+    "Tue"
+   ],
+   "hours": [
+    "17:00",
+    "20:00"
+   ],
+   "url": "https://sf.funcheap.com/event-series/noe-valley-monthly-night-market/",
+   "note": "Last-Tuesday evening market in Noe Valley Town Square, through December.",
+   "nth": [
+    -1
+   ],
+   "until": "2026-12-29"
+  },
+  {
+   "name": "Excelsior Night Market",
+   "kind": "night",
+   "area": "Ocean Ave at Mission St",
+   "lat": 37.7239,
+   "lng": -122.43606,
+   "days": [],
+   "hours": [
+    "16:30",
+    "20:30"
+   ],
+   "url": "https://sf.funcheap.com",
+   "note": "Monthly street night market on Ocean Ave in the Excelsior.",
+   "dates": [
+    "2026-10-23",
+    "2026-11-20",
+    "2026-12-11"
+   ]
+  }
+ ]
+}

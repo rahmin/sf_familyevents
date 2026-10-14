@@ -750,5 +750,97 @@
  "Cowell Theater, Pier 2/Gateway Pavilion, FMCAC, 2 Marina Blvd, San Francisco, CA 94123": [
   null,
   null
+ ],
+ "1 Ferry Building, San Francisco, CA": [
+  37.7955487,
+  -122.3934746
+ ],
+ "100 Alemany Blvd, San Francisco, CA": [
+  37.736938,
+  -122.4089215
+ ],
+ "22nd St & Bartlett St, San Francisco, CA": [
+  null,
+  null
+ ],
+ "Fulton St & Hyde St, San Francisco, CA": [
+  null,
+  null
+ ],
+ "3861 24th St, San Francisco, CA": [
+  37.7515368,
+  -122.4288619
+ ],
+ "2 Marina Blvd, San Francisco, CA": [
+  37.806886,
+  -122.4322073
+ ],
+ "270 Noe St, San Francisco, CA": [
+  37.7646936,
+  -122.4333649
+ ],
+ "1315 8th Ave, San Francisco, CA": [
+  37.7637407,
+  -122.465417
+ ],
+ "1377 Fell St, San Francisco, CA": [
+  37.7733329,
+  -122.440471
+ ],
+ "1700 O'Farrell St, San Francisco, CA": [
+  37.783355,
+  -122.432876
+ ],
+ "450 Hayes St, San Francisco, CA": [
+  37.777031,
+  -122.4238821
+ ],
+ "244 Clement St, San Francisco, CA": [
+  37.7831463,
+  -122.4617101
+ ],
+ "501 Buckingham Way, San Francisco, CA": [
+  37.7297396,
+  -122.479095
+ ],
+ "725 Greenwich St, San Francisco, CA": [
+  37.8019294,
+  -122.4118923
+ ],
+ "37th Ave & Ortega St, San Francisco, CA": [
+  null,
+  null
+ ],
+ "Irving St & 10th Ave, San Francisco, CA": [
+  37.7643991,
+  -122.4584201
+ ],
+ "Ocean Ave & Mission St, San Francisco, CA": [
+  37.7239014,
+  -122.4360588
+ ],
+ "Bartlett Street & 22nd Street, San Francisco": [
+  null,
+  null
+ ],
+ "Bartlett Street, San Francisco, 94110": [
+  37.7529775,
+  -122.4196334
+ ],
+ "Fulton Street & Hyde Street, San Francisco": [
+  null,
+  null
+ ],
+ "Fulton Street & Larkin Street, San Francisco": [
+  null,
+  null
+ ],
+ "37th Avenue & Ortega Street, San Francisco": [
+  null,
+  null
+ ],
+ "37th Avenue, San Francisco 94122": [
+  37.7617876,
+  -122.4963655
  ]
 }

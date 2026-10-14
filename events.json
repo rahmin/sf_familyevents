@@ -106,6 +106,27 @@
    "url": "https://sfchildrennature.org/event/swing-into-stories-koret-playground-golden-gate-park/2026-10-13/"
   },
   {
+   "id": "mkt-ferry-plaza-farmers-market-2026-10-13",
+   "kind": "event",
+   "source": "markets",
+   "name": "Ferry Plaza Farmers Market",
+   "area": "Ferry Building, Embarcadero at Market St",
+   "lat": 37.79555,
+   "lng": -122.39347,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-13T10:00:00-07:00",
+   "end": "2026-10-13T14:00:00-07:00",
+   "note": "Foodwise's flagship farmers market along the Embarcadero, year-round.",
+   "url": "https://foodwise.org/markets/ferry-plaza-farmers-market/",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
    "id": "lk-free-day-conservatory-of-flowers-2026-10-13",
    "kind": "event",
    "source": "Local Kiddo SF",
@@ -426,6 +447,27 @@
    }
   },
   {
+   "id": "mkt-heart-of-the-city-farmers-market-2026-10-14",
+   "kind": "event",
+   "source": "markets",
+   "name": "Heart of the City Farmers Market",
+   "area": "Fulton St between Hyde & Larkin (Civic Center)",
+   "lat": 37.77958,
+   "lng": -122.41681,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-14T07:00:00-07:00",
+   "end": "2026-10-14T16:00:00-07:00",
+   "note": "Long-running Civic Center market, now on Fulton St; year-round.",
+   "url": "https://hotcfarmersmarket.org",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
    "id": "ml-10040163-2026-10-14",
    "kind": "event",
    "source": "Mission Local",
@@ -688,6 +730,27 @@
    "url": "https://missionlocal.org/event/the-womens-building-gratitude-network-annual-summit-2026-rooted-rising/2026-10-14/"
   },
   {
+   "id": "mkt-castro-farmers-market-2026-10-14",
+   "kind": "event",
+   "source": "markets",
+   "name": "Castro Farmers Market",
+   "area": "270 Noe St",
+   "lat": 37.76469,
+   "lng": -122.43336,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-14T15:00:00-07:00",
+   "end": "2026-10-14T19:00:00-07:00",
+   "note": "Wednesday evening market in the Castro, April to mid-November.",
+   "url": "https://pcfma.org/castro",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
    "id": "cas-lagoon-senses-2026-10-14-1530",
    "kind": "event",
    "source": "calacademy",
@@ -921,6 +984,27 @@
    "note": "Free drop-in indoor play time for little kids in the rec center gym, run by SF Rec & Park."
   },
   {
+   "id": "mkt-ferry-plaza-farmers-market-2026-10-15",
+   "kind": "event",
+   "source": "markets",
+   "name": "Ferry Plaza Farmers Market",
+   "area": "Ferry Building, Embarcadero at Market St",
+   "lat": 37.79555,
+   "lng": -122.39347,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-15T10:00:00-07:00",
+   "end": "2026-10-15T14:00:00-07:00",
+   "note": "Foodwise's flagship farmers market along the Embarcadero, year-round.",
+   "url": "https://foodwise.org/markets/ferry-plaza-farmers-market/",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
    "id": "lk-toddler-thursday-2026-10-15",
    "kind": "event",
    "source": "Local Kiddo SF",
@@ -1148,6 +1232,27 @@
    "end": "2026-10-15T17:00:00-07:00",
    "note": "Join Gratitude Network for its 2026 Annual Summit, Rooted & Rising: Cultivate. Collaborate. Lead. This inspiring gathering brings together changemakers, nonprofit leaders, and social impact professionals from around the ",
    "url": "https://missionlocal.org/event/the-womens-building-gratitude-network-annual-summit-2026-rooted-rising/2026-10-15/"
+  },
+  {
+   "id": "mkt-mission-community-market-2026-10-15",
+   "kind": "event",
+   "source": "markets",
+   "name": "Mission Community Market",
+   "area": "22nd St & Bartlett St",
+   "lat": 37.75537,
+   "lng": -122.41987,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-15T15:00:00-07:00",
+   "end": "2026-10-15T19:00:00-07:00",
+   "note": "Thursday evening market on Bartlett St, mid-March to mid-November.",
+   "url": "https://foodwise.org/markets/mission-community-market/",
+   "tags": [
+    "markets"
+   ]
   },
   {
    "id": "fc-haunted-halloween-hoopla-artisan-night-market-sf-2026-10-15",
@@ -1580,6 +1685,27 @@
    "recurring": true
   },
   {
+   "id": "mkt-fort-mason-night-market-2026-10-16",
+   "kind": "event",
+   "source": "markets",
+   "name": "Fort Mason Night Market",
+   "area": "Fort Mason Center, 2 Marina Blvd",
+   "lat": 37.80689,
+   "lng": -122.43221,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-16T17:00:00-07:00",
+   "end": "2026-10-16T22:00:00-07:00",
+   "note": "Free monthly night market with food trucks and makers. Later 2026 dates not yet announced.",
+   "url": "https://fortmason.org/series/fort-mason-night-market-2026/",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
    "id": "omca-12459-2026-10-16",
    "kind": "event",
    "source": "Oakland Museum of California",
@@ -1753,6 +1879,69 @@
    }
   },
   {
+   "id": "mkt-alemany-farmers-market-2026-10-17",
+   "kind": "event",
+   "source": "markets",
+   "name": "Alemany Farmers Market",
+   "area": "100 Alemany Blvd (Bernal Heights)",
+   "lat": 37.73694,
+   "lng": -122.40892,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-17T07:00:00-07:00",
+   "end": "2026-10-17T14:00:00-07:00",
+   "note": "The city's oldest farmers market, now run by Foodwise; year-round.",
+   "url": "https://foodwise.org/markets/alemany-farmers-market/",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "id": "mkt-ferry-plaza-farmers-market-saturday-2026-10-17",
+   "kind": "event",
+   "source": "markets",
+   "name": "Ferry Plaza Farmers Market (Saturday)",
+   "area": "Ferry Building, Embarcadero at Market St",
+   "lat": 37.79555,
+   "lng": -122.39347,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-17T08:00:00-07:00",
+   "end": "2026-10-17T14:00:00-07:00",
+   "note": "The big Saturday market at the Ferry Building, year-round.",
+   "url": "https://foodwise.org/markets/ferry-plaza-farmers-market/",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "id": "mkt-north-beach-farmers-market-2026-10-17",
+   "kind": "event",
+   "source": "markets",
+   "name": "North Beach Farmers Market",
+   "area": "725 Greenwich St (by Joe DiMaggio Playground)",
+   "lat": 37.80193,
+   "lng": -122.41189,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-17T09:00:00-07:00",
+   "end": "2026-10-17T14:00:00-07:00",
+   "note": "Neighborhood-run Saturday market next to Joe DiMaggio Playground.",
+   "url": "https://northbeachfarmersmarket.com",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
    "id": "ml-872245-2026-10-17",
    "kind": "event",
    "source": "Mission Local",
@@ -1789,6 +1978,27 @@
    "end": "2026-10-17T12:00:00-07:00",
    "note": "Do you want to learn the basics of sustainable gardening design and care? Join us for this informative, hands-on, three-part series! Introduction to Sustainable Gardening Series – Fall 2026 October 17th, 24th, and 31st –",
    "url": "https://missionlocal.org/event/garden-for-the-environment-introduction-to-sustainable-gardening-series-fall-2026/2026-10-17/"
+  },
+  {
+   "id": "mkt-secondhand-saturdays-2026-10-17",
+   "kind": "event",
+   "source": "markets",
+   "name": "Secondhand Saturdays",
+   "area": "37th Ave from Ortega to Quintara",
+   "lat": 37.75153,
+   "lng": -122.49565,
+   "indoor": false,
+   "exp": 0.5,
+   "off": -5,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-17T10:00:00-07:00",
+   "end": "2026-10-17T16:00:00-07:00",
+   "note": "Third-Saturday secondhand market in the Outer Sunset, April to November.",
+   "url": "https://sunsetmercantilesf.com",
+   "tags": [
+    "markets"
+   ]
   },
   {
    "id": "cas-sensory-storytime-2026-10-17-1015",
@@ -2263,6 +2473,174 @@
     "page": "talks-concerts.html",
     "id": "ml-874571-2026-10-17"
    }
+  },
+  {
+   "id": "mkt-alemany-flea-market-2026-10-18",
+   "kind": "event",
+   "source": "markets",
+   "name": "Alemany Flea Market",
+   "area": "100 Alemany Blvd (Bernal Heights)",
+   "lat": 37.73694,
+   "lng": -122.40892,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-18T07:00:00-07:00",
+   "end": "2026-10-18T15:00:00-07:00",
+   "note": "The city-run Sunday flea market: antiques, records, odds and ends.",
+   "url": "https://www.sf.gov/location--alemany-flea-market",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "id": "mkt-heart-of-the-city-farmers-market-2026-10-18",
+   "kind": "event",
+   "source": "markets",
+   "name": "Heart of the City Farmers Market",
+   "area": "Fulton St between Hyde & Larkin (Civic Center)",
+   "lat": 37.77958,
+   "lng": -122.41681,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-18T07:00:00-07:00",
+   "end": "2026-10-18T16:00:00-07:00",
+   "note": "Long-running Civic Center market, now on Fulton St; year-round.",
+   "url": "https://hotcfarmersmarket.org",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "id": "mkt-clement-st-farmers-market-2026-10-18",
+   "kind": "event",
+   "source": "markets",
+   "name": "Clement St. Farmers Market",
+   "area": "244 Clement St (Inner Richmond)",
+   "lat": 37.78315,
+   "lng": -122.46171,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-18T09:00:00-07:00",
+   "end": "2026-10-18T14:00:00-07:00",
+   "note": "Sunday street-closure market, year-round, rain or shine.",
+   "url": "https://agriculturalinstitute.org/clement-st",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "id": "mkt-divisadero-farmers-market-2026-10-18",
+   "kind": "event",
+   "source": "markets",
+   "name": "Divisadero Farmers Market",
+   "area": "1377 Fell St (DMV lot)",
+   "lat": 37.77333,
+   "lng": -122.44047,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-18T09:00:00-07:00",
+   "end": "2026-10-18T13:00:00-07:00",
+   "note": "Year-round Sunday market, now on Fell St.",
+   "url": "https://pcfma.org/divisadero",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "id": "mkt-inner-sunset-farmers-market-2026-10-18",
+   "kind": "event",
+   "source": "markets",
+   "name": "Inner Sunset Farmers Market",
+   "area": "1315 8th Ave (off Irving St)",
+   "lat": 37.76374,
+   "lng": -122.46542,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-18T09:00:00-07:00",
+   "end": "2026-10-18T13:00:00-07:00",
+   "note": "Year-round Sunday market off Irving St.",
+   "url": "https://pcfma.org/innersunset",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "id": "mkt-outer-sunset-farmers-market-mercantile-2026-10-18",
+   "kind": "event",
+   "source": "markets",
+   "name": "Outer Sunset Farmers Market & Mercantile",
+   "area": "37th Ave from Ortega to Quintara",
+   "lat": 37.75153,
+   "lng": -122.49565,
+   "indoor": false,
+   "exp": 0.5,
+   "off": -5,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-18T09:00:00-07:00",
+   "end": "2026-10-18T14:00:00-07:00",
+   "note": "Sunday market with local makers on 37th Ave, year-round, rain or shine.",
+   "url": "https://sunsetmercantilesf.com",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "id": "mkt-stonestown-farmers-market-2026-10-18",
+   "kind": "event",
+   "source": "markets",
+   "name": "Stonestown Farmers Market",
+   "area": "501 Buckingham Way",
+   "lat": 37.72974,
+   "lng": -122.4791,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-18T09:00:00-07:00",
+   "end": "2026-10-18T13:00:00-07:00",
+   "note": "Year-round Sunday market at Stonestown.",
+   "url": "https://agriculturalinstitute.org/stonestown",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "id": "mkt-fort-mason-center-farmers-market-2026-10-18",
+   "kind": "event",
+   "source": "markets",
+   "name": "Fort Mason Center Farmers Market",
+   "area": "Fort Mason Center, Marina Blvd",
+   "lat": 37.80689,
+   "lng": -122.43221,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-18T09:30:00-07:00",
+   "end": "2026-10-18T13:30:00-07:00",
+   "note": "Sunday market at Fort Mason with bay views.",
+   "url": "https://cafarmersmkts.com/fort-mason-center-farmers-market",
+   "tags": [
+    "markets"
+   ]
   },
   {
    "id": "ml-10041057-2026-10-18",
@@ -2842,6 +3220,27 @@
    "end": "2026-10-20T12:00:00-07:00",
    "note": "The Library’s YouthMobile is coming to the park!",
    "url": "https://sfchildrennature.org/event/swing-into-stories-hilltop-playground-2-2/2026-10-20/"
+  },
+  {
+   "id": "mkt-ferry-plaza-farmers-market-2026-10-20",
+   "kind": "event",
+   "source": "markets",
+   "name": "Ferry Plaza Farmers Market",
+   "area": "Ferry Building, Embarcadero at Market St",
+   "lat": 37.79555,
+   "lng": -122.39347,
+   "indoor": false,
+   "exp": 0.5,
+   "off": 0,
+   "free": true,
+   "recurring": true,
+   "start": "2026-10-20T10:00:00-07:00",
+   "end": "2026-10-20T14:00:00-07:00",
+   "note": "Foodwise's flagship farmers market along the Embarcadero, year-round.",
+   "url": "https://foodwise.org/markets/ferry-plaza-farmers-market/",
+   "tags": [
+    "markets"
+   ]
   },
   {
    "id": "cas-sensory-storytime-2026-10-20-1015",

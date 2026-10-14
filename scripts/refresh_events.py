@@ -906,7 +906,8 @@ WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 def load_markets(start: date, end: date) -> list[dict]:
     """Farmers and flea markets from data/markets.json, turned into dated, recurring events.
     Each entry: days (e.g. ["Sat"]), hours ["08:00","14:00"], optional months [5..11] for seasonal markets,
-    optional nth [1,3] / [-1] for monthly markets (week of the month; -1 = last)."""
+    optional nth [1,3] / [-1] for monthly markets (week of the month; -1 = last), optional until "YYYY-MM-DD",
+    or dates ["YYYY-MM-DD", ...] for markets with announced dates only."""
     if not MARKETS.exists():
         return []
     out = []
@@ -914,12 +915,14 @@ def load_markets(start: date, end: date) -> list[dict]:
         slug = re.sub(r"[^a-z0-9]+", "-", m["name"].lower()).strip("-")[:40]
         d = start
         while d <= end:
-            if WEEKDAYS[d.weekday()] in m["days"] and (not m.get("months") or d.month in m["months"]):
+            if m.get("until") and d.isoformat() > m["until"]:
+                break
+            if d.isoformat() in m.get("dates", []) or (WEEKDAYS[d.weekday()] in m.get("days", []) and (not m.get("months") or d.month in m["months"])):
                 # a Sat+Sun market's "weekend" is counted by its Saturday, so Sunday follows the Saturday it belongs to
                 ref = d - timedelta(days=1) if WEEKDAYS[d.weekday()] == "Sun" and "Sat" in m["days"] else d
                 nth = (ref.day - 1) // 7 + 1
                 last = (ref + timedelta(days=7)).month != ref.month
-                if not m.get("nth") or nth in m["nth"] or (-1 in m["nth"] and last):
+                if d.isoformat() in m.get("dates", []) or not m.get("nth") or nth in m["nth"] or (-1 in m["nth"] and last):
                     out.append(dict(id=f"mkt-{slug}-{d.isoformat()}", kind="event", source="markets", name=m["name"],
                                     area=m["area"], lat=m["lat"], lng=m["lng"], indoor=bool(m.get("indoor")), exp=m.get("exp", 0.5), off=m.get("off", 0),
                                     free=m.get("free", True), recurring=True, start=local_iso(d, m["hours"][0]), end=local_iso(d, m["hours"][1]),
