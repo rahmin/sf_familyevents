@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-12T23:08-07:00",
- "coverage": "Oct 12–Jan 10",
+ "generated": "2026-10-13T17:23-07:00",
+ "coverage": "Oct 13–Jan 11",
  "sources": [
   "Calendar feeds (Luma, SPUR and others)",
   "Commonwealth Club",
@@ -19,66 +19,6 @@
   "manual"
  ],
  "events": [
-  {
-   "id": "ybg-25723-2026-10-12",
-   "kind": "event",
-   "source": "Yerba Buena Gardens Festival",
-   "name": "San Francisco Indigenous Peoples Day with special performance by Jeremy Dutcher",
-   "area": "Great Lawn, Yerba Buena Gardens",
-   "lat": 37.784773,
-   "lng": -122.402658,
-   "indoor": false,
-   "exp": 0.35,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-12T12:00:00-07:00",
-   "end": "2026-10-12T16:00:00-07:00",
-   "note": "Free RSVP Join us in celebration of San Francisco Indigenous Peoples Day with a magnificent profusion of Native American art, music and vendors. The event highlights the vastly diverse and talented community of Indigenou",
-   "url": "https://ybgfestival.org/event/sf-indigenous-peoples-day-2026/",
-   "also": {
-    "page": "index.html",
-    "id": "ybg-indigenous-peoples-day"
-   }
-  },
-  {
-   "id": "artists-television-a-10000162-2026-10-12",
-   "kind": "event",
-   "source": "Artists' Television Access",
-   "name": "Studio 26: Fantom Classroom of the Art Institute",
-   "area": "Artists' Television Access, 992 Valencia St",
-   "lat": 37.7569,
-   "lng": -122.4212,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-12T19:00:00-07:00",
-   "end": "2026-10-12T19:00:00-07:00",
-   "note": "A free seminar, investigating the 16mm experimental films in the collection of the SFAI Legacy Foundation and Archives.",
-   "url": "https://www.atasite.org/event/studio-26-fantom-classroom-of-the-art-institute-3/2026-10-12/",
-   "bookAhead": false
-  },
-  {
-   "id": "indy-2756-2026-10-12",
-   "kind": "event",
-   "source": "The Independent",
-   "name": "KiNG MALA",
-   "area": "The Independent, 628 Divisadero St",
-   "lat": 37.7755,
-   "lng": -122.4378,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": false,
-   "start": "2026-10-12T20:00:00-07:00",
-   "end": null,
-   "bookAhead": true,
-   "note": "Live at The Independent (The Golden Thing Tour). Doors 7:30 PM, show 8:00 PM.",
-   "url": "https://www.theindependentsf.com/tm-event/king-mala/",
-   "tags": [
-    "music"
-   ]
-  },
   {
    "kind": "event",
    "source": "The Chapel",
@@ -116,13 +56,13 @@
    "start": "2026-10-13T19:00:00-07:00",
    "end": null,
    "free": false,
-   "note": "Post Punk at Great American Music Hall. With with Topographies, Dalmatia. Doors at 6:00PM / Show at 7:00PM. $27.50-$30.00.",
+   "note": "Post Punk at Great American Music Hall. With with Topographies, Dalmatia. Doors at 6:00PM / Show at 7:00PM. $30.00.",
    "url": "https://wl.seetickets.us/event/provoker/703886?afflky=GreatAmericanMusicHall",
    "tags": [
     "music",
     "songs"
    ],
-   "price": "$28–30"
+   "price": "$30"
   },
   {
    "kind": "event",
@@ -162,6 +102,23 @@
    "tags": [
     "music"
    ]
+  },
+  {
+   "id": "ml-876451-2026-10-13",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Radio Gatsby Swing Band at the Woodchopper’s Ball",
+   "area": "Verdi Club",
+   "lat": 37.7634058,
+   "lng": -122.4079386,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-13T21:00:00-07:00",
+   "end": "2026-10-13T23:30:00-07:00",
+   "note": "RADIO GATSBY SWING BAND; Radio Gatsby Swing Band captivates audiences with its dynamic performances, showcasing a fusion of timeless swing melodies and vibrant jazz improvisations. What sets them apart is their ensemble ",
+   "url": "https://missionlocal.org/event/verdi-club-radio-gatsby-swing-band-at-the-woodchoppers-ball/"
   },
   {
    "id": "cwc-loubna-mrie-defiance-a-memoir-of-awakening-rebelli-2026-10-14",
@@ -249,7 +206,7 @@
    "start": "2026-10-14T19:30:00-07:00",
    "end": null,
    "free": false,
-   "note": "Alternative at The Chapel. With Golomb, figure eight, sachi's mirror. Doors at 7:00PM / Show at 7:30PM. All Ages.",
+   "note": "Alternative at The Chapel. With Golomb, figure eight, sachi's mirror, Visuals by Zack Rodell. Doors at 7:00PM / Show at 7:30PM. All Ages.",
    "url": "https://wl.seetickets.us/event/dummy/700215?afflky=TheChapel",
    "tags": [
     "music",
@@ -931,6 +888,23 @@
    ]
   },
   {
+   "id": "ml-876459-2026-10-18",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Mucha Salsa+",
+   "area": "Verdi Club",
+   "lat": 37.7634058,
+   "lng": -122.4079386,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-18T18:30:00-07:00",
+   "end": "2026-10-18T23:00:00-07:00",
+   "note": "Mucha Salsa Social in the heart of San Francisco Mission District! Complimentary Beginner Salsa and Intermediate Salsa classes 7pm-8pm. Social dancing to live DJ from 8pm-11:30pm at Verdi Club (2424 Mariposa St, San Fran",
+   "url": "https://missionlocal.org/event/verdi-club-mucha-salsa/"
+  },
+  {
    "kind": "event",
    "source": "Great American Music Hall",
    "area": "Great American Music Hall, 859 O'Farrell St",
@@ -1234,6 +1208,23 @@
    ]
   },
   {
+   "id": "ml-876454-2026-10-20",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Mike Rinta & The Swing Therapists at the Woodchopper’s Ball",
+   "area": "Verdi Club",
+   "lat": 37.7634058,
+   "lng": -122.4079386,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-20T21:00:00-07:00",
+   "end": "2026-10-20T23:30:00-07:00",
+   "note": "MIKE RINTA & THE SWING THERAPISTS: Mike Rinta & The Swing Therapists work together regularly, 3 to 4 days a week, playing jazz from 1945 and earlier for seniors under the name The Jazz Therapists. All the musicians are f",
+   "url": "https://missionlocal.org/event/verdi-club-mike-rinta-the-swing-therapists-at-the-woodchoppers-ball/"
+  },
+  {
    "id": "cwc-jessica-marie-alba-the-inner-work-of-transforming--2026-10-21",
    "kind": "event",
    "source": "Commonwealth Club",
@@ -1422,6 +1413,23 @@
    "bookAhead": true,
    "note": "What can the billion-dollar secrets of game design teach people about building products better and making customers happier?Video games are one of the biggest entertainment industry in the world—for a reason.",
    "url": "https://www.commonwealthclub.org/events/2026-10-22/bing-gordon-and-chloe-gordon-everybody-wins"
+  },
+  {
+   "id": "ml-876475-2026-10-22",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Her Story, History, Their Story, Whose Story? Facts and Fictions in Historical Queer Books",
+   "area": "GLBT History Museum",
+   "lat": 37.7606979,
+   "lng": -122.4356494,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-22T18:00:00-07:00",
+   "end": "2026-10-22T20:00:00-07:00",
+   "note": "RSVP and reserve tickets here https://herstory_history_litquake.eventbrite.com/ The GLBT Historical Society in partnership with the Bay Area Reporter and Litquake present a panel discussion as part of the 2026 Litquake f",
+   "url": "https://missionlocal.org/event/glbt-history-museum-her-story-history-their-story-whose-story-facts-and-fictions-in-historical-queer-books/"
   },
   {
    "id": "ml-876203-2026-10-22",
@@ -1931,6 +1939,23 @@
    "bookAhead": false
   },
   {
+   "id": "ml-876469-2026-10-25",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "iHeartMambo Salsa Social",
+   "area": "Verdi Club",
+   "lat": 37.7634058,
+   "lng": -122.4079386,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-25T19:00:00-07:00",
+   "end": "2026-10-25T23:30:00-07:00",
+   "note": "iHeartmambo Salsa Social in the heart of San Francisco Mission District! Complimentary Beginner Salsa and Intermediate Salsa classes 7pm-8pm. Social dancing to live DJ from 8pm-11:30pm at Verdi Club (2424 Mariposa St, Sa",
+   "url": "https://missionlocal.org/event/verdi-club-iheartmambo-salsa-social/"
+  },
+  {
    "id": "indy-2690-2026-10-25",
    "kind": "event",
    "source": "The Independent",
@@ -2005,7 +2030,8 @@
    "start": "2026-10-27T18:45:00-07:00",
    "end": "2026-10-27T21:45:00-07:00",
    "note": "Join Rikud By The Bay for an all-level Israeli folk dance night with choreographer Tovael Hagai.",
-   "url": "https://www.jccsf.org/event/rikud-by-the-bay-israeli-dance-night-2/"
+   "url": "https://www.jccsf.org/event/rikud-by-the-bay-israeli-dance-night-2/",
+   "price": "$15"
   },
   {
    "kind": "event",
@@ -2126,6 +2152,23 @@
    "end": "2026-10-29T19:00:00-07:00",
    "note": "This November, San Francisco voters will decide whether to increase the funding cap for the city’s Housing Trust Fund. Hear from experts in affordable housing, homelessness prevention, tenant protections and public policy about the fund’s impact, future, and c",
    "url": "https://www.spur.org/events/2026-10-29/investing-housing-housing-trust-fund-and-november-ballot"
+  },
+  {
+   "id": "ml-876479-2026-10-29",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Queer Home on Film: A Shorts Program",
+   "area": "GLBT History Museum",
+   "lat": 37.7606979,
+   "lng": -122.4356494,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-29T18:00:00-07:00",
+   "end": "2026-10-29T20:00:00-07:00",
+   "note": "RSVP and reserve your tickets here https://glbthistory.ticketing.veevartapp.com/tickets/view/list/film-screening-queer-home-on-film-a-shorts-program-new-date The GLBT Historical Society presents a screening of short film",
+   "url": "https://missionlocal.org/event/glbt-history-museum-queer-home-on-film-a-shorts-program/"
   },
   {
    "kind": "event",
@@ -2308,11 +2351,11 @@
    "tags": [
     "music"
    ],
+   "price": "$5–15",
    "also": {
     "page": "index.html",
     "id": "cmc-dia-de-muertos-2026-11-01"
-   },
-   "price": "$5–15"
+   }
   },
   {
    "kind": "event",
@@ -3526,8 +3569,29 @@
    "free": true,
    "start": "2026-12-04T16:30:00-08:00",
    "end": "2026-12-04T17:00:00-08:00",
-   "note": "Light the community hanukkiyah with us every weeknight of Hanukkah. Enjoy live music, crafts and fried treats.",
-   "url": "https://www.jccsf.org/event/hanukkah-candle-lighting-2/2026-12-04/"
+   "note": "Light the community hanukkiyah with us every weekday of Hanukkah. Enjoy live music, crafts and fried treats.",
+   "url": "https://www.jccsf.org/event/hanukkah-candle-lighting-2/"
+  },
+  {
+   "id": "indy-8491-2026-12-04",
+   "kind": "event",
+   "source": "The Independent",
+   "name": "Nirosta Steel",
+   "area": "The Independent, 628 Divisadero St",
+   "lat": 37.7755,
+   "lng": -122.4378,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-12-04T21:00:00-08:00",
+   "end": null,
+   "bookAhead": true,
+   "note": "Live at The Independent. Doors 8:30 PM, show 9:00 PM.",
+   "url": "https://www.theindependentsf.com/tm-event/nirosta-steel/",
+   "tags": [
+    "music"
+   ]
   },
   {
    "id": "mapp-2026-12-05",
@@ -3644,7 +3708,7 @@
    "free": true,
    "start": "2026-12-07T16:30:00-08:00",
    "end": "2026-12-07T17:00:00-08:00",
-   "note": "Light the community hanukkiyah with us every weeknight of Hanukkah. Enjoy live music, crafts and fried treats.",
+   "note": "Light the community hanukkiyah with us every weekday of Hanukkah. Enjoy live music, crafts and fried treats.",
    "url": "https://www.jccsf.org/event/hanukkah-candle-lighting-2/2026-12-07/"
   },
   {
@@ -3661,7 +3725,7 @@
    "free": true,
    "start": "2026-12-08T16:30:00-08:00",
    "end": "2026-12-08T17:00:00-08:00",
-   "note": "Light the community hanukkiyah with us every weeknight of Hanukkah. Enjoy live music, crafts and fried treats.",
+   "note": "Light the community hanukkiyah with us every weekday of Hanukkah. Enjoy live music, crafts and fried treats.",
    "url": "https://www.jccsf.org/event/hanukkah-candle-lighting-2/2026-12-08/"
   },
   {
@@ -3699,7 +3763,7 @@
    "free": true,
    "start": "2026-12-09T16:30:00-08:00",
    "end": "2026-12-09T17:00:00-08:00",
-   "note": "Light the community hanukkiyah with us every weeknight of Hanukkah. Enjoy live music, crafts and fried treats.",
+   "note": "Light the community hanukkiyah with us every weekday of Hanukkah. Enjoy live music, crafts and fried treats.",
    "url": "https://www.jccsf.org/event/hanukkah-candle-lighting-2/2026-12-09/"
   },
   {
@@ -3758,7 +3822,7 @@
    "free": true,
    "start": "2026-12-10T16:30:00-08:00",
    "end": "2026-12-10T17:00:00-08:00",
-   "note": "Light the community hanukkiyah with us every weeknight of Hanukkah. Enjoy live music, crafts and fried treats.",
+   "note": "Light the community hanukkiyah with us every weekday of Hanukkah. Enjoy live music, crafts and fried treats.",
    "url": "https://www.jccsf.org/event/hanukkah-candle-lighting-2/2026-12-10/"
   },
   {
@@ -3817,7 +3881,7 @@
    "free": true,
    "start": "2026-12-11T16:30:00-08:00",
    "end": "2026-12-11T17:00:00-08:00",
-   "note": "Light the community hanukkiyah with us every weeknight of Hanukkah. Enjoy live music, crafts and fried treats.",
+   "note": "Light the community hanukkiyah with us every weekday of Hanukkah. Enjoy live music, crafts and fried treats.",
    "url": "https://www.jccsf.org/event/hanukkah-candle-lighting-2/2026-12-11/"
   },
   {
@@ -4138,44 +4202,22 @@
    ]
   },
   {
+   "id": "indy-8494-2027-01-09",
    "kind": "event",
-   "source": "The Chapel",
-   "area": "The Chapel, 777 Valencia St",
-   "lat": 37.7604,
-   "lng": -122.4213,
+   "source": "The Independent",
+   "name": "Scott Pemberton + The Westones + Boot Juice",
+   "area": "The Independent, 628 Divisadero St",
+   "lat": 37.7755,
+   "lng": -122.4378,
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "bookAhead": true,
-   "id": "vp-the-chapel-swirlies-2027-01-09",
-   "name": "Swirlies",
-   "start": "2027-01-09T20:00:00-08:00",
-   "end": null,
    "free": false,
-   "note": "Alternative at The Chapel. With Seko. Doors at 7:00PM / Show at 8:00PM. All Ages.",
-   "url": "https://wl.seetickets.us/event/swirlies/706410?afflky=TheChapel",
-   "tags": [
-    "music",
-    "songs"
-   ]
-  },
-  {
-   "kind": "event",
-   "source": "The Chapel",
-   "area": "The Chapel, 777 Valencia St",
-   "lat": 37.7604,
-   "lng": -122.4213,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "id": "vp-the-chapel-nora-brown-with-stephanie-coleman-2027-01-10",
-   "name": "Nora Brown with Stephanie Coleman",
-   "start": "2027-01-10T20:00:00-08:00",
+   "start": "2027-01-09T21:00:00-08:00",
    "end": null,
-   "free": false,
-   "note": "Bluegrass at The Chapel. Doors at 7:00PM / Show at 8:00PM. All Ages.",
-   "url": "https://wl.seetickets.us/event/nora-brown-with-stephanie-coleman/706553?afflky=TheChapel",
+   "bookAhead": true,
+   "note": "Live at The Independent. Doors 8:30 PM, show 9:00 PM.",
+   "url": "https://www.theindependentsf.com/tm-event/scott-pemberton-the-westones-boot-juice/",
    "tags": [
     "music"
    ]
