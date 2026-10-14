@@ -414,6 +414,14 @@ function nowBucket(){const h=new Date().getHours();return h>=17?"eve":h>=12?"pm"
 function winFor(ds){const n=new Date();if(S.when==="now")return[n,new Date(n.getTime()+3*3600e3)];const w=WIN[S.tod];let a=dt(ds,w[0]);const b=dt(ds,w[1]);if(ds===todayStr()&&n>a)a=n<b?n:b;return[a,b];}
 function windowOver(){const d=curDate();return !multiDay()&&S.when!=="now"&&d===todayStr()&&winFor(d)[1]<=new Date();}
 function hasWx(ds){return !!wxFor(ds);}
+// weather during an event's own hours: average temperature, strongest gusts and highest rain chance across
+// start–end from the hourly forecast; past the forecast, the morning/afternoon/evening block its start falls in
+let WXSER=null;
+function condAt(s0,e0){const a=s0.getTime(),b=Math.max(e0.getTime(),a+3600e3);
+ if(WXSER){const ov=arr=>arr.filter(x=>x.s<b&&x.e>a&&x.v!=null);const T=ov(WXSER.T);
+  if(T.length){const g=ov(WXSER.G),w=ov(WXSER.W),r=ov(WXSER.R);const mx=arr=>arr.length?Math.max(...arr.map(x=>x.v)):null;
+   return{t:Math.round(T.reduce((n,x)=>n+x.v,0)/T.length*9/5+32),g:Math.round(((mx(g)??mx(w))||0)/1.609),r:Math.round(mx(r)||0)};}}
+ const D=wxFor(ymd(s0)),h=s0.getHours(),k=h<12?"am":h<17?"pm":"eve";return D?(D[k]||D.all||FALLBACK):(S.when==="pick"?S.custom:FALLBACK);}
 function condFor(ds){const D=wxFor(ds);const k=S.when==="now"?nowBucket():S.tod;if(D)return D[k]||D.all||FALLBACK;if(S.when==="pick")return S.custom;return FALLBACK;}
 function cond(){return condFor(curDate());}
 function curDate(){return whenDates()[0];}
@@ -537,7 +545,7 @@ function items(){
   const vis0=visible(withMin(Object.assign({},ev,{isEvent:true})));
   if(REC&&isRecurring(ev,REC)){if(vis0)RECN++;return;}
   if(S.hideSoon&&!ev.rangeStart&&evInterval(ev)[1].getTime()-Date.now()<30*60e3){if(vis0)SOON++;return;}
-  const p=withMin(Object.assign({},ev,{isEvent:true}));p.oneOff=!ev.rangeStart&&!isRecurring(ev,RALL);const e=evalPlace(p,p.start&&!ev.rangeStart?condFor(ymd(new Date(p.start))):c);const flags=[];
+  const p=withMin(Object.assign({},ev,{isEvent:true}));p.oneOff=!ev.rangeStart&&!isRecurring(ev,RALL);const e=evalPlace(p,p.start&&!ev.rangeStart?condAt(...evInterval(ev)):c);const flags=[];
   let when;if(ev.rangeStart){when="Open daily through "+ev.rangeLabel;}else{const [s,en]=evInterval(ev);when=(multiDay()?dayWord(ymd(s))+" ":"")+fmtT(s)+(ev.end?"–"+fmtT(en):" start");if(conflicts(s,en))flags.push("Overlaps something on your calendar");}
   (impacts[ev.id]||[]).forEach(t=>flags.push("Heads up: "+t));
   const kidish=/\bkids?\b|kids'|toddler|bab(y|ies)|child|famil|storytime|ages? \d|preschool|puppet|playground|all[- ]ages|halloween|dance party|sing|story/i.test((p.name||"")+" "+(p.note||"").replace(/Local Kiddo SF/g,""));
@@ -998,7 +1006,7 @@ async function loadWeather(){
   const g=await (await fetch(pt.properties.forecastGridData,{headers:{Accept:"application/geo+json"}})).json();
   const P=g.properties;
   const ser=k=>(P[k]&&P[k].values||[]).map(v=>{const [st,du]=v.validTime.split("/");const s0=new Date(st).getTime();return{s:s0,e:s0+isoHours(du)*3600e3,v:v.value};});
-  const T=ser("temperature"),G=ser("windGust"),W=ser("windSpeed"),R=ser("probabilityOfPrecipitation");
+  const T=ser("temperature"),G=ser("windGust"),W=ser("windSpeed"),R=ser("probabilityOfPrecipitation");WXSER={T,G,W,R};
   const mx=(arr,a,b)=>{let m=null;arr.forEach(x=>{if(x.s<b&&x.e>a&&x.v!=null)m=m==null?x.v:Math.max(m,x.v);});return m;};
   const now=Date.now();DAYS={};
   [0,1,2,3,4,5,6].forEach(n=>{const ds=dateOffset(n);const k=ds;const day={date:ds};
