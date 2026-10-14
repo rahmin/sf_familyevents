@@ -1953,23 +1953,6 @@
    "url": "https://sfpl.org/events/2026/10/17/storytime-babies"
   },
   {
-   "id": "fc-brava-40th-anniversary-celebration-block-party-2026mission-2026-10-17",
-   "kind": "event",
-   "source": "funcheap",
-   "name": "“Brava” 40th Anniversary Celebration Block Party 2026 (Mission)",
-   "area": "Brava Theater Center",
-   "lat": 37.7527725,
-   "lng": -122.4079629,
-   "indoor": false,
-   "exp": 0.1,
-   "off": 1,
-   "free": true,
-   "start": "2026-10-17T11:00:00-07:00",
-   "end": "2026-10-17T17:00:00-07:00",
-   "note": "Free family block party on 24th Street with live performances, film screenings, and art activities at a historic theater.",
-   "url": "https://sf.funcheap.com/brava-40th-anniversary-celebration-block-party-2026mission/"
-  },
-  {
    "id": "cas-coral-reef-dive-2026-10-17-1130",
    "kind": "event",
    "source": "calacademy",
