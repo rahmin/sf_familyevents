@@ -916,6 +916,11 @@ function render(){
  const hiddenEv=rows.filter(r=>r.p.isEvent&&!r.v&&inRange(r.p)&&!(S.free&&!r.p.free)&&((S.kind==="outdoor"&&r.p.indoor)||(S.kind==="indoor"&&!r.p.indoor))).length;
  const hintEl=document.getElementById("hint");
  if(hiddenEv){hintEl.innerHTML=`<span class="calmsg">${hiddenEv} ${S.kind==="outdoor"?"indoor":"outdoor"} ${hiddenEv===1?"event is":"events are"} hidden by the ${S.kind==="outdoor"?"Outdoor":"Indoor"} filter.</span> <button class="toggle" id="showall" style="min-height:32px;padding:4px 10px">Show both</button>`;document.getElementById("showall").onclick=()=>{S.kind="both";save();render();};}else hintEl.innerHTML="";
+ // a short list: say how much more there is one range out, with a one-tap way to widen
+ {const steps=[0,10,20,30,45],nx=steps[steps.indexOf(S.drive)+1];
+  if(vis.length<12&&nx){const d0=S.drive;S.drive=nx;const more=items().filter(r=>r.v).length-vis.length;S.drive=d0;
+   if(more>0){hintEl.insertAdjacentHTML("beforeend",`<div class="calmsg">${more} more ${more===1?"pick":"picks"} ${nx===10?"within a 10-minute drive":"within "+nx+" minutes"}. <button class="toggle" id="widen" style="min-height:32px;padding:4px 10px">Show</button></div>`);
+    document.getElementById("widen").onclick=()=>{S.drive=nx;S.sel=null;save();render();};}}}
  if(RECN)hintEl.insertAdjacentHTML("beforeend",`<div class="calmsg">${RECN} recurring ${RECN===1?"program is":"programs are"} hidden, like daily museum shows and weekly storytimes.</div>`);
  if(CLOSEDN)hintEl.insertAdjacentHTML("beforeend",`<div class="calmsg">${CLOSEDN} ${CLOSEDN===1?"place is":"places are"} closed then, so ${CLOSEDN===1?"it’s":"they’re"} hidden.</div>`);
  if(SOON)hintEl.insertAdjacentHTML("beforeend",`<div class="calmsg">${SOON} ${SOON===1?"event that has ended or ends":"events that have ended or end"} within 30 minutes ${SOON===1?"is":"are"} hidden.</div>`);
