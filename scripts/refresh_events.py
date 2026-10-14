@@ -1090,6 +1090,7 @@ def main():
     ml = scrape_mission_local(today, far) + scrape_galeria(today, far)
     fc = scrape_funcheap(today, end)
     lk = scrape_localkiddo(today, far)
+    settle_indoor(lk + ml)
     if os.environ.get("ANTHROPIC_API_KEY"):
         loose = curate(loose + ml + fc + lk)
     else:
@@ -1115,6 +1116,7 @@ def main():
     write_specials_ics(events)
     log(f"Wrote {len(events)} events to {OUT.name}")
     build_talks_concerts(today, far)
+    apply_overrides()
     crosslink()
     write_share_pages()
     GEOCACHE.write_text(json.dumps(_geocache, indent=1, ensure_ascii=False) + "\n")
@@ -1165,6 +1167,22 @@ OUTDOOR_PLACE = re.compile(r"(?i)\b(park|plaza|lawn|garden|beach|street fair|blo
 SOCIAL_NAME = re.compile(r"(?i)\bmixers?\b|\bsingles\b(?!\s+(release|launch|club))|speed[- ]?dating|\bdating (event|night|experience|party)\b|"
                          r"\bhappy hour\b|\bnetworking\b|\bsocial hour\b|matchmak|\bmeet[- ]?ups?\b|\bmingle\b")
 SOCIAL_NOTE = re.compile(r"(?i)\bsingles (event|night|mixer|experience)|speed[- ]?dating|matchmak")
+# family events from newsletters often name a neighborhood, not a venue, so decide indoors/outdoors only on a clear clue:
+# outdoor words in the name or place win; then indoor words in the name, place or description; otherwise keep the source's guess
+FAM_OUTDOOR = re.compile(r"(?i)\b(parks?|plaza|lawn|gardens?|beach|street|block party|outdoors?|open air|parklet|alley|playground|farm|zoo|trail|"
+                         r"hike|hiking|field|green|pier|lake|reservoir|meadow|picnic|parade|pumpkin patch|creek|forest|bike ride|square|civic center|salesforce|festival)\b")
+FAM_INDOOR = re.compile(r"(?i)\b(library|museum|theat(er|re)|book(shop|store)?s?|caf[eé]|studio|gallery|church|school|ymca|jcc|gym|ballet|cinema|ybca|"
+                        r"z space|somarts|randall|indoors?|playgroups?|rec(reation)? center|community center|kitchen|classroom)\b")
+
+def settle_indoor(events: list[dict]) -> list[dict]:
+    for e in events:
+        where = e["name"] + " " + (e.get("area") or "")
+        if FAM_OUTDOOR.search(where):
+            e.update(indoor=False)
+        elif FAM_INDOOR.search(where + " " + (e.get("note") or "")):
+            e.update(indoor=True, exp=0)
+    return events
+
 CT_SKIP = re.compile(r"(?i)\bclass\b|workshop|lesson|beginner|training|where to begin|mahjong|\bmeetup\b|networking")
 CT_PROMPT = """You help curate a page of concerts, talks, readings and arts events for adults in San Francisco and Oakland.
 For each event below, decide whether it is a public concert, talk, lecture, conversation, reading, screening, performance,
@@ -1643,6 +1661,23 @@ def load_suggestions(edition: str, today: date) -> list[dict]:
     return out
 
 
+OVERRIDES = ROOT / "data" / "overrides.json"
+
+def apply_overrides():
+    """Hand fixes from data/overrides.json (match a name, set fields), applied to both pages' events."""
+    if not OVERRIDES.exists():
+        return
+    rules = [(re.compile(o["match"], re.I), o.get("set", {})) for o in json.loads(OVERRIDES.read_text()).get("overrides", [])]
+    n = 0
+    for path in (OUT, OUT_CT):
+        data = json.loads(path.read_text())
+        for e in data["events"]:
+            for rx, fields in rules:
+                if rx.search(e.get("name") or ""):
+                    e.update(fields); n += 1
+        path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n")
+    log(f"Applied {n} hand fixes from {OVERRIDES.name}")
+
 def _name_words(name: str) -> set[str]:
     return {w for w in re.findall(r"[a-z0-9áéíóúñ]+", name.lower()) if len(w) >= 4} - {"with", "from", "night", "festival", "gardens", "yerba", "buena", "free"}
 
@@ -1734,6 +1769,7 @@ for _name in [n for n in list(globals()) if n.startswith("scrape_")] + [
     globals()[_name] = _isolated(globals()[_name], list)
 build_talks_concerts = _isolated(build_talks_concerts, None)
 crosslink = _isolated(crosslink, None)
+apply_overrides = _isolated(apply_overrides, None)
 write_share_pages = _isolated(write_share_pages, None)
 
 def report_failures():

@@ -1,0 +1,19 @@
+{
+ "_readme": "Hand fixes applied at the end of every refresh, to both pages. 'match' is a case-insensitive regular expression tested against the event name; 'set' lists the fields to change (e.g. indoor, free, note). Add a line when an event is labelled wrong.",
+ "overrides": [
+  {
+   "match": "bay area science festival",
+   "set": {
+    "indoor": true,
+    "exp": 0
+   }
+  },
+  {
+   "match": "party with claire bobrow",
+   "set": {
+    "indoor": true,
+    "exp": 0
+   }
+  }
+ ]
+}
