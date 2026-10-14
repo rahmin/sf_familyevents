@@ -245,6 +245,8 @@ h2{font-weight:600}
 .modetabs button{font-family:"Fredoka",system-ui,sans-serif;font-weight:600;font-size:14px;border:0;border-radius:999px;padding:6px 14px;background:transparent;color:var(--ink);cursor:pointer}
 .modetabs button[aria-selected="true"]{background:var(--panel);box-shadow:0 1px 3px rgba(31,42,68,.18)}
 .pgonly{display:none!important}body.pgmode .pgonly{display:block!important}
+.clonly{display:none!important}body.clmode .clonly{display:block!important}
+body.clmode #upcoming,body.clmode #horizon,body.clmode #evonly,body.clmode #hiderec,body.clmode #hidesoon,body.clmode #banner{display:none!important}
 body.pgmode #upcoming,body.pgmode #horizon,body.pgmode #evonly,body.pgmode #hiderec,body.pgmode #hidesoon,body.pgmode #banner,body.pgmode #kind{display:none!important}
 .vote.int[aria-pressed="true"]{background:color-mix(in srgb,var(--sun) 55%,var(--panel))}
 .name .pin{font-size:.8em}
@@ -412,11 +414,11 @@ const TODLABEL={am:"morning",pm:"afternoon",eve:"evening",all:"day"};
 function todayStr(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
 const SUGGEST_URL="https://forms.gle/K9yS3iCrfxgttuFi7"; // Google Form for visitor suggestions (see README); empty hides the link
 if(SUGGEST_URL){const a=document.getElementById("suggestlink");a.href=SUGGEST_URL;document.getElementById("suggest").hidden=false;}
-let S={when:"today",pick:"",tod:"am",kind:"both",drive:30,free:false,evonly:false,hideSoon:true,hideRec:false,interests:[],onlyInt:false,sel:null,custom:{t:62,g:15,r:0,date:todayStr()}};
+let S={clCat:[],clAge:0,when:"today",pick:"",tod:"am",kind:"both",drive:30,free:false,evonly:false,hideSoon:true,hideRec:false,interests:[],onlyInt:false,sel:null,custom:{t:62,g:15,r:0,date:todayStr()}};
 let EVENTS=[],META=null,dbState="loading";
 let CAL={on:false,status:"off",byDate:{},msg:""};
-try{const s=JSON.parse(localStorage.getItem("fdo")||"null");if(s){S.kind=(s.kv>=2?s.kind:"both")||S.kind;S.drive=s.drive===15?10:(s.drive===0?0:(s.drive||S.drive));S.free=!!s.free;S.evonly=!!s.evonly;if(s.when)S.when=s.when;if(s.pick)S.pick=s.pick;if(s.hideSoon===false)S.hideSoon=false;S.hideRec=!!s.hideRec;S.mode=s.mode==="pg"?"pg":"out";S.pgTot=!!s.pgTot;S.pgRest=!!s.pgRest;S.pgAcc=!!s.pgAcc;if(Array.isArray(s.interests))S.interests=s.interests;S.onlyInt=!!s.onlyInt;if(s.custom)S.custom=Object.assign(S.custom,s.custom);CAL.on=!!s.calOn;}}catch(e){}
-function save(){try{localStorage.setItem("fdo",JSON.stringify({kv:2,kind:S.kind,drive:S.drive,free:S.free,evonly:S.evonly,when:S.when,pick:S.pick,hideSoon:S.hideSoon,hideRec:S.hideRec,mode:S.mode,pgTot:S.pgTot,pgRest:S.pgRest,pgAcc:S.pgAcc,interests:S.interests,onlyInt:S.onlyInt,custom:S.custom,calOn:CAL.on}))}catch(e){}}
+try{const s=JSON.parse(localStorage.getItem("fdo")||"null");if(s){S.kind=(s.kv>=2?s.kind:"both")||S.kind;S.drive=s.drive===15?10:(s.drive===0?0:(s.drive||S.drive));S.free=!!s.free;S.evonly=!!s.evonly;if(s.when)S.when=s.when;if(s.pick)S.pick=s.pick;if(s.hideSoon===false)S.hideSoon=false;S.hideRec=!!s.hideRec;S.mode=["pg","cl"].includes(s.mode)?s.mode:"out";if(Array.isArray(s.clCat))S.clCat=s.clCat;S.clAge=+s.clAge||0;S.pgTot=!!s.pgTot;S.pgRest=!!s.pgRest;S.pgAcc=!!s.pgAcc;if(Array.isArray(s.interests))S.interests=s.interests;S.onlyInt=!!s.onlyInt;if(s.custom)S.custom=Object.assign(S.custom,s.custom);CAL.on=!!s.calOn;}}catch(e){}
+function save(){try{localStorage.setItem("fdo",JSON.stringify({kv:2,kind:S.kind,drive:S.drive,free:S.free,evonly:S.evonly,when:S.when,pick:S.pick,hideSoon:S.hideSoon,hideRec:S.hideRec,mode:S.mode,pgTot:S.pgTot,pgRest:S.pgRest,pgAcc:S.pgAcc,clCat:S.clCat,clAge:S.clAge,interests:S.interests,onlyInt:S.onlyInt,custom:S.custom,calOn:CAL.on}))}catch(e){}}
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const WHEN_LABEL={now:"Right now",today:"Today",tomorrow:"Tomorrow",few:"Next few days",weekend:"This weekend",nextweekend:"Next weekend",month:"This month",pick:"Pick a date…"};
@@ -524,7 +526,7 @@ function drawTiles(){const g=document.getElementById("tiles"),svg=document.getEl
  g.innerHTML=`<rect width="360" height="360" class="water"/>${land}${h}`;}
 window.addEventListener("resize",()=>{TILEKEY="";drawTiles();});
 let BAYLAND=null;fetch("data/bayland.json").then(r=>r.json()).then(j=>{BAYLAND=j;TILEKEY="";drawTiles();}).catch(()=>{});
-function visible(p){if(!inRange(p))return false;if(S.free&&!p.free)return false;if(S.kind==="outdoor"&&p.indoor)return false;if(S.kind==="indoor"&&!p.indoor)return false;if(S.evonly&&!p.isEvent&&!p.pg)return false;return true;}
+function visible(p){if(!inRange(p))return false;if(S.free&&!p.free)return false;if(S.kind==="outdoor"&&p.indoor)return false;if(S.kind==="indoor"&&!p.indoor)return false;if(S.evonly&&!p.isEvent&&!p.pg&&!p.cl)return false;return true;}
 const VAR={great:"var(--great)",okay:"var(--okay)",skip:"var(--skip)",indoor:"var(--indoor)"};
 function pillText(g,x,y,txt,anchor,size,weight){const NS="http://www.w3.org/2000/svg";const t=document.createElementNS(NS,"text");
  t.setAttribute("x",x);t.setAttribute("y",y);t.setAttribute("text-anchor",anchor);t.setAttribute("font-size",size);t.setAttribute("font-weight",weight||600);
@@ -563,16 +565,22 @@ const BIG_ROOMS=new Set(["The Fillmore","The Independent","The Chapel","Great Am
 function rankRows(rows){const v=rows.filter(r=>r.v).sort((a,b)=>b.e.score-a.e.score||a.ts-b.ts||a.p.min-b.p.min);const top=[],later=[],per={};let libs=0;
  v.forEach(r=>{const lib=r.p.isEvent&&isLib(r.p),vk=r.p.isEvent?venueOf(r.p).key:"";
   if(top.length>=10||(lib&&libs>=3)||(vk&&(per[vk]||0)>=2)){later.push(r);return;}if(lib)libs++;if(vk)per[vk]=(per[vk]||0)+1;top.push(r);});return top.concat(later);}
+// ---- 🥋 Classes: youth classes from data/classes.json, ranked by distance (they run on a fixed schedule, so no weather)
+let CLASSES=null;fetch("data/classes.json",{cache:"no-cache"}).then(r=>r.json()).then(j=>{CLASSES=(j.classes||[]).map(c=>Object.assign({cl:1,indoor:c.indoor!==false,exp:0,off:0},c));if(S.mode==="cl")render();}).catch(()=>{CLASSES=[];});
+const CLCATS={martial:{icon:"🥋",label:"Martial arts"},sports:{icon:"🏊",label:"Sports & swim"},arts:{icon:"🎨",label:"Arts & music"},stem:{icon:"🔬",label:"STEM & more"}};
+const SIGNUP={dropin:"Drop-in",trial:"Free trial",term:"Enroll by term",membership:"Membership"};
+function clFilter(p){return(!S.clCat.length||S.clCat.includes(p.cat))&&(!S.clAge||!p.ages||(p.ages[0]<=S.clAge&&S.clAge<=p.ages[1]));}
+function classEval(p){const su=SIGNUP[p.signup]||"See site";return{score:1-Math.min(p.min,60)/90,tier:"indoor",label:su,why:p.when||"",tip:`${su}${p.ages?` · ages ${p.ages[0]}–${p.ages[1]}`:""}${p.when?` · ${p.when}`:""}`};}
 function items(){
  SOON=0;RECN=0;const RALL=recurringKeys();const REC=S.hideRec?RALL:null;const c=cond();const [ws,we]=winRange();
  const impacts={};
  EVENTS.filter(e=>e.kind==="impact"&&eventActive(e)).forEach(e=>(e.impacts||[]).forEach(id=>{(impacts[id]=impacts[id]||[]).push(e.title+(e.rangeStart?"":" ("+fmtT(new Date(e.start))+"–"+fmtT(evInterval(e)[1])+")"));}));
  CLOSEDN=0;const d0=whenDates()[0];
- const out=(S.mode==="pg"?PLAYGROUNDS.filter(pgFilter):PLACES).map(p0=>{const p=withMin(p0);const e=bestEval(p);const flags=(impacts[p.id]||[]).map(t=>"Heads up: "+t+" nearby");
-  const open=isOpen(p);if(!open&&visible(p))CLOSEDN++;
+ const out=(S.mode==="pg"?PLAYGROUNDS.filter(pgFilter):S.mode==="cl"?(CLASSES||[]).filter(clFilter):PLACES).map(p0=>{const p=withMin(p0);const e=p.cl?classEval(p):bestEval(p);const flags=(impacts[p.id]||[]).map(t=>"Heads up: "+t+" nearby");
+  const open=p.cl||isOpen(p);if(!open&&visible(p))CLOSEDN++;
   e.score-=.1; // places are always there, so they rank a little below events
-  return{p,e,flags,v:visible(p)&&open};});
- EVENTS.filter(e=>S.mode!=="pg"&&e.kind!=="impact"&&eventActive(e)).forEach(ev=>{
+  return{p,e,flags,v:visible(p)&&open,when:p.cl?p.when:undefined};});
+ EVENTS.filter(e=>S.mode==="out"&&e.kind!=="impact"&&eventActive(e)).forEach(ev=>{
   const vis0=visible(withMin(Object.assign({},ev,{isEvent:true})));
   if(REC&&isRecurring(ev,REC)){if(vis0)RECN++;return;}
   if(S.hideSoon&&!ev.rangeStart&&evInterval(ev)[1].getTime()-Date.now()<30*60e3){if(vis0)SOON++;return;}
@@ -833,7 +841,7 @@ window.addEventListener("hashchange",()=>{if(EVENTS.length)openDeepLink();});
 // price chip: Free, a known price ("$28–33"), "Tickets" when paid but the amount isn't known, nothing when unknown
 function priceChip(p){if(p.pg)return"";if(p.free)return`<span class="tg price free">Free</span>`;
  let pr=p.price;if(!pr){const a=[...String(p.note||"").matchAll(/\$\s?(\d{1,4}(?:\.\d\d)?)/g)].map(m=>Math.round(+m[1])).filter(x=>x>0);if(a.length){const lo=Math.min(...a),hi=Math.max(...a);pr=lo===hi?"$"+lo:"$"+lo+"–"+hi;}}
- if(pr)return`<span class="tg price">${esc(pr)}</span>`;return p.free===false?`<span class="tg price">${p.isEvent?"Tickets":"Admission"}</span>`:"";}
+ if(pr)return`<span class="tg price">${esc(pr)}</span>`;return p.free===false?`<span class="tg price">${p.isEvent?"Tickets":p.cl?"Paid":"Admission"}</span>`:"";}
 function renderHorizon(){
  const el=document.getElementById("horizon");if(!el)return;
  const dl=whenDates(),lastSel=dl[dl.length-1],from=addDays(lastSel>todayStr()?lastSel:todayStr(),8),t0=dt(from,0).getTime(),list=oneOffs(t0,dt(todayStr(),0).getTime()+92*864e5);
@@ -913,7 +921,7 @@ function render(){
  LASTVIS=vis;const sb=document.getElementById("surprise");if(sb)sb.disabled=!vis.length;
  const good=vis.filter(r=>(r.e.tier==="great"||r.e.tier==="indoor")&&!r.flags.length).length;
  const evn=vis.filter(r=>r.p.isEvent).length;
- document.getElementById("count").textContent=vis.length?`${good} good ${good===1?"bet":"bets"} out of ${vis.length}${evn?`, including ${evn} ${evn===1?"event":"events"}`:""}`:"No matches";
+ document.getElementById("count").textContent=S.mode==="cl"?(vis.length?`${vis.length} ${vis.length===1?"class":"classes"} nearby`:"No matches"):vis.length?`${good} good ${good===1?"bet":"bets"} out of ${vis.length}${evn?`, including ${evn} ${evn===1?"event":"events"}`:""}`:"No matches";
  const hiddenEv=rows.filter(r=>r.p.isEvent&&!r.v&&inRange(r.p)&&!(S.free&&!r.p.free)&&((S.kind==="outdoor"&&r.p.indoor)||(S.kind==="indoor"&&!r.p.indoor))).length;
  const hintEl=document.getElementById("hint");
  if(hiddenEv){hintEl.innerHTML=`<span class="calmsg">${hiddenEv} ${S.kind==="outdoor"?"indoor":"outdoor"} ${hiddenEv===1?"event is":"events are"} hidden by the ${S.kind==="outdoor"?"Outdoor":"Indoor"} filter.</span> <button class="toggle" id="showall" style="min-height:32px;padding:4px 10px">Show both</button>`;document.getElementById("showall").onclick=()=>{S.kind="both";save();render();};}else hintEl.innerHTML="";
@@ -925,14 +933,14 @@ function render(){
  if(RECN)hintEl.insertAdjacentHTML("beforeend",`<div class="calmsg">${RECN} recurring ${RECN===1?"program is":"programs are"} hidden, like daily museum shows and weekly storytimes.</div>`);
  if(CLOSEDN)hintEl.insertAdjacentHTML("beforeend",`<div class="calmsg">${CLOSEDN} ${CLOSEDN===1?"place is":"places are"} closed then, so ${CLOSEDN===1?"it’s":"they’re"} hidden.</div>`);
  if(SOON)hintEl.insertAdjacentHTML("beforeend",`<div class="calmsg">${SOON} ${SOON===1?"event that has ended or ends":"events that have ended or end"} within 30 minutes ${SOON===1?"is":"are"} hidden.</div>`);
- if(windowOver())hintEl.innerHTML=`<div class="calmsg">The ${TODLABEL[S.tod]} is already over. Try a later time today, or tomorrow.</div>`;
+ if(windowOver()&&S.mode!=="cl")hintEl.innerHTML=`<div class="calmsg">The ${TODLABEL[S.tod]} is already over. Try a later time today, or tomorrow.</div>`;
  renderUpcoming();renderHorizon();renderTagChips();renderPrefs();renderVenues();renderSaved();
  const list=document.getElementById("list");
- if(!vis.length){list.innerHTML=`<p class="empty">${S.evonly?"No events in this window. Try the other time of day or another day.":"Nothing fits these filters. Try a longer drive or turn off Free only."}</p>`;}
+ if(!vis.length){list.innerHTML=`<p class="empty">${S.mode==="cl"?(CLASSES&&CLASSES.length?"No classes match. Try another activity or age, or a longer drive.":"The classes list is on its way."):S.evonly?"No events in this window. Try the other time of day or another day.":"Nothing fits these filters. Try a longer drive or turn off Free only."}</p>`;}
  else list.innerHTML=vis.map(({p,e,flags,when})=>{
   const url=`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(HOME.q||(HOME.lat+","+HOME.lng))}&destination=${p.lat},${p.lng}`;
   return `<div class="card${e.tier==="skip"?" dim":""}" id="c-${esc(p.id)}" role="button" tabindex="0" aria-expanded="${S.sel===p.id}" data-id="${esc(p.id)}">
-   <div class="top"><div>${when?`<div class="evtime">${esc(when)}</div>`:""}<div class="name">${RANK[p.id]?`<span class="rk">${RANK[p.id]}</span>`:""}${(PREFS.saved||{})[p.id]?`<span class="pin" title="You're interested">📌</span> `:""}${esc(p.name)}</div><div class="meta">${venueLink(p)}, ${distText(p)}${!p.isEvent?esc(hoursMeta(p)):""}${p.isEvent&&bookAhead(p)?", book ahead":""}</div>${p.also?`<div class="also">🎤 Also on Talks &amp; concerts</div>`:""}${flags.map(f=>`<div class="flag">${esc(f)}</div>`).join("")}${(()=>{if(p.pg){const c=[p.tot?"🧸 Tot lot (2–5)":"",p.big?"🧗 Ages 5–12":"",p.rest?"🚻 Restroom":"",p.acc?"♿ Accessible":"",p.shade>=.6?"🌳 Leafy":""].filter(Boolean);return c.length?`<div class="tagline">${c.map(x=>`<span class="tg">${x}</span>`).join("")}</div>`:"";}const tl=tagsFor(p),pc=priceChip(p);return tl.length||pc?`<div class="tagline">${pc}${tl.slice(0,pc?2:3).map(id=>{const t=TAGS.find(x=>x.id===id);return `<span class="tg${S.interests.includes(id)?" on":""}">${t.icon} ${t.label}</span>`;}).join("")}</div>`:"";})()}${p.branchList&&p.branchList.length?`<div class="meta">Also at ${p.branchList.length} other ${p.branchList.length===1?"branch":"branches"}</div>`:""}</div><span class="tag t-${e.tier}" tabindex="0" aria-label="${esc(e.tip||e.label)}">${e.label}<span class="tagtip" aria-hidden="true">${esc(e.tip||e.why||"")}</span></span></div>
+   <div class="top"><div>${when?`<div class="evtime">${esc(when)}</div>`:""}<div class="name">${RANK[p.id]?`<span class="rk">${RANK[p.id]}</span>`:""}${(PREFS.saved||{})[p.id]?`<span class="pin" title="You're interested">📌</span> `:""}${esc(p.name)}</div><div class="meta">${venueLink(p)}, ${distText(p)}${!p.isEvent?esc(hoursMeta(p)):""}${p.isEvent&&bookAhead(p)?", book ahead":""}</div>${p.also?`<div class="also">🎤 Also on Talks &amp; concerts</div>`:""}${flags.map(f=>`<div class="flag">${esc(f)}</div>`).join("")}${(()=>{if(p.cl){const k=CLCATS[p.cat]||{icon:"✨"},c=[`${k.icon} ${esc(p.activity||k.label||"")}`,p.ages?`Ages ${p.ages[0]}–${p.ages[1]}`:""].filter(Boolean);return `<div class="tagline">${priceChip(p)}${c.map(x=>`<span class="tg">${x}</span>`).join("")}</div>`;}if(p.pg){const c=[p.tot?"🧸 Tot lot (2–5)":"",p.big?"🧗 Ages 5–12":"",p.rest?"🚻 Restroom":"",p.acc?"♿ Accessible":"",p.shade>=.6?"🌳 Leafy":""].filter(Boolean);return c.length?`<div class="tagline">${c.map(x=>`<span class="tg">${x}</span>`).join("")}</div>`:"";}const tl=tagsFor(p),pc=priceChip(p);return tl.length||pc?`<div class="tagline">${pc}${tl.slice(0,pc?2:3).map(id=>{const t=TAGS.find(x=>x.id===id);return `<span class="tg${S.interests.includes(id)?" on":""}">${t.icon} ${t.label}</span>`;}).join("")}</div>`:"";})()}${p.branchList&&p.branchList.length?`<div class="meta">Also at ${p.branchList.length} other ${p.branchList.length===1?"branch":"branches"}</div>`:""}</div><span class="tag t-${e.tier}" tabindex="0" aria-label="${esc(e.tip||e.label)}">${e.label}<span class="tagtip" aria-hidden="true">${esc(e.tip||e.why||"")}</span></span></div>
    <div class="more">${branchDetail(p)}${hoursDetail(p)}<p style="margin:0 0 6px">${esc(p.note)} <span class="why">${esc(e.why)}</span></p><div class="links"><a href="${url}" target="_blank" rel="noopener">Directions</a>${p.isEvent&&p.start&&!p.rangeStart&&!p.multi?`<a class="cal" href="${gcal(p)}" target="_blank" rel="noopener">${calLabel(true)}</a>`:""}${p.url?`<a href="${esc(p.url)}" target="_blank" rel="noopener">${p.isEvent?"Details":"Park page"}</a>`:(p.isEvent?`<a href="https://www.google.com/search?q=${encodeURIComponent(p.name+" "+(p.area||"")+" San Francisco")}" target="_blank" rel="noopener">Search</a>`:"")}</div>${(()=>{const k=prefKey(p);const sv=!!(PREFS.saved||{})[p.id];return `<div class="acts">${p.isEvent?`<button class="vote int" data-int="1" aria-pressed="${sv}">📌 ${sv?"Interested ✓":"Interested"}</button><button class="vote" data-share="1">📤 Share</button>`:""}<button class="vote icon" data-vote="1" aria-pressed="${!!PREFS.liked[k]}" aria-label="More like this" title="More like this">👍</button><button class="vote icon" data-vote="-1" aria-label="Not for us" title="Not for us">👎</button></div>`;})()}</div></div>`;}).join("");
  list.querySelectorAll(".card").forEach(cd=>{const hr=vis.find(q=>q.p.id===cd.dataset.id);cd.addEventListener("mouseenter",()=>hoverLabel(hr));cd.addEventListener("mouseleave",()=>hoverLabel(null));const go=()=>{S.sel=S.sel===cd.dataset.id?null:cd.dataset.id;render();};
   cd.addEventListener("click",ev=>{const ib=ev.target.closest("button[data-int]");if(ib){ev.stopPropagation();const r=vis.find(q=>q.p.id===cd.dataset.id);if(r)toggleInterested(r.p);return;}const sb=ev.target.closest("button[data-share]");if(sb){ev.stopPropagation();const r=vis.find(q=>q.p.id===cd.dataset.id);if(r)shareEvent(r.p,sb);return;}const vb=ev.target.closest("button.vote");if(vb){ev.stopPropagation();const r=vis.find(q=>q.p.id===cd.dataset.id);if(r)vote(r.p,+vb.dataset.vote);return;}if(ev.target.closest("a"))return;go();});cd.addEventListener("keydown",ev=>{if(ev.target.closest("a")||ev.target.closest("button.vote"))return;if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();go();}});});
@@ -1083,7 +1091,7 @@ const IS_CT=/Talks/.test(document.title),DEF_KIND="both";
 const startRow=$("oin").closest(".row"),ostat=$("ostat"),todRow=$("todRow"),driveRow=$("drive").closest(".row"),showRow=$("kind").closest(".row"),intRow=$("tagchips").closest(".row");
 // 1) "From …" line with an edit pencil
 const tabs=document.createElement("div");tabs.className="modetabs";tabs.setAttribute("role","tablist");
-tabs.innerHTML=`<button role="tab" data-m="out">Outings &amp; events</button><button role="tab" data-m="pg">🛝 Playgrounds</button>`;panel.prepend(tabs);
+tabs.innerHTML=`<button role="tab" data-m="out">Outings &amp; events</button><button role="tab" data-m="pg">🛝 Playgrounds</button><button role="tab" data-m="cl">🥋 Classes</button>`;panel.prepend(tabs);
 tabs.querySelectorAll("button").forEach(b=>b.onclick=()=>{S.mode=b.dataset.m;S.sel=null;save();render();window.scrollTo({top:0});});
 const fromLine=document.createElement("div");fromLine.className="fromline";fromLine.innerHTML=`<span id="fromTxt"></span> <button class="pencil" id="editStart" aria-expanded="false" aria-label="Change starting point">✎</button>`;
 const startBox=document.createElement("div");startBox.id="startEdit";startBox.hidden=true;startRow.parentNode.insertBefore(fromLine,startRow);startBox.appendChild(startRow);startBox.appendChild(ostat);fromLine.after(startBox);
@@ -1120,14 +1128,18 @@ $("wxi").onclick=()=>{wxBox.hidden=!wxBox.hidden;$("wxi").setAttribute("aria-exp
 const fs=document.createElement("section");fs.id="fsheet";fs.className="vsheet";fs.hidden=true;fs.setAttribute("role","dialog");fs.setAttribute("aria-label","Filters");
 fs.innerHTML=`<button class="vclose" aria-label="Close">✕</button><h2>Filters</h2>`;document.body.appendChild(fs);
 const pgRow=document.createElement("div");pgRow.className="row pgonly";pgRow.innerHTML=`<span class="lbl">Playground</span><button class="toggle" id="pgTot">Has a tot lot (2–5)</button><button class="toggle" id="pgRest">Restroom nearby</button><button class="toggle" id="pgAcc">Accessible play area</button>`;
-fs.appendChild(pgRow);[["pgTot","pgTot"],["pgRest","pgRest"],["pgAcc","pgAcc"]].forEach(([id,k])=>$(id).onclick=()=>{S[k]=!S[k];save();render();});
+fs.appendChild(pgRow);
+const clRow=document.createElement("div");clRow.className="row clonly";clRow.innerHTML=`<span class="lbl">Activity</span>${Object.entries(CLCATS).map(([k,v])=>`<button class="toggle" data-clcat="${k}">${v.icon} ${v.label}</button>`).join("")}<span class="lbl" style="margin-top:10px">Age</span>${[[0,"Any age"],[3,"2–4"],[6,"5–7"],[9,"8–11"],[13,"12+"]].map(([a,l])=>`<button class="toggle" data-clage="${a}">${l}</button>`).join("")}`;
+fs.appendChild(clRow);
+clRow.querySelectorAll("[data-clcat]").forEach(b=>b.onclick=()=>{const k=b.dataset.clcat;S.clCat=S.clCat.includes(k)?S.clCat.filter(x=>x!==k):[...S.clCat,k];save();render();});
+clRow.querySelectorAll("[data-clage]").forEach(b=>b.onclick=()=>{S.clAge=+b.dataset.clage;save();render();});[["pgTot","pgTot"],["pgRest","pgRest"],["pgAcc","pgAcc"]].forEach(([id,k])=>$(id).onclick=()=>{S[k]=!S[k];save();render();});
 fs.appendChild(showRow);const fr=document.createElement("div");fr.className="row";fr.innerHTML=`<span class="lbl">Price</span>`;fr.appendChild($("free"));fs.appendChild(fr);fs.appendChild(intRow);
 const done=document.createElement("p");done.innerHTML=`<button class="ddbtn" id="filtDone">Show results</button> <button class="toggle" id="filtReset">Reset filters</button>`;fs.appendChild(done);
 const openF=()=>{fs.hidden=false;fs.scrollTop=0;$("vback").hidden=false;fs.querySelector(".vclose").focus();},closeF=()=>{fs.hidden=true;if($("vsheet").hidden)$("vback").hidden=true;};
 fbtn.onclick=openF;fs.querySelector(".vclose").onclick=closeF;$("filtDone").onclick=closeF;
 $("vback").addEventListener("click",()=>{closeF();if(typeof closeVenue==="function")closeVenue();});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!fs.hidden)closeF();});
-$("filtReset").onclick=()=>{S.pgTot=S.pgRest=S.pgAcc=false;S.kind=DEF_KIND;S.evonly=false;S.hideSoon=true;S.hideRec=false;S.free=false;S.interests=[];S.onlyInt=false;S.sel=null;save();render();};
+$("filtReset").onclick=()=>{S.pgTot=S.pgRest=S.pgAcc=false;S.clCat=[];S.clAge=0;S.kind=DEF_KIND;S.evonly=false;S.hideSoon=true;S.hideRec=false;S.free=false;S.interests=[];S.onlyInt=false;S.sel=null;save();render();};
 // 5) Interested, venues, preferences, calendar and suggest: a row of small buttons under the intro, each opening a sheet
 const tools=document.createElement("nav");tools.className="tools";tools.setAttribute("aria-label","Your lists and links");
 document.querySelector("p.from").after(tools);
@@ -1165,9 +1177,10 @@ function sync(){
  $("drv2Lbl").textContent=(S.drive===0?"🚶 Walking distance":"🚗 Within "+S.drive+" min");
  todDD.querySelectorAll(".ddmenu button").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.v===S.tod)));
  drvDD.querySelectorAll(".ddmenu button").forEach(b=>b.setAttribute("aria-selected",String(+b.dataset.v===S.drive)));
- const PG=S.mode==="pg";document.body.classList.toggle("pgmode",PG);tabs.querySelectorAll("button").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.m===(PG?"pg":"out"))));
+ const PG=S.mode==="pg",CL=S.mode==="cl";document.body.classList.toggle("pgmode",PG);document.body.classList.toggle("clmode",CL);tabs.querySelectorAll("button").forEach(b=>b.setAttribute("aria-selected",String(b.dataset.m===S.mode)));
+ document.querySelectorAll("[data-clcat]").forEach(b=>b.setAttribute("aria-pressed",String(S.clCat.includes(b.dataset.clcat))));document.querySelectorAll("[data-clage]").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.clage===S.clAge)));
  ["pgTot","pgRest","pgAcc"].forEach(k=>$(k).setAttribute("aria-pressed",String(!!S[k])));
- const n=(PG?(!!S.pgTot+!!S.pgRest+!!S.pgAcc):0)+(S.kind!==DEF_KIND)+!!S.evonly+(!S.hideSoon)+!!S.hideRec+!!S.free+(S.interests||[]).length+!!(S.onlyInt&&(S.interests||[]).length);
+ const n=(PG?(!!S.pgTot+!!S.pgRest+!!S.pgAcc):0)+(CL?S.clCat.length+!!S.clAge:0)+(S.kind!==DEF_KIND)+!!S.evonly+(!S.hideSoon)+!!S.hideRec+!!S.free+(S.interests||[]).length+!!(S.onlyInt&&(S.interests||[]).length);
  $("filtN").textContent=n?String(n):"";fbtn.classList.toggle("on",n>0);
  sel.innerHTML=(S.interests||[]).map(id=>{const t=TAGS.find(x=>x.id===id);const lab=t?t.icon+" "+t.label:id==="followed"?"⭐ Venues I follow":id==="saved"?"📌 Interested":id;return `<button class="schip" data-t="${id}" aria-label="Remove ${lab}">${lab} ✕</button>`;}).join("")+
   (S.onlyInt&&S.interests.length?`<span class="calmsg">only these</span>`:"");
