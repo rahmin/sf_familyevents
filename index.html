@@ -652,9 +652,10 @@ const TAGS=[
  {id:"science",label:"Science",icon:"🔬",re:/scien|\bstem\b|planet|astronom|explorator|lawrence|academy of sciences|naturalist|geode|tinker|engineer/i},
  {id:"nature",label:"Animals & nature",icon:"🐾",re:/garden|nature|\bfarm\b(?! ?market)|animal|\bzoo\b|bird|penguin|reef|aquarium|lagoon|beach|redwood|\bhike|trail|botanical|conservatory|\bbee|critter|dog/i},
  {id:"play",label:"Play & playgrounds",icon:"🛝",re:/playground|\bplay\b(?!\s*thea)|playgroup|play space|toddler|tummy time|first steps|pop n play|activity zone|imagination|whimsy|drop-in kids/i},
+ {id:"markets",label:"Markets",icon:"🧺",re:/farmers.? market|flea market|night market|swap meet|\bflea\b/i},
  {id:"festivals",label:"Festivals & parties",icon:"🎉",re:/festival|\bfest\b|parade|block party|celebrat|market|\bfair\b|halloween|d[ií]a de|muertos|procession|\bparty|night market|fleet week/i}];
 const PLACE_TAGS={cas:["science","nature"],ran:["science","nature"],exp:["science"],lhs:["science","play"],fai:["play","performance"],red:["nature"],til:["nature","play"],ozo:["nature"],cpm:["play","nature"],gle:["play","nature"],kor:["play"],pre:["play"],dol:["play"],cri:["nature"],oce:["nature"],sfz:["nature"],bad:["play","science"],ccm:["arts","play"],sfm:["arts"]};
-const TAG_ALIAS={art:"arts",music:"music",dance:"dance",performance:"performance"};
+const TAG_ALIAS={art:"arts",music:"music",dance:"dance",performance:"performance",markets:"markets"};
 function tagsFor(p){if(!p.isEvent)return p.pg?["play"]:(PLACE_TAGS[p.id]||[]);
  const set=new Set((p.tags||[]).map(t=>TAG_ALIAS[t]).filter(Boolean));const lead=String(p.note||"").replace(/\(?Picked by Local Kiddo SF\.?\)?/g,"").split(/(?<=[.!?])\s+/)[0].split(/\b(?:including|such as|followed by|plus|as well as)\b|,\s*with\b/i)[0]||"";const txt=(p.name||"")+" "+lead,withArea=txt+" "+(p.area||""); // tags come from the name and the first sentence only
  TAGS.forEach(t=>{if(t.re.test(t.id==="play"?withArea:txt))set.add(t.id);});return TAGS.map(t=>t.id).filter(id=>set.has(id));}

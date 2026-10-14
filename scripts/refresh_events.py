@@ -899,6 +899,34 @@ def geocode(q: str):
 
 # ---------------------------------------------------------------- venue watchlist (needs ANTHROPIC_API_KEY)
 WATCHLIST = ROOT / "data" / "watchlist.json"
+MARKETS = ROOT / "data" / "markets.json"
+
+WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+def load_markets(start: date, end: date) -> list[dict]:
+    """Farmers and flea markets from data/markets.json, turned into dated, recurring events.
+    Each entry: days (e.g. ["Sat"]), hours ["08:00","14:00"], optional months [5..11] for seasonal markets,
+    optional nth [1,3] / [-1] for monthly markets (week of the month; -1 = last)."""
+    if not MARKETS.exists():
+        return []
+    out = []
+    for m in json.loads(MARKETS.read_text()).get("markets", []):
+        slug = re.sub(r"[^a-z0-9]+", "-", m["name"].lower()).strip("-")[:40]
+        d = start
+        while d <= end:
+            if WEEKDAYS[d.weekday()] in m["days"] and (not m.get("months") or d.month in m["months"]):
+                # a Sat+Sun market's "weekend" is counted by its Saturday, so Sunday follows the Saturday it belongs to
+                ref = d - timedelta(days=1) if WEEKDAYS[d.weekday()] == "Sun" and "Sat" in m["days"] else d
+                nth = (ref.day - 1) // 7 + 1
+                last = (ref + timedelta(days=7)).month != ref.month
+                if not m.get("nth") or nth in m["nth"] or (-1 in m["nth"] and last):
+                    out.append(dict(id=f"mkt-{slug}-{d.isoformat()}", kind="event", source="markets", name=m["name"],
+                                    area=m["area"], lat=m["lat"], lng=m["lng"], indoor=bool(m.get("indoor")), exp=m.get("exp", 0.5), off=m.get("off", 0),
+                                    free=m.get("free", True), recurring=True, start=local_iso(d, m["hours"][0]), end=local_iso(d, m["hours"][1]),
+                                    note=m.get("note", ""), url=m.get("url", ""), tags=["markets"]))
+            d += timedelta(days=1)
+    log(f"Markets: {len(out)} market days")
+    return out
 WATCH_PROMPT = """Below is the text of {venue}'s website. List every event or class on it that happens between {start} and {end}
 (inclusive) and that families with young children could attend: all-ages or family events, and kids' programs open to
 ages 5 and under. Skip adults-only events, camps that need multi-day enrollment, and anything already past.
@@ -1119,7 +1147,7 @@ def main():
             if last and last >= today.isoformat():
                 manual.append(e)
 
-    events = merge(manual + load_suggestions("family", today) + trusted + loose)
+    events = merge(manual + load_suggestions("family", today) + load_markets(today, end) + trusted + loose)
     payload = {
         "generated": datetime.now(TZ).isoformat(timespec="minutes"),
         "coverage": f"{today:%b %-d}–{end:%b %-d}, with one-off events through {far:%b %-d}",
@@ -1919,7 +1947,7 @@ def _isolated(fn, empty):
     return run
 
 for _name in [n for n in list(globals()) if n.startswith("scrape_")] + [
-        "msw_events", "mapp_events", "watch_venues", "load_suggestions"]:
+        "msw_events", "mapp_events", "watch_venues", "load_suggestions", "load_markets"]:
     globals()[_name] = _isolated(globals()[_name], list)
 build_talks_concerts = _isolated(build_talks_concerts, None)
 crosslink = _isolated(crosslink, None)
