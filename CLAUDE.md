@@ -7,7 +7,7 @@ Static HTML pages + JSON data, rebuilt twice a week by a Python script in GitHub
 
 | File | What it is |
 |---|---|
-| `index.html` | **Family outings** page ("Where should we go today?"). Two tabs: *Outings & events* (≈20 hand-curated places + kid/family events) and *🛝 Playgrounds* (135 SF Rec & Park playgrounds, embedded as `const PLAYGROUNDS=[…]`). |
+| `index.html` | **Family outings** page ("Where should we go today?"). Three tabs (`S.mode`): *Outings & events* (`out`; ≈20 hand-curated places + kid/family events), *🛝 Playgrounds* (`pg`; 135 SF Rec & Park playgrounds, embedded as `const PLAYGROUNDS=[…]`) and *🥋 Classes* (`cl`; youth classes from `data/classes.json`, ranked by distance, filters `S.clCat`/`S.clAge`, signup badge, no weather). |
 | `talks-concerts.html` | **Talks & concerts** page ("Go hear something good."; ticket icon, SF skyline). Same engine, no places, its own tags. Opens on This month · Anytime. |
 
 Both GitHub pages share almost all of their JavaScript. **A change to shared behavior (cards, filters, map, likes, venues, compact controls) usually needs to be made in both `index.html` and `talks-concerts.html`**. Page-specific differences: `PLACES`/`PLAYGROUNDS` (family only), `TAGS` list, default `S.tod` (both pages default to indoor + outdoor; `kv:2` in saved state reset old "outdoor" saves once), `WIN` time windows, kid-focus scoring (family only), localStorage keys (`fdo*` vs `fdo-ct*`), data file names.
@@ -42,6 +42,7 @@ Both GitHub pages share almost all of their JavaScript. **A change to shared beh
 | `data/venue_pages.json` | hand | Venue pages read directly: `jsonld`, `seetickets`, `squarespace` (an /events page, e.g. Medicine for Nightmares) or `tribe` (WordPress Events Calendar, e.g. Artists' Television Access) |
 | `data/venues.json` | hand | Venue overrides matched by event link (e.g. Natural Resources) |
 | `data/playgrounds.json` | Phase 0 audit | Source copy of the playground list embedded in `index.html` |
+| `data/classes.json` | hand | Youth classes for the Classes tab (verified 2026-10-13, Mission/Bernal and nearby): `cat` martial/sports/arts/stem, `activity`, `ages`, `when`, `signup` dropin/trial/term/membership, `price`, `url`. Rec & Park session dates need updating each term. |
 | `data/markets.json` | hand | Farmers, flea and night markets (verified 2026-10-14): weekly/seasonal/monthly schedules (`days`, `hours`, `months`, `nth`, `until`, `dates`) → dated recurring events on Family outings via `load_markets()`; tag `markets` (🧺). Refresh `until`/`dates` each season. |
 | `data/overrides.json` | hand | Fixes applied to both pages at the end of every refresh (`apply_overrides`): `match` = name regex, `set` = fields (e.g. `indoor`). Use it when an event is labelled wrong. |
 | `data/geocache.json` | refresh script | Saved Nominatim lookups |

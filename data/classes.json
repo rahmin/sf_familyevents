@@ -1,0 +1,578 @@
+{
+ "_readme": "Youth classes for the Classes tab on Family outings, verified against each program's own site or the SF Rec & Park catalog on 2026-10-13 (Mission, Bernal Heights and nearby). Fields: cat (martial|sports|arts|stem), activity, ages [min,max], when (schedule summary), signup (dropin|trial|term|membership), price (text), free (true/false/unset), url, note. Rec & Park sessions end in December; refresh their dates each term.",
+ "classes": [
+  {
+   "id": "cl-magalit-jiu-jitsu-academy-3274-mission-st",
+   "name": "Magalit Jiu Jitsu Academy",
+   "cat": "martial",
+   "activity": "Brazilian jiu-jitsu",
+   "area": "3274 Mission St (Bernal/Mission)",
+   "lat": 37.74455,
+   "lng": -122.42088,
+   "ages": [
+    4,
+    11
+   ],
+   "when": "Under 12: Mon & Wed 4–4:45 pm, Sat 10 am · Under 6: Thu 5 pm, Sat 9 am",
+   "signup": "trial",
+   "url": "https://www.magalitbjj.com/classes",
+   "note": "Kids' gi classes with coach Travis Magalit; start with a free trial.",
+   "indoor": true
+  },
+  {
+   "id": "cl-abad-capoeira-sf-3221-22nd-st",
+   "name": "ABADÁ-Capoeira SF",
+   "cat": "martial",
+   "activity": "Capoeira",
+   "area": "3221 22nd St (Mission)",
+   "lat": 37.75531,
+   "lng": -122.41932,
+   "ages": [
+    5,
+    19
+   ],
+   "when": "Ages 5–7: Tue/Thu 4 pm, Sat 1 pm · Ages 8–12: Tue/Thu 5 pm, Sat 2 pm · Teens free",
+   "signup": "dropin",
+   "url": "https://www.abada.org/youth-teen/",
+   "note": "Nonprofit capoeira school; drop in or buy a class pass. Scholarships available.",
+   "indoor": true,
+   "price": "$20/class",
+   "free": false
+  },
+  {
+   "id": "cl-quantum-martial-arts-2390-mission-st",
+   "name": "Quantum Martial Arts",
+   "cat": "martial",
+   "activity": "Mixed martial arts",
+   "area": "2390 Mission St, Suite 305 (Mission)",
+   "lat": 37.75886,
+   "lng": -122.41918,
+   "ages": [
+    4,
+    14
+   ],
+   "when": "Kids 6–9 most weekdays after school and Sat 10 am · Ages 4–5: Mon/Wed 4:15, Fri 4 pm",
+   "signup": "trial",
+   "url": "https://quantumsf.org/kids-class-schedule/",
+   "note": "Nonprofit dojo; first week free, then monthly membership on a sliding scale.",
+   "indoor": true,
+   "price": "$210–240/mo",
+   "free": false
+  },
+  {
+   "id": "cl-project-commotion-2095-harrison-st",
+   "name": "Project Commotion",
+   "cat": "martial",
+   "activity": "Capoeira & creative movement",
+   "area": "2095 Harrison St (Mission)",
+   "lat": 37.76438,
+   "lng": -122.41285,
+   "ages": [
+    1,
+    18
+   ],
+   "when": "Ages 0–3 Mon 4 pm · 3–5 Thu & Fri 4 pm · 6–12 Mon & Fri 5 pm · Teens Wed 6 pm",
+   "signup": "term",
+   "url": "https://projectcommotion.org/classes",
+   "note": "Bilingual movement nonprofit; capoeira, fitness and creative movement by age. Sliding scale.",
+   "indoor": true,
+   "price": "$25/class",
+   "free": false
+  },
+  {
+   "id": "cl-3rd-street-boxing-gym-2576-3rd-st",
+   "name": "3rd Street Boxing Gym",
+   "cat": "martial",
+   "activity": "Youth boxing",
+   "area": "2576 3rd St (Dogpatch)",
+   "lat": 37.75699,
+   "lng": -122.38849,
+   "ages": [
+    7,
+    14
+   ],
+   "when": "After-school youth classes; schedule on the gym's site",
+   "signup": "membership",
+   "url": "https://3rdstreetboxing.com/youth",
+   "note": "Youth boxing for ages 7–14; monthly membership or class pack, no drop-ins.",
+   "indoor": true,
+   "price": "$99/mo",
+   "free": false
+  },
+  {
+   "id": "cl-karate-kidz-rec-park-295-day-st",
+   "name": "Karate Kidz (Rec & Park)",
+   "cat": "martial",
+   "activity": "Karate",
+   "area": "Upper Noe Rec Center, 295 Day St",
+   "lat": 37.74239,
+   "lng": -122.42844,
+   "ages": [
+    6,
+    14
+   ],
+   "when": "Wed 4 pm (ages 6–8), 5 pm (9–14), Oct 28–Dec 16",
+   "signup": "term",
+   "url": "https://apm.activecommunities.com/sfrecpark/Activity_Search/karate-kidz/44673",
+   "note": "City Rec & Park karate class; register for the session.",
+   "indoor": true,
+   "price": "$75",
+   "free": false
+  },
+  {
+   "id": "cl-karate-kidz-rec-park-70-elk-st",
+   "name": "Karate Kidz (Rec & Park)",
+   "cat": "martial",
+   "activity": "Karate",
+   "area": "Glen Canyon Rec Center, 70 Elk St",
+   "lat": 37.73632,
+   "lng": -122.43982,
+   "ages": [
+    6,
+    14
+   ],
+   "when": "Fri 6 pm (ages 6–8), 7 pm (9–14), Nov 6–Dec 18",
+   "signup": "term",
+   "url": "https://apm.activecommunities.com/sfrecpark/Activity_Search/karate-kidz/44673",
+   "note": "City Rec & Park karate class; register for the session.",
+   "indoor": true,
+   "price": "$75",
+   "free": false
+  },
+  {
+   "id": "cl-camp-grapple-jr-rec-park-295-day-st",
+   "name": "Camp Grapple Jr. (Rec & Park)",
+   "cat": "martial",
+   "activity": "Wrestling",
+   "area": "Upper Noe Rec Center, 295 Day St",
+   "lat": 37.74239,
+   "lng": -122.42844,
+   "ages": [
+    7,
+    15
+   ],
+   "when": "Sat 3–4 pm, Nov 7–Dec 19",
+   "signup": "term",
+   "url": "https://apm.activecommunities.com/sfrecpark/Activity_Search/camp-grapple-jr/44741",
+   "note": "Youth wrestling at Upper Noe Rec Center.",
+   "indoor": true,
+   "price": "$94",
+   "free": false
+  },
+  {
+   "id": "cl-mission-cliffs-youth-climbing-2295-harrison-st",
+   "name": "Mission Cliffs youth climbing",
+   "cat": "sports",
+   "activity": "Climbing",
+   "area": "Mission Cliffs, 2295 Harrison St",
+   "lat": 37.76067,
+   "lng": -122.41241,
+   "ages": [
+    7,
+    17
+   ],
+   "when": "Kids Club (7–11) Mon or Wed 4:30–6:30 · Youth Club (12+) Tue or Thu 4:30–6:30 · After-school camps",
+   "signup": "membership",
+   "url": "https://touchstoneclimbing.com/mission-cliffs/youth-programs/",
+   "note": "Climbing clubs and 8-week after-school camps at Mission Cliffs.",
+   "indoor": true,
+   "price": "$175/mo",
+   "free": false
+  },
+  {
+   "id": "cl-american-gymnastics-club-390-bayshore-blvd",
+   "name": "American Gymnastics Club",
+   "cat": "sports",
+   "activity": "Gymnastics & tumbling",
+   "area": "390 Bayshore Blvd (Bernal Heights)",
+   "lat": 37.74129,
+   "lng": -122.40697,
+   "ages": [
+    2,
+    18
+   ],
+   "when": "Classes daily after school and weekends; tots Sat/Sun mornings",
+   "signup": "term",
+   "url": "https://americangymnasticsclub.com/schedules/schedule-390-bayshore/",
+   "note": "Gymnastics from parent-and-tot through teens; 4-week sessions, join anytime.",
+   "indoor": true,
+   "price": "$126–256 / 4 weeks",
+   "free": false
+  },
+  {
+   "id": "cl-garfield-pool-swim-lessons-1271-treat-ave",
+   "name": "Garfield Pool swim lessons",
+   "cat": "sports",
+   "activity": "Swim lessons & swim team",
+   "area": "Garfield Pool, 26th & Harrison",
+   "lat": 37.74989,
+   "lng": -122.41263,
+   "ages": [
+    1,
+    17
+   ],
+   "when": "Youth lessons & swim team Mon–Thu about 4–5:30 pm · Parent & tot Mon 9:30 am",
+   "signup": "term",
+   "url": "https://sfrecpark.org/register",
+   "note": "City pool in the Mission; register for lessons, family swim is drop-in. Fall schedule through Dec 10.",
+   "indoor": true,
+   "price": "from $84",
+   "free": false
+  },
+  {
+   "id": "cl-mission-pool-parent-tot-swim-101-linda-st",
+   "name": "Mission Pool parent & tot swim",
+   "cat": "sports",
+   "activity": "Parent & tot swim",
+   "area": "Mission Pool, 101 Linda St",
+   "lat": 37.75987,
+   "lng": -122.42297,
+   "ages": [
+    0,
+    5
+   ],
+   "when": "Parent & tot Tue 9:15, Thu 9:45 am · Family swim Sat 11:30–2 · through Nov 21",
+   "signup": "dropin",
+   "url": "https://sfrecpark.org/493/Mission-Community-Pool",
+   "note": "Heated outdoor city pool; drop-in, $2 for kids.",
+   "indoor": false,
+   "price": "$2 kids",
+   "free": false
+  },
+  {
+   "id": "cl-glen-canyon-rec-center-parkour-climbing-tumbling-70-elk-st",
+   "name": "Glen Canyon Rec Center: parkour, climbing & tumbling",
+   "cat": "sports",
+   "activity": "Parkour, climbing, tumbling",
+   "area": "Glen Canyon Rec Center, 70 Elk St",
+   "lat": 37.73632,
+   "lng": -122.43982,
+   "ages": [
+    4,
+    14
+   ],
+   "when": "Parkour Tue 4 pm (6–8), 5:15 (9–14) · Climbing 101 Wed 4 pm (8–12) · Tumbling Tue 2 pm (4–5) · Open climb Tue/Thu 4–7, Sat 10–4",
+   "signup": "term",
+   "url": "https://sfrecpark.org/register",
+   "note": "Rec & Park classes plus drop-in open climbing ($20).",
+   "indoor": true,
+   "price": "$57–113",
+   "free": false
+  },
+  {
+   "id": "cl-bernal-heights-rec-center-tot-skate-futsal-500-moultrie-st",
+   "name": "Bernal Heights Rec Center: tot skate & futsal",
+   "cat": "sports",
+   "activity": "Skateboarding & futsal for tots",
+   "area": "Bernal Heights Rec Center, 500 Moultrie St",
+   "lat": 37.73857,
+   "lng": -122.41596,
+   "ages": [
+    3,
+    6
+   ],
+   "when": "Shred N' Butter skateboarding Thu 11:45 am, Oct 15–Dec 17",
+   "signup": "term",
+   "url": "https://sfrecpark.org/register",
+   "note": "Rec & Park classes for little ones.",
+   "indoor": true,
+   "price": "$88–92",
+   "free": false
+  },
+  {
+   "id": "cl-beginning-tennis-rec-park-295-day-st",
+   "name": "Beginning Tennis (Rec & Park)",
+   "cat": "sports",
+   "activity": "Tennis",
+   "area": "Upper Noe Rec Center, 295 Day St",
+   "lat": 37.74239,
+   "lng": -122.42844,
+   "ages": [
+    8,
+    10
+   ],
+   "when": "Tue or Fri 6–7 pm, through December",
+   "signup": "term",
+   "url": "https://sfrecpark.org/register",
+   "note": "Beginning tennis for ages 8–10.",
+   "indoor": false,
+   "price": "$330",
+   "free": false
+  },
+  {
+   "id": "cl-community-music-center-544-capp-st",
+   "name": "Community Music Center",
+   "cat": "arts",
+   "activity": "Children's chorus & music lessons",
+   "area": "544 Capp St (Mission)",
+   "lat": 37.75795,
+   "lng": -122.41827,
+   "ages": [
+    5,
+    17
+   ],
+   "when": "Children's Chorus (8–12) and lessons; times vary by quarter",
+   "signup": "term",
+   "url": "https://sfcmc.org/play/",
+   "note": "Nonprofit music school; free Children's Chorus, lessons for all ages with financial aid.",
+   "indoor": true
+  },
+  {
+   "id": "cl-odc-school-youth-teen-351-shotwell-st",
+   "name": "ODC School Youth & Teen",
+   "cat": "arts",
+   "activity": "Dance (ballet, hip hop, tap, creative movement)",
+   "area": "351 Shotwell St (Mission)",
+   "lat": 37.76277,
+   "lng": -122.41586,
+   "ages": [
+    2,
+    18
+   ],
+   "when": "Fall session Sept 12–Dec 20; times vary by class",
+   "signup": "term",
+   "url": "https://odc.dance/youth-and-teen",
+   "note": "Dance classes from age 2 through teens; scholarships available.",
+   "indoor": true,
+   "free": false
+  },
+  {
+   "id": "cl-dance-mission-youth-program-3316-24th-st",
+   "name": "Dance Mission youth program",
+   "cat": "arts",
+   "activity": "Hip-hop, modern, creative movement",
+   "area": "Dance Mission Theater, 3316 24th St",
+   "lat": 37.75232,
+   "lng": -122.41886,
+   "ages": [
+    5,
+    17
+   ],
+   "when": "Fall semester classes after school; times on the studio's site",
+   "signup": "term",
+   "url": "https://dancemissiontheater.org/youth-program/",
+   "note": "Youth dance including Grrrl Brigade; $25 trial class.",
+   "indoor": true,
+   "price": "$310+/semester",
+   "free": false
+  },
+  {
+   "id": "cl-moving-arts-academy-of-dance-35-san-juan-ave",
+   "name": "Moving Arts Academy of Dance",
+   "cat": "arts",
+   "activity": "Ballet",
+   "area": "35 San Juan Ave (Mission Terrace)",
+   "lat": 37.72423,
+   "lng": -122.43598,
+   "ages": [
+    4,
+    17
+   ],
+   "when": "Sat 9:15 (pre-primary), 10, 11 · Weekday ballet Mon–Fri late afternoon · Fall semester to Dec 19",
+   "signup": "term",
+   "url": "https://movingartsacademyofdance.com/enroll-in-programs/semester-program",
+   "note": "ABT-curriculum ballet; semester enrollment or $25 drop-ins.",
+   "indoor": true,
+   "price": "from $500/semester",
+   "free": false
+  },
+  {
+   "id": "cl-art-haus-sf-3977-24th-st",
+   "name": "Art Haus SF",
+   "cat": "arts",
+   "activity": "Drawing, painting & mixed media",
+   "area": "3977 24th St (Noe Valley)",
+   "lat": 37.75129,
+   "lng": -122.43122,
+   "ages": [
+    7,
+    16
+   ],
+   "when": "Ages 7–11: Wed/Thu 3:45–5:45, Wed 1–3 · Ages 12–16: Sat 2–4",
+   "signup": "dropin",
+   "url": "https://arthaussf.com/youth-classes",
+   "note": "Fine-art classes by the class or in an 8-class pack.",
+   "indoor": true,
+   "price": "$70/class",
+   "free": false
+  },
+  {
+   "id": "cl-little-mission-studio-445-hampshire-st",
+   "name": "Little Mission Studio",
+   "cat": "arts",
+   "activity": "Guitar, show choir, jam band",
+   "area": "445 Hampshire St (Mission)",
+   "lat": 37.76375,
+   "lng": -122.40805,
+   "ages": [
+    4,
+    16
+   ],
+   "when": "Guitar Thu 5 pm · Show Choir Fri 5 pm · Jam Band Tue 4:45 pm · private lessons",
+   "signup": "term",
+   "url": "https://littlemissionstudio.com/#classes",
+   "note": "Kids' music ensembles and lessons; pay-by-donation option.",
+   "indoor": true,
+   "price": "$359–419/session",
+   "free": false
+  },
+  {
+   "id": "cl-music-together-bernal-heights-301-cortland-ave",
+   "name": "Music Together (Bernal Heights)",
+   "cat": "arts",
+   "activity": "Early-childhood music",
+   "area": "301 Cortland Ave (Bernal Heights)",
+   "lat": 37.73945,
+   "lng": -122.41835,
+   "ages": [
+    0,
+    5
+   ],
+   "when": "Mon 10:15, 11:15 · Tue 9:15, 10:15 · Sat 10:30, 11:30 (babies)",
+   "signup": "term",
+   "url": "https://musictogethersf.com/bernal-heights.html",
+   "note": "Music classes for babies to 5-year-olds with a grown-up; $12.99 trial class.",
+   "indoor": true,
+   "price": "$411/semester",
+   "free": false
+  },
+  {
+   "id": "cl-sf-youth-theatre-3106-folsom-st",
+   "name": "SF Youth Theatre",
+   "cat": "arts",
+   "activity": "Theater (English & Spanish)",
+   "area": "3106 Folsom St (Bernal/Mission)",
+   "lat": 37.74782,
+   "lng": -122.41396,
+   "ages": [
+    4,
+    17
+   ],
+   "when": "Story Theater (PreK–K) Mon 3:15 · grades 1–5 Mon/Tue after school · Actuación (Spanish) Wed/Thu",
+   "signup": "term",
+   "url": "https://sfyouththeatre.org/en/fallclasses",
+   "note": "Theater classes by grade, some in Spanish; sliding scale.",
+   "indoor": true,
+   "price": "$325–375/session",
+   "free": false
+  },
+  {
+   "id": "cl-mission-arts-center-rec-park-745-treat-ave",
+   "name": "Mission Arts Center (Rec & Park)",
+   "cat": "arts",
+   "activity": "Art, guitar, hip-hop, puppetry",
+   "area": "Mission Arts Center, 745 Treat Ave",
+   "lat": 37.75824,
+   "lng": -122.41343,
+   "ages": [
+    2,
+    15
+   ],
+   "when": "Toddler art Tue/Fri 10 & 11 am · Kids art, guitar, hip-hop, puppetry Tue–Fri 4–5:30 pm",
+   "signup": "term",
+   "url": "https://sfrecpark.org/register",
+   "note": "City arts center with classes from toddlers to teens.",
+   "indoor": true,
+   "price": "$31–201",
+   "free": false
+  },
+  {
+   "id": "cl-826-valencia-workshops-826-valencia-st",
+   "name": "826 Valencia workshops",
+   "cat": "stem",
+   "activity": "Writing workshops",
+   "area": "826 Valencia St (Mission)",
+   "lat": 37.75956,
+   "lng": -122.42163,
+   "ages": [
+    8,
+    18
+   ],
+   "when": "After-school and weekend workshops (Sat/Sun 10 am & noon); register per workshop",
+   "signup": "term",
+   "url": "https://826valencia.org/programs/workshops/",
+   "note": "Free writing workshops for young writers; popular ones fill quickly.",
+   "indoor": true,
+   "free": true
+  },
+  {
+   "id": "cl-mission-science-workshop-3750-18th-st",
+   "name": "Mission Science Workshop",
+   "cat": "stem",
+   "activity": "Hands-on science",
+   "area": "3750 18th St (Dolores/Castro edge)",
+   "lat": 37.76198,
+   "lng": -122.4273,
+   "ages": [
+    5,
+    14
+   ],
+   "when": "Mission site: 2nd Saturday 10–3 · Excelsior site (4458 Mission St): Tue 3–5:30, 3rd Saturday 10–3",
+   "signup": "dropin",
+   "url": "https://missionscienceworkshop.org/programs",
+   "note": "Free drop-in science workshop with tools, animals and experiments.",
+   "indoor": true,
+   "free": true
+  },
+  {
+   "id": "cl-beginning-coding-for-minecraft-rec-park-745-treat-ave",
+   "name": "Beginning Coding for Minecraft (Rec & Park)",
+   "cat": "stem",
+   "activity": "Coding",
+   "area": "Mission Arts Center, 745 Treat Ave",
+   "lat": 37.75824,
+   "lng": -122.41343,
+   "ages": [
+    10,
+    14
+   ],
+   "when": "Wed or Fri 4:30–6 pm, through mid-November",
+   "signup": "term",
+   "url": "https://sfrecpark.org/register",
+   "note": "Intro coding through Minecraft.",
+   "indoor": true,
+   "price": "$151–170",
+   "free": false
+  },
+  {
+   "id": "cl-petite-bakers-rec-park-295-day-st",
+   "name": "Petite Bakers (Rec & Park)",
+   "cat": "stem",
+   "activity": "Baking",
+   "area": "Upper Noe Rec Center, 295 Day St",
+   "lat": 37.74239,
+   "lng": -122.42844,
+   "ages": [
+    3,
+    5
+   ],
+   "when": "Thu 4–5 pm, Oct 29–Dec 17",
+   "signup": "term",
+   "url": "https://sfrecpark.org/register",
+   "note": "Baking class for preschoolers.",
+   "indoor": true,
+   "price": "$94",
+   "free": false
+  },
+  {
+   "id": "cl-petite-bakers-rec-park-70-elk-st",
+   "name": "Petite Bakers (Rec & Park)",
+   "cat": "stem",
+   "activity": "Baking",
+   "area": "Glen Canyon Rec Center, 70 Elk St",
+   "lat": 37.73632,
+   "lng": -122.43982,
+   "ages": [
+    3,
+    5
+   ],
+   "when": "Fri 10–11 am, Nov 6–Dec 18",
+   "signup": "term",
+   "url": "https://sfrecpark.org/register",
+   "note": "Baking class for preschoolers.",
+   "indoor": true,
+   "price": "$94",
+   "free": false
+  }
+ ]
+}
