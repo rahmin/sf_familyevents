@@ -14,6 +14,15 @@
     "indoor": true,
     "exp": 0
    }
+  },
+  {
+   "match": "frede pop-?up",
+   "set": {
+    "free": false,
+    "price": "$120",
+    "indoor": true,
+    "exp": 0
+   }
   }
  ]
 }

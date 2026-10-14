@@ -539,7 +539,7 @@ def scrape_tribe(base: str, source: str, prefix: str, start: date, end: date, de
                       else html.unescape(e["title"])),
                 area=html.unescape(v.get("venue") or "San Francisco"),
                 lat=float(lat), lng=float(lng), indoor=False, exp=0.5, off=0,
-                free=bool(re.fullmatch(r"(?i)\s*(free)?\s*", e.get("cost") or "")),
+                free=True if re.search(r"(?i)\bfree\b", e.get("cost") or "") else (False if re.search(r"\d", e.get("cost") or "") else None),  # blank cost = unknown
                 start=s.isoformat(), end=en.isoformat(),
                 note=" ".join(desc.split())[:220], url=e["url"], cost=html.unescape(e.get("cost") or ""),
                 _family=bool(FAMILY_DESC.search(full)),
