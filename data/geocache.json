@@ -938,5 +938,29 @@
  "4458 Mission St, San Francisco, CA": [
   37.7264216,
   -122.4338419
+ ],
+ "500 Capp Street Foundation, 500 Capp St, San Francisco": [
+  null,
+  null
+ ],
+ "SAP Center, 525 W Santa Clara,  San Jose,  CA  95113": [
+  37.3328604,
+  -121.9012247
+ ],
+ "Jessica Lynn Saal Town Square, 3921 Fabian Way, Palo Alto, CA": [
+  null,
+  null
+ ],
+ "Richmond Republic Draught House, 642 Clement St, San Francisco, CA": [
+  37.7830174,
+  -122.4662352
+ ],
+ "Richmond Recreation Center, 251 18th Avenue, San Francisco, CA 94121": [
+  37.7833156,
+  -122.4781116
+ ],
+ "The Community Room, Sports Basement Berkeley, 2727 Milvia St, Berkeley": [
+  null,
+  null
  ]
 }
