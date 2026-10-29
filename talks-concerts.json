@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-24T10:30-07:00",
- "coverage": "Oct 24–Jan 22",
+ "generated": "2026-10-29T12:41-07:00",
+ "coverage": "Oct 29–Jan 27",
  "sources": [
   "SF Public Library (adult programs)",
   "Calendar feeds (Luma, SPUR and others)",
@@ -20,1290 +20,6 @@
   "manual"
  ],
  "events": [
-  {
-   "id": "sfpl-2026-10-24-author-lindsay-marie-morris-beneath-sicilian-stars",
-   "kind": "event",
-   "source": "sfpl",
-   "name": "Author: Lindsay Marie Morris, Beneath the Sicilian Stars",
-   "area": "North Beach Branch Library",
-   "lat": 37.803,
-   "lng": -122.414,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-24T10:30:00-07:00",
-   "end": "2026-10-24T11:30:00-07:00",
-   "note": "Dive into a lesser-known chapter of American history: the experiences of Italian Americans on the West Coast during World War II.",
-   "url": "https://sfpl.org/events/2026/10/24/author-lindsay-marie-morris-beneath-sicilian-stars"
-  },
-  {
-   "id": "ml-870263-2026-10-24",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "“Drawn Together” Curator Walkthrough with Auriel Garza",
-   "area": "Creativity Explored",
-   "lat": 37.7646386,
-   "lng": -122.4251432,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-24T11:00:00-07:00",
-   "end": "2026-10-24T12:00:00-07:00",
-   "note": "A curator-led walkthrough of the group exhibition Drawn Together, celebrating human connection through art.",
-   "url": "https://missionlocal.org/event/creativity-explored-drawn-together-curator-walkthrough-with-auriel-garza/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-870263-2026-10-24"
-   }
-  },
-  {
-   "id": "sfpl-2026-10-24-workshop-improv-theatre",
-   "kind": "event",
-   "source": "sfpl",
-   "name": "Improv Theatre",
-   "area": "Anza Branch Library",
-   "lat": 37.7778,
-   "lng": -122.497,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-24T13:00:00-07:00",
-   "end": "2026-10-24T14:30:00-07:00",
-   "note": "Improvisational theatre consists of games, exercises, and techniques to create spontaneous monologues and scenes. These quarterly sessions are open to everyone, no prior experience necessary. Have fun with others and make stuff up based on your background and imagination.",
-   "url": "https://sfpl.org/events/2026/10/24/workshop-improv-theatre"
-  },
-  {
-   "kind": "event",
-   "source": "Medicine for Nightmares",
-   "area": "Medicine for Nightmares, 3036 24th St",
-   "lat": 37.7527,
-   "lng": -122.4123,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": false,
-   "id": "vp-medicine-for-nightma-sf-bay-area-tatreez-circle-2026-10-24",
-   "name": "SF Bay Area Tatreez Circle",
-   "start": "2026-10-24T13:00:00.076000-07:00",
-   "end": "2026-10-24T16:00:00.076000-07:00",
-   "free": null,
-   "note": "Join us for an afternoon of tatreez, Palestinian embroidery, as we come together in community to stitch. A tatreez circle is a gathering of tatreez artists who stitch together while sharing stories and learning from each other.",
-   "url": "https://www.medicinefornightmares.com/events/sf-bay-area-tatreez-circlenbsp"
-  },
-  {
-   "id": "ybg-25748-2026-10-24",
-   "kind": "event",
-   "source": "Yerba Buena Gardens Festival",
-   "name": "Afro-Filipino Jazz Project",
-   "area": "Great Lawn, Yerba Buena Gardens",
-   "lat": 37.784773,
-   "lng": -122.402658,
-   "indoor": false,
-   "exp": 0.35,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-24T14:00:00-07:00",
-   "end": "2026-10-24T15:30:00-07:00",
-   "note": "Free RSVP Few artists have appeared at the Festival more frequently than flutist, percussionist and arranger John Calloway . Whether he’s leading his own band, performing in the sextet of longtime creative partner John S",
-   "url": "https://ybgfestival.org/event/afro-filipino-jazz-project/",
-   "also": {
-    "page": "index.html",
-    "id": "ybg-afro-filipino-jazz-2026-10-24"
-   }
-  },
-  {
-   "id": "artists-television-a-17649-2026-10-24",
-   "kind": "event",
-   "source": "Artists' Television Access",
-   "name": "Cine+Mas: Bonds of Belonging Shorts Program",
-   "area": "Artists' Television Access, 992 Valencia St",
-   "lat": 37.7569,
-   "lng": -122.4212,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-24T14:00:00-07:00",
-   "end": "2026-10-24T14:00:00-07:00",
-   "note": "Step into a captivating block of short films that explore the unexpected roads to healing, bravery, and profound human connection! This spirited collection follows remarkable characters navigating life’s biggest turning ",
-   "url": "https://www.atasite.org/event/cinemas-bonds-of-belonging-shorts-program/",
-   "bookAhead": false
-  },
-  {
-   "id": "sfpl-2026-10-24-performance-bay-beats-launch-party",
-   "kind": "event",
-   "source": "sfpl",
-   "name": "Performance: Bay Beats Launch Party",
-   "area": "Park Branch Library",
-   "lat": 37.7695,
-   "lng": -122.45,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-24T14:00:00-07:00",
-   "end": "2026-10-24T18:00:00-07:00",
-   "note": "Free program at the library.",
-   "url": "https://sfpl.org/events/2026/10/24/performance-bay-beats-launch-party"
-  },
-  {
-   "id": "sfpl-2026-10-24-author-boze-hadleigh-492-great-things-about-being-italian",
-   "kind": "event",
-   "source": "sfpl",
-   "name": "Author: Boze Hadleigh, 492 Great Things about Being Italian",
-   "area": "North Beach Branch Library",
-   "lat": 37.803,
-   "lng": -122.414,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-24T15:00:00-07:00",
-   "end": "2026-10-24T16:30:00-07:00",
-   "note": "Join us for an irresistible literary event. From the land that gifted the world of da Vinci, Michelangelo, Galileo and Montessori, Italy’s influence is everywhere. Millions flock each year to Rome, Florence, Venice, Milan, Naples, Capri and Pompei but on this special day, Italy comes to you.",
-   "url": "https://sfpl.org/events/2026/10/24/author-boze-hadleigh-492-great-things-about-being-italian"
-  },
-  {
-   "id": "rpah-18521-2026-10-24",
-   "kind": "event",
-   "source": "Red Poppy Art House",
-   "name": "LitCrawl 2026",
-   "area": "Red Poppy Art House, 2698 Folsom St",
-   "lat": 37.7544,
-   "lng": -122.4146,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-24T17:00:00-07:00",
-   "end": "2026-10-24T21:00:00-07:00",
-   "note": "One of the most anticipated literary nights of the year, San Francisco’s Lit Crawl is a massive, one-night literary pub crawl through San Francisco’s Mission District that caps off our annual Litquake Festival. Lit Crawl",
-   "url": "https://redpoppyarthouse.org/event/litcrawl-2026/",
-   "bookAhead": true
-  },
-  {
-   "id": "artists-television-a-17484-2026-10-24",
-   "kind": "event",
-   "source": "Artists' Television Access",
-   "name": "Litcrawl: CCA comics live",
-   "area": "Artists' Television Access, 992 Valencia St",
-   "lat": 37.7569,
-   "lng": -122.4212,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-24T17:00:00-07:00",
-   "end": "2026-10-24T17:00:00-07:00",
-   "note": "",
-   "url": "https://www.atasite.org/event/litcrawl-cca-comics-live/",
-   "bookAhead": false
-  },
-  {
-   "id": "artists-television-a-17651-2026-10-24",
-   "kind": "event",
-   "source": "Artists' Television Access",
-   "name": "Cine+Mas: Family & Resilience Short Film Program",
-   "area": "Artists' Television Access, 992 Valencia St",
-   "lat": 37.7569,
-   "lng": -122.4212,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-24T19:00:00-07:00",
-   "end": "2026-10-24T19:00:00-07:00",
-   "note": "Get ready for a gripping lineup of short films that dive deep into the power of family bonds, hidden secrets, and personal resilience! This dynamic collection takes you on an emotional journey from the quiet streets of P",
-   "url": "https://www.atasite.org/event/family-resilience-short-film-program/",
-   "bookAhead": false
-  },
-  {
-   "kind": "event",
-   "source": "Great American Music Hall",
-   "area": "Great American Music Hall, 859 O'Farrell St",
-   "lat": 37.7848,
-   "lng": -122.4189,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "id": "vp-great-american-music-illuminati-hotties-2026-10-24",
-   "name": "Illuminati Hotties",
-   "start": "2026-10-24T19:30:00-07:00",
-   "end": null,
-   "free": false,
-   "note": "Indie at Great American Music Hall. With with Buzzed Lightbeer, Satana Satana, Swell Foop. Doors at 7:00PM / Show at 7:30PM. $27.00-$30.00.",
-   "url": "https://wl.seetickets.us/event/illuminati-hotties/698113?afflky=GreatAmericanMusicHall",
-   "tags": [
-    "music",
-    "songs"
-   ],
-   "price": "$27–30"
-  },
-  {
-   "id": "bird-beckett-books-39101-2026-10-24",
-   "kind": "event",
-   "source": "Bird & Beckett Books",
-   "name": "Pickpocket Ensemble",
-   "area": "Bird & Beckett Books, 653 Chenery St",
-   "lat": 37.7344,
-   "lng": -122.433,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": false,
-   "start": "2026-10-24T19:30:00-07:00",
-   "end": "2026-10-24T21:30:00-07:00",
-   "note": "Rick Corrigan, accordion, piano, composition; Chloe Allen, violin; Yates Brown, guitar, banjo, bass, sitar; John Slattery, percussion; Kurt Ribak, bass $25 cover charge; byob Students $10 For a reservation, call the book",
-   "url": "https://birdbeckett.com/event/pickpocket-ensemble_2026-10-24/",
-   "bookAhead": false,
-   "price": "$25"
-  },
-  {
-   "id": "ml-10041048-2026-10-24",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Ranko Ogura Dance presents Invisible Atlas",
-   "area": "Dance Mission Theater",
-   "lat": 37.7524015,
-   "lng": -122.4188994,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": false,
-   "start": "2026-10-24T19:30:00-07:00",
-   "end": "2026-10-24T21:00:00-07:00",
-   "note": "Ranko Ogura Dance presents Invisible Atlas, a dance work uncovering hidden radioactive waste beneath San Francisco.",
-   "url": "https://missionlocal.org/event/dance-mission-theater-ranko-ogura-dance-presents-invisible-atlas/2026-10-24/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10041048-2026-10-24"
-   }
-  },
-  {
-   "id": "ml-10041015-2026-10-24",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Sharp & Fine presents the premiere of IPHIGENIA",
-   "area": "Z Space",
-   "lat": 37.7637026,
-   "lng": -122.411551,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": false,
-   "start": "2026-10-24T19:30:00-07:00",
-   "end": "2026-10-24T21:00:00-07:00",
-   "note": "Sharp & Fine premieres IPHIGENIA, blending dance, theater, and live music to reimagine the ancient Greek tragedy.",
-   "url": "https://missionlocal.org/event/z-space-sharp-fine-presents-the-premiere-of-iphigenia/2026-10-24/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10041015-2026-10-24"
-   }
-  },
-  {
-   "kind": "event",
-   "source": "The Fillmore",
-   "area": "The Fillmore, 1805 Geary Blvd",
-   "lat": 37.784,
-   "lng": -122.433,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "id": "vp-the-fillmore-amble-2026-10-24",
-   "name": "Amble",
-   "start": "2026-10-24T20:00:00-07:00",
-   "end": null,
-   "free": false,
-   "note": "Live at The Fillmore.",
-   "url": "https://www.ticketmaster.com/amble-san-francisco-california-10-24-2026/event/1C0064CABFC98DA4",
-   "tags": [
-    "music"
-   ]
-  },
-  {
-   "id": "w-the-lab-tyondai-braxton-matt-robidoux-2026-10-24",
-   "kind": "event",
-   "source": "The Lab",
-   "name": "Tyondai Braxton + Matt Robidoux",
-   "area": "The Lab, 2948 16th St",
-   "lat": 37.7653,
-   "lng": -122.4184,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": false,
-   "start": "2026-10-24T20:30:00-07:00",
-   "end": "2026-10-24T23:30:00-07:00",
-   "note": "Experimental music performance by Tyondai Braxton and Matt Robidoux.",
-   "url": "https://www.thelab.org/",
-   "bookAhead": false
-  },
-  {
-   "id": "indy-2627-2026-10-24",
-   "kind": "event",
-   "source": "The Independent",
-   "name": "Everclear with American Hi-Fi",
-   "area": "The Independent, 628 Divisadero St",
-   "lat": 37.7755,
-   "lng": -122.4378,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": false,
-   "start": "2026-10-24T21:00:00-07:00",
-   "end": null,
-   "bookAhead": true,
-   "note": "Live at The Independent (Lucky 7 Tour). Doors 8:30 PM, show 9:00 PM.",
-   "url": "https://www.theindependentsf.com/tm-event/everclear/",
-   "tags": [
-    "music"
-   ]
-  },
-  {
-   "kind": "event",
-   "source": "The Chapel",
-   "area": "The Chapel, 777 Valencia St",
-   "lat": 37.7604,
-   "lng": -122.4213,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "id": "vp-the-chapel-weatherday-hornet-disaster-tour-2026-2026-10-24",
-   "name": "Weatherday: Hornet Disaster Tour 2026",
-   "start": "2026-10-24T21:00:00-07:00",
-   "end": null,
-   "free": false,
-   "note": "Alternative at The Chapel. With Founders Day, Hit me, Harold. Doors at 8:00PM / Show at 9:00PM. All Ages.",
-   "url": "https://wl.seetickets.us/event/weatherday-hornet-disaster-tour-2026/687518?afflky=TheChapel",
-   "tags": [
-    "music",
-    "songs"
-   ],
-   "also": {
-    "page": "index.html",
-    "id": "ml-878819-2026-10-24"
-   }
-  },
-  {
-   "id": "ml-876665-2026-10-24",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Ivy Lab: A FAREWELL TOUR presented by PW & Goldenvoice",
-   "area": "Public Works",
-   "lat": 37.7689012,
-   "lng": -122.4193734,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-24T21:30:00-07:00",
-   "end": "2026-10-24T23:59:00-07:00",
-   "note": "Saturday, October 24th, 9:30pm – 2am Full Space / 21+ / Limited Capacity Public Works & Goldenvoice presents the farewell tour of Ivy Lab LINEUP: Ivy Lab Mr. Carmack b2b Great Dane DJ Dials",
-   "url": "https://missionlocal.org/event/public-works-ivy-lab-a-farewell-tour-presented-by-pw-goldenvoice/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-876665-2026-10-24"
-   }
-  },
-  {
-   "id": "ml-10040840-2026-10-24",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "The Empire Strips Back: A Burlesque Parody",
-   "area": "Victoria Theatre",
-   "lat": 37.764859,
-   "lng": -122.418865,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-24T21:30:00-07:00",
-   "end": "2026-10-24T23:30:00-07:00",
-   "note": "⭐ The hit burlesque parody The Empire Strips Back: A Burlesque Parody is making its way to San Francisco! This audience fave drops classic characters into the world of burlesque. Don’t miss out! ﻿﻿🎟️ Returning Customer O",
-   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-10-24/2/"
-  },
-  {
-   "id": "cal-m4hpiuccm20ivrn5gfig24qcb4-google-com",
-   "kind": "event",
-   "source": "The Drawing Room",
-   "name": "WonderLand Call for art CLOSES 11:59pm",
-   "area": "The Drawing Room, 599 Valencia St",
-   "lat": 37.7635,
-   "lng": -122.4214,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "bookAhead": false,
-   "start": "2026-10-25T00:00:00-07:00",
-   "end": "2026-10-26T00:00:00-07:00",
-   "note": "",
-   "url": null
-  },
-  {
-   "id": "bird-beckett-books-39348-2026-10-25",
-   "kind": "event",
-   "source": "Bird & Beckett Books",
-   "name": "Kamal Ahmad: A Program of Morning Ragas",
-   "area": "Bird & Beckett Books, 653 Chenery St",
-   "lat": 37.7344,
-   "lng": -122.433,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": false,
-   "start": "2026-10-25T09:00:00-07:00",
-   "end": "2026-10-25T11:00:00-07:00",
-   "note": "Kamal Ahmad is a sitar player and teacher of raga music. He started his musical journey learning tabla before being initiated in the art of sitar playing by his elder sister. It would not be long before he began to serio",
-   "url": "https://birdbeckett.com/event/monthly-morning-ragas_2026-10-25/",
-   "bookAhead": false,
-   "price": "$20"
-  },
-  {
-   "id": "ml-10041059-2026-10-25",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Basic Stone Lithography",
-   "area": "Graphic Arts Workshop",
-   "lat": 37.7570009,
-   "lng": -122.3880184,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-25T10:00:00-07:00",
-   "end": "2026-10-25T16:00:00-07:00",
-   "note": "In this 4-day class, students will learn the basics of stone lithography from preparing, drawing, and processing of the stone through the printing of the edition and documentation. We will focus on the basics but will to",
-   "url": "https://missionlocal.org/event/graphic-arts-workshop-basic-stone-lithography/2026-10-25/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10041059-2026-10-25"
-   }
-  },
-  {
-   "id": "ml-876723-2026-10-25",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Dog Adoption Event with Rocket Dog Rescue",
-   "area": "Rainbow Grocery",
-   "lat": 37.7692662,
-   "lng": -122.415454,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-25T10:00:00-07:00",
-   "end": "2026-10-25T14:00:00-07:00",
-   "note": "🐶 looking for a best friend to trick-or-treat with? Rainbow Grocery 🌈 will be hosting a dog adoption event this October 25 from 10 AM to 2 PM with Rocket Dog Rescue",
-   "url": "https://missionlocal.org/event/rainbow-grocery-dog-adoption-event-with-rocket-dog-rescue/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-876723-2026-10-25"
-   }
-  },
-  {
-   "id": "sfpl-2026-10-25-full-workshop-embroidering-queer-history",
-   "kind": "event",
-   "source": "sfpl",
-   "name": "FULL: Workshop: Embroidering Queer History",
-   "area": "Main Library",
-   "lat": 37.779,
-   "lng": -122.4157,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-25T13:00:00-07:00",
-   "end": "2026-10-25T16:00:00-07:00",
-   "note": "Registration is full. For waitlist information, call (415) 557-4537 or email . Dive into the historic archives of the James C. Hormel LGBTQIA Center to rediscover iconic imagery from San Francisco’s queer history, bringing photos from our past back to life with colorful, dynamic stitchwork.",
-   "url": "https://sfpl.org/events/2026/10/25/full-workshop-embroidering-queer-history"
-  },
-  {
-   "id": "sfpl-2026-10-25-author-final-reading-dispatches-city-awe",
-   "kind": "event",
-   "source": "sfpl",
-   "name": "Author: Final Reading for Dispatches from the City of Awe",
-   "area": "Main Library",
-   "lat": 37.779,
-   "lng": -122.4157,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-25T14:00:00-07:00",
-   "end": "2026-10-25T16:00:00-07:00",
-   "note": "Alexandra Kostoulas will curate the reading event as part of her Dispatches from the City of Awe. Kostoulas is an award-winning poet, fiction writer and journalist. She is the founder of the San Francisco Creative Writing Institute and publisher of the Mid-Market News .",
-   "url": "https://sfpl.org/events/2026/10/25/author-final-reading-dispatches-city-awe"
-  },
-  {
-   "id": "artists-television-a-17601-2026-10-25",
-   "kind": "event",
-   "source": "Artists' Television Access",
-   "name": "Cine+Mas: Garden of Silences (Jardim dos Silêncios)",
-   "area": "Artists' Television Access, 992 Valencia St",
-   "lat": 37.7569,
-   "lng": -122.4212,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-25T14:00:00-07:00",
-   "end": "2026-10-25T14:00:00-07:00",
-   "note": "Tuã is a Black pediatric oncologist, born in Bahia but raised in Italy, where his mother fled after being imprisoned and tortured during the dictatorship, while her husband became one of the many disappeared of the regim",
-   "url": "https://www.atasite.org/event/cinemas-garden-of-silences-jardim-dos-silencios/",
-   "bookAhead": false,
-   "also": {
-    "page": "index.html",
-    "id": "ml-876710-2026-10-25"
-   }
-  },
-  {
-   "id": "ml-10041016-2026-10-25",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Sharp & Fine presents the premiere of IPHIGENIA",
-   "area": "Z Space",
-   "lat": 37.7637026,
-   "lng": -122.411551,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-25T14:00:00-07:00",
-   "end": "2026-10-25T15:30:00-07:00",
-   "note": "Z Space’s Steindler Stage 2,400 years ago, a man wrote a play about a king named Agamemnon who sacrificed his daughter for the sake of a war. With IPHIGENIA, Sharp & Fine blends dance, theater, and live music to cut open",
-   "url": "https://missionlocal.org/event/z-space-sharp-fine-presents-the-premiere-of-iphigenia/2026-10-25/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10041016-2026-10-25"
-   }
-  },
-  {
-   "kind": "event",
-   "source": "Medicine for Nightmares",
-   "area": "Medicine for Nightmares, 3036 24th St",
-   "lat": 37.7527,
-   "lng": -122.4123,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": false,
-   "id": "vp-medicine-for-nightma-filipina-x-poetry-poetics-pinaylit-with--2026-10-25",
-   "name": "Filipina/x Poetry+Poetics #PinayLit with Barbara Jane Reyes",
-   "start": "2026-10-25T14:00:00.891000-07:00",
-   "end": "2026-10-25T16:00:00.891000-07:00",
-   "free": null,
-   "note": "[ { \"shape\": \"underline\", \"isFront\": false, \"isAnimationEnabled\": false, \"animation\": \"draw\", \"duration\": 0.5, \"direction\": \"right\", \"color\": { \"type\": \"THEME_COLOR\" }, \"thickness\": { \"unit\": \"em\", \"value\": 0.1 }, \"linecap\": \"square\", \"type",
-   "url": "https://www.medicinefornightmares.com/events/filipinax-poetrypoetics-pinaylit-with-barbara-jane-reyes"
-  },
-  {
-   "id": "artists-television-a-17603-2026-10-25",
-   "kind": "event",
-   "source": "Artists' Television Access",
-   "name": "Cine+Mas: Oca",
-   "area": "Artists' Television Access, 992 Valencia St",
-   "lat": 37.7569,
-   "lng": -122.4212,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-25T16:00:00-07:00",
-   "end": "2026-10-25T18:00:00-07:00",
-   "note": "Rafaela is a young nun who belongs to a precarious, almost extinct congregation. For a long time, she has been having daydreams that eventually come true, but there is one incomplete, recurring dream that haunts her mind",
-   "url": "https://www.atasite.org/event/cinemas-oca/",
-   "bookAhead": false
-  },
-  {
-   "id": "ml-10041049-2026-10-25",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Ranko Ogura Dance presents Invisible Atlas",
-   "area": "Dance Mission Theater",
-   "lat": 37.7524015,
-   "lng": -122.4188994,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-25T16:00:00-07:00",
-   "end": "2026-10-25T17:30:00-07:00",
-   "note": "Ranko Ogura Dance presents Invisible Atlas Unseen Threats, Remembered History. Uncovering the Hidden Radioactive Waste Beneath San Francisco. Oct 23-25, 2026 at Dance Mission Fri-Sat 7:30pm, Sun 4pm Tickets: https://even",
-   "url": "https://missionlocal.org/event/dance-mission-theater-ranko-ogura-dance-presents-invisible-atlas/2026-10-25/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10041049-2026-10-25"
-   }
-  },
-  {
-   "id": "ml-875848-2026-10-25",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Frede Pop-Up",
-   "area": "18 Reasons",
-   "lat": 37.7615756,
-   "lng": -122.4253905,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": false,
-   "start": "2026-10-25T17:00:00-07:00",
-   "end": "2026-10-25T21:30:00-07:00",
-   "note": "We are incredibly excited to kick off our first ever Pop Up Residency featuring Frede! Frede is the new concept from Gaby Maeda and Blake Cole – the magnificent duo behind the beloved Oakland queer bar, Friends and Famil",
-   "url": "https://missionlocal.org/event/18-reasons-frede-pop-up/",
-   "price": "$120"
-  },
-  {
-   "id": "bird-beckett-books-39103-2026-10-25",
-   "kind": "event",
-   "source": "Bird & Beckett Books",
-   "name": "Jam Session w/ Vince Lateano Trio",
-   "area": "Bird & Beckett Books, 653 Chenery St",
-   "lat": 37.7344,
-   "lng": -122.433,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-25T17:00:00-07:00",
-   "end": "2026-10-25T19:00:00-07:00",
-   "note": "The Vince Lateano Trio hosts an open jam session on the last Sunday of every month, welcoming local jazz giants, stalwarts, new comers, and those just passing through. Ben Stolorow, piano; Peter Barshay, bass; Vince Late",
-   "url": "https://birdbeckett.com/event/jam-session_2026-10-25/",
-   "bookAhead": false
-  },
-  {
-   "kind": "event",
-   "source": "Great American Music Hall",
-   "area": "Great American Music Hall, 859 O'Farrell St",
-   "lat": 37.7848,
-   "lng": -122.4189,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "id": "vp-great-american-music-to-3-28-27-ali-amran-2026-10-25",
-   "name": "TO 3/28/27* Ali Amran",
-   "start": "2026-10-25T18:00:00-07:00",
-   "end": null,
-   "free": false,
-   "note": "Singer/Songwriter at Great American Music Hall. With Ali Amran U.S. Tour 2026. Doors at 5:00PM / Show at 6:00PM.",
-   "url": "https://gamh.com/calendar/",
-   "tags": [
-    "music",
-    "songs"
-   ]
-  },
-  {
-   "kind": "event",
-   "source": "Medicine for Nightmares",
-   "area": "Medicine for Nightmares, 3036 24th St",
-   "lat": 37.7527,
-   "lng": -122.4123,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": false,
-   "id": "vp-medicine-for-nightma-bay-area-queer-open-mic-2026-10-25",
-   "name": "Bay Area Queer Open Mic",
-   "start": "2026-10-25T18:00:00.226000-07:00",
-   "end": "2026-10-25T21:00:00.226000-07:00",
-   "free": null,
-   "note": "A welcoming space for queer musicians and songwriters to share their work, connect, and build community. Performers can sign up online in advance, join as walk-ins, or be featured as a monthly Featured Artist.",
-   "url": "https://www.medicinefornightmares.com/events/2wxtb8bl8fbm99gn7jk5s2pksgxldl"
-  },
-  {
-   "id": "artists-television-a-17472-2026-10-25",
-   "kind": "event",
-   "source": "Artists' Television Access",
-   "name": "TINAFF: Program 8",
-   "area": "Artists' Television Access, 992 Valencia St",
-   "lat": 37.7569,
-   "lng": -122.4212,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-25T19:00:00-07:00",
-   "end": "2026-10-25T19:00:00-07:00",
-   "note": "This is Not a Film Festival (also know as TINAFF) is a monthly recurring film showcase, allowing local Bay Area filmmakers, artists and creatives to gather, connect, and present their work. No submission fees, no awards,",
-   "url": "https://www.atasite.org/event/tinaff-202609-2/",
-   "bookAhead": false
-  },
-  {
-   "id": "ml-876469-2026-10-25",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "iHeartMambo Salsa Social",
-   "area": "Verdi Club",
-   "lat": 37.7634058,
-   "lng": -122.4079386,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-25T19:00:00-07:00",
-   "end": "2026-10-25T23:30:00-07:00",
-   "note": "iHeartmambo Salsa Social in the heart of San Francisco Mission District! Complimentary Beginner Salsa and Intermediate Salsa classes 7pm-8pm. Social dancing to live DJ from 8pm-11:30pm at Verdi Club (2424 Mariposa St, Sa",
-   "url": "https://missionlocal.org/event/verdi-club-iheartmambo-salsa-social/"
-  },
-  {
-   "id": "indy-2690-2026-10-25",
-   "kind": "event",
-   "source": "The Independent",
-   "name": "BALTHVS",
-   "area": "The Independent, 628 Divisadero St",
-   "lat": 37.7755,
-   "lng": -122.4378,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": false,
-   "start": "2026-10-25T20:00:00-07:00",
-   "end": null,
-   "bookAhead": true,
-   "note": "Live at The Independent. Doors 7:30 PM, show 8:00 PM.",
-   "url": "https://www.theindependentsf.com/tm-event/balthvs/",
-   "tags": [
-    "music"
-   ]
-  },
-  {
-   "kind": "event",
-   "source": "The Fillmore",
-   "area": "The Fillmore, 1805 Geary Blvd",
-   "lat": 37.784,
-   "lng": -122.433,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "id": "vp-the-fillmore-kishi-bashi-sonderlust-10th-anniversary--2026-10-25",
-   "name": "Kishi Bashi: Sonderlust 10th Anniversary Tour",
-   "start": "2026-10-25T20:00:00-07:00",
-   "end": null,
-   "free": false,
-   "note": "Live at The Fillmore.",
-   "url": "https://www.ticketmaster.com/kishi-bashi-sonderlust-10th-anniversary-tour-san-francisco-california-10-25-2026/event/1C006470E74207E3",
-   "tags": [
-    "music"
-   ]
-  },
-  {
-   "id": "sfpl-2026-10-26-film-young-china-and-panel",
-   "kind": "event",
-   "source": "sfpl",
-   "name": "Film: Young China and Panel",
-   "area": "Main Library",
-   "lat": 37.779,
-   "lng": -122.4157,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-26T14:00:00-07:00",
-   "end": "2026-10-26T16:00:00-07:00",
-   "note": "A special event marking the 160th anniversary of Dr. Sun Yat‑sen’s birth. This program explores Sun Yat‑sen’s deep connections to the United States and the experiences of Chinese immigrants who supported his work more than a century ago.",
-   "url": "https://sfpl.org/events/2026/10/26/film-young-china-and-panel"
-  },
-  {
-   "id": "sfpl-2026-10-26-film-amazing-mr-x",
-   "kind": "event",
-   "source": "sfpl",
-   "name": "Film: The Amazing Mr. X",
-   "area": "Golden Gate Valley Branch Library",
-   "lat": 37.798,
-   "lng": -122.4258,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-26T15:00:00-07:00",
-   "end": "2026-10-26T16:30:00-07:00",
-   "note": "A grieving widow meets a man who seems to have a connection to her late husband, but friends and family are wary, and not everything is what it seem to be. The Amazing Mr. X , also known as The Spiritualist , stars Turhan Bey, Lynn Bari, and Cathy O'Donnell, and was filmed by John Alton .",
-   "url": "https://sfpl.org/events/2026/10/26/film-amazing-mr-x"
-  },
-  {
-   "id": "cwc-evan-barker-nothing-left-2026-10-26",
-   "kind": "event",
-   "source": "Commonwealth Club",
-   "name": "Evan Barker: Nothing Left",
-   "area": "Commonwealth Club, 110 The Embarcadero",
-   "lat": 37.7932,
-   "lng": -122.3925,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-26T17:30:00-07:00",
-   "end": null,
-   "bookAhead": true,
-   "note": "Has the Democratic Party lost its soul? Evan Barker says the party she grew up identifying with has been hijacked by out-of-touch activists, coastal elitists, and powerful special interests.",
-   "url": "https://www.commonwealthclub.org/events/2026-10-26/evan-barker-nothing-left"
-  },
-  {
-   "id": "ml-878578-2026-10-26",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Homestyle Vietnamese: Shaking Beef and More",
-   "area": "18 Reasons",
-   "lat": 37.7615756,
-   "lng": -122.4253905,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-26T18:00:00-07:00",
-   "end": "2026-10-26T21:30:00-07:00",
-   "note": "Gathering around a table for a meal at home is a traditional way to eat together. In this class you will make three dishes for a family meal that also celebrates what beautiful ingredients we are able to source in the Ba",
-   "url": "https://missionlocal.org/event/18-reasons-homestyle-vietnamese-shaking-beef-and-more/"
-  },
-  {
-   "kind": "event",
-   "source": "Great American Music Hall",
-   "area": "Great American Music Hall, 859 O'Farrell St",
-   "lat": 37.7848,
-   "lng": -122.4189,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "id": "vp-great-american-music-inner-wave-2026-10-26",
-   "name": "Inner Wave",
-   "start": "2026-10-26T19:30:00-07:00",
-   "end": null,
-   "free": false,
-   "note": "Indie at Great American Music Hall. With with Heathers, The Fazes, Christina’s Trip. Doors at 7:00PM / Show at 7:30PM. $27.00-$29.00.",
-   "url": "https://wl.seetickets.us/event/inner-wave/702861?afflky=GreatAmericanMusicHall",
-   "tags": [
-    "music",
-    "songs"
-   ],
-   "price": "$27–29"
-  },
-  {
-   "kind": "event",
-   "source": "The Chapel",
-   "area": "The Chapel, 777 Valencia St",
-   "lat": 37.7604,
-   "lng": -122.4213,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "id": "vp-the-chapel-the-war-and-treaty-2026-10-26",
-   "name": "The War And Treaty",
-   "start": "2026-10-26T20:00:00-07:00",
-   "end": null,
-   "free": false,
-   "note": "Gospel at The Chapel. With Blank Page, Jordan Babbs. Doors at 7:00PM / Show at 8:00PM. All Ages.",
-   "url": "https://wl.seetickets.us/event/the-war-and-treaty/694221?afflky=TheChapel",
-   "tags": [
-    "music"
-   ]
-  },
-  {
-   "id": "sfpl-2026-10-27-film-santa-sangre-screening-and-discussion",
-   "kind": "event",
-   "source": "sfpl",
-   "name": "Film: Santa Sangre, Screening and Discussion",
-   "area": "North Beach Branch Library",
-   "lat": 37.803,
-   "lng": -122.414,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-27T08:00:00-07:00",
-   "end": "2026-10-27T09:00:00-07:00",
-   "note": "Watch the weekly cinema screening of Santa Sangre , followed by a discussion with local photographer and film enthusiast, Tommy Milutin. A traumatized circus performer navigates a surreal world shaped by his mother’s influence, past violence, and distorted love.",
-   "url": "https://sfpl.org/events/2026/10/27/film-santa-sangre-screening-and-discussion"
-  },
-  {
-   "id": "cwc-kathi-zellwegger-and-mike-chinoy-saving-lives-in-n-2026-10-27",
-   "kind": "event",
-   "source": "Commonwealth Club",
-   "name": "Kathi Zellwegger and Mike Chinoy: Saving Lives in North Korea",
-   "area": "Commonwealth Club, 110 The Embarcadero",
-   "lat": 37.7932,
-   "lng": -122.3925,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-27T17:30:00-07:00",
-   "end": null,
-   "bookAhead": true,
-   "note": "North Korea has been practically a pariah nation for decades.",
-   "url": "https://www.commonwealthclub.org/events/2026-10-27/kathi-zellwegger-and-mike-chinoy-saving-lives-north-korea"
-  },
-  {
-   "id": "sfpl-2026-10-27-author-sarita-sarvate-conversation-sabina-khan-ibarra",
-   "kind": "event",
-   "source": "sfpl",
-   "name": "Author: Sarita Sarvate in Conversation with Sabina Khan-Ibarra",
-   "area": "Main Library",
-   "lat": 37.779,
-   "lng": -122.4157,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-27T18:00:00-07:00",
-   "end": "2026-10-27T19:30:00-07:00",
-   "note": "Explore themes of identity, belonging, resilience, and self-discovery in Midnight’s Daughter , Sarita Sarvate’s debut memoir and winner of the 2025 International Voices in Creative Nonfiction Competition.",
-   "url": "https://sfpl.org/events/2026/10/27/author-sarita-sarvate-conversation-sabina-khan-ibarra"
-  },
-  {
-   "id": "ml-10041038-2026-10-27",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Kitchen Confidence",
-   "area": "18 Reasons",
-   "lat": 37.7615756,
-   "lng": -122.4253905,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-27T18:00:00-07:00",
-   "end": "2026-10-27T21:30:00-07:00",
-   "note": "Are you ready to level up your kitchen skills? This three week series was created for the beginner cook to help set a foundation for a future of confident and creative cooking! On day one, students will get to know the m",
-   "url": "https://missionlocal.org/event/18-reasons-kitchen-confidence/2026-10-27/"
-  },
-  {
-   "id": "cwc-pbs-film-preview-lynn-novick-s-crime-and-punishmen-2026-10-27",
-   "kind": "event",
-   "source": "Commonwealth Club",
-   "name": "PBS Film Preview: Lynn Novick’s ‘Crime and Punishment in America’",
-   "area": "Commonwealth Club, 110 The Embarcadero",
-   "lat": 37.7932,
-   "lng": -122.3925,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-27T18:00:00-07:00",
-   "end": null,
-   "bookAhead": true,
-   "note": "Screening and Conversation Co-presented by Commonwealth Club World Affairs & KQED Live How did the United States become the world’s leading incarcerator?",
-   "url": "https://www.commonwealthclub.org/events/2026-10-27/pbs-film-preview-lynn-novicks-crime-and-punishment-america"
-  },
-  {
-   "id": "bird-beckett-books-39105-2026-10-27",
-   "kind": "event",
-   "source": "Bird & Beckett Books",
-   "name": "All About San Francisco’s Stairways: No Walking Required! w/ Mary Burk & Alexandra Kenin",
-   "area": "Bird & Beckett Books, 653 Chenery St",
-   "lat": 37.7344,
-   "lng": -122.433,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": true,
-   "start": "2026-10-27T19:00:00-07:00",
-   "end": "2026-10-27T20:30:00-07:00",
-   "note": "Take a comfy seat and celebrate the grand finale of SF Stairway Month hearing authors Mary Burk (Stairway Walks in San Francisco) and Alexandra Kenin (Urban Trails series, San Francisco, East Bay, Peninsula and South Bay",
-   "url": "https://birdbeckett.com/event/stairway-to-stairway_2026-10-27/",
-   "bookAhead": false
-  },
-  {
-   "id": "ml-10040901-2026-10-27",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Tuesday Night Lindy Hop and Balboa Classes",
-   "area": "Verdi Club",
-   "lat": 37.7634058,
-   "lng": -122.4079386,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-27T19:00:00-07:00",
-   "end": "2026-10-27T21:00:00-07:00",
-   "note": "In October 2026, the Woodchopper’s Ball is offering monthly class series in LINDY HOP, BALBOA, and SLOW BALBOA. All October 2026 monthly class series run on Tuesdays for 4 weeks: October 6, 13, 20, and 27. Check the clas",
-   "url": "https://missionlocal.org/event/verdi-club-tuesday-night-lindy-hop-and-balboa-classes-6/2026-10-27/"
-  },
-  {
-   "kind": "event",
-   "source": "The Fillmore",
-   "area": "The Fillmore, 1805 Geary Blvd",
-   "lat": 37.784,
-   "lng": -122.433,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "id": "vp-the-fillmore-slow-pulp-2026-10-27",
-   "name": "Slow Pulp",
-   "start": "2026-10-27T20:00:00-07:00",
-   "end": null,
-   "free": false,
-   "note": "Live at The Fillmore.",
-   "url": "https://www.ticketmaster.com/slow-pulp-san-francisco-california-10-27-2026/event/1C0064A49383A7BE",
-   "tags": [
-    "music"
-   ]
-  },
-  {
-   "id": "indy-2721-2026-10-27",
-   "kind": "event",
-   "source": "The Independent",
-   "name": "The Wldlfe",
-   "area": "The Independent, 628 Divisadero St",
-   "lat": 37.7755,
-   "lng": -122.4378,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": false,
-   "start": "2026-10-27T20:00:00-07:00",
-   "end": null,
-   "bookAhead": true,
-   "note": "Live at The Independent. Doors 7:30 PM, show 8:00 PM.",
-   "url": "https://www.theindependentsf.com/tm-event/the-wldlfe/",
-   "tags": [
-    "music"
-   ]
-  },
-  {
-   "kind": "event",
-   "source": "Great American Music Hall",
-   "area": "Great American Music Hall, 859 O'Farrell St",
-   "lat": 37.7848,
-   "lng": -122.4189,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "id": "vp-great-american-music-wand-2026-10-27",
-   "name": "Wand",
-   "start": "2026-10-27T20:00:00-07:00",
-   "end": null,
-   "free": false,
-   "note": "Psych Rock at Great American Music Hall. With with Cole Berliner, The Grizzled Mighty. Doors at 7:00PM / Show at 8:00PM. $27.00-$29.00.",
-   "url": "https://wl.seetickets.us/event/wand/703349?afflky=GreatAmericanMusicHall",
-   "tags": [
-    "music",
-    "songs"
-   ],
-   "price": "$27–29"
-  },
-  {
-   "id": "ml-878554-2026-10-27",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "The Cottontails & After-Hours Jam at the Woodchopper’s Ball, Halloween Edition!",
-   "area": "Verdi Club",
-   "lat": 37.7634058,
-   "lng": -122.4079386,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-27T21:00:00-07:00",
-   "end": "2026-10-27T23:30:00-07:00",
-   "note": "THE COTTONTAILS: The Cottontails are one of San Francisco’s most exciting, talented, and versatile swing dance bands around, playing a wide range of styles: 1920s Gatsby-era jazz, classic 30’s/’40s swing, and vintage ’50",
-   "url": "https://missionlocal.org/event/verdi-club-the-cottontails-after-hours-jam-at-the-woodchoppers-ball-halloween-edition/"
-  },
-  {
-   "id": "ml-10040165-2026-10-28",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Clases de Yoga",
-   "area": "The Women’s Building",
-   "lat": 37.7614397,
-   "lng": -122.4226557,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-28T08:00:00-07:00",
-   "end": "2026-10-28T17:00:00-07:00",
-   "note": "¡Regresan nuestras clases de Yoga! Acompáñanos todos los miércoles desde el 15 de julio, de 2:00 a 3:00 PM, en El Edificio de Mujeres, segundo piso. Facilita Majo García. Parte de SanArte: Bienestar Comunitario para Ment",
-   "url": "https://missionlocal.org/event/the-womens-building-clases-de-yoga/2026-10-28/"
-  },
-  {
-   "id": "ml-876674-2026-10-28",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "CMC Halloween Party & Costume Parade",
-   "area": "Community Music Center",
-   "lat": 37.7579453,
-   "lng": -122.4182226,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-28T16:15:00-07:00",
-   "end": "2026-10-28T17:15:00-07:00",
-   "note": "Please join us for our annual Halloween Spooktacular of fun and music! Featuring a showcase from CMC students from including Children’s Chorus, CMC Sparks, CMC Bernal Heights Neighborhood Choir, and more. All ages are we",
-   "url": "https://missionlocal.org/event/community-music-center-cmc-halloween-party-costume-parade/",
-   "also": {
-    "page": "index.html",
-    "id": "cmc-halloween-parade-2026-10-28"
-   }
-  },
-  {
-   "id": "ml-878787-2026-10-28",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "StartOut Storytellers Night: Against the Current",
-   "area": "111 Minna Gallery",
-   "lat": 37.7874657,
-   "lng": -122.3993218,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-28T18:00:00-07:00",
-   "end": "2026-10-28T21:00:00-07:00",
-   "note": "Join LGBTQ+ founders and allies for happy hour and personal stories about choosing a path of your own. StartOut Storytellers Night returns for its second annual evening of personal stories from LGBTQ+ founders, leaders, ",
-   "url": "https://missionlocal.org/event/111-minna-gallery-startout-storytellers-night-against-the-current/"
-  },
-  {
-   "id": "ml-878837-2026-10-28",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "Scaling Intelligence —Modal x Gray Area Commissions (opening night)",
-   "area": "Gray Area Grand Theater",
-   "lat": 37.7544054,
-   "lng": -122.4183493,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-28T19:00:00-07:00",
-   "end": "2026-10-28T22:00:00-07:00",
-   "note": "Be among the first to experience Scaling Intelligence, an exhibition presented by Gray Area and Modal, featuring 11 commissioned artworks exploring the creative possibilities of AI and computing at scale. ​What new reali",
-   "url": "https://missionlocal.org/event/gray-area-grand-theater-scaling-intelligence-modal-x-gray-area-commissions-opening-night/"
-  },
-  {
-   "id": "artists-television-a-17479-2026-10-28",
-   "kind": "event",
-   "source": "Artists' Television Access",
-   "name": "When ICE Melts",
-   "area": "Artists' Television Access, 992 Valencia St",
-   "lat": 37.7569,
-   "lng": -122.4212,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-28T19:00:00-07:00",
-   "end": "2026-10-28T19:00:00-07:00",
-   "note": "Join us for a screening of When ICE Melts , a documentary on the Minneapolis resistance to the 2025 ICE raids, capturing the role of unions, immigrant organizations, workers’ assemblies, and rapid response networks in bu",
-   "url": "https://www.atasite.org/event/when-ice-melts/",
-   "bookAhead": false
-  },
-  {
-   "id": "ml-10040842-2026-10-28",
-   "kind": "event",
-   "source": "Mission Local",
-   "name": "The Empire Strips Back: A Burlesque Parody",
-   "area": "Victoria Theatre",
-   "lat": 37.764859,
-   "lng": -122.418865,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": null,
-   "start": "2026-10-28T19:30:00-07:00",
-   "end": "2026-10-28T21:30:00-07:00",
-   "note": "⭐ The hit burlesque parody The Empire Strips Back: A Burlesque Parody is making its way to San Francisco! This audience fave drops classic characters into the world of burlesque. Don’t miss out! ﻿﻿🎟️ Returning Customer O",
-   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-10-28/"
-  },
-  {
-   "kind": "event",
-   "source": "The Chapel",
-   "area": "The Chapel, 777 Valencia St",
-   "lat": 37.7604,
-   "lng": -122.4213,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "id": "vp-the-chapel-an-evening-with-theo-katzman-solo--2026-10-28",
-   "name": "An Evening With Theo Katzman (Solo)",
-   "start": "2026-10-28T20:00:00-07:00",
-   "end": null,
-   "free": false,
-   "note": "Indie at The Chapel. Doors at 7:00PM / Show at 8:00PM. All Ages.",
-   "url": "https://wl.seetickets.us/event/an-evening-with-theo-katzman-solo/690498?afflky=TheChapel",
-   "tags": [
-    "music",
-    "songs"
-   ]
-  },
-  {
-   "id": "indy-2758-2026-10-28",
-   "kind": "event",
-   "source": "The Independent",
-   "name": "Freak Slug",
-   "area": "The Independent, 628 Divisadero St",
-   "lat": 37.7755,
-   "lng": -122.4378,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "free": false,
-   "start": "2026-10-28T20:00:00-07:00",
-   "end": null,
-   "bookAhead": true,
-   "note": "Live at The Independent (AMULET TOUR NA). Doors 7:30 PM, show 8:00 PM.",
-   "url": "https://www.theindependentsf.com/tm-event/freak-slug/",
-   "tags": [
-    "music"
-   ]
-  },
-  {
-   "kind": "event",
-   "source": "Great American Music Hall",
-   "area": "Great American Music Hall, 859 O'Farrell St",
-   "lat": 37.7848,
-   "lng": -122.4189,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "id": "vp-great-american-music-pixel-grip-2026-10-28",
-   "name": "Pixel Grip",
-   "start": "2026-10-28T20:00:00-07:00",
-   "end": null,
-   "free": false,
-   "note": "Electronic at Great American Music Hall. With with Dark Chisme, Grizz, Blood Rave. Doors at 7:00PM / Show at 8:00PM. $33.00-$39.00.",
-   "url": "https://wl.seetickets.us/event/pixel-grip/701809?afflky=GreatAmericanMusicHall",
-   "tags": [
-    "music"
-   ],
-   "price": "$33–39"
-  },
-  {
-   "kind": "event",
-   "source": "The Fillmore",
-   "area": "The Fillmore, 1805 Geary Blvd",
-   "lat": 37.784,
-   "lng": -122.433,
-   "indoor": true,
-   "exp": 0,
-   "off": 0,
-   "bookAhead": true,
-   "id": "vp-the-fillmore-slow-pulp-2026-10-28",
-   "name": "Slow Pulp",
-   "start": "2026-10-28T20:00:00-07:00",
-   "end": null,
-   "free": false,
-   "note": "Live at The Fillmore.",
-   "url": "https://www.ticketmaster.com/slow-pulp-san-francisco-california-10-28-2026/event/1C0064E690EF7D86",
-   "tags": [
-    "music"
-   ]
-  },
   {
    "id": "cal-a67fdb9d-a769-4a87-b160-9485289f9fb9",
    "kind": "event",
@@ -1336,7 +52,7 @@
    "free": null,
    "start": "2026-10-29T18:00:00-07:00",
    "end": "2026-10-29T20:00:00-07:00",
-   "note": "The GLBT Historical Society screens a shorts program of queer films, with tickets reserved in advance.",
+   "note": "The GLBT Historical Society screens a shorts program of films exploring queer home life.",
    "url": "https://missionlocal.org/event/glbt-history-museum-queer-home-on-film-a-shorts-program/"
   },
   {
@@ -1362,6 +78,24 @@
    "price": "$22–90"
   },
   {
+   "id": "w-make-out-room-rabbit-subprime-mortgage-woodpecker-dynamite-2026-10-29",
+   "kind": "event",
+   "source": "Make-Out Room",
+   "name": "RABBIT + SUBPRIME MORTGAGE + WOODPECKER DYNAMITE",
+   "area": "Make-Out Room, 3225 22nd St",
+   "lat": 37.7553,
+   "lng": -122.4194,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-10-29T18:30:00-07:00",
+   "end": "2026-10-29T21:30:00-07:00",
+   "note": "A live music bill featuring three bands: Rabbit, Subprime Mortgage and Woodpecker Dynamite.",
+   "url": "https://www.makeoutroom.com/",
+   "bookAhead": false
+  },
+  {
    "id": "sfpl-2026-10-29-performance-spooky-stories-and-sips-ward-four-wines",
    "kind": "event",
    "source": "sfpl",
@@ -1377,6 +111,23 @@
    "end": "2026-10-29T19:45:00-07:00",
    "note": "Experience frightful stories and fantastic wine with Justin of Ward Four Wines. Justin will be reading a mix of classics and newish horror delights interspersed with two wine tastings.",
    "url": "https://sfpl.org/events/2026/10/29/performance-spooky-stories-and-sips-ward-four-wines"
+  },
+  {
+   "id": "ml-880482-2026-10-29",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Inference as Instrument",
+   "area": "Gray Area Grand Theater",
+   "lat": 37.7544054,
+   "lng": -122.4183493,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-10-29T19:00:00-07:00",
+   "end": "2026-10-29T21:00:00-07:00",
+   "note": "A panel of builders and creators discussing how inference-powered tools are reshaping art, music, film, and design.",
+   "url": "https://missionlocal.org/event/gray-area-grand-theater-inference-as-instrument/"
   },
   {
    "kind": "event",
@@ -1410,7 +161,7 @@
    "free": false,
    "start": "2026-10-29T19:30:00-07:00",
    "end": "2026-10-29T21:30:00-07:00",
-   "note": "A touring burlesque parody that drops classic film characters into a playful, sexy stage show.",
+   "note": "A burlesque parody that places classic film characters into a burlesque show, performed as a ticketed stage production.",
    "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-10-29/"
   },
   {
@@ -1448,7 +199,7 @@
    "free": false,
    "start": "2026-10-29T20:00:00-07:00",
    "end": "2026-10-29T22:00:00-07:00",
-   "note": "French comedian Jérémy Charbonnel performs a personal show about single fatherhood and his troubled relationship with his own father.",
+   "note": "French comedian Jérémy Charbonnel performs a personal stand-up show about single fatherhood and his father's legacy.",
    "url": "https://missionlocal.org/event/brava-theater-french-talent-usa-jeremy-charbonnel-alone/"
   },
   {
@@ -1495,6 +246,24 @@
    ]
   },
   {
+   "id": "w-make-out-room-house-society-w-dj-jehnee-2026-10-29",
+   "kind": "event",
+   "source": "Make-Out Room",
+   "name": "HOUSE SOCIETY w/ DJ JEHNEE",
+   "area": "Make-Out Room, 3225 22nd St",
+   "lat": 37.7553,
+   "lng": -122.4194,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-10-29T22:00:00-07:00",
+   "end": "2026-10-29T02:00:00-07:00",
+   "note": "DJ Jehnee spins indie, melodic, tech, disco and deep house in a groove-focused night of funky, hypnotic house music.",
+   "url": "https://www.makeoutroom.com/",
+   "bookAhead": false
+  },
+  {
    "id": "cwc-humanities-west-presents-a-veiled-history-of-masks-2026-10-30",
    "kind": "event",
    "source": "Commonwealth Club",
@@ -1511,6 +280,24 @@
    "bookAhead": true,
    "note": "Humanities West indulges our psychological preference to mask our personalities in public, for all the obvious reasons, by presenting a veiled history of the widespread human cultural affinity for wearing physical masks",
    "url": "https://www.commonwealthclub.org/events/2026-10-30/humanities-west-presents-veiled-history-masks"
+  },
+  {
+   "id": "cal-uum8ip276v3arhljaradcqpg14-r20260801t010",
+   "kind": "event",
+   "source": "The Drawing Room",
+   "name": "NO COMMUNAL TABLE: see you November 6th!!",
+   "area": "The Drawing Room, 599 Valencia St",
+   "lat": 37.7635,
+   "lng": -122.4214,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "bookAhead": false,
+   "start": "2026-10-30T18:00:00-07:00",
+   "end": "2026-10-30T21:00:00-07:00",
+   "note": "",
+   "url": null
   },
   {
    "kind": "event",
@@ -1548,7 +335,7 @@
    "free": false,
    "start": "2026-10-30T19:00:00-07:00",
    "end": "2026-10-30T21:00:00-07:00",
-   "note": "A touring burlesque parody that drops classic film characters into a playful, sexy stage show.",
+   "note": "A burlesque parody that places classic film characters into a burlesque show, performed as a ticketed stage production.",
    "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-10-30/"
   },
   {
@@ -1682,12 +469,8 @@
    "free": false,
    "start": "2026-10-31T19:00:00-07:00",
    "end": "2026-10-31T21:00:00-07:00",
-   "note": "A touring burlesque parody that drops classic film characters into a playful, sexy stage show.",
-   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-10-31/1/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10040845-2026-10-31"
-   }
+   "note": "A burlesque parody that places classic film characters into a burlesque show, performed as a ticketed stage production.",
+   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-10-31/1/"
   },
   {
    "id": "bird-beckett-books-39109-2026-10-31",
@@ -1748,11 +531,7 @@
    "url": "https://wl.seetickets.us/event/the-paul-simon-halloween-ball-performed-by-bone-diggers/705531?afflky=TheChapel",
    "tags": [
     "music"
-   ],
-   "also": {
-    "page": "index.html",
-    "id": "ml-878834-2026-10-31"
-   }
+   ]
   },
   {
    "id": "ml-879267-2026-10-31",
@@ -1765,15 +544,11 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-10-31T21:00:00-07:00",
    "end": "2026-10-31T23:59:00-07:00",
-   "note": "German electronic musician Christian Löffler plays a 21+ late-night Halloween club set at Public Works.",
-   "url": "https://missionlocal.org/event/public-works-christian-loffler-halloween-night-presented-by-pw-safra/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-879267-2026-10-31"
-   }
+   "note": "Electronic musician Christian Löffler plays a 21+ Halloween night set celebrating his latest album, Until We Meet Again.",
+   "url": "https://missionlocal.org/event/public-works-christian-loffler-halloween-night-presented-by-pw-safra/"
   },
   {
    "kind": "event",
@@ -1833,7 +608,7 @@
    "free": null,
    "start": "2026-11-01T08:30:00-08:00",
    "end": "2026-11-01T19:30:00-08:00",
-   "note": "A full-day conference of talks and discussions on big ideas, celebration, and what the Jewish community should pursue next.",
+   "note": "A full-day Jewish community conference with talks and discussion on big ideas about the community's future.",
    "url": "https://www.jccsf.org/event/z3-conference-2026/"
   },
   {
@@ -1867,7 +642,7 @@
    "free": null,
    "start": "2026-11-01T14:00:00-08:00",
    "end": "2026-11-01T22:00:00-08:00",
-   "note": "Loco Bloco presents a Día de los Muertos showcase of dance, drumming, and music, with altar viewings, from many local and visiting groups.",
+   "note": "Loco Bloco's Día de los Muertos show features dancers, drummers and singers from several cultural traditions, with altar viewing beforehand.",
    "url": "https://missionlocal.org/event/brava-theater-loco-bloco-presents-dia-de-los-muertos-2026-esto-no-se-vende/"
   },
   {
@@ -1927,15 +702,29 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-11-01T16:00:00-08:00",
    "end": "2026-11-01T18:00:00-08:00",
-   "note": "A touring burlesque parody that drops classic film characters into a playful, sexy stage show.",
-   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-01/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10040847-2026-11-01"
-   }
+   "note": "A burlesque company stages a comedic parody that drops classic film and fictional characters into the world of burlesque.",
+   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-01/"
+  },
+  {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-no-kings-no-queens-ches-club-2026-11-01",
+   "name": "No Kings, No Queens Ches Club",
+   "start": "2026-11-01T16:00:00.187000-08:00",
+   "end": "2026-11-01T19:00:00.187000-08:00",
+   "free": null,
+   "note": "No Kings, No Queens Chess Club is the super-chill community chess club that gathers the 1st Sunday of every month in the galeria. Hosted by Danny Cao, all ages and skill levels are encouraged to come.",
+   "url": "https://www.medicinefornightmares.com/events/no-kings-no-queens-ches-club"
   },
   {
    "id": "bird-beckett-books-39111-2026-11-01",
@@ -1953,6 +742,24 @@
    "end": "2026-11-01T19:00:00-08:00",
    "note": "On the 1st Sunday of every month, bands of local youth, often fielded from one or another of the many fine music programs in colleges and high schools in San Francisco and around the bay, perform a set, then host a stude",
    "url": "https://birdbeckett.com/event/next-gen-jam_2026-11-01/",
+   "bookAhead": false
+  },
+  {
+   "id": "w-make-out-room-clutch-the-pearls-drag-show-w-host-mira-2026-11-01",
+   "kind": "event",
+   "source": "Make-Out Room",
+   "name": "CLUTCH the PEARLS: Drag Show w/ host Mira",
+   "area": "Make-Out Room, 3225 22nd St",
+   "lat": 37.7553,
+   "lng": -122.4194,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-01T19:00:00-08:00",
+   "end": "2026-11-01T22:00:00-08:00",
+   "note": "A rotating lineup of Bay Area drag performers hosted by Mira, performing on the first Sunday of the month.",
+   "url": "https://www.makeoutroom.com/",
    "bookAhead": false
   },
   {
@@ -2021,6 +828,24 @@
    ]
   },
   {
+   "id": "w-make-out-room-dimensions-w-dj-2nite-2026-11-01",
+   "kind": "event",
+   "source": "Make-Out Room",
+   "name": "DIMENSIONS w/ DJ 2NITE",
+   "area": "Make-Out Room, 3225 22nd St",
+   "lat": 37.7553,
+   "lng": -122.4194,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-01T22:00:00-08:00",
+   "end": "2026-11-01T02:00:00-08:00",
+   "note": "DJ 2nite plays a late-night set themed around heart beeps, brain waves and good vibes.",
+   "url": "https://www.makeoutroom.com/",
+   "bookAhead": false
+  },
+  {
    "id": "w-acci-n-latina-juan-r-fuentes-gallery-ceremonia-eterna-2026-11-02",
    "kind": "event",
    "source": "Acción Latina: Juan R. Fuentes Gallery",
@@ -2034,13 +859,9 @@
    "free": null,
    "start": "2026-11-02T17:30:00-08:00",
    "end": "2026-11-02T21:30:00-08:00",
-   "note": "The website gives no performers, speakers, or description, only that it is an upcoming Acción Latina event in San Francisco.",
+   "note": "An evening event at Acción Latina in San Francisco; the website gives no details about performers or program.",
    "url": "https://accionlatina.org/fuentesgallery/",
-   "bookAhead": false,
-   "also": {
-    "page": "index.html",
-    "id": "ml-878800-2026-11-02"
-   }
+   "bookAhead": false
   },
   {
    "id": "cwc-practicing-pediatrics-with-kids-and-parents-in-the-2026-11-02",
@@ -2077,6 +898,26 @@
    "bookAhead": true,
    "note": "Join us for a special screening of the documentary Traces, featuring Ukrainian women survivors of wartime sexual violence and torture resulting from Russia’s invasion of their country.",
    "url": "https://www.commonwealthclub.org/events/2026-11-02/traces-documentary-film-screening-and-qa"
+  },
+  {
+   "id": "cmc-coros-mariachi-cmc-perform-at-dia-de-los-muertos-f-2026-11-02",
+   "kind": "event",
+   "source": "Community Music Center",
+   "name": "Coros & Mariachi CMC Perform at Día de los Muertos Festival of Altars",
+   "area": "Potrero del Sol Park",
+   "lat": 37.7504043,
+   "lng": -122.4049723,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-02T19:00:00-08:00",
+   "end": null,
+   "note": "Join for traditional music from Mexico at the annual Día de los Muertos Celebration in Redwood City. Free.",
+   "url": "https://sfcmc.org/event/coros-mariachi-cmc-perform-at-dia-de-los-muertos-festival-of-altars/",
+   "tags": [
+    "music"
+   ]
   },
   {
    "kind": "event",
@@ -2181,6 +1022,23 @@
    "tags": [
     "music"
    ]
+  },
+  {
+   "id": "ml-880467-2026-11-03",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Budhrani Brothers Sextet at the Woodchopper’s Ball",
+   "area": "Verdi Club",
+   "lat": 37.7634058,
+   "lng": -122.4079386,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-11-03T21:00:00-08:00",
+   "end": "2026-11-03T23:30:00-08:00",
+   "note": "The Budhrani Brothers Sextet plays swing standards blending Benny Goodman's hot swing with Django Reinhardt's gypsy jazz.",
+   "url": "https://missionlocal.org/event/verdi-club-budhrani-brothers-sextet-at-the-woodchoppers-ball/"
   },
   {
    "id": "cal-4cc2e3d5-8416-423c-9158-ae721eab2c4c",
@@ -2302,12 +1160,12 @@
    "start": "2026-11-04T19:00:00-08:00",
    "end": null,
    "free": false,
-   "note": "Hardcore at Great American Music Hall. With with Killing Time, Missing Link, Mizery. Doors at 6:00PM / Show at 7:00PM. $29.50-$35.00.",
+   "note": "Hardcore at Great American Music Hall. With with Killing Time, Missing Link, Mizery. Doors at 6:00PM / Show at 7:00PM. $35.00.",
    "url": "https://wl.seetickets.us/event/pain-of-truth/700085?afflky=GreatAmericanMusicHall",
    "tags": [
     "music"
    ],
-   "price": "$30–35"
+   "price": "$35"
   },
   {
    "id": "ml-10041136-2026-11-04",
@@ -2320,10 +1178,10 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-11-04T19:30:00-08:00",
    "end": "2026-11-04T21:00:00-08:00",
-   "note": "SFDanceworks presents its ninth season, mixing modern-dance lineage with contemporary choreographers on Z Space's stage.",
+   "note": "SFDanceworks' ninth season mixes modern-dance lineage with contemporary choreographic voices on Z Space's Steindler Stage.",
    "url": "https://missionlocal.org/event/z-space-sfdanceworks-season-9/2026-11-04/",
    "also": {
     "page": "index.html",
@@ -2341,15 +1199,11 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-11-04T19:30:00-08:00",
    "end": "2026-11-04T21:30:00-08:00",
-   "note": "A touring burlesque parody that drops classic film characters into a playful, sexy stage show.",
-   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-04/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10040848-2026-11-04"
-   }
+   "note": "A burlesque company stages a comedic parody that drops classic film and fictional characters into the world of burlesque.",
+   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-04/"
   },
   {
    "id": "indy-2727-2026-11-04",
@@ -2439,12 +1293,8 @@
    "free": null,
    "start": "2026-11-05T18:30:00-08:00",
    "end": "2026-11-05T21:00:00-08:00",
-   "note": "The GLBT Historical Society and Crowded Fire stage the first reading of Kari Barclay's new play How to Live in a House on Fire, followed by a talkback.",
-   "url": "https://missionlocal.org/event/glbt-history-museum-performance-talkback-how-to-live-in-a-house-on-fire-staged-reading-series/2026-11-05/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10041121-2026-11-05"
-   }
+   "note": "A staged reading of Kari Barclay's new play How to Live in a House on Fire, followed by a talkback with the artists.",
+   "url": "https://missionlocal.org/event/glbt-history-museum-performance-talkback-how-to-live-in-a-house-on-fire-staged-reading-series/2026-11-05/"
   },
   {
    "id": "jccsf-109543-2026-11-05",
@@ -2460,7 +1310,7 @@
    "free": true,
    "start": "2026-11-05T19:00:00-08:00",
    "end": "2026-11-05T21:00:00-08:00",
-   "note": "Daniel Kahn and Jake Shulman-Ment perform new music and Yiddish versions of songs by Cohen, Dylan, Waits, and Guthrie.",
+   "note": "Daniel Kahn and Jake Shulman-Ment perform new music and Yiddish versions of songs by Cohen, Dylan, Waits and Guthrie.",
    "url": "https://www.jccsf.org/event/daniel-kahn-jake-shulman-ment-umru-unrest/"
   },
   {
@@ -2477,12 +1327,8 @@
    "free": null,
    "start": "2026-11-05T19:00:00-08:00",
    "end": "2026-11-05T21:00:00-08:00",
-   "note": "A monthly comics book club discussing Alan Moore and David Lloyd's V for Vendetta, a dystopian story about resistance.",
-   "url": "https://missionlocal.org/event/mission-comics-art-graphic-novel-club-v-for-vendetta/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-879282-2026-11-05"
-   }
+   "note": "A book-club discussion of Alan Moore and David Lloyd's graphic novel V for Vendetta, a dystopian story about resistance.",
+   "url": "https://missionlocal.org/event/mission-comics-art-graphic-novel-club-v-for-vendetta/"
   },
   {
    "id": "w-the-lab-marjorie-keller-intimate-observer-2026-11-05",
@@ -2498,7 +1344,7 @@
    "free": false,
    "start": "2026-11-05T19:00:00-08:00",
    "end": "2026-11-05T21:00:00-08:00",
-   "note": "Film screening presenting the work of filmmaker Marjorie Keller.",
+   "note": "A film screening of Marjorie Keller's Intimate Observer, with doors at 6:30pm and the film at 7pm.",
    "url": "https://www.thelab.org/",
    "bookAhead": false
   },
@@ -2521,6 +1367,24 @@
    "bookAhead": false
   },
   {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-mai-linh-hong-and-maw-shein-win-poetry-a-2026-11-05",
+   "name": "Mai-Linh Hong and Maw Shein Win: Poetry and Conversation",
+   "start": "2026-11-05T19:00:00.092000-08:00",
+   "end": "2026-11-05T21:00:00.092000-08:00",
+   "free": null,
+   "note": "Tonight poets Mai-Linh Hong and Maw Shein Win read from their collections, followed by a conversation focused on Continental Drift , Hong’s recent debut. Continental Drift charts landscapes of refugee migration through lyric and visual poem",
+   "url": "https://www.medicinefornightmares.com/events/mai-linh-hong-and-maw-shein-win-poetry-and-conversation"
+  },
+  {
    "id": "ml-10040849-2026-11-05",
    "kind": "event",
    "source": "Mission Local",
@@ -2531,15 +1395,11 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-11-05T19:30:00-08:00",
    "end": "2026-11-05T21:30:00-08:00",
-   "note": "A ticketed burlesque parody that drops classic film characters into a burlesque show at Victoria Theatre.",
-   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-05/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10040849-2026-11-05"
-   }
+   "note": "A burlesque company stages a comedic parody that drops classic film and fictional characters into the world of burlesque.",
+   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-05/"
   },
   {
    "kind": "event",
@@ -2556,12 +1416,12 @@
    "start": "2026-11-05T20:00:00-08:00",
    "end": null,
    "free": false,
-   "note": "Electronic at Great American Music Hall. With with Ms* Gloom. Doors at 7:00PM / Show at 8:00PM. $29.50-$35.00.",
+   "note": "Electronic at Great American Music Hall. With with Ms* Gloom. Doors at 7:00PM / Show at 8:00PM. $20.30-$35.00.",
    "url": "https://wl.seetickets.us/event/danny-l-harle/703827?afflky=GreatAmericanMusicHall",
    "tags": [
     "music"
    ],
-   "price": "$30–35"
+   "price": "$20–35"
   },
   {
    "id": "indy-2803-2026-11-05",
@@ -2595,15 +1455,11 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-11-05T20:00:00-08:00",
    "end": "2026-11-05T21:30:00-08:00",
-   "note": "SFDanceworks' ninth season at Z Space, pairing modern-dance lineage with contemporary choreographic voices.",
-   "url": "https://missionlocal.org/event/z-space-sfdanceworks-season-9/2026-11-05/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10041137-2026-11-05"
-   }
+   "note": "SFDanceworks' ninth season mixes modern-dance lineage with contemporary choreographic voices on Z Space's Steindler Stage.",
+   "url": "https://missionlocal.org/event/z-space-sfdanceworks-season-9/2026-11-05/"
   },
   {
    "kind": "event",
@@ -2669,6 +1525,23 @@
    }
   },
   {
+   "id": "ml-880470-2026-11-06",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Bawdy’s Cum Again? Stories of Near Misses and Second Chances!",
+   "area": "Verdi Club",
+   "lat": 37.7634058,
+   "lng": -122.4079386,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-11-06T19:00:00-08:00",
+   "end": "2026-11-06T22:00:00-08:00",
+   "note": "Adult storytelling and music night featuring true, NSFW stories of near misses and second chances from community storytellers.",
+   "url": "https://missionlocal.org/event/verdi-club-bawdys-cum-again-stories-of-near-misses-and-second-chances/"
+  },
+  {
    "id": "w-city-art-cooperative-gallery-november-group-exhibition-openi-2026-11-06",
    "kind": "event",
    "source": "City Art Cooperative Gallery",
@@ -2682,9 +1555,27 @@
    "free": null,
    "start": "2026-11-06T19:00:00-08:00",
    "end": "2026-11-06T22:00:00-08:00",
-   "note": "Opening reception for the November group exhibition at City Art Gallery, running November 4 to 29, 2026. Featured artists are not named.",
+   "note": "Opening reception for the gallery's November group exhibition, which runs November 4 to 29; artists and details are not named on the site.",
    "url": "https://www.cityartgallery.org/",
    "bookAhead": false
+  },
+  {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-other-dimensions-in-sound-presentstaqsim-2026-11-06",
+   "name": "Other Dimensions in Sound presentsTaqsim.",
+   "start": "2026-11-06T19:00:00.582000-08:00",
+   "end": "2026-11-06T21:00:00.582000-08:00",
+   "free": null,
+   "note": "Other Dimensions in Sound is our Friday music series curated and hosted by Boohaabian multi reed player extraordinare David Boyce. Each week David will be inviting different musical guests to join him in our galeria for a night of musical m",
+   "url": "https://www.medicinefornightmares.com/events/9zb4lnn74mzksp5fl37fzyl8zttkk5"
   },
   {
    "id": "ml-10041096-2026-11-06",
@@ -2700,12 +1591,8 @@
    "free": false,
    "start": "2026-11-06T19:30:00-08:00",
    "end": "2026-11-06T21:00:00-08:00",
-   "note": "Janet Thornburg performs her solo show Cognitive Divine, directed by David Ford, at The Marsh's San Francisco studio.",
-   "url": "https://missionlocal.org/event/the-marsh-janet-thornburg-cognitive-divine/2026-11-06/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10041096-2026-11-06"
-   }
+   "note": "Janet Thornburg writes and performs Cognitive Divine, a solo theatrical piece developed with director David Ford.",
+   "url": "https://missionlocal.org/event/the-marsh-janet-thornburg-cognitive-divine/2026-11-06/"
   },
   {
    "id": "bird-beckett-books-39124-2026-11-06",
@@ -2721,7 +1608,7 @@
    "free": false,
    "start": "2026-11-06T19:30:00-08:00",
    "end": "2026-11-06T21:30:00-08:00",
-   "note": "$20 cover charge; byob Students $10 For a reservation, call the bookshop at 415-586-3733",
+   "note": "At Bird & Beckett on Friday, November 6th, pianist Mike Greensill is joined in a trio by Brad Buethe on guitar and Carla Kaufman on bass, extending the celebration of his 81st year on the planet! Sometimes what you want ",
    "url": "https://birdbeckett.com/event/mike-greensill_2026-11-06/",
    "bookAhead": false,
    "price": "$20"
@@ -2740,12 +1627,29 @@
    "free": null,
    "start": "2026-11-06T19:45:00-08:00",
    "end": "2026-11-06T21:30:00-08:00",
-   "note": "Locals share their worst dates and one-night-stand stories, which a live pianist then turns into songs.",
-   "url": "https://missionlocal.org/event/make-out-room-about-last-night-dating-disaster-stories-sf-3/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-872051-2026-11-06"
-   }
+   "note": "San Francisco locals share their cringiest dating stories, which a live pianist then turns into songs.",
+   "url": "https://missionlocal.org/event/make-out-room-about-last-night-dating-disaster-stories-sf-3/"
+  },
+  {
+   "kind": "event",
+   "source": "Great American Music Hall",
+   "area": "Great American Music Hall, 859 O'Farrell St",
+   "lat": 37.7848,
+   "lng": -122.4189,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-great-american-music-city-surf-project-presents-dark-n-stormy-2026-11-06",
+   "name": "City Surf Project Presents Dark N Stormy",
+   "start": "2026-11-06T20:00:00-08:00",
+   "end": null,
+   "free": false,
+   "note": "Jam Band at Great American Music Hall. Doors at 7:30PM / Show at 8:00PM.",
+   "url": "https://wl.seetickets.us/event/city-surf-project-presents-dark-n-stormy/700455?afflky=GreatAmericanMusicHall",
+   "tags": [
+    "music"
+   ]
   },
   {
    "id": "w-the-lab-eternities-bob-bellerue-katie-porter-antimatter-2026-11-06",
@@ -2761,7 +1665,7 @@
    "free": false,
    "start": "2026-11-06T20:00:00-08:00",
    "end": "2026-11-06T23:00:00-08:00",
-   "note": "Live music performance by Eternities, featuring Bob Bellerue and Katie Porter, with Antimatter.",
+   "note": "A concert by Eternities, featuring Bob Bellerue and Katie Porter, with Antimatter performing; show starts 8:30pm.",
    "url": "https://www.thelab.org/",
    "bookAhead": false
   },
@@ -2776,15 +1680,11 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-11-06T20:00:00-08:00",
    "end": "2026-11-06T21:30:00-08:00",
-   "note": "SFDanceworks' ninth season at Z Space, pairing modern-dance lineage with contemporary choreographic voices.",
-   "url": "https://missionlocal.org/event/z-space-sfdanceworks-season-9/2026-11-06/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10041138-2026-11-06"
-   }
+   "note": "SFDanceworks' ninth season mixes modern-dance lineage with contemporary choreographic voices on Z Space's Steindler Stage.",
+   "url": "https://missionlocal.org/event/z-space-sfdanceworks-season-9/2026-11-06/"
   },
   {
    "kind": "event",
@@ -2803,6 +1703,27 @@
    "free": false,
    "note": "Live at The Fillmore.",
    "url": "https://www.ticketmaster.com/thee-sinseers-love-stories-tour-san-francisco-california-11-06-2026/event/1C0064A7C0CACE11",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "kind": "event",
+   "source": "The Chapel",
+   "area": "The Chapel, 777 Valencia St",
+   "lat": 37.7604,
+   "lng": -122.4213,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-the-chapel-an-evening-with-legend-zeppelin-2026-11-06",
+   "name": "An Evening With Legend Zeppelin",
+   "start": "2026-11-06T21:00:00-08:00",
+   "end": null,
+   "free": false,
+   "note": "Tribute Act at The Chapel. Doors at 8:00PM / Show at 9:00PM. All Ages.",
+   "url": "https://wl.seetickets.us/event/an-evening-with-legend-zeppelin/699678?afflky=TheChapel",
    "tags": [
     "music"
    ]
@@ -2897,6 +1818,24 @@
    "url": "https://sfpl.org/events/2026/11/07/activity-improv-theatre"
   },
   {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-afternoon-art-platcia-with-eugene-rodrig-2026-11-07",
+   "name": "Afternoon Art Platcia with Eugene Rodriguez and Richard Rodriguez",
+   "start": "2026-11-07T16:00:00.653000-08:00",
+   "end": "2026-11-07T17:30:00.653000-08:00",
+   "free": null,
+   "note": "At Medicine for Nightmares.",
+   "url": "https://www.medicinefornightmares.com/events/afternoon-art-platcia-with-eugene-rodriguez-and-richard-rodriguez"
+  },
+  {
    "id": "ml-875073-2026-11-07",
    "kind": "event",
    "source": "Mission Local",
@@ -2910,12 +1849,8 @@
    "free": null,
    "start": "2026-11-07T18:00:00-08:00",
    "end": "2026-11-07T20:00:00-08:00",
-   "note": "Poets Colleen Shoshana McKee, Olga Zilberbourg and Timothy Goodspeed read alongside music in a shared-meal themed evening.",
-   "url": "https://missionlocal.org/event/the-sycamore-the-last-supper-party/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-875073-2026-11-07"
-   }
+   "note": "An evening of poetry and music by Colleen Shoshana McKee, Olga Zilberbourg and Timothy Goodspeed, curated by Kimi Sugioka.",
+   "url": "https://missionlocal.org/event/the-sycamore-the-last-supper-party/"
   },
   {
    "id": "ml-10041122-2026-11-07",
@@ -2931,12 +1866,8 @@
    "free": null,
    "start": "2026-11-07T18:30:00-08:00",
    "end": "2026-11-07T21:00:00-08:00",
-   "note": "A staged reading of Kari Barclay's new play How to Live in a House on Fire, followed by an audience talkback.",
-   "url": "https://missionlocal.org/event/glbt-history-museum-performance-talkback-how-to-live-in-a-house-on-fire-staged-reading-series/2026-11-07/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10041122-2026-11-07"
-   }
+   "note": "A staged reading of Kari Barclay's new play about queer lives, followed by a talkback, presented with Crowded Fire Theater.",
+   "url": "https://missionlocal.org/event/glbt-history-museum-performance-talkback-how-to-live-in-a-house-on-fire-staged-reading-series/2026-11-07/"
   },
   {
    "id": "w-the-lab-wendy-clarke-the-prison-tapes-2026-11-07",
@@ -2952,7 +1883,7 @@
    "free": true,
    "start": "2026-11-07T18:30:00-08:00",
    "end": "2026-11-07T20:00:00-08:00",
-   "note": "Screening of Wendy Clarke's The Prison Tapes; RSVP optional.",
+   "note": "A free screening of Wendy Clarke's The Prison Tapes; RSVP is optional.",
    "url": "https://www.thelab.org/",
    "bookAhead": false
   },
@@ -2970,12 +1901,8 @@
    "free": false,
    "start": "2026-11-07T19:00:00-08:00",
    "end": "2026-11-07T21:00:00-08:00",
-   "note": "A ticketed burlesque parody that drops classic film characters into a burlesque show at Victoria Theatre.",
-   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-07/1/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10040851-2026-11-07"
-   }
+   "note": "A comic burlesque parody that drops classic film and TV characters into a burlesque show.",
+   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-07/1/"
   },
   {
    "id": "ml-10041123-2026-11-07",
@@ -2991,12 +1918,30 @@
    "free": false,
    "start": "2026-11-07T19:00:00-08:00",
    "end": "2026-11-07T21:00:00-08:00",
-   "note": "Arenas Dance Company premieres a new work by Susana Arenas Pedroso and Dandha da Hora, drawing on Yoruba-rooted ideas.",
+   "note": "Arenas Dance Company presents a new dance work by Susana Arenas Pedroso and Dandha da Hora, drawing on Yoruba-derived concepts of power.",
    "url": "https://missionlocal.org/event/dance-mission-theater-a%e1%b9%a3e-axe-ashe/2026-11-07/",
    "also": {
     "page": "index.html",
     "id": "ml-10041123-2026-11-07"
    }
+  },
+  {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma--medicine-for-nightmares-birthdia-pachan-2026-11-07",
+   "name": "!Medicine For Nightmares Birthdia Pachanga!",
+   "start": "2026-11-07T19:00:00.060000-08:00",
+   "end": "2026-11-07T22:00:00.060000-08:00",
+   "free": null,
+   "note": "!TONIGHT is Medicina’s birthdia and you are all invited! We are celebrating our beloved Portal’s fifth year on 24th street with poesia, musica, and bilingual locura.",
+   "url": "https://www.medicinefornightmares.com/events/medicine-for-nightmares-birthdia-pachanga"
   },
   {
    "id": "bird-beckett-books-39129-2026-11-07",
@@ -3033,11 +1978,7 @@
    "end": "2026-11-07T21:00:00-08:00",
    "note": "An intimate performance at Red Poppy Art House, a small Mission arts space; advance tickets recommended.",
    "url": "https://redpoppyarthouse.org/event/hot-blood-orkestar-20261107/",
-   "bookAhead": true,
-   "also": {
-    "page": "index.html",
-    "id": "ml-878803-2026-11-07"
-   }
+   "bookAhead": true
   },
   {
    "id": "ml-10041090-2026-11-07",
@@ -3053,12 +1994,8 @@
    "free": false,
    "start": "2026-11-07T20:00:00-08:00",
    "end": "2026-11-07T22:00:00-08:00",
-   "note": "Lynne Kaufman's play The Secret Museum, directed by Warren David Keith, runs at The Marsh's San Francisco mainstage.",
-   "url": "https://missionlocal.org/event/the-marsh-lynne-kaufman-the-secret-museum/2026-11-07/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10041090-2026-11-07"
-   }
+   "note": "Lynne Kaufman's solo theater piece The Secret Museum, written by Kaufman and directed by Warren David Keith.",
+   "url": "https://missionlocal.org/event/the-marsh-lynne-kaufman-the-secret-museum/2026-11-07/"
   },
   {
    "id": "ml-10041139-2026-11-07",
@@ -3074,12 +2011,8 @@
    "free": false,
    "start": "2026-11-07T20:00:00-08:00",
    "end": "2026-11-07T21:30:00-08:00",
-   "note": "SFDanceworks' ninth season at Z Space, pairing modern-dance lineage with contemporary choreographic voices.",
-   "url": "https://missionlocal.org/event/z-space-sfdanceworks-season-9/2026-11-07/",
-   "also": {
-    "page": "index.html",
-    "id": "ml-10041139-2026-11-07"
-   }
+   "note": "SFDanceworks' ninth season program mixing modern dance lineage with contemporary choreographic voices at Z Space.",
+   "url": "https://missionlocal.org/event/z-space-sfdanceworks-season-9/2026-11-07/"
   },
   {
    "kind": "event",
@@ -3100,6 +2033,28 @@
    "url": "https://www.ticketmaster.com/the-big-star-quintet-san-francisco-california-11-07-2026/event/1C0064FDD0AC3682",
    "tags": [
     "music"
+   ]
+  },
+  {
+   "kind": "event",
+   "source": "The Chapel",
+   "area": "The Chapel, 777 Valencia St",
+   "lat": 37.7604,
+   "lng": -122.4213,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-the-chapel-alex-cameron-2026-11-07",
+   "name": "Alex Cameron",
+   "start": "2026-11-07T21:00:00-08:00",
+   "end": null,
+   "free": false,
+   "note": "Indie at The Chapel. With Josh da Costa. Doors at 8:00PM / Show at 9:00PM. All Ages.",
+   "url": "https://wl.seetickets.us/event/alex-cameron/691429?afflky=TheChapel",
+   "tags": [
+    "music",
+    "songs"
    ]
   },
   {
@@ -3179,7 +2134,7 @@
    "free": false,
    "start": "2026-11-08T16:00:00-08:00",
    "end": "2026-11-08T18:00:00-08:00",
-   "note": "A ticketed burlesque parody that drops classic film characters into a burlesque show at Victoria Theatre.",
+   "note": "A comic burlesque parody that drops classic film and TV characters into a burlesque show.",
    "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-08/",
    "also": {
     "page": "index.html",
@@ -3200,7 +2155,7 @@
    "free": false,
    "start": "2026-11-08T16:00:00-08:00",
    "end": "2026-11-08T18:00:00-08:00",
-   "note": "Arenas Dance Company premieres a new work by Susana Arenas Pedroso and Dandha da Hora, drawing on Yoruba-rooted ideas.",
+   "note": "Arenas Dance Company presents a new dance work by Susana Arenas Pedroso and Dandha da Hora, drawing on Yoruba-derived concepts of power.",
    "url": "https://missionlocal.org/event/dance-mission-theater-a%e1%b9%a3e-axe-ashe/2026-11-08/",
    "also": {
     "page": "index.html",
@@ -3221,7 +2176,7 @@
    "free": true,
    "start": "2026-11-08T17:00:00-08:00",
    "end": "2026-11-08T20:30:00-08:00",
-   "note": "Pianist Mona Golabek presents a film, performance, and conversation about her mother's escape from Nazi-occupied Vienna to London.",
+   "note": "Pianist Mona Golabek shares her mother's escape from Nazi-occupied Vienna through a film, performance and conversation.",
    "url": "https://www.jccsf.org/event/hold-on-to-your-music-a-mothers-legacy/"
   },
   {
@@ -3238,7 +2193,7 @@
    "free": false,
    "start": "2026-11-08T17:00:00-08:00",
    "end": "2026-11-08T19:00:00-08:00",
-   "note": "Lynne Kaufman's play The Secret Museum, directed by Warren David Keith, runs at The Marsh's San Francisco mainstage.",
+   "note": "Lynne Kaufman's solo theater piece The Secret Museum, written by Kaufman and directed by Warren David Keith.",
    "url": "https://missionlocal.org/event/the-marsh-lynne-kaufman-the-secret-museum/2026-11-08/",
    "also": {
     "page": "index.html",
@@ -3262,6 +2217,47 @@
    "note": "with Joe Goldmark, pedal steel; Tim Wagar, bass; Kenny Owen, drums SUNDAY HAPPY HOUR! Grab your partner! Gather your kids! Call a friend! Come on down to the bookshop to get a bit better acquainted with your neighbors an",
    "url": "https://birdbeckett.com/event/mitch-polzak_2026-11-08/",
    "bookAhead": false
+  },
+  {
+   "kind": "event",
+   "source": "Great American Music Hall",
+   "area": "Great American Music Hall, 859 O'Farrell St",
+   "lat": 37.7848,
+   "lng": -122.4189,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-great-american-music-foy-vance-2026-11-08",
+   "name": "Foy Vance",
+   "start": "2026-11-08T19:00:00-08:00",
+   "end": null,
+   "free": false,
+   "note": "Singer/Songwriter at Great American Music Hall. With with Bonnie Bishop, Ryan McMullan. Doors at 6:00PM / Show at 7:00PM. $36.00-$45.00.",
+   "url": "https://wl.seetickets.us/event/foy-vance/680313?afflky=GreatAmericanMusicHall",
+   "tags": [
+    "music",
+    "songs"
+   ],
+   "price": "$36–45"
+  },
+  {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-hyperscale-paris-marx-in-conversation-wi-2026-11-08",
+   "name": "Hyperscale: Paris Marx in conversation with Wendy Liu",
+   "start": "2026-11-08T19:00:00.047000-08:00",
+   "end": "2026-11-08T21:00:00.047000-08:00",
+   "free": null,
+   "note": "Data centers have quickly gone from virtually invisible to the target of the public’s ire — such that San Francisco has even passed a moratorium on new data centers. Join Hyperscale author Paris Marx for a conversation with Wendy Liu about ",
+   "url": "https://www.medicinefornightmares.com/events/hyperscale-paris-marx-in-conversation-with-wendy-liu"
   },
   {
    "id": "bird-beckett-books-39590-2026-11-08",
@@ -3320,6 +2316,42 @@
    "url": "https://sfpl.org/events/2026/11/09/film-asphalt-jungle"
   },
   {
+   "id": "cwc-bryant-lin-an-exploration-of-living-when-you-are-d-2026-11-09",
+   "kind": "event",
+   "source": "Commonwealth Club",
+   "name": "Bryant Lin: An Exploration of Living When You Are Dying",
+   "area": "Commonwealth Club, 110 The Embarcadero",
+   "lat": 37.7932,
+   "lng": -122.3925,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-11-09T17:30:00-08:00",
+   "end": null,
+   "bookAhead": true,
+   "note": "Join us as a leading researcher and cancer advocate distills the lessons for living that he’s learned as a doctor and as a patient, after he was diagnosed with his own terminal illness.",
+   "url": "https://www.commonwealthclub.org/events/2026-11-09/bryant-lin-exploration-living-when-you-are-dying"
+  },
+  {
+   "id": "cwc-the-future-of-public-media-with-paula-kerger-and-m-2026-11-09",
+   "kind": "event",
+   "source": "Commonwealth Club",
+   "name": "The Future of Public Media, with Paula Kerger and Michael Isip",
+   "area": "Commonwealth Club, 110 The Embarcadero",
+   "lat": 37.7932,
+   "lng": -122.3925,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-11-09T18:00:00-08:00",
+   "end": null,
+   "bookAhead": true,
+   "note": "For generations, public broadcasting has been America’s largest classroom and most trusted source of information—a vital pillar of a well-informed democracy.",
+   "url": "https://www.commonwealthclub.org/events/2026-11-09/future-public-media-paula-kerger-and-michael-isip"
+  },
+  {
    "id": "artists-television-a-10000170-2026-11-09",
    "kind": "event",
    "source": "Artists' Television Access",
@@ -3335,6 +2367,24 @@
    "end": "2026-11-09T19:00:00-08:00",
    "note": "A free seminar, investigating the 16mm experimental films in the collection of the SFAI Legacy Foundation and Archives.",
    "url": "https://www.atasite.org/event/studio-26-fantom-classroom-of-the-art-institute-3/2026-11-09/",
+   "bookAhead": false
+  },
+  {
+   "id": "bird-beckett-books-39797-2026-11-09",
+   "kind": "event",
+   "source": "Bird & Beckett Books",
+   "name": "Virtual Poets: Kim Shuck hosts featured readers TBA + open mic",
+   "area": "Bird & Beckett Books, 653 Chenery St",
+   "lat": 37.7344,
+   "lng": -122.433,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-09T19:00:00-08:00",
+   "end": "2026-11-09T21:00:00-08:00",
+   "note": "Kim Shuck conducts the twice-monthly Virtual Poets series, with featured readers followed by an open mic on the 2nd Monday of each month and an all-open mic session on the 4th Monday of each month. Kim embraces the fool ",
+   "url": "https://birdbeckett.com/event/virtual-poets_2026-11-09/",
    "bookAhead": false
   },
   {
@@ -3393,7 +2443,7 @@
    "free": true,
    "start": "2026-11-10T13:00:00-08:00",
    "end": "2026-11-10T14:30:00-08:00",
-   "note": "A film-clip presentation on the 1960s trio Cream and how their powerful sound shaped rock music.",
+   "note": "A film-clip presentation on the 1960s rock trio Cream and the enduring power of their music.",
    "url": "https://www.jccsf.org/event/cream-the-legendary-reign-of-the-original-rock-supergroup/"
   },
   {
@@ -3412,6 +2462,23 @@
    "end": "2026-11-10T16:00:00-08:00",
    "note": "Honor the extraordinary legacy of WWII Nisei heroes with a special afternoon of film, music, community, and remembrance. Be among the first to experience THE 100TH: Seeds of Aloha , a feature-length documentary honoring Hawaiʻi’s legendary 100th Infantry Battalion and 442nd Regimental Combat Team.",
    "url": "https://sfpl.org/events/2026/11/10/film-100th-seeds-aloha"
+  },
+  {
+   "id": "sfpl-2026-11-10-film-farewell-my-concubine-screening-and-discussion",
+   "kind": "event",
+   "source": "sfpl",
+   "name": "Film: Farewell My Concubine, Screening and Discussion",
+   "area": "North Beach Branch Library",
+   "lat": 37.803,
+   "lng": -122.414,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-10T17:00:00-08:00",
+   "end": "2026-11-10T19:30:00-08:00",
+   "note": "Watch the weekly cinema screening of Farewell My Concubine , followed by a discussion with local photographer and film enthusiast, Tommy Milutin. Dieyi and Xiaolou grow up under brutal Peking Opera training, forming a powerful but complicated bond shaped by their onstage roles.",
+   "url": "https://sfpl.org/events/2026/11/10/film-farewell-my-concubine-screening-and-discussion"
   },
   {
    "id": "cal-69d5cfe7-2027-4348-8877-600abce8bc9d",
@@ -3466,6 +2533,50 @@
    "url": "https://sfpl.org/events/2026/11/10/presentation-photograph-history-care-and-conservation"
   },
   {
+   "kind": "event",
+   "source": "The Chapel",
+   "area": "The Chapel, 777 Valencia St",
+   "lat": 37.7604,
+   "lng": -122.4213,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-the-chapel-buzzcocks-modern-english-2026-11-10",
+   "name": "Buzzcocks, Modern English",
+   "start": "2026-11-10T20:00:00-08:00",
+   "end": null,
+   "free": false,
+   "note": "Punk at The Chapel. With Grade 2. Doors at 7:00PM / Show at 8:00PM. All Ages.",
+   "url": "https://wl.seetickets.us/event/buzzcocks-modern-english/695312?afflky=TheChapel",
+   "tags": [
+    "music",
+    "songs"
+   ]
+  },
+  {
+   "kind": "event",
+   "source": "Great American Music Hall",
+   "area": "Great American Music Hall, 859 O'Farrell St",
+   "lat": 37.7848,
+   "lng": -122.4189,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-great-american-music-rio-amor-2026-11-10",
+   "name": "Rio Amor",
+   "start": "2026-11-10T20:00:00-08:00",
+   "end": null,
+   "free": false,
+   "note": "DJ/Dance at Great American Music Hall. With Rio Amor & Friends LIVE!. Doors at 7:00PM / Show at 8:00PM. $25.00-$35.00.",
+   "url": "https://wl.seetickets.us/event/rio-amor/705426?afflky=GreatAmericanMusicHall",
+   "tags": [
+    "music"
+   ],
+   "price": "$25–35"
+  },
+  {
    "id": "indy-6054-2026-11-10",
    "kind": "event",
    "source": "The Independent",
@@ -3487,6 +2598,24 @@
    ]
   },
   {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-drop-in-block-printing-workshop-with-fer-2026-11-11",
+   "name": "Drop In Block Printing Workshop with Fernando Marti",
+   "start": "2026-11-11T18:00:00.025000-08:00",
+   "end": "2026-11-11T21:00:00.025000-08:00",
+   "free": null,
+   "note": "Block printing workshop for community activists. We'll have tools, paper, tinta, and small blocks, and start off with a conversation about printmaking as cultural and political expression.",
+   "url": "https://www.medicinefornightmares.com/events/ytp9d3pdy3rfj7czkkjs3keny7cjp3"
+  },
+  {
    "id": "ml-10040854-2026-11-11",
    "kind": "event",
    "source": "Mission Local",
@@ -3500,7 +2629,7 @@
    "free": false,
    "start": "2026-11-11T19:30:00-08:00",
    "end": "2026-11-11T21:30:00-08:00",
-   "note": "A ticketed burlesque parody that drops classic film characters into a burlesque show at Victoria Theatre.",
+   "note": "A comic burlesque parody that drops classic film and TV characters into a burlesque show.",
    "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-11/",
    "also": {
     "page": "index.html",
@@ -3525,6 +2654,29 @@
    "url": "https://birdbeckett.com/event/bernard-custer_2026-11-11/",
    "bookAhead": false,
    "price": "$20"
+  },
+  {
+   "kind": "event",
+   "source": "Great American Music Hall",
+   "area": "Great American Music Hall, 859 O'Farrell St",
+   "lat": 37.7848,
+   "lng": -122.4189,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-great-american-music-jake-xerxes-fussell-2026-11-11",
+   "name": "Jake Xerxes Fussell",
+   "start": "2026-11-11T20:00:00-08:00",
+   "end": null,
+   "free": false,
+   "note": "Folk at Great American Music Hall. With with Dougie Poole. Doors at 7:00PM / Show at 8:00PM. $25.00-$30.00.",
+   "url": "https://wl.seetickets.us/event/jake-xerxes-fussell/689401?afflky=GreatAmericanMusicHall",
+   "tags": [
+    "music",
+    "songs"
+   ],
+   "price": "$25–30"
   },
   {
    "id": "indy-2673-2026-11-11",
@@ -3637,6 +2789,24 @@
    "url": "https://sfpl.org/events/2026/11/12/film-children-lesser-god"
   },
   {
+   "id": "cwc-the-world-of-fungi-from-forest-to-table-2026-11-12",
+   "kind": "event",
+   "source": "Commonwealth Club",
+   "name": "The World of Fungi: From Forest to Table",
+   "area": "Commonwealth Club, 110 The Embarcadero",
+   "lat": 37.7932,
+   "lng": -122.3925,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-11-12T17:30:00-08:00",
+   "end": null,
+   "bookAhead": true,
+   "note": "With this program, enjoy a mushroom-centric wild-grazing board, allowing participants to taste and experience fungi in a delicious, approachable way.",
+   "url": "https://www.commonwealthclub.org/events/2026-11-12/world-fungi-forest-table"
+  },
+  {
    "id": "sfpl-2026-11-12-performance-kim-shucks-poem-jam-celebrates-janice-goulds-music",
    "kind": "event",
    "source": "sfpl",
@@ -3703,7 +2873,7 @@
    "free": false,
    "start": "2026-11-12T19:30:00-08:00",
    "end": "2026-11-12T21:30:00-08:00",
-   "note": "A ticketed burlesque parody that drops classic film characters into a burlesque show at Victoria Theatre.",
+   "note": "A comic burlesque parody that drops classic film and TV characters into a burlesque show.",
    "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-12/",
    "also": {
     "page": "index.html",
@@ -3766,7 +2936,7 @@
    "free": false,
    "start": "2026-11-12T20:00:00-08:00",
    "end": "2026-11-12T23:00:00-08:00",
-   "note": "Tom Djll, Tanukispidercat, Hat Brackets, and Under The Skin play an all-ages four-band bill at Peacock Lounge on Haight Street.",
+   "note": "A bill of four bands, headlined by Tom Djll back from an East Coast tour, at the Peacock Lounge on Haight.",
    "url": "https://missionlocal.org/event/peacock-lounge-tom-djll-tanukispidercat-hat-brackets-under-the-skin/",
    "also": {
     "page": "index.html",
@@ -3843,12 +3013,30 @@
    "free": false,
    "start": "2026-11-13T19:00:00-08:00",
    "end": "2026-11-13T21:00:00-08:00",
-   "note": "The Empire Strips Back is a burlesque show that parodies famous pop-culture characters, with a cast performing sketches and routines.",
+   "note": "A comic burlesque parody that drops classic film and TV characters into a burlesque show.",
    "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-13/",
    "also": {
     "page": "index.html",
     "id": "ml-10040856-2026-11-13"
    }
+  },
+  {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-other-dimensions-in-sound-presents-kulin-2026-11-13",
+   "name": "Other Dimensions in Sound presents Kulintaikotron(1st set) & Free/Wong/Boyce Sax Trio(2nd set)",
+   "start": "2026-11-13T19:00:00.342000-08:00",
+   "end": "2026-11-13T21:00:00.342000-08:00",
+   "free": true,
+   "note": "Other Dimensions in Sound is our Friday music series curated and hosted by Boohaabian multi reed player extraordinare David Boyce. Each week David will be inviting different musical guests to join him in our galeria for a night of musical m",
+   "url": "https://www.medicinefornightmares.com/events/raxj5sbjtz6kgd7ywj6bhtbfjmywel"
   },
   {
    "id": "bird-beckett-books-39136-2026-11-13",
@@ -3883,7 +3071,7 @@
    "free": false,
    "start": "2026-11-13T19:30:00-08:00",
    "end": "2026-11-13T21:00:00-08:00",
-   "note": "Janet Thornburg performs her solo show Cognitive Divine, written by Thornburg and directed by David Ford, at The Marsh.",
+   "note": "Janet Thornburg's solo theater piece Cognitive Divine, written and performed by Thornburg, directed by David Ford.",
    "url": "https://missionlocal.org/event/the-marsh-janet-thornburg-cognitive-divine/2026-11-13/",
    "also": {
     "page": "index.html",
@@ -3925,9 +3113,30 @@
    "free": false,
    "start": "2026-11-13T20:00:00-08:00",
    "end": "2026-11-13T23:00:00-08:00",
-   "note": "Music performance by Dorian Wood presenting Canto de Todes, with Roco Córdova.",
+   "note": "A performance by Dorian Wood, Canto de Todes, with Roco Córdova; doors 7:30pm, show 8pm.",
    "url": "https://www.thelab.org/",
    "bookAhead": false
+  },
+  {
+   "id": "ml-10041943-2026-11-13",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Journey of the Black Fox",
+   "area": "Dance Mission Theater",
+   "lat": 37.7524015,
+   "lng": -122.4188994,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-13T20:00:00-08:00",
+   "end": "2026-11-13T22:00:00-08:00",
+   "note": "Terrence Paschal presents Journey of the Black Fox, a dance work performed at Dance Mission Theater.",
+   "url": "https://missionlocal.org/event/dance-mission-theater-journey-of-the-black-fox/2026-11-13/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10041943-2026-11-13"
+   }
   },
   {
    "id": "indy-6056-2026-11-13",
@@ -4002,6 +3211,24 @@
    "url": "https://sfpl.org/events/2026/11/14/panel-hardly-strictly-bluegrass-25-big-twang"
   },
   {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-kaya-press-bay-area-gathering-and-kulhar-2026-11-14",
+   "name": "Kaya Press Bay Area Gathering and Kulhar Books Launch Featuring Poet Ansley Moon",
+   "start": "2026-11-14T14:00:00.233000-08:00",
+   "end": "2026-11-14T16:00:00.233000-08:00",
+   "free": null,
+   "note": "Join us for a celebration of Kulhar Books, new South Asian Diasporic literature imprint from Kaya Press featuring poet Ansley Moon, author of Register the Missing -- A heartbreaking exploration of the often-impossible choices faced by mothe",
+   "url": "https://www.medicinefornightmares.com/events/kaya-press-bay-area-gathering-and-kulhar-books-launch-featuring-poet-ansley-moon"
+  },
+  {
    "id": "cal-38mv9fviu5e0q7ufas03bkrgsi-google-com",
    "kind": "event",
    "source": "The Drawing Room",
@@ -4033,7 +3260,7 @@
    "free": null,
    "start": "2026-11-14T16:00:00-08:00",
    "end": "2026-11-14T22:00:00-08:00",
-   "note": "An evening of imaginative short films by Bay Area filmmakers, with a live performance and audience mingling.",
+   "note": "An evening of short films by Bay Area filmmakers, with a live performance and time to meet fellow film lovers.",
    "url": "https://www.jccsf.org/event/san-francisco-jewish-film-festival-46-encore-nov-14/"
   },
   {
@@ -4050,7 +3277,7 @@
    "free": false,
    "start": "2026-11-14T17:30:00-08:00",
    "end": "2026-11-14T21:30:00-08:00",
-   "note": "Bob Gutierrez Band plays ballroom dance and familiar favorites at a Verdi Club dinner dance party.",
+   "note": "Bob Gutierrez Band plays ballroom dance favorites and classics at a Thanksgiving-season dinner dance party at the Verdi Club.",
    "url": "https://missionlocal.org/event/verdi-club-give-thanks-dinner-dance-party-w-the-bob-gutierrez-band/",
    "also": {
     "page": "index.html",
@@ -4071,7 +3298,7 @@
    "free": false,
    "start": "2026-11-14T19:00:00-08:00",
    "end": "2026-11-14T21:00:00-08:00",
-   "note": "The Empire Strips Back is a burlesque show that parodies famous pop-culture characters, with a cast performing sketches and routines.",
+   "note": "A burlesque parody that drops classic film and pop-culture characters into a burlesque show at the Victoria Theatre.",
    "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-14/1/",
    "also": {
     "page": "index.html",
@@ -4150,11 +3377,32 @@
    "free": false,
    "start": "2026-11-14T19:30:00-08:00",
    "end": "2026-11-14T21:00:00-08:00",
-   "note": "Opera Parallèle's world premiere opera draws on Gullah-Geechee spiritual traditions from the Carolinas, staged at Z Space.",
+   "note": "Opera Parallèle's world premiere opera at Z Space, inspired by the spirituals and musical traditions of the Gullah-Geechee people.",
    "url": "https://missionlocal.org/event/z-space-salt-spirit-an-operatic-experience-rooted-in-gullah-geechee-spirituals/2026-11-14/",
    "also": {
     "page": "index.html",
     "id": "ml-10041140-2026-11-14"
+   }
+  },
+  {
+   "id": "ml-10041944-2026-11-14",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Journey of the Black Fox",
+   "area": "Dance Mission Theater",
+   "lat": 37.7524015,
+   "lng": -122.4188994,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-14T20:00:00-08:00",
+   "end": "2026-11-14T22:00:00-08:00",
+   "note": "Terrence Paschal and Dance Mission present Journey of the Black Fox, a dance performance at Dance Mission Theater.",
+   "url": "https://missionlocal.org/event/dance-mission-theater-journey-of-the-black-fox/2026-11-14/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10041944-2026-11-14"
    }
   },
   {
@@ -4168,10 +3416,10 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-11-14T20:00:00-08:00",
    "end": "2026-11-14T22:00:00-08:00",
-   "note": "Lynne Kaufman's solo play The Secret Museum, directed by Warren David Keith, runs at The Marsh's Mainstage.",
+   "note": "Lynne Kaufman's solo stage play, directed by Warren David Keith, staged at The Marsh's San Francisco Mainstage.",
    "url": "https://missionlocal.org/event/the-marsh-lynne-kaufman-the-secret-museum/2026-11-14/",
    "also": {
     "page": "index.html",
@@ -4192,7 +3440,7 @@
    "free": false,
    "start": "2026-11-14T20:30:00-08:00",
    "end": "2026-11-14T23:00:00-08:00",
-   "note": "Performance by Max Jaffe, presenting You Want That Too!, alongside Burden of Dreams.",
+   "note": "A performance by Max Jaffe, You Want That Too!, with Burden of Dreams; doors 8pm, show 8:30pm.",
    "url": "https://www.thelab.org/",
    "bookAhead": false
   },
@@ -4231,7 +3479,7 @@
    "free": null,
    "start": "2026-11-15T12:00:00-08:00",
    "end": "2026-11-15T15:00:00-08:00",
-   "note": "Memorial celebration honoring Minnette Lehmann, with a program and open mic, streamed online.",
+   "note": "A memorial celebration for Minnette Lehmann with a program and open mic; RSVP is requested and a streaming link is offered.",
    "url": "https://www.thelab.org/",
    "bookAhead": false
   },
@@ -4249,12 +3497,30 @@
    "free": false,
    "start": "2026-11-15T15:00:00-08:00",
    "end": "2026-11-15T16:30:00-08:00",
-   "note": "Opera Parallèle's world premiere opera draws on Gullah-Geechee spiritual traditions from the Carolinas, staged at Z Space.",
+   "note": "Opera Parallèle's world premiere opera at Z Space, inspired by the spirituals and musical traditions of the Gullah-Geechee people.",
    "url": "https://missionlocal.org/event/z-space-salt-spirit-an-operatic-experience-rooted-in-gullah-geechee-spirituals/2026-11-15/",
    "also": {
     "page": "index.html",
     "id": "ml-10041141-2026-11-15"
    }
+  },
+  {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-closing-event-reading-for-shizue-seigel--2026-11-15",
+   "name": "Closing event/reading for Shizue Seigel's “Burden of Imagination”",
+   "start": "2026-11-15T15:00:00.571000-08:00",
+   "end": "2026-11-15T18:00:00.571000-08:00",
+   "free": null,
+   "note": "Closing celebration and poetry reading for Shizue Seigel’s exhibit “Burden of Imagination”. #block-0c704f3e000d9e04a27e { --stroke-style: none;--stroke-thickness: 2px; --tweak-text-block-stroke-color: hsla(var(--black-hsl), 1) ; } #block-0c",
+   "url": "https://www.medicinefornightmares.com/events/closing-eventreading-for-shizue-seigels-burden-of-imagination"
   },
   {
    "id": "jccsf-110749-2026-11-15",
@@ -4270,7 +3536,7 @@
    "free": null,
    "start": "2026-11-15T16:00:00-08:00",
    "end": "2026-11-15T22:00:00-08:00",
-   "note": "A second encore evening of imaginative short films by Bay Area filmmakers, with a live performance.",
+   "note": "An evening of short films by Bay Area filmmakers, with a live performance and time to meet fellow film lovers.",
    "url": "https://www.jccsf.org/event/san-francisco-jewish-film-festival-encore-nov-15/"
   },
   {
@@ -4287,8 +3553,12 @@
    "free": false,
    "start": "2026-11-15T16:00:00-08:00",
    "end": "2026-11-15T18:00:00-08:00",
-   "note": "The Empire Strips Back is a burlesque show that parodies famous pop-culture characters, with a cast performing sketches and routines.",
-   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-15/"
+   "note": "A burlesque parody that drops classic film and pop-culture characters into a burlesque show at the Victoria Theatre.",
+   "url": "https://missionlocal.org/event/victoria-theatre-the-empire-strips-back-a-burlesque-parody/2026-11-15/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10040859-2026-11-15"
+   }
   },
   {
    "id": "jccsf-109233-2026-11-15",
@@ -4304,7 +3574,7 @@
    "free": true,
    "start": "2026-11-15T17:00:00-08:00",
    "end": "2026-11-15T19:00:00-08:00",
-   "note": "A reception where the curator discusses the history and context behind the Ketubah Renaissance exhibit.",
+   "note": "A reception where the curator discusses the history behind the Ketubah Renaissance art exhibit.",
    "url": "https://www.jccsf.org/event/ketubah-renaissance-reception-with-the-curator/"
   },
   {
@@ -4318,11 +3588,15 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-11-15T17:00:00-08:00",
    "end": "2026-11-15T19:00:00-08:00",
-   "note": "Lynne Kaufman's solo play The Secret Museum, directed by Warren David Keith, runs at The Marsh's Mainstage.",
-   "url": "https://missionlocal.org/event/the-marsh-lynne-kaufman-the-secret-museum/2026-11-15/"
+   "note": "Lynne Kaufman's solo stage play, directed by Warren David Keith, staged at The Marsh's San Francisco Mainstage.",
+   "url": "https://missionlocal.org/event/the-marsh-lynne-kaufman-the-secret-museum/2026-11-15/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10041093-2026-11-15"
+   }
   },
   {
    "id": "bird-beckett-books-39140-2026-11-15",
@@ -4341,6 +3615,27 @@
    "note": "Ben Stolorow, piano; Peter Barshay, bass; Vince Lateano, drums Drummer Vince Lateano performs with his trio on the 3rd Sudnay every other month (i.e. January, March, May, July, September, November). SUNDAY HAPPY HOUR! Gr",
    "url": "https://birdbeckett.com/event/vince-lateano_2026-11-15/",
    "bookAhead": false
+  },
+  {
+   "id": "ml-10041945-2026-11-15",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Journey of the Black Fox",
+   "area": "Dance Mission Theater",
+   "lat": 37.7524015,
+   "lng": -122.4188994,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-15T18:00:00-08:00",
+   "end": "2026-11-15T20:00:00-08:00",
+   "note": "Terrence Paschal and Dance Mission present Journey of the Black Fox, a dance performance at Dance Mission Theater.",
+   "url": "https://missionlocal.org/event/dance-mission-theater-journey-of-the-black-fox/2026-11-15/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10041945-2026-11-15"
+   }
   },
   {
    "kind": "event",
@@ -4420,6 +3715,24 @@
    "bookAhead": false
   },
   {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-the-pomegranate-is-a-grenade-book-launch-2026-11-17",
+   "name": "The Pomegranate is a Grenade Book Launch",
+   "start": "2026-11-17T19:00:00.003000-08:00",
+   "end": "2026-11-17T21:00:00.003000-08:00",
+   "free": null,
+   "note": "Join Maha Hashwi, author, and Colette Ghunim, filmmaker, for a poetry reading and conversation surrounding Maha's debut book, The Pomegranate is a Grenade (Central Avenue, 2026) The Pomegranate is a Grenade is a debut poetry collection that",
+   "url": "https://www.medicinefornightmares.com/events/the-pomegranate-is-a-grenade-book-launch"
+  },
+  {
    "id": "indy-2712-2026-11-17",
    "kind": "event",
    "source": "The Independent",
@@ -4471,7 +3784,7 @@
    "free": true,
    "start": "2026-11-18T13:00:00-08:00",
    "end": "2026-11-18T15:00:00-08:00",
-   "note": "Family member Nick Stein presents the story of Gertrude Stein and her role in the birth of modernism.",
+   "note": "Family member Nick Stein talks about Gertrude Stein's life and her role in the birth of modernism.",
    "url": "https://www.jccsf.org/event/gertrude-stein-a-family-saga-meets-the-birth-of-modernism/"
   },
   {
@@ -4616,7 +3929,7 @@
    "free": false,
    "start": "2026-11-19T19:30:00-08:00",
    "end": "2026-11-19T21:00:00-08:00",
-   "note": "Opera Parallèle's world premiere opera draws on Gullah-Geechee spiritual traditions from the Carolinas, staged at Z Space.",
+   "note": "Opera Parallèle's world premiere opera at Z Space, inspired by the spirituals and musical traditions of the Gullah-Geechee people.",
    "url": "https://missionlocal.org/event/z-space-salt-spirit-an-operatic-experience-rooted-in-gullah-geechee-spirituals/2026-11-19/",
    "also": {
     "page": "index.html",
@@ -4684,6 +3997,24 @@
    ]
   },
   {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-other-dimensions-in-sound-presents-dj-z4-2026-11-20",
+   "name": "Other Dimensions in Sound presents DJ Z4K vs. Black Edgar",
+   "start": "2026-11-20T19:00:00.531000-08:00",
+   "end": "2026-11-20T21:00:00.531000-08:00",
+   "free": null,
+   "note": "Other Dimensions in Sound is our Friday music series curated and hosted by Boohaabian multi reed player extraordinare David Boyce. Each week David will be inviting different musical guests to join him in our galeria for a night of musical m",
+   "url": "https://www.medicinefornightmares.com/events/4dmkdrc6ch6flg8c9cp25j4m2mjnpc"
+  },
+  {
    "id": "ml-10041098-2026-11-20",
    "kind": "event",
    "source": "Mission Local",
@@ -4694,11 +4025,15 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-11-20T19:30:00-08:00",
    "end": "2026-11-20T21:00:00-08:00",
-   "note": "Janet Thornburg performs her solo show Cognitive Divine, written by Thornburg and directed by David Ford, at The Marsh.",
-   "url": "https://missionlocal.org/event/the-marsh-janet-thornburg-cognitive-divine/2026-11-20/"
+   "note": "Janet Thornburg performs her solo show Cognitive Divine, directed by David Ford, at The Marsh's San Francisco Studio.",
+   "url": "https://missionlocal.org/event/the-marsh-janet-thornburg-cognitive-divine/2026-11-20/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10041098-2026-11-20"
+   }
   },
   {
    "id": "bird-beckett-books-39146-2026-11-20",
@@ -4796,6 +4131,42 @@
    "url": "https://sfpl.org/events/2026/11/21/performance-bay-beats-rap-show"
   },
   {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-mixed-roots-an-interactive-reading-hoste-2026-11-21",
+   "name": "MIXED ROOTS: AN INTERACTIVE READING Hosted by Anne Liu Kellor and Interwoven",
+   "start": "2026-11-21T14:00:00.202000-08:00",
+   "end": "2026-11-21T16:00:00.202000-08:00",
+   "free": true,
+   "note": "In celebration of the launch of Mixed Roots: Writers on Multiracial Identity & Both/And Belonging, you're invited to join us for an interactive reading and collaborative afternoon exploring multiracial and interwoven identities. Co-hosted b",
+   "url": "https://www.medicinefornightmares.com/events/mixed-roots-an-interactive-reading-hosted-by-anne-liu-kellor-and-interwoven"
+  },
+  {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma--a-flor-de-piel-pop-up-photgraphy-exhibi-2026-11-21",
+   "name": "“A flor de piel” pop up photgraphy exhibit by Lorena Jiminez",
+   "start": "2026-11-21T16:30:00.334000-08:00",
+   "end": "2026-11-21T18:30:00.334000-08:00",
+   "free": null,
+   "note": "'A flor de piel’, a photography project by Lorena Jimenez, explores the personal realities of women’s health through intimate images of scars, bodies, and other traces of lived experience. Bringing individual stories into conversation, the ",
+   "url": "https://www.medicinefornightmares.com/events/flor-de-piel-pop-up-photgraphy-exhibit-by-lorena-jiminez"
+  },
+  {
    "id": "rpah-18491-2026-11-21",
    "kind": "event",
    "source": "Red Poppy Art House",
@@ -4814,6 +4185,45 @@
    "bookAhead": true
   },
   {
+   "id": "ml-880460-2026-11-21",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "La Caravana",
+   "area": "Dance Mission Theater",
+   "lat": 37.7524015,
+   "lng": -122.4188994,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-11-21T19:00:00-08:00",
+   "end": "2026-11-21T21:00:00-08:00",
+   "note": "Music video premiere and community celebration for La Caravana, presented by Healthy Bodies, Healthy Minds at Dance Mission Theater.",
+   "url": "https://missionlocal.org/event/dance-mission-theater-la-caravana/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-880460-2026-11-21"
+   }
+  },
+  {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-catalog-of-shadows-san-francisco-release-2026-11-21",
+   "name": "Catalog of Shadows: San Francisco Release Party",
+   "start": "2026-11-21T19:00:00.883000-08:00",
+   "end": "2026-11-21T21:00:00.883000-08:00",
+   "free": true,
+   "note": "Come celebrate the release of Jaz Sufi's first chapbook, Catalog of Shadows! \"Catalog of Shadows is a dynamic postmortem of an abusive intimate relationship.",
+   "url": "https://www.medicinefornightmares.com/events/catalog-of-shadows-san-francisco-release-party"
+  },
+  {
    "id": "bird-beckett-books-39155-2026-11-21",
    "kind": "event",
    "source": "Bird & Beckett Books",
@@ -4824,12 +4234,13 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": null,
+   "free": false,
    "start": "2026-11-21T19:30:00-08:00",
    "end": "2026-11-21T21:30:00-08:00",
-   "note": "",
+   "note": "Dima, vocals David Udolph, piano Chris Amberger, bass Akira Tana, drums Singing from the heart with a voice and style reminiscent of the early 50’s, Dima was inﬂuenced at an early age by the music that surrounded her as ",
    "url": "https://birdbeckett.com/event/dima_2026-11-21/",
-   "bookAhead": false
+   "bookAhead": false,
+   "price": "$20"
   },
   {
    "id": "ml-10041143-2026-11-21",
@@ -4845,7 +4256,7 @@
    "free": false,
    "start": "2026-11-21T19:30:00-08:00",
    "end": "2026-11-21T21:00:00-08:00",
-   "note": "Opera Parallèle's world premiere opera draws on Gullah-Geechee spiritual traditions from the Carolinas, staged at Z Space.",
+   "note": "Opera Parallèle's world premiere opera at Z Space, inspired by the spirituals and musical traditions of the Gullah-Geechee people.",
    "url": "https://missionlocal.org/event/z-space-salt-spirit-an-operatic-experience-rooted-in-gullah-geechee-spirituals/2026-11-21/",
    "also": {
     "page": "index.html",
@@ -4863,11 +4274,15 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-11-21T20:00:00-08:00",
    "end": "2026-11-21T22:00:00-08:00",
-   "note": "Lynne Kaufman's solo play The Secret Museum, directed by Warren David Keith, runs at The Marsh's Mainstage.",
-   "url": "https://missionlocal.org/event/the-marsh-lynne-kaufman-the-secret-museum/2026-11-21/"
+   "note": "Lynne Kaufman's solo stage play, directed by Warren David Keith, staged at The Marsh's San Francisco Mainstage.",
+   "url": "https://missionlocal.org/event/the-marsh-lynne-kaufman-the-secret-museum/2026-11-21/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10041094-2026-11-21"
+   }
   },
   {
    "kind": "event",
@@ -4929,6 +4344,27 @@
    "url": "https://sfpl.org/events/2026/11/22/author-annalee-newitz-conversation-soleil-ho"
   },
   {
+   "id": "ml-880464-2026-11-22",
+   "kind": "event",
+   "source": "Mission Local",
+   "name": "Get Live or Die Trying – Dance Battle",
+   "area": "Dance Mission Theater",
+   "lat": 37.7524015,
+   "lng": -122.4188994,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-11-22T14:00:00-08:00",
+   "end": "2026-11-22T19:00:00-08:00",
+   "note": "Baybvck and Dance Mission's Liberation Academy host an afternoon dance battle, with dancers competing in front of an audience.",
+   "url": "https://missionlocal.org/event/dance-mission-theater-get-live-or-die-trying-dance-battle/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-880464-2026-11-22"
+   }
+  },
+  {
    "id": "bird-beckett-books-39157-2026-11-22",
    "kind": "event",
    "source": "Bird & Beckett Books",
@@ -4957,11 +4393,33 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-11-22T17:00:00-08:00",
    "end": "2026-11-22T19:00:00-08:00",
-   "note": "Lynne Kaufman's solo play The Secret Museum, directed by Warren David Keith, runs at The Marsh's Mainstage.",
-   "url": "https://missionlocal.org/event/the-marsh-lynne-kaufman-the-secret-museum/2026-11-22/"
+   "note": "Lynne Kaufman's solo stage play, directed by Warren David Keith, staged at The Marsh's San Francisco Mainstage.",
+   "url": "https://missionlocal.org/event/the-marsh-lynne-kaufman-the-secret-museum/2026-11-22/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10041095-2026-11-22"
+   }
+  },
+  {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-mystery-school-2026-11-22",
+   "name": "Mystery School",
+   "start": "2026-11-22T18:00:00.749000-08:00",
+   "end": "2026-11-22T21:00:00.749000-08:00",
+   "free": null,
+   "note": "Tonight the Portal is over la luna excited to welcome back Mystery School! Featuring Boohabian reed player David Boyce and the indomitable and well read Philip Greenlief.",
+   "url": "https://www.medicinefornightmares.com/events/mystery-school-1"
   },
   {
    "id": "indy-2814-2026-11-22",
@@ -4983,6 +4441,41 @@
    "tags": [
     "music"
    ]
+  },
+  {
+   "id": "sfpl-2026-11-23-film-damned-dont-cry",
+   "kind": "event",
+   "source": "sfpl",
+   "name": "Film: The Damned Don't Cry",
+   "area": "Golden Gate Valley Branch Library",
+   "lat": 37.798,
+   "lng": -122.4258,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-23T15:00:00-08:00",
+   "end": "2026-11-23T17:00:00-08:00",
+   "note": "When a shady businessman is found dead in the Nevada desert, his glamorous, mysterious companion falls under scrutiny. The Damned Don't Cry stars Joan Crawford, David Brian and Steve Cochran. NR, 103 mins., 1950. Closed captions (CC) in English.",
+   "url": "https://sfpl.org/events/2026/11/23/film-damned-dont-cry"
+  },
+  {
+   "id": "bird-beckett-books-39799-2026-11-23",
+   "kind": "event",
+   "source": "Bird & Beckett Books",
+   "name": "Virtual Poets: Kim Shuck hosts an all open mic reading",
+   "area": "Bird & Beckett Books, 653 Chenery St",
+   "lat": 37.7344,
+   "lng": -122.433,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-23T19:00:00-08:00",
+   "end": "2026-11-23T21:00:00-08:00",
+   "note": "Kim Shuck conducts the twice-monthly Virtual Poets series, with featured readers followed by an open mic on the 2nd Monday of each month and an all-open mic session on the 4th Monday of each month. Kim embraces the fool ",
+   "url": "https://birdbeckett.com/event/virtual-poets_2026-11-23/",
+   "bookAhead": false
   },
   {
    "kind": "event",
@@ -5021,6 +4514,23 @@
    "end": "2026-11-24T14:00:00-08:00",
    "note": "Accordionist Jim Rebhan and soprano Barbara Hollinger perform a festive Thanksgiving concert.",
    "url": "https://www.jccsf.org/event/a-joyful-thanksgiving-concert-come-celebrate-with-us/"
+  },
+  {
+   "id": "sfpl-2026-11-24-author-michelle-tea-conversation-colette-pervette",
+   "kind": "event",
+   "source": "sfpl",
+   "name": "Author: Michelle Tea in conversation with Colette Pervette",
+   "area": "Main Library",
+   "lat": 37.779,
+   "lng": -122.4157,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-24T18:00:00-08:00",
+   "end": "2026-11-24T19:30:00-08:00",
+   "note": "Celebrate the San Francisco book launch of Free Love: Adventures in Marriage and Polyamory with PEN/America Award winner, Guggenheim fellow and beloved literary and tarot icon Michelle Tea in conversation with Colette Pervette.",
+   "url": "https://sfpl.org/events/2026/11/24/author-michelle-tea-conversation-colette-pervette"
   },
   {
    "id": "bird-beckett-books-39159-2026-11-24",
@@ -5083,6 +4593,24 @@
    ]
   },
   {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-other-dimensions-in-sound-presents-exqui-2026-11-27",
+   "name": "Other Dimensions in Sound presents Exquisite Corpse(Isabel Arizmendi-guitar, Edan-soprano sax & efx)",
+   "start": "2026-11-27T19:00:00.197000-08:00",
+   "end": "2026-11-27T21:00:00.197000-08:00",
+   "free": null,
+   "note": "Other Dimensions in Sound is our Friday music series curated and hosted by Boohaabian multi reed player extraordinare David Boyce. Each week David will be inviting different musical guests to join him in our galeria for a night of musical m",
+   "url": "https://www.medicinefornightmares.com/events/7g3tzty3t36ktnwndwdmdz9fp6akn3"
+  },
+  {
    "id": "ml-10041099-2026-11-27",
    "kind": "event",
    "source": "Mission Local",
@@ -5093,11 +4621,15 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-11-27T19:30:00-08:00",
    "end": "2026-11-27T21:00:00-08:00",
-   "note": "Janet Thornburg performs her solo show Cognitive Divine, written by Thornburg and directed by David Ford, at The Marsh.",
-   "url": "https://missionlocal.org/event/the-marsh-janet-thornburg-cognitive-divine/2026-11-27/"
+   "note": "Janet Thornburg performs her solo show Cognitive Divine, directed by David Ford, at The Marsh's San Francisco Studio.",
+   "url": "https://missionlocal.org/event/the-marsh-janet-thornburg-cognitive-divine/2026-11-27/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10041099-2026-11-27"
+   }
   },
   {
    "id": "bird-beckett-books-39162-2026-11-27",
@@ -5140,6 +4672,23 @@
    ]
   },
   {
+   "id": "sfpl-2026-11-28-performance-storytime-grown-ups",
+   "kind": "event",
+   "source": "sfpl",
+   "name": "Performance: Storytime for Grown-ups",
+   "area": "Western Addition Branch Library",
+   "lat": 37.7834,
+   "lng": -122.4373,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-28T16:00:00-08:00",
+   "end": "2026-11-28T17:30:00-08:00",
+   "note": "Enjoy a read-aloud mash-up of short stories, poetry, picture books for grown-ups, provided by a SFPL librarian.",
+   "url": "https://sfpl.org/events/2026/11/28/performance-storytime-grown-ups"
+  },
+  {
    "id": "ml-877257-2026-11-28",
    "kind": "event",
    "source": "Mission Local",
@@ -5153,12 +4702,30 @@
    "free": false,
    "start": "2026-11-28T17:00:00-08:00",
    "end": "2026-11-28T19:00:00-08:00",
-   "note": "Brian Copeland performs his solo holiday story The Jewelry Box, a family-friendly show at The Marsh and Berkeley Mainstage.",
+   "note": "Brian Copeland performs his family-friendly autobiographical holiday story The Jewelry Box at The Marsh San Francisco Mainstage.",
    "url": "https://missionlocal.org/event/the-marsh-brian-copeland-the-jewelry-boxa-genuine-christmas-story-family-friendly/",
    "also": {
     "page": "index.html",
     "id": "ml-877257-2026-11-28"
    }
+  },
+  {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-daryl-smith-pop-up-art-show-2026-11-28",
+   "name": "Daryl Smith pop up art show",
+   "start": "2026-11-28T19:00:00.662000-08:00",
+   "end": "2026-11-28T21:00:00.662000-08:00",
+   "free": null,
+   "note": "At Medicine for Nightmares.",
+   "url": "https://www.medicinefornightmares.com/events/daryl-smith-pop-up-art-show"
   },
   {
    "id": "bird-beckett-books-39164-2026-11-28",
@@ -5241,6 +4808,23 @@
    "price": "$20"
   },
   {
+   "id": "sfpl-2026-11-29-performance-poem-jam-celebrates-zitkala-sas-american-indian-stories",
+   "kind": "event",
+   "source": "sfpl",
+   "name": "Performance: Poem Jam Celebrates Zitkala-Ša's American Indian Stories",
+   "area": "Main Library",
+   "lat": 37.779,
+   "lng": -122.4157,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-11-29T13:00:00-08:00",
+   "end": "2026-11-29T14:30:00-08:00",
+   "note": "San Francisco Poet Laureate emerita Kim Shuck and special guests celebrate American Indian Stories by writer, editor, translator and musician Zitkala-Ša at SFPL’s Monthly poetry reading. Kim Shuck was San Francisco’s seventh Poet Laureate.",
+   "url": "https://sfpl.org/events/2026/11/29/performance-poem-jam-celebrates-zitkala-sas-american-indian-stories"
+  },
+  {
    "id": "ml-10041103-2026-11-29",
    "kind": "event",
    "source": "Mission Local",
@@ -5251,11 +4835,15 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-11-29T17:00:00-08:00",
    "end": "2026-11-29T19:00:00-08:00",
    "note": "Amy Oppenheimer performs her solo show Looking For Justice (In All The Wrong Places), directed by David Ford, at The Marsh.",
-   "url": "https://missionlocal.org/event/the-marsh-amy-oppenheimer-looking-for-justice-in-all-the-wrong-places/2026-11-29/"
+   "url": "https://missionlocal.org/event/the-marsh-amy-oppenheimer-looking-for-justice-in-all-the-wrong-places/2026-11-29/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10041103-2026-11-29"
+   }
   },
   {
    "id": "bird-beckett-books-39166-2026-11-29",
@@ -5274,6 +4862,42 @@
    "note": "Karina Denike, vocals; Tom Griesser; saxophone; Michael McIntosh, piano; Joe Kyle, Jr., bass; Randy Lee Odell, drums THE COTTONTAILS are one of San Francisco’s most exciting musical groups, playing a wide range of styles",
    "url": "https://birdbeckett.com/event/cottontails_2026-11-29/",
    "bookAhead": false
+  },
+  {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-bay-area-queer-open-mic-2026-11-29",
+   "name": "Bay Area Queer Open Mic",
+   "start": "2026-11-29T18:00:00.641000-08:00",
+   "end": "2026-11-29T21:00:00.641000-08:00",
+   "free": null,
+   "note": "A welcoming space for queer musicians and songwriters to share their work, connect, and build community. Performers can sign up online in advance, join as walk-ins, or be featured as a monthly Featured Artist.",
+   "url": "https://www.medicinefornightmares.com/events/gp7ffscssx4lsrr98dy8fe5wf94y82"
+  },
+  {
+   "kind": "event",
+   "source": "Medicine for Nightmares",
+   "area": "Medicine for Nightmares, 3036 24th St",
+   "lat": 37.7527,
+   "lng": -122.4123,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": false,
+   "id": "vp-medicine-for-nightma-friend-seekers-book-release-with-siamak--2026-11-30",
+   "name": "Friend Seekers book release with Siamak Vossoughi",
+   "start": "2026-11-30T19:00:00.063000-08:00",
+   "end": "2026-11-30T21:00:00.063000-08:00",
+   "free": null,
+   "note": "At Medicine for Nightmares.",
+   "url": "https://www.medicinefornightmares.com/events/friend-seekers-book-release-with-siamak-vossoughi"
   },
   {
    "id": "indy-8415-2026-11-30",
@@ -5295,6 +4919,23 @@
    "tags": [
     "music"
    ]
+  },
+  {
+   "id": "sfpl-2026-12-01-film-funeral-parade-roses-screening-and-discussion",
+   "kind": "event",
+   "source": "sfpl",
+   "name": "Film: Funeral Parade of Roses, Screening and Discussion",
+   "area": "North Beach Branch Library",
+   "lat": 37.803,
+   "lng": -122.414,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-01T17:00:00-08:00",
+   "end": "2026-12-01T19:30:00-08:00",
+   "note": "Watch the weekly cinema screening of Funeral Parade of Roses , followed by a discussion with local photographer and film enthusiast, Tommy Milutin. Matsumoto’s film plunges into a surreal, subversive Tokyo nightlife of drag performers and avant‑garde energy that later influenced Kubrick.",
+   "url": "https://sfpl.org/events/2026/12/01/film-funeral-parade-roses-screening-and-discussion"
   },
   {
    "id": "cal-f83b56d3-9c0b-4a7f-b3bc-5db878ef01e6",
@@ -5328,7 +4969,7 @@
    "free": true,
    "start": "2026-12-02T13:00:00-08:00",
    "end": "2026-12-02T14:00:00-08:00",
-   "note": "A listen-and-sing program tracing Jewish women singers from biblical timbrels to contemporary voices.",
+   "note": "A sing-along concert tracing Jewish women's singing from biblical timbrels to contemporary voices.",
    "url": "https://www.jccsf.org/event/jewish-women-singers-raising-their-voices-across-generations/"
   },
   {
@@ -5410,6 +5051,23 @@
    "bookAhead": false
   },
   {
+   "id": "jccsf-110833-2026-12-03",
+   "kind": "event",
+   "source": "JCCSF Arts & Ideas",
+   "name": "Reb Zalman’s Fragments of a Future Scroll: Hasidism for the Aquarian Age",
+   "area": "JCCSF",
+   "lat": 37.787,
+   "lng": -122.4466,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-03T19:00:00-08:00",
+   "end": "2026-12-03T21:00:00-08:00",
+   "note": "Rabbis Tirzah Firestone and Dan Goldblatt with Sam Shonkoff mark 50 years of Reb Zalman's work on Hasidism.",
+   "url": "https://www.jccsf.org/event/reb-zalmans-fragments-of-a-future-scroll-hasidism-for-the-aquarian-age/"
+  },
+  {
    "id": "indy-2659-2026-12-03",
    "kind": "event",
    "source": "The Independent",
@@ -5470,10 +5128,10 @@
    ]
   },
   {
-   "id": "w-the-lab-jeremiah-chiu-2026-12-03",
+   "id": "w-the-lab-jeremiah-chiu-r-beny-2026-12-03",
    "kind": "event",
    "source": "The Lab",
-   "name": "Jeremiah Chiu",
+   "name": "Jeremiah Chiu + r beny",
    "area": "The Lab, 2948 16th St",
    "lat": 37.7653,
    "lng": -122.4184,
@@ -5483,7 +5141,7 @@
    "free": false,
    "start": "2026-12-03T20:30:00-08:00",
    "end": "2026-12-03T23:00:00-08:00",
-   "note": "Live music performance by Jeremiah Chiu.",
+   "note": "A performance by Jeremiah Chiu with r beny; doors 8pm, show 8:30pm.",
    "url": "https://www.thelab.org/",
    "bookAhead": false
   },
@@ -5501,7 +5159,7 @@
    "free": true,
    "start": "2026-12-04T19:00:00-08:00",
    "end": "2026-12-04T21:00:00-08:00",
-   "note": "Celebration of Franklin Furnace's 50 years of free expression, with talks and programming; no RSVP required.",
+   "note": "A free celebration of Franklin Furnace's 50 years of free expression, with doors at 6:30pm and the event at 7pm; no RSVP needed.",
    "url": "https://www.thelab.org/",
    "bookAhead": false
   },
@@ -5516,11 +5174,15 @@
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": false,
+   "free": null,
    "start": "2026-12-04T19:30:00-08:00",
    "end": "2026-12-04T21:00:00-08:00",
-   "note": "Janet Thornburg performs her solo show Cognitive Divine, written by Thornburg and directed by David Ford, at The Marsh.",
-   "url": "https://missionlocal.org/event/the-marsh-janet-thornburg-cognitive-divine/2026-12-04/"
+   "note": "Janet Thornburg performs her solo show Cognitive Divine, written and directed by David Ford, at The Marsh's studio.",
+   "url": "https://missionlocal.org/event/the-marsh-janet-thornburg-cognitive-divine/2026-12-04/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10041100-2026-12-04"
+   }
   },
   {
    "id": "bird-beckett-books-39556-2026-12-04",
@@ -5576,7 +5238,7 @@
    "free": null,
    "start": "2026-12-05T10:35:00-08:00",
    "end": "2026-12-05T18:40:00-08:00",
-   "note": "A two-day Italian film festival pairing screenings with music, food, and hands-on activities.",
+   "note": "A two-day Italian film festival pairing screenings with music, food and hands-on activities.",
    "url": "https://www.jccsf.org/event/frame-italy-film-festival-december-5/"
   },
   {
@@ -5654,8 +5316,12 @@
    "free": null,
    "start": "2026-12-05T21:00:00-08:00",
    "end": "2026-12-05T23:59:00-08:00",
-   "note": "Killing My Lobster sketch troupe writes and performs a full set of new sketches in a twelve-hour live challenge at Z Below.",
-   "url": "https://missionlocal.org/event/z-space-killing-my-lobster-and-z-space-present-sketch-on-speed-at-z-below/2026-12-05/"
+   "note": "Killing My Lobster's sketch comedy troupe at Z Below, with writers and actors creating new material over twelve hours.",
+   "url": "https://missionlocal.org/event/z-space-killing-my-lobster-and-z-space-present-sketch-on-speed-at-z-below/2026-12-05/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10040138-2026-12-05"
+   }
   },
   {
    "id": "jccsf-110622-2026-12-06",
@@ -5671,7 +5337,7 @@
    "free": null,
    "start": "2026-12-06T11:00:00-08:00",
    "end": "2026-12-06T18:55:00-08:00",
-   "note": "A two-day Italian film festival at the JCCSF pairing screenings with music, food, and hands-on activities celebrating Italian culture.",
+   "note": "A two-day Italian film festival pairing screenings with music, food and hands-on activities.",
    "url": "https://www.jccsf.org/event/frame-italy-film-festival-december-6/"
   },
   {
@@ -5688,8 +5354,12 @@
    "free": null,
    "start": "2026-12-06T17:00:00-08:00",
    "end": "2026-12-06T19:00:00-08:00",
-   "note": "Amy Oppenheimer performs her solo show about seeking justice in unexpected places, directed by David Ford at The Marsh.",
-   "url": "https://missionlocal.org/event/the-marsh-amy-oppenheimer-looking-for-justice-in-all-the-wrong-places/2026-12-06/"
+   "note": "Amy Oppenheimer performs her solo show Looking For Justice (In All The Wrong Places), directed by David Ford, at The Marsh.",
+   "url": "https://missionlocal.org/event/the-marsh-amy-oppenheimer-looking-for-justice-in-all-the-wrong-places/2026-12-06/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10041104-2026-12-06"
+   }
   },
   {
    "id": "bird-beckett-books-39113-2026-12-06",
@@ -5752,6 +5422,27 @@
    ]
   },
   {
+   "id": "indy-8565-2026-12-07",
+   "kind": "event",
+   "source": "The Independent",
+   "name": "Lazer Dim 700",
+   "area": "The Independent, 628 Divisadero St",
+   "lat": 37.7755,
+   "lng": -122.4378,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-12-07T20:00:00-08:00",
+   "end": null,
+   "bookAhead": true,
+   "note": "Live at The Independent (Winter Tour). Doors 7:30 PM, show 8:00 PM.",
+   "url": "https://www.theindependentsf.com/tm-event/lazer-dim-700/",
+   "tags": [
+    "music"
+   ]
+  },
+  {
    "id": "jccsf-110546-2026-12-08",
    "kind": "event",
    "source": "JCCSF Arts & Ideas",
@@ -5765,7 +5456,7 @@
    "free": true,
    "start": "2026-12-08T13:00:00-08:00",
    "end": "2026-12-08T14:30:00-08:00",
-   "note": "A screening of film clips from classic works by Jewish musicians, actors, filmmakers, and writers honored by the Kennedy Center.",
+   "note": "A film-clip program celebrating classic works by Jewish musicians, actors, filmmakers, and writers honored by the Kennedy Center.",
    "url": "https://www.jccsf.org/event/illustrious-jewish-performers-kennedy-center-honorees/"
   },
   {
@@ -5803,7 +5494,7 @@
    "free": true,
    "start": "2026-12-09T13:00:00-08:00",
    "end": "2026-12-09T14:00:00-08:00",
-   "note": "A lecture on the first major U.S. retrospective of couturier Azzedine Alaïa, exploring his sculptural approach to fashion.",
+   "note": "A lecture on the first major U.S. retrospective of couturier Azzedine Alaïa's fashion designs.",
    "url": "https://www.jccsf.org/event/azzedine-alaia-sculpting-fashion/"
   },
   {
@@ -5862,7 +5553,7 @@
    "free": false,
    "start": "2026-12-10T19:00:00-08:00",
    "end": "2026-12-10T21:00:00-08:00",
-   "note": "Screening of Jack Smith's films, including Flaming Creatures.",
+   "note": "A screening of the films of Jack Smith, including Flaming Creatures; doors 6:30pm, screening 7pm.",
    "url": "https://www.thelab.org/",
    "bookAhead": false
   },
@@ -5940,8 +5631,12 @@
    "free": null,
    "start": "2026-12-11T19:30:00-08:00",
    "end": "2026-12-11T21:00:00-08:00",
-   "note": "Janet Thornburg performs her solo show Cognitive Divine, written and performed by her and directed by David Ford at The Marsh.",
-   "url": "https://missionlocal.org/event/the-marsh-janet-thornburg-cognitive-divine/2026-12-11/"
+   "note": "Janet Thornburg performs her solo show Cognitive Divine, written and directed by David Ford, at The Marsh's studio.",
+   "url": "https://missionlocal.org/event/the-marsh-janet-thornburg-cognitive-divine/2026-12-11/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10041101-2026-12-11"
+   }
   },
   {
    "id": "bird-beckett-books-39181-2026-12-11",
@@ -6017,8 +5712,26 @@
    "free": true,
    "start": "2026-12-12T14:00:00-08:00",
    "end": "2026-12-12T15:30:00-08:00",
-   "note": "Featured readers and open-mic performers share their work at this quarterly event; doors open at 2:00pm, open mic starts at 2:30pm.",
+   "note": "Featured readers and an open mic where community members perform or read, with doors opening at 2:00pm and the open mic starting at 2:30pm.",
    "url": "https://www.ruthstable.org/programs",
+   "bookAhead": false
+  },
+  {
+   "id": "w-manny-s-under-friedl-s-wing-6pm-2026-12-12",
+   "kind": "event",
+   "source": "Manny's",
+   "name": "Under Friedl's Wing (6pm)",
+   "area": "Manny's, 3092 16th St",
+   "lat": 37.7651,
+   "lng": -122.4217,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2026-12-12T18:00:00-08:00",
+   "end": null,
+   "note": "An event titled Under Friedl's Wing at 6pm; the page gives no description of the performers or content.",
+   "url": "https://welcometomannys.com/events",
    "bookAhead": false
   },
   {
@@ -6095,8 +5808,12 @@
    "free": null,
    "start": "2026-12-13T17:00:00-08:00",
    "end": "2026-12-13T19:00:00-08:00",
-   "note": "Amy Oppenheimer's solo show Looking For Justice (In All The Wrong Places) returns for a Sunday matinee at The Marsh.",
-   "url": "https://missionlocal.org/event/the-marsh-amy-oppenheimer-looking-for-justice-in-all-the-wrong-places/2026-12-13/"
+   "note": "Amy Oppenheimer performs her solo show Looking For Justice (In All The Wrong Places), directed by David Ford, at The Marsh.",
+   "url": "https://missionlocal.org/event/the-marsh-amy-oppenheimer-looking-for-justice-in-all-the-wrong-places/2026-12-13/",
+   "also": {
+    "page": "index.html",
+    "id": "ml-10041105-2026-12-13"
+   }
   },
   {
    "id": "bird-beckett-books-39185-2026-12-13",
@@ -6178,6 +5895,24 @@
    ]
   },
   {
+   "id": "bird-beckett-books-39801-2026-12-14",
+   "kind": "event",
+   "source": "Bird & Beckett Books",
+   "name": "Virtual Poets: Kim Shuck hosts featured readers TBA + open mic",
+   "area": "Bird & Beckett Books, 653 Chenery St",
+   "lat": 37.7344,
+   "lng": -122.433,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": true,
+   "start": "2026-12-14T19:00:00-08:00",
+   "end": "2026-12-14T21:00:00-08:00",
+   "note": "Kim Shuck conducts the twice-monthly Virtual Poets series, with featured readers followed by an open mic on the 2nd Monday of each month and an all-open mic session on the 4th Monday of each month. Kim embraces the fool ",
+   "url": "https://birdbeckett.com/event/virtual-poets_2026-12-14/",
+   "bookAhead": false
+  },
+  {
    "id": "indy-2795-2026-12-14",
    "kind": "event",
    "source": "The Independent",
@@ -6212,7 +5947,7 @@
    "free": true,
    "start": "2026-12-15T13:00:00-08:00",
    "end": "2026-12-15T14:00:00-08:00",
-   "note": "Jeff Sanford's jazz orchestra performs music from classic cartoons, blending classical, jazz, pop, and folk.",
+   "note": "Jeff Sanford's jazz orchestra performs a concert of cartoon music blending classical, jazz, pop, and folk styles.",
    "url": "https://www.jccsf.org/event/jeff-sanfords-cartoon-jazz-orchestra-trip-down-memory-lane/"
   },
   {
@@ -6371,7 +6106,7 @@
    "free": false,
    "start": "2026-12-18T20:30:00-08:00",
    "end": "2026-12-18T22:30:00-08:00",
-   "note": "Live music performance by Whitney Johnson, Lia Kohl, Macie Stewart, and Marguerite Brown.",
+   "note": "A performance by Whitney Johnson, Lia Kohl, and Macie Stewart, with Marguerite Brown; doors 8pm, show 8:30pm.",
    "url": "https://www.thelab.org/",
    "bookAhead": false
   },
@@ -6575,6 +6310,27 @@
    ]
   },
   {
+   "id": "indy-8563-2026-12-31",
+   "kind": "event",
+   "source": "The Independent",
+   "name": "Thievery Corporation",
+   "area": "The Independent, 628 Divisadero St",
+   "lat": 37.7755,
+   "lng": -122.4378,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2026-12-31T21:00:00-08:00",
+   "end": null,
+   "bookAhead": true,
+   "note": "Live at The Independent (NEW YEARS! FULL OPEN BAR! ALL NIGHT!). Doors 8:30 PM, show 9:00 PM.",
+   "url": "https://www.theindependentsf.com/tm-event/thievery-corporation/",
+   "tags": [
+    "music"
+   ]
+  },
+  {
    "id": "bird-beckett-books-38865-2027-01-03",
    "kind": "event",
    "source": "Bird & Beckett Books",
@@ -6611,17 +6367,35 @@
    "url": "https://www.spur.org/events/2027-01-05/build-or-die-conversation-ned-resnikoff"
   },
   {
+   "id": "cal-5e15738c-1008-44d5-ab5d-5a940fe42bec",
+   "kind": "event",
+   "source": "SPUR",
+   "name": "The Evidence on Community-Based Public Safety",
+   "area": "SPUR Urban Center, 654 Mission Street",
+   "lat": 37.787196,
+   "lng": -122.4012427,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "bookAhead": true,
+   "start": "2027-01-06T12:00:00-08:00",
+   "end": "2027-01-06T13:15:00-08:00",
+   "note": "A new Stanford University study found that crime declined by approximately 20% at San Francisco intersections where Urban Alchemy street ambassadors were deployed, with the largest reductions in behavioral health-related incidents. Join SPUR President and CEO ",
+   "url": "https://www.spur.org/events/2027-01-06/evidence-community-based-public-safety"
+  },
+  {
    "id": "bird-beckett-books-39783-2027-01-06",
    "kind": "event",
    "source": "Bird & Beckett Books",
-   "name": "poets Lucille Lang Day & Lisa Rosenberg",
+   "name": "Poets Lucille Lang Day & Lisa Rosenberg",
    "area": "Bird & Beckett Books, 653 Chenery St",
    "lat": 37.7344,
    "lng": -122.433,
    "indoor": true,
    "exp": 0,
    "off": 0,
-   "free": null,
+   "free": true,
    "start": "2027-01-06T19:00:00-08:00",
    "end": "2027-01-06T20:30:00-08:00",
    "note": "",
@@ -6784,6 +6558,24 @@
    "bookAhead": false
   },
   {
+   "id": "cal-ed20d4ed-76b9-4a7b-84fd-b6a888c2c70a",
+   "kind": "event",
+   "source": "SPUR",
+   "name": "What Makes a Neighborhood Thrive? Measuring Vibrancy in San Francisco",
+   "area": "SPUR Urban Center, 654 Mission Street",
+   "lat": 37.787196,
+   "lng": -122.4012427,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "bookAhead": true,
+   "start": "2027-01-12T17:30:00-08:00",
+   "end": "2027-01-12T19:00:00-08:00",
+   "note": "What makes a neighborhood feel lively, welcoming and connected? And how can cities better understand what their commercial corridors need to thrive?",
+   "url": "https://www.spur.org/events/2027-01-12/what-makes-neighborhood-thrive-measuring-vibrancy-san-francisco"
+  },
+  {
    "id": "bird-beckett-books-39787-2027-01-12",
    "kind": "event",
    "source": "Bird & Beckett Books",
@@ -6858,6 +6650,24 @@
    "tags": [
     "music"
    ]
+  },
+  {
+   "id": "cal-7fj5lurmlmaj2o7ant9alhb43i-google-com",
+   "kind": "event",
+   "source": "The Drawing Room",
+   "name": "SF ART WEEK",
+   "area": "The Drawing Room, 599 Valencia St",
+   "lat": 37.7635,
+   "lng": -122.4214,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "bookAhead": false,
+   "start": "2027-01-16T00:00:00-08:00",
+   "end": "2027-01-25T00:00:00-08:00",
+   "note": "",
+   "url": null
   },
   {
    "id": "bird-beckett-books-38885-2027-01-16",
@@ -6936,6 +6746,27 @@
    "bookAhead": false
   },
   {
+   "kind": "event",
+   "source": "The Fillmore",
+   "area": "The Fillmore, 1805 Geary Blvd",
+   "lat": 37.784,
+   "lng": -122.433,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-the-fillmore-dogs-in-a-pile-2027-01-17",
+   "name": "Dogs In A Pile",
+   "start": "2027-01-17T20:00:00-08:00",
+   "end": null,
+   "free": false,
+   "note": "Live at The Fillmore.",
+   "url": "https://www.ticketmaster.com/dogs-in-a-pile-san-francisco-california-01-17-2027/event/1C006548CC0D298B",
+   "tags": [
+    "music"
+   ]
+  },
+  {
    "id": "indy-7325-2027-01-17",
    "kind": "event",
    "source": "The Independent",
@@ -6955,6 +6786,24 @@
    "tags": [
     "music"
    ]
+  },
+  {
+   "id": "cal-23746e4d-9f3c-4d87-a974-19ffe0ea418e",
+   "kind": "event",
+   "source": "SPUR",
+   "name": "Saving 4 Seconds Film Screening [New Date]",
+   "area": "SPUR Urban Center, 654 Mission Street",
+   "lat": 37.787196,
+   "lng": -122.4012427,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "bookAhead": true,
+   "start": "2027-01-21T17:30:00-08:00",
+   "end": "2027-01-21T19:30:00-08:00",
+   "note": "Saving 4 Seconds is a film that tells the story through the voices of local families, advocates, and Bay Area elected officials who tirelessly pushed for this life-saving public policy — and the many hurdles they faced along the way. It also features never-bef",
+   "url": "https://www.spur.org/events/2027-01-21/saving-4-seconds-film-screening-new-date"
   },
   {
    "id": "bird-beckett-books-38890-2027-01-21",
@@ -6991,6 +6840,150 @@
    "note": "The Lenny Carlson Music Collective is a unique chamber ensemble that performs Carlson’s original compositions along with standards. His musical directions converge in the genre of Americana, blending Jazz, pop, folk, and",
    "url": "https://birdbeckett.com/event/lenny-carlson_2027-01-22/",
    "bookAhead": false
+  },
+  {
+   "id": "indy-8533-2027-01-22",
+   "kind": "event",
+   "source": "The Independent",
+   "name": "The Brothers Comatose",
+   "area": "The Independent, 628 Divisadero St",
+   "lat": 37.7755,
+   "lng": -122.4378,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2027-01-22T21:00:00-08:00",
+   "end": null,
+   "bookAhead": true,
+   "note": "Live at The Independent (Two Nights!). Doors 8:30 PM, show 9:00 PM.",
+   "url": "https://www.theindependentsf.com/tm-event/the-brothers-comatose/",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "bird-beckett-books-39466-2027-01-23",
+   "kind": "event",
+   "source": "Bird & Beckett Books",
+   "name": "Benny Amon’s New Orleans Pearls Mardi Gras Show",
+   "area": "Bird & Beckett Books, 653 Chenery St",
+   "lat": 37.7344,
+   "lng": -122.433,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": null,
+   "start": "2027-01-23T19:30:00-08:00",
+   "end": "2027-01-23T21:30:00-08:00",
+   "note": "",
+   "url": "https://birdbeckett.com/event/benny-amon_2027-01-23/",
+   "bookAhead": false
+  },
+  {
+   "kind": "event",
+   "source": "The Fillmore",
+   "area": "The Fillmore, 1805 Geary Blvd",
+   "lat": 37.784,
+   "lng": -122.433,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-the-fillmore-paco-versailles-the-az-car-tour-2027-2027-01-23",
+   "name": "Paco Versailles: The Azúcar Tour 2027",
+   "start": "2027-01-23T20:00:00-08:00",
+   "end": null,
+   "free": false,
+   "note": "Live at The Fillmore.",
+   "url": "https://www.ticketmaster.com/paco-versailles-the-azucar-tour-2027-san-francisco-california-01-23-2027/event/1C006538BDC45A48",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "indy-8535-2027-01-23",
+   "kind": "event",
+   "source": "The Independent",
+   "name": "The Brothers Comatose",
+   "area": "The Independent, 628 Divisadero St",
+   "lat": 37.7755,
+   "lng": -122.4378,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2027-01-23T21:00:00-08:00",
+   "end": null,
+   "bookAhead": true,
+   "note": "Live at The Independent (Two Nights!). Doors 8:30 PM, show 9:00 PM.",
+   "url": "https://www.theindependentsf.com/tm-event/the-brothers-comatose-2/",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "kind": "event",
+   "source": "The Fillmore",
+   "area": "The Fillmore, 1805 Geary Blvd",
+   "lat": 37.784,
+   "lng": -122.433,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-the-fillmore-tesseract-2027-01-24",
+   "name": "TesseracT",
+   "start": "2027-01-24T19:00:00-08:00",
+   "end": null,
+   "free": false,
+   "note": "Live at The Fillmore.",
+   "url": "https://www.ticketmaster.com/tesseract-san-francisco-california-01-24-2027/event/1C00654292EDD475",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "id": "indy-8502-2027-01-26",
+   "kind": "event",
+   "source": "The Independent",
+   "name": "The Flatliners",
+   "area": "The Independent, 628 Divisadero St",
+   "lat": 37.7755,
+   "lng": -122.4378,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "free": false,
+   "start": "2027-01-26T20:00:00-08:00",
+   "end": null,
+   "bookAhead": true,
+   "note": "Live at The Independent (COLD WORLD GOES WEST). Doors 7:30 PM, show 8:00 PM.",
+   "url": "https://www.theindependentsf.com/tm-event/the-flatliners/",
+   "tags": [
+    "music"
+   ]
+  },
+  {
+   "kind": "event",
+   "source": "The Fillmore",
+   "area": "The Fillmore, 1805 Geary Blvd",
+   "lat": 37.784,
+   "lng": -122.433,
+   "indoor": true,
+   "exp": 0,
+   "off": 0,
+   "bookAhead": true,
+   "id": "vp-the-fillmore-ibeyi-2027-01-27",
+   "name": "Ibeyi",
+   "start": "2027-01-27T20:00:00-08:00",
+   "end": null,
+   "free": false,
+   "note": "Live at The Fillmore.",
+   "url": "https://www.ticketmaster.com/ibeyi-san-francisco-california-01-27-2027/event/1C0064CCA329E28F",
+   "tags": [
+    "music"
+   ]
   }
  ]
 }
