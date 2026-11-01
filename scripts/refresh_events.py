@@ -1242,7 +1242,10 @@ def merge(items: list[dict]) -> list[dict]:
         n = norm(e)
         for other in by_day.get((e.get("start") or "")[:10], []):
             o = norm(other)
-            if (n in o or o in n or SequenceMatcher(None, n, o).ratio() >= 0.75) and min(len(n), len(o)) >= 6:
+            # similar names only count at the same place and about the same time ("Storytime for Babies" at two
+            # branches, or two neighborhood farmers markets, are different events)
+            if (n in o or o in n or SequenceMatcher(None, n, o).ratio() >= 0.75) and min(len(n), len(o)) >= 6 \
+                    and _miles(e, other) <= 0.2 and _hours_apart(e, other) <= 3:
                 return other, "similar name"
             if e.get("source") == other.get("source"):
                 continue  # a source doesn't list the same event twice, but it does list look-alike sessions
