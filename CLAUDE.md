@@ -7,7 +7,7 @@ Static HTML pages + JSON data, rebuilt twice a week by a Python script in GitHub
 
 | File | What it is |
 |---|---|
-| `index.html` | **Family outings** page ("Where should we go today?"). Three tabs (`S.mode`): *Outings & events* (`out`; ≈20 hand-curated places + kid/family events), *🛝 Playgrounds* (`pg`; 135 SF Rec & Park playgrounds, embedded as `const PLAYGROUNDS=[…]`) and *🥋 Classes* (`cl`; youth classes from `data/classes.json`, ranked by distance, filters `S.clCat`/`S.clAge`, signup badge, no weather). |
+| `index.html` | **Family outings** page ("Where should we go today?"). Three tabs (`S.mode`): *Outings & events* (`out`; 11 hand-curated places — museums, zoos, farms — plus kid/family events), *🌳 Parks & playgrounds* (`pg`; 135 SF Rec & Park playgrounds plus Crissy Field, Ocean Beach, Redwood Regional Park and Central Park San Mateo, embedded as `const PLAYGROUNDS=[…]`; parks live only here) and *🥋 Classes* (`cl`; youth classes from `data/classes.json`, ranked by distance, filters `S.clCat`/`S.clAge`, signup badge, no weather). |
 | `talks-concerts.html` | **Talks & concerts** page ("Go hear something good."; ticket icon, SF skyline). Same engine, no places, its own tags. Opens on This month · Anytime. |
 
 Both GitHub pages share almost all of their JavaScript. **A change to shared behavior (cards, filters, map, likes, venues, compact controls) usually needs to be made in both `index.html` and `talks-concerts.html`**. Page-specific differences: `PLACES`/`PLAYGROUNDS` (family only), `TAGS` list, default `S.tod` (both pages default to indoor + outdoor; `kv:2` in saved state reset old "outdoor" saves once), `WIN` time windows, kid-focus scoring (family only), localStorage keys (`fdo*` vs `fdo-ct*`), data file names.
