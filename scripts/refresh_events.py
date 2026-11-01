@@ -1242,6 +1242,8 @@ def merge(items: list[dict]) -> list[dict]:
         n = norm(e)
         for other in by_day.get((e.get("start") or "")[:10], []):
             o = norm(other)
+            if e.get("source") == other.get("source"):
+                continue  # a source doesn't list the same event twice, but it does list look-alike programs
             # similar names only count at the same place and about the same time ("Storytime for Babies" at two
             # branches, or two neighborhood farmers markets, are different events)
             if (n in o or o in n or SequenceMatcher(None, n, o).ratio() >= 0.75) and min(len(n), len(o)) >= 6 \

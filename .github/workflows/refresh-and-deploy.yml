@@ -41,6 +41,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A events.json specials.ics talks-concerts.json talks-concerts.ics data/geocache.json e/
           git diff --cached --quiet || git commit -m "Refresh events $(date -u +%F)"
+          # code may have been pushed while this ran: catch up first; on a conflict the fresh data wins
+          git pull --rebase -X theirs origin main
           git push
 
   deploy:
