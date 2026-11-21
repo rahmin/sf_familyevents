@@ -7,373 +7,91 @@ X-WR-CALNAME:Family events: one day only
 X-WR-TIMEZONE:America/Los_Angeles
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 BEGIN:VEVENT
-UID:lk-first-steps-babies-caregivers-2026-11-19@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261119T170000Z
-DTEND:20261119T183000Z
-SUMMARY:First Steps (babies + caregivers)
-LOCATION:Family Connections Centers\, Excelsior
-DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://fccente
- rs.org/event/first-steps-excelsior-4/2026-11-19/?utm_campaign=local-kiddo
- -sf&utm_medium=referral&utm_source=www.localkiddo.com
-URL:https://fccenters.org/event/first-steps-excelsior-4/2026-11-19/?utm_ca
- mpaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+UID:lk-birding-the-hill-guided-birdwatching-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T160000Z
+DTEND:20261121T170000Z
+SUMMARY:Birding the Hill: Guided Birdwatching
+LOCATION:Randall Museum
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://randall
+ museum.org/events/birding-the-hill/var/ri-3.l-L1/?utm_campaign=local-kidd
+ o-sf&utm_medium=referral&utm_source=www.localkiddo.com
+URL:https://randallmuseum.org/events/birding-the-hill/var/ri-3.l-L1/?utm_c
+ ampaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
 END:VEVENT
 BEGIN:VEVENT
-UID:lk-studying-marine-food-webs-with-puke-and-poop-2026-11-19@sf_familyev
- ents
-DTSTAMP:20261119T220610Z
-DTSTART:20261119T180000Z
-DTEND:20261119T233000Z
-SUMMARY:Studying Marine Food Webs with Puke and Poop
-LOCATION:Exploratorium
-DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.exp
- loratorium.edu/visit/calendar/studying-marine-food-webs-puke-and-poop?utm
- _campaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.co
- m
-URL:https://www.exploratorium.edu/visit/calendar/studying-marine-food-webs
- -puke-and-poop?utm_campaign=local-kiddo-sf&utm_medium=referral&utm_source
- =www.localkiddo.com
+UID:lk-kids-storytime-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T170000Z
+DTEND:20261121T180000Z
+SUMMARY:Kids Storytime
+LOCATION:Noe Valley Books\, Noe Valley
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://noevall
+ eybooks.com/event/2026-11-21/kids-storytime?utm_campaign=local-kiddo-sf&u
+ tm_medium=referral&utm_source=www.localkiddo.com
+URL:https://noevalleybooks.com/event/2026-11-21/kids-storytime?utm_campaig
+ n=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
 END:VEVENT
 BEGIN:VEVENT
-UID:lk-toddler-thursday-with-jamaroo-kids-ages-1-4-2026-11-19@sf_familyeve
- nts
-DTSTAMP:20261119T220610Z
-DTSTART:20261119T180000Z
-DTEND:20261119T184500Z
-SUMMARY:Toddler Thursday with JAMaROO Kids (ages 1-4)
-LOCATION:Salesforce Park
-DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.the
- eastcut.org/event/toddler-thursday-3-2-2-2-2-2-2-2-2-2-9-2-26-2-3/?utm_ca
+UID:lk-storytime-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T173000Z
+DTEND:20261121T193000Z
+SUMMARY:Storytime
+LOCATION:Black Bird Bookstore\, Outer Sunset
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://blackbi
+ rdsf.com/pages/events?utm_campaign=local-kiddo-sf&utm_medium=referral&utm
+ _source=www.localkiddo.com#?event-id=33606&recurring-date=2026-11-21T17%3
+ A30%3A00.000Z
+URL:https://blackbirdsf.com/pages/events?utm_campaign=local-kiddo-sf&utm_m
+ edium=referral&utm_source=www.localkiddo.com#?event-id=33606&recurring-da
+ te=2026-11-21T17%3A30%3A00.000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-beginning-birding-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T180000Z
+DTEND:20261121T193000Z
+SUMMARY:Beginning Birding
+LOCATION:Candlestick Point State Recreation Area
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.eve
+ ntbrite.com/e/beginning-birding-tickets-2004392429714?utm_campaign=local-
+ kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+URL:https://www.eventbrite.com/e/beginning-birding-tickets-2004392429714?u
+ tm_campaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.
+ com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-free-mobile-rec-rock-wall-skateboarding-lawn-games-2026-11-21@sf_fa
+ milyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T180000Z
+DTEND:20261122T000000Z
+SUMMARY:Free Mobile Rec: Rock Wall\, Skateboarding + Lawn Games
+LOCATION:Potrero Hill Skate Park\, Potrero del Sol
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://sfrecpa
+ rk.org/Calendar.aspx?EID=10849&month=11&year=2026&day=21&calType=0&utm_ca
  mpaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
-URL:https://www.theeastcut.org/event/toddler-thursday-3-2-2-2-2-2-2-2-2-2-
- 9-2-26-2-3/?utm_campaign=local-kiddo-sf&utm_medium=referral&utm_source=ww
+URL:https://sfrecpark.org/Calendar.aspx?EID=10849&month=11&year=2026&day=2
+ 1&calType=0&utm_campaign=local-kiddo-sf&utm_medium=referral&utm_source=ww
  w.localkiddo.com
 END:VEVENT
 BEGIN:VEVENT
-UID:sfpl-2026-11-19-performance-nutcracker-sweets-ballet-mark-foehringer-d
- ance-project@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261119T190000Z
-DTEND:20261119T193000Z
-SUMMARY:Nutcracker Sweets Ballet (Mark Foehringer Dance Project)
-LOCATION:Bayview Branch Library
-DESCRIPTION:A short\, kid-sized Nutcracker ballet.\nhttps://sfpl.org/event
- s/2026/11/19/performance-nutcracker-sweets-ballet-mark-foehringer-dance-p
- roject
-URL:https://sfpl.org/events/2026/11/19/performance-nutcracker-sweets-balle
- t-mark-foehringer-dance-project
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-pop-n-play-2026-11-19@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261119T190000Z
-DTEND:20261119T203000Z
-SUMMARY:Pop N Play
-LOCATION:Family Connections Centers\, Excelsior
-DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://fccente
- rs.org/event/pop-n-play-excelsior-19/2026-11-19/?utm_campaign=local-kiddo
- -sf&utm_medium=referral&utm_source=www.localkiddo.com
-URL:https://fccenters.org/event/pop-n-play-excelsior-19/2026-11-19/?utm_ca
- mpaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-new-moms-group-0-6-months-2026-11-19@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261119T191500Z
-DTEND:20261119T211500Z
-SUMMARY:New Moms Group (0-6 months)
-LOCATION:Outer Village\, Inner Sunset
-DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.his
- awyer.com/outer-village/schedules/activity-set/2053128?day=2026-11-19&sou
- rce=all-activities&utm_campaign=local-kiddo-sf&utm_medium=referral&utm_so
- urce=www.localkiddo.com
-URL:https://www.hisawyer.com/outer-village/schedules/activity-set/2053128?
- day=2026-11-19&source=all-activities&utm_campaign=local-kiddo-sf&utm_medi
- um=referral&utm_source=www.localkiddo.com
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-big-feed-2026-11-19@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261119T220000Z
-DTEND:20261120T000000Z
-SUMMARY:Big Feed
-LOCATION:Aquarium of the Bay\, PIER 39
-DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.aqu
- ariumofthebay.org/daily-programs/?utm_campaign=local-kiddo-sf&utm_medium=
- referral&utm_source=www.localkiddo.com
-URL:https://www.aquariumofthebay.org/daily-programs/?utm_campaign=local-ki
- ddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-free-campfire-program-with-park-rangers-2026-11-19@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261119T230000Z
-DTEND:20261119T233000Z
-SUMMARY:Free Campfire Program with Park Rangers
-LOCATION:Presidio Tunnel Tops
-DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.par
- ksconservancy.org/events/crissy-field-presidio-san-francisco-presidio-tun
- nel-tops/campfire-program?utm_campaign=local-kiddo-sf&utm_medium=referral
- &utm_source=www.localkiddo.com
-URL:https://www.parksconservancy.org/events/crissy-field-presidio-san-fran
- cisco-presidio-tunnel-tops/campfire-program?utm_campaign=local-kiddo-sf&u
- tm_medium=referral&utm_source=www.localkiddo.com
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-free-winter-crafts-mini-wreaths-2026-11-19@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261119T230000Z
-DTEND:20261120T020000Z
-SUMMARY:Free Winter Crafts: Mini Wreaths
-LOCATION:Union Square
-DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://visitun
- ionsquaresf.com/park-programs?utm_campaign=local-kiddo-sf&utm_medium=refe
- rral&utm_source=www.localkiddo.com
-URL:https://visitunionsquaresf.com/park-programs?utm_campaign=local-kiddo-
- sf&utm_medium=referral&utm_source=www.localkiddo.com
-END:VEVENT
-BEGIN:VEVENT
-UID:sfpl-2026-11-19-performance-guitar-sing-along-grandpa-alan@sf_familyev
- ents
-DTSTAMP:20261119T220610Z
-DTSTART:20261119T233000Z
-DTEND:20261120T000000Z
-SUMMARY:Guitar Sing-Along with Grandpa Alan
-LOCATION:Eureka Valley Branch Library
-DESCRIPTION:Sing along to guitar with Grandpa Alan.\nhttps://sfpl.org/even
- ts/2026/11/19/performance-guitar-sing-along-grandpa-alan
-URL:https://sfpl.org/events/2026/11/19/performance-guitar-sing-along-grand
- pa-alan
-END:VEVENT
-BEGIN:VEVENT
-UID:sfpl-2026-11-19-activity-art-stories-ase-arts@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261120T000000Z
-DTEND:20261120T011500Z
-SUMMARY:The Art in Stories with Asé Arts
-LOCATION:Main Library
-DESCRIPTION:In this six-week series\, journey through a world of stories a
- s we examine the art found in books. Each week will feature a different b
- ook\, where young artists will discover how authors use words to spark im
- agination and illustrators bring the words to life through image.\nhttps:
- //sfpl.org/events/2026/11/19/activity-art-stories-ase-arts
-URL:https://sfpl.org/events/2026/11/19/activity-art-stories-ase-arts
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-free-waterfront-walkabout-art-stroll-2026-11-19@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261120T010000Z
-DTEND:20261120T040000Z
-SUMMARY:Free Waterfront Walkabout Art Stroll
-LOCATION:Embarcadero
-DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.eve
- ntbrite.com/e/waterfront-walkabout-free-sf-art-stroll-tickets-19989866248
- 06?utm_campaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localki
- ddo.com
-URL:https://www.eventbrite.com/e/waterfront-walkabout-free-sf-art-stroll-t
- ickets-1998986624806?utm_campaign=local-kiddo-sf&utm_medium=referral&utm_
- source=www.localkiddo.com
-END:VEVENT
-BEGIN:VEVENT
-UID:lk-fatherhood-group-2026-11-19@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261120T013000Z
-DTEND:20261120T033000Z
-SUMMARY:Fatherhood Group
-LOCATION:Outer Village\, Inner Sunset
-DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.his
- awyer.com/outer-village/schedules/activity-set/2020041?day=2026-11-19&sou
- rce=all-activities&utm_campaign=local-kiddo-sf&utm_medium=referral&utm_so
- urce=www.localkiddo.com
-URL:https://www.hisawyer.com/outer-village/schedules/activity-set/2020041?
- day=2026-11-19&source=all-activities&utm_campaign=local-kiddo-sf&utm_medi
- um=referral&utm_source=www.localkiddo.com
-END:VEVENT
-BEGIN:VEVENT
-UID:ml-885601-2026-11-19@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261120T020000Z
-DTEND:20261120T040000Z
-SUMMARY:Alejandro Almanza-Pereda artist talk
-LOCATION:Southern Exposure
-DESCRIPTION:Don’t miss our upcoming talk with Mexico City-based artist A
- lejandro Almanza-Pereda (Alejandro Almanza Pereda) this Thursday\, Novemb
- er 19 at 6PM at SoEx\, as part of exhibition programming for Land/Water/M
- eat/Noise! 📼🌊⚖️ \nhttps://missionlocal.org/event/southern-expos
- ure-alejandro-almanza-pereda-artist-talk/
-URL:https://missionlocal.org/event/southern-exposure-alejandro-almanza-per
- eda-artist-talk/
-END:VEVENT
-BEGIN:VEVENT
-UID:ml-884610-2026-11-19@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261120T020000Z
-DTEND:20261120T053000Z
-SUMMARY:Hearty Vegetarian Holidays: Spice Up Thanksgiving
-LOCATION:18 Reasons
-DESCRIPTION:For home cooks who prefer the side dishes at Thanksgiving\, ve
- getarians and vegans\, rethink your holiday table and bring Latin spice t
- o a hearty holiday meal where vegetables are the stars! Bring mushrooms t
- o the center w\nhttps://missionlocal.org/event/18-reasons-hearty-vegetari
- an-holidays-spice-up-thanksgiving/
-URL:https://missionlocal.org/event/18-reasons-hearty-vegetarian-holidays-s
- pice-up-thanksgiving/
-END:VEVENT
-BEGIN:VEVENT
-UID:ml-882833-2026-11-19@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261120T030000Z
-DTEND:20261120T063000Z
-SUMMARY:Micro To Macro – Microorganisms\, Sound and Robots
-LOCATION:Gray Area Grand Theater
-DESCRIPTION:Doors: 7 PM Performance: 8 PM Q&A: 9:45 PM What happens when l
- iving systems are given control of machines and synthesizers? Scott Kilda
- ll and Kal Spelletich team up to perform with electronics that capture th
- e hidden sig\nhttps://missionlocal.org/event/gray-area-grand-theater-micr
- o-to-macro-microorganisms-sound-and-robots/
-URL:https://missionlocal.org/event/gray-area-grand-theater-micro-to-macro-
- microorganisms-sound-and-robots/
-END:VEVENT
-BEGIN:VEVENT
-UID:ml-10041142-2026-11-19@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261120T033000Z
-DTEND:20261120T050000Z
-SUMMARY:Salt & Spirit: An Operatic Experience Rooted in Gullah-Geechee Spi
- rituals
-LOCATION:Z Space
-DESCRIPTION:November 14-21\, 2026 Z Space’s Steindler Stage Opening Oper
- a Parallèle’s 17th season\, Salt & Spirit is a powerful world premiere
-  inspired by the enduring musical traditions of the Gullah-Geechee people
-  of the Carolinas. \nhttps://missionlocal.org/event/z-space-salt-spirit-a
- n-operatic-experience-rooted-in-gullah-geechee-spirituals/2026-11-19/
-URL:https://missionlocal.org/event/z-space-salt-spirit-an-operatic-experie
- nce-rooted-in-gullah-geechee-spirituals/2026-11-19/
-END:VEVENT
-BEGIN:VEVENT
-UID:ml-884827-2026-11-19@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261120T040000Z
-DTEND:20261120T063000Z
-SUMMARY:Kimbra: Vows Reimagined
-LOCATION:Brava Theater
-DESCRIPTION:VIP Doors: 5:30pm Early Entry Doors: 6:30pm General Admission 
- Doors: 7:00pm Show: 8:00pm To celebrate the 15th anniversary of her debut
-  album\, Vows\, Kimbra returns to the songs that marked her coming of age
-  and introduce\nhttps://missionlocal.org/event/brava-theater-kimbra-vows-
- reimagined/
-URL:https://missionlocal.org/event/brava-theater-kimbra-vows-reimagined/
-END:VEVENT
-BEGIN:VEVENT
-UID:fc-sfs-spca-holiday-windows-cute-puppies-macys-union-square-nov-2026-1
- 1-20@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261120T200000Z
-DTEND:20261121T010000Z
-SUMMARY:SF’s SPCA “Holiday Windows” w/ Cute Puppies at Macy’s Unio
- n Square (Nov. 20-Dec. 31)
-LOCATION:Macy's Union Square
-DESCRIPTION:Kimberly WhiteThe San Francisco SPCA will once again fill the 
- city with holiday cheer with the iconic SF SPCA Holiday Windows at Macy
- ’s Union Square\, for its 40th year\, bringing adorable\, adoptable pup
- pies and kittens to the heart of San Francisco from November 20 through D
- ecember 31\, 2026. The live\nhttps://sf.funcheap.com/sfs-spca-holiday-win
- dows-cute-puppies-macys-union-square-nov-20dec-31/
-URL:https://sf.funcheap.com/sfs-spca-holiday-windows-cute-puppies-macys-un
- ion-square-nov-20dec-31/
-END:VEVENT
-BEGIN:VEVENT
-UID:fc-city-centers-tree-lighting-celebration-san-ramon-2026-11-20@sf_fami
- lyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261121T020000Z
-DTEND:20261121T030000Z
-SUMMARY:2026 City Center’s Tree Lighting Celebration (San Ramon)
-LOCATION:City Center Bishop Ranch
-DESCRIPTION:City Center Bishop RanchHoliday Tree Lighting Ceremony Nov 20\
- , 2026 6:00pm–7:00pm Join us at City Center Bishop Ranch on Friday\, No
- vember 20 from 6 PM to 7 PM for our Holiday Tree Lighting Ceremony. Delig
- ht in the sounds of the season with performances by the Monte Vista Band 
- and a group of incredib\nhttps://sf.funcheap.com/city-centers-tree-lighti
- ng-celebration-san-ramon/
-URL:https://sf.funcheap.com/city-centers-tree-lighting-celebration-san-ram
- on/
-END:VEVENT
-BEGIN:VEVENT
-UID:ml-885592-2026-11-20@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261121T020000Z
-DTEND:20261121T050000Z
-SUMMARY:Adios con Amor y Fuerza – In Their Name (closing reception & dra
- g show)
-LOCATION:SOMArts Cultural Center
-DESCRIPTION:Celebrate the closing of this year’s Día de Los Muertos exh
- ibition with a special evening of remembrance. The program features drag 
- performances from new and returning artists embodying love and queer resi
- lience. In Thei\nhttps://missionlocal.org/event/somarts-cultural-center-a
- dios-con-amor-y-fuerza-in-their-name-closing-reception-drag-show/
-URL:https://missionlocal.org/event/somarts-cultural-center-adios-con-amor-
- y-fuerza-in-their-name-closing-reception-drag-show/
-END:VEVENT
-BEGIN:VEVENT
-UID:ml-885822-2026-11-20@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261121T020000Z
-DTEND:20261121T040000Z
-SUMMARY:MY 90s: Greta Snider Film Retrospective
-LOCATION:Artists’ Television Access
-DESCRIPTION:Artist Television Access\, home of Other Cinema and countless 
- wild art adventures\, was a huge factor in my early filmmaking. I’m tak
- ing this opportunity ahead of the fall break to thank ATA and share some 
- vibes from the e\nhttps://missionlocal.org/event/ata-my-90s-greta-snider-
- film-retrospective/
-URL:https://missionlocal.org/event/ata-my-90s-greta-snider-film-retrospect
- ive/
-END:VEVENT
-BEGIN:VEVENT
-UID:ml-884199-2026-11-20@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261121T040000Z
-DTEND:20261121T060000Z
-SUMMARY:New Music for String Quartet and Voice
-LOCATION:Community Music Center
-DESCRIPTION:The San Francisco Bay Area Chapter of NACUSA (National Associa
- tion of Composers USA) and the Accidental Composers Collective will prese
- nt an evening dedicated to music for string quartet\, and string quartet 
- and soprano. \nhttps://missionlocal.org/event/community-music-center-new-
- music-for-string-quartet-and-voice/
-URL:https://missionlocal.org/event/community-music-center-new-music-for-st
- ring-quartet-and-voice/
-END:VEVENT
-BEGIN:VEVENT
-UID:ml-884006-2026-11-20@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261121T050000Z
-DTEND:20261121T075900Z
-SUMMARY:FJAAK & HIROKO YAMAMURA
-LOCATION:Public Works
-DESCRIPTION:Friday\, November 20th\, 9pm – 3am Main Room / 21+ / Limited
-  Capacity FJAAK & HIROKO YAMAMURA Presented By Public Works LINEUP: FJAAK
-  HIROKO YAMAMURA Clancy Hickinbotham b2b Monoclick (Room 4 Improvement)\n
- https://missionlocal.org/event/public-works-fjaak-hiroko-yamamura/
-URL:https://missionlocal.org/event/public-works-fjaak-hiroko-yamamura/
-END:VEVENT
-BEGIN:VEVENT
-UID:ml-885569-2026-11-20@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261121T050000Z
-DTEND:20261121T070000Z
-SUMMARY:Maddie Zahm
-LOCATION:The Chapel
-DESCRIPTION:MADDIE ZAHM Fri Nov 20 Everything All The Time Tour Doors at 8
- :00PM / Show at 9:00PM All Ages\,\nhttps://missionlocal.org/event/the-cha
- pel-maddie-zahm/
-URL:https://missionlocal.org/event/the-chapel-maddie-zahm/
+UID:lk-free-west-coast-craft-winter-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T180000Z
+DTEND:20261122T020000Z
+SUMMARY:Free West Coast Craft: Winter
+LOCATION:Fort Mason Center
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.wes
+ tcoastcraft.com/wcc-attend?utm_campaign=local-kiddo-sf&utm_medium=referra
+ l&utm_source=www.localkiddo.com
+URL:https://www.westcoastcraft.com/wcc-attend?utm_campaign=local-kiddo-sf&
+ utm_medium=referral&utm_source=www.localkiddo.com
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-882756-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261121T180000Z
 DTEND:20261121T200000Z
 SUMMARY:Holiday Wreathmaking
@@ -387,8 +105,21 @@ URL:https://missionlocal.org/event/garden-for-the-environment-holiday-wrea
  thmaking/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-mission-science-workshop-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T180000Z
+DTEND:20261121T230000Z
+SUMMARY:Mission Science Workshop
+LOCATION:Excelsior
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.mis
+ sionscienceworkshop.org/?utm_campaign=local-kiddo-sf&utm_medium=referral&
+ utm_source=www.localkiddo.com
+URL:https://www.missionscienceworkshop.org/?utm_campaign=local-kiddo-sf&ut
+ m_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:msw-excelsior-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261121T180000Z
 DTEND:20261121T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -400,23 +131,21 @@ DESCRIPTION:Free drop-in hands-on science: build and tinker\, explore bone
 URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
-UID:fc-annual-great-dickens-christmas-fair-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+UID:lk-reading-room-recess-cart-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
 DTSTART:20261121T180000Z
-DTEND:20261122T020000Z
-SUMMARY:SF’s 42nd Annual Great Dickens Christmas Fair (Nov. 21-Dec. 20)
-LOCATION:Cow Palace
-DESCRIPTION:SF’s 42nd Annual Great Dickens Christmas Fair (Nov. 21-Dec. 
- 20) The Great Dickens Christmas Fair via Rich Yee The Great Dickens Chris
- tmas Fair is a one-of-a-kind trip to Victorian London\, where Christmas E
- ve never ends. More than 140\,000 square feet of the Cow Palace transform
- s into a maze of lampli\nhttps://sf.funcheap.com/annual-great-dickens-chr
- istmas-fair/
-URL:https://sf.funcheap.com/annual-great-dickens-christmas-fair/
+DTEND:20261122T000000Z
+SUMMARY:Reading Room + Recess Cart
+LOCATION:Salesforce Park
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.tjp
+ a.org/salesforce-transit-center/activities?utm_campaign=local-kiddo-sf&ut
+ m_medium=referral&utm_source=www.localkiddo.com
+URL:https://www.tjpa.org/salesforce-transit-center/activities?utm_campaign
+ =local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
 END:VEVENT
 BEGIN:VEVENT
 UID:fc-soundbites-free-stem-kides-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261121T180000Z
 DTEND:20261121T200000Z
 SUMMARY:SoundBites: Free STEM for Kides
@@ -430,9 +159,37 @@ DESCRIPTION:Submitted by the Event OrganizerVacuum Tube Crafting Get creat
 URL:https://sf.funcheap.com/soundbites-free-stem-kides/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-the-mom-walk-collective-mom-walk-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T180000Z
+DTEND:20261121T190000Z
+SUMMARY:The Mom Walk Collective: Mom Walk
+LOCATION:Golden Gate Park
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.ins
+ tagram.com/p/DfC8Mpbz2NX/?utm_campaign=local-kiddo-sf&utm_medium=referral
+ &utm_source=www.localkiddo.com
+URL:https://www.instagram.com/p/DfC8Mpbz2NX/?utm_campaign=local-kiddo-sf&u
+ tm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-children-s-music-with-toby-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T181500Z
+DTEND:20261121T201500Z
+SUMMARY:Children's Music with Toby
+LOCATION:Outer Village\, Inner Sunset
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.his
+ awyer.com/outer-village/schedules/activity-set/2020013?day=2026-11-21&sou
+ rce=all-activities&utm_campaign=local-kiddo-sf&utm_medium=referral&utm_so
+ urce=www.localkiddo.com
+URL:https://www.hisawyer.com/outer-village/schedules/activity-set/2020013?
+ day=2026-11-21&source=all-activities&utm_campaign=local-kiddo-sf&utm_medi
+ um=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-11-21-early-learning-saturday-morning-playtimes@sf_familyeve
  nts
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261121T183000Z
 DTEND:20261121T203000Z
 SUMMARY:Saturday Morning Playtimes
@@ -444,8 +201,22 @@ URL:https://sfpl.org/events/2026/11/21/early-learning-saturday-morning-pla
  ytimes
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-saturday-science-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T183000Z
+DTEND:20261121T193000Z
+SUMMARY:Saturday Science
+LOCATION:Randall Museum
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://randall
+ museum.org/events/saturday-science-for-november-2026/var/ri-2.l-L1?utm_ca
+ mpaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+URL:https://randallmuseum.org/events/saturday-science-for-november-2026/va
+ r/ri-2.l-L1?utm_campaign=local-kiddo-sf&utm_medium=referral&utm_source=ww
+ w.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-11-21-activity-bubbleology@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261121T190000Z
 DTEND:20261121T203000Z
 SUMMARY:Bubbleology
@@ -458,8 +229,50 @@ DESCRIPTION:Discover your inner scientist as we explore the world of bubbl
 URL:https://sfpl.org/events/2026/11/21/activity-bubbleology
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-free-winter-crafts-gelli-printing-with-scrap-sf-2026-11-21@sf_famil
+ yevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T190000Z
+DTEND:20261121T220000Z
+SUMMARY:Free Winter Crafts: Gelli Printing with SCRAP SF
+LOCATION:Union Square
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://visitun
+ ionsquaresf.com/park-programs?utm_campaign=local-kiddo-sf&utm_medium=refe
+ rral&utm_source=www.localkiddo.com
+URL:https://visitunionsquaresf.com/park-programs?utm_campaign=local-kiddo-
+ sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-gingerbread-house-lighting-ceremony-with-sf-boys-c-2026-11-21@sf_fa
+ milyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T190000Z
+DTEND:20261121T210000Z
+SUMMARY:Gingerbread House Lighting Ceremony with SF Boys Chorus
+LOCATION:Fairmont San Francisco\, Nob Hill
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.fai
+ rmont-san-francisco.com/events/gingerbread-house-lighting/?utm_campaign=l
+ ocal-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+URL:https://www.fairmont-san-francisco.com/events/gingerbread-house-lighti
+ ng/?utm_campaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localk
+ iddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-glow-festival-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T190000Z
+DTEND:20261122T000000Z
+SUMMARY:Glow Festival
+LOCATION:Exploratorium
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.exp
+ loratorium.edu/visit/calendar/glow-festival?utm_campaign=local-kiddo-sf&u
+ tm_medium=referral&utm_source=www.localkiddo.com
+URL:https://www.exploratorium.edu/visit/calendar/glow-festival?utm_campaig
+ n=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:sfjazz-family-matinee-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261121T190000Z
 DTEND:20261121T210000Z
 SUMMARY:SFJAZZ Family Matinee: Mariachi Flor de Toloache
@@ -470,8 +283,24 @@ DESCRIPTION:An all-ages matinee with the Grammy-winning all-women mariachi
 URL:https://www.sfjazz.org/education/family-matinee-overview
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-saturday-new-parent-circle-newborn-18-months-2026-11-21@sf_familyev
+ ents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T190000Z
+DTEND:20261121T200000Z
+SUMMARY:Saturday New Parent Circle: Newborn - 18 months
+LOCATION:Natural Resources\, 1051 Valencia St
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.nat
+ uralresources-sf.com/products/saturday-new-parent-circle-newborn-18-month
+ s?start=2026-11-01T00:00&select=2026-11-21T11:00&utm_campaign=local-kiddo
+ -sf&utm_medium=referral&utm_source=www.localkiddo.com
+URL:https://www.naturalresources-sf.com/products/saturday-new-parent-circl
+ e-newborn-18-months?start=2026-11-01T00:00&select=2026-11-21T11:00&utm_ca
+ mpaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:scn-10008531-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261121T193000Z
 DTEND:20261121T203000Z
 SUMMARY:Meet an Animal Ambassador @ Randall Museum
@@ -484,8 +313,22 @@ URL:https://sfchildrennature.org/event/meet-the-animal-keepers-randall-mus
  eum-2/2026-11-21/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-storytime-science-for-kids-glow-ages-4-8-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T200000Z
+DTEND:20261121T210000Z
+SUMMARY:Storytime Science for Kids: Glow (ages 4-8)
+LOCATION:Exploratorium
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.exp
+ loratorium.edu/visit/calendar/storytime-science-kids-glow-sat?utm_campaig
+ n=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+URL:https://www.exploratorium.edu/visit/calendar/storytime-science-kids-gl
+ ow-sat?utm_campaign=local-kiddo-sf&utm_medium=referral&utm_source=www.loc
+ alkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:fc-sun-bass-free-dj-popup-crissy-field-sf-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261121T200000Z
 DTEND:20261122T010000Z
 SUMMARY:“Sun Down Bass Up” Free DJ Pop-Up in Crissy Field (SF)
@@ -499,8 +342,50 @@ DESCRIPTION:Sun Down Bass Up: Free DJ Pop-Up 2026 (Crissy Field)Sun Down B
 URL:https://sf.funcheap.com/sun-bass-free-dj-popup-crissy-field-sf/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-afternoon-art-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T210000Z
+DTEND:20261122T000000Z
+SUMMARY:Afternoon Art
+LOCATION:Randall Museum
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://randall
+ museum.org/events/afternoon-art-for-november-2026/var/ri-2.l-L1?utm_campa
+ ign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+URL:https://randallmuseum.org/events/afternoon-art-for-november-2026/var/r
+ i-2.l-L1?utm_campaign=local-kiddo-sf&utm_medium=referral&utm_source=www.l
+ ocalkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-queer-and-trans-family-meetup-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T213000Z
+DTEND:20261121T233000Z
+SUMMARY:Queer and Trans Family Meetup
+LOCATION:Outer Village\, Inner Sunset
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.his
+ awyer.com/outer-village/schedules/activity-set/2065947?day=2026-11-21&sou
+ rce=all-activities&utm_campaign=local-kiddo-sf&utm_medium=referral&utm_so
+ urce=www.localkiddo.com
+URL:https://www.hisawyer.com/outer-village/schedules/activity-set/2065947?
+ day=2026-11-21&source=all-activities&utm_campaign=local-kiddo-sf&utm_medi
+ um=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-squid-dissection-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T220000Z
+DTEND:20261122T000000Z
+SUMMARY:Squid Dissection
+LOCATION:Aquarium of the Bay\, PIER 39
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.aqu
+ ariumofthebay.org/daily-programs/?utm_campaign=local-kiddo-sf&utm_medium=
+ referral&utm_source=www.localkiddo.com
+URL:https://www.aquariumofthebay.org/daily-programs/?utm_campaign=local-ki
+ ddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-11-21-activity-turkish-story-hour@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261121T220000Z
 DTEND:20261121T233000Z
 SUMMARY:Turkish Story Hour
@@ -513,8 +398,36 @@ DESCRIPTION:Enjoy lively read alouds of children’s picture books in Turk
 URL:https://sfpl.org/events/2026/11/21/activity-turkish-story-hour
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-fraggle-rock-back-to-the-rock-live-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261121T230000Z
+DTEND:20261122T010000Z
+SUMMARY:Fraggle Rock: Back to the Rock Live
+LOCATION:Golden Gate Theatre
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://us.atgt
+ ickets.com/events/fraggle-rock/golden-gate-theatre/?utm_campaign=local-ki
+ ddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+URL:https://us.atgtickets.com/events/fraggle-rock/golden-gate-theatre/?utm
+ _campaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.co
+ m
+END:VEVENT
+BEGIN:VEVENT
+UID:fc-friendsgiving-palo-alto-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261122T003000Z
+DTEND:20261122T033000Z
+SUMMARY:Friendsgiving in Palo Alto
+LOCATION:Lucie Stern Community Center
+DESCRIPTION:Submitted by the Event OrganizerPalo Alto Magical BridgePalo A
+ lto friends! Join us for Friendsgiving — the third annual celebration o
+ f conversation and community. Location: Lucie Stern Ballroom This tickete
+ d event invites you to enjoy interactive activities that spark authentic 
+ connection\, from conv\nhttps://sf.funcheap.com/friendsgiving-palo-alto/
+URL:https://sf.funcheap.com/friendsgiving-palo-alto/
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-882866-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261122T003000Z
 DTEND:20261122T020000Z
 SUMMARY:“Castro on Fire”: A Queer Resistance Walking Tour by Unspeakab
@@ -529,8 +442,37 @@ URL:https://missionlocal.org/event/glbt-history-museum-castro-on-fire-a-qu
  eer-resistance-walking-tour-by-unspeakable-vice/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-family-techno-glow-rave-included-with-zoolights-ti-2026-11-21@sf_fa
+ milyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261122T020000Z
+DTEND:20261122T050000Z
+SUMMARY:Family Techno Glow Rave (included with ZooLights ticket)
+LOCATION:SF Zoo
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.sfz
+ oo.org/event/family-techno-glow-rave/?utm_campaign=local-kiddo-sf&utm_med
+ ium=referral&utm_source=www.localkiddo.com
+URL:https://www.sfzoo.org/event/family-techno-glow-rave/?utm_campaign=loca
+ l-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-886962-2026-11-21@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261122T020000Z
+DTEND:20261122T040000Z
+SUMMARY:Navrang: Naach Showcase Season 9
+LOCATION:Brava Theater
+DESCRIPTION:NAVRANG: Naach SF Season 9 Showcase is a vibrant celebration o
+ f Indian dance\, music\, and movement in every color. Join us at San Fran
+ cisco’s iconic Brava Theater for an unforgettable evening featuring per
+ formances by the\nhttps://missionlocal.org/event/brava-theater-navrang-na
+ ach-showcase-season-9/
+URL:https://missionlocal.org/event/brava-theater-navrang-naach-showcase-se
+ ason-9/
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-880460-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261122T030000Z
 DTEND:20261122T050000Z
 SUMMARY:La Caravana
@@ -544,7 +486,7 @@ URL:https://missionlocal.org/event/dance-mission-theater-la-caravana/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-880795-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261122T030000Z
 DTEND:20261122T041500Z
 SUMMARY:Ragamenco
@@ -558,7 +500,7 @@ URL:https://missionlocal.org/event/red-poppy-art-house-ragamenco/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10041143-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261122T033000Z
 DTEND:20261122T050000Z
 SUMMARY:Salt & Spirit: An Operatic Experience Rooted in Gullah-Geechee Spi
@@ -574,7 +516,7 @@ URL:https://missionlocal.org/event/z-space-salt-spirit-an-operatic-experie
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10041094-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261122T040000Z
 DTEND:20261122T060000Z
 SUMMARY:Lynne Kaufman – The Secret Museum
@@ -589,7 +531,7 @@ URL:https://missionlocal.org/event/the-marsh-lynne-kaufman-the-secret-muse
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-884023-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261122T050000Z
 DTEND:20261122T075900Z
 SUMMARY:DEATHPACT: From Darkness\, Comes Light: Eclipsed
@@ -603,7 +545,7 @@ URL:https://missionlocal.org/event/public-works-deathpact-from-darkness-co
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-885572-2026-11-21@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261122T050000Z
 DTEND:20261122T070000Z
 SUMMARY:Poi Dog Pondering
@@ -614,8 +556,21 @@ DESCRIPTION:(((folkYEAH!))) Presents Poi Dog Pondering Sat Nov 21 Archer M
 URL:https://missionlocal.org/event/the-chapel-poi-dog-pondering/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-free-west-coast-craft-winter-2026-11-22@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261122T180000Z
+DTEND:20261123T020000Z
+SUMMARY:Free West Coast Craft: Winter
+LOCATION:Fort Mason Center
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.wes
+ tcoastcraft.com/wcc-attend?utm_campaign=local-kiddo-sf&utm_medium=referra
+ l&utm_source=www.localkiddo.com
+URL:https://www.westcoastcraft.com/wcc-attend?utm_campaign=local-kiddo-sf&
+ utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:sfmoma-krazy-kites-with-scrap-2026-11-22@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261122T180000Z
 DTEND:20261122T210000Z
 SUMMARY:Krazy Kites with SCRAP
@@ -625,26 +580,50 @@ DESCRIPTION:Family Program at SFMOMA. Check the event page for admission a
 URL:https://www.sfmoma.org/event/krazy-kites-with-scrap/
 END:VEVENT
 BEGIN:VEVENT
-UID:fc-sfs-42nd-annual-great-dickens-christmas-fair-nov-21-dec-20-2026-11-
- 22@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261122T180000Z
-DTEND:20261123T020000Z
-SUMMARY:SF’s 42nd Annual Great Dickens Christmas Fair (Nov. 21-Dec. 20)
-LOCATION:Cow Palace
-DESCRIPTION:SF’s 42nd Annual Great Dickens Christmas Fair (Nov. 21-Dec. 
- 20) The Great Dickens Christmas Fair via Rich Yee The Great Dickens Chris
- tmas Fair is a one-of-a-kind trip to Victorian London\, where Christmas E
- ve never ends. More than 140\,000 square feet of the Cow Palace transform
- s into a maze of lampli\nhttps://sf.funcheap.com/sfs-42nd-annual-great-di
- ckens-christmas-fair-nov-21-dec-20/
-URL:https://sf.funcheap.com/sfs-42nd-annual-great-dickens-christmas-fair-n
- ov-21-dec-20/
+UID:lk-free-winter-crafts-thanksgiving-cards-with-maker-s-2026-11-22@sf_fa
+ milyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261122T190000Z
+DTEND:20261122T220000Z
+SUMMARY:Free Winter Crafts: Thanksgiving Cards with Maker Studio Kidz
+LOCATION:Union Square
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://visitun
+ ionsquaresf.com/park-programs?utm_campaign=local-kiddo-sf&utm_medium=refe
+ rral&utm_source=www.localkiddo.com
+URL:https://visitunionsquaresf.com/park-programs?utm_campaign=local-kiddo-
+ sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-glow-festival-2026-11-22@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261122T190000Z
+DTEND:20261123T000000Z
+SUMMARY:Glow Festival
+LOCATION:Exploratorium
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.exp
+ loratorium.edu/visit/calendar/glow-festival?utm_campaign=local-kiddo-sf&u
+ tm_medium=referral&utm_source=www.localkiddo.com
+URL:https://www.exploratorium.edu/visit/calendar/glow-festival?utm_campaig
+ n=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-storytime-science-for-kids-glow-ages-4-8-2026-11-22@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261122T200000Z
+DTEND:20261122T210000Z
+SUMMARY:Storytime Science for Kids: Glow (ages 4-8)
+LOCATION:Exploratorium
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.exp
+ loratorium.edu/visit/calendar/storytime-science-kids-glow-sun?utm_campaig
+ n=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+URL:https://www.exploratorium.edu/visit/calendar/storytime-science-kids-gl
+ ow-sun?utm_campaign=local-kiddo-sf&utm_medium=referral&utm_source=www.loc
+ alkiddo.com
 END:VEVENT
 BEGIN:VEVENT
 UID:sfpl-2026-11-22-social-self-guided-play-and-learning-activities@sf_fam
  ilyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261122T211500Z
 DTEND:20261122T221500Z
 SUMMARY:Self-Guided Play and Learning Activities
@@ -658,9 +637,22 @@ URL:https://sfpl.org/events/2026/11/22/social-self-guided-play-and-learnin
  g-activities
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-big-feed-2026-11-22@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261122T220000Z
+DTEND:20261123T000000Z
+SUMMARY:Big Feed
+LOCATION:Aquarium of the Bay\, PIER 39
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.aqu
+ ariumofthebay.org/daily-programs/?utm_campaign=local-kiddo-sf&utm_medium=
+ referral&utm_source=www.localkiddo.com
+URL:https://www.aquariumofthebay.org/daily-programs/?utm_campaign=local-ki
+ ddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:sfmoma-butoh-family-workshop-with-judith-kajiwara-2026-11-22@sf_family
  events
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261122T220000Z
 DTEND:20261123T000000Z
 SUMMARY:Butoh Family Workshop with Judith Kajiwara
@@ -673,7 +665,7 @@ URL:https://www.sfmoma.org/event/butoh-family-workshop-with-judith-kajiwar
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-880464-2026-11-22@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261122T220000Z
 DTEND:20261123T030000Z
 SUMMARY:Get Live or Die Trying – Dance Battle
@@ -687,8 +679,51 @@ URL:https://missionlocal.org/event/dance-mission-theater-get-live-or-die-t
  rying-dance-battle/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-guzheng-performance-with-malina-mei-2026-11-22@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261122T220000Z
+DTEND:20261123T000000Z
+SUMMARY:Guzheng Performance with Malina Mei
+LOCATION:Asian Art Museum
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://calenda
+ r.asianart.org/event/sundays-at-the-asian-art-museum-november-22/?utm_cam
+ paign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+URL:https://calendar.asianart.org/event/sundays-at-the-asian-art-museum-no
+ vember-22/?utm_campaign=local-kiddo-sf&utm_medium=referral&utm_source=www
+ .localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-886587-2026-11-22@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261123T000000Z
+DTEND:20261123T030000Z
+SUMMARY:Helping Hands – An Adobe Books Volunteer Art Show
+LOCATION:Adobe Books
+DESCRIPTION:Join us on Sunday from 4-7 for the opening of Helping Hands\, 
+ an exhibition of art by Adobe Books volunteers past and present. There wi
+ ll be a performance by our friend Kim Randolph 🪈 Full list of artists 
+ announced soon. \nhttps://missionlocal.org/event/adobe-books-helping-hand
+ s-an-adobe-books-volunteer-art-show/
+URL:https://missionlocal.org/event/adobe-books-helping-hands-an-adobe-book
+ s-volunteer-art-show/
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-free-crucial-reggae-sundays-finale-2026-11-22@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261123T003000Z
+DTEND:20261123T033000Z
+SUMMARY:Free Crucial Reggae Sundays Finale
+LOCATION:Golden Gate Bandshell\, Golden Gate Park
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://illumin
+ ate.org/event/crucial-reggae-sundays-finale-november-22/?utm_campaign=loc
+ al-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+URL:https://illuminate.org/event/crucial-reggae-sundays-finale-november-22
+ /?utm_campaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkid
+ do.com
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-10041095-2026-11-22@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261123T010000Z
 DTEND:20261123T030000Z
 SUMMARY:Lynne Kaufman – The Secret Museum
@@ -702,37 +737,66 @@ URL:https://missionlocal.org/event/the-marsh-lynne-kaufman-the-secret-muse
  um/2026-11-22/
 END:VEVENT
 BEGIN:VEVENT
-UID:sfpl-2026-11-23-social-monday-fun-day-family-dance-party@sf_familyeven
- ts
-DTSTAMP:20261119T220610Z
-DTSTART:20261123T180000Z
-DTEND:20261123T190000Z
-SUMMARY:Monday Fun Day Family Dance Party
-LOCATION:Glen Park Branch Library
-DESCRIPTION:Shake your sillies out to a family-friendly pop playlist with
-  your family and friends. For children ages 5 and younger.\nhttps://sfpl
- .org/events/2026/11/23/social-monday-fun-day-family-dance-party
-URL:https://sfpl.org/events/2026/11/23/social-monday-fun-day-family-dance-
- party
+UID:lk-sf-symphony-youth-orchestra-season-opener-2026-11-22@sf_familyevent
+ s
+DTSTAMP:20261121T203022Z
+DTSTART:20261123T020000Z
+DTEND:20261123T040000Z
+SUMMARY:SF Symphony Youth Orchestra Season Opener
+LOCATION:Davies Symphony Hall
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.sfs
+ ymphony.org/Buy-Tickets/2026-27/Youth-Orchestra-Nov?utm_campaign=local-ki
+ ddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+URL:https://www.sfsymphony.org/Buy-Tickets/2026-27/Youth-Orchestra-Nov?utm
+ _campaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.co
+ m
 END:VEVENT
 BEGIN:VEVENT
-UID:sfpl-2026-11-23-activity-monday-morning-play@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261123T180000Z
+UID:sfpl-2026-11-23-early-learning-family-playtime@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261123T190000Z
 DTEND:20261123T200000Z
-SUMMARY:Monday Morning Play
-LOCATION:North Beach Branch Library
-DESCRIPTION:Make new friends and play with toys\, listen to music and meet
-  your neighbors. For children ages 0–6 and their caregivers. Toys will 
- be provided on the dates marked. On all other Monday Morning Play days\, 
- feel free to bring your favorite toys to play with and enjoy.\nhttps://sf
- pl.org/events/2026/11/23/activity-monday-morning-play
-URL:https://sfpl.org/events/2026/11/23/activity-monday-morning-play
+SUMMARY:Family Playtime
+LOCATION:Richmond Branch Library
+DESCRIPTION:For children ages 5 and younger and their caregivers. No ticke
+ ts. Storytime for Babies Songs\, rhymes and books for infants and their c
+ aregivers. Learn more about storytimes with SFPL\, including current offe
+ rings\, at sfpl.org/storytime .\nhttps://sfpl.org/events/2026/11/23/early
+ -learning-family-playtime
+URL:https://sfpl.org/events/2026/11/23/early-learning-family-playtime
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-free-day-of-play-2026-11-23@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261123T193000Z
+DTEND:20261123T210000Z
+SUMMARY:FREE Day of Play!
+LOCATION:Natural Resources\, 1051 Valencia St
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.nat
+ uralresources-sf.com/products/free-natural-resources-playgroup?start=2026
+ -11-01T00:00&select=2026-11-23T11:30&utm_campaign=local-kiddo-sf&utm_medi
+ um=referral&utm_source=www.localkiddo.com
+URL:https://www.naturalresources-sf.com/products/free-natural-resources-pl
+ aygroup?start=2026-11-01T00:00&select=2026-11-23T11:30&utm_campaign=local
+ -kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-squid-dissection-2026-11-23@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261123T220000Z
+DTEND:20261124T000000Z
+SUMMARY:Squid Dissection
+LOCATION:Aquarium of the Bay\, PIER 39
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.aqu
+ ariumofthebay.org/daily-programs/?utm_campaign=local-kiddo-sf&utm_medium=
+ referral&utm_source=www.localkiddo.com
+URL:https://www.aquariumofthebay.org/daily-programs/?utm_campaign=local-ki
+ ddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
 END:VEVENT
 BEGIN:VEVENT
 UID:fc-supermoon-night-over-san-francisco-2026-2-2026-11-23@sf_familyevent
  s
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261124T075900Z
 DTEND:20261123T150000Z
 SUMMARY:“Supermoon” Night Over San Francisco 2026
@@ -747,7 +811,7 @@ URL:https://sf.funcheap.com/supermoon-night-over-san-francisco-2026-2/
 END:VEVENT
 BEGIN:VEVENT
 UID:scn-10005133-2026-11-24@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261124T173000Z
 DTEND:20261124T200000Z
 SUMMARY:Swing into Stories @ Redwood Grove Playground
@@ -759,8 +823,36 @@ URL:https://sfchildrennature.org/event/swing-into-stories-redwood-grove-pl
  ayground-2-2/2026-11-24/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-reading-room-recess-cart-2026-11-24@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261124T180000Z
+DTEND:20261125T000000Z
+SUMMARY:Reading Room + Recess Cart
+LOCATION:Salesforce Park
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.tjp
+ a.org/salesforce-transit-center/activities?utm_campaign=local-kiddo-sf&ut
+ m_medium=referral&utm_source=www.localkiddo.com
+URL:https://www.tjpa.org/salesforce-transit-center/activities?utm_campaign
+ =local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-children-s-music-with-emilia-2026-11-24@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261124T181500Z
+DTEND:20261124T201500Z
+SUMMARY:Children's Music with Emilia
+LOCATION:Outer Village\, Inner Sunset
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.his
+ awyer.com/outer-village/schedules/activity-set/2020005?day=2026-11-24&sou
+ rce=all-activities&utm_campaign=local-kiddo-sf&utm_medium=referral&utm_so
+ urce=www.localkiddo.com
+URL:https://www.hisawyer.com/outer-village/schedules/activity-set/2020005?
+ day=2026-11-24&source=all-activities&utm_campaign=local-kiddo-sf&utm_medi
+ um=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-11-24-storytime-swing-stories@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261124T183000Z
 DTEND:20261124T190000Z
 SUMMARY:Storytime: Swing Into Stories
@@ -770,9 +862,55 @@ DESCRIPTION:Free library program for young children and their grown-ups.\n
 URL:https://sfpl.org/events/2026/11/24/storytime-swing-stories
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-volunteer-giving-thanks-on-golden-gate-block-party-2026-11-24@sf_fa
+ milyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261124T190000Z
+DTEND:20261124T223000Z
+SUMMARY:Volunteer: Giving Thanks on Golden Gate Block Party
+LOCATION:St. Anthony's\, Tenderloin
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://give.st
+ anthonysf.org/event/week-of-thanks/e831623/register/new/select-tickets?ut
+ m_campaign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.c
+ om
+URL:https://give.stanthonysf.org/event/week-of-thanks/e831623/register/new
+ /select-tickets?utm_campaign=local-kiddo-sf&utm_medium=referral&utm_sourc
+ e=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-second-time-mom-s-group-2026-11-24@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261124T191500Z
+DTEND:20261124T211500Z
+SUMMARY:Second Time Mom's Group
+LOCATION:Outer Village\, Inner Sunset
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.his
+ awyer.com/outer-village/schedules/activity-set/2010431?day=2026-11-24&sou
+ rce=all-activities&utm_campaign=local-kiddo-sf&utm_medium=referral&utm_so
+ urce=www.localkiddo.com
+URL:https://www.hisawyer.com/outer-village/schedules/activity-set/2010431?
+ day=2026-11-24&source=all-activities&utm_campaign=local-kiddo-sf&utm_medi
+ um=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-new-moms-group-0-6-months-2026-11-24@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261124T211500Z
+DTEND:20261124T231500Z
+SUMMARY:New Moms Group (0-6 months)
+LOCATION:Outer Village\, Inner Sunset
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.his
+ awyer.com/outer-village/schedules/activity-set/2023005?day=2026-11-24&sou
+ rce=all-activities&utm_campaign=local-kiddo-sf&utm_medium=referral&utm_so
+ urce=www.localkiddo.com
+URL:https://www.hisawyer.com/outer-village/schedules/activity-set/2023005?
+ day=2026-11-24&source=all-activities&utm_campaign=local-kiddo-sf&utm_medi
+ um=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-11-24-early-learning-big-san-francisco-play-date@sf_familyev
  ents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261124T213000Z
 DTEND:20261124T233000Z
 SUMMARY:Big San Francisco Play Date
@@ -784,8 +922,37 @@ URL:https://sfpl.org/events/2026/11/24/early-learning-big-san-francisco-pl
  ay-date
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-animal-encounter-2026-11-24@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261124T220000Z
+DTEND:20261125T000000Z
+SUMMARY:Animal Encounter
+LOCATION:Aquarium of the Bay\, PIER 39
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.aqu
+ ariumofthebay.org/daily-programs/?utm_campaign=local-kiddo-sf&utm_medium=
+ referral&utm_source=www.localkiddo.com
+URL:https://www.aquariumofthebay.org/daily-programs/?utm_campaign=local-ki
+ ddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-music-magic-tuesday-all-ages-with-jamaroo-kids-2026-11-24@sf_family
+ events
+DTSTAMP:20261121T203022Z
+DTSTART:20261125T000000Z
+DTEND:20261125T004500Z
+SUMMARY:Music Magic Tuesday (All Ages) with JAMaROO Kids
+LOCATION:Natural Resources\, 1051 Valencia St
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.nat
+ uralresources-sf.com/products/music-magic-tuesday-all-ages-in-person?star
+ t=2026-11-01T00:00&select=2026-11-24T16:00&utm_campaign=local-kiddo-sf&ut
+ m_medium=referral&utm_source=www.localkiddo.com
+URL:https://www.naturalresources-sf.com/products/music-magic-tuesday-all-a
+ ges-in-person?start=2026-11-01T00:00&select=2026-11-24T16:00&utm_campaign
+ =local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-885615-2026-11-24@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261125T050000Z
 DTEND:20261125T075900Z
 SUMMARY:The Rigamarole Dance Orchestra & After-Hours Jam at the Woodchoppe
@@ -800,8 +967,38 @@ URL:https://missionlocal.org/event/verdi-club-the-rigamarole-dance-orchest
  ra-after-hours-jam-at-the-woodchoppers-ball/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-early-connections-play-with-purpose-playgroup-free-2026-11-25@sf_fa
+ milyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261125T180000Z
+DTEND:20261125T200000Z
+SUMMARY:Early Connections: Play with Purpose Playgroup (free\, 0-3)
+LOCATION:Outer Village\, Inner Sunset
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.his
+ awyer.com/outer-village/schedules/activity-set/2040438?day=2026-11-25&sou
+ rce=all-activities&utm_campaign=local-kiddo-sf&utm_medium=referral&utm_so
+ urce=www.localkiddo.com
+URL:https://www.hisawyer.com/outer-village/schedules/activity-set/2040438?
+ day=2026-11-25&source=all-activities&utm_campaign=local-kiddo-sf&utm_medi
+ um=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
+UID:lk-free-garden-tour-with-sf-botanical-garden-2026-11-25@sf_familyevent
+ s
+DTSTAMP:20261121T203022Z
+DTSTART:20261125T180000Z
+DTEND:20261125T193000Z
+SUMMARY:Free Garden Tour with SF Botanical Garden
+LOCATION:Salesforce Park
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.the
+ eastcut.org/event/garden-tour-3-2-2-2-2/?utm_campaign=local-kiddo-sf&utm_
+ medium=referral&utm_source=www.localkiddo.com
+URL:https://www.theeastcut.org/event/garden-tour-3-2-2-2-2/?utm_campaign=l
+ ocal-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-11-25-early-learning-family-playtime@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261125T190000Z
 DTEND:20261125T193000Z
 SUMMARY:Family Playtime
@@ -814,8 +1011,21 @@ DESCRIPTION:For children ages 5 and younger and their caregivers. Play to
 URL:https://sfpl.org/events/2026/11/25/early-learning-family-playtime
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-otter-enrichment-2026-11-25@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261125T210000Z
+DTEND:20261125T230000Z
+SUMMARY:Otter Enrichment
+LOCATION:Aquarium of the Bay\, PIER 39
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.aqu
+ ariumofthebay.org/daily-programs/?utm_campaign=local-kiddo-sf&utm_medium=
+ referral&utm_source=www.localkiddo.com
+URL:https://www.aquariumofthebay.org/daily-programs/?utm_campaign=local-ki
+ ddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:sfpl-2026-11-25-social-family-dance-party@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261125T230000Z
 DTEND:20261126T000000Z
 SUMMARY:Family Dance Party
@@ -829,7 +1039,7 @@ URL:https://sfpl.org/events/2026/11/25/social-family-dance-party
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-885575-2026-11-25@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261126T040000Z
 DTEND:20261126T060000Z
 SUMMARY:Moonalice
@@ -841,7 +1051,7 @@ URL:https://missionlocal.org/event/the-chapel-moonalice/
 END:VEVENT
 BEGIN:VEVENT
 UID:gdlr-2966-2026-11-26@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261126T080000Z
 DTEND:20261130T075959Z
 SUMMARY:Galería de la Raza- Holiday Office Closure
@@ -855,7 +1065,7 @@ URL:https://galeriadelaraza.org/calendar/galeria-de-la-raza-holiday-office
 END:VEVENT
 BEGIN:VEVENT
 UID:fc-bishop-ranch-turkey-trot-2026-11-26@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261126T160000Z
 DTEND:20261126T180000Z
 SUMMARY:Bishop Ranch Turkey Trot
@@ -868,8 +1078,21 @@ DESCRIPTION:Submitted by the Event OrganizerCity Center Bishop RanchOn Tha
 URL:https://sf.funcheap.com/bishop-ranch-turkey-trot/
 END:VEVENT
 BEGIN:VEVENT
+UID:lk-volunteer-thanksgiving-day-meal-service-2026-11-26@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261126T170000Z
+DTEND:20261126T193000Z
+SUMMARY:Volunteer: Thanksgiving Day Meal Service
+LOCATION:St. Anthony's\, Tenderloin
+DESCRIPTION:Picked by Local Kiddo SF's weekly newsletter.\nhttps://www.sta
+ nthonysf.org/holiday-volunteer-opportunities/?utm_campaign=local-kiddo-sf
+ &utm_medium=referral&utm_source=www.localkiddo.com
+URL:https://www.stanthonysf.org/holiday-volunteer-opportunities/?utm_campa
+ ign=local-kiddo-sf&utm_medium=referral&utm_source=www.localkiddo.com
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-885580-2026-11-27@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261128T040000Z
 DTEND:20261128T060000Z
 SUMMARY:Sleepless Nights XX: A Tribute to Gram Parsons
@@ -883,7 +1106,7 @@ URL:https://missionlocal.org/event/the-chapel-sleepless-nights-xx-a-tribut
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-885610-2026-11-27@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261128T050000Z
 DTEND:20261128T075900Z
 SUMMARY:Skream presented by Goldenvoice
@@ -895,8 +1118,22 @@ URL:https://missionlocal.org/event/public-works-skream-presented-by-golden
  voice/
 END:VEVENT
 BEGIN:VEVENT
+UID:sfpl-2026-11-28-early-learning-saturday-morning-playtimes@sf_familyeve
+ nts
+DTSTAMP:20261121T203022Z
+DTSTART:20261128T183000Z
+DTEND:20261128T203000Z
+SUMMARY:Saturday Morning Playtimes
+LOCATION:Glen Park Branch Library
+DESCRIPTION:Share toddler and preschool friendly toys and games with other
+ s. For ages 0–5.\nhttps://sfpl.org/events/2026/11/28/early-learning-sat
+ urday-morning-playtimes
+URL:https://sfpl.org/events/2026/11/28/early-learning-saturday-morning-pla
+ ytimes
+END:VEVENT
+BEGIN:VEVENT
 UID:odc-velveteen-rabbit-2026-11-28@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261128T190000Z
 DTEND:20261128T210000Z
 SUMMARY:The Velveteen Rabbit (ODC/Dance)
@@ -907,8 +1144,35 @@ DESCRIPTION:ODC/Dance's holiday family favorite\, based on the children's
 URL:https://odc.dance/CALENDAR
 END:VEVENT
 BEGIN:VEVENT
+UID:scn-10008532-2026-11-28@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261128T193000Z
+DTEND:20261128T203000Z
+SUMMARY:Meet an Animal Ambassador @ Randall Museum
+LOCATION:Randall Museum
+DESCRIPTION:Venture into the Randall Museum’s new live animal exhibit\, 
+ Wild in California\, and join one of the animal keepers in an open discus
+ sion about the museum’s wildlife residents.\nhttps://sfchildrennature.o
+ rg/event/meet-the-animal-keepers-randall-museum-2/2026-11-28/
+URL:https://sfchildrennature.org/event/meet-the-animal-keepers-randall-mus
+ eum-2/2026-11-28/
+END:VEVENT
+BEGIN:VEVENT
+UID:sfpl-2026-11-28-social-family-game-night@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261129T000000Z
+DTEND:20261129T010000Z
+SUMMARY:Family Game NIght
+LOCATION:Bernal Heights Branch Library
+DESCRIPTION:Play board games\, giant Jenga and a variety of other games in
+  the company of your community. For children and their caregivers. Interg
+ enerational Gaming Challenge yourself with our board games\, video games 
+ and more.\nhttps://sfpl.org/events/2026/11/28/social-family-game-night
+URL:https://sfpl.org/events/2026/11/28/social-family-game-night
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-877257-2026-11-28@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261129T010000Z
 DTEND:20261129T030000Z
 SUMMARY:Brian Copeland – The Jewelry Box…a GENUINE Christmas Story Fam
@@ -924,7 +1188,7 @@ URL:https://missionlocal.org/event/the-marsh-brian-copeland-the-jewelry-bo
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-885583-2026-11-28@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261129T050000Z
 DTEND:20261129T070000Z
 SUMMARY:Petty Theft
@@ -935,12 +1199,12 @@ DESCRIPTION:An Evening With Petty Theft Sat Nov 28 San Francisco Tribute t
 URL:https://missionlocal.org/event/the-chapel-petty-theft-3/
 END:VEVENT
 BEGIN:VEVENT
-UID:w-hawk-creek-farm-wreath-making-with-floral-designer-monica-lo-2026-11
- -29@sf_familyevents
-DTSTAMP:20261119T220610Z
+UID:w-hawk-creek-farm-holiday-wreath-making-with-monica-lomas-2026-11-29@s
+ f_familyevents
+DTSTAMP:20261121T203022Z
 DTSTART:20261129T183000Z
 DTEND:20261129T200000Z
-SUMMARY:Wreath-making with floral designer Monica Lomas
+SUMMARY:Holiday Wreath-making with Monica Lomas
 LOCATION:Hawk Creek Farm\, 203 Cotter St (Mission Terrace)
 DESCRIPTION:Family-friendly\; $50 per wreath\, and an adult and child can 
  make one together. All materials and farm tea included.\nhttps://www.hawk
@@ -950,7 +1214,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-co-lab-activation-and-family-art-walk-sigmar-polke-2026-11-29@s
  f_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261129T190000Z
 DTEND:20261129T210000Z
 SUMMARY:Co-Lab Activation and Family Art Walk — Sigmar Polke: The Magic 
@@ -964,7 +1228,7 @@ URL:https://www.sfmoma.org/event/co-lab-activation-and-family-art-walk-sig
 END:VEVENT
 BEGIN:VEVENT
 UID:odc-velveteen-rabbit-2026-11-29@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261129T220000Z
 DTEND:20261130T000000Z
 SUMMARY:The Velveteen Rabbit (ODC/Dance)
@@ -976,7 +1240,7 @@ URL:https://odc.dance/CALENDAR
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-884614-2026-11-30@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261201T020000Z
 DTEND:20261201T053000Z
 SUMMARY:Whole Fish 3 Ways
@@ -990,7 +1254,7 @@ URL:https://missionlocal.org/event/18-reasons-whole-fish-3-ways/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-884600-2026-12-02@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261202T190000Z
 DTEND:20261203T023000Z
 SUMMARY:NAWBO-SFBA Holiday Market
@@ -1006,30 +1270,85 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-odc-theater-odc-dance-presents-the-velveteen-rabbit-2026-12-02@sf_fa
  milyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261202T190000Z
 DTEND:20261202T210000Z
 SUMMARY:ODC/Dance presents: The Velveteen Rabbit
 LOCATION:ODC Theater\, 3153 17th St (Mission)
-DESCRIPTION:Family matinee performance\; the text does not state the price
-  or age recommendation.\nhttps://odc.dance/CALENDAR
+DESCRIPTION:A family-friendly children's show\; the site does not list pri
+ ces or age limits\, so check before booking.\nhttps://odc.dance/CALENDAR
 URL:https://odc.dance/CALENDAR
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-886567-2026-12-02@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261203T020000Z
+DTEND:20261203T053000Z
+SUMMARY:Magnificent Mushrooms
+LOCATION:18 Reasons
+DESCRIPTION:Mushrooms can be a divisive ingredient. There are camps of peo
+ ple who adore them\, then there are people for whom mushrooms are a meal 
+ deal breaker. While Marie is firmly in the first camp she used to be in t
+ he latter sin\nhttps://missionlocal.org/event/18-reasons-magnificent-mush
+ rooms/
+URL:https://missionlocal.org/event/18-reasons-magnificent-mushrooms/
+END:VEVENT
+BEGIN:VEVENT
+UID:w-museum-of-the-african-diaspora-downtown-first-thursdays-2026-12-03@s
+ f_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261204T000000Z
+DTEND:20261204T040000Z
+SUMMARY:Downtown First Thursdays
+LOCATION:MoAD\, 685 Mission St
+DESCRIPTION:Free access to MoAD's current exhibitions\, open to visitors o
+ f all ages.\nhttps://www.moadsf.org/events
+URL:https://www.moadsf.org/events
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-886570-2026-12-03@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261204T020000Z
+DTEND:20261204T053000Z
+SUMMARY:Indian Chinese Cuisine
+LOCATION:18 Reasons
+DESCRIPTION:Get ready to explore the irresistible flavors of Indian-Chines
+ e cuisine! Perfect for food lovers and adventurous cooks\, this class wil
+ l guide you through the steps to recreate some of the most popular Indo-C
+ hinese dishes\nhttps://missionlocal.org/event/18-reasons-indian-chinese-c
+ uisine/
+URL:https://missionlocal.org/event/18-reasons-indian-chinese-cuisine/
 END:VEVENT
 BEGIN:VEVENT
 UID:w-odc-theater-odc-dance-presents-the-velveteen-rabbit-2026-12-04@sf_fa
  milyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261204T190000Z
 DTEND:20261204T210000Z
 SUMMARY:ODC/Dance presents: The Velveteen Rabbit
 LOCATION:ODC Theater\, 3153 17th St (Mission)
-DESCRIPTION:Family matinee performance\; the text does not state the price
-  or age recommendation.\nhttps://odc.dance/CALENDAR
+DESCRIPTION:A family-friendly children's show\; the site does not list pri
+ ces or age limits\, so check before booking.\nhttps://odc.dance/CALENDAR
 URL:https://odc.dance/CALENDAR
 END:VEVENT
 BEGIN:VEVENT
+UID:ml-886977-2026-12-04@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261204T230000Z
+DTEND:20261205T020000Z
+SUMMARY:Climate Ready Together – Juntas Preparadas para el Clima
+LOCATION:The Women’s Building
+DESCRIPTION:💜 Building a resilient community starts with being prepared
+ ! Join us and Emerald Cities Collaborative for a community gathering to l
+ earn how we can better prepare for emergencies and support one another wh
+ en unexpected s\nhttps://missionlocal.org/event/the-womens-building-clima
+ te-ready-together-juntas-preparadas-para-el-clima/
+URL:https://missionlocal.org/event/the-womens-building-climate-ready-toget
+ her-juntas-preparadas-para-el-clima/
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-883843-2026-12-04@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261205T010000Z
 DTEND:20261205T040000Z
 SUMMARY:Holiday Art Shop 2026 Opening Party
@@ -1044,7 +1363,7 @@ URL:https://missionlocal.org/event/creativity-explored-holiday-art-shop-20
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-884834-2026-12-04@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261205T023000Z
 DTEND:20261205T053000Z
 SUMMARY:Karaoke! Kim’s Birthday! Brava Fundraiser!
@@ -1058,8 +1377,23 @@ URL:https://missionlocal.org/event/brava-theater-karaoke-kims-birthday-bra
  va-fundraiser/
 END:VEVENT
 BEGIN:VEVENT
+UID:ml-886546-2026-12-04@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261205T023000Z
+DTEND:20261205T043000Z
+SUMMARY:Songs of the Earth: Erhu & Piano Duo Recital
+LOCATION:Community Music Center
+DESCRIPTION:Songs of the Earth: Erhu & Piano Duo Recital Two strings. Eigh
+ ty-eight keys. One shared breath. School for Creators presents erhu artis
+ t John Chiang and pianist-composer Sasha Sound in Songs of the Earth. The
+  erhu and th\nhttps://missionlocal.org/event/community-music-center-songs
+ -of-the-earth-erhu-piano-duo-recital/
+URL:https://missionlocal.org/event/community-music-center-songs-of-the-ear
+ th-erhu-piano-duo-recital/
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-10038132-2026-12-05@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261205T180000Z
 DTEND:20261205T200000Z
 SUMMARY:Free Urban Composting Workshops 2026
@@ -1074,7 +1408,7 @@ URL:https://missionlocal.org/event/garden-for-the-environment-free-urban-c
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-bayview-2026-12-05@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261205T180000Z
 DTEND:20261205T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1089,32 +1423,47 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-play-theatre-pigeon-holiday-show-pigeon-gets-a-big-time-holi-2026-12
  -05@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261205T183000Z
 DTEND:20261205T200000Z
 SUMMARY:Pigeon Gets a Big Time Holiday Extravaganza
 LOCATION:Ray of Light Theatre Barbary Stage\, 215 Jackson St
-DESCRIPTION:Recommended for ages 3+. The show runs 80 minutes with a 10-mi
- nute intermission. Tickets required\; prices not listed.\nhttps://www.pla
- ytheatreco.org/pigeon-gets-a-big-time-holiday-extravaganza
+DESCRIPTION:Ticketed holiday musical recommended for ages 3+\, about 80 mi
+ nutes plus 10-minute intermission.\nhttps://www.playtheatreco.org/pigeon-
+ gets-a-big-time-holiday-extravaganza
 URL:https://www.playtheatreco.org/pigeon-gets-a-big-time-holiday-extravaga
  nza
 END:VEVENT
 BEGIN:VEVENT
 UID:w-odc-theater-odc-dance-presents-the-velveteen-rabbit-2026-12-05@sf_fa
  milyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261205T190000Z
 DTEND:20261205T210000Z
 SUMMARY:ODC/Dance presents: The Velveteen Rabbit
 LOCATION:ODC Theater\, 3153 17th St (Mission)
-DESCRIPTION:Family matinee performance\; the text does not state the price
-  or age recommendation.\nhttps://odc.dance/CALENDAR
+DESCRIPTION:A family-friendly children's show\; the site does not list pri
+ ces or age limits\, so check before booking.\nhttps://odc.dance/CALENDAR
 URL:https://odc.dance/CALENDAR
 END:VEVENT
 BEGIN:VEVENT
+UID:ml-10042133-2026-12-05@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261205T190000Z
+DTEND:20261205T203000Z
+SUMMARY:Winter Dance Jam
+LOCATION:Dance Mission Theater
+DESCRIPTION:Dance Mission Theater’s Youth Program presents the Youth Pro
+ gram 2026 Winter Recital WINTER DANCE JAM! December 5-6th\, 2026 at Dance
+  Mission Theater Sat\, December 5th 11 AM & 3:30 PM Sun\, December 6th 11
+  AM Tickets $15-$\nhttps://missionlocal.org/event/dance-mission-theater-w
+ inter-dance-jam/2026-12-05/1/
+URL:https://missionlocal.org/event/dance-mission-theater-winter-dance-jam/
+ 2026-12-05/1/
+END:VEVENT
+BEGIN:VEVENT
 UID:omca-12828-2026-12-05@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261205T193000Z
 DTEND:20261206T000000Z
 SUMMARY:Holiday Market at the Museum!
@@ -1128,7 +1477,7 @@ URL:https://museumca.org/event/holiday-market-at-the-museum/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10041986-2026-12-05@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261205T200000Z
 DTEND:20261206T010000Z
 SUMMARY:Holiday Market
@@ -1143,7 +1492,7 @@ URL:https://missionlocal.org/event/1890-bryant-street-holiday-market/2026-
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12853-2026-12-05@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261205T200000Z
 DTEND:20261205T210000Z
 SUMMARY:Special Guest Gallery Chat: Questions 27 & 28 with Author Karen Te
@@ -1159,7 +1508,7 @@ URL:https://museumca.org/event/special-guest-gallery-chat-questions-27-28-
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12860-2026-12-05@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261205T210000Z
 DTEND:20261205T220000Z
 SUMMARY:Special Guest Gallery Chat: Remembering Together with Judy Sakaki 
@@ -1174,21 +1523,22 @@ URL:https://museumca.org/event/special-guest-gallery-chat-remembering-toge
  ther-with-judy-sakaki-and-lana-masako-wong/
 END:VEVENT
 BEGIN:VEVENT
-UID:w-museum-of-the-african-diaspora-moad-sfjazz-present-black-nil-2026-12
- -05@sf_familyevents
-DTSTAMP:20261119T220610Z
-DTSTART:20261205T220000Z
-DTEND:20261205T231500Z
-SUMMARY:MoAD & SFJAZZ present | Black Nile Jazz Performance
-LOCATION:MoAD\, 685 Mission St
-DESCRIPTION:Afternoon jazz performance\; the listing does not state an age
-  limit or price\, so check before attending.\nhttps://www.moadsf.org/even
- ts
-URL:https://www.moadsf.org/events
+UID:ml-886573-2026-12-05@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261206T000000Z
+DTEND:20261206T040000Z
+SUMMARY:Chinese Winter Solstice
+LOCATION:18 Reasons
+DESCRIPTION:For Chinese families around the world\, the winter solstice\, 
+ or Dongzhi\, is one of the most important days of the year. A Cantonese s
+ aying\, “Dung Daai Gwoh Nin\,” claims that Dongzhi is bigger than New
+  Year. On the longest\nhttps://missionlocal.org/event/18-reasons-chinese-
+ winter-solstice/
+URL:https://missionlocal.org/event/18-reasons-chinese-winter-solstice/
 END:VEVENT
 BEGIN:VEVENT
 UID:mapp-2026-12-05@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261206T020000Z
 DTEND:20261206T060000Z
 SUMMARY:MAPP: Mission Arts & Performance Project
@@ -1201,7 +1551,7 @@ URL:https://www.redpoppyarthouse.org/tag/mission-arts-performance-project/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10041988-2026-12-05@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261206T020000Z
 DTEND:20261206T050000Z
 SUMMARY:Subliminal Sublime – Emily Fromm solo exhibit
@@ -1216,7 +1566,7 @@ URL:https://missionlocal.org/event/moth-belly-gallery-subliminal-sublime-e
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-879285-2026-12-05@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261206T030000Z
 DTEND:20261206T070000Z
 SUMMARY:34th Annual Holiday Party: Haunted Hearth
@@ -1231,7 +1581,7 @@ URL:https://missionlocal.org/event/paxton-gate-34th-annual-holiday-party-h
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10040138-2026-12-05@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261206T050000Z
 DTEND:20261206T075900Z
 SUMMARY:Killing My Lobster and Z Space present ‘Sketch on Speed’ at Z 
@@ -1248,21 +1598,21 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-play-theatre-pigeon-holiday-show-pigeon-gets-a-big-time-holi-2026-12
  -06@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261206T183000Z
 DTEND:20261206T200000Z
 SUMMARY:Pigeon Gets a Big Time Holiday Extravaganza
 LOCATION:Ray of Light Theatre Barbary Stage\, 215 Jackson St
-DESCRIPTION:Recommended for ages 3+. The show runs 80 minutes with a 10-mi
- nute intermission. Tickets required\; prices not listed.\nhttps://www.pla
- ytheatreco.org/pigeon-gets-a-big-time-holiday-extravaganza
+DESCRIPTION:Ticketed holiday musical recommended for ages 3+\, about 80 mi
+ nutes plus 10-minute intermission.\nhttps://www.playtheatreco.org/pigeon-
+ gets-a-big-time-holiday-extravaganza
 URL:https://www.playtheatreco.org/pigeon-gets-a-big-time-holiday-extravaga
  nza
 END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-colab-activation-sigmar-polke-the-magic-of-materia-2026-12-06@s
  f_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261206T190000Z
 DTEND:20261206T220000Z
 SUMMARY:CoLab Activation: Sigmar Polke: The Magic of Materials\, Part 2!
@@ -1274,8 +1624,23 @@ URL:https://www.sfmoma.org/event/colab-activation-sigmar-polke-the-magic-o
  f-materials-part-2/
 END:VEVENT
 BEGIN:VEVENT
+UID:ml-10042135-2026-12-06@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261206T190000Z
+DTEND:20261206T203000Z
+SUMMARY:Winter Dance Jam
+LOCATION:Dance Mission Theater
+DESCRIPTION:Dance Mission Theater’s Youth Program presents the Youth Pro
+ gram 2026 Winter Recital WINTER DANCE JAM! December 5-6th\, 2026 at Dance
+  Mission Theater Sat\, December 5th 11 AM & 3:30 PM Sun\, December 6th 11
+  AM Tickets $15-$\nhttps://missionlocal.org/event/dance-mission-theater-w
+ inter-dance-jam/2026-12-06/
+URL:https://missionlocal.org/event/dance-mission-theater-winter-dance-jam/
+ 2026-12-06/
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-10041987-2026-12-06@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261206T200000Z
 DTEND:20261207T010000Z
 SUMMARY:Holiday Market
@@ -1291,18 +1656,32 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-odc-theater-odc-dance-presents-the-velveteen-rabbit-2026-12-06@sf_fa
  milyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261206T220000Z
 DTEND:20261207T000000Z
 SUMMARY:ODC/Dance presents: The Velveteen Rabbit
 LOCATION:ODC Theater\, 3153 17th St (Mission)
-DESCRIPTION:Family matinee performance\; the text does not state the price
-  or age recommendation.\nhttps://odc.dance/CALENDAR
+DESCRIPTION:A family-friendly children's show\; the site does not list pri
+ ces or age limits\, so check before booking.\nhttps://odc.dance/CALENDAR
 URL:https://odc.dance/CALENDAR
 END:VEVENT
 BEGIN:VEVENT
+UID:ml-886576-2026-12-06@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261207T000000Z
+DTEND:20261207T040000Z
+SUMMARY:Viola’s Lasagna from Scratch
+LOCATION:18 Reasons
+DESCRIPTION:After a two-years hiatus Viola’s acclaimed class on lasagna 
+ is back on our roster. One a classic bolognese with green noodles\, the o
+ ther with mushrooms and fontina\, these are the lasagna acclaimed by the 
+ NYTimes during V\nhttps://missionlocal.org/event/18-reasons-violas-lasagn
+ a-from-scratch/
+URL:https://missionlocal.org/event/18-reasons-violas-lasagna-from-scratch/
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-10040893-2026-12-06@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261207T030000Z
 DTEND:20261207T073000Z
 SUMMARY:1st Sundays in SF are for Salsa | Salsa Lesson & Party
@@ -1316,8 +1695,51 @@ URL:https://missionlocal.org/event/verdi-club-1st-sundays-in-sf-are-for-sa
  lsa-salsa-lesson-party/2026-12-06/
 END:VEVENT
 BEGIN:VEVENT
+UID:ml-887000-2026-12-07@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261208T013000Z
+DTEND:20261208T033000Z
+SUMMARY:A Ceramics Workshop Supporting The Women’s Building
+LOCATION:Artillery AG
+DESCRIPTION:Join us at Artillery Ceramics in San Francisco’s Mission Dis
+ trict for an evening of creativity\, wine\, and community\, all in suppor
+ t of The Women’s Building! In this small\, hands-on workshop\, instruct
+ or Kristen will guide\nhttps://missionlocal.org/event/artillery-ag-a-cera
+ mics-workshop-supporting-the-womens-building/
+URL:https://missionlocal.org/event/artillery-ag-a-ceramics-workshop-suppor
+ ting-the-womens-building/
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-886581-2026-12-07@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261208T020000Z
+DTEND:20261208T053000Z
+SUMMARY:Beautiful Braises
+LOCATION:18 Reasons
+DESCRIPTION:When our head chef\, Gracie\, was first learning to cook meat 
+ after a 10-year stretch of vegetarianism\, braising was the skill that fe
+ lt the easiest and most accessible. The key ingredient in crafting a tend
+ er\, fall of the\nhttps://missionlocal.org/event/18-reasons-beautiful-bra
+ ises/
+URL:https://missionlocal.org/event/18-reasons-beautiful-braises/
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-886584-2026-12-08@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261209T020000Z
+DTEND:20261209T053000Z
+SUMMARY:Schatz Family Latke Party
+LOCATION:18 Reasons
+DESCRIPTION:Every year\, the Schatz family hosts a latke party with over 1
+ 00 attendees\, coming together to enjoy the family’s tiny\, crispy latk
+ es\, strong cocktails\, and good company. Join them this Chanukah to make
+  your own latkes\, a\nhttps://missionlocal.org/event/18-reasons-schatz-fa
+ mily-latke-party/
+URL:https://missionlocal.org/event/18-reasons-schatz-family-latke-party/
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-885604-2026-12-09@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261210T020000Z
 DTEND:20261210T040000Z
 SUMMARY:BAVC MediaMaker Pitch + Party 2026
@@ -1332,7 +1754,7 @@ URL:https://missionlocal.org/event/roxie-theater-bavc-mediamaker-pitch-par
 END:VEVENT
 BEGIN:VEVENT
 UID:gdlr-2956-2026-12-11@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261212T030000Z
 DTEND:20261212T060000Z
 SUMMARY:Dragiarte
@@ -1345,7 +1767,7 @@ URL:https://galeriadelaraza.org/calendar/dragiarte-7/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-885004-2026-12-11@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261212T033000Z
 DTEND:20261212T050000Z
 SUMMARY:Khachapuri Trio
@@ -1358,8 +1780,23 @@ DESCRIPTION:Khachapuri Trio is a delightful combination of cello\, guitar\
 URL:https://missionlocal.org/event/red-poppy-art-house-khachapuri-trio/
 END:VEVENT
 BEGIN:VEVENT
+UID:ml-10042152-2026-12-11@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261212T043000Z
+DTEND:20261212T060000Z
+SUMMARY:The Infinite Wrench: Best of 2026 (Z Below)
+LOCATION:Z Space
+DESCRIPTION:The critically acclaimed San Francisco Neo-Futurists are back 
+ for their annual performance of the year’s best plays in The Infinite W
+ rench: Best Of 2026! Named “SF’s premiere performance art troupe” (
+ 48 Hills) & one of “\nhttps://missionlocal.org/event/z-space-the-infini
+ te-wrench-best-of-2026-z-below/2026-12-11/
+URL:https://missionlocal.org/event/z-space-the-infinite-wrench-best-of-202
+ 6-z-below/2026-12-11/
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-10038171-2026-12-12@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261212T180000Z
 DTEND:20261212T200000Z
 SUMMARY:Growing a Garden: Where to Start Workshops 2026
@@ -1374,7 +1811,7 @@ URL:https://missionlocal.org/event/garden-for-the-environment-growing-a-ga
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-mission-2026-12-12@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261212T180000Z
 DTEND:20261212T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1389,34 +1826,33 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-play-theatre-pigeon-holiday-show-pigeon-gets-a-big-time-holi-2026-12
  -12@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261212T183000Z
 DTEND:20261212T200000Z
 SUMMARY:Pigeon Gets a Big Time Holiday Extravaganza
 LOCATION:Ray of Light Theatre Barbary Stage\, 215 Jackson St
-DESCRIPTION:Recommended for ages 3+. The show runs 80 minutes with a 10-mi
- nute intermission. Tickets required\; prices not listed.\nhttps://www.pla
- ytheatreco.org/pigeon-gets-a-big-time-holiday-extravaganza
+DESCRIPTION:Ticketed holiday musical recommended for ages 3+\, about 80 mi
+ nutes plus 10-minute intermission.\nhttps://www.playtheatreco.org/pigeon-
+ gets-a-big-time-holiday-extravaganza
 URL:https://www.playtheatreco.org/pigeon-gets-a-big-time-holiday-extravaga
  nza
 END:VEVENT
 BEGIN:VEVENT
-UID:w-hawk-creek-farm-hawk-creek-farm-tiya-new-indian-at-golden-br-2026-12
- -12@sf_familyevents
-DTSTAMP:20261119T220610Z
+UID:w-hawk-creek-farm-hawk-creek-farm-tiya-new-indian-winter-fair-2026-12-
+ 12@sf_familyevents
+DTSTAMP:20261121T203022Z
 DTSTART:20261212T190000Z
 DTEND:20261212T230000Z
-SUMMARY:Hawk Creek Farm + Tiya New Indian at Golden Bridges School Winter 
- Fair
+SUMMARY:Hawk Creek Farm + Tiya New Indian Winter Fair
 LOCATION:Hawk Creek Farm\, 203 Cotter St (Mission Terrace)
-DESCRIPTION:Free and open to the public\; all ages welcome. Includes food 
- from Chef Pujan and holiday gifts made at the farm.\nhttps://www.hawkcree
- kfarm.org/farm-experiences.html
+DESCRIPTION:Free and open to all ages at Golden Bridges School\, 503 Cambr
+ idge Street. Enter and park on Bacon Street. Holiday gifts from the farm 
+ will be sold.\nhttps://www.hawkcreekfarm.org/farm-experiences.html
 URL:https://www.hawkcreekfarm.org/farm-experiences.html
 END:VEVENT
 BEGIN:VEVENT
 UID:sfjazz-family-matinee-2026-12-12@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261212T190000Z
 DTEND:20261212T210000Z
 SUMMARY:SFJAZZ Family Matinee: A Charlie Brown Christmas
@@ -1430,18 +1866,18 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-museum-of-the-african-diaspora-thrive-moad-free-community-da-2026-12
  -12@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261212T190000Z
 DTEND:20261213T010000Z
 SUMMARY:Thrive @ MoAD Free Community Day sponsored by Kaiser Permanente
 LOCATION:MoAD\, 685 Mission St
-DESCRIPTION:Free community day with museum access for all ages\, sponsored
-  by Kaiser Permanente.\nhttps://www.moadsf.org/events
+DESCRIPTION:Free community day with museum access\, sponsored by Kaiser Pe
+ rmanente\; no age limits are stated.\nhttps://www.moadsf.org/events
 URL:https://www.moadsf.org/events
 END:VEVENT
 BEGIN:VEVENT
 UID:gdlr-2988-2026-12-12@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261212T200000Z
 DTEND:20261212T230000Z
 SUMMARY:Human Rights Day- Public Art Walk
@@ -1455,7 +1891,7 @@ URL:https://galeriadelaraza.org/calendar/human-rights-day-public-art-walk/
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12866-2026-12-12@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261212T210000Z
 DTEND:20261212T220000Z
 SUMMARY:Special Guest Gallery Chat: Generations of Memory with Melyssa Min
@@ -1470,8 +1906,23 @@ URL:https://museumca.org/event/special-guest-gallery-chat-generations-of-m
  emory-with-melyssa-minamoto-and-joyce-yokomizo/
 END:VEVENT
 BEGIN:VEVENT
+UID:ml-10042153-2026-12-12@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261213T010000Z
+DTEND:20261213T023000Z
+SUMMARY:The Infinite Wrench: Best of 2026 (Z Below)
+LOCATION:Z Space
+DESCRIPTION:The critically acclaimed San Francisco Neo-Futurists are back 
+ for their annual performance of the year’s best plays in The Infinite W
+ rench: Best Of 2026! Named “SF’s premiere performance art troupe” (
+ 48 Hills) & one of “\nhttps://missionlocal.org/event/z-space-the-infini
+ te-wrench-best-of-2026-z-below/2026-12-12/1/
+URL:https://missionlocal.org/event/z-space-the-infinite-wrench-best-of-202
+ 6-z-below/2026-12-12/1/
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-885007-2026-12-12@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261213T033000Z
 DTEND:20261213T050000Z
 SUMMARY:Banda Sin Nombre
@@ -1486,20 +1937,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-play-theatre-pigeon-holiday-show-pigeon-gets-a-big-time-holi-2026-12
  -13@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261213T183000Z
 DTEND:20261213T200000Z
 SUMMARY:Pigeon Gets a Big Time Holiday Extravaganza
 LOCATION:Ray of Light Theatre Barbary Stage\, 215 Jackson St
-DESCRIPTION:Recommended for ages 3+. The show runs 80 minutes with a 10-mi
- nute intermission. Tickets required\; prices not listed.\nhttps://www.pla
- ytheatreco.org/pigeon-gets-a-big-time-holiday-extravaganza
+DESCRIPTION:Ticketed holiday musical recommended for ages 3+\, about 80 mi
+ nutes plus 10-minute intermission.\nhttps://www.playtheatreco.org/pigeon-
+ gets-a-big-time-holiday-extravaganza
 URL:https://www.playtheatreco.org/pigeon-gets-a-big-time-holiday-extravaga
  nza
 END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-krazy-kites-with-scrap-2026-12-13@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261213T190000Z
 DTEND:20261213T220000Z
 SUMMARY:Krazy Kites with SCRAP
@@ -1509,8 +1960,23 @@ DESCRIPTION:Family Program at SFMOMA. Check the event page for admission a
 URL:https://www.sfmoma.org/event/krazy-kites-with-scrap/
 END:VEVENT
 BEGIN:VEVENT
+UID:ml-886965-2026-12-13@sf_familyevents
+DTSTAMP:20261121T203022Z
+DTSTART:20261213T190000Z
+DTEND:20261213T210000Z
+SUMMARY:Word for WordPlay presents: Winter Fam Jam!
+LOCATION:Z Space
+DESCRIPTION:Bring your holiday cheer\, let your imaginations run wild with
+  our creative art stations\, and put on your dancing feet for our special
+  Jingle Bell Rock experience. Enjoy some refreshments\, decorate some coo
+ kies\, have a (p\nhttps://missionlocal.org/event/z-space-word-for-wordpla
+ y-presents-winter-fam-jam/
+URL:https://missionlocal.org/event/z-space-word-for-wordplay-presents-wint
+ er-fam-jam/
+END:VEVENT
+BEGIN:VEVENT
 UID:ml-885010-2026-12-13@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261213T200000Z
 DTEND:20261214T010000Z
 SUMMARY:Winter Art Market
@@ -1524,7 +1990,7 @@ URL:https://missionlocal.org/event/artillery-ag-winter-art-market/
 END:VEVENT
 BEGIN:VEVENT
 UID:odc-family-matters-2026-12-13@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261213T210000Z
 DTEND:20261213T220000Z
 SUMMARY:Family Matters at ODC
@@ -1536,7 +2002,7 @@ URL:https://odc.dance/familymatters
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10040222-2026-12-14@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261215T030000Z
 DTEND:20261215T060000Z
 SUMMARY:Karaoke: NIGHTZ @ Z
@@ -1550,7 +2016,7 @@ URL:https://missionlocal.org/event/z-space-karaoke-nightz-z/2026-12-14/
 END:VEVENT
 BEGIN:VEVENT
 UID:gdlr-2969-2026-12-19@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261219T080000Z
 DTEND:20270104T075959Z
 SUMMARY:Galería de la Raza- Holiday Office Closure
@@ -1563,7 +2029,7 @@ URL:https://galeriadelaraza.org/calendar/galeria-de-la-raza-holiday-office
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-excelsior-2026-12-19@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261219T180000Z
 DTEND:20261219T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1577,20 +2043,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-play-theatre-pigeon-holiday-show-pigeon-gets-a-big-time-holi-2026-12
  -19@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261219T183000Z
 DTEND:20261219T200000Z
 SUMMARY:Pigeon Gets a Big Time Holiday Extravaganza
 LOCATION:Ray of Light Theatre Barbary Stage\, 215 Jackson St
-DESCRIPTION:Recommended for ages 3+. The show runs 80 minutes with a 10-mi
- nute intermission. Tickets required\; prices not listed.\nhttps://www.pla
- ytheatreco.org/pigeon-gets-a-big-time-holiday-extravaganza
+DESCRIPTION:Ticketed holiday musical recommended for ages 3+\, about 80 mi
+ nutes plus 10-minute intermission.\nhttps://www.playtheatreco.org/pigeon-
+ gets-a-big-time-holiday-extravaganza
 URL:https://www.playtheatreco.org/pigeon-gets-a-big-time-holiday-extravaga
  nza
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12880-2026-12-19@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261219T210000Z
 DTEND:20261219T230000Z
 SUMMARY:Gallery Chats at OMCA
@@ -1602,7 +2068,7 @@ URL:https://museumca.org/event/gallery-chats-at-omca-12-19/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-885628-2026-12-19@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261220T013000Z
 DTEND:20261220T053000Z
 SUMMARY:Holiday Dinner Dance Party w/ Halsey & The Hi-Hats
@@ -1617,7 +2083,7 @@ URL:https://missionlocal.org/event/verdi-club-holiday-dinner-dance-party-w
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10041989-2026-12-19@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261220T020000Z
 DTEND:20261220T050000Z
 SUMMARY:Subliminal Sublime – Emily Fromm solo exhibit
@@ -1632,7 +2098,7 @@ URL:https://missionlocal.org/event/moth-belly-gallery-subliminal-sublime-e
 END:VEVENT
 BEGIN:VEVENT
 UID:sfmoma-family-studio-let-s-build-2026-12-20@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261220T180000Z
 DTEND:20261220T210000Z
 SUMMARY:Family Studio: Let's Build!
@@ -1644,20 +2110,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-play-theatre-pigeon-holiday-show-pigeon-gets-a-big-time-holi-2026-12
  -20@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261220T183000Z
 DTEND:20261220T200000Z
 SUMMARY:Pigeon Gets a Big Time Holiday Extravaganza
 LOCATION:Ray of Light Theatre Barbary Stage\, 215 Jackson St
-DESCRIPTION:Recommended for ages 3+. The show runs 80 minutes with a 10-mi
- nute intermission. Tickets required\; prices not listed.\nhttps://www.pla
- ytheatreco.org/pigeon-gets-a-big-time-holiday-extravaganza
+DESCRIPTION:Ticketed holiday musical recommended for ages 3+\, about 80 mi
+ nutes plus 10-minute intermission.\nhttps://www.playtheatreco.org/pigeon-
+ gets-a-big-time-holiday-extravaganza
 URL:https://www.playtheatreco.org/pigeon-gets-a-big-time-holiday-extravaga
  nza
 END:VEVENT
 BEGIN:VEVENT
 UID:hjk-rockin-holiday-2026-12-20@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261220T220000Z
 DTEND:20261221T010000Z
 SUMMARY:Rockin' Holiday with Alphabet Rockers
@@ -1670,7 +2136,7 @@ URL:https://www.510families.com/ticket-alert-four-incredible-family-events
 END:VEVENT
 BEGIN:VEVENT
 UID:omca-12882-2026-12-26@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20261226T210000Z
 DTEND:20261226T230000Z
 SUMMARY:Gallery Chats at OMCA
@@ -1682,7 +2148,7 @@ URL:https://museumca.org/event/gallery-chats-at-omca-29/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-885631-2026-12-31@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20270101T033000Z
 DTEND:20270101T075900Z
 SUMMARY:New Year’s Eve Dinner Dance Party w/ The Cosmo Alleycats
@@ -1697,7 +2163,7 @@ URL:https://missionlocal.org/event/verdi-club-new-years-eve-dinner-dance-p
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-bayview-2027-01-02@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20270102T180000Z
 DTEND:20270102T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1711,7 +2177,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10040894-2027-01-03@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20270104T030000Z
 DTEND:20270104T073000Z
 SUMMARY:1st Sundays in SF are for Salsa | Salsa Lesson & Party
@@ -1726,7 +2192,7 @@ URL:https://missionlocal.org/event/verdi-club-1st-sundays-in-sf-are-for-sa
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-mission-2027-01-09@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20270109T180000Z
 DTEND:20270109T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1740,7 +2206,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10041990-2027-01-09@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20270110T020000Z
 DTEND:20270110T050000Z
 SUMMARY:Subliminal Sublime – Emily Fromm solo exhibit
@@ -1755,7 +2221,7 @@ URL:https://missionlocal.org/event/moth-belly-gallery-subliminal-sublime-e
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-excelsior-2027-01-16@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20270116T180000Z
 DTEND:20270116T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1769,19 +2235,19 @@ END:VEVENT
 BEGIN:VEVENT
 UID:w-hawk-creek-farm-high-tea-with-chef-pujan-at-hawk-creek-farm-2027-01-
  24@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20270124T190000Z
 DTEND:20270124T220000Z
 SUMMARY:High Tea with Chef Pujan at Hawk Creek Farm
 LOCATION:Hawk Creek Farm\, 203 Cotter St (Mission Terrace)
-DESCRIPTION:Open to all ages\; $50 per person\, child or adult. Includes h
- igh tea\, a farm tour with herb and vegetable harvesting\, and a warm fir
- e.\nhttps://www.hawkcreekfarm.org/farm-experiences.html
+DESCRIPTION:Open to all ages\; $50 per person\, child or adult. Includes t
+ ea\, bites\, a farm tour with herb and vegetable harvesting\, and a warm 
+ fire.\nhttps://www.hawkcreekfarm.org/farm-experiences.html
 URL:https://www.hawkcreekfarm.org/farm-experiences.html
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-bayview-2027-02-06@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20270206T180000Z
 DTEND:20270206T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
@@ -1795,7 +2261,7 @@ URL:https://www.missionscienceworkshop.org/programs
 END:VEVENT
 BEGIN:VEVENT
 UID:mapp-2027-02-06@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20270207T020000Z
 DTEND:20270207T060000Z
 SUMMARY:MAPP: Mission Arts & Performance Project
@@ -1808,7 +2274,7 @@ URL:https://www.redpoppyarthouse.org/tag/mission-arts-performance-project/
 END:VEVENT
 BEGIN:VEVENT
 UID:ml-10040895-2027-02-07@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20270208T030000Z
 DTEND:20270208T073000Z
 SUMMARY:1st Sundays in SF are for Salsa | Salsa Lesson & Party
@@ -1823,7 +2289,7 @@ URL:https://missionlocal.org/event/verdi-club-1st-sundays-in-sf-are-for-sa
 END:VEVENT
 BEGIN:VEVENT
 UID:msw-mission-2027-02-13@sf_familyevents
-DTSTAMP:20261119T220610Z
+DTSTAMP:20261121T203022Z
 DTSTART:20270213T180000Z
 DTEND:20270213T230000Z
 SUMMARY:Mission Science Workshop free Saturday open house
