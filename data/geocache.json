@@ -2562,5 +2562,65 @@
  "Grace Cathedral, San Francisco": [
   37.7918211,
   -122.4134968
+ ],
+ "YBCA Theater, 700 Howard St, San Francisco": [
+  null,
+  null
+ ],
+ "Marin Shakespeare Company’s Downtown Theatre, 514 Fourth Street, San Rafael, CA 94901": [
+  null,
+  null
+ ],
+ "Goemon Izakaya Bar, 3139 Clement street , San Francisco, CA , 94121": [
+  null,
+  null
+ ],
+ "555 California, 555 California, San Francisco, CA": [
+  37.7921219,
+  -122.4037191
+ ],
+ "Bolinas & Stinson Beach Arts Venues, Wharf Road, Bolinas, CA 94924": [
+  null,
+  null
+ ],
+ "Eastside Arts Alliance, 2277 International Boulevard, Oakland, CA": [
+  37.7835103,
+  -122.2363945
+ ],
+ "San Francisco Botanical Garden, 1199 9th Avenue, San Francisco, CA 94122": [
+  null,
+  null
+ ],
+ "Pacific Commons Shopping Center, 43440 Boscell Road Fremont, CA 94538": [
+  null,
+  null
+ ],
+ "Civic Center Plaza, 335 McAllister St., San Francisco, CA 94102": [
+  null,
+  null
+ ],
+ "Mt. Eden Mansion, 2451 W. Tennyson Rd., Hayward, CA": [
+  null,
+  null
+ ],
+ "Oakland Temple Hill Auditorium, 4780 Lincoln Ave., Oakland, CA": [
+  null,
+  null
+ ],
+ "Huntington Park, Sacramento Street and Mason St., San Francisco, CA": [
+  null,
+  null
+ ],
+ "Ritz Carlton Hotel, 600 Stockton Street  San Francisco, CA 94108": [
+  37.7918675,
+  -122.4070823
+ ],
+ "River Plaza Shopping Center, 72 E. Washington Street. Petaluma, CA. 94952": [
+  null,
+  null
+ ],
+ "Conservatory of Flowers, 100 John F Kennedy Dr, San Francisco, CA": [
+  37.7726071,
+  -122.4602276
  ]
 }
